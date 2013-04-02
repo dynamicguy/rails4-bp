@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  countrycode: MyString
+  language: MyString
+  isofficial: false
+  percentage: 9.99
+
+two:
+  countrycode: MyString
+  language: MyString
+  isofficial: false
+  percentage: 9.99

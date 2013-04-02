@@ -1,0 +1,35 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  code: MyString
+  name: MyString
+  continent: MyString
+  region: MyString
+  surfacearea: 
+  indepyear: 1
+  population: 1
+  lifeexpectancy: MyString
+  gnp: 
+  gnpold: 
+  localname: MyString
+  governmentform: MyString
+  headofstate: MyString
+  capital: 1
+  code2: MyString
+
+two:
+  code: MyString
+  name: MyString
+  continent: MyString
+  region: MyString
+  surfacearea: 
+  indepyear: 1
+  population: 1
+  lifeexpectancy: MyString
+  gnp: 
+  gnpold: 
+  localname: MyString
+  governmentform: MyString
+  headofstate: MyString
+  capital: 1
+  code2: MyString

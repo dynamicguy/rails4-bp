@@ -1,1 +1,1 @@
-rvm use --create 1.9.3@rails4-bp
+rvm use --create 2.0.0@rails4bp

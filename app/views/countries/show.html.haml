@@ -1,0 +1,51 @@
+%p#notice= notice
+
+%p
+  %b Code:
+  = @country.code
+%p
+  %b Name:
+  = @country.name
+%p
+  %b Continent:
+  = @country.continent
+%p
+  %b Region:
+  = @country.region
+%p
+  %b Surfacearea:
+  = @country.surfacearea
+%p
+  %b Indepyear:
+  = @country.indepyear
+%p
+  %b Population:
+  = @country.population
+%p
+  %b Lifeexpectancy:
+  = @country.lifeexpectancy
+%p
+  %b Gnp:
+  = @country.gnp
+%p
+  %b Gnpold:
+  = @country.gnpold
+%p
+  %b Localname:
+  = @country.localname
+%p
+  %b Governmentform:
+  = @country.governmentform
+%p
+  %b Headofstate:
+  = @country.headofstate
+%p
+  %b Capital:
+  = @country.capital
+%p
+  %b Code2:
+  = @country.code2
+
+= link_to 'Edit', edit_country_path(@country)
+\|
+= link_to 'Back', countries_path

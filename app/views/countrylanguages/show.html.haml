@@ -1,0 +1,18 @@
+%p#notice= notice
+
+%p
+  %b Countrycode:
+  = @countrylanguage.countrycode
+%p
+  %b Language:
+  = @countrylanguage.language
+%p
+  %b Isofficial:
+  = @countrylanguage.isofficial
+%p
+  %b Percentage:
+  = @countrylanguage.percentage
+
+= link_to 'Edit', edit_countrylanguage_path(@countrylanguage)
+\|
+= link_to 'Back', countrylanguages_path

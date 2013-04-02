@@ -1,0 +1,47 @@
+%h1 Listing countries
+
+%table
+  %tr
+    %th Code
+    %th Name
+    %th Continent
+    %th Region
+    %th Surfacearea
+    %th Indepyear
+    %th Population
+    %th Lifeexpectancy
+    %th Gnp
+    %th Gnpold
+    %th Localname
+    %th Governmentform
+    %th Headofstate
+    %th Capital
+    %th Code2
+    %th
+    %th
+    %th
+
+  - @countries.each do |country|
+    %tr
+      %td= country.code
+      %td= country.name
+      %td= country.continent
+      %td= country.region
+      %td= country.surfacearea
+      %td= country.indepyear
+      %td= country.population
+      %td= country.lifeexpectancy
+      %td= country.gnp
+      %td= country.gnpold
+      %td= country.localname
+      %td= country.governmentform
+      %td= country.headofstate
+      %td= country.capital
+      %td= country.code2
+      %td= link_to 'Show', country
+      %td= link_to 'Edit', edit_country_path(country)
+      %td= link_to 'Destroy', country, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Country', new_country_path

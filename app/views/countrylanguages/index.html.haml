@@ -1,0 +1,25 @@
+%h1 Listing countrylanguages
+
+%table
+  %tr
+    %th Countrycode
+    %th Language
+    %th Isofficial
+    %th Percentage
+    %th
+    %th
+    %th
+
+  - @countrylanguages.each do |countrylanguage|
+    %tr
+      %td= countrylanguage.countrycode
+      %td= countrylanguage.language
+      %td= countrylanguage.isofficial
+      %td= countrylanguage.percentage
+      %td= link_to 'Show', countrylanguage
+      %td= link_to 'Edit', edit_countrylanguage_path(countrylanguage)
+      %td= link_to 'Destroy', countrylanguage, :method => :delete, :data => { :confirm => 'Are you sure?' }
+
+%br
+
+= link_to 'New Countrylanguage', new_countrylanguage_path
