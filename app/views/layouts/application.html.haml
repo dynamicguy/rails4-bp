@@ -43,6 +43,7 @@
               %li= link_to "Countries", countries_path
               %li= link_to "Cities", cities_path
         .span9
+          = render_breadcrumbs
           = bootstrap_flash
           = yield
     

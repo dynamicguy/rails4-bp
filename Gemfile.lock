@@ -131,6 +131,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.6.2)
+    country_select (1.1.3)
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
@@ -185,6 +186,7 @@ DEPENDENCIES
   arel!
   breadcrumbs_on_rails
   coffee-rails!
+  country_select
   haml-rails!
   jbuilder (~> 1.0.1)
   jquery-rails!

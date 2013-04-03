@@ -17,20 +17,19 @@ ActiveRecord::Schema.define(version: 20130401102756) do
     t.string   "name"
     t.string   "content"
     t.datetime "published_on"
-    t.datetime "created_at"
-    t.datetime "updated_at"
   end
 
   create_table "cities", force: true do |t|
-    t.string  "name"
-    t.string  "countrycode"
-    t.string  "district"
-    t.integer "population"
+    t.string  "name",        limit: 35, default: "", null: false
+    t.string  "countrycode", limit: 3,  default: "", null: false
+    t.string  "district",    limit: 20, default: "", null: false
+    t.integer "population",             default: 0,  null: false
   end
 
-  add_index "cities", ["countrycode"], name: "index_cities_on_countrycode"
+  add_index "cities", ["countrycode"], name: "countrycode"
 
-  create_table "countries", primary_key: "code", force: true do |t|
+  create_table "countries", id: false, force: true do |t|
+    t.string  "code"
     t.string  "name",                                                     null: false
     t.string  "continent",                               default: "Asia", null: false
     t.string  "region",                                  default: "",     null: false
@@ -47,14 +46,11 @@ ActiveRecord::Schema.define(version: 20130401102756) do
     t.string  "code2",                                   default: "",     null: false
   end
 
-  add_index "countries", ["code"], name: "index_countries_on_code"
-
-  create_table "countrylanguages", primary_key: "countrycode", force: true do |t|
+  create_table "countrylanguages", id: false, force: true do |t|
+    t.string  "countrycode"
     t.string  "language"
-    t.boolean "isofficial",                          default: false
-    t.decimal "percentage", precision: 10, scale: 0, default: 0
+    t.boolean "isofficial",                           default: false
+    t.decimal "percentage",  precision: 10, scale: 0, default: 0
   end
-
-  add_index "countrylanguages", ["countrycode"], name: "index_countrylanguages_on_countrycode"
 
 end
