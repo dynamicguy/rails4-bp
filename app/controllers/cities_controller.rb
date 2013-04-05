@@ -1,24 +1,28 @@
 class CitiesController < ApplicationController
   before_action :set_city, only: [:show, :edit, :update, :destroy]
-
+  add_breadcrumb :cities, :cities_path
   # GET /cities
   # GET /cities.json
   def index
+    add_breadcrumb :list
     @cities = City.order(:name).page params[:page]
   end
 
   # GET /cities/1
   # GET /cities/1.json
   def show
+    add_breadcrumb :details
   end
 
   # GET /cities/new
   def new
+    add_breadcrumb :new
     @city = City.new
   end
 
   # GET /cities/1/edit
   def edit
+    add_breadcrumb :edit
   end
 
   # POST /cities

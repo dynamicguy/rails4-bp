@@ -5,3 +5,19 @@
   breadcrumbs:
     application:
       home: Home
+    articles:
+      articles: articles
+      home: Home
+      list: List
+      new: New
+    countries:
+      countries: countries
+      home: Home
+      list: List
+      new: New
+    cities:
+      cities: cities
+      home: Home
+      list: List
+      new: New
+      edit: edit

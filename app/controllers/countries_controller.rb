@@ -1,19 +1,23 @@
 class CountriesController < ApplicationController
   before_action :set_country, only: [:show, :edit, :update, :destroy]
 
+
   # GET /countries
   # GET /countries.json
   def index
+    add_breadcrumb :list
     @countries = Country.order(:name).page params[:page]
   end
 
   # GET /countries/1
   # GET /countries/1.json
   def show
+    add_breadcrumb :details
   end
 
   # GET /countries/new
   def new
+    add_breadcrumb :new
     @country = Country.new
   end
 
@@ -24,6 +28,7 @@ class CountriesController < ApplicationController
   # POST /countries
   # POST /countries.json
   def create
+    add_breadcrumb :create
     @country = Country.new(country_params)
 
     respond_to do |format|

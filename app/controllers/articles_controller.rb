@@ -1,19 +1,22 @@
 class ArticlesController < ApplicationController
   before_action :set_article, only: [:show, :edit, :update, :destroy]
-
+  add_breadcrumb :articles, :articles_path
   # GET /articles
   # GET /articles.json
   def index
+    add_breadcrumb :list
     @articles = Article.all
   end
 
   # GET /articles/1
   # GET /articles/1.json
   def show
+    add_breadcrumb :details
   end
 
   # GET /articles/new
   def new
+    add_breadcrumb :new
     @article = Article.new
   end
 
@@ -24,6 +27,7 @@ class ArticlesController < ApplicationController
   # POST /articles
   # POST /articles.json
   def create
+    add_breadcrumb :create
     @article = Article.new(article_params)
 
     respond_to do |format|
