@@ -1,7 +1,4 @@
-%h1 Editing country
-
-= render 'form'
-
-= link_to 'Show', @country
-\|
-= link_to 'Back', countries_path
+- model_class = Country
+.page-header
+  %h1=t '.title', :default => [:'helpers.titles.edit', 'Edit %{model}'], :model => model_class.model_name.human
+= render :partial => "form"

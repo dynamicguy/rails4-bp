@@ -4,7 +4,7 @@ class CountrylanguagesController < ApplicationController
   # GET /countrylanguages
   # GET /countrylanguages.json
   def index
-    @countrylanguages = Countrylanguage.order(:name).page params[:page]
+    @countrylanguages = Countrylanguage.order(:language).page params[:page]
   end
 
   # GET /countrylanguages/1

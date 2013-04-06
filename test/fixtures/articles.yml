@@ -1,11 +1,1 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
-
-one:
-  name: MyString
-  content: MyString
-  published_on: 2013-03-25 14:16:59
-
-two:
-  name: MyString
-  content: MyString
-  published_on: 2013-03-25 14:16:59
+--- {}

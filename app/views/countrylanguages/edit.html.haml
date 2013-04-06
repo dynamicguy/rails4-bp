@@ -1,7 +1,4 @@
-%h1 Editing countrylanguage
-
-= render 'form'
-
-= link_to 'Show', @countrylanguage
-\|
-= link_to 'Back', countrylanguages_path
+- model_class = Countrylanguage
+.page-header
+  %h1=t '.title', :default => [:'helpers.titles.edit', 'Edit %{model}'], :model => model_class.model_name.human
+= render :partial => "form"

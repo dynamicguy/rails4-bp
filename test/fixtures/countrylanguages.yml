@@ -1,13 +1,4921 @@
-# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
-
-one:
-  countrycode: MyString
-  language: MyString
-  isofficial: false
-  percentage: 9.99
-
-two:
-  countrycode: MyString
-  language: MyString
-  isofficial: false
-  percentage: 9.99
+---
+countrylanguages_001:
+  countrycode: bgd
+  language: santhali
+  isofficial: f
+  percentage: 0.1
+countrylanguages_002:
+  countrycode: blr
+  language: russian
+  isofficial: t
+  percentage: 32.0
+countrylanguages_003:
+  countrycode: chn
+  language: zhuang
+  isofficial: f
+  percentage: 1.4
+countrylanguages_004:
+  countrycode: cri
+  language: chibcha
+  isofficial: f
+  percentage: 0.3
+countrylanguages_005:
+  countrycode: ukr
+  language: romanian
+  isofficial: f
+  percentage: 0.7
+countrylanguages_006:
+  countrycode: ago
+  language: luimbe-nganguela
+  isofficial: f
+  percentage: 5.4
+countrylanguages_007:
+  countrycode: aus
+  language: canton chinese
+  isofficial: f
+  percentage: 1.1
+countrylanguages_008:
+  countrycode: bel
+  language: german
+  isofficial: t
+  percentage: 1.0
+countrylanguages_009:
+  countrycode: cub
+  language: spanish
+  isofficial: t
+  percentage: 100.0
+countrylanguages_010:
+  countrycode: gab
+  language: punu-sira-nzebi
+  isofficial: f
+  percentage: 17.1
+countrylanguages_011:
+  countrycode: ind
+  language: asami
+  isofficial: f
+  percentage: 1.5
+countrylanguages_012:
+  countrycode: npl
+  language: maithili
+  isofficial: f
+  percentage: 11.9
+countrylanguages_013:
+  countrycode: plw
+  language: palau
+  isofficial: t
+  percentage: 82.2
+countrylanguages_014:
+  countrycode: asm
+  language: samoan
+  isofficial: t
+  percentage: 90.6
+countrylanguages_015:
+  countrycode: bfa
+  language: ful
+  isofficial: f
+  percentage: 9.7
+countrylanguages_016:
+  countrycode: cpv
+  language: crioulo
+  isofficial: f
+  percentage: 100.0
+countrylanguages_017:
+  countrycode: dom
+  language: creole french
+  isofficial: f
+  percentage: 2.0
+countrylanguages_018:
+  countrycode: geo
+  language: georgiana
+  isofficial: t
+  percentage: 71.7
+countrylanguages_019:
+  countrycode: lva
+  language: belorussian
+  isofficial: f
+  percentage: 4.1
+countrylanguages_020:
+  countrycode: nld
+  language: turkish
+  isofficial: f
+  percentage: 0.8
+countrylanguages_021:
+  countrycode: pak
+  language: sindhi
+  isofficial: f
+  percentage: 11.8
+countrylanguages_022:
+  countrycode: zmb
+  language: bemba
+  isofficial: f
+  percentage: 29.7
+countrylanguages_023:
+  countrycode: blz
+  language: spanish
+  isofficial: f
+  percentage: 31.6
+countrylanguages_024:
+  countrycode: caf
+  language: gbaya
+  isofficial: f
+  percentage: 23.8
+countrylanguages_025:
+  countrycode: caf
+  language: mandjia
+  isofficial: f
+  percentage: 14.8
+countrylanguages_026:
+  countrycode: cog
+  language: mbete
+  isofficial: f
+  percentage: 4.8
+countrylanguages_027:
+  countrycode: gum
+  language: chamorro
+  isofficial: t
+  percentage: 29.6
+countrylanguages_028:
+  countrycode: hkg
+  language: english
+  isofficial: t
+  percentage: 2.2
+countrylanguages_029:
+  countrycode: kgz
+  language: tatar
+  isofficial: f
+  percentage: 1.3
+countrylanguages_030:
+  countrycode: lux
+  language: italian
+  isofficial: f
+  percentage: 4.6
+countrylanguages_031:
+  countrycode: mli
+  language: tamashek
+  isofficial: f
+  percentage: 7.3
+countrylanguages_032:
+  countrycode: nam
+  language: san
+  isofficial: f
+  percentage: 1.9
+countrylanguages_033:
+  countrycode: nzl
+  language: maori
+  isofficial: f
+  percentage: 4.3
+countrylanguages_034:
+  countrycode: ago
+  language: mbundu
+  isofficial: f
+  percentage: 21.6
+countrylanguages_035:
+  countrycode: arm
+  language: azerbaijani
+  isofficial: f
+  percentage: 2.6
+countrylanguages_036:
+  countrycode: cod
+  language: rwanda
+  isofficial: f
+  percentage: 10.3
+countrylanguages_037:
+  countrycode: dnk
+  language: swedish
+  isofficial: f
+  percentage: 0.3
+countrylanguages_038:
+  countrycode: irn
+  language: turkmenian
+  isofficial: f
+  percentage: 1.6
+countrylanguages_039:
+  countrycode: mng
+  language: dariganga
+  isofficial: f
+  percentage: 1.4
+countrylanguages_040:
+  countrycode: pan
+  language: spanish
+  isofficial: t
+  percentage: 76.8
+countrylanguages_041:
+  countrycode: sle
+  language: kuranko
+  isofficial: f
+  percentage: 3.4
+countrylanguages_042:
+  countrycode: uga
+  language: rwanda
+  isofficial: f
+  percentage: 3.2
+countrylanguages_043:
+  countrycode: vnm
+  language: man
+  isofficial: f
+  percentage: 0.7
+countrylanguages_044:
+  countrycode: atg
+  language: english
+  isofficial: t
+  percentage: 0.0
+countrylanguages_045:
+  countrycode: blz
+  language: garifuna
+  isofficial: f
+  percentage: 6.8
+countrylanguages_046:
+  countrycode: brn
+  language: chinese
+  isofficial: f
+  percentage: 9.3
+countrylanguages_047:
+  countrycode: eri
+  language: bilin
+  isofficial: f
+  percentage: 3.0
+countrylanguages_048:
+  countrycode: gha
+  language: joruba
+  isofficial: f
+  percentage: 1.3
+countrylanguages_049:
+  countrycode: irq
+  language: arabic
+  isofficial: t
+  percentage: 77.2
+countrylanguages_050:
+  countrycode: lka
+  language: singali
+  isofficial: t
+  percentage: 60.3
+countrylanguages_051:
+  countrycode: svn
+  language: serbo-croatian
+  isofficial: f
+  percentage: 7.9
+countrylanguages_052:
+  countrycode: civ
+  language: kru
+  isofficial: f
+  percentage: 10.5
+countrylanguages_053:
+  countrycode: grc
+  language: greek
+  isofficial: t
+  percentage: 98.5
+countrylanguages_054:
+  countrycode: pol
+  language: belorussian
+  isofficial: f
+  percentage: 0.5
+countrylanguages_055:
+  countrycode: sjm
+  language: norwegian
+  isofficial: t
+  percentage: 0.0
+countrylanguages_056:
+  countrycode: tkm
+  language: kazakh
+  isofficial: f
+  percentage: 2.0
+countrylanguages_057:
+  countrycode: twn
+  language: min
+  isofficial: f
+  percentage: 66.7
+countrylanguages_058:
+  countrycode: wlf
+  language: futuna
+  isofficial: f
+  percentage: 0.0
+countrylanguages_059:
+  countrycode: btn
+  language: nepali
+  isofficial: f
+  percentage: 34.8
+countrylanguages_060:
+  countrycode: cod
+  language: teke
+  isofficial: f
+  percentage: 2.7
+countrylanguages_061:
+  countrycode: cpv
+  language: portuguese
+  isofficial: t
+  percentage: 0.0
+countrylanguages_062:
+  countrycode: gha
+  language: akan
+  isofficial: f
+  percentage: 52.4
+countrylanguages_063:
+  countrycode: gmb
+  language: wolof
+  isofficial: f
+  percentage: 12.6
+countrylanguages_064:
+  countrycode: hrv
+  language: serbo-croatian
+  isofficial: t
+  percentage: 95.9
+countrylanguages_065:
+  countrycode: ind
+  language: kannada
+  isofficial: f
+  percentage: 3.9
+countrylanguages_066:
+  countrycode: ncl
+  language: malenasian languages
+  isofficial: f
+  percentage: 45.4
+countrylanguages_067:
+  countrycode: png
+  language: malenasian languages
+  isofficial: f
+  percentage: 20.0
+countrylanguages_068:
+  countrycode: sdn
+  language: lotuko
+  isofficial: f
+  percentage: 1.5
+countrylanguages_069:
+  countrycode: ukr
+  language: russian
+  isofficial: f
+  percentage: 32.9
+countrylanguages_070:
+  countrycode: usa
+  language: korean
+  isofficial: f
+  percentage: 0.3
+countrylanguages_071:
+  countrycode: uzb
+  language: tatar
+  isofficial: f
+  percentage: 1.8
+countrylanguages_072:
+  countrycode: afg
+  language: balochi
+  isofficial: f
+  percentage: 0.9
+countrylanguages_073:
+  countrycode: bol
+  language: guaran
+  isofficial: f
+  percentage: 0.1
+countrylanguages_074:
+  countrycode: hnd
+  language: spanish
+  isofficial: t
+  percentage: 97.2
+countrylanguages_075:
+  countrycode: idn
+  language: bugi
+  isofficial: f
+  percentage: 2.2
+countrylanguages_076:
+  countrycode: mmr
+  language: chin
+  isofficial: f
+  percentage: 2.2
+countrylanguages_077:
+  countrycode: phl
+  language: pilipino
+  isofficial: t
+  percentage: 29.3
+countrylanguages_078:
+  countrycode: spm
+  language: french
+  isofficial: t
+  percentage: 0.0
+countrylanguages_079:
+  countrycode: tza
+  language: gogo
+  isofficial: f
+  percentage: 3.9
+countrylanguages_080:
+  countrycode: yug
+  language: slovak
+  isofficial: f
+  percentage: 0.7
+countrylanguages_081:
+  countrycode: blz
+  language: maya languages
+  isofficial: f
+  percentage: 9.6
+countrylanguages_082:
+  countrycode: cog
+  language: teke
+  isofficial: f
+  percentage: 17.3
+countrylanguages_083:
+  countrycode: cxr
+  language: english
+  isofficial: t
+  percentage: 0.0
+countrylanguages_084:
+  countrycode: hrv
+  language: slovene
+  isofficial: f
+  percentage: 0.0
+countrylanguages_085:
+  countrycode: ita
+  language: german
+  isofficial: f
+  percentage: 0.5
+countrylanguages_086:
+  countrycode: tza
+  language: haya
+  isofficial: f
+  percentage: 5.9
+countrylanguages_087:
+  countrycode: can
+  language: chinese
+  isofficial: f
+  percentage: 2.5
+countrylanguages_088:
+  countrycode: lao
+  language: thai
+  isofficial: f
+  percentage: 7.8
+countrylanguages_089:
+  countrycode: nfk
+  language: english
+  isofficial: t
+  percentage: 0.0
+countrylanguages_090:
+  countrycode: tuv
+  language: tuvalu
+  isofficial: t
+  percentage: 92.5
+countrylanguages_091:
+  countrycode: twn
+  language: paiwan
+  isofficial: f
+  percentage: 0.3
+countrylanguages_092:
+  countrycode: uga
+  language: acholi
+  isofficial: f
+  percentage: 4.4
+countrylanguages_093:
+  countrycode: ant
+  language: papiamento
+  isofficial: t
+  percentage: 86.2
+countrylanguages_094:
+  countrycode: aut
+  language: german
+  isofficial: t
+  percentage: 92.0
+countrylanguages_095:
+  countrycode: can
+  language: dutch
+  isofficial: f
+  percentage: 0.5
+countrylanguages_096:
+  countrycode: mli
+  language: senufo and minianka
+  isofficial: f
+  percentage: 12.0
+countrylanguages_097:
+  countrycode: mus
+  language: hindi
+  isofficial: f
+  percentage: 1.2
+countrylanguages_098:
+  countrycode: myt
+  language: mahor
+  isofficial: f
+  percentage: 41.9
+countrylanguages_099:
+  countrycode: tun
+  language: arabic
+  isofficial: t
+  percentage: 69.9
+countrylanguages_100:
+  countrycode: vat
+  language: italian
+  isofficial: t
+  percentage: 0.0
+countrylanguages_101:
+  countrycode: blz
+  language: english
+  isofficial: t
+  percentage: 50.8
+countrylanguages_102:
+  countrycode: eri
+  language: tigrinja
+  isofficial: t
+  percentage: 49.1
+countrylanguages_103:
+  countrycode: est
+  language: estonian
+  isofficial: t
+  percentage: 65.3
+countrylanguages_104:
+  countrycode: fin
+  language: russian
+  isofficial: f
+  percentage: 0.4
+countrylanguages_105:
+  countrycode: gnb
+  language: malinke
+  isofficial: f
+  percentage: 6.9
+countrylanguages_106:
+  countrycode: gnq
+  language: bubi
+  isofficial: f
+  percentage: 8.7
+countrylanguages_107:
+  countrycode: idn
+  language: malay
+  isofficial: t
+  percentage: 12.1
+countrylanguages_108:
+  countrycode: lby
+  language: arabic
+  isofficial: t
+  percentage: 96.0
+countrylanguages_109:
+  countrycode: qat
+  language: arabic
+  isofficial: t
+  percentage: 40.7
+countrylanguages_110:
+  countrycode: sle
+  language: bullom-sherbro
+  isofficial: f
+  percentage: 3.8
+countrylanguages_111:
+  countrycode: vnm
+  language: nung
+  isofficial: f
+  percentage: 1.1
+countrylanguages_112:
+  countrycode: ltu
+  language: ukrainian
+  isofficial: f
+  percentage: 1.1
+countrylanguages_113:
+  countrycode: mli
+  language: ful
+  isofficial: f
+  percentage: 13.9
+countrylanguages_114:
+  countrycode: usa
+  language: tagalog
+  isofficial: f
+  percentage: 0.4
+countrylanguages_115:
+  countrycode: are
+  language: hindi
+  isofficial: f
+  percentage: 0.0
+countrylanguages_116:
+  countrycode: arg
+  language: italian
+  isofficial: f
+  percentage: 1.7
+countrylanguages_117:
+  countrycode: bdi
+  language: swahili
+  isofficial: f
+  percentage: 0.0
+countrylanguages_118:
+  countrycode: ita
+  language: slovene
+  isofficial: f
+  percentage: 0.2
+countrylanguages_119:
+  countrycode: nic
+  language: miskito
+  isofficial: f
+  percentage: 1.6
+countrylanguages_120:
+  countrycode: nor
+  language: saame
+  isofficial: f
+  percentage: 0.0
+countrylanguages_121:
+  countrycode: per
+  language: aimar
+  isofficial: t
+  percentage: 2.3
+countrylanguages_122:
+  countrycode: rus
+  language: chuvash
+  isofficial: f
+  percentage: 0.9
+countrylanguages_123:
+  countrycode: abw
+  language: spanish
+  isofficial: f
+  percentage: 7.4
+countrylanguages_124:
+  countrycode: blr
+  language: polish
+  isofficial: f
+  percentage: 0.6
+countrylanguages_125:
+  countrycode: esh
+  language: arabic
+  isofficial: t
+  percentage: 100.0
+countrylanguages_126:
+  countrycode: gtm
+  language: quich
+  isofficial: f
+  percentage: 10.1
+countrylanguages_127:
+  countrycode: guf
+  language: creole french
+  isofficial: f
+  percentage: 94.3
+countrylanguages_128:
+  countrycode: mrt
+  language: zenaga
+  isofficial: f
+  percentage: 1.2
+countrylanguages_129:
+  countrycode: nru
+  language: nauru
+  isofficial: t
+  percentage: 57.5
+countrylanguages_130:
+  countrycode: zwe
+  language: nyanja
+  isofficial: f
+  percentage: 2.2
+countrylanguages_131:
+  countrycode: bfa
+  language: dagara
+  isofficial: f
+  percentage: 3.1
+countrylanguages_132:
+  countrycode: geo
+  language: abhyasi
+  isofficial: f
+  percentage: 1.7
+countrylanguages_133:
+  countrycode: gum
+  language: philippene languages
+  isofficial: f
+  percentage: 19.7
+countrylanguages_134:
+  countrycode: hnd
+  language: miskito
+  isofficial: f
+  percentage: 0.2
+countrylanguages_135:
+  countrycode: isr
+  language: arabic
+  isofficial: t
+  percentage: 18.0
+countrylanguages_136:
+  countrycode: npl
+  language: hindi
+  isofficial: f
+  percentage: 3.0
+countrylanguages_137:
+  countrycode: slv
+  language: spanish
+  isofficial: t
+  percentage: 100.0
+countrylanguages_138:
+  countrycode: bgd
+  language: tripuri
+  isofficial: f
+  percentage: 0.1
+countrylanguages_139:
+  countrycode: gab
+  language: fang
+  isofficial: f
+  percentage: 35.8
+countrylanguages_140:
+  countrycode: gtm
+  language: mam
+  isofficial: f
+  percentage: 2.7
+countrylanguages_141:
+  countrycode: hun
+  language: romani
+  isofficial: f
+  percentage: 0.5
+countrylanguages_142:
+  countrycode: irq
+  language: assyrian
+  isofficial: f
+  percentage: 0.8
+countrylanguages_143:
+  countrycode: moz
+  language: tsonga
+  isofficial: f
+  percentage: 12.4
+countrylanguages_144:
+  countrycode: nru
+  language: english
+  isofficial: t
+  percentage: 7.5
+countrylanguages_145:
+  countrycode: pyf
+  language: chinese
+  isofficial: f
+  percentage: 2.9
+countrylanguages_146:
+  countrycode: rus
+  language: mari
+  isofficial: f
+  percentage: 0.4
+countrylanguages_147:
+  countrycode: zaf
+  language: tswana
+  isofficial: f
+  percentage: 8.1
+countrylanguages_148:
+  countrycode: cod
+  language: rundi
+  isofficial: f
+  percentage: 3.8
+countrylanguages_149:
+  countrycode: pyf
+  language: french
+  isofficial: t
+  percentage: 40.8
+countrylanguages_150:
+  countrycode: usa
+  language: vietnamese
+  isofficial: f
+  percentage: 0.2
+countrylanguages_151:
+  countrycode: gum
+  language: english
+  isofficial: t
+  percentage: 37.5
+countrylanguages_152:
+  countrycode: ind
+  language: hindi
+  isofficial: t
+  percentage: 39.9
+countrylanguages_153:
+  countrycode: jam
+  language: creole english
+  isofficial: f
+  percentage: 94.2
+countrylanguages_154:
+  countrycode: mmr
+  language: shan
+  isofficial: f
+  percentage: 8.5
+countrylanguages_155:
+  countrycode: sau
+  language: arabic
+  isofficial: t
+  percentage: 95.0
+countrylanguages_156:
+  countrycode: slb
+  language: malenasian languages
+  isofficial: f
+  percentage: 85.6
+countrylanguages_157:
+  countrycode: sur
+  language: sranantonga
+  isofficial: f
+  percentage: 81.0
+countrylanguages_158:
+  countrycode: tcd
+  language: hadjarai
+  isofficial: f
+  percentage: 6.7
+countrylanguages_159:
+  countrycode: vnm
+  language: muong
+  isofficial: f
+  percentage: 1.5
+countrylanguages_160:
+  countrycode: zaf
+  language: southsotho
+  isofficial: f
+  percentage: 7.6
+countrylanguages_161:
+  countrycode: eri
+  language: afar
+  isofficial: f
+  percentage: 4.3
+countrylanguages_162:
+  countrycode: eth
+  language: gurage
+  isofficial: f
+  percentage: 4.7
+countrylanguages_163:
+  countrycode: irn
+  language: luri
+  isofficial: f
+  percentage: 4.3
+countrylanguages_164:
+  countrycode: lux
+  language: portuguese
+  isofficial: f
+  percentage: 13.0
+countrylanguages_165:
+  countrycode: mex
+  language: zapotec
+  isofficial: f
+  percentage: 0.6
+countrylanguages_166:
+  countrycode: mlt
+  language: maltese
+  isofficial: t
+  percentage: 95.8
+countrylanguages_167:
+  countrycode: svk
+  language: hungarian
+  isofficial: f
+  percentage: 10.5
+countrylanguages_168:
+  countrycode: cxr
+  language: chinese
+  isofficial: f
+  percentage: 0.0
+countrylanguages_169:
+  countrycode: gtm
+  language: kekch
+  isofficial: f
+  percentage: 4.9
+countrylanguages_170:
+  countrycode: guy
+  language: caribbean
+  isofficial: f
+  percentage: 2.2
+countrylanguages_171:
+  countrycode: irn
+  language: balochi
+  isofficial: f
+  percentage: 2.3
+countrylanguages_172:
+  countrycode: ken
+  language: luhya
+  isofficial: f
+  percentage: 13.8
+countrylanguages_173:
+  countrycode: lva
+  language: polish
+  isofficial: f
+  percentage: 2.1
+countrylanguages_174:
+  countrycode: vir
+  language: spanish
+  isofficial: f
+  percentage: 13.3
+countrylanguages_175:
+  countrycode: vnm
+  language: miao
+  isofficial: f
+  percentage: 0.9
+countrylanguages_176:
+  countrycode: aus
+  language: italian
+  isofficial: f
+  percentage: 2.2
+countrylanguages_177:
+  countrycode: bwa
+  language: tswana
+  isofficial: f
+  percentage: 75.5
+countrylanguages_178:
+  countrycode: che
+  language: french
+  isofficial: t
+  percentage: 19.2
+countrylanguages_179:
+  countrycode: cod
+  language: luba
+  isofficial: f
+  percentage: 18.0
+countrylanguages_180:
+  countrycode: eth
+  language: sidamo
+  isofficial: f
+  percentage: 3.2
+countrylanguages_181:
+  countrycode: gab
+  language: mbete
+  isofficial: f
+  percentage: 13.8
+countrylanguages_182:
+  countrycode: grl
+  language: danish
+  isofficial: t
+  percentage: 12.5
+countrylanguages_183:
+  countrycode: npl
+  language: tamang
+  isofficial: f
+  percentage: 4.9
+countrylanguages_184:
+  countrycode: tjk
+  language: russian
+  isofficial: f
+  percentage: 9.7
+countrylanguages_185:
+  countrycode: vnm
+  language: chinese
+  isofficial: f
+  percentage: 1.4
+countrylanguages_186:
+  countrycode: yug
+  language: serbo-croatian
+  isofficial: t
+  percentage: 75.2
+countrylanguages_187:
+  countrycode: col
+  language: arawakan
+  isofficial: f
+  percentage: 0.1
+countrylanguages_188:
+  countrycode: gbr
+  language: english
+  isofficial: t
+  percentage: 97.3
+countrylanguages_189:
+  countrycode: geo
+  language: russian
+  isofficial: f
+  percentage: 8.8
+countrylanguages_190:
+  countrycode: guy
+  language: arawakan
+  isofficial: f
+  percentage: 1.4
+countrylanguages_191:
+  countrycode: ltu
+  language: belorussian
+  isofficial: f
+  percentage: 1.4
+countrylanguages_192:
+  countrycode: uzb
+  language: uzbek
+  isofficial: t
+  percentage: 72.6
+countrylanguages_193:
+  countrycode: ago
+  language: nyaneka-nkhumbi
+  isofficial: f
+  percentage: 5.4
+countrylanguages_194:
+  countrycode: chn
+  language: chinese
+  isofficial: t
+  percentage: 92.0
+countrylanguages_195:
+  countrycode: eri
+  language: saho
+  isofficial: f
+  percentage: 3.0
+countrylanguages_196:
+  countrycode: irn
+  language: arabic
+  isofficial: f
+  percentage: 2.2
+countrylanguages_197:
+  countrycode: ken
+  language: masai
+  isofficial: f
+  percentage: 1.6
+countrylanguages_198:
+  countrycode: ltu
+  language: lithuanian
+  isofficial: t
+  percentage: 81.6
+countrylanguages_199:
+  countrycode: mmr
+  language: rakhine
+  isofficial: f
+  percentage: 4.5
+countrylanguages_200:
+  countrycode: syr
+  language: kurdish
+  isofficial: f
+  percentage: 9.0
+countrylanguages_201:
+  countrycode: umi
+  language: english
+  isofficial: t
+  percentage: 0.0
+countrylanguages_202:
+  countrycode: bel
+  language: french
+  isofficial: t
+  percentage: 32.6
+countrylanguages_203:
+  countrycode: bfa
+  language: gurma
+  isofficial: f
+  percentage: 5.7
+countrylanguages_204:
+  countrycode: chn
+  language: mant
+  isofficial: f
+  percentage: 0.9
+countrylanguages_205:
+  countrycode: ner
+  language: kanuri
+  isofficial: f
+  percentage: 4.4
+countrylanguages_206:
+  countrycode: nga
+  language: ijo
+  isofficial: f
+  percentage: 1.8
+countrylanguages_207:
+  countrycode: sen
+  language: malinke
+  isofficial: f
+  percentage: 3.8
+countrylanguages_208:
+  countrycode: aze
+  language: armenian
+  isofficial: f
+  percentage: 2.0
+countrylanguages_209:
+  countrycode: cog
+  language: sango
+  isofficial: f
+  percentage: 2.6
+countrylanguages_210:
+  countrycode: gmb
+  language: diola
+  isofficial: f
+  percentage: 9.2
+countrylanguages_211:
+  countrycode: npl
+  language: nepali
+  isofficial: t
+  percentage: 50.4
+countrylanguages_212:
+  countrycode: pcn
+  language: pitcairnese
+  isofficial: f
+  percentage: 0.0
+countrylanguages_213:
+  countrycode: svk
+  language: ukrainian and russian
+  isofficial: f
+  percentage: 0.6
+countrylanguages_214:
+  countrycode: syc
+  language: french
+  isofficial: t
+  percentage: 1.3
+countrylanguages_215:
+  countrycode: vnm
+  language: tho
+  isofficial: f
+  percentage: 1.8
+countrylanguages_216:
+  countrycode: cze
+  language: german
+  isofficial: f
+  percentage: 0.5
+countrylanguages_217:
+  countrycode: grc
+  language: turkish
+  isofficial: f
+  percentage: 0.9
+countrylanguages_218:
+  countrycode: ken
+  language: kalenjin
+  isofficial: f
+  percentage: 10.8
+countrylanguages_219:
+  countrycode: ken
+  language: kamba
+  isofficial: f
+  percentage: 11.2
+countrylanguages_220:
+  countrycode: lva
+  language: russian
+  isofficial: f
+  percentage: 32.5
+countrylanguages_221:
+  countrycode: tgo
+  language: naudemba
+  isofficial: f
+  percentage: 4.1
+countrylanguages_222:
+  countrycode: che
+  language: romansh
+  isofficial: t
+  percentage: 0.6
+countrylanguages_223:
+  countrycode: est
+  language: finnish
+  isofficial: f
+  percentage: 0.7
+countrylanguages_224:
+  countrycode: eth
+  language: tigrinja
+  isofficial: f
+  percentage: 7.2
+countrylanguages_225:
+  countrycode: geo
+  language: armenian
+  isofficial: f
+  percentage: 6.8
+countrylanguages_226:
+  countrycode: mys
+  language: english
+  isofficial: f
+  percentage: 1.6
+countrylanguages_227:
+  countrycode: tcd
+  language: arabic
+  isofficial: t
+  percentage: 12.3
+countrylanguages_228:
+  countrycode: tcd
+  language: ouaddai
+  isofficial: f
+  percentage: 8.7
+countrylanguages_229:
+  countrycode: dji
+  language: somali
+  isofficial: f
+  percentage: 43.9
+countrylanguages_230:
+  countrycode: grl
+  language: greenlandic
+  isofficial: t
+  percentage: 87.5
+countrylanguages_231:
+  countrycode: lie
+  language: german
+  isofficial: t
+  percentage: 89.0
+countrylanguages_232:
+  countrycode: lva
+  language: lithuanian
+  isofficial: f
+  percentage: 1.2
+countrylanguages_233:
+  countrycode: abw
+  language: english
+  isofficial: f
+  percentage: 9.5
+countrylanguages_234:
+  countrycode: are
+  language: arabic
+  isofficial: t
+  percentage: 42.0
+countrylanguages_235:
+  countrycode: arg
+  language: spanish
+  isofficial: t
+  percentage: 96.8
+countrylanguages_236:
+  countrycode: aut
+  language: polish
+  isofficial: f
+  percentage: 0.2
+countrylanguages_237:
+  countrycode: eri
+  language: tigre
+  isofficial: f
+  percentage: 31.7
+countrylanguages_238:
+  countrycode: fra
+  language: spanish
+  isofficial: f
+  percentage: 0.4
+countrylanguages_239:
+  countrycode: gin
+  language: ful
+  isofficial: f
+  percentage: 38.6
+countrylanguages_240:
+  countrycode: ind
+  language: orija
+  isofficial: f
+  percentage: 3.3
+countrylanguages_241:
+  countrycode: kaz
+  language: ukrainian
+  isofficial: f
+  percentage: 5.0
+countrylanguages_242:
+  countrycode: mdg
+  language: malagasy
+  isofficial: t
+  percentage: 98.9
+countrylanguages_243:
+  countrycode: mli
+  language: soninke
+  isofficial: f
+  percentage: 8.7
+countrylanguages_244:
+  countrycode: npl
+  language: tharu
+  isofficial: f
+  percentage: 5.4
+countrylanguages_245:
+  countrycode: pan
+  language: embera
+  isofficial: f
+  percentage: 0.6
+countrylanguages_246:
+  countrycode: sle
+  language: mende
+  isofficial: f
+  percentage: 34.8
+countrylanguages_247:
+  countrycode: civ
+  language: akan
+  isofficial: f
+  percentage: 30.0
+countrylanguages_248:
+  countrycode: cmr
+  language: mandara
+  isofficial: f
+  percentage: 5.7
+countrylanguages_249:
+  countrycode: cog
+  language: mboshi
+  isofficial: f
+  percentage: 11.4
+countrylanguages_250:
+  countrycode: cze
+  language: silesiana
+  isofficial: f
+  percentage: 0.4
+countrylanguages_251:
+  countrycode: irn
+  language: azerbaijani
+  isofficial: f
+  percentage: 16.8
+countrylanguages_252:
+  countrycode: sgp
+  language: tamil
+  isofficial: t
+  percentage: 7.4
+countrylanguages_253:
+  countrycode: eth
+  language: oromo
+  isofficial: f
+  percentage: 31.0
+countrylanguages_254:
+  countrycode: zmb
+  language: chewa
+  isofficial: f
+  percentage: 5.7
+countrylanguages_255:
+  countrycode: fin
+  language: estonian
+  isofficial: f
+  percentage: 0.2
+countrylanguages_256:
+  countrycode: mrt
+  language: ful
+  isofficial: f
+  percentage: 1.2
+countrylanguages_257:
+  countrycode: slb
+  language: polynesian languages
+  isofficial: f
+  percentage: 3.8
+countrylanguages_258:
+  countrycode: tmp
+  language: portuguese
+  isofficial: t
+  percentage: 0.0
+countrylanguages_259:
+  countrycode: and
+  language: catalan
+  isofficial: t
+  percentage: 32.3
+countrylanguages_260:
+  countrycode: bgd
+  language: chakma
+  isofficial: f
+  percentage: 0.4
+countrylanguages_261:
+  countrycode: chn
+  language: mongolian
+  isofficial: f
+  percentage: 0.4
+countrylanguages_262:
+  countrycode: civ
+  language: malinke
+  isofficial: f
+  percentage: 11.4
+countrylanguages_263:
+  countrycode: irn
+  language: gilaki
+  isofficial: f
+  percentage: 5.3
+countrylanguages_264:
+  countrycode: kor
+  language: chinese
+  isofficial: f
+  percentage: 0.1
+countrylanguages_265:
+  countrycode: moz
+  language: lomwe
+  isofficial: f
+  percentage: 7.8
+countrylanguages_266:
+  countrycode: mwi
+  language: ngoni
+  isofficial: f
+  percentage: 6.7
+countrylanguages_267:
+  countrycode: tza
+  language: hehet
+  isofficial: f
+  percentage: 6.9
+countrylanguages_268:
+  countrycode: fro
+  language: danish
+  isofficial: t
+  percentage: 0.0
+countrylanguages_269:
+  countrycode: lbr
+  language: malinke
+  isofficial: f
+  percentage: 5.1
+countrylanguages_270:
+  countrycode: nld
+  language: dutch
+  isofficial: t
+  percentage: 95.6
+countrylanguages_271:
+  countrycode: nor
+  language: danish
+  isofficial: f
+  percentage: 0.4
+countrylanguages_272:
+  countrycode: per
+  language: spanish
+  isofficial: t
+  percentage: 79.8
+countrylanguages_273:
+  countrycode: rwa
+  language: rwanda
+  isofficial: t
+  percentage: 100.0
+countrylanguages_274:
+  countrycode: twn
+  language: ami
+  isofficial: f
+  percentage: 0.6
+countrylanguages_275:
+  countrycode: usa
+  language: polish
+  isofficial: f
+  percentage: 0.3
+countrylanguages_276:
+  countrycode: civ
+  language: '[south]mande'
+  isofficial: f
+  percentage: 7.7
+countrylanguages_277:
+  countrycode: cri
+  language: chinese
+  isofficial: f
+  percentage: 0.2
+countrylanguages_278:
+  countrycode: esp
+  language: galecian
+  isofficial: f
+  percentage: 6.4
+countrylanguages_279:
+  countrycode: mli
+  language: bambara
+  isofficial: f
+  percentage: 31.8
+countrylanguages_280:
+  countrycode: mli
+  language: songhai
+  isofficial: f
+  percentage: 6.9
+countrylanguages_281:
+  countrycode: mng
+  language: mongolian
+  isofficial: t
+  percentage: 78.8
+countrylanguages_282:
+  countrycode: nga
+  language: joruba
+  isofficial: f
+  percentage: 21.4
+countrylanguages_283:
+  countrycode: sdn
+  language: dinka
+  isofficial: f
+  percentage: 11.5
+countrylanguages_284:
+  countrycode: tha
+  language: lao
+  isofficial: f
+  percentage: 26.9
+countrylanguages_285:
+  countrycode: bgd
+  language: marma
+  isofficial: f
+  percentage: 0.2
+countrylanguages_286:
+  countrycode: cmr
+  language: maka
+  isofficial: f
+  percentage: 4.9
+countrylanguages_287:
+  countrycode: cmr
+  language: masana
+  isofficial: f
+  percentage: 3.9
+countrylanguages_288:
+  countrycode: cze
+  language: polish
+  isofficial: f
+  percentage: 0.6
+countrylanguages_289:
+  countrycode: ken
+  language: nyika
+  isofficial: f
+  percentage: 4.8
+countrylanguages_290:
+  countrycode: mhl
+  language: english
+  isofficial: t
+  percentage: 0.0
+countrylanguages_291:
+  countrycode: pol
+  language: polish
+  isofficial: t
+  percentage: 97.6
+countrylanguages_292:
+  countrycode: rus
+  language: tatar
+  isofficial: f
+  percentage: 3.2
+countrylanguages_293:
+  countrycode: swe
+  language: swedish
+  isofficial: t
+  percentage: 89.5
+countrylanguages_294:
+  countrycode: ury
+  language: spanish
+  isofficial: t
+  percentage: 95.7
+countrylanguages_295:
+  countrycode: uzb
+  language: russian
+  isofficial: f
+  percentage: 10.9
+countrylanguages_296:
+  countrycode: aia
+  language: english
+  isofficial: t
+  percentage: 0.0
+countrylanguages_297:
+  countrycode: cri
+  language: spanish
+  isofficial: t
+  percentage: 97.5
+countrylanguages_298:
+  countrycode: mnp
+  language: philippene languages
+  isofficial: f
+  percentage: 34.1
+countrylanguages_299:
+  countrycode: png
+  language: papuan languages
+  isofficial: f
+  percentage: 78.1
+countrylanguages_300:
+  countrycode: pry
+  language: portuguese
+  isofficial: f
+  percentage: 3.2
+countrylanguages_301:
+  countrycode: reu
+  language: chinese
+  isofficial: f
+  percentage: 2.8
+countrylanguages_302:
+  countrycode: vgb
+  language: english
+  isofficial: t
+  percentage: 0.0
+countrylanguages_303:
+  countrycode: and
+  language: french
+  isofficial: f
+  percentage: 6.2
+countrylanguages_304:
+  countrycode: irn
+  language: mazandarani
+  isofficial: f
+  percentage: 3.6
+countrylanguages_305:
+  countrycode: kgz
+  language: kirgiz
+  isofficial: t
+  percentage: 59.7
+countrylanguages_306:
+  countrycode: sen
+  language: serer
+  isofficial: f
+  percentage: 12.5
+countrylanguages_307:
+  countrycode: syc
+  language: seselwa
+  isofficial: f
+  percentage: 91.3
+countrylanguages_308:
+  countrycode: tto
+  language: hindi
+  isofficial: f
+  percentage: 3.4
+countrylanguages_309:
+  countrycode: aus
+  language: serbo-croatian
+  isofficial: f
+  percentage: 0.6
+countrylanguages_310:
+  countrycode: aut
+  language: turkish
+  isofficial: f
+  percentage: 1.5
+countrylanguages_311:
+  countrycode: cmr
+  language: duala
+  isofficial: f
+  percentage: 10.9
+countrylanguages_312:
+  countrycode: gtm
+  language: cakchiquel
+  isofficial: f
+  percentage: 8.9
+countrylanguages_313:
+  countrycode: isl
+  language: english
+  isofficial: f
+  percentage: 0.0
+countrylanguages_314:
+  countrycode: kaz
+  language: german
+  isofficial: f
+  percentage: 3.1
+countrylanguages_315:
+  countrycode: kgz
+  language: uzbek
+  isofficial: f
+  percentage: 14.1
+countrylanguages_316:
+  countrycode: mkd
+  language: serbo-croatian
+  isofficial: f
+  percentage: 2.0
+countrylanguages_317:
+  countrycode: nor
+  language: english
+  isofficial: f
+  percentage: 0.5
+countrylanguages_318:
+  countrycode: zaf
+  language: afrikaans
+  isofficial: t
+  percentage: 14.3
+countrylanguages_319:
+  countrycode: aze
+  language: lezgian
+  isofficial: f
+  percentage: 2.3
+countrylanguages_320:
+  countrycode: idn
+  language: bali
+  isofficial: f
+  percentage: 1.7
+countrylanguages_321:
+  countrycode: nga
+  language: hausa
+  isofficial: f
+  percentage: 21.1
+countrylanguages_322:
+  countrycode: som
+  language: arabic
+  isofficial: t
+  percentage: 0.0
+countrylanguages_323:
+  countrycode: tha
+  language: malay
+  isofficial: f
+  percentage: 3.6
+countrylanguages_324:
+  countrycode: tmp
+  language: sunda
+  isofficial: f
+  percentage: 0.0
+countrylanguages_325:
+  countrycode: vnm
+  language: khmer
+  isofficial: f
+  percentage: 1.4
+countrylanguages_326:
+  countrycode: ind
+  language: tamil
+  isofficial: f
+  percentage: 6.3
+countrylanguages_327:
+  countrycode: ken
+  language: meru
+  isofficial: f
+  percentage: 5.5
+countrylanguages_328:
+  countrycode: lbr
+  language: gio
+  isofficial: f
+  percentage: 7.9
+countrylanguages_329:
+  countrycode: lca
+  language: creole french
+  isofficial: f
+  percentage: 80.0
+countrylanguages_330:
+  countrycode: nga
+  language: kanuri
+  isofficial: f
+  percentage: 4.1
+countrylanguages_331:
+  countrycode: sjm
+  language: russian
+  isofficial: f
+  percentage: 0.0
+countrylanguages_332:
+  countrycode: sle
+  language: yalunka
+  isofficial: f
+  percentage: 3.4
+countrylanguages_333:
+  countrycode: tza
+  language: shambala
+  isofficial: f
+  percentage: 4.3
+countrylanguages_334:
+  countrycode: uga
+  language: kiga
+  isofficial: f
+  percentage: 8.3
+countrylanguages_335:
+  countrycode: arg
+  language: indian languages
+  isofficial: f
+  percentage: 0.3
+countrylanguages_336:
+  countrycode: bel
+  language: italian
+  isofficial: f
+  percentage: 2.4
+countrylanguages_337:
+  countrycode: mnp
+  language: korean
+  isofficial: f
+  percentage: 6.5
+countrylanguages_338:
+  countrycode: nam
+  language: nama
+  isofficial: f
+  percentage: 12.4
+countrylanguages_339:
+  countrycode: nga
+  language: ful
+  isofficial: f
+  percentage: 11.3
+countrylanguages_340:
+  countrycode: sdn
+  language: beja
+  isofficial: f
+  percentage: 6.4
+countrylanguages_341:
+  countrycode: sdn
+  language: zande
+  isofficial: f
+  percentage: 2.7
+countrylanguages_342:
+  countrycode: swe
+  language: arabic
+  isofficial: f
+  percentage: 0.8
+countrylanguages_343:
+  countrycode: tcd
+  language: sara
+  isofficial: f
+  percentage: 27.7
+countrylanguages_344:
+  countrycode: uzb
+  language: karakalpak
+  isofficial: f
+  percentage: 2.0
+countrylanguages_345:
+  countrycode: deu
+  language: turkish
+  isofficial: f
+  percentage: 2.6
+countrylanguages_346:
+  countrycode: hkg
+  language: fukien
+  isofficial: f
+  percentage: 1.9
+countrylanguages_347:
+  countrycode: irn
+  language: kurdish
+  isofficial: f
+  percentage: 9.1
+countrylanguages_348:
+  countrycode: jpn
+  language: chinese
+  isofficial: f
+  percentage: 0.2
+countrylanguages_349:
+  countrycode: mco
+  language: french
+  isofficial: t
+  percentage: 41.9
+countrylanguages_350:
+  countrycode: nga
+  language: bura
+  isofficial: f
+  percentage: 1.6
+countrylanguages_351:
+  countrycode: pak
+  language: hindko
+  isofficial: f
+  percentage: 2.4
+countrylanguages_352:
+  countrycode: glp
+  language: french
+  isofficial: t
+  percentage: 0.0
+countrylanguages_353:
+  countrycode: gmb
+  language: ful
+  isofficial: f
+  percentage: 16.2
+countrylanguages_354:
+  countrycode: gum
+  language: japanese
+  isofficial: f
+  percentage: 2.0
+countrylanguages_355:
+  countrycode: hti
+  language: haiti creole
+  isofficial: f
+  percentage: 100.0
+countrylanguages_356:
+  countrycode: mnp
+  language: english
+  isofficial: t
+  percentage: 4.8
+countrylanguages_357:
+  countrycode: rus
+  language: bashkir
+  isofficial: f
+  percentage: 0.7
+countrylanguages_358:
+  countrycode: zaf
+  language: english
+  isofficial: t
+  percentage: 8.5
+countrylanguages_359:
+  countrycode: zwe
+  language: english
+  isofficial: t
+  percentage: 2.2
+countrylanguages_360:
+  countrycode: ben
+  language: joruba
+  isofficial: f
+  percentage: 12.2
+countrylanguages_361:
+  countrycode: bih
+  language: serbo-croatian
+  isofficial: t
+  percentage: 99.2
+countrylanguages_362:
+  countrycode: esp
+  language: basque
+  isofficial: f
+  percentage: 1.6
+countrylanguages_363:
+  countrycode: fro
+  language: faroese
+  isofficial: t
+  percentage: 100.0
+countrylanguages_364:
+  countrycode: tkl
+  language: tokelau
+  isofficial: f
+  percentage: 0.0
+countrylanguages_365:
+  countrycode: cck
+  language: english
+  isofficial: t
+  percentage: 0.0
+countrylanguages_366:
+  countrycode: cok
+  language: english
+  isofficial: f
+  percentage: 0.0
+countrylanguages_367:
+  countrycode: fra
+  language: italian
+  isofficial: f
+  percentage: 0.4
+countrylanguages_368:
+  countrycode: ita
+  language: albaniana
+  isofficial: f
+  percentage: 0.2
+countrylanguages_369:
+  countrycode: moz
+  language: tswa
+  isofficial: f
+  percentage: 6.0
+countrylanguages_370:
+  countrycode: mwi
+  language: chichewa
+  isofficial: t
+  percentage: 58.3
+countrylanguages_371:
+  countrycode: pak
+  language: balochi
+  isofficial: f
+  percentage: 3.0
+countrylanguages_372:
+  countrycode: plw
+  language: philippene languages
+  isofficial: f
+  percentage: 9.2
+countrylanguages_373:
+  countrycode: tur
+  language: kurdish
+  isofficial: f
+  percentage: 10.6
+countrylanguages_374:
+  countrycode: zwe
+  language: shona
+  isofficial: f
+  percentage: 72.1
+countrylanguages_375:
+  countrycode: and
+  language: portuguese
+  isofficial: f
+  percentage: 10.8
+countrylanguages_376:
+  countrycode: bdi
+  language: kirundi
+  isofficial: t
+  percentage: 98.1
+countrylanguages_377:
+  countrycode: can
+  language: ukrainian
+  isofficial: f
+  percentage: 0.6
+countrylanguages_378:
+  countrycode: chn
+  language: dong
+  isofficial: f
+  percentage: 0.2
+countrylanguages_379:
+  countrycode: dma
+  language: creole french
+  isofficial: f
+  percentage: 0.0
+countrylanguages_380:
+  countrycode: ind
+  language: telugu
+  isofficial: f
+  percentage: 7.8
+countrylanguages_381:
+  countrycode: irq
+  language: persian
+  isofficial: f
+  percentage: 0.8
+countrylanguages_382:
+  countrycode: jpn
+  language: japanese
+  isofficial: t
+  percentage: 99.1
+countrylanguages_383:
+  countrycode: pyf
+  language: tahitian
+  isofficial: f
+  percentage: 46.4
+countrylanguages_384:
+  countrycode: tha
+  language: khmer
+  isofficial: f
+  percentage: 1.3
+countrylanguages_385:
+  countrycode: tkl
+  language: english
+  isofficial: t
+  percentage: 0.0
+countrylanguages_386:
+  countrycode: bwa
+  language: san
+  isofficial: f
+  percentage: 3.5
+countrylanguages_387:
+  countrycode: cok
+  language: maori
+  isofficial: t
+  percentage: 0.0
+countrylanguages_388:
+  countrycode: cri
+  language: creole english
+  isofficial: f
+  percentage: 2.0
+countrylanguages_389:
+  countrycode: fsm
+  language: pohnpei
+  isofficial: f
+  percentage: 23.8
+countrylanguages_390:
+  countrycode: irn
+  language: bakhtyari
+  isofficial: f
+  percentage: 1.7
+countrylanguages_391:
+  countrycode: jpn
+  language: korean
+  isofficial: f
+  percentage: 0.5
+countrylanguages_392:
+  countrycode: lbr
+  language: bassa
+  isofficial: f
+  percentage: 13.7
+countrylanguages_393:
+  countrycode: lso
+  language: sotho
+  isofficial: t
+  percentage: 85.0
+countrylanguages_394:
+  countrycode: mus
+  language: french
+  isofficial: f
+  percentage: 3.4
+countrylanguages_395:
+  countrycode: syc
+  language: english
+  isofficial: t
+  percentage: 3.8
+countrylanguages_396:
+  countrycode: vut
+  language: english
+  isofficial: t
+  percentage: 28.3
+countrylanguages_397:
+  countrycode: bgr
+  language: macedonian
+  isofficial: f
+  percentage: 2.6
+countrylanguages_398:
+  countrycode: com
+  language: comorian-swahili
+  isofficial: f
+  percentage: 0.5
+countrylanguages_399:
+  countrycode: fin
+  language: finnish
+  isofficial: t
+  percentage: 92.7
+countrylanguages_400:
+  countrycode: rus
+  language: chechen
+  isofficial: f
+  percentage: 0.6
+countrylanguages_401:
+  countrycode: sdn
+  language: arabic
+  isofficial: t
+  percentage: 49.4
+countrylanguages_402:
+  countrycode: tza
+  language: luguru
+  isofficial: f
+  percentage: 4.9
+countrylanguages_403:
+  countrycode: usa
+  language: german
+  isofficial: f
+  percentage: 0.7
+countrylanguages_404:
+  countrycode: chn
+  language: puyi
+  isofficial: f
+  percentage: 0.2
+countrylanguages_405:
+  countrycode: col
+  language: creole english
+  isofficial: f
+  percentage: 0.1
+countrylanguages_406:
+  countrycode: mmr
+  language: kayah
+  isofficial: f
+  percentage: 0.4
+countrylanguages_407:
+  countrycode: nam
+  language: kavango
+  isofficial: f
+  percentage: 9.7
+countrylanguages_408:
+  countrycode: npl
+  language: bhojpuri
+  isofficial: f
+  percentage: 7.5
+countrylanguages_409:
+  countrycode: tca
+  language: english
+  isofficial: t
+  percentage: 0.0
+countrylanguages_410:
+  countrycode: tgo
+  language: ane
+  isofficial: f
+  percentage: 5.7
+countrylanguages_411:
+  countrycode: vir
+  language: french
+  isofficial: f
+  percentage: 2.5
+countrylanguages_412:
+  countrycode: gin
+  language: yalunka
+  isofficial: f
+  percentage: 2.9
+countrylanguages_413:
+  countrycode: ita
+  language: romani
+  isofficial: f
+  percentage: 0.2
+countrylanguages_414:
+  countrycode: uga
+  language: lango
+  isofficial: f
+  percentage: 5.9
+countrylanguages_415:
+  countrycode: usa
+  language: french
+  isofficial: f
+  percentage: 0.7
+countrylanguages_416:
+  countrycode: ago
+  language: chokwe
+  isofficial: f
+  percentage: 4.2
+countrylanguages_417:
+  countrycode: dnk
+  language: danish
+  isofficial: t
+  percentage: 93.5
+countrylanguages_418:
+  countrycode: fra
+  language: turkish
+  isofficial: f
+  percentage: 0.4
+countrylanguages_419:
+  countrycode: pak
+  language: urdu
+  isofficial: t
+  percentage: 7.6
+countrylanguages_420:
+  countrycode: prt
+  language: portuguese
+  isofficial: t
+  percentage: 99.0
+countrylanguages_421:
+  countrycode: reu
+  language: malagasy
+  isofficial: f
+  percentage: 1.4
+countrylanguages_422:
+  countrycode: twn
+  language: mandarin chinese
+  isofficial: t
+  percentage: 20.1
+countrylanguages_423:
+  countrycode: usa
+  language: english
+  isofficial: t
+  percentage: 86.2
+countrylanguages_424:
+  countrycode: com
+  language: comorian-arabic
+  isofficial: f
+  percentage: 1.6
+countrylanguages_425:
+  countrycode: deu
+  language: greek
+  isofficial: f
+  percentage: 0.4
+countrylanguages_426:
+  countrycode: kor
+  language: korean
+  isofficial: t
+  percentage: 99.9
+countrylanguages_427:
+  countrycode: lca
+  language: english
+  isofficial: t
+  percentage: 20.0
+countrylanguages_428:
+  countrycode: pan
+  language: creole english
+  isofficial: f
+  percentage: 14.0
+countrylanguages_429:
+  countrycode: sle
+  language: limba
+  isofficial: f
+  percentage: 8.3
+countrylanguages_430:
+  countrycode: and
+  language: spanish
+  isofficial: f
+  percentage: 44.6
+countrylanguages_431:
+  countrycode: bhs
+  language: creole french
+  isofficial: f
+  percentage: 10.3
+countrylanguages_432:
+  countrycode: fsm
+  language: trukese
+  isofficial: f
+  percentage: 41.6
+countrylanguages_433:
+  countrycode: geo
+  language: azerbaijani
+  isofficial: f
+  percentage: 5.5
+countrylanguages_434:
+  countrycode: jpn
+  language: philippene languages
+  isofficial: f
+  percentage: 0.1
+countrylanguages_435:
+  countrycode: mrt
+  language: hassaniya
+  isofficial: f
+  percentage: 81.7
+countrylanguages_436:
+  countrycode: sen
+  language: soninke
+  isofficial: f
+  percentage: 1.3
+countrylanguages_437:
+  countrycode: slb
+  language: papuan languages
+  isofficial: f
+  percentage: 8.6
+countrylanguages_438:
+  countrycode: slv
+  language: nahua
+  isofficial: f
+  percentage: 0.0
+countrylanguages_439:
+  countrycode: uga
+  language: gisu
+  isofficial: f
+  percentage: 4.5
+countrylanguages_440:
+  countrycode: cze
+  language: moravian
+  isofficial: f
+  percentage: 12.9
+countrylanguages_441:
+  countrycode: deu
+  language: german
+  isofficial: t
+  percentage: 91.3
+countrylanguages_442:
+  countrycode: fsm
+  language: mortlock
+  isofficial: f
+  percentage: 7.6
+countrylanguages_443:
+  countrycode: ind
+  language: punjabi
+  isofficial: f
+  percentage: 2.8
+countrylanguages_444:
+  countrycode: mtq
+  language: creole french
+  isofficial: f
+  percentage: 96.6
+countrylanguages_445:
+  countrycode: mus
+  language: bhojpuri
+  isofficial: f
+  percentage: 21.1
+countrylanguages_446:
+  countrycode: mys
+  language: iban
+  isofficial: f
+  percentage: 2.8
+countrylanguages_447:
+  countrycode: pry
+  language: guaran
+  isofficial: t
+  percentage: 40.1
+countrylanguages_448:
+  countrycode: yug
+  language: albaniana
+  isofficial: f
+  percentage: 16.5
+countrylanguages_449:
+  countrycode: bel
+  language: dutch
+  isofficial: t
+  percentage: 59.2
+countrylanguages_450:
+  countrycode: can
+  language: spanish
+  isofficial: f
+  percentage: 0.7
+countrylanguages_451:
+  countrycode: deu
+  language: southern slavic languages
+  isofficial: f
+  percentage: 1.4
+countrylanguages_452:
+  countrycode: yem
+  language: soqutri
+  isofficial: f
+  percentage: 0.0
+countrylanguages_453:
+  countrycode: jam
+  language: hindi
+  isofficial: f
+  percentage: 1.9
+countrylanguages_454:
+  countrycode: ken
+  language: gusii
+  isofficial: f
+  percentage: 6.1
+countrylanguages_455:
+  countrycode: myt
+  language: french
+  isofficial: t
+  percentage: 20.3
+countrylanguages_456:
+  countrycode: nam
+  language: german
+  isofficial: f
+  percentage: 0.9
+countrylanguages_457:
+  countrycode: plw
+  language: english
+  isofficial: t
+  percentage: 3.2
+countrylanguages_458:
+  countrycode: qat
+  language: urdu
+  isofficial: f
+  percentage: 0.0
+countrylanguages_459:
+  countrycode: rus
+  language: russian
+  isofficial: t
+  percentage: 86.6
+countrylanguages_460:
+  countrycode: uzb
+  language: tadzhik
+  isofficial: f
+  percentage: 4.4
+countrylanguages_461:
+  countrycode: aus
+  language: english
+  isofficial: t
+  percentage: 81.2
+countrylanguages_462:
+  countrycode: bol
+  language: spanish
+  isofficial: t
+  percentage: 87.7
+countrylanguages_463:
+  countrycode: cmr
+  language: tikar
+  isofficial: f
+  percentage: 7.4
+countrylanguages_464:
+  countrycode: egy
+  language: arabic
+  isofficial: t
+  percentage: 98.8
+countrylanguages_465:
+  countrycode: lao
+  language: mon-khmer
+  isofficial: f
+  percentage: 16.5
+countrylanguages_466:
+  countrycode: ben
+  language: fon
+  isofficial: f
+  percentage: 39.8
+countrylanguages_467:
+  countrycode: col
+  language: chibcha
+  isofficial: f
+  percentage: 0.4
+countrylanguages_468:
+  countrycode: ecu
+  language: spanish
+  isofficial: t
+  percentage: 93.0
+countrylanguages_469:
+  countrycode: idn
+  language: batakki
+  isofficial: f
+  percentage: 2.2
+countrylanguages_470:
+  countrycode: ner
+  language: songhai-zerma
+  isofficial: f
+  percentage: 21.2
+countrylanguages_471:
+  countrycode: asm
+  language: english
+  isofficial: t
+  percentage: 3.1
+countrylanguages_472:
+  countrycode: dnk
+  language: norwegian
+  isofficial: f
+  percentage: 0.3
+countrylanguages_473:
+  countrycode: isr
+  language: hebrew
+  isofficial: t
+  percentage: 63.1
+countrylanguages_474:
+  countrycode: mar
+  language: berberi
+  isofficial: f
+  percentage: 33.0
+countrylanguages_475:
+  countrycode: cck
+  language: malay
+  isofficial: f
+  percentage: 0.0
+countrylanguages_476:
+  countrycode: gmb
+  language: soninke
+  isofficial: f
+  percentage: 7.6
+countrylanguages_477:
+  countrycode: mkd
+  language: macedonian
+  isofficial: t
+  percentage: 66.5
+countrylanguages_478:
+  countrycode: mng
+  language: bajad
+  isofficial: f
+  percentage: 1.9
+countrylanguages_479:
+  countrycode: nzl
+  language: english
+  isofficial: t
+  percentage: 87.0
+countrylanguages_480:
+  countrycode: twn
+  language: hakka
+  isofficial: f
+  percentage: 11.0
+countrylanguages_481:
+  countrycode: che
+  language: italian
+  isofficial: t
+  percentage: 7.7
+countrylanguages_482:
+  countrycode: cze
+  language: hungarian
+  isofficial: f
+  percentage: 0.2
+countrylanguages_483:
+  countrycode: eri
+  language: hadareb
+  isofficial: f
+  percentage: 3.8
+countrylanguages_484:
+  countrycode: mda
+  language: ukrainian
+  isofficial: f
+  percentage: 8.6
+countrylanguages_485:
+  countrycode: swe
+  language: finnish
+  isofficial: f
+  percentage: 2.4
+countrylanguages_486:
+  countrycode: uga
+  language: nkole
+  isofficial: f
+  percentage: 10.7
+countrylanguages_487:
+  countrycode: usa
+  language: chinese
+  isofficial: f
+  percentage: 0.6
+countrylanguages_488:
+  countrycode: ven
+  language: spanish
+  isofficial: t
+  percentage: 96.9
+countrylanguages_489:
+  countrycode: alb
+  language: albaniana
+  isofficial: t
+  percentage: 97.9
+countrylanguages_490:
+  countrycode: cze
+  language: slovak
+  isofficial: f
+  percentage: 3.1
+countrylanguages_491:
+  countrycode: irq
+  language: kurdish
+  isofficial: f
+  percentage: 19.0
+countrylanguages_492:
+  countrycode: ken
+  language: luo
+  isofficial: f
+  percentage: 12.8
+countrylanguages_493:
+  countrycode: mex
+  language: mixtec
+  isofficial: f
+  percentage: 0.6
+countrylanguages_494:
+  countrycode: afg
+  language: turkmenian
+  isofficial: f
+  percentage: 1.9
+countrylanguages_495:
+  countrycode: bfa
+  language: busansi
+  isofficial: f
+  percentage: 3.5
+countrylanguages_496:
+  countrycode: bfa
+  language: dyula
+  isofficial: f
+  percentage: 2.6
+countrylanguages_497:
+  countrycode: cze
+  language: romani
+  isofficial: f
+  percentage: 0.3
+countrylanguages_498:
+  countrycode: ken
+  language: kikuyu
+  isofficial: f
+  percentage: 20.9
+countrylanguages_499:
+  countrycode: kgz
+  language: kazakh
+  isofficial: f
+  percentage: 0.8
+countrylanguages_500:
+  countrycode: kgz
+  language: tadzhik
+  isofficial: f
+  percentage: 0.8
+countrylanguages_501:
+  countrycode: lux
+  language: luxembourgish
+  isofficial: t
+  percentage: 64.4
+countrylanguages_502:
+  countrycode: mmr
+  language: burmese
+  isofficial: t
+  percentage: 69.0
+countrylanguages_503:
+  countrycode: mus
+  language: creole french
+  isofficial: f
+  percentage: 70.6
+countrylanguages_504:
+  countrycode: rus
+  language: avarian
+  isofficial: f
+  percentage: 0.4
+countrylanguages_505:
+  countrycode: rus
+  language: ukrainian
+  isofficial: f
+  percentage: 1.3
+countrylanguages_506:
+  countrycode: cog
+  language: punu
+  isofficial: f
+  percentage: 2.9
+countrylanguages_507:
+  countrycode: gin
+  language: kissi
+  isofficial: f
+  percentage: 6.0
+countrylanguages_508:
+  countrycode: gmb
+  language: malinke
+  isofficial: f
+  percentage: 34.1
+countrylanguages_509:
+  countrycode: ncl
+  language: polynesian languages
+  isofficial: f
+  percentage: 11.6
+countrylanguages_510:
+  countrycode: pak
+  language: saraiki
+  isofficial: f
+  percentage: 9.8
+countrylanguages_511:
+  countrycode: svk
+  language: czech and moravian
+  isofficial: f
+  percentage: 1.1
+countrylanguages_512:
+  countrycode: abw
+  language: papiamento
+  isofficial: f
+  percentage: 76.7
+countrylanguages_513:
+  countrycode: bol
+  language: aimar
+  isofficial: t
+  percentage: 3.2
+countrylanguages_514:
+  countrycode: can
+  language: polish
+  isofficial: f
+  percentage: 0.7
+countrylanguages_515:
+  countrycode: col
+  language: spanish
+  isofficial: t
+  percentage: 99.0
+countrylanguages_516:
+  countrycode: phl
+  language: maranao
+  isofficial: f
+  percentage: 1.3
+countrylanguages_517:
+  countrycode: phl
+  language: waray-waray
+  isofficial: f
+  percentage: 3.8
+countrylanguages_518:
+  countrycode: plw
+  language: chinese
+  isofficial: f
+  percentage: 1.6
+countrylanguages_519:
+  countrycode: ind
+  language: marathi
+  isofficial: f
+  percentage: 7.4
+countrylanguages_520:
+  countrycode: kgz
+  language: russian
+  isofficial: t
+  percentage: 16.2
+countrylanguages_521:
+  countrycode: yug
+  language: macedonian
+  isofficial: f
+  percentage: 0.5
+countrylanguages_522:
+  countrycode: yug
+  language: romani
+  isofficial: f
+  percentage: 1.4
+countrylanguages_523:
+  countrycode: bgd
+  language: khasi
+  isofficial: f
+  percentage: 0.1
+countrylanguages_524:
+  countrycode: chn
+  language: tujia
+  isofficial: f
+  percentage: 0.5
+countrylanguages_525:
+  countrycode: ken
+  language: turkana
+  isofficial: f
+  percentage: 1.4
+countrylanguages_526:
+  countrycode: pan
+  language: guaym
+  isofficial: f
+  percentage: 5.3
+countrylanguages_527:
+  countrycode: uga
+  language: teso
+  isofficial: f
+  percentage: 6.0
+countrylanguages_528:
+  countrycode: zaf
+  language: xhosa
+  isofficial: t
+  percentage: 17.7
+countrylanguages_529:
+  countrycode: com
+  language: comorian
+  isofficial: t
+  percentage: 75.0
+countrylanguages_530:
+  countrycode: fji
+  language: hindi
+  isofficial: f
+  percentage: 43.7
+countrylanguages_531:
+  countrycode: idn
+  language: sunda
+  isofficial: f
+  percentage: 15.8
+countrylanguages_532:
+  countrycode: jpn
+  language: ainu
+  isofficial: f
+  percentage: 0.0
+countrylanguages_533:
+  countrycode: mnp
+  language: carolinian
+  isofficial: f
+  percentage: 4.8
+countrylanguages_534:
+  countrycode: nga
+  language: tiv
+  isofficial: f
+  percentage: 2.3
+countrylanguages_535:
+  countrycode: nic
+  language: sumo
+  isofficial: f
+  percentage: 0.2
+countrylanguages_536:
+  countrycode: sle
+  language: temne
+  isofficial: f
+  percentage: 31.8
+countrylanguages_537:
+  countrycode: vut
+  language: bislama
+  isofficial: t
+  percentage: 56.6
+countrylanguages_538:
+  countrycode: aut
+  language: romanian
+  isofficial: f
+  percentage: 0.2
+countrylanguages_539:
+  countrycode: brn
+  language: malay
+  isofficial: t
+  percentage: 45.5
+countrylanguages_540:
+  countrycode: kna
+  language: english
+  isofficial: t
+  percentage: 0.0
+countrylanguages_541:
+  countrycode: kwt
+  language: english
+  isofficial: f
+  percentage: 0.0
+countrylanguages_542:
+  countrycode: mda
+  language: bulgariana
+  isofficial: f
+  percentage: 1.6
+countrylanguages_543:
+  countrycode: svn
+  language: slovene
+  isofficial: t
+  percentage: 87.9
+countrylanguages_544:
+  countrycode: zaf
+  language: zulu
+  isofficial: t
+  percentage: 22.7
+countrylanguages_545:
+  countrycode: asm
+  language: tongan
+  isofficial: f
+  percentage: 3.1
+countrylanguages_546:
+  countrycode: bgr
+  language: turkish
+  isofficial: f
+  percentage: 9.4
+countrylanguages_547:
+  countrycode: brn
+  language: english
+  isofficial: f
+  percentage: 3.1
+countrylanguages_548:
+  countrycode: chl
+  language: aimar
+  isofficial: f
+  percentage: 0.5
+countrylanguages_549:
+  countrycode: gab
+  language: mpongwe
+  isofficial: f
+  percentage: 14.6
+countrylanguages_550:
+  countrycode: idn
+  language: madura
+  isofficial: f
+  percentage: 4.3
+countrylanguages_551:
+  countrycode: lka
+  language: tamil
+  isofficial: t
+  percentage: 19.6
+countrylanguages_552:
+  countrycode: nga
+  language: ibo
+  isofficial: f
+  percentage: 18.1
+countrylanguages_553:
+  countrycode: nru
+  language: chinese
+  isofficial: f
+  percentage: 8.5
+countrylanguages_554:
+  countrycode: pol
+  language: ukrainian
+  isofficial: f
+  percentage: 0.6
+countrylanguages_555:
+  countrycode: zaf
+  language: tsonga
+  isofficial: f
+  percentage: 4.3
+countrylanguages_556:
+  countrycode: zwe
+  language: ndebele
+  isofficial: f
+  percentage: 16.2
+countrylanguages_557:
+  countrycode: bol
+  language: ket
+  isofficial: t
+  percentage: 8.1
+countrylanguages_558:
+  countrycode: caf
+  language: ngbaka
+  isofficial: f
+  percentage: 7.5
+countrylanguages_559:
+  countrycode: chn
+  language: yi
+  isofficial: f
+  percentage: 0.6
+countrylanguages_560:
+  countrycode: grd
+  language: creole english
+  isofficial: f
+  percentage: 100.0
+countrylanguages_561:
+  countrycode: mng
+  language: kazakh
+  isofficial: f
+  percentage: 5.9
+countrylanguages_562:
+  countrycode: mys
+  language: chinese
+  isofficial: f
+  percentage: 9.0
+countrylanguages_563:
+  countrycode: usa
+  language: italian
+  isofficial: f
+  percentage: 0.6
+countrylanguages_564:
+  countrycode: usa
+  language: portuguese
+  isofficial: f
+  percentage: 0.2
+countrylanguages_565:
+  countrycode: usa
+  language: spanish
+  isofficial: f
+  percentage: 7.5
+countrylanguages_566:
+  countrycode: zmb
+  language: nyanja
+  isofficial: f
+  percentage: 7.8
+countrylanguages_567:
+  countrycode: cyp
+  language: greek
+  isofficial: t
+  percentage: 74.1
+countrylanguages_568:
+  countrycode: cyp
+  language: turkish
+  isofficial: t
+  percentage: 22.4
+countrylanguages_569:
+  countrycode: gin
+  language: kpelle
+  isofficial: f
+  percentage: 4.6
+countrylanguages_570:
+  countrycode: isl
+  language: icelandic
+  isofficial: t
+  percentage: 95.7
+countrylanguages_571:
+  countrycode: moz
+  language: chuabo
+  isofficial: f
+  percentage: 5.7
+countrylanguages_572:
+  countrycode: moz
+  language: shona
+  isofficial: f
+  percentage: 6.5
+countrylanguages_573:
+  countrycode: ner
+  language: hausa
+  isofficial: f
+  percentage: 53.1
+countrylanguages_574:
+  countrycode: svk
+  language: romani
+  isofficial: f
+  percentage: 1.7
+countrylanguages_575:
+  countrycode: egy
+  language: sinaberberi
+  isofficial: f
+  percentage: 0.0
+countrylanguages_576:
+  countrycode: gbr
+  language: gaeli
+  isofficial: f
+  percentage: 0.1
+countrylanguages_577:
+  countrycode: ltu
+  language: russian
+  isofficial: f
+  percentage: 8.1
+countrylanguages_578:
+  countrycode: nld
+  language: fries
+  isofficial: f
+  percentage: 3.7
+countrylanguages_579:
+  countrycode: bel
+  language: arabic
+  isofficial: f
+  percentage: 1.6
+countrylanguages_580:
+  countrycode: bhs
+  language: creole english
+  isofficial: f
+  percentage: 89.7
+countrylanguages_581:
+  countrycode: cod
+  language: mongo
+  isofficial: f
+  percentage: 13.5
+countrylanguages_582:
+  countrycode: fsm
+  language: yap
+  isofficial: f
+  percentage: 5.8
+countrylanguages_583:
+  countrycode: gbr
+  language: kymri
+  isofficial: f
+  percentage: 0.9
+countrylanguages_584:
+  countrycode: mex
+  language: spanish
+  isofficial: t
+  percentage: 92.1
+countrylanguages_585:
+  countrycode: moz
+  language: nyanja
+  isofficial: f
+  percentage: 3.3
+countrylanguages_586:
+  countrycode: nld
+  language: arabic
+  isofficial: f
+  percentage: 0.9
+countrylanguages_587:
+  countrycode: phl
+  language: hiligaynon
+  isofficial: f
+  percentage: 9.1
+countrylanguages_588:
+  countrycode: pol
+  language: german
+  isofficial: f
+  percentage: 1.3
+countrylanguages_589:
+  countrycode: sdn
+  language: nubian languages
+  isofficial: f
+  percentage: 8.1
+countrylanguages_590:
+  countrycode: tza
+  language: nyakusa
+  isofficial: f
+  percentage: 5.4
+countrylanguages_591:
+  countrycode: bwa
+  language: ndebele
+  isofficial: f
+  percentage: 1.3
+countrylanguages_592:
+  countrycode: chn
+  language: hui
+  isofficial: f
+  percentage: 0.8
+countrylanguages_593:
+  countrycode: idn
+  language: javanese
+  isofficial: f
+  percentage: 39.4
+countrylanguages_594:
+  countrycode: lbr
+  language: grebo
+  isofficial: f
+  percentage: 8.9
+countrylanguages_595:
+  countrycode: mhl
+  language: marshallese
+  isofficial: t
+  percentage: 96.8
+countrylanguages_596:
+  countrycode: mmr
+  language: kachin
+  isofficial: f
+  percentage: 1.4
+countrylanguages_597:
+  countrycode: phl
+  language: bicol
+  isofficial: f
+  percentage: 5.7
+countrylanguages_598:
+  countrycode: rus
+  language: mordva
+  isofficial: f
+  percentage: 0.5
+countrylanguages_599:
+  countrycode: tkm
+  language: turkmenian
+  isofficial: t
+  percentage: 76.7
+countrylanguages_600:
+  countrycode: vct
+  language: english
+  isofficial: t
+  percentage: 0.0
+countrylanguages_601:
+  countrycode: can
+  language: french
+  isofficial: t
+  percentage: 23.4
+countrylanguages_602:
+  countrycode: deu
+  language: polish
+  isofficial: f
+  percentage: 0.3
+countrylanguages_603:
+  countrycode: fin
+  language: swedish
+  isofficial: t
+  percentage: 5.7
+countrylanguages_604:
+  countrycode: lbr
+  language: mano
+  isofficial: f
+  percentage: 7.2
+countrylanguages_605:
+  countrycode: swe
+  language: spanish
+  isofficial: f
+  percentage: 0.6
+countrylanguages_606:
+  countrycode: tza
+  language: makonde
+  isofficial: f
+  percentage: 5.9
+countrylanguages_607:
+  countrycode: ben
+  language: ful
+  isofficial: f
+  percentage: 5.6
+countrylanguages_608:
+  countrycode: bra
+  language: indian languages
+  isofficial: f
+  percentage: 0.2
+countrylanguages_609:
+  countrycode: btn
+  language: asami
+  isofficial: f
+  percentage: 15.2
+countrylanguages_610:
+  countrycode: cym
+  language: english
+  isofficial: t
+  percentage: 0.0
+countrylanguages_611:
+  countrycode: gnq
+  language: fang
+  isofficial: f
+  percentage: 84.8
+countrylanguages_612:
+  countrycode: hun
+  language: german
+  isofficial: f
+  percentage: 0.4
+countrylanguages_613:
+  countrycode: mng
+  language: buryat
+  isofficial: f
+  percentage: 1.7
+countrylanguages_614:
+  countrycode: reu
+  language: comorian
+  isofficial: f
+  percentage: 2.8
+countrylanguages_615:
+  countrycode: stp
+  language: french
+  isofficial: f
+  percentage: 0.7
+countrylanguages_616:
+  countrycode: tcd
+  language: mayo-kebbi
+  isofficial: f
+  percentage: 11.5
+countrylanguages_617:
+  countrycode: tgo
+  language: kotokoli
+  isofficial: f
+  percentage: 5.7
+countrylanguages_618:
+  countrycode: gha
+  language: ga-adangme
+  isofficial: f
+  percentage: 7.8
+countrylanguages_619:
+  countrycode: lao
+  language: lao-soung
+  isofficial: f
+  percentage: 5.2
+countrylanguages_620:
+  countrycode: lbr
+  language: kpelle
+  isofficial: f
+  percentage: 19.5
+countrylanguages_621:
+  countrycode: lva
+  language: ukrainian
+  isofficial: f
+  percentage: 2.9
+countrylanguages_622:
+  countrycode: nam
+  language: herero
+  isofficial: f
+  percentage: 8.0
+countrylanguages_623:
+  countrycode: prk
+  language: chinese
+  isofficial: f
+  percentage: 0.1
+countrylanguages_624:
+  countrycode: pry
+  language: spanish
+  isofficial: t
+  percentage: 55.1
+countrylanguages_625:
+  countrycode: sen
+  language: ful
+  isofficial: f
+  percentage: 21.7
+countrylanguages_626:
+  countrycode: tgo
+  language: watyi
+  isofficial: f
+  percentage: 10.3
+countrylanguages_627:
+  countrycode: tuv
+  language: english
+  isofficial: t
+  percentage: 0.0
+countrylanguages_628:
+  countrycode: tza
+  language: nyamwesi
+  isofficial: f
+  percentage: 21.1
+countrylanguages_629:
+  countrycode: ven
+  language: goajiro
+  isofficial: f
+  percentage: 0.4
+countrylanguages_630:
+  countrycode: wsm
+  language: samoan-english
+  isofficial: f
+  percentage: 52.0
+countrylanguages_631:
+  countrycode: chl
+  language: araucan
+  isofficial: f
+  percentage: 9.6
+countrylanguages_632:
+  countrycode: jpn
+  language: english
+  isofficial: f
+  percentage: 0.1
+countrylanguages_633:
+  countrycode: pri
+  language: spanish
+  isofficial: t
+  percentage: 51.3
+countrylanguages_634:
+  countrycode: blr
+  language: belorussian
+  isofficial: t
+  percentage: 65.6
+countrylanguages_635:
+  countrycode: brb
+  language: bajan
+  isofficial: f
+  percentage: 95.1
+countrylanguages_636:
+  countrycode: dma
+  language: creole english
+  isofficial: f
+  percentage: 100.0
+countrylanguages_637:
+  countrycode: lso
+  language: english
+  isofficial: t
+  percentage: 0.0
+countrylanguages_638:
+  countrycode: phl
+  language: cebuano
+  isofficial: f
+  percentage: 23.3
+countrylanguages_639:
+  countrycode: vnm
+  language: thai
+  isofficial: f
+  percentage: 1.6
+countrylanguages_640:
+  countrycode: glp
+  language: creole french
+  isofficial: f
+  percentage: 95.0
+countrylanguages_641:
+  countrycode: ncl
+  language: french
+  isofficial: t
+  percentage: 34.3
+countrylanguages_642:
+  countrycode: nga
+  language: ibibio
+  isofficial: f
+  percentage: 5.6
+countrylanguages_643:
+  countrycode: swz
+  language: zulu
+  isofficial: f
+  percentage: 2.0
+countrylanguages_644:
+  countrycode: tur
+  language: turkish
+  isofficial: t
+  percentage: 87.6
+countrylanguages_645:
+  countrycode: zaf
+  language: northsotho
+  isofficial: f
+  percentage: 9.1
+countrylanguages_646:
+  countrycode: fra
+  language: arabic
+  isofficial: f
+  percentage: 2.5
+countrylanguages_647:
+  countrycode: kaz
+  language: tatar
+  isofficial: f
+  percentage: 2.0
+countrylanguages_648:
+  countrycode: ltu
+  language: polish
+  isofficial: f
+  percentage: 7.0
+countrylanguages_649:
+  countrycode: pse
+  language: arabic
+  isofficial: f
+  percentage: 95.9
+countrylanguages_650:
+  countrycode: rwa
+  language: french
+  isofficial: t
+  percentage: 0.0
+countrylanguages_651:
+  countrycode: afg
+  language: dari
+  isofficial: t
+  percentage: 32.1
+countrylanguages_652:
+  countrycode: aut
+  language: czech
+  isofficial: f
+  percentage: 0.2
+countrylanguages_653:
+  countrycode: bgd
+  language: garo
+  isofficial: f
+  percentage: 0.1
+countrylanguages_654:
+  countrycode: bmu
+  language: english
+  isofficial: t
+  percentage: 100.0
+countrylanguages_655:
+  countrycode: chl
+  language: spanish
+  isofficial: t
+  percentage: 89.7
+countrylanguages_656:
+  countrycode: dza
+  language: arabic
+  isofficial: t
+  percentage: 86.0
+countrylanguages_657:
+  countrycode: lbr
+  language: kru
+  isofficial: f
+  percentage: 7.2
+countrylanguages_658:
+  countrycode: mdv
+  language: dhivehi
+  isofficial: t
+  percentage: 100.0
+countrylanguages_659:
+  countrycode: phl
+  language: ilocano
+  isofficial: f
+  percentage: 9.3
+countrylanguages_660:
+  countrycode: ben
+  language: adja
+  isofficial: f
+  percentage: 11.1
+countrylanguages_661:
+  countrycode: chn
+  language: miao
+  isofficial: f
+  percentage: 0.7
+countrylanguages_662:
+  countrycode: cog
+  language: kongo
+  isofficial: f
+  percentage: 51.5
+countrylanguages_663:
+  countrycode: gum
+  language: korean
+  isofficial: f
+  percentage: 3.3
+countrylanguages_664:
+  countrycode: lby
+  language: berberi
+  isofficial: f
+  percentage: 1.0
+countrylanguages_665:
+  countrycode: rom
+  language: serbo-croatian
+  isofficial: f
+  percentage: 0.1
+countrylanguages_666:
+  countrycode: vct
+  language: creole english
+  isofficial: f
+  percentage: 99.1
+countrylanguages_667:
+  countrycode: ant
+  language: dutch
+  isofficial: t
+  percentage: 0.0
+countrylanguages_668:
+  countrycode: brn
+  language: malay-english
+  isofficial: f
+  percentage: 28.8
+countrylanguages_669:
+  countrycode: hti
+  language: french
+  isofficial: t
+  percentage: 0.0
+countrylanguages_670:
+  countrycode: ita
+  language: friuli
+  isofficial: f
+  percentage: 1.2
+countrylanguages_671:
+  countrycode: jor
+  language: circassian
+  isofficial: f
+  percentage: 1.0
+countrylanguages_672:
+  countrycode: mac
+  language: mandarin chinese
+  isofficial: f
+  percentage: 1.2
+countrylanguages_673:
+  countrycode: mex
+  language: n
+  isofficial: f
+  percentage: 1.8
+countrylanguages_674:
+  countrycode: pri
+  language: english
+  isofficial: f
+  percentage: 47.4
+countrylanguages_675:
+  countrycode: pry
+  language: german
+  isofficial: f
+  percentage: 0.9
+countrylanguages_676:
+  countrycode: stp
+  language: crioulo
+  isofficial: f
+  percentage: 86.3
+countrylanguages_677:
+  countrycode: can
+  language: punjabi
+  isofficial: f
+  percentage: 0.7
+countrylanguages_678:
+  countrycode: gin
+  language: loma
+  isofficial: f
+  percentage: 2.3
+countrylanguages_679:
+  countrycode: hun
+  language: hungarian
+  isofficial: t
+  percentage: 98.5
+countrylanguages_680:
+  countrycode: omn
+  language: balochi
+  isofficial: f
+  percentage: 0.0
+countrylanguages_681:
+  countrycode: bgd
+  language: bengali
+  isofficial: t
+  percentage: 97.7
+countrylanguages_682:
+  countrycode: gib
+  language: english
+  isofficial: t
+  percentage: 88.9
+countrylanguages_683:
+  countrycode: guf
+  language: indian languages
+  isofficial: f
+  percentage: 1.9
+countrylanguages_684:
+  countrycode: irl
+  language: irish
+  isofficial: t
+  percentage: 1.6
+countrylanguages_685:
+  countrycode: kgz
+  language: ukrainian
+  isofficial: f
+  percentage: 1.7
+countrylanguages_686:
+  countrycode: mus
+  language: tamil
+  isofficial: f
+  percentage: 0.8
+countrylanguages_687:
+  countrycode: sdn
+  language: bari
+  isofficial: f
+  percentage: 2.5
+countrylanguages_688:
+  countrycode: sdn
+  language: nuer
+  isofficial: f
+  percentage: 4.9
+countrylanguages_689:
+  countrycode: tcd
+  language: gorane
+  isofficial: f
+  percentage: 6.2
+countrylanguages_690:
+  countrycode: atg
+  language: creole english
+  isofficial: f
+  percentage: 95.7
+countrylanguages_691:
+  countrycode: ben
+  language: somba
+  isofficial: f
+  percentage: 6.7
+countrylanguages_692:
+  countrycode: mlt
+  language: english
+  isofficial: t
+  percentage: 2.1
+countrylanguages_693:
+  countrycode: bgr
+  language: bulgariana
+  isofficial: t
+  percentage: 83.2
+countrylanguages_694:
+  countrycode: bwa
+  language: khoekhoe
+  isofficial: f
+  percentage: 2.5
+countrylanguages_695:
+  countrycode: chl
+  language: rapa nui
+  isofficial: f
+  percentage: 0.2
+countrylanguages_696:
+  countrycode: chn
+  language: tibetan
+  isofficial: f
+  percentage: 0.4
+countrylanguages_697:
+  countrycode: lbn
+  language: french
+  isofficial: f
+  percentage: 0.0
+countrylanguages_698:
+  countrycode: niu
+  language: english
+  isofficial: t
+  percentage: 0.0
+countrylanguages_699:
+  countrycode: ukr
+  language: belorussian
+  isofficial: f
+  percentage: 0.3
+countrylanguages_700:
+  countrycode: usa
+  language: japanese
+  isofficial: f
+  percentage: 0.2
+countrylanguages_701:
+  countrycode: aze
+  language: azerbaijani
+  isofficial: t
+  percentage: 89.0
+countrylanguages_702:
+  countrycode: che
+  language: german
+  isofficial: t
+  percentage: 63.6
+countrylanguages_703:
+  countrycode: idn
+  language: minangkabau
+  isofficial: f
+  percentage: 2.4
+countrylanguages_704:
+  countrycode: kaz
+  language: uzbek
+  isofficial: f
+  percentage: 2.3
+countrylanguages_705:
+  countrycode: niu
+  language: niue
+  isofficial: f
+  percentage: 0.0
+countrylanguages_706:
+  countrycode: nru
+  language: kiribati
+  isofficial: f
+  percentage: 17.9
+countrylanguages_707:
+  countrycode: svn
+  language: hungarian
+  isofficial: f
+  percentage: 0.5
+countrylanguages_708:
+  countrycode: tcd
+  language: kanem-bornu
+  isofficial: f
+  percentage: 9.0
+countrylanguages_709:
+  countrycode: tkm
+  language: russian
+  isofficial: f
+  percentage: 6.7
+countrylanguages_710:
+  countrycode: bhr
+  language: english
+  isofficial: f
+  percentage: 0.0
+countrylanguages_711:
+  countrycode: brb
+  language: english
+  isofficial: t
+  percentage: 0.0
+countrylanguages_712:
+  countrycode: caf
+  language: sara
+  isofficial: f
+  percentage: 6.4
+countrylanguages_713:
+  countrycode: can
+  language: english
+  isofficial: t
+  percentage: 60.4
+countrylanguages_714:
+  countrycode: hkg
+  language: hakka
+  isofficial: f
+  percentage: 1.6
+countrylanguages_715:
+  countrycode: mar
+  language: arabic
+  isofficial: t
+  percentage: 65.0
+countrylanguages_716:
+  countrycode: mex
+  language: yucatec
+  isofficial: f
+  percentage: 1.1
+countrylanguages_717:
+  countrycode: mrt
+  language: soninke
+  isofficial: f
+  percentage: 2.7
+countrylanguages_718:
+  countrycode: mtq
+  language: french
+  isofficial: t
+  percentage: 0.0
+countrylanguages_719:
+  countrycode: pak
+  language: pashto
+  isofficial: f
+  percentage: 13.1
+countrylanguages_720:
+  countrycode: prk
+  language: korean
+  isofficial: t
+  percentage: 99.9
+countrylanguages_721:
+  countrycode: pse
+  language: hebrew
+  isofficial: f
+  percentage: 4.1
+countrylanguages_722:
+  countrycode: tgo
+  language: moba
+  isofficial: f
+  percentage: 5.4
+countrylanguages_723:
+  countrycode: com
+  language: comorian-madagassi
+  isofficial: f
+  percentage: 5.5
+countrylanguages_724:
+  countrycode: dom
+  language: spanish
+  isofficial: t
+  percentage: 98.0
+countrylanguages_725:
+  countrycode: gha
+  language: mossi
+  isofficial: f
+  percentage: 15.8
+countrylanguages_726:
+  countrycode: ind
+  language: malajalam
+  isofficial: f
+  percentage: 3.6
+countrylanguages_727:
+  countrycode: kaz
+  language: russian
+  isofficial: f
+  percentage: 34.7
+countrylanguages_728:
+  countrycode: khm
+  language: khmer
+  isofficial: t
+  percentage: 88.6
+countrylanguages_729:
+  countrycode: mac
+  language: english
+  isofficial: f
+  percentage: 0.5
+countrylanguages_730:
+  countrycode: omn
+  language: arabic
+  isofficial: t
+  percentage: 76.7
+countrylanguages_731:
+  countrycode: sgp
+  language: malay
+  isofficial: t
+  percentage: 14.1
+countrylanguages_732:
+  countrycode: sle
+  language: kono-vai
+  isofficial: f
+  percentage: 5.1
+countrylanguages_733:
+  countrycode: smr
+  language: italian
+  isofficial: t
+  percentage: 100.0
+countrylanguages_734:
+  countrycode: sur
+  language: hindi
+  isofficial: f
+  percentage: 0.0
+countrylanguages_735:
+  countrycode: yem
+  language: arabic
+  isofficial: t
+  percentage: 99.6
+countrylanguages_736:
+  countrycode: eth
+  language: amhara
+  isofficial: f
+  percentage: 30.0
+countrylanguages_737:
+  countrycode: mys
+  language: malay
+  isofficial: t
+  percentage: 58.4
+countrylanguages_738:
+  countrycode: phl
+  language: pangasinan
+  isofficial: f
+  percentage: 1.8
+countrylanguages_739:
+  countrycode: rus
+  language: kazakh
+  isofficial: f
+  percentage: 0.4
+countrylanguages_740:
+  countrycode: sdn
+  language: chilluk
+  isofficial: f
+  percentage: 1.7
+countrylanguages_741:
+  countrycode: sen
+  language: diola
+  isofficial: f
+  percentage: 5.0
+countrylanguages_742:
+  countrycode: uga
+  language: lugbara
+  isofficial: f
+  percentage: 4.7
+countrylanguages_743:
+  countrycode: eth
+  language: somali
+  isofficial: f
+  percentage: 4.1
+countrylanguages_744:
+  countrycode: lao
+  language: lao
+  isofficial: t
+  percentage: 67.2
+countrylanguages_745:
+  countrycode: mnp
+  language: chamorro
+  isofficial: f
+  percentage: 30.0
+countrylanguages_746:
+  countrycode: moz
+  language: sena
+  isofficial: f
+  percentage: 9.4
+countrylanguages_747:
+  countrycode: ner
+  language: ful
+  isofficial: f
+  percentage: 9.7
+countrylanguages_748:
+  countrycode: tun
+  language: arabic-french
+  isofficial: f
+  percentage: 26.3
+countrylanguages_749:
+  countrycode: aut
+  language: hungarian
+  isofficial: f
+  percentage: 0.4
+countrylanguages_750:
+  countrycode: chn
+  language: uighur
+  isofficial: f
+  percentage: 0.6
+countrylanguages_751:
+  countrycode: dza
+  language: berberi
+  isofficial: f
+  percentage: 14.0
+countrylanguages_752:
+  countrycode: ita
+  language: italian
+  isofficial: t
+  percentage: 94.1
+countrylanguages_753:
+  countrycode: kir
+  language: tuvalu
+  isofficial: f
+  percentage: 0.5
+countrylanguages_754:
+  countrycode: myt
+  language: malagasy
+  isofficial: f
+  percentage: 16.1
+countrylanguages_755:
+  countrycode: nam
+  language: afrikaans
+  isofficial: f
+  percentage: 9.5
+countrylanguages_756:
+  countrycode: rus
+  language: belorussian
+  isofficial: f
+  percentage: 0.3
+countrylanguages_757:
+  countrycode: sdn
+  language: fur
+  isofficial: f
+  percentage: 2.1
+countrylanguages_758:
+  countrycode: svk
+  language: slovak
+  isofficial: t
+  percentage: 85.6
+countrylanguages_759:
+  countrycode: hkg
+  language: chiu chau
+  isofficial: f
+  percentage: 1.4
+countrylanguages_760:
+  countrycode: msr
+  language: english
+  isofficial: t
+  percentage: 0.0
+countrylanguages_761:
+  countrycode: nor
+  language: swedish
+  isofficial: f
+  percentage: 0.3
+countrylanguages_762:
+  countrycode: afg
+  language: uzbek
+  isofficial: f
+  percentage: 8.8
+countrylanguages_763:
+  countrycode: mkd
+  language: albaniana
+  isofficial: f
+  percentage: 22.9
+countrylanguages_764:
+  countrycode: zmb
+  language: nsenga
+  isofficial: f
+  percentage: 4.3
+countrylanguages_765:
+  countrycode: alb
+  language: greek
+  isofficial: f
+  percentage: 1.8
+countrylanguages_766:
+  countrycode: aus
+  language: vietnamese
+  isofficial: f
+  percentage: 0.8
+countrylanguages_767:
+  countrycode: dnk
+  language: german
+  isofficial: f
+  percentage: 0.5
+countrylanguages_768:
+  countrycode: dnk
+  language: turkish
+  isofficial: f
+  percentage: 0.8
+countrylanguages_769:
+  countrycode: irl
+  language: english
+  isofficial: t
+  percentage: 98.4
+countrylanguages_770:
+  countrycode: kna
+  language: creole english
+  isofficial: f
+  percentage: 100.0
+countrylanguages_771:
+  countrycode: mex
+  language: otom
+  isofficial: f
+  percentage: 0.4
+countrylanguages_772:
+  countrycode: nam
+  language: ovambo
+  isofficial: f
+  percentage: 50.7
+countrylanguages_773:
+  countrycode: som
+  language: somali
+  isofficial: t
+  percentage: 98.3
+countrylanguages_774:
+  countrycode: ton
+  language: tongan
+  isofficial: t
+  percentage: 98.3
+countrylanguages_775:
+  countrycode: cmr
+  language: fang
+  isofficial: f
+  percentage: 19.7
+countrylanguages_776:
+  countrycode: cod
+  language: ngala and bangi
+  isofficial: f
+  percentage: 5.8
+countrylanguages_777:
+  countrycode: sle
+  language: ful
+  isofficial: f
+  percentage: 3.8
+countrylanguages_778:
+  countrycode: vir
+  language: english
+  isofficial: t
+  percentage: 81.7
+countrylanguages_779:
+  countrycode: alb
+  language: macedonian
+  isofficial: f
+  percentage: 0.1
+countrylanguages_780:
+  countrycode: blr
+  language: ukrainian
+  isofficial: f
+  percentage: 1.3
+countrylanguages_781:
+  countrycode: bra
+  language: portuguese
+  isofficial: t
+  percentage: 97.5
+countrylanguages_782:
+  countrycode: mwi
+  language: yao
+  isofficial: f
+  percentage: 13.2
+countrylanguages_783:
+  countrycode: rus
+  language: udmur
+  isofficial: f
+  percentage: 0.3
+countrylanguages_784:
+  countrycode: vut
+  language: french
+  isofficial: t
+  percentage: 14.2
+countrylanguages_785:
+  countrycode: can
+  language: eskimo languages
+  isofficial: f
+  percentage: 0.1
+countrylanguages_786:
+  countrycode: gha
+  language: gurma
+  isofficial: f
+  percentage: 3.3
+countrylanguages_787:
+  countrycode: ind
+  language: gujarati
+  isofficial: f
+  percentage: 4.8
+countrylanguages_788:
+  countrycode: lbn
+  language: arabic
+  isofficial: t
+  percentage: 93.0
+countrylanguages_789:
+  countrycode: ton
+  language: english
+  isofficial: t
+  percentage: 0.0
+countrylanguages_790:
+  countrycode: vnm
+  language: vietnamese
+  isofficial: t
+  percentage: 86.8
+countrylanguages_791:
+  countrycode: yug
+  language: hungarian
+  isofficial: f
+  percentage: 3.4
+countrylanguages_792:
+  countrycode: zaf
+  language: ndebele
+  isofficial: f
+  percentage: 1.5
+countrylanguages_793:
+  countrycode: ago
+  language: luvale
+  isofficial: f
+  percentage: 3.6
+countrylanguages_794:
+  countrycode: aut
+  language: serbo-croatian
+  isofficial: f
+  percentage: 2.2
+countrylanguages_795:
+  countrycode: bra
+  language: german
+  isofficial: f
+  percentage: 0.5
+countrylanguages_796:
+  countrycode: cmr
+  language: ful
+  isofficial: f
+  percentage: 9.6
+countrylanguages_797:
+  countrycode: cze
+  language: czech
+  isofficial: t
+  percentage: 81.2
+countrylanguages_798:
+  countrycode: kir
+  language: kiribati
+  isofficial: t
+  percentage: 98.9
+countrylanguages_799:
+  countrycode: mda
+  language: gagauzi
+  isofficial: f
+  percentage: 3.2
+countrylanguages_800:
+  countrycode: aus
+  language: greek
+  isofficial: f
+  percentage: 1.6
+countrylanguages_801:
+  countrycode: com
+  language: comorian-french
+  isofficial: f
+  percentage: 12.9
+countrylanguages_802:
+  countrycode: gin
+  language: malinke
+  isofficial: f
+  percentage: 23.2
+countrylanguages_803:
+  countrycode: gnb
+  language: mandyako
+  isofficial: f
+  percentage: 4.9
+countrylanguages_804:
+  countrycode: irq
+  language: azerbaijani
+  isofficial: f
+  percentage: 1.7
+countrylanguages_805:
+  countrycode: ita
+  language: french
+  isofficial: f
+  percentage: 0.5
+countrylanguages_806:
+  countrycode: moz
+  language: makua
+  isofficial: f
+  percentage: 27.8
+countrylanguages_807:
+  countrycode: tgo
+  language: gurma
+  isofficial: f
+  percentage: 3.4
+countrylanguages_808:
+  countrycode: tgo
+  language: kaby
+  isofficial: t
+  percentage: 13.8
+countrylanguages_809:
+  countrycode: wsm
+  language: english
+  isofficial: t
+  percentage: 0.6
+countrylanguages_810:
+  countrycode: bgr
+  language: romani
+  isofficial: f
+  percentage: 3.7
+countrylanguages_811:
+  countrycode: deu
+  language: italian
+  isofficial: f
+  percentage: 0.7
+countrylanguages_812:
+  countrycode: fji
+  language: fijian
+  isofficial: t
+  percentage: 50.8
+countrylanguages_813:
+  countrycode: isr
+  language: russian
+  isofficial: f
+  percentage: 8.9
+countrylanguages_814:
+  countrycode: nru
+  language: tuvalu
+  isofficial: f
+  percentage: 8.5
+countrylanguages_815:
+  countrycode: sgp
+  language: chinese
+  isofficial: t
+  percentage: 77.1
+countrylanguages_816:
+  countrycode: tto
+  language: creole english
+  isofficial: f
+  percentage: 2.9
+countrylanguages_817:
+  countrycode: tur
+  language: arabic
+  isofficial: f
+  percentage: 1.4
+countrylanguages_818:
+  countrycode: ago
+  language: ambo
+  isofficial: f
+  percentage: 2.4
+countrylanguages_819:
+  countrycode: eth
+  language: walaita
+  isofficial: f
+  percentage: 2.8
+countrylanguages_820:
+  countrycode: khm
+  language: t
+  isofficial: f
+  percentage: 2.4
+countrylanguages_821:
+  countrycode: tgo
+  language: ewe
+  isofficial: t
+  percentage: 23.2
+countrylanguages_822:
+  countrycode: tza
+  language: swahili
+  isofficial: t
+  percentage: 8.8
+countrylanguages_823:
+  countrycode: ukr
+  language: bulgariana
+  isofficial: f
+  percentage: 0.3
+countrylanguages_824:
+  countrycode: bhr
+  language: arabic
+  isofficial: t
+  percentage: 67.7
+countrylanguages_825:
+  countrycode: fra
+  language: french
+  isofficial: t
+  percentage: 93.6
+countrylanguages_826:
+  countrycode: fsm
+  language: wolea
+  isofficial: f
+  percentage: 3.7
+countrylanguages_827:
+  countrycode: gha
+  language: ewe
+  isofficial: f
+  percentage: 11.9
+countrylanguages_828:
+  countrycode: hun
+  language: romanian
+  isofficial: f
+  percentage: 0.1
+countrylanguages_829:
+  countrycode: lie
+  language: italian
+  isofficial: f
+  percentage: 2.5
+countrylanguages_830:
+  countrycode: mac
+  language: portuguese
+  isofficial: t
+  percentage: 2.3
+countrylanguages_831:
+  countrycode: nic
+  language: creole english
+  isofficial: f
+  percentage: 0.5
+countrylanguages_832:
+  countrycode: rom
+  language: ukrainian
+  isofficial: f
+  percentage: 0.3
+countrylanguages_833:
+  countrycode: tcd
+  language: tandjile
+  isofficial: f
+  percentage: 6.5
+countrylanguages_834:
+  countrycode: aze
+  language: russian
+  isofficial: f
+  percentage: 3.0
+countrylanguages_835:
+  countrycode: hnd
+  language: creole english
+  isofficial: f
+  percentage: 0.2
+countrylanguages_836:
+  countrycode: nam
+  language: caprivi
+  isofficial: f
+  percentage: 4.7
+countrylanguages_837:
+  countrycode: civ
+  language: gur
+  isofficial: f
+  percentage: 11.7
+countrylanguages_838:
+  countrycode: cmr
+  language: bamileke-bamum
+  isofficial: f
+  percentage: 18.6
+countrylanguages_839:
+  countrycode: cod
+  language: chokwe
+  isofficial: f
+  percentage: 1.8
+countrylanguages_840:
+  countrycode: mnp
+  language: chinese
+  isofficial: f
+  percentage: 7.1
+countrylanguages_841:
+  countrycode: moz
+  language: marendje
+  isofficial: f
+  percentage: 3.5
+countrylanguages_842:
+  countrycode: mrt
+  language: wolof
+  isofficial: f
+  percentage: 6.6
+countrylanguages_843:
+  countrycode: reu
+  language: tamil
+  isofficial: f
+  percentage: 0.0
+countrylanguages_844:
+  countrycode: tjk
+  language: uzbek
+  isofficial: f
+  percentage: 23.2
+countrylanguages_845:
+  countrycode: arm
+  language: armenian
+  isofficial: t
+  percentage: 93.4
+countrylanguages_846:
+  countrycode: caf
+  language: banda
+  isofficial: f
+  percentage: 23.5
+countrylanguages_847:
+  countrycode: hnd
+  language: garifuna
+  isofficial: f
+  percentage: 1.3
+countrylanguages_848:
+  countrycode: mac
+  language: canton chinese
+  isofficial: f
+  percentage: 85.6
+countrylanguages_849:
+  countrycode: per
+  language: ket
+  isofficial: t
+  percentage: 16.4
+countrylanguages_850:
+  countrycode: rom
+  language: romani
+  isofficial: t
+  percentage: 0.7
+countrylanguages_851:
+  countrycode: swe
+  language: southern slavic languages
+  isofficial: f
+  percentage: 1.3
+countrylanguages_852:
+  countrycode: tto
+  language: english
+  isofficial: f
+  percentage: 93.5
+countrylanguages_853:
+  countrycode: twn
+  language: atayal
+  isofficial: f
+  percentage: 0.4
+countrylanguages_854:
+  countrycode: ago
+  language: ovimbundu
+  isofficial: f
+  percentage: 37.2
+countrylanguages_855:
+  countrycode: geo
+  language: osseetti
+  isofficial: f
+  percentage: 2.4
+countrylanguages_856:
+  countrycode: gnb
+  language: ful
+  isofficial: f
+  percentage: 16.6
+countrylanguages_857:
+  countrycode: mco
+  language: monegasque
+  isofficial: f
+  percentage: 16.1
+countrylanguages_858:
+  countrycode: mwi
+  language: lomwe
+  isofficial: f
+  percentage: 18.4
+countrylanguages_859:
+  countrycode: nic
+  language: spanish
+  isofficial: t
+  percentage: 97.6
+countrylanguages_860:
+  countrycode: syr
+  language: arabic
+  isofficial: t
+  percentage: 90.0
+countrylanguages_861:
+  countrycode: ago
+  language: luchazi
+  isofficial: f
+  percentage: 2.4
+countrylanguages_862:
+  countrycode: aus
+  language: german
+  isofficial: f
+  percentage: 0.6
+countrylanguages_863:
+  countrycode: est
+  language: belorussian
+  isofficial: f
+  percentage: 1.4
+countrylanguages_864:
+  countrycode: gib
+  language: arabic
+  isofficial: f
+  percentage: 7.4
+countrylanguages_865:
+  countrycode: hun
+  language: serbo-croatian
+  isofficial: f
+  percentage: 0.2
+countrylanguages_866:
+  countrycode: mys
+  language: dusun
+  isofficial: f
+  percentage: 1.1
+countrylanguages_867:
+  countrycode: wsm
+  language: samoan
+  isofficial: t
+  percentage: 47.5
+countrylanguages_868:
+  countrycode: zmb
+  language: tongan
+  isofficial: f
+  percentage: 11.0
+countrylanguages_869:
+  countrycode: bel
+  language: turkish
+  isofficial: f
+  percentage: 0.9
+countrylanguages_870:
+  countrycode: ben
+  language: aizo
+  isofficial: f
+  percentage: 8.7
+countrylanguages_871:
+  countrycode: gtm
+  language: spanish
+  isofficial: t
+  percentage: 64.7
+countrylanguages_872:
+  countrycode: ind
+  language: urdu
+  isofficial: f
+  percentage: 5.1
+countrylanguages_873:
+  countrycode: rom
+  language: german
+  isofficial: f
+  percentage: 0.4
+countrylanguages_874:
+  countrycode: tza
+  language: chaga and pare
+  isofficial: f
+  percentage: 4.9
+countrylanguages_875:
+  countrycode: uzb
+  language: kazakh
+  isofficial: f
+  percentage: 3.8
+countrylanguages_876:
+  countrycode: abw
+  language: dutch
+  isofficial: t
+  percentage: 5.3
+countrylanguages_877:
+  countrycode: caf
+  language: mbum
+  isofficial: f
+  percentage: 6.4
+countrylanguages_878:
+  countrycode: dji
+  language: afar
+  isofficial: f
+  percentage: 34.8
+countrylanguages_879:
+  countrycode: fsm
+  language: kosrean
+  isofficial: f
+  percentage: 7.3
+countrylanguages_880:
+  countrycode: mco
+  language: english
+  isofficial: f
+  percentage: 6.5
+countrylanguages_881:
+  countrycode: mda
+  language: romanian
+  isofficial: t
+  percentage: 61.9
+countrylanguages_882:
+  countrycode: zaf
+  language: venda
+  isofficial: f
+  percentage: 2.2
+countrylanguages_883:
+  countrycode: ben
+  language: bariba
+  isofficial: f
+  percentage: 8.7
+countrylanguages_884:
+  countrycode: dnk
+  language: arabic
+  isofficial: f
+  percentage: 0.7
+countrylanguages_885:
+  countrycode: fra
+  language: portuguese
+  isofficial: f
+  percentage: 1.2
+countrylanguages_886:
+  countrycode: hun
+  language: slovak
+  isofficial: f
+  percentage: 0.1
+countrylanguages_887:
+  countrycode: lie
+  language: turkish
+  isofficial: f
+  percentage: 2.5
+countrylanguages_888:
+  countrycode: tuv
+  language: kiribati
+  isofficial: f
+  percentage: 7.5
+countrylanguages_889:
+  countrycode: ukr
+  language: polish
+  isofficial: f
+  percentage: 0.1
+countrylanguages_890:
+  countrycode: bra
+  language: italian
+  isofficial: f
+  percentage: 0.4
+countrylanguages_891:
+  countrycode: can
+  language: portuguese
+  isofficial: f
+  percentage: 0.7
+countrylanguages_892:
+  countrycode: dji
+  language: arabic
+  isofficial: t
+  percentage: 10.6
+countrylanguages_893:
+  countrycode: gin
+  language: susu
+  isofficial: f
+  percentage: 11.0
+countrylanguages_894:
+  countrycode: hkg
+  language: canton chinese
+  isofficial: f
+  percentage: 88.7
+countrylanguages_895:
+  countrycode: ita
+  language: sardinian
+  isofficial: f
+  percentage: 2.7
+countrylanguages_896:
+  countrycode: jor
+  language: arabic
+  isofficial: t
+  percentage: 97.9
+countrylanguages_897:
+  countrycode: ner
+  language: tamashek
+  isofficial: f
+  percentage: 10.4
+countrylanguages_898:
+  countrycode: shn
+  language: english
+  isofficial: t
+  percentage: 0.0
+countrylanguages_899:
+  countrycode: uga
+  language: soga
+  isofficial: f
+  percentage: 8.2
+countrylanguages_900:
+  countrycode: zmb
+  language: lozi
+  isofficial: f
+  percentage: 6.4
+countrylanguages_901:
+  countrycode: ago
+  language: kongo
+  isofficial: f
+  percentage: 13.2
+countrylanguages_902:
+  countrycode: bwa
+  language: shona
+  isofficial: f
+  percentage: 12.3
+countrylanguages_903:
+  countrycode: kaz
+  language: kazakh
+  isofficial: t
+  percentage: 46.0
+countrylanguages_904:
+  countrycode: lso
+  language: zulu
+  isofficial: f
+  percentage: 15.0
+countrylanguages_905:
+  countrycode: mda
+  language: russian
+  isofficial: f
+  percentage: 23.2
+countrylanguages_906:
+  countrycode: mys
+  language: tamil
+  isofficial: f
+  percentage: 3.9
+countrylanguages_907:
+  countrycode: nga
+  language: edo
+  isofficial: f
+  percentage: 3.3
+countrylanguages_908:
+  countrycode: pak
+  language: punjabi
+  isofficial: f
+  percentage: 48.2
+countrylanguages_909:
+  countrycode: pan
+  language: arabic
+  isofficial: f
+  percentage: 0.6
+countrylanguages_910:
+  countrycode: pan
+  language: cuna
+  isofficial: f
+  percentage: 2.0
+countrylanguages_911:
+  countrycode: reu
+  language: creole french
+  isofficial: f
+  percentage: 91.5
+countrylanguages_912:
+  countrycode: wlf
+  language: wallis
+  isofficial: f
+  percentage: 0.0
+countrylanguages_913:
+  countrycode: ecu
+  language: ket
+  isofficial: f
+  percentage: 7.0
+countrylanguages_914:
+  countrycode: est
+  language: ukrainian
+  isofficial: f
+  percentage: 2.8
+countrylanguages_915:
+  countrycode: fin
+  language: saame
+  isofficial: f
+  percentage: 0.0
+countrylanguages_916:
+  countrycode: flk
+  language: english
+  isofficial: t
+  percentage: 0.0
+countrylanguages_917:
+  countrycode: gnb
+  language: portuguese
+  isofficial: t
+  percentage: 8.1
+countrylanguages_918:
+  countrycode: idn
+  language: banja
+  isofficial: f
+  percentage: 1.8
+countrylanguages_919:
+  countrycode: lka
+  language: mixed languages
+  isofficial: f
+  percentage: 19.6
+countrylanguages_920:
+  countrycode: mco
+  language: italian
+  isofficial: f
+  percentage: 16.1
+countrylanguages_921:
+  countrycode: mkd
+  language: turkish
+  isofficial: f
+  percentage: 4.0
+countrylanguages_922:
+  countrycode: nor
+  language: norwegian
+  isofficial: t
+  percentage: 96.6
+countrylanguages_923:
+  countrycode: aut
+  language: slovene
+  isofficial: f
+  percentage: 0.4
+countrylanguages_924:
+  countrycode: mrt
+  language: tukulor
+  isofficial: f
+  percentage: 5.4
+countrylanguages_925:
+  countrycode: tjk
+  language: tadzhik
+  isofficial: t
+  percentage: 62.2
+countrylanguages_926:
+  countrycode: cod
+  language: kongo
+  isofficial: f
+  percentage: 16.0
+countrylanguages_927:
+  countrycode: cod
+  language: zande
+  isofficial: f
+  percentage: 6.1
+countrylanguages_928:
+  countrycode: kwt
+  language: arabic
+  isofficial: t
+  percentage: 78.1
+countrylanguages_929:
+  countrycode: rom
+  language: hungarian
+  isofficial: f
+  percentage: 7.2
+countrylanguages_930:
+  countrycode: rom
+  language: romanian
+  isofficial: t
+  percentage: 90.7
+countrylanguages_931:
+  countrycode: sen
+  language: wolof
+  isofficial: t
+  percentage: 48.1
+countrylanguages_932:
+  countrycode: tha
+  language: kuy
+  isofficial: f
+  percentage: 1.1
+countrylanguages_933:
+  countrycode: tkm
+  language: uzbek
+  isofficial: f
+  percentage: 9.2
+countrylanguages_934:
+  countrycode: tun
+  language: arabic-french-english
+  isofficial: f
+  percentage: 3.2
+countrylanguages_935:
+  countrycode: bdi
+  language: french
+  isofficial: t
+  percentage: 0.0
+countrylanguages_936:
+  countrycode: can
+  language: german
+  isofficial: f
+  percentage: 1.6
+countrylanguages_937:
+  countrycode: gnb
+  language: crioulo
+  isofficial: f
+  percentage: 36.4
+countrylanguages_938:
+  countrycode: ind
+  language: bengali
+  isofficial: f
+  percentage: 8.2
+countrylanguages_939:
+  countrycode: khm
+  language: vietnamese
+  isofficial: f
+  percentage: 5.5
+countrylanguages_940:
+  countrycode: moz
+  language: ronga
+  isofficial: f
+  percentage: 3.7
+countrylanguages_941:
+  countrycode: npl
+  language: newari
+  isofficial: f
+  percentage: 3.7
+countrylanguages_942:
+  countrycode: can
+  language: italian
+  isofficial: f
+  percentage: 1.7
+countrylanguages_943:
+  countrycode: esp
+  language: catalan
+  isofficial: f
+  percentage: 16.9
+countrylanguages_944:
+  countrycode: gnb
+  language: balante
+  isofficial: f
+  percentage: 14.6
+countrylanguages_945:
+  countrycode: khm
+  language: chinese
+  isofficial: f
+  percentage: 3.1
+countrylanguages_946:
+  countrycode: lbr
+  language: loma
+  isofficial: f
+  percentage: 5.8
+countrylanguages_947:
+  countrycode: lva
+  language: latvian
+  isofficial: t
+  percentage: 55.1
+countrylanguages_948:
+  countrycode: mmr
+  language: mon
+  isofficial: f
+  percentage: 2.4
+countrylanguages_949:
+  countrycode: swz
+  language: swazi
+  isofficial: t
+  percentage: 89.9
+countrylanguages_950:
+  countrycode: tha
+  language: thai
+  isofficial: t
+  percentage: 52.6
+countrylanguages_951:
+  countrycode: ukr
+  language: ukrainian
+  isofficial: t
+  percentage: 64.7
+countrylanguages_952:
+  countrycode: bra
+  language: japanese
+  isofficial: f
+  percentage: 0.4
+countrylanguages_953:
+  countrycode: dnk
+  language: english
+  isofficial: f
+  percentage: 0.3
+countrylanguages_954:
+  countrycode: est
+  language: russian
+  isofficial: f
+  percentage: 27.8
+countrylanguages_955:
+  countrycode: lux
+  language: german
+  isofficial: t
+  percentage: 2.3
+countrylanguages_956:
+  countrycode: mkd
+  language: romani
+  isofficial: f
+  percentage: 2.3
+countrylanguages_957:
+  countrycode: mmr
+  language: karen
+  isofficial: f
+  percentage: 6.2
+countrylanguages_958:
+  countrycode: bfa
+  language: mossi
+  isofficial: f
+  percentage: 50.2
+countrylanguages_959:
+  countrycode: btn
+  language: dzongkha
+  isofficial: t
+  percentage: 50.0
+countrylanguages_960:
+  countrycode: esp
+  language: spanish
+  isofficial: t
+  percentage: 74.4
+countrylanguages_961:
+  countrycode: guy
+  language: creole english
+  isofficial: f
+  percentage: 96.4
+countrylanguages_962:
+  countrycode: jor
+  language: armenian
+  isofficial: f
+  percentage: 1.0
+countrylanguages_963:
+  countrycode: lbn
+  language: armenian
+  isofficial: f
+  percentage: 5.9
+countrylanguages_964:
+  countrycode: mdg
+  language: french
+  isofficial: t
+  percentage: 0.0
+countrylanguages_965:
+  countrycode: pak
+  language: brahui
+  isofficial: f
+  percentage: 1.2
+countrylanguages_966:
+  countrycode: swe
+  language: norwegian
+  isofficial: f
+  percentage: 0.5
+countrylanguages_967:
+  countrycode: tza
+  language: ha
+  isofficial: f
+  percentage: 3.5
+countrylanguages_968:
+  countrycode: cod
+  language: boa
+  isofficial: f
+  percentage: 2.3
+countrylanguages_969:
+  countrycode: col
+  language: caribbean
+  isofficial: f
+  percentage: 0.1
+countrylanguages_970:
+  countrycode: lux
+  language: french
+  isofficial: t
+  percentage: 4.2
+countrylanguages_971:
+  countrycode: mng
+  language: dorbet
+  isofficial: f
+  percentage: 2.7
+countrylanguages_972:
+  countrycode: phl
+  language: maguindanao
+  isofficial: f
+  percentage: 1.4
+countrylanguages_973:
+  countrycode: ukr
+  language: hungarian
+  isofficial: f
+  percentage: 0.3
+countrylanguages_974:
+  countrycode: ven
+  language: warrau
+  isofficial: f
+  percentage: 0.1
+countrylanguages_975:
+  countrycode: zaf
+  language: swazi
+  isofficial: f
+  percentage: 2.5
+countrylanguages_976:
+  countrycode: afg
+  language: pashto
+  isofficial: t
+  percentage: 52.4
+countrylanguages_977:
+  countrycode: ant
+  language: english
+  isofficial: f
+  percentage: 7.8
+countrylanguages_978:
+  countrycode: aus
+  language: arabic
+  isofficial: f
+  percentage: 1.0
+countrylanguages_979:
+  countrycode: irn
+  language: persian
+  isofficial: t
+  percentage: 45.7
+countrylanguages_980:
+  countrycode: mdv
+  language: english
+  isofficial: f
+  percentage: 0.0
+countrylanguages_981:
+  countrycode: mus
+  language: marathi
+  isofficial: f
+  percentage: 0.7
+countrylanguages_982:
+  countrycode: phl
+  language: pampango
+  isofficial: f
+  percentage: 3.0
+countrylanguages_983:
+  countrycode: tha
+  language: chinese
+  isofficial: f
+  percentage: 12.1
+countrylanguages_984:
+  countrycode: uga
+  language: ganda
+  isofficial: f
+  percentage: 18.1
