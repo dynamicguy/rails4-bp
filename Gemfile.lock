@@ -1,4 +1,11 @@
 GIT
+  remote: git://github.com/Nerian/bootstrap-wysihtml5-rails.git
+  revision: 8e7ee586a226bec5afee9b3d952f762ca2176380
+  specs:
+    bootstrap-wysihtml5-rails (0.3.1.19)
+      railties (>= 3.0)
+
+GIT
   remote: git://github.com/amatsuda/kaminari.git
   revision: 5f62aa596658f444da336d409c4d104672fa0b6e
   specs:
@@ -113,6 +120,13 @@ GIT
       coffee-rails
 
 GIT
+  remote: git://github.com/rweng/jquery-datatables-rails.git
+  revision: 494f752b8eb8350f33841c822a67d014c869219f
+  specs:
+    jquery-datatables-rails (1.11.2)
+      jquery-rails
+
+GIT
   remote: git://github.com/seyhunak/twitter-bootstrap-rails.git
   revision: 679fc6ee91b8e77e4f30625ca574c142ac3d5782
   specs:
@@ -184,11 +198,13 @@ PLATFORMS
 DEPENDENCIES
   activerecord-deprecated_finders!
   arel!
+  bootstrap-wysihtml5-rails!
   breadcrumbs_on_rails
   coffee-rails!
   country_select
   haml-rails!
   jbuilder (~> 1.0.1)
+  jquery-datatables-rails!
   jquery-rails!
   kaminari!
   mysql2
