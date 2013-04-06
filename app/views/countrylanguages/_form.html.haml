@@ -1,22 +1,8 @@
-= form_for @countrylanguage do |f|
-  - if @countrylanguage.errors.any?
-    #error_explanation
-      %h2= "#{pluralize(@countrylanguage.errors.count, "error")} prohibited this countrylanguage from being saved:"
-      %ul
-        - @countrylanguage.errors.full_messages.each do |msg|
-          %li= msg
-
-  .field
-    = f.label :countrycode
-    = f.text_field :countrycode
-  .field
-    = f.label :language
-    = f.text_field :language
-  .field
-    = f.label :isofficial
-    = f.check_box :isofficial
-  .field
-    = f.label :percentage
-    = f.text_field :percentage
-  .actions
-    = f.submit 'Save'
+= simple_form_for @countrylanguage, :html => { :class => 'form-horizontal' } do |f|
+  = f.input :countrycode
+  = f.input :language
+  = f.input :isofficial
+  = f.input :percentage
+  .form-actions
+    = f.button :submit, :class => 'btn-primary'
+    = link_to t('.cancel', :default => t("helpers.links.cancel")), countrylanguages_path, :class => 'btn'
