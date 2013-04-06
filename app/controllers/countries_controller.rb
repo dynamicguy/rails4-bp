@@ -1,14 +1,17 @@
 class CountriesController < ApplicationController
   before_action :set_country, only: [:show, :edit, :update, :destroy]
-
+  respond_to :html, :json
 
   # GET /countries
   # GET /countries.json
   def index
     add_breadcrumb :list
-    @countries = Country.order(:name).page params[:page]
-  end
 
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: CountriesDatatable.new(view_context) }
+    end
+  end
   # GET /countries/1
   # GET /countries/1.json
   def show

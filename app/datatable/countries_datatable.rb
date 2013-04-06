@@ -23,26 +23,37 @@ class CountriesDatatable
   def data
     countries.map do |country|
       [
-          '<input id="bulk_ids_" name="bulk_ids[]" type="checkbox" value="'+country.id.to_s+'">'.html_safe,
-          link_to(country.name, country),
-          country.iso_code,
-          country.status,
-          l(country.created_at, :format => :short),
-          (link_to('Edit', "/countries/#{country.id}/edit", :class => 'btn btn-mini') + " " +
-              link_to('Delete', "/countries/#{country.id}", :method => :delete, :data => {:confirm => 'Are you sure?'}, :class => 'btn btn-mini btn-danger'))
+          link_to(country.code, country),
+          country.name,
+          country.continent,
+          country.region,
+          country.surfacearea,
+          country.indepyear,
+          country.population,
+          country.lifeexpectancy,
+          country.gnp,
+          country.gnpold,
+          country.governmentform,
+          country.headofstate,
+          country.capital,
+          country.code2,
+
+          (link_to('Edit', "/countries/#{country.code}/edit", :class => 'btn btn-mini') + " " +
+              link_to('Delete', "/countries/#{country.code}", :method => :delete, :data => {:confirm => 'Are you sure?'}, :class => 'btn btn-mini btn-danger'))
       ]
     end
   end
 
   def countries
     @countries ||= fetch_countries
+    raise @countries.inspect
   end
 
   def fetch_countries
     countries = Country.order("#{sort_column} #{sort_direction}")
     countries = countries.page(page).per_page(per_page)
     if params[:sSearch].present?
-      countries = countries.where("name like :search or iso_code like :search", search: "%#{params[:sSearch]}%")
+      countries = countries.where("name like :search or code like :search", search: "%#{params[:sSearch]}%")
     end
     countries
   end
@@ -56,7 +67,7 @@ class CountriesDatatable
   end
 
   def sort_column
-    columns = %w[id name iso_code status created_at]
+    columns = %w[code name continent region surfacearea indepyear population lifeexpectancy gnp gnpold governmentform headofstate capital code2]
     columns[params[:iSortCol_0].to_i]
   end
 
