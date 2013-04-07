@@ -6,10 +6,12 @@ class CountriesDatatable
   end
 
   def as_json(options = {})
+    raise countries.inspect
     if params[:jqdata]
       {
           sEcho: params[:sEcho].to_i,
           iTotalRecords: Country.count,
+
           iTotalDisplayRecords: countries.total_entries,
           aaData: data
       }
@@ -33,6 +35,7 @@ class CountriesDatatable
           country.lifeexpectancy,
           country.gnp,
           country.gnpold,
+          country.localname,
           country.governmentform,
           country.headofstate,
           country.capital,
@@ -46,12 +49,11 @@ class CountriesDatatable
 
   def countries
     @countries ||= fetch_countries
-    raise @countries.inspect
   end
 
   def fetch_countries
     countries = Country.order("#{sort_column} #{sort_direction}")
-    countries = countries.page(page).per_page(per_page)
+    countries = countries.page(page).per(per_page)
     if params[:sSearch].present?
       countries = countries.where("name like :search or code like :search", search: "%#{params[:sSearch]}%")
     end
@@ -61,6 +63,7 @@ class CountriesDatatable
   def page
     params[:iDisplayStart].to_i/per_page + 1
   end
+  private
 
   def per_page
     params[:iDisplayLength].to_i > 0 ? params[:iDisplayLength].to_i : 10
