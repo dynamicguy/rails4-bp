@@ -1,0 +1,14 @@
+- alert = Alert.last
+- if alert.present?
+  .row-fluid
+    .alert.global
+      .span6
+        %i.icon-info-sign
+        %strong Latest Alert
+        %span= truncate(alert.message)
+        %span= link_to t("links.labels.read_details"), alert
+
+      .span6
+        .right
+          ="You have #{Alert.critical_count} critical, #{Alert.major_count} major, #{Alert.minor_count} minor and #{Alert.notice_count} notice unread message(s)."
+          = link_to t("links.labels.go_to_alerts"), alerts_path

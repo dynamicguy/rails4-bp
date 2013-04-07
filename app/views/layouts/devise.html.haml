@@ -7,12 +7,18 @@
   / <![endif]
   = render "layouts/head"
 
+
 %body
   /[if lt IE 7] <p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
-  = render 'layouts/nav'
+  - if user_signed_in?
+    = render 'layouts/nav'
 
   #maincontainer.container-fluid
-    = render 'layouts/messages'
     .row-fluid#content= yield
 
-    %footer= render 'layouts/footer'
+    .row-fluid
+      = render 'layouts/footer'
+
+#loader
+  #progress-bar.progress.active.progress-success.progress-striped.no-border{:style => "display: none;"}
+    .bar{:style => "width: 100%"}

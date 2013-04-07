@@ -1,0 +1,84 @@
+.navbar.navbar-fluid-top
+  .navbar-inner
+    .container-fluid
+      %a.btn.btn-navbar(data-target=".nav-collapse" data-toggle="collapse")
+        %span.icon-bar
+        %span.icon-bar
+        %span.icon-bar
+      = link_to 'RAAKIB.COM', root_path, 'data-no-turbolink' => '', :class => 'brand'
+      .container.nav-collapse
+        %ul.nav#main-nav
+          %li{:class => (params[:controller] == 'dashboard' ? 'active' : '')}= link_to "Dashboard", root_path
+          %li.dropdown
+            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+              Vehicles
+              %b.caret
+            %ul.dropdown-menu
+              %li{:class => (params[:controller] == 'fleets' ? 'active' : '')}= link_to "Fleets", fleets_path
+              %li= link_to 'Vehicles', vehicles_path
+              %li= link_to 'Vehicle Types', vehicle_types_path
+              %li= link_to 'Specifications', specifications_path
+              %li= link_to 'Vendors', vendors_path
+
+          %li.dropdown
+            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+              System
+              %b.caret
+            %ul.dropdown-menu
+              %li{:class => (params[:controller] == 'branches' ? 'active' : '')}= link_to "Branches", branches_path
+              %li{:class => (params[:controller] == 'calculation_methods' ? 'active' : '')}= link_to "Calculation Methods", calculation_methods_path
+              %li{:class => (params[:controller] == 'tax_fields' ? 'active' : '')}= link_to "Tax Fields", tax_fields_path
+              %li{:class => (params[:controller] == 'payment_methods' ? 'active' : '')}= link_to "Payment Methods", payment_methods_path
+              %li{:class => (params[:controller] == 'rates' ? 'active' : '')}= link_to "Rates", rates_path
+
+
+          %li.dropdown
+            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+              Customers
+              %b.caret
+            %ul.dropdown-menu
+              %li{:class => (params[:controller] == 'reservations' ? 'active' : '')}= link_to "Reservations", reservations_path
+              %li{:class => (params[:controller] == 'quotes' ? 'active' : '')}= link_to "Quotes", quotes_path
+              %li{:class => (params[:controller] == 'customers' ? 'active' : '')}= link_to "Customers", reservations_path
+              %li{:class => (params[:controller] == 'contracts' ? 'active' : '')}= link_to "Contracts", contracts_path
+              %li{:class => (params[:controller] == 'charges' ? 'active' : '')}= link_to "Charges", charges_path
+              %li{:class => (params[:controller] == 'aggrements' ? 'active' : '')}= link_to "Agreements", reservations_path
+              %li{:class => (params[:controller] == 'addresses' ? 'active' : '')}= link_to "Addresses", addresses_path
+              %li{:class => (params[:controller] == 'companies' ? 'active' : '')}= link_to "Companies", companies_path
+
+          %li.dropdown
+            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+              CMS
+              %b.caret
+            %ul.dropdown-menu
+              %li{:class => (params[:controller] == 'cms' ? 'active' : '')}= link_to "Layout", reservations_path
+              %li{:class => (params[:controller] == 'pages' ? 'active' : '')}= link_to "Pages", branches_path
+
+          %li{:class => (params[:controller] == 'reports' ? 'active' : '')}= link_to "Reports", reservations_path
+
+
+        - if user_signed_in?
+          %ul.nav.pull-right
+            %li= link_to 'Welcome ' + current_user.email, edit_user_registration_path
+            %li.dropdown
+              %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                %i.icon-xlarge.icon-user
+                %b.caret
+              %ul.dropdown-menu.dropdown-user-account
+                %li.account-img-container
+                  - if current_user.profile.present?
+                    %img.thumb.account-img{:src => current_user.profile.avatar_url}
+                %li.account-info
+                  %h3= current_user.email
+                  - if current_user.profile.present?
+                    %p= truncate(current_user.profile.bio, :length => 120)
+                %li.account-footer
+                  .row-fluid
+                    .span8
+                      - if current_user.profile.present?
+                        %a.btn.btn-primary.btn-small{:href => edit_profile_path(current_user.profile)}= t "links.label.edit_profile"
+                      %a.btn.btn-primary.btn-small{:href => edit_user_registration_path}= t "links.label.edit_account"
+                    .span4.align-right
+                      = link_to 'Logout', destroy_user_session_path, :method => :delete, :class => 'btn btn-danger btn-small', 'data-confirm' => 'Please confirm your action'
+  = render 'layouts/global-alerts'
+  = render 'layouts/progressbar'

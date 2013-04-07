@@ -32,12 +32,12 @@ ActiveRecord::Schema.define(version: 20130407091852) do
     t.string  "name",           limit: 52, default: "",     null: false
     t.string  "continent",      limit: 13, default: "asia", null: false
     t.string  "region",         limit: 26, default: "",     null: false
-    t.float   "surfacearea",    limit: 10, default: 0.0,    null: false
+    t.float   "surfacearea",               default: 0.0,    null: false
     t.integer "indepyear",      limit: 2
     t.integer "population",                default: 0,      null: false
-    t.float   "lifeexpectancy", limit: 3
-    t.float   "gnp",            limit: 10
-    t.float   "gnpold",         limit: 10
+    t.float   "lifeexpectancy"
+    t.float   "gnp"
+    t.float   "gnpold"
     t.string  "localname",      limit: 45, default: "",     null: false
     t.string  "governmentform", limit: 45, default: "",     null: false
     t.string  "headofstate",    limit: 60
@@ -49,7 +49,7 @@ ActiveRecord::Schema.define(version: 20130407091852) do
     t.string "countrycode", limit: 3,  default: "",  null: false
     t.string "language",    limit: 30, default: "",  null: false
     t.string "isofficial",  limit: 1,  default: "f", null: false
-    t.float  "percentage",  limit: 4,  default: 0.0, null: false
+    t.float  "percentage",             default: 0.0, null: false
   end
 
   add_index "countrylanguages", ["countrycode"], name: "countrycode"

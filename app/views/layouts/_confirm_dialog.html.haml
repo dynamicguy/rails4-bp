@@ -1,0 +1,10 @@
+#confirm-dialog.modal.hide.fade{"aria-hidden" => "true", "aria-labelledby" => "myModalLabel", :role => "dialog", :tabindex => "-1"}
+  .modal-header
+    %button.close{"aria-hidden" => "true", "data-dismiss" => "modal", :type => "button"} ×
+    %h3#myModalLabel Are you sure?
+  .modal-body
+    %p This operation is irreversible. Please confirm your action.
+  .modal-footer
+    %input.hidden{:name => "delete-url", :id => "delete-url", :value => "null"}
+    %button.btn.btn-primary{"aria-hidden" => "true", "data-value" => "false", "data-dismiss" => "modal", "class" => "confirm-btn"} No
+    %button.btn{"data-value" => "true", "data-dismiss" => "modal", "class" => "confirm-btn"} Yes

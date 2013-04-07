@@ -1,7 +1,7 @@
 class CreateCountries < ActiveRecord::Migration
 
   def change
-    create_table "countries", id: false, force: true, :options => 'ENGINE=NDB' do |t|
+    create_table "countries", id: false, force: true do |t|
       t.string "code"
       t.string "name", null: false
       t.string "continent", default: "Asia", null: false

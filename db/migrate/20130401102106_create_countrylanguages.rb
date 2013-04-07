@@ -1,6 +1,6 @@
 class CreateCountrylanguages < ActiveRecord::Migration
   def change
-    create_table "countrylanguages", id: false, force: true, :options => 'ENGINE=NDB'  do |t|
+    create_table "countrylanguages", id: false, force: true  do |t|
       t.string  "countrycode"
       t.string  "language"
       t.boolean "isofficial",                           default: false
