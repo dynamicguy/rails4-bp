@@ -4,7 +4,13 @@ class CountrylanguagesController < ApplicationController
   # GET /countrylanguages
   # GET /countrylanguages.json
   def index
-    @countrylanguages = Countrylanguage.order(:language).page params[:page]
+    add_breadcrumb :list
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: CountrylanguageDatatable.new(view_context) }
+      format.xml { render xml: City.all }
+    end
   end
 
   # GET /countrylanguages/1
