@@ -6,13 +6,11 @@ class CountriesDatatable
   end
 
   def as_json(options = {})
-    raise countries.inspect
     if params[:jqdata]
       {
           sEcho: params[:sEcho].to_i,
           iTotalRecords: Country.count,
-
-          iTotalDisplayRecords: countries.total_entries,
+          iTotalDisplayRecords: Country.count.to_i,
           aaData: data
       }
     else
@@ -29,15 +27,8 @@ class CountriesDatatable
           country.name,
           country.continent,
           country.region,
-          country.surfacearea,
           country.indepyear,
           country.population,
-          country.lifeexpectancy,
-          country.gnp,
-          country.gnpold,
-          country.localname,
-          country.governmentform,
-          country.headofstate,
           country.capital,
           country.code2,
 
