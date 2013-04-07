@@ -5,7 +5,12 @@ class CitiesController < ApplicationController
   # GET /cities.json
   def index
     add_breadcrumb :list
-    @cities = City.order(:name).page params[:page]
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: CitiesDatatable.new(view_context) }
+      format.xml { render xml: City.all }
+    end
   end
 
   # GET /cities/1
