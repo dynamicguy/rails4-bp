@@ -30,7 +30,6 @@ class CountriesDatatable
           country.indepyear,
           country.population,
           country.capital,
-          country.code2,
 
           (link_to('Edit', "/countries/#{country.code}/edit", :class => 'btn btn-mini') + " " +
               link_to('Delete', "/countries/#{country.code}", :method => :delete, :data => {:confirm => 'Are you sure?'}, :class => 'btn btn-mini btn-danger'))

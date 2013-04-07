@@ -21,3 +21,9 @@
       list: List
       new: New
       edit: edit
+    countrylanguages:
+          countrylanguages: countrylanguages
+          home: Home
+          list: List
+          new: New
+          edit: edit
