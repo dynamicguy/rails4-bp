@@ -9,7 +9,7 @@ class CountriesController < ApplicationController
 
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: CitiesDatatable.new(view_context) }
+      format.json { render json: CountriesDatatable.new(view_context) }
       format.xml { render xml: City.all }
     end
   end

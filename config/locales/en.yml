@@ -21,3 +21,8 @@
 
 en:
   hello: "Hello world"
+  labels:
+    edit: "Edit"
+    show: "Show"
+    listing: "List"
+    new: "new"
