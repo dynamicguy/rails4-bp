@@ -24,6 +24,17 @@ GIT
       railties (>= 3.1, < 4.1)
 
 GIT
+  remote: git://github.com/plataformatec/devise.git
+  revision: ce37c301ff91f0d59ff91715f0c36e0ee285fb11
+  branch: rails4
+  specs:
+    devise (2.2.3)
+      bcrypt-ruby (~> 3.0)
+      orm_adapter (~> 0.1)
+      railties (~> 4.0.0.beta)
+      warden (~> 1.2.1)
+
+GIT
   remote: git://github.com/rails/activerecord-deprecated_finders.git
   revision: c00788c2b7e01170f63bd9651f7efd8deb4bd4b0
   specs:
@@ -139,6 +150,7 @@ GEM
   remote: https://rubygems.org/
   specs:
     atomic (1.0.1)
+    bcrypt-ruby (3.0.1)
     breadcrumbs_on_rails (2.3.0)
     builder (3.1.4)
     coffee-script (2.2.0)
@@ -164,6 +176,7 @@ GEM
     minitest (4.7.0)
     multi_json (1.7.2)
     mysql2 (0.3.11)
+    orm_adapter (0.4.0)
     polyglot (0.3.3)
     puma (1.6.3)
       rack (~> 1.2)
@@ -191,6 +204,8 @@ GEM
     uglifier (1.3.0)
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)
+    warden (1.2.1)
+      rack (>= 1.0)
 
 PLATFORMS
   ruby
@@ -202,6 +217,7 @@ DEPENDENCIES
   breadcrumbs_on_rails
   coffee-rails!
   country_select
+  devise!
   haml-rails!
   jbuilder (~> 1.0.1)
   jquery-datatables-rails!

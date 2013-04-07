@@ -52,4 +52,6 @@ gem 'turbolinks', github: 'rails/turbolinks'
 gem "haml-rails", github: 'indirect/haml-rails'
 
 gem "kaminari", github: "amatsuda/kaminari"
+gem "devise", github: "plataformatec/devise", branch: 'rails4'
 gem "country_select"
+
