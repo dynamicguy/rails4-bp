@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130401102756) do
+ActiveRecord::Schema.define(version: 20130407091852) do
 
   create_table "articles", force: true do |t|
     t.string   "name"
@@ -28,29 +28,59 @@ ActiveRecord::Schema.define(version: 20130401102756) do
 
   add_index "cities", ["countrycode"], name: "countrycode"
 
-  create_table "countries", id: false, force: true do |t|
-    t.string  "code"
-    t.string  "name",                                                     null: false
-    t.string  "continent",                               default: "Asia", null: false
-    t.string  "region",                                  default: "",     null: false
-    t.decimal "surfacearea",    precision: 10, scale: 0, default: 0,      null: false
-    t.integer "indepyear",                               default: 0
-    t.integer "population",                              default: 0,      null: false
-    t.decimal "lifeexpectancy", precision: 10, scale: 0
-    t.decimal "gnp",            precision: 10, scale: 0
-    t.decimal "gnpold",         precision: 10, scale: 0
-    t.string  "localname",                               default: "",     null: false
-    t.string  "governmentform",                          default: "",     null: false
-    t.string  "headofstate",                             default: ""
-    t.integer "capital",                                 default: 0
-    t.string  "code2",                                   default: "",     null: false
+  create_table "countries", primary_key: "code", force: true do |t|
+    t.string  "name",           limit: 52, default: "",     null: false
+    t.string  "continent",      limit: 13, default: "asia", null: false
+    t.string  "region",         limit: 26, default: "",     null: false
+    t.float   "surfacearea",    limit: 10, default: 0.0,    null: false
+    t.integer "indepyear",      limit: 2
+    t.integer "population",                default: 0,      null: false
+    t.float   "lifeexpectancy", limit: 3
+    t.float   "gnp",            limit: 10
+    t.float   "gnpold",         limit: 10
+    t.string  "localname",      limit: 45, default: "",     null: false
+    t.string  "governmentform", limit: 45, default: "",     null: false
+    t.string  "headofstate",    limit: 60
+    t.integer "capital"
+    t.string  "code2",          limit: 2,  default: "",     null: false
   end
 
   create_table "countrylanguages", id: false, force: true do |t|
-    t.string  "countrycode"
-    t.string  "language"
-    t.boolean "isofficial",                           default: false
-    t.decimal "percentage",  precision: 10, scale: 0, default: 0
+    t.string "countrycode", limit: 3,  default: "",  null: false
+    t.string "language",    limit: 30, default: "",  null: false
+    t.string "isofficial",  limit: 1,  default: "f", null: false
+    t.float  "percentage",  limit: 4,  default: 0.0, null: false
   end
+
+  add_index "countrylanguages", ["countrycode"], name: "countrycode"
+
+  create_table "users", force: true do |t|
+    t.string   "email",                  default: "", null: false
+    t.string   "encrypted_password",     default: "", null: false
+    t.string   "reset_password_token"
+    t.datetime "reset_password_sent_at"
+    t.datetime "remember_created_at"
+    t.integer  "sign_in_count",          default: 0
+    t.datetime "current_sign_in_at"
+    t.datetime "last_sign_in_at"
+    t.string   "current_sign_in_ip"
+    t.string   "last_sign_in_ip"
+    t.string   "confirmation_token"
+    t.datetime "confirmed_at"
+    t.datetime "confirmation_sent_at"
+    t.string   "unconfirmed_email"
+    t.integer  "failed_attempts",        default: 0
+    t.string   "unlock_token"
+    t.datetime "locked_at"
+    t.string   "authentication_token"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "users", ["authentication_token"], name: "index_users_on_authentication_token", unique: true
+  add_index "users", ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
+  add_index "users", ["email"], name: "index_users_on_email", unique: true
+  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
+  add_index "users", ["unlock_token"], name: "index_users_on_unlock_token", unique: true
 
 end

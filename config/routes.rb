@@ -1,10 +1,11 @@
 Rails4Bp::Application.routes.draw do
+  devise_for :users
   resources :countrylanguages
   resources :cities
   resources :countries
   resources :articles
 
-  root 'cities#index'
+  root to: 'cities#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -8,6 +8,7 @@ if Rails.env.development?
     ensure
       Rails.logger.level = previous_level
     end
+
     alias_method_chain :call, :quiet_assets
   end
 end
