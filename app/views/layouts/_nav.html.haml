@@ -14,22 +14,20 @@
               Vehicles
               %b.caret
             %ul.dropdown-menu
-              %li{:class => (params[:controller] == 'fleets' ? 'active' : '')}= link_to "Fleets", fleets_path
-              %li= link_to 'Vehicles', vehicles_path
-              %li= link_to 'Vehicle Types', vehicle_types_path
-              %li= link_to 'Specifications', specifications_path
-              %li= link_to 'Vendors', vendors_path
+              %li{:class => (params[:controller] == 'countries' ? 'active' : '')}= link_to "Countries", countries_path
+              %li= link_to 'Cities', cities_path
+              %li= link_to 'Languages', countrylanguages_path
+              %li= link_to 'Articles', articles_path
 
           %li.dropdown
             %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
               System
               %b.caret
             %ul.dropdown-menu
-              %li{:class => (params[:controller] == 'branches' ? 'active' : '')}= link_to "Branches", branches_path
-              %li{:class => (params[:controller] == 'calculation_methods' ? 'active' : '')}= link_to "Calculation Methods", calculation_methods_path
-              %li{:class => (params[:controller] == 'tax_fields' ? 'active' : '')}= link_to "Tax Fields", tax_fields_path
-              %li{:class => (params[:controller] == 'payment_methods' ? 'active' : '')}= link_to "Payment Methods", payment_methods_path
-              %li{:class => (params[:controller] == 'rates' ? 'active' : '')}= link_to "Rates", rates_path
+              %li{:class => (params[:controller] == 'countries' ? 'active' : '')}= link_to "Countries", countries_path
+              %li{:class => (params[:controller] == 'cities' ? 'active' : '')}= link_to "Cities", cities_path
+              %li{:class => (params[:controller] == 'languages' ? 'active' : '')}= link_to "Languages", countrylanguages_path
+              %li{:class => (params[:controller] == 'articles' ? 'active' : '')}= link_to "Articles", articles_path
 
 
           %li.dropdown
@@ -37,25 +35,13 @@
               Customers
               %b.caret
             %ul.dropdown-menu
-              %li{:class => (params[:controller] == 'reservations' ? 'active' : '')}= link_to "Reservations", reservations_path
-              %li{:class => (params[:controller] == 'quotes' ? 'active' : '')}= link_to "Quotes", quotes_path
-              %li{:class => (params[:controller] == 'customers' ? 'active' : '')}= link_to "Customers", reservations_path
-              %li{:class => (params[:controller] == 'contracts' ? 'active' : '')}= link_to "Contracts", contracts_path
-              %li{:class => (params[:controller] == 'charges' ? 'active' : '')}= link_to "Charges", charges_path
-              %li{:class => (params[:controller] == 'aggrements' ? 'active' : '')}= link_to "Agreements", reservations_path
-              %li{:class => (params[:controller] == 'addresses' ? 'active' : '')}= link_to "Addresses", addresses_path
-              %li{:class => (params[:controller] == 'companies' ? 'active' : '')}= link_to "Companies", companies_path
+
 
           %li.dropdown
             %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
               CMS
               %b.caret
             %ul.dropdown-menu
-              %li{:class => (params[:controller] == 'cms' ? 'active' : '')}= link_to "Layout", reservations_path
-              %li{:class => (params[:controller] == 'pages' ? 'active' : '')}= link_to "Pages", branches_path
-
-          %li{:class => (params[:controller] == 'reports' ? 'active' : '')}= link_to "Reports", reservations_path
-
 
         - if user_signed_in?
           %ul.nav.pull-right
@@ -80,5 +66,5 @@
                       %a.btn.btn-primary.btn-small{:href => edit_user_registration_path}= t "links.label.edit_account"
                     .span4.align-right
                       = link_to 'Logout', destroy_user_session_path, :method => :delete, :class => 'btn btn-danger btn-small', 'data-confirm' => 'Please confirm your action'
-  = render 'layouts/global-alerts'
+  =# render 'layouts/global-alerts'
   = render 'layouts/progressbar'
