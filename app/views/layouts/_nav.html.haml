@@ -11,37 +11,25 @@
           %li{:class => (params[:controller] == 'dashboard' ? 'active' : '')}= link_to "Dashboard", root_path
           %li.dropdown
             %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
-              Vehicles
+              Countries
               %b.caret
             %ul.dropdown-menu
               %li{:class => (params[:controller] == 'countries' ? 'active' : '')}= link_to "Countries", countries_path
-              %li= link_to 'Cities', cities_path
-              %li= link_to 'Languages', countrylanguages_path
-              %li= link_to 'Articles', articles_path
 
           %li.dropdown
             %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
-              System
+              Cities
               %b.caret
             %ul.dropdown-menu
-              %li{:class => (params[:controller] == 'countries' ? 'active' : '')}= link_to "Countries", countries_path
+
               %li{:class => (params[:controller] == 'cities' ? 'active' : '')}= link_to "Cities", cities_path
+
+          %li.dropdown
+            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+              Languages
+              %b.caret
+            %ul.dropdown-menu
               %li{:class => (params[:controller] == 'languages' ? 'active' : '')}= link_to "Languages", countrylanguages_path
-              %li{:class => (params[:controller] == 'articles' ? 'active' : '')}= link_to "Articles", articles_path
-
-
-          %li.dropdown
-            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
-              Customers
-              %b.caret
-            %ul.dropdown-menu
-
-
-          %li.dropdown
-            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
-              CMS
-              %b.caret
-            %ul.dropdown-menu
 
         - if user_signed_in?
           %ul.nav.pull-right
