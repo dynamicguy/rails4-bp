@@ -45,6 +45,14 @@ GIT
       warden (~> 1.2.1)
 
 GIT
+  remote: git://github.com/plataformatec/simple_form.git
+  revision: 9dca432fd48284c1cd413f6852ae85e42ddaa412
+  specs:
+    simple_form (3.0.0.beta1)
+      actionpack (>= 4.0.0.beta, < 4.1)
+      activemodel (>= 4.0.0.beta, < 4.1)
+
+GIT
   remote: git://github.com/rails/activerecord-deprecated_finders.git
   revision: c00788c2b7e01170f63bd9651f7efd8deb4bd4b0
   specs:
@@ -199,7 +207,6 @@ GEM
     rdoc (3.12.2)
       json (~> 1.4)
     sass (3.2.7)
-    simple_form (1.4.1)
     sprockets (2.9.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -240,7 +247,7 @@ DEPENDENCIES
   rails!
   ransack!
   sass-rails!
-  simple_form
+  simple_form!
   sprockets-rails!
   turbolinks!
   twitter-bootstrap-rails!
