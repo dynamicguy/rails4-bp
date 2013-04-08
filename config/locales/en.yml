@@ -31,3 +31,12 @@ en:
     labels:
       new_countrylanguage: "New Country Language"
       countrylanguage_list: "Country Language List"
+
+      city_list: "City List"
+      new_city: "New City"
+      search_city: "Search City"
+      Advanced_search: "Advanced Search"
+  helpers:
+    links:
+      switch_to_simple_mode: "switch to simple mode"
+      switch_to_advanced_mode: "Switch to Advanced Mode"

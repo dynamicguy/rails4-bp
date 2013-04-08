@@ -1,8 +1,26 @@
 class CitiesController < ApplicationController
   before_action :set_city, only: [:show, :edit, :update, :destroy]
   add_breadcrumb :cities, :cities_path
+  respond_to :html, :json
   # GET /cities
   # GET /cities.json
+
+  def search
+    add_breadcrumb :search
+    @search = City.search(params[:q])
+    @cities  = params[:distinct].to_i.zero? ? @search.result.page(params[:page]).per(15) : @search.result(distinct: true).page(params[:page]).per(15)
+    respond_with @cities
+  end
+
+  def advanced_search
+    add_breadcrumb :advanced_search
+    @search = City.search(params[:q])
+    @search.build_grouping unless @search.groupings.any?
+    @cities  = params[:distinct].to_i.zero? ? @search.result.page(params[:page]).per(15) : @search.result(distinct: true).page(params[:page]).per(15)
+
+    respond_with @cities
+  end
+
   def index
     add_breadcrumb :list
 

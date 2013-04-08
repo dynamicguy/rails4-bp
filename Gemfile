@@ -52,6 +52,7 @@ gem 'turbolinks', github: 'rails/turbolinks'
 gem "haml-rails", github: 'indirect/haml-rails'
 
 gem "kaminari", github: "amatsuda/kaminari"
+gem "ransack", :git => "git://github.com/ernie/ransack.git", branch: 'rails-4'
 gem "devise", github: "plataformatec/devise", branch: 'rails4'
 gem "country_select"
 

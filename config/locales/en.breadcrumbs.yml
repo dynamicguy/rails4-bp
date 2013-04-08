@@ -21,6 +21,8 @@
       list: List
       new: New
       edit: edit
+      search: Search
+      advanced_search: Advanced Search
     countrylanguages:
           countrylanguages: countrylanguages
           home: Home

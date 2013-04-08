@@ -4,13 +4,30 @@ class CountriesController < ApplicationController
 
   # GET /countries
   # GET /countries.json
+
+  def search
+    add_breadcrumb :search
+    @search = Country.search(params[:q])
+    @countries  = params[:distinct].to_i.zero? ? @search.result.page(params[:page]).per(15) : @search.result(distinct: true).page(params[:page]).per(15)
+    respond_with @countries
+  end
+
+  def advanced_search
+    add_breadcrumb :advanced_search
+    @search = Country.search(params[:q])
+    @search.build_grouping unless @search.groupings.any?
+    @countries  = params[:distinct].to_i.zero? ? @search.result.page(params[:page]).per(15) : @search.result(distinct: true).page(params[:page]).per(15)
+
+    respond_with @countries
+  end
+
   def index
     add_breadcrumb :list
 
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: CountriesDatatable.new(view_context) }
-      format.xml { render xml: City.all }
+      format.xml { render xml: Country.all }
     end
   end
   # GET /countries/1
