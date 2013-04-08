@@ -27,3 +27,7 @@ en:
     listing: "List"
     new: "new"
     details: "Details"
+  links:
+    labels:
+      new_countrylanguage: "New Country Language"
+      countrylanguage_list: "Country Language List"

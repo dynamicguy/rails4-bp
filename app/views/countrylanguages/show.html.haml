@@ -1,25 +1,32 @@
 - model_class = Countrylanguage
-.page-header
-  %h1=t '.title', :default => model_class.model_name.human
+.span3.leftsidebar= render 'sidebar'
+.span9
+  = render_breadcrumbs
+  .well
+    .navbar.navbar-heading
+      .navbar-inner
+        .container
+          %span.brand= raw(t '.title', :default => model_class.model_name.human + " "+ t('labels.show'))
+          = link_to raw('<i class="icon-plus-sign"></i> ' + t('.new', :default => t("helpers.links.new"))), new_countrylanguage_path, :class => 'btn btn-success btn-mini btn-plus pull-right'
 
-%p
-  %strong= model_class.human_attribute_name(:countrycode) + ':'
-  %br
-  = @countrylanguage.countrycode
-%p
-  %strong= model_class.human_attribute_name(:language) + ':'
-  %br
-  = @countrylanguage.language
-%p
-  %strong= model_class.human_attribute_name(:isofficial) + ':'
-  %br
-  = @countrylanguage.isofficial
-%p
-  %strong= model_class.human_attribute_name(:percentage) + ':'
-  %br
-  = @countrylanguage.percentage
+      %p
+        %strong= model_class.human_attribute_name(:countrycode) + ':'
+        %br
+        = @countrylanguage.countrycode
+      %p
+        %strong= model_class.human_attribute_name(:language) + ':'
+        %br
+        = @countrylanguage.language
+      %p
+        %strong= model_class.human_attribute_name(:isofficial) + ':'
+        %br
+        = @countrylanguage.isofficial
+      %p
+        %strong= model_class.human_attribute_name(:percentage) + ':'
+        %br
+        = @countrylanguage.percentage
 
-.form-actions
-  = link_to t('.back', :default => t("helpers.links.back")), countrylanguages_path, :class => 'btn'
-  = link_to t('.edit', :default => t("helpers.links.edit")), edit_countrylanguage_path(@countrylanguage), :class => 'btn'
-  = link_to t('.destroy', :default => t("helpers.links.destroy")), countrylanguage_path(@countrylanguage), :method => "delete", :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-danger'
+      .form-actions
+        = link_to t('.back', :default => t("helpers.links.back")), countrylanguages_path, :class => 'btn'
+        = link_to t('.edit', :default => t("helpers.links.edit")), edit_countrylanguage_path(@countrylanguage), :class => 'btn'
+        = link_to t('.destroy', :default => t("helpers.links.destroy")), countrylanguage_path(@countrylanguage), :method => "delete", :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-danger'
