@@ -1,7 +1,7 @@
 body {
     line-height: 1.5em;
     font-size: 13px;
-    background: #fff;
+    background: #fff url('/assets/ui/gray_jeans.png');
 }
 
 .well {

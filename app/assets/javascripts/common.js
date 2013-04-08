@@ -146,26 +146,7 @@ $(window).resize(function () {
 });
 
 document.addEventListener("page:fetch", function () {
-    setTimeout(function () {
-        $('.progress .bar').each(function () {
-            var me = $(this);
-            var perc = me.attr("data-percentage");
-            var current_perc = 0;
-            var progress = setInterval(function () {
-                if (current_perc >= perc) {
-                    clearInterval(progress);
-                } else {
-                    current_perc += 15;
-                    me.parent().css('width', (current_perc) + '%');
-                }
-
-                me.text((current_perc) + '%');
-
-            }, 60);
-            document.getElementById('progress-bar').style.display = 'block';
-        });
-
-    }, 300);
+    document.getElementById('progress-bar').style.display = 'block';
 });
 
 document.addEventListener("page:change", function () {
