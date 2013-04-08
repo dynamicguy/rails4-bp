@@ -1,0 +1,21 @@
+- model_class = Countrylanguage
+.well
+  .navbar.navbar-heading
+    .navbar-inner
+      .container
+        %span.brand Quick Links
+  %ul.nav.nav-tabs.nav-stacked
+    %li= link_to t('links.labels.countrylanguage_list').html_safe, countrylanguages_path
+    %li= link_to t('links.labels.new_countrylanguage').html_safe, new_countrylanguage_path
+
+  - countrylanguages = Countrylanguage.all( limit: 5, order: "language")
+.well
+  .navbar.navbar-heading
+    .navbar-inner
+      .container
+        %span.brand Recent Cities
+  %ul.nav.nav-tabs.nav-stacked
+    - countrylanguages.each do |c|
+      %li= link_to "#{c.countrycode} <i class=\"icon-file float-right\"></i>".html_safe , c if c.present?
+    %li= 'nothing found' unless countrylanguages.present?
+
