@@ -46,7 +46,7 @@ gem 'twitter-bootstrap-rails', github: 'seyhunak/twitter-bootstrap-rails'
 gem 'bootstrap-wysihtml5-rails', :require => 'bootstrap-wysihtml5-rails', :git => 'git://github.com/Nerian/bootstrap-wysihtml5-rails.git'
 gem 'jquery-datatables-rails', git: 'git://github.com/rweng/jquery-datatables-rails.git'
 
-gem "simple_form"
+gem "simple_form", git: 'git://github.com/plataformatec/simple_form.git'
 
 gem 'turbolinks', github: 'rails/turbolinks'
 gem "haml-rails", github: 'indirect/haml-rails'
