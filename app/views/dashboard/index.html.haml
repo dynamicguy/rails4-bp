@@ -1,0 +1,34 @@
+.span3.leftsidebar= render 'sidebar'
+
+.span9
+  = render_breadcrumbs
+
+  .well
+    .navbar.navbar-heading
+      .navbar-inner
+        .container{:style => "width: auto;"}
+          %a.brand{:href => "/"} Control Panel
+    .btn-circle-panel.medium
+      %ul.btn-circle
+        %li
+          %a.bottom_tooltip{"data-original-title" => "Collaboration requests", :href => "#"}
+            = image_tag('icons/collab.png')
+          %span.badge.badge-important 24
+        %li.info
+          %a.bottom_tooltip{"data-original-title" => "Item sold", :href => "#"}
+            = image_tag('icons/money.png')
+        %li.important
+          %a.bottom_tooltip{"data-original-title" => "Friend requests", :href => "#"}
+            = image_tag('icons/add-user.png')
+        %li.success
+          %a.bottom_tooltip{"data-original-title" => "Personal messages", :href => "#"}
+            = image_tag('icons/personal-messages.png')
+        %li.warning
+          %a.bottom_tooltip{"data-original-title" => "To do lists", :href => "#"}
+            = image_tag('icons/clock.png')
+        %li.danger
+          %a.bottom_tooltip{"data-original-title" => "Projects", :href => "#"}
+            = image_tag('icons/projects.png')
+        %li.inverse
+          %a.bottom_tooltip{"data-original-title" => "File sharing", :href => "#"}
+            = image_tag('icons/file-sharing.png')
