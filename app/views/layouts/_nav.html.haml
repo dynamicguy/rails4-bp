@@ -9,6 +9,8 @@
       .container.nav-collapse
         %ul.nav#main-nav
           %li{:class => (params[:controller] == 'dashboard' ? 'active' : '')}= link_to "Dashboard", root_path
+          %li{:class => (params[:controller] == 'pages' ? 'active' : '')}= link_to "Pages", pages_path
+          %li{:class => (params[:controller] == 'categories' ? 'active' : '')}= link_to "Categories", categories_path
           %li.dropdown
             %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
               Countries
@@ -21,7 +23,6 @@
               Cities
               %b.caret
             %ul.dropdown-menu
-
               %li{:class => (params[:controller] == 'cities' ? 'active' : '')}= link_to "List", cities_path
               %li{:class => (params[:controller] == 'cities' ? 'active' : '')}= link_to "Search", search_cities_path
               %li{:class => (params[:controller] == 'cities' ? 'active' : '')}= link_to "Search", root_path

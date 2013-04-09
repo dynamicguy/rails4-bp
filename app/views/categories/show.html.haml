@@ -1,0 +1,27 @@
+%p#notice= notice
+
+%p
+  %b Title:
+  = @category.title
+%p
+  %b Content:
+  = @category.content
+%p
+  %b Secret field:
+  = @category.secret_field
+%p
+  %b Parent:
+  = @category.parent_id
+%p
+  %b Lft:
+  = @category.lft
+%p
+  %b Rgt:
+  = @category.rgt
+%p
+  %b Depth:
+  = @category.depth
+
+= link_to 'Edit', edit_category_path(@category)
+\|
+= link_to 'Back', categories_path

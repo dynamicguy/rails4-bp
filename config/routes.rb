@@ -1,6 +1,17 @@
 Rails4Bp::Application.routes.draw do
+
+  resources :pages do
+    collection do
+      post 'rebuild'
+    end
+  end
+
+  resources :categories
+
   devise_for :users
+
   resources :countrylanguages
+
   resources :cities do
     match 'advanced_search' => 'cities#advanced_search', on: :collection, via: [:get, :post], as: :advanced_search
     collection do

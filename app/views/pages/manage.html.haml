@@ -1,0 +1,7 @@
+%p= link_to raw('&larr; back'), '/'
+
+%p= link_to 'Create New Category', new_category_path
+
+Count: #{ @categories.count }
+%ol.sortable_tree{ :data => { :rebuild_url => rebuild_categories_url } }
+  = sortable_tree @pages

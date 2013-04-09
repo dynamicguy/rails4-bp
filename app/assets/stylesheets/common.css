@@ -20,7 +20,7 @@
 .navbar {
 }
 
-.span7.brand{
+.span7.brand {
     padding-left: 0;
 }
 
@@ -116,4 +116,19 @@ legend {
     margin-bottom: 0;
 }
 
-.filters .form-actions{margin-bottom: 0px;}
+.filters .form-actions {
+    margin-bottom: 0px;
+}
+
+.sortable_tree .handle {
+    background: none;
+}
+
+.sortable_tree .controls a.edit, .sortable_tree .controls a.edit:hover, .sortable_tree .controls a.delete, .sortable_tree .controls a.delete:hover {
+    background: none;
+    margin: 0px;
+}
+
+.sortable_tree h4 a{
+    min-width: 100px;
+}

@@ -1,0 +1,14 @@
+= simple_form_for(@category) do |f|
+  = f.error_notification
+
+  .form-inputs
+    = f.input :title
+    = f.input :content
+    = f.input :secret_field
+    = f.input :parent_id
+    = f.input :lft
+    = f.input :rgt
+    = f.input :depth
+
+  .form-actions
+    = f.button :submit

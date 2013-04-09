@@ -17,6 +17,7 @@ group :assets do
   # gem 'therubyracer', platforms: :ruby
 
   gem 'uglifier', '>= 1.0.3'
+  gem 'faker'
 end
 
 gem 'jquery-rails', github: 'rails/jquery-rails'
@@ -36,7 +37,7 @@ gem 'jbuilder', '~> 1.0.1'
 # To use debugger
 # gem 'debugger'
 
-gem 'puma'
+#gem 'puma'
 
 
 # twitter bootstrap
@@ -56,3 +57,5 @@ gem "ransack", :git => "git://github.com/ernie/ransack.git", branch: 'rails-4'
 gem "devise", github: "plataformatec/devise", branch: 'rails4'
 gem "country_select"
 
+gem 'awesome_nested_set' # or any similar gem (gem 'nested_set')
+gem "the_sortable_tree", :git => "git@github.com:the-teacher/the_sortable_tree.git"

@@ -1,0 +1,19 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  title: MyString
+  content: MyText
+  secret_field: MyText
+  parent_id: 
+  lft: 
+  rgt: 
+  depth: 
+
+two:
+  title: MyString
+  content: MyText
+  secret_field: MyText
+  parent_id: 
+  lft: 
+  rgt: 
+  depth: 
