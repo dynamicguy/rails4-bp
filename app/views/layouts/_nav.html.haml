@@ -17,6 +17,8 @@
               %b.caret
             %ul.dropdown-menu
               %li{:class => (params[:controller] == 'countries' ? 'active' : '')}= link_to "List", countries_path
+              %li{:class => (params[:controller] == 'countries' ? 'active' : '')}= link_to "Search", search_countries_path
+              %li{:class => (params[:controller] == 'countries' ? 'active' : '')}= link_to "Advanced Search", advanced_search_countries_path
 
           %li.dropdown
             %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
@@ -25,7 +27,7 @@
             %ul.dropdown-menu
               %li{:class => (params[:controller] == 'cities' ? 'active' : '')}= link_to "List", cities_path
               %li{:class => (params[:controller] == 'cities' ? 'active' : '')}= link_to "Search", search_cities_path
-              %li{:class => (params[:controller] == 'cities' ? 'active' : '')}= link_to "Search", root_path
+              %li{:class => (params[:controller] == 'cities' ? 'active' : '')}= link_to "Advanced Search", advanced_search_cities_path
 
           %li.dropdown
             %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
@@ -33,7 +35,7 @@
               %b.caret
             %ul.dropdown-menu
               %li{:class => (params[:controller] == 'languages' ? 'active' : '')}= link_to "list", countrylanguages_path
-              %li{:class => (params[:controller] == 'languages' ? 'active' : '')}= link_to "Search", root_path
+              %li{:class => (params[:controller] == 'languages' ? 'active' : '')}= link_to "Search", search_countrylanguages_path
               %li{:class => (params[:controller] == 'languages' ? 'active' : '')}= link_to "Advanched Search", root_path
 
         - if user_signed_in?

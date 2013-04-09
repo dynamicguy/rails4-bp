@@ -10,7 +10,12 @@ Rails4Bp::Application.routes.draw do
 
   devise_for :users
 
-  resources :countrylanguages
+  resources :countrylanguages do
+    match 'advanced_search' => 'countrylanguages#advanced_search', on: :collection, via: [:get, :post], as: :advanced_search
+    collection do
+      match 'search' => 'countrylanguages#search', :via => [:get, :post], :as => :search
+    end
+  end
 
   resources :cities do
     match 'advanced_search' => 'cities#advanced_search', on: :collection, via: [:get, :post], as: :advanced_search

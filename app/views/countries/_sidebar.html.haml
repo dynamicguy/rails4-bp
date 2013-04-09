@@ -6,6 +6,8 @@
   %ul.nav.nav-tabs.nav-stacked
     %li= link_to 'Country List <i class="icon-list-alt float-right"></i>'.html_safe, countries_path
     %li= link_to 'New Country <i class="icon-plus-sign float-right"></i>'.html_safe, new_country_path
+    %li= link_to 'Search Country <i class="icon-plus-sign float-right"></i>'.html_safe, search_countries_path
+    %li= link_to 'Advanced Search <i class="icon-plus-sign float-right"></i>'.html_safe, advanced_search_countries_path
 
   - countries = Country.all( limit: 5, order: "code desc")
 
