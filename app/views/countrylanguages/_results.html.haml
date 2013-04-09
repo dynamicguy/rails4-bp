@@ -21,4 +21,4 @@
         = link_to('Edit', "/countrylanguages/#{countrylanguage.language}/edit", :class => 'btn btn-mini')
         = link_to('Delete', "/countrylanguages/#{countrylanguage.language}", :method => :delete, :data => {:confirm => 'Are you sure?'}, :class => 'btn btn-mini btn-danger')
 
-    = paginate @countrylanguages
+= paginate @countrylanguages

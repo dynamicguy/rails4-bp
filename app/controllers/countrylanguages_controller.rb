@@ -5,9 +5,10 @@ class CountrylanguagesController < ApplicationController
   # GET /countrylanguages.json
 
   def search
+    #params[:distinct] = 0
     add_breadcrumb :search
     @search = Countrylanguage.search(params[:q])
-    @countrylanguages  = params[:distinct].to_i.zero? ? @search.result.page(params[:page]).per(15) : @search.result(distinct: true).page(params[:page]).per(15)
+    @countrylanguages  = params[:distinct].to_i.zero? ? @search.result.page(params[:page]).per(15) : @search.result(distinct: false).page(params[:page]).per(15)
     respond_with @countrylanguages
   end
 
