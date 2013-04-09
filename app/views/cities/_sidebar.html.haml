@@ -1,0 +1,22 @@
+.well
+  .navbar.navbar-heading
+    .navbar-inner
+      .container
+        %span.brand Quick Links
+  %ul.nav.nav-tabs.nav-stacked
+    %li= link_to t('links.labels.city_list').html_safe, cities_path
+    %li= link_to t('links.labels.new_city').html_safe, new_city_path
+    %li= link_to t('links.labels.search_city').html_safe, search_cities_path
+    %li= link_to t('links.labels.Advanced_search').html_safe, advanced_search_cities_path
+
+  - cities = City.all( limit: 5, order: "id desc")
+.well
+  .navbar.navbar-heading
+    .navbar-inner
+      .container
+        %span.brand Recent Cities
+  %ul.nav.nav-tabs.nav-stacked
+    - cities.each do |c|
+      %li= link_to "#{c.name} <i class=\"icon-file float-right\"></i>".html_safe , c if c.present?
+    %li= 'nothing found' unless cities.present?
+

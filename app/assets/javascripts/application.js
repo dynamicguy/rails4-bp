@@ -12,4 +12,13 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require_tree .
+//= require twitter/bootstrap
+//= require wysihtml5
+//= require bootstrap-wysihtml5
+//= require dataTables/jquery.dataTables
+//= require dataTables/jquery.dataTables.bootstrap
+//= require bootstrap-datepicker/bootstrap-datepicker
+//= require confirmation
+//= require common
+//= require search
+//= require turbolinks

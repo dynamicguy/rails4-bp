@@ -1,0 +1,15 @@
+- model_class = City
+
+%table.datatable.ajaxed.display.table.table-striped.table-bordered{"data-source"=> cities_url(format: "json", jqdata: true)}
+  %thead
+    %tr
+      %th{:width => 10}= '<input type="checkbox" class="toggle">'.html_safe
+      %th= model_class.human_attribute_name(:name)
+      %th= model_class.human_attribute_name(:countrycode)
+      %th= model_class.human_attribute_name(:district)
+      %th= model_class.human_attribute_name(:population)
+      %th=t '.actions', :default => t("helpers.actions")
+  %tbody
+
+
+

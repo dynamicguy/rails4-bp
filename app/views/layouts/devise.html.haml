@@ -1,0 +1,24 @@
+!!! 5
+/[if lt IE 7] <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en">
+/[if IE 7] <html class="no-js lt-ie9 lt-ie8" lang="en">
+/[if IE 8] <html class="no-js lt-ie9" lang="en">
+/ [if gt IE 8]><!
+%html.no-js{:lang => "en"}
+  / <![endif]
+  = render "layouts/head"
+
+
+%body
+  /[if lt IE 7] <p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p>
+  - if user_signed_in?
+    = render 'layouts/nav'
+
+  #maincontainer.container-fluid
+    .row-fluid#content= yield
+
+    .row-fluid
+      = render 'layouts/footer'
+
+#loader
+  #progress-bar.progress.active.progress-success.progress-striped.no-border{:style => "display: none;"}
+    .bar{:style => "width: 100%"}

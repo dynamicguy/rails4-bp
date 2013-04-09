@@ -1,0 +1,8 @@
+= simple_form_for @city, :html => { :class => 'form-horizontal' } do |f|
+  = f.input :name
+  = f.input :countrycode, collection: Country.all.collect {|c| [c.name, c.code]}, as: :select, prompt: 'Select a country'
+  = f.input :district
+  = f.input :population
+  .form-actions
+    = f.button :submit, :class => 'btn btn-primary'
+    = link_to t('.cancel', :default => t("helpers.links.cancel")), cities_path, :class => 'btn'

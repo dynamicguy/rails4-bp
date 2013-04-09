@@ -1,0 +1,31 @@
+ # Sample localization file for English. Add more files in this directory for other locales.
+ # See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+ en:
+  breadcrumbs:
+    application:
+      home: Home
+    articles:
+      articles: articles
+      home: Home
+      list: List
+      new: New
+    countries:
+      countries: countries
+      home: Home
+      list: List
+      new: New
+    cities:
+      cities: cities
+      home: Home
+      list: List
+      new: New
+      edit: edit
+      search: Search
+      advanced_search: Advanced Search
+    countrylanguages:
+          countrylanguages: countrylanguages
+          home: Home
+          list: List
+          new: New
+          edit: edit

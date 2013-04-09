@@ -1,0 +1,15 @@
+- model_class = Countrylanguage
+.span3.leftsidebar= render 'sidebar'
+
+.span9
+  = render_breadcrumbs
+  .well
+    .navbar.navbar-heading
+      .navbar-inner
+        .container
+          %span.brand= t '.title', :default => model_class.model_name.human.pluralize + " " + t('labels.listing')
+          = link_to raw('<i class="icon-plus-sign"></i> ' + t('.new', :default => t("helpers.links.new"))), new_countrylanguage_path, :class => 'btn btn-success btn-mini btn-plus pull-right'
+
+
+
+    = render "countrylanguages"

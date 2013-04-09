@@ -1,0 +1,13 @@
+- model_class = City
+.span3.leftsidebar= render 'sidebar'
+
+.span9
+  = render_breadcrumbs
+  .well
+    .navbar.navbar-heading
+      .navbar-inner
+        .container
+          %span.brand= t '.title', :default => t('helpers.titles.edit', :model => model_class.model_name.human, :default => "Edit #{model_class.model_name.human}")
+          = link_to raw('<i class="icon-view"></i> ' + t('.new', :default => t("helpers.links.new"))), @city, :class => 'btn btn-success btn-mini pull-right'
+
+    = render "form"

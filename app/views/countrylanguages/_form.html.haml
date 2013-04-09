@@ -1,0 +1,8 @@
+= simple_form_for @countrylanguage, :html => { :class => 'form-horizontal' } do |f|
+  = f.input :countrycode
+  = f.input :language
+  = f.input :isofficial
+  = f.input :percentage
+  .form-actions
+    = f.button :submit, :class => 'btn-primary'
+    = link_to t('.cancel', :default => t("helpers.links.cancel")), countrylanguages_path, :class => 'btn'
