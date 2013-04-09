@@ -34,7 +34,7 @@
               %b.caret
             %ul.dropdown-menu
               %li{:class => (params[:controller] == 'languages' ? 'active' : '')}= link_to "list", countrylanguages_path
-              %li{:class => (params[:controller] == 'languages' ? 'active' : '')}= link_to "Search", root_path
+              %li{:class => (params[:controller] == 'languages' ? 'active' : '')}= link_to "Search", search_countrylanguages_path
               %li{:class => (params[:controller] == 'languages' ? 'active' : '')}= link_to "Advanched Search", root_path
 
         - if user_signed_in?

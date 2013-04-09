@@ -1,8 +1,25 @@
 class CountrylanguagesController < ApplicationController
   before_action :set_countrylanguage, only: [:show, :edit, :update, :destroy]
-
+  respond_to :html, :json
   # GET /countrylanguages
   # GET /countrylanguages.json
+
+  def search
+    add_breadcrumb :search
+    @search = Countrylanguage.search(params[:q])
+    @countrylanguages  = params[:distinct].to_i.zero? ? @search.result.page(params[:page]).per(15) : @search.result(distinct: true).page(params[:page]).per(15)
+    respond_with @countrylanguages
+  end
+
+  def advanced_search
+    add_breadcrumb :advanced_search
+    @search = Countrylanguage.search(params[:q])
+    @search.build_grouping unless @search.groupings.any?
+    @countrylanguages  = params[:distinct].to_i.zero? ? @search.result.page(params[:page]).per(15) : @search.result(distinct: true).page(params[:page]).per(15)
+
+    respond_with @countrylanguages
+  end
+
   def index
     add_breadcrumb :list
 

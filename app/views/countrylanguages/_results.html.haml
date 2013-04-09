@@ -1,0 +1,24 @@
+%pre.debug_dump= '[SQL] ' + @countrylanguages.to_sql
+%table.display.table.table-striped.table-bordered
+  %thead
+    %tr
+      %th{:width => 10}= '<input type="checkbox" class="toggle">'.html_safe
+      %th= sort_link @search, :countrycode, {}, :method => action_name == 'advanced_search' ? :post : :get
+      %th= sort_link @search, :language, {}, :method => action_name == 'advanced_search' ? :post : :get
+      %th= sort_link @search, :isofficial, {}, :method => action_name == 'advanced_search' ? :post : :get
+      %th= sort_link @search, :percentage, {}, :method => action_name == 'advanced_search' ? :post : :get
+      %th=t '.actions', :default => t("helpers.actions")
+  %tbody
+
+  - @countrylanguages.each do |countrylanguage|
+    %tr
+      %td <input id="bulk_ids_" name="bulk_ids[]" type="checkbox" value="#{countrylanguage.language}">
+      %td= countrylanguage.countrycode
+      %td= link_to countrylanguage.language, countrylanguage
+      %td= countrylanguage.isofficial
+      %td= countrylanguage.percentage
+      %td
+        = link_to('Edit', "/countrylanguages/#{countrylanguage.language}/edit", :class => 'btn btn-mini')
+        = link_to('Delete', "/countrylanguages/#{countrylanguage.language}", :method => :delete, :data => {:confirm => 'Are you sure?'}, :class => 'btn btn-mini btn-danger')
+
+    = paginate @countrylanguages
