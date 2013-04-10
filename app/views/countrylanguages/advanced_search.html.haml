@@ -1,4 +1,4 @@
-- model_class = Country
+- model_class = Countrylanguage
 
 .span3.leftsidebar= render 'sidebar'
 
@@ -11,12 +11,12 @@
           %span.span7.brand= t '.title', :default => model_class.model_name.human.pluralize
           .span5
             %ul#filter-links.navbar-stacked.pull-right
-              %li= link_to raw('<i class="icon-plus-sign"></i> ' + t('.new', :default => t("helpers.links.new"))), new_country_path, :class => 'btn btn-inverse btn-mini'
-              %li= link_to raw('<i class="icon-filter"></i> ' + t('.new', :default => t("helpers.links.switch_to_simple_mode"))), search_countries_path, :class => 'btn btn-inverse btn-mini'
+              %li= link_to raw('<i class="icon-plus-sign"></i> ' + t('.new', :default => t("helpers.links.new"))), new_countrylanguage_path, :class => 'btn btn-inverse btn-mini'
+              %li= link_to raw('<i class="icon-filter"></i> ' + t('.new', :default => t("helpers.links.switch_to_simple_mode"))), search_countrylanguages_path, :class => 'btn btn-inverse btn-mini'
 
     #filters
       .advanced-search-form
-        = search_form_for @search, url: advanced_search_countries_path, html: {method: :post, :class => 'form-horizontal'} do |f|
+        = search_form_for @search, url: advanced_search_countrylanguages_path, html: {method: :post, :class => 'form-horizontal'} do |f|
           - setup_search_form f
           %fieldset
             %legend Sorting
