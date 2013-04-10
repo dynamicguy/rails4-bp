@@ -43,3 +43,9 @@
       details: details
       new: new
       edit: edit
+    categories:
+      categories: categories
+      list: list
+      edit: edit
+      details: details
+      new: new

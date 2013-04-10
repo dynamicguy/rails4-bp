@@ -3,7 +3,7 @@ class CreateCountrylanguages < ActiveRecord::Migration
     create_table "countrylanguages", id: false, force: true  do |t|
       t.string  "countrycode"
       t.string  "language"
-      t.boolean "isofficial",                           default: false
+      t.string "isofficial",                           default: false
       t.decimal "percentage",  precision: 10, scale: 0, default: 0
     end
   end
