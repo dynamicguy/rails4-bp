@@ -30,7 +30,7 @@
       advanced_search: Advanced Search
 
     countrylanguages:
-      countrylanguages: countrylanguages
+      language: languages
       home: Home
       list: List
       new: New

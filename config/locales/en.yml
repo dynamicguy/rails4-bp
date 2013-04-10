@@ -36,6 +36,7 @@ en:
       new_city: "New City"
       search_city: "Search City"
       Advanced_search: "Advanced Search"
+      search_languages: Search Country Language
   helpers:
     links:
       switch_to_simple_mode: "switch to simple mode"
