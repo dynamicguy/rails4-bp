@@ -1,6 +1,6 @@
 class CategoriesController < ApplicationController
   include TheSortableTreeController::Rebuild
-  before_action :set_page, only: [:show, :edit, :update, :destroy, :rebuild]
+  before_action :set_category, only: [:show, :edit, :update, :destroy, :rebuild]
 
   # GET /categories
   # GET /categories.json
