@@ -7,6 +7,11 @@ class CategoriesController < ApplicationController
   def index
     add_breadcrumb :list
     @categories = Category.nested_set.select(:id, :title, :content, :secret_field, :parent_id, :lft, :rgt, :depth).page(params[:page])
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: CategoriesDatatable.new(view_context) }
+      format.xml { render xml: Category.all }
+    end
   end
 
   # GET /categories/1

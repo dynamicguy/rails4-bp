@@ -1,0 +1,16 @@
+- model_class = Category
+
+%table.datatable.ajaxed.display.table.table-striped.table-bordered{"data-source"=> categories_url(format: "json", jqdata: true)}
+  %thead
+    %tr
+      %th{:width => 10}= '<input type="checkbox" class="toggle">'.html_safe
+      %th= model_class.human_attribute_name(:id)
+      %th= model_class.human_attribute_name(:title)
+      %th= model_class.human_attribute_name(:content)
+      %th= model_class.human_attribute_name(:depth)
+      %th= model_class.human_attribute_name(:secret_field)
+      %th=t '.actions', :default => t("helpers.actions")
+  %tbody
+
+
+

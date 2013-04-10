@@ -11,33 +11,33 @@
           = link_to raw('<i class="icon-plus-sign"></i> ' + t('.new', :default => t("helpers.links.new"))), new_category_path, :class => 'btn btn-success btn-mini btn-plus pull-right'
 
 
-      %p#notice= notice
+    %p#notice= notice
 
-      %p
-        %b Title:
-        = @category.title
-      %p
-        %b Content:
-        = @category.content
-      %p
-        %b Secret field:
-        = @category.secret_field
-      %p
-        %b Parent:
-        = @category.parent_id
-      %p
-        %b Lft:
-        = @category.lft
-      %p
-        %b Rgt:
-        = @category.rgt
-      %p
-        %b Depth:
-        = @category.depth
+    %p
+      %b Title:
+      = @category.title
+    %p
+      %b Content:
+      = @category.content
+    %p
+      %b Secret field:
+      = @category.secret_field
+    %p
+      %b Parent:
+      = @category.parent_id
+    %p
+      %b Lft:
+      = @category.lft
+    %p
+      %b Rgt:
+      = @category.rgt
+    %p
+      %b Depth:
+      = @category.depth
 
-      .form-actions
-        = link_to t('.back', :default => t("helpers.links.back")), categories_path, :class => 'btn'
-        = link_to t('.edit', :default => t("helpers.links.edit")), edit_category_path(@category), :class => 'btn'
-        = link_to t('.destroy', :default => t("helpers.links.destroy")), category_path(@page), :method => "delete", :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-danger'
+    .form-actions
+      = link_to t('.back', :default => t("helpers.links.back")), categories_path, :class => 'btn'
+      = link_to t('.edit', :default => t("helpers.links.edit")), edit_category_path(@category), :class => 'btn'
+      = link_to t('.destroy', :default => t("helpers.links.destroy")), category_path(@page), :method => "delete", :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-danger'
 
 
