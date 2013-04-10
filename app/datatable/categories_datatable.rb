@@ -9,8 +9,8 @@ class CategoriesDatatable
     if params[:jqdata]
       {
           sEcho: params[:sEcho].to_i,
-          iTotalRecords: Category.count,
-          iTotalDisplayRecords: Category.count.to_i,
+          iTotalRecords: categories.count,
+          iTotalDisplayRecords: categories.count,
           aaData: data
       }
     else
@@ -22,12 +22,13 @@ class CategoriesDatatable
   private
 
   def data
-    categories.map do |category|
+    #categories = categories.page(page)
+    categories.page(page).per(per_page).map do |category|
       [
           '<input id="bulk_ids_" name="bulk_ids[]" type="checkbox" value="'+category.id.to_s+'">'.html_safe,
           link_to(category.id, category),
           category.title,
-          strip_tags(category.content),
+          truncate(strip_tags(category.content.to_s)),
           category.depth,
           category.secret_field,
           (link_to('Edit', edit_category_path(category), :class => 'btn btn-mini') + " " +
@@ -42,13 +43,11 @@ class CategoriesDatatable
 
   def fetch_categories
     categories = Category.order("#{sort_column} #{sort_direction}")
-    categories = categories.page(page).per(per_page)
-
     #if user_signed_in?
-     # unless current_user.has_role?(:admin)
-      #  categories = categories.find(Country.active.includes(:categories).collect { |c| c.categories.collect { |t| t } }.flatten.collect { |c| c.id }.to_a)
-      #end
-   # end
+    # unless current_user.has_role?(:admin)
+    #  categories = categories.find(Country.active.includes(:categories).collect { |c| c.categories.collect { |t| t } }.flatten.collect { |c| c.id }.to_a)
+    #end
+    # end
 
     if params[:sSearch].present?
       categories = categories.where("title like :search or content like :search", search: "%#{params[:sSearch]}%")
