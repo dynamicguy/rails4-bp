@@ -104,19 +104,16 @@ App =
 
     bindPageEvents()  if typeof bindPageEvents is "function"
 
+    $(window).resize ->
+      $("body").addClass navigator.platform
+      height = $(this).height() - $(".navbar").height() + $(".footer").height()
+      $("body").css "min-height", height
+
 $ ->
-  console.log("calling document ready")
   App.run()
-  console.log("DONE")
 
+  document.addEventListener "page:fetch", ->
+    document.getElementById("progress-bar").style.display = "block"
 
-$(window).resize ->
-  $("body").addClass navigator.platform
-  height = $(this).height() - $(".navbar").height() + $(".footer").height()
-  $("body").css "min-height", height
-
-document.addEventListener "page:fetch", ->
-  document.getElementById("progress-bar").style.display = "block"
-
-document.addEventListener "page:change", ->
-  document.getElementById("progress-bar").style.display = "none"
+  document.addEventListener "page:change", ->
+    document.getElementById("progress-bar").style.display = "none"
