@@ -1,25 +1,37 @@
 class CategoriesController < ApplicationController
   include TheSortableTreeController::Rebuild
   before_action :set_category, only: [:show, :edit, :update, :destroy, :rebuild]
-
+  add_breadcrumb :categories, :categories_path
   # GET /categories
   # GET /categories.json
   def index
+    add_breadcrumb :list
     @categories = Category.nested_set.select(:id, :title, :content, :secret_field, :parent_id, :lft, :rgt, :depth).page(params[:page])
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: CategoriesDatatable.new(view_context) }
+      format.xml { render xml: Category.all }
+    end
   end
 
   # GET /categories/1
   # GET /categories/1.json
   def show
+    add_breadcrumb :details
+    @categories = Category.nested_set.select(:id, :title, :content, :secret_field, :parent_id, :lft, :rgt, :depth).page(params[:page])
   end
 
   # GET /categories/new
   def new
+    add_breadcrumb :new
+    @categories = Category.nested_set.select(:id, :title, :content, :secret_field, :parent_id, :lft, :rgt, :depth).page(params[:page])
     @category = Category.new
   end
 
   # GET /categories/1/edit
   def edit
+    add_breadcrumb :edit
+    @categories = Category.nested_set.select(:id, :title, :content, :secret_field, :parent_id, :lft, :rgt, :depth).page(params[:page])
   end
 
   # POST /categories

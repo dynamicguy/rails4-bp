@@ -30,7 +30,7 @@
       advanced_search: Advanced Search
 
     countrylanguages:
-      countrylanguages: countrylanguages
+      language: languages
       home: Home
       list: List
       new: New
@@ -40,3 +40,12 @@
     pages:
       pages: pages
       list: list
+      details: details
+      new: new
+      edit: edit
+    categories:
+      categories: categories
+      list: list
+      edit: edit
+      details: details
+      new: new
