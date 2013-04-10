@@ -16,6 +16,7 @@
       home: Home
       list: List
       new: New
+      edit: edit
       search: Search
       advanced_search: Advanced Search
 
@@ -35,4 +36,7 @@
       new: New
       edit: edit
       search: Search
-      advanced_search: Advanced Search
+      advanced_search: Advanced Search   .
+    pages:
+      pages: pages
+      list: list

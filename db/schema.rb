@@ -61,7 +61,7 @@ ActiveRecord::Schema.define(version: 20130409092552) do
   create_table "countrylanguages", id: false, force: true do |t|
     t.string  "countrycode"
     t.string  "language"
-    t.string  "isofficial",  limit: 1,                          default: "f"
+    t.string  "isofficial",  limit: 1,                          default: "0"
     t.decimal "percentage",            precision: 10, scale: 0, default: 0
   end
 

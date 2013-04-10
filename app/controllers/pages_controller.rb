@@ -1,10 +1,12 @@
 class PagesController < ApplicationController
   include TheSortableTreeController::Rebuild
   before_action :set_page, only: [:show, :edit, :update, :destroy, :rebuild]
+  add_breadcrumb :pages, :pages_path
 
   # GET /pages
   # GET /pages.json
   def index
+    add_breadcrumb :list
     @pages = Page.nested_set.select(:id, :title, :content, :secret_field, :parent_id, :lft, :rgt, :depth).all
   end
 
