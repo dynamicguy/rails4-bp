@@ -1,6 +1,7 @@
 class CountriesController < ApplicationController
   before_action :set_country, only: [:show, :edit, :update, :destroy]
   respond_to :html, :json
+  add_breadcrumb :countries, :countries_path
 
   # GET /countries
   # GET /countries.json
