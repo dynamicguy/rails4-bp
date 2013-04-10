@@ -40,30 +40,31 @@ ActiveRecord::Schema.define(version: 20130409092552) do
 
   add_index "cities", ["countrycode"], name: "countrycode"
 
-  create_table "countries", id: false, force: true do |t|
-    t.string  "code"
-    t.string  "name",                                                     null: false
-    t.string  "continent",                               default: "Asia", null: false
-    t.string  "region",                                  default: "",     null: false
-    t.decimal "surfacearea",    precision: 10, scale: 0, default: 0,      null: false
-    t.integer "indepyear",                               default: 0
-    t.integer "population",                              default: 0,      null: false
-    t.decimal "lifeexpectancy", precision: 10, scale: 0
-    t.decimal "gnp",            precision: 10, scale: 0
-    t.decimal "gnpold",         precision: 10, scale: 0
-    t.string  "localname",                               default: "",     null: false
-    t.string  "governmentform",                          default: "",     null: false
-    t.string  "headofstate",                             default: ""
-    t.integer "capital",                                 default: 0
-    t.string  "code2",                                   default: "",     null: false
+  create_table "countries", primary_key: "code", force: true do |t|
+    t.string  "name",           limit: 52, default: "",     null: false
+    t.string  "continent",      limit: 13, default: "asia", null: false
+    t.string  "region",         limit: 26, default: "",     null: false
+    t.float   "surfacearea",    limit: 10, default: 0.0,    null: false
+    t.integer "indepyear",      limit: 2
+    t.integer "population",                default: 0,      null: false
+    t.float   "lifeexpectancy", limit: 3
+    t.float   "gnp",            limit: 10
+    t.float   "gnpold",         limit: 10
+    t.string  "localname",      limit: 45, default: "",     null: false
+    t.string  "governmentform", limit: 45, default: "",     null: false
+    t.string  "headofstate",    limit: 60
+    t.integer "capital"
+    t.string  "code2",          limit: 2,  default: "",     null: false
   end
 
   create_table "countrylanguages", id: false, force: true do |t|
-    t.string  "countrycode"
-    t.string  "language"
-    t.string  "isofficial",  limit: 1,                          default: "0"
-    t.decimal "percentage",            precision: 10, scale: 0, default: 0
+    t.string "countrycode", limit: 3,  default: "",  null: false
+    t.string "language",    limit: 30, default: "",  null: false
+    t.string "isofficial",  limit: 1,  default: "f", null: false
+    t.float  "percentage",  limit: 4,  default: 0.0, null: false
   end
+
+  add_index "countrylanguages", ["countrycode"], name: "countrycode"
 
   create_table "pages", force: true do |t|
     t.string   "title"

@@ -1,13 +1,11 @@
 class PagesController < ApplicationController
   include TheSortableTreeController::Rebuild
   before_action :set_page, only: [:show, :edit, :update, :destroy, :rebuild]
-  add_breadcrumb :pages, :pages_path
 
   # GET /pages
   # GET /pages.json
   def index
-    add_breadcrumb :list
-    @pages = Page.nested_set.select(:id, :title, :content, :secret_field, :parent_id, :lft, :rgt, :depth).all
+    @pages = Page.nested_set.select(:id, :title, :content, :secret_field, :parent_id, :lft, :rgt, :depth).page(params[:page])
   end
 
 
@@ -28,37 +26,39 @@ class PagesController < ApplicationController
   # POST /pages
   # POST /pages.json
   def create
-    id        = params[:id].to_i
-    parent_id = params[:parent_id].to_i
-    prev_id   = params[:prev_id].to_i
-    next_id   = params[:next_id].to_i
+    if request.xhr?
+      id = params[:id].to_i
+      parent_id = params[:parent_id].to_i
+      prev_id = params[:prev_id].to_i
+      next_id = params[:next_id].to_i
 
-    render :text => "Do nothing" and return if parent_id.zero? && prev_id.zero? && next_id.zero?
+      render :text => "Do nothing" and return if parent_id.zero? && prev_id.zero? && next_id.zero?
 
-    variable, collection, klass = self.the_define_common_variables
-    variable = self.instance_variable_set(variable, klass.find(id))
+      variable, collection, klass = self.the_define_common_variables
+      variable = self.instance_variable_set(variable, klass.find(id))
 
-    if prev_id.zero? && next_id.zero?
-      variable.move_to_child_of klass.find(parent_id)
-    elsif !prev_id.zero?
-      variable.move_to_right_of klass.find(prev_id)
-    elsif !next_id.zero?
-      variable.move_to_left_of klass.find(next_id)
+      if prev_id.zero? && next_id.zero?
+        variable.move_to_child_of klass.find(parent_id)
+      elsif !prev_id.zero?
+        variable.move_to_right_of klass.find(prev_id)
+      elsif !next_id.zero?
+        variable.move_to_left_of klass.find(next_id)
+      end
+      render(:nothing => true)
+    else
+      # respond to normal request
+      @page = Page.new(page_params)
+
+      respond_to do |format|
+        if @page.save
+          format.html { redirect_to @page, notice: 'Page was successfully created.' }
+          format.json { render action: 'show', status: :created, location: @page }
+        else
+          format.html { render action: 'new' }
+          format.json { render json: @page.errors, status: :unprocessable_entity }
+        end
+      end
     end
-
-    render(:nothing => true)
-
-    #@page = Page.new(page_params)
-    #
-    #respond_to do |format|
-    #  if @page.save
-    #    format.html { redirect_to @page, notice: 'Page was successfully created.' }
-    #    format.json { render action: 'show', status: :created, location: @page }
-    #  else
-    #    format.html { render action: 'new' }
-    #    format.json { render json: @page.errors, status: :unprocessable_entity }
-    #  end
-    #end
   end
 
   # PATCH/PUT /pages/1
@@ -104,6 +104,6 @@ class PagesController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def page_params
-    params.permit(:title, :content, :secret_field, :parent_id, :lft, :rgt, :depth, :prev_id, :next_id, :id)
+    params.permit(:id, :title, :content, :secret_field, :parent_id, :lft, :rgt, :depth, :prev_id, :next_id)
   end
 end

@@ -25,7 +25,6 @@ class CitiesDatatable
     cities.map do |city|
       [
           '<input id="bulk_ids_" name="bulk_ids[]" type="checkbox" value="'+city.id.to_s+'">'.html_safe,
-
           link_to(city.name, city),
           city.countrycode,
           city.district,

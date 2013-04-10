@@ -165,6 +165,14 @@ GIT
       railties (>= 3.1)
 
 GIT
+  remote: git@github.com:collectiveidea/awesome_nested_set.git
+  revision: acd09d3b101213b205bea56458f1686611712aec
+  branch: master
+  specs:
+    awesome_nested_set (2.1.6)
+      activerecord (>= 3.0.0)
+
+GIT
   remote: git@github.com:the-teacher/the_sortable_tree.git
   revision: 6567533c27761706ae9d2e700f446d75a55a78e8
   specs:
@@ -175,8 +183,6 @@ GEM
   remote: https://rubygems.org/
   specs:
     atomic (1.0.1)
-    awesome_nested_set (2.1.6)
-      activerecord (>= 3.0.0)
     bcrypt-ruby (3.0.1)
     breadcrumbs_on_rails (2.3.0)
     builder (3.1.4)
@@ -241,7 +247,7 @@ PLATFORMS
 DEPENDENCIES
   activerecord-deprecated_finders!
   arel!
-  awesome_nested_set
+  awesome_nested_set!
   bootstrap-wysihtml5-rails!
   breadcrumbs_on_rails
   coffee-rails!
