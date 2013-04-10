@@ -1,5 +1,15 @@
 Rails4Bp::Application.routes.draw do
+
+  resources :pages do
+    collection do
+      post 'rebuild'
+    end
+  end
+
+  resources :categories
+
   devise_for :users
+
   resources :countrylanguages do
     match 'advanced_search' => 'countrylanguages#advanced_search', on: :collection, via: [:get, :post], as: :advanced_search
     collection do
@@ -13,14 +23,12 @@ Rails4Bp::Application.routes.draw do
       match 'search' => 'cities#search', :via => [:get, :post], :as => :search
     end
   end
-
   resources :countries do
     match 'advanced_search' => 'countries#advanced_search', on: :collection, via: [:get, :post], as: :advanced_search
     collection do
       match 'search' => 'countries#search', :via => [:get, :post], :as => :search
     end
   end
-
   resources :articles
 
   root to: 'dashboard#index'

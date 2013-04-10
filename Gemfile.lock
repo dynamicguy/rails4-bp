@@ -164,10 +164,19 @@ GIT
       execjs
       railties (>= 3.1)
 
+GIT
+  remote: git@github.com:the-teacher/the_sortable_tree.git
+  revision: 6567533c27761706ae9d2e700f446d75a55a78e8
+  specs:
+    the_sortable_tree (2.3.0)
+      rails (>= 3.1)
+
 GEM
   remote: https://rubygems.org/
   specs:
     atomic (1.0.1)
+    awesome_nested_set (2.1.6)
+      activerecord (>= 3.0.0)
     bcrypt-ruby (3.0.1)
     breadcrumbs_on_rails (2.3.0)
     builder (3.1.4)
@@ -179,6 +188,8 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
+    faker (1.1.2)
+      i18n (~> 0.5)
     haml (4.0.1)
       tilt
     hike (1.2.1)
@@ -198,8 +209,6 @@ GEM
     polyamorous (0.6.0)
       activerecord (>= 3.0)
     polyglot (0.3.3)
-    puma (1.6.3)
-      rack (~> 1.2)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -232,23 +241,25 @@ PLATFORMS
 DEPENDENCIES
   activerecord-deprecated_finders!
   arel!
+  awesome_nested_set
   bootstrap-wysihtml5-rails!
   breadcrumbs_on_rails
   coffee-rails!
   country_select
   devise!
+  faker
   haml-rails!
   jbuilder (~> 1.0.1)
   jquery-datatables-rails!
   jquery-rails!
   kaminari!
   mysql2
-  puma
   rails!
   ransack!
   sass-rails!
   simple_form!
   sprockets-rails!
+  the_sortable_tree!
   turbolinks!
   twitter-bootstrap-rails!
   uglifier (>= 1.0.3)

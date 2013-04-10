@@ -13,5 +13,7 @@
  *= require site
  *= require dataTables/jquery.dataTables.bootstrap
  *= require style
+ *= require sortable_tree
+ *= require nested_options
  *= require common
  */
