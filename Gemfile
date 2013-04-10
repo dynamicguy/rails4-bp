@@ -57,5 +57,5 @@ gem "ransack", :git => "git://github.com/ernie/ransack.git", branch: 'rails-4'
 gem "devise", github: "plataformatec/devise", branch: 'rails4'
 gem "country_select"
 
-gem 'awesome_nested_set' # or any similar gem (gem 'nested_set')
+gem 'awesome_nested_set', :git => 'git@github.com:collectiveidea/awesome_nested_set.git', :branch => 'master' # or any similar gem (gem 'nested_set')
 gem "the_sortable_tree", :git => "git@github.com:the-teacher/the_sortable_tree.git"

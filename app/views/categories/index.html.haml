@@ -1,3 +1,38 @@
-%p= link_to raw('&larr; back'), '/'
+- model_class = Category
 
-%ol.tree= build_server_tree @categories
+.span3.leftsidebar= render 'sidebar'
+.span9
+  = render_breadcrumbs
+  .well
+    .navbar.navbar-heading
+      .navbar-inner
+        .container
+          %span.brand= t '.title', :default => model_class.model_name.human.pluralize + " " + t('labels.listing')
+          = link_to raw('<i class="icon-plus-sign"></i> ' + t('.new', :default => t("helpers.links.new"))), new_category_path, :class => 'btn btn-success btn-mini btn-plus pull-right'
+
+    %table.table.table-striped.table-bordered
+      %thead
+        %tr
+          %th{:width => 10} <input type="checkbox" class="toggle">
+          %th= model_class.human_attribute_name(:title)
+          %th= model_class.human_attribute_name(:content)
+          %th= model_class.human_attribute_name(:parent_id)
+          %th= model_class.human_attribute_name(:lft)
+          %th= model_class.human_attribute_name(:rgt)
+          %th= model_class.human_attribute_name(:depth)
+          %th=t '.actions', :default => t("helpers.actions")
+      %tbody
+        - @categories.each do |category|
+          %tr
+            %td <input id="bulk_ids_#{category.id.to_s}" name="bulk_ids[]" type="checkbox" value="#{category.id.to_s}">
+            %td= link_to category.title, category_path(category)
+            %td= truncate(category.title)
+            %td= category.parent_id
+            %td= category.lft
+            %td= category.rgt
+            %td= category.depth
+            %td
+              = link_to t('.edit', :default => t("helpers.links.edit")), edit_category_path(category), :class => 'btn btn-mini'
+              = link_to t('.destroy', :default => t("helpers.links.destroy")), category_path(category), :method => :delete, :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-mini btn-danger'
+
+    = paginate @categories

@@ -1,10 +1,10 @@
 %head
   %meta{charset: "utf-8"}
   %title= raw [content_for?(:title) ? yield(:title) : [params[:controller], params[:action]].join(" » ").titleize + " : Home", "&raquo; RAAKIB.COM"].join(' ')
-  = stylesheet_link_tag "application", 'data-turbolinks-track' => true
+  = stylesheet_link_tag "application"
   = csrf_meta_tags
 
-  %link{:href => "//raakib.com", :rel => "dns-prefetch"}/
+  %link{:href => "//rails4bp.com", :rel => "dns-prefetch"}/
   %link{:href => "//google.com", :rel => "dns-prefetch"}/
   %link{:href => "//linkedin.com", :rel => "dns-prefetch"}/
   %link{:href => "//twitter.com", :rel => "dns-prefetch"}/
@@ -24,11 +24,11 @@
   %meta{:content => "text/javascript", "http-equiv" => "content-script-type"}/
   %meta{:content => "en-us", "http-equiv" => "content-language"}/
   %link{:href => "http://xmlns.com/foaf/0.1/", :rel => "schema.foaf"}/
-  %link{:href => "http://raakib.com/", :rel => "start", :title => "Raakib Page"}/
+  %link{:href => "http://rails4bp.com/", :rel => "start", :title => "Raakib Page"}/
   %link{:href => "http://creativecommons.org/licenses/by/3.0/", :rel => "copyright", :title => "Copyright Statement"}/
   %link{:href => "http://creativecommons.org/licenses/by/3.0/", :rel => "license", :title => "License Information"}/
   %link{:href => "mailto:support@tasawr.com", :rel => "author"}/
-  %link{:href => "http://raakib.com/", :rel => "index", :type => "text/html"}/
+  %link{:href => "http://rails4bp.com/", :rel => "index", :type => "text/html"}/
   %meta{:content => "23.235949080010755, 90.80939531326294", :name => "ICBM"}/
   %meta{:content => "23.235949080010755, 90.80939531326294", :name => "geo.position"}/
   %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/

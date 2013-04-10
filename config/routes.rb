@@ -6,7 +6,11 @@ Rails4Bp::Application.routes.draw do
     end
   end
 
-  resources :categories
+  resources :categories do
+    collection do
+      post 'rebuild'
+    end
+  end
 
   devise_for :users
 
