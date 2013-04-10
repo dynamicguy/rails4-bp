@@ -40,3 +40,6 @@
     pages:
       pages: pages
       list: list
+      details: details
+      new: new
+      edit: edit

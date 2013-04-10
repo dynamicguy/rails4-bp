@@ -13,16 +13,21 @@ class PagesController < ApplicationController
   # GET /pages/1
   # GET /pages/1.json
   def show
+    add_breadcrumb :details
     @pages = Page.nested_set.select(:id, :title, :content, :secret_field, :parent_id, :lft, :rgt, :depth).page(params[:page])
   end
 
   # GET /pages/new
   def new
+    add_breadcrumb :new
     @page = Page.new
+    @pages = Page.nested_set.select(:id, :title, :content, :secret_field, :parent_id, :lft, :rgt, :depth).page(params[:page])
   end
 
   # GET /pages/1/edit
   def edit
+    add_breadcrumb :edit
+    @pages = Page.nested_set.select(:id, :title, :content, :secret_field, :parent_id, :lft, :rgt, :depth).page(params[:page])
   end
 
   # POST /pages
