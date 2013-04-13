@@ -21,7 +21,7 @@ class CountriesDatatable
   private
 
   def data
-    countries.map do |country|
+    countries.page(page).per(per_page).map do |country|
       [
           link_to(country.code, country),
           country.name,

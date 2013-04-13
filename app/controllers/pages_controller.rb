@@ -7,6 +7,12 @@ class PagesController < ApplicationController
   def index
     add_breadcrumb :list
     @pages = Page.nested_set.select(:id, :title, :content, :secret_field, :parent_id, :lft, :rgt, :depth).page(params[:page])
+
+    respond_to do |format|
+      format.html # index.html.erb
+      format.json { render json: PagesDatatable.new(view_context) }
+      format.xml { render xml: Page.all }
+    end
   end
 
 
