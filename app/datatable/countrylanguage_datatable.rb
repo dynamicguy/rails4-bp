@@ -24,8 +24,8 @@ class CountrylanguageDatatable
   def data
     countrylanguages.page(page).per(per_page).map do |countrylanguage|
       [
-          countrylanguage.countrycode,
-          countrylanguage.language,
+          link_to(countrylanguage.countrycode, countrylanguage),
+          link_to(countrylanguage.language, countrylanguage),
           countrylanguage.isofficial,
           countrylanguage.percentage,
           (link_to('Edit', edit_countrylanguage_path(countrylanguage), :class => 'btn btn-mini') + " " +
