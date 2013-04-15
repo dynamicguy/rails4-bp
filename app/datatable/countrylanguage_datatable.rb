@@ -1,5 +1,5 @@
 class CountrylanguageDatatable
-  delegate :params, :l, :link_to, :current_user, :truncate, :user_signed_in?, :edit_countrylanguage_path, :strip_tags, :countrylanguage_path, to: :@view
+  delegate :params, :l, :link_to, :current_user, :truncate, :user_signed_in?, :edit_countrylanguage_path, :country_path, :strip_tags, :countrylanguage_path, to: :@view
 
   def initialize(view)
     @view = view
@@ -24,8 +24,8 @@ class CountrylanguageDatatable
   def data
     countrylanguages.page(page).per(per_page).map do |countrylanguage|
       [
-          link_to(countrylanguage.countrycode, countrylanguage),
           link_to(countrylanguage.language, countrylanguage),
+          link_to(countrylanguage.countrycode, country_path(countrylanguage.countrycode)),
           countrylanguage.isofficial,
           countrylanguage.percentage,
           (link_to('Edit', edit_countrylanguage_path(countrylanguage), :class => 'btn btn-mini') + " " +

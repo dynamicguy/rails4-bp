@@ -1,6 +1,9 @@
 class Countrylanguage < ActiveRecord::Base
-  has_many :countries
+  has_many :countries, :inverse_of => :countrylanguage
   paginates_per 50
-  default_scope order('language DESC')
+
+  def id
+    "#{language}-#{countrycode}"
+  end
 
 end

@@ -3,9 +3,6 @@ class CountriesController < ApplicationController
   respond_to :html, :json
   add_breadcrumb :countries, :countries_path
 
-  # GET /countries
-  # GET /countries.json
-
   def search
     add_breadcrumb :search
     @search = Country.search(params[:q])
@@ -22,6 +19,8 @@ class CountriesController < ApplicationController
     respond_with @countries
   end
 
+  # GET /countries
+  # GET /countries.json
   def index
     add_breadcrumb :list
 
@@ -31,6 +30,7 @@ class CountriesController < ApplicationController
       format.xml { render xml: Country.all }
     end
   end
+
   # GET /countries/1
   # GET /countries/1.json
   def show

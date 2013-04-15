@@ -59,3 +59,22 @@ gem "country_select"
 
 gem 'awesome_nested_set', :git => 'git@github.com:collectiveidea/awesome_nested_set.git', :branch => 'master' # or any similar gem (gem 'nested_set')
 gem "the_sortable_tree", :git => "git@github.com:the-teacher/the_sortable_tree.git"
+
+
+group :development do
+  #gem "annotate", github: "ctran/annotate_models"
+  #gem "letter_opener"
+  gem 'quiet_assets'
+  #gem 'rack-mini-profiler'
+  # Better errors handler
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  #gem 'metrical'
+  #gem 'rails_best_practices'
+  gem 'bullet', :git => 'git@github.com:flyerhzm/bullet.git'
+  gem 'growl'
+  # Notification
+  #gem 'rb-fsevent', require: darwin_only('rb-fsevent')
+  #gem 'growl', require: darwin_only('growl')
+  #gem 'rb-inotify', require: linux_only('rb-inotify')
+end

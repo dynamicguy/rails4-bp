@@ -2,8 +2,8 @@
 %table.datatable.ajaxed.display.table.table-striped.table-bordered{"data-source"=> countrylanguages_url(format: "json", jqdata: true)}
   %thead
     %tr
-      %th= model_class.human_attribute_name(:countrycode)
       %th= model_class.human_attribute_name(:language)
+      %th= model_class.human_attribute_name(:countrycode)
       %th= model_class.human_attribute_name(:isofficaial)
       %th= model_class.human_attribute_name(:percentage)
       %th=t '.actions', :default => t("helpers.actions")

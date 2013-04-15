@@ -1,5 +1,6 @@
 class Country < ActiveRecord::Base
-  has_many :cities, through: :code
-  belongs_to :countrylanguage
+  has_many :cities
+  belongs_to :countrylanguage, :inverse_of => :countries
   paginates_per 20
+
 end
