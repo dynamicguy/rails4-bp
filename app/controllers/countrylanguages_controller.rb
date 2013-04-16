@@ -67,7 +67,7 @@ class CountrylanguagesController < ApplicationController
   # PATCH/PUT /countrylanguages/1.json
   def update
     respond_to do |format|
-      if @countrylanguage.update(countrylanguage_params)
+      if @countrylanguage.update_attributes(countrylanguage_params)
         format.html { redirect_to @countrylanguage, notice: 'Countrylanguage was successfully updated.' }
         format.json { head :no_content }
       else
@@ -87,18 +87,16 @@ class CountrylanguagesController < ApplicationController
     end
   end
 
-  def to_param
-    "#{language}-#{countrycode}"
-  end
 
   private
   # Use callbacks to share common setup or constraints between actions.
   def set_countrylanguage
-    @countrylanguage = Countrylanguage.where(language: params[:id].split('-').first, countrycode: params[:id].split('-').last).first
+    #@countrylanguage = Countrylanguage.where(language: params[:id].split('-').first, countrycode: params[:id].split('-').last).first
+    @countrylanguage = Countrylanguage.find(params[:id])
   end
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def countrylanguage_params
-    params.require(:countrylanguage).permit(:id, :countrycode, :language, :isofficial, :percentage)
+    params.require(:countrylanguage).permit(:countrycode, :language, :isofficial, :percentage)
   end
 end
