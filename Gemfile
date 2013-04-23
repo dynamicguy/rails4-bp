@@ -74,8 +74,12 @@ group :development do
   #gem 'rails_best_practices'
   gem 'bullet', :git => 'git@github.com:flyerhzm/bullet.git'
   gem 'growl'
+  gem 'zeus'
+  gem 'spring'
   # Notification
   #gem 'rb-fsevent', require: darwin_only('rb-fsevent')
   #gem 'growl', require: darwin_only('growl')
   #gem 'rb-inotify', require: linux_only('rb-inotify')
 end
+
+gem 'commands', group: [:development, :test]
