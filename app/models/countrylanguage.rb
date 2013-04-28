@@ -9,9 +9,9 @@ class Countrylanguage < ActiveRecord::Base
   has_many :countries
   paginates_per 50
 
-  #def to_param
-  #  "#{language} #{countrycode}".parameterize
-  #end
+  def to_param
+    "#{language} #{countrycode}".parameterize
+  end
   ##
   ##def language_and_language
   ##  "#{language}-#{countrycode}"
@@ -21,8 +21,8 @@ class Countrylanguage < ActiveRecord::Base
   ##  Countrylanguage.where(language: id.split('-').first, countrycode: id.split('-').last).first.update_attributes(params)
   ##end
   ##
-  #def self.find(id)
-  #  Countrylanguage.where(language: id.split('-').first, countrycode: id.split('-').last).first
-  #end
+  def self.find(id)
+    Countrylanguage.where(language: id.split('-').first, countrycode: id.split('-').last).first
+  end
 
 end
