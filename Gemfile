@@ -60,7 +60,7 @@ gem "country_select"
 gem 'awesome_nested_set', :git => 'git@github.com:collectiveidea/awesome_nested_set.git', :branch => 'master' # or any similar gem (gem 'nested_set')
 gem "the_sortable_tree", :git => "git@github.com:the-teacher/the_sortable_tree.git"
 
-gem 'friendly_id', :git => "https://github.com/FriendlyId/friendly_id.git", :branch => 'rails4'
+gem 'friendly_id', :git => "git://github.com/FriendlyId/friendly_id.git", :branch => 'rails4'
 
 group :development do
   #gem "annotate", github: "ctran/annotate_models"

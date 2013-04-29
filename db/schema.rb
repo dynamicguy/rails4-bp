@@ -41,7 +41,7 @@ ActiveRecord::Schema.define(version: 20130409092552) do
   add_index "cities", ["countrycode"], name: "countrycode"
 
   create_table "countries", id: false, force: true do |t|
-    t.string  "code", :primary_key
+    t.string  "code"
     t.string  "name",                                                     null: false
     t.string  "continent",                               default: "Asia", null: false
     t.string  "region",                                  default: "",     null: false

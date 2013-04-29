@@ -1,4 +1,11 @@
 GIT
+  remote: git://github.com/FriendlyId/friendly_id.git
+  revision: 903f2fac79774edb119a7f6baa2396ab7c555d47
+  branch: rails4
+  specs:
+    friendly_id (4.1.0.beta.2)
+
+GIT
   remote: git://github.com/Nerian/bootstrap-wysihtml5-rails.git
   revision: 8e7ee586a226bec5afee9b3d952f762ca2176380
   specs:
@@ -185,13 +192,6 @@ GIT
   specs:
     the_sortable_tree (2.3.0)
       rails (>= 3.1)
-
-GIT
-  remote: https://github.com/FriendlyId/friendly_id.git
-  revision: 903f2fac79774edb119a7f6baa2396ab7c555d47
-  branch: rails4
-  specs:
-    friendly_id (4.1.0.beta.2)
 
 GEM
   remote: https://rubygems.org/
