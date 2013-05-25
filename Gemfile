@@ -18,6 +18,9 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
   gem 'faker'
+  # Compass specific gems.
+  gem 'compass-rails'
+  gem 'oily_png'
 end
 
 gem 'jquery-rails', github: 'rails/jquery-rails'
@@ -59,3 +62,11 @@ gem "country_select"
 
 gem 'awesome_nested_set' # or any similar gem (gem 'nested_set')
 gem "the_sortable_tree", :git => "git@github.com:the-teacher/the_sortable_tree.git"
+
+
+group :development, :test do
+  # http://railscasts.com/episodes/402-better-errors-railspanel
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'meta_request'
+end

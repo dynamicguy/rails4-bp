@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130409092552) do
+ActiveRecord::Schema.define(version: 20130511084222) do
 
   create_table "articles", force: true do |t|
     t.string   "name"
@@ -61,8 +61,8 @@ ActiveRecord::Schema.define(version: 20130409092552) do
   create_table "countrylanguages", id: false, force: true do |t|
     t.string  "countrycode"
     t.string  "language"
-    t.string  "isofficial",  limit: 1,                          default: "f"
-    t.decimal "percentage",            precision: 10, scale: 0, default: 0
+    t.boolean "isofficial",                           default: false
+    t.decimal "percentage",  precision: 10, scale: 0, default: 0
   end
 
   create_table "pages", force: true do |t|
