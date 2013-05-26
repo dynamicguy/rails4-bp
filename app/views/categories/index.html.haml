@@ -1,3 +1,13 @@
-%p= link_to raw('&larr; back'), '/'
+- model_class = Category
 
-%ol.tree= build_server_tree @categories
+.span3.leftsidebar= render 'sidebar'
+.span9
+  = render_breadcrumbs
+  .well
+    .navbar.navbar-heading
+      .navbar-inner
+        .container
+          %span.brand= t '.title', :default => model_class.model_name.human.pluralize + " " + t('labels.listing')
+          = link_to raw('<i class="icon-plus-sign"></i> ' + t('.new', :default => t("helpers.links.new"))), new_category_path, :class => 'btn btn-success btn-mini btn-plus pull-right'
+
+    = render 'categories'

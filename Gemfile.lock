@@ -1,13 +1,20 @@
 GIT
-  remote: git://github.com/Nerian/bootstrap-wysihtml5-rails.git
-  revision: 8e7ee586a226bec5afee9b3d952f762ca2176380
+  remote: git://github.com/FriendlyId/friendly_id.git
+  revision: 78d639d67a17135fe5e3b9731fd4328c315c74b1
+  branch: rails4
   specs:
-    bootstrap-wysihtml5-rails (0.3.1.19)
+    friendly_id (4.1.0.beta.2)
+
+GIT
+  remote: git://github.com/Nerian/bootstrap-wysihtml5-rails.git
+  revision: 2eddb58a17b543b7a923741b7f5f4fac7b7144a0
+  specs:
+    bootstrap-wysihtml5-rails (0.3.1.20)
       railties (>= 3.0)
 
 GIT
   remote: git://github.com/amatsuda/kaminari.git
-  revision: 5f62aa596658f444da336d409c4d104672fa0b6e
+  revision: 7d209354119a8d5d273def3a7f5c6d011c4baa0a
   specs:
     kaminari (0.14.1)
       actionpack (>= 3.0.0)
@@ -15,17 +22,17 @@ GIT
 
 GIT
   remote: git://github.com/ernie/ransack.git
-  revision: 9b9fd09915ec8db31ac2fdc57e81d69c47b0e047
+  revision: 0d4394d75528ab10a0e30a1d78eba29837726bf0
   branch: rails-4
   specs:
-    ransack (0.7.2)
+    ransack (0.7.3)
       actionpack
       activerecord
-      polyamorous
+      polyamorous (~> 0.6.0)
 
 GIT
   remote: git://github.com/indirect/haml-rails.git
-  revision: 07bb62e18d5e3a3a466a239080f2663539a0210e
+  revision: 6b7a5dead27957aff853b6c82b81fc13543c1aeb
   specs:
     haml-rails (0.4)
       actionpack (>= 3.1, < 4.1)
@@ -35,46 +42,46 @@ GIT
 
 GIT
   remote: git://github.com/plataformatec/devise.git
-  revision: ce37c301ff91f0d59ff91715f0c36e0ee285fb11
+  revision: 6b5988d756d780903bf8c9ccb3e2b3b724ccebe8
   branch: rails4
   specs:
-    devise (2.2.3)
+    devise (2.2.4)
       bcrypt-ruby (~> 3.0)
       orm_adapter (~> 0.1)
-      railties (~> 4.0.0.beta)
+      railties (>= 3.2.6, < 5)
       warden (~> 1.2.1)
 
 GIT
   remote: git://github.com/plataformatec/simple_form.git
-  revision: 9dca432fd48284c1cd413f6852ae85e42ddaa412
+  revision: 1da255ee39f7b03a6117c7d6b29a4530f34f57df
   specs:
-    simple_form (3.0.0.beta1)
-      actionpack (>= 4.0.0.beta, < 4.1)
-      activemodel (>= 4.0.0.beta, < 4.1)
+    simple_form (3.0.0.rc)
+      actionpack (>= 4.0.0.rc1, < 4.1)
+      activemodel (>= 4.0.0.rc1, < 4.1)
 
 GIT
   remote: git://github.com/rails/activerecord-deprecated_finders.git
-  revision: c00788c2b7e01170f63bd9651f7efd8deb4bd4b0
+  revision: 55ce812cbce7d482eb66bff5ca17b8816314f0b2
   specs:
-    activerecord-deprecated_finders (0.0.3)
+    activerecord-deprecated_finders (1.0.2)
 
 GIT
   remote: git://github.com/rails/arel.git
-  revision: 933ea218116645eafaf3b7ea5695520db0f9d9ba
+  revision: a1b72178714fbf0033fe076b7e51f57eff152bdd
   specs:
-    arel (4.0.0.beta2.20130314230643)
+    arel (4.0.0.20130418133826)
 
 GIT
   remote: git://github.com/rails/coffee-rails.git
-  revision: 948fef30464235e7588e34faa513b448a00c0e6b
+  revision: cbc4a6f571e87f68d272b9a377db3fb3307464ab
   specs:
-    coffee-rails (4.0.0.beta1)
+    coffee-rails (4.0.0)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0.beta, < 5.0)
 
 GIT
   remote: git://github.com/rails/jquery-rails.git
-  revision: b546434a2dba7061cb658ba5d302bfc37ceb2e2f
+  revision: 28ee0ef4c8486c1e331bbc7f7d0ccbf1b0631af5
   specs:
     jquery-rails (2.2.1)
       railties (>= 3.0, < 5.0)
@@ -82,70 +89,68 @@ GIT
 
 GIT
   remote: git://github.com/rails/rails.git
-  revision: 3b2a2419469d7116d30f46fa801abe1b29d7dc24
+  revision: ab28bafc9f1118652f5090fa1260923118930518
   specs:
-    actionmailer (4.0.0.beta1)
-      actionpack (= 4.0.0.beta1)
-      mail (~> 2.5.3)
-    actionpack (4.0.0.beta1)
-      activesupport (= 4.0.0.beta1)
+    actionmailer (4.1.0.beta)
+      actionpack (= 4.1.0.beta)
+      mail (~> 2.5.4)
+    actionpack (4.1.0.beta)
+      activesupport (= 4.1.0.beta)
       builder (~> 3.1.0)
       erubis (~> 2.7.0)
       rack (~> 1.5.2)
       rack-test (~> 0.6.2)
-    activemodel (4.0.0.beta1)
-      activesupport (= 4.0.0.beta1)
+    activemodel (4.1.0.beta)
+      activesupport (= 4.1.0.beta)
       builder (~> 3.1.0)
-    activerecord (4.0.0.beta1)
-      activemodel (= 4.0.0.beta1)
-      activerecord-deprecated_finders (~> 0.0.3)
-      activesupport (= 4.0.0.beta1)
-      arel (~> 4.0.0.beta2)
-    activesupport (4.0.0.beta1)
+    activerecord (4.1.0.beta)
+      activemodel (= 4.1.0.beta)
+      activerecord-deprecated_finders (~> 1.0.2)
+      activesupport (= 4.1.0.beta)
+      arel (~> 4.0.0)
+    activesupport (4.1.0.beta)
       i18n (~> 0.6, >= 0.6.4)
-      minitest (~> 4.2)
-      multi_json (~> 1.3)
+      json (~> 1.7)
+      minitest (~> 5.0)
       thread_safe (~> 0.1)
-      tzinfo (~> 0.3.33)
-    rails (4.0.0.beta1)
-      actionmailer (= 4.0.0.beta1)
-      actionpack (= 4.0.0.beta1)
-      activerecord (= 4.0.0.beta1)
-      activesupport (= 4.0.0.beta1)
+      tzinfo (~> 0.3.37)
+    rails (4.1.0.beta)
+      actionmailer (= 4.1.0.beta)
+      actionpack (= 4.1.0.beta)
+      activerecord (= 4.1.0.beta)
+      activesupport (= 4.1.0.beta)
       bundler (>= 1.3.0, < 2.0)
-      railties (= 4.0.0.beta1)
-      sprockets-rails (~> 2.0.0.rc3)
-    railties (4.0.0.beta1)
-      actionpack (= 4.0.0.beta1)
-      activesupport (= 4.0.0.beta1)
+      railties (= 4.1.0.beta)
+      sprockets-rails (~> 2.0.0.rc4)
+    railties (4.1.0.beta)
+      actionpack (= 4.1.0.beta)
+      activesupport (= 4.1.0.beta)
       rake (>= 0.8.7)
-      rdoc (~> 3.4)
-      thor (>= 0.17.0, < 2.0)
+      thor (>= 0.18.1, < 2.0)
 
 GIT
   remote: git://github.com/rails/sass-rails.git
-  revision: d435679b0fe528b954a9abd0059f975d94707574
+  revision: 33799418f104c961b1ce41452e77cf1e04930755
   specs:
-    sass-rails (4.0.0.beta1)
+    sass-rails (4.0.0.rc1)
       railties (>= 4.0.0.beta, < 5.0)
       sass (>= 3.1.10)
-      sprockets-rails (~> 2.0.0.rc0)
-      tilt (~> 1.3)
+      sprockets-rails (~> 2.0.0.rc4)
 
 GIT
   remote: git://github.com/rails/sprockets-rails.git
-  revision: afce1e65f7c6df4ae96522b26e755915d238ff80
+  revision: 733fedff9da3997f1b98760b948114255f53860b
   specs:
-    sprockets-rails (2.0.0.rc3)
+    sprockets-rails (2.0.0.rc4)
       actionpack (>= 3.0)
       activesupport (>= 3.0)
       sprockets (~> 2.8)
 
 GIT
   remote: git://github.com/rails/turbolinks.git
-  revision: 1114b6ef538858998351614c478e44882ed1f91c
+  revision: 66467fcef32783b359a9414f12e777bfb1e369cc
   specs:
-    turbolinks (1.1.0)
+    turbolinks (1.1.1)
       coffee-rails
 
 GIT
@@ -157,83 +162,123 @@ GIT
 
 GIT
   remote: git://github.com/seyhunak/twitter-bootstrap-rails.git
-  revision: 679fc6ee91b8e77e4f30625ca574c142ac3d5782
+  revision: 4aa0f0e661bc4664f59fd3e4287f7acf4d1330e8
   specs:
     twitter-bootstrap-rails (2.2.6)
       actionpack (>= 3.1)
       execjs
+      rails (>= 3.1)
       railties (>= 3.1)
 
 GIT
-  remote: git@github.com:the-teacher/the_sortable_tree.git
-  revision: 6567533c27761706ae9d2e700f446d75a55a78e8
+  remote: git@github.com:collectiveidea/awesome_nested_set.git
+  revision: acd09d3b101213b205bea56458f1686611712aec
+  branch: master
   specs:
-    the_sortable_tree (2.3.0)
+    awesome_nested_set (2.1.6)
+      activerecord (>= 3.0.0)
+
+GIT
+  remote: git@github.com:flyerhzm/bullet.git
+  revision: 863134157a5e70f1a9948402b41f37f6ad2e1ba3
+  specs:
+    bullet (4.6.0)
+      uniform_notifier
+
+GIT
+  remote: git@github.com:the-teacher/the_sortable_tree.git
+  revision: cdfd97365c86cc9eb4df346143a49f97c59cd30f
+  specs:
+    the_sortable_tree (2.3.2)
       rails (>= 3.1)
 
 GEM
   remote: https://rubygems.org/
   specs:
-    atomic (1.0.1)
-    awesome_nested_set (2.1.6)
-      activerecord (>= 3.0.0)
+    atomic (1.1.9)
     bcrypt-ruby (3.0.1)
+    better_errors (0.9.0)
+      coderay (>= 1.0.0)
+      erubis (>= 2.6.6)
+    binding_of_caller (0.7.1)
+      debug_inspector (>= 0.0.1)
     breadcrumbs_on_rails (2.3.0)
     builder (3.1.4)
+    chunky_png (1.2.8)
+    coderay (1.0.9)
     coffee-script (2.2.0)
       coffee-script-source
       execjs
     coffee-script-source (1.6.2)
+    commands (0.2.1)
+      rails (>= 3.2.0)
+    compass (0.12.2)
+      chunky_png (~> 1.2)
+      fssm (>= 0.2.7)
+      sass (~> 3.1)
+    compass-rails (1.0.3)
+      compass (>= 0.12.2, < 0.14)
     country_select (1.1.3)
+    debug_inspector (0.0.2)
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
     faker (1.1.2)
       i18n (~> 0.5)
-    haml (4.0.1)
+    fssm (0.2.10)
+    growl (1.0.3)
+    haml (4.0.3)
       tilt
-    hike (1.2.1)
+    hike (1.2.2)
     i18n (0.6.4)
     jbuilder (1.0.2)
       activesupport (>= 3.0.0)
-    json (1.7.7)
-    mail (2.5.3)
-      i18n (>= 0.4.0)
+    json (1.8.0)
+    mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
-    mime-types (1.21)
-    minitest (4.7.0)
-    multi_json (1.7.2)
+    method_source (0.8.1)
+    mime-types (1.23)
+    minitest (5.0.2)
+    multi_json (1.7.3)
     mysql2 (0.3.11)
+    oily_png (1.1.0)
+      chunky_png (~> 1.2.7)
     orm_adapter (0.4.0)
-    polyamorous (0.6.0)
+    polyamorous (0.6.3)
       activerecord (>= 3.0)
     polyglot (0.3.3)
+    puma (2.0.1)
+      rack (>= 1.1, < 2.0)
+    quiet_assets (1.0.2)
+      railties (>= 3.1, < 5.0)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
-    rake (10.0.3)
-    rdoc (3.12.2)
-      json (~> 1.4)
-    sass (3.2.7)
-    sprockets (2.9.0)
+    rake (10.0.4)
+    sass (3.2.9)
+    spring (0.0.8)
+    sprockets (2.10.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
-    thor (0.17.0)
+    thor (0.18.1)
     thread_safe (0.1.0)
       atomic
-    tilt (1.3.6)
+    tilt (1.4.1)
     treetop (1.4.12)
       polyglot
       polyglot (>= 0.3.1)
     tzinfo (0.3.37)
-    uglifier (1.3.0)
+    uglifier (2.1.1)
       execjs (>= 0.3.0)
       multi_json (~> 1.0, >= 1.0.2)
+    uniform_notifier (1.2.0)
     warden (1.2.1)
       rack (>= 1.0)
+    zeus (0.13.3)
+      method_source (>= 0.6.7)
 
 PLATFORMS
   ruby
@@ -241,25 +286,37 @@ PLATFORMS
 DEPENDENCIES
   activerecord-deprecated_finders!
   arel!
-  awesome_nested_set
+  awesome_nested_set!
+  better_errors
+  binding_of_caller
   bootstrap-wysihtml5-rails!
   breadcrumbs_on_rails
+  bullet!
   coffee-rails!
+  commands
+  compass-rails
   country_select
   devise!
   faker
+  friendly_id!
+  growl
   haml-rails!
   jbuilder (~> 1.0.1)
   jquery-datatables-rails!
   jquery-rails!
   kaminari!
   mysql2
+  oily_png
+  puma
+  quiet_assets
   rails!
   ransack!
   sass-rails!
   simple_form!
+  spring
   sprockets-rails!
   the_sortable_tree!
   turbolinks!
   twitter-bootstrap-rails!
   uglifier (>= 1.0.3)
+  zeus

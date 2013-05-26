@@ -22,10 +22,9 @@ class CitiesDatatable
   private
 
   def data
-    cities.map do |city|
+    cities.page(page).per(per_page).map do |city|
       [
           '<input id="bulk_ids_" name="bulk_ids[]" type="checkbox" value="'+city.id.to_s+'">'.html_safe,
-
           link_to(city.name, city),
           city.countrycode,
           city.district,
@@ -42,7 +41,7 @@ class CitiesDatatable
 
   def fetch_cities
     cities = City.order("#{sort_column} #{sort_direction}")
-    cities = cities.page(page).per(per_page)
+    #cities = cities.page(page).per(per_page)
 
     #if user_signed_in?
      # unless current_user.has_role?(:admin)

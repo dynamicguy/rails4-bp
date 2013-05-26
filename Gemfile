@@ -18,7 +18,7 @@ group :assets do
 
   gem 'uglifier', '>= 1.0.3'
   gem 'faker'
-  # Compass specific gems.
+
   gem 'compass-rails'
   gem 'oily_png'
 end
@@ -40,7 +40,7 @@ gem 'jbuilder', '~> 1.0.1'
 # To use debugger
 # gem 'debugger'
 
-#gem 'puma'
+gem 'puma'
 
 
 # twitter bootstrap
@@ -60,13 +60,29 @@ gem "ransack", :git => "git://github.com/ernie/ransack.git", branch: 'rails-4'
 gem "devise", github: "plataformatec/devise", branch: 'rails4'
 gem "country_select"
 
-gem 'awesome_nested_set' # or any similar gem (gem 'nested_set')
+gem 'awesome_nested_set', :git => 'git@github.com:collectiveidea/awesome_nested_set.git', :branch => 'master' # or any similar gem (gem 'nested_set')
 gem "the_sortable_tree", :git => "git@github.com:the-teacher/the_sortable_tree.git"
 
+gem 'friendly_id', :git => "git://github.com/FriendlyId/friendly_id.git", :branch => 'rails4'
 
-group :development, :test do
-  # http://railscasts.com/episodes/402-better-errors-railspanel
+group :development do
+  #gem "annotate", github: "ctran/annotate_models"
+  #gem "letter_opener"
+  gem 'quiet_assets'
+  #gem 'rack-mini-profiler'
+  # Better errors handler
   gem 'better_errors'
   gem 'binding_of_caller'
-  gem 'meta_request'
+  #gem 'metrical'
+  #gem 'rails_best_practices'
+  gem 'bullet', :git => 'git@github.com:flyerhzm/bullet.git'
+  gem 'growl'
+  gem 'zeus'
+  gem 'spring'
+  # Notification
+  #gem 'rb-fsevent', require: darwin_only('rb-fsevent')
+  #gem 'growl', require: darwin_only('growl')
+  #gem 'rb-inotify', require: linux_only('rb-inotify')
 end
+
+gem 'commands', group: [:development, :test]

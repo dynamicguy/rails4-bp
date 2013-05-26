@@ -1,0 +1,7 @@
+.well
+  .navbar.navbar-heading
+    .navbar-inner
+      .container
+        %span.brand Reorder categories
+  %ol.sortable_tree{ data: { rebuild_url: rebuild_categories_url(format: :js) } }
+    = sortable_tree @categories

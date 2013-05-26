@@ -7,6 +7,8 @@
   %ul.nav.nav-tabs.nav-stacked
     %li= link_to t('links.labels.countrylanguage_list').html_safe, countrylanguages_path
     %li= link_to t('links.labels.new_countrylanguage').html_safe, new_countrylanguage_path
+    %li= link_to t('links.labels.search_languages').html_safe, search_countrylanguages_path
+    %li= link_to t('links.labels.Advanced_search').html_safe, advanced_search_countrylanguages_path
 
   - countrylanguages = Countrylanguage.all( limit: 5, order: "countrycode desc")
 .well

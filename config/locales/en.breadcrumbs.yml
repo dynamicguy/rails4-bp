@@ -10,11 +10,16 @@
       home: Home
       list: List
       new: New
+
     countries:
       countries: countries
       home: Home
       list: List
       new: New
+      edit: edit
+      search: Search
+      advanced_search: Advanced Search
+
     cities:
       cities: cities
       home: Home
@@ -23,9 +28,24 @@
       edit: edit
       search: Search
       advanced_search: Advanced Search
+
     countrylanguages:
-          countrylanguages: countrylanguages
-          home: Home
-          list: List
-          new: New
-          edit: edit
+      language: languages
+      home: Home
+      list: List
+      new: New
+      edit: edit
+      search: Search
+      advanced_search: Advanced Search   .
+    pages:
+      pages: pages
+      list: list
+      details: details
+      new: new
+      edit: edit
+    categories:
+      categories: categories
+      list: list
+      edit: edit
+      details: details
+      new: new

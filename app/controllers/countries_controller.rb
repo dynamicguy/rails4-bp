@@ -1,9 +1,7 @@
 class CountriesController < ApplicationController
   before_action :set_country, only: [:show, :edit, :update, :destroy]
   respond_to :html, :json
-
-  # GET /countries
-  # GET /countries.json
+  add_breadcrumb :countries, :countries_path
 
   def search
     add_breadcrumb :search
@@ -21,6 +19,8 @@ class CountriesController < ApplicationController
     respond_with @countries
   end
 
+  # GET /countries
+  # GET /countries.json
   def index
     add_breadcrumb :list
 
@@ -30,6 +30,7 @@ class CountriesController < ApplicationController
       format.xml { render xml: Country.all }
     end
   end
+
   # GET /countries/1
   # GET /countries/1.json
   def show

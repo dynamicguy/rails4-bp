@@ -1,4 +1,11 @@
 - model_class = Countrylanguage
-.page-header
-  %h1=t '.title', :default => [:'helpers.titles.new', 'New %{model}'], :model => model_class.model_name.human
-= render :partial => "form"
+.span3.leftsidebar= render 'sidebar'
+.span9
+  = render_breadcrumbs
+  .well
+    .navbar.navbar-heading
+      .navbar-inner
+        .container
+          %span.brand= raw(t '.title', :default => model_class.model_name.human + " "+ t('labels.show'))
+          = link_to raw('<i class="icon-plus-sign"></i> ' + t('.new', :default => t("helpers.links.new"))), new_countrylanguage_path, :class => 'btn btn-success btn-mini btn-plus pull-right'
+    = render :partial => "form"
