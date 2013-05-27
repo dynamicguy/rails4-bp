@@ -89,14 +89,14 @@ class CountrylanguagesController < ApplicationController
 
 
   private
-  # Use callbacks to share common setup or constraints between actions.
-  def set_countrylanguage
-    #@countrylanguage = Countrylanguage.where(language: params[:id].split('-').first, countrycode: params[:id].split('-').last).first
-    @countrylanguage = Countrylanguage.find_by_slug(params[:id])
-  end
+    # Use callbacks to share common setup or constraints between actions.
+    def set_countrylanguage
+      #@countrylanguage = Countrylanguage.where(language: params[:id].split('-').first, countrycode: params[:id].split('-').last).first
+      @countrylanguage = Countrylanguage.find_by_slug(params[:id])
+    end
 
-  # Never trust parameters from the scary internet, only allow the white list through.
-  def countrylanguage_params
-    params.require(:countrylanguage).permit(:slug, :countrycode, :language, :isofficial, :percentage)
-  end
+    # Never trust parameters from the scary internet, only allow the white list through.
+    def countrylanguage_params
+      params.require(:countrylanguage).permit(:slug, :countrycode, :language, :isofficial, :percentage)
+    end
 end

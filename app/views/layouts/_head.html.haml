@@ -1,45 +1,89 @@
 %head
-  %meta{charset: "utf-8"}
-  %title= raw [content_for?(:title) ? yield(:title) : [params[:controller], params[:action]].join(" » ").titleize + " : Home", "&raquo; RAAKIB.COM"].join(' ')
-  = stylesheet_link_tag "application"
-  = csrf_meta_tags
+  %meta{:charset => "utf-8"}
+  %link{:rel => "dns-prefetch", :href => "//fonts.googleapis.com"}
+  /[if IE] %meta{"http-equiv" => "X-UA-Compatible", :content => "IE=edge,chrome=1"}
 
-  %link{:href => "//rails4bp.com", :rel => "dns-prefetch"}/
-  %link{:href => "//google.com", :rel => "dns-prefetch"}/
-  %link{:href => "//linkedin.com", :rel => "dns-prefetch"}/
-  %link{:href => "//twitter.com", :rel => "dns-prefetch"}/
-  %link{:href => "//facebook.com", :rel => "dns-prefetch"}/
-  %link{:href => "//googleapis.com", :rel => "dns-prefetch"}/
-  %link{:href => "data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII=", :rel => "icon", :type => "image/x-icon"}/
-  %link{:href => "/assets/ico/favicon.ico", :rel => "shortcut icon", :type => "image/x-icon"}/
-  %link{:href => "/assets/ico/favicon.ico", :rel => "shortcut icon", :type => "image/ico"}/
-  %link{:href => "/assets/ico/apple-touch-icon-144-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "144x144"}/
-  %link{:href => "/assets/ico/apple-touch-icon-114-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "114x114"}/
-  %link{:href => "/assets/ico/apple-touch-icon-72-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "72x72"}/
-  %link{:href => "/assets/ico/apple-touch-icon-57-precomposed.png", :rel => "apple-touch-icon-precomposed"}/
-  %link{:href => "/humans.txt", :rel => "humans"}/
-  %meta{:content => "no", "http-equiv" => "imagetoolbar"}/
-  %meta{:content => "no", "http-equiv" => "MsThemeCompatible"}/
-  %meta{:content => "text/css", "http-equiv" => "content-style-type"}/
-  %meta{:content => "text/javascript", "http-equiv" => "content-script-type"}/
-  %meta{:content => "en-us", "http-equiv" => "content-language"}/
-  %link{:href => "http://xmlns.com/foaf/0.1/", :rel => "schema.foaf"}/
-  %link{:href => "http://rails4bp.com/", :rel => "start", :title => "Raakib Page"}/
-  %link{:href => "http://creativecommons.org/licenses/by/3.0/", :rel => "copyright", :title => "Copyright Statement"}/
-  %link{:href => "http://creativecommons.org/licenses/by/3.0/", :rel => "license", :title => "License Information"}/
-  %link{:href => "mailto:support@tasawr.com", :rel => "author"}/
-  %link{:href => "http://rails4bp.com/", :rel => "index", :type => "text/html"}/
-  %meta{:content => "23.235949080010755, 90.80939531326294", :name => "ICBM"}/
-  %meta{:content => "23.235949080010755, 90.80939531326294", :name => "geo.position"}/
-  %meta{:content => "IE=edge,chrome=1", "http-equiv" => "X-UA-Compatible"}/
-  %meta{:content => "width=device-width", :name => "viewport"}/
-  :css
-    * {
-        resize: none;
-        border: none;
-        outline: none;
-        text-decoration: none;
-        padding: 0px;
-        margin: 0px;
-        list-style-type: none;
-    }
+  %title= raw [content_for?(:title) ? yield(:title) : [params[:controller], params[:action]].join(" » ").titleize + " : Home", "&raquo; RAAKIB.COM"].join(' ')
+  -# alternative title format.
+  -# %title= content_for?(:title) ? ("XXX - " + yield(:title)) : "XXX"
+
+  %meta{:name => "description", :content => "XXX"}
+  %meta{:name => "viewport", :content => "width=device-width"}
+
+  %link{:rel => "shortcut icon", :href => "/favicon.ico"}
+  %link{:rel => "apple-touch-icon", :href => "/apple-touch-icon.png"}
+
+  = stylesheet_link_tag "application"
+  -# for production customize modernizr at: http://www.modernizr.com/download/
+  -# IMPORTANT: add the following to production.rb:
+  -# config.assets.precompile += %w( modernizr-2.6.2.min.js )
+  = javascript_include_tag 'modernizr-2.6.2.min'
+
+  -# Google Web Fonts combination ideas, if you decide to use, uncomment combination and delete the rest.
+  %link{:href => "http://fonts.googleapis.com/css?family=Droid+Serif", :rel => "stylesheet", :type => "text/css"}
+  %link{:href => "http://fonts.googleapis.com/css?family=Droid+Sans", :rel => "stylesheet", :type => "text/css"}
+
+  -# %link{:href => "http://fonts.googleapis.com/css?family=Cantata+One", :rel => "stylesheet", :type => "text/css"}
+  -# %link{:href => "http://fonts.googleapis.com/css?family=Imprima", :rel => "stylesheet", :type => "text/css"}
+
+  -# %link{:href => "http://fonts.googleapis.com/css?family=Crimson+Text", :rel => "stylesheet", :type => "text/css"}
+  -# %link{:href => "http://fonts.googleapis.com/css?family=Allerta", :rel => "stylesheet", :type => "text/css"}
+
+  -# %link{:href => "http://fonts.googleapis.com/css?family=Arvo", :rel => "stylesheet", :type => "text/css"}
+  -# %link{:href => "http://fonts.googleapis.com/css?family=PT+Sans", :rel => "stylesheet", :type => "text/css"}
+
+  = csrf_meta_tag
+
+  -# *******************************************************************************************
+  -# MORE OPTIONS: (https://gist.github.com/1981339)
+  -#
+  -# Additional Meta-Tags
+  -# ----------------------------
+  -# %meta{:name => "keywords", :content => ""}
+  -# %meta{:name => "owner", :content => ""}
+  -# %meta{:name => "author", :content => ""}
+  -# %meta{:name => "copyright", :content => "Copyright (c) 2013 XXX"}
+  -# %meta{"http-equiv" => "content-language", :content => ""}
+  -# etc.
+  -#
+  -# http://www.metatags.org/all_metatags
+  -# http://www.webmarketingnow.com/tips/meta-tags-uncovered.html
+  -#
+  -# Additional Prefetch Locations
+  -# ----------------------------
+  -# %link{:rel => "dns-prefetch", :href => "//ajax.googleapis.com"}
+  -# %link{:rel => "dns-prefetch", :href => "//s3.amazonaws.com"}
+  -# %link{:rel => "dns-prefetch", :href => "//yui.yahooapis.com"}
+  -# %link{:rel => "dns-prefetch", :href => "//ajax.microsoft.com"}
+  -# %link{:rel => "dns-prefetch", :href => "//ajax.aspnetcdn.com"}
+  -#
+  -# Internet Explorer related
+  -# -------------------------
+  -# %meta{"http-equiv" => "imagetoolbar",           :content => "false"}
+  -# %meta{"http-equiv" => "X-UA-Compatible",        :content => "requiresActiveX=true"}
+  -# %meta{:name => "application-name",              :content => "XXX"}
+  -# %meta{:name => "msapplication-tooltip",         :content => "XXX"}
+  -# %meta{:name => "msapplication-starturl",        :content => "http://www.XXX.com"}
+  -# %meta{:name => "msapplication-navbutton-color", :content => "XXX"}
+  -# %meta{:name => "msapplication-window",          :content => "width=800;height=600"}
+  -# %meta{:name => "msapplication-task",            :content => "name=XXX;action-uri=http://XXX.com/XXX;icon-uri=http://host/favicon.ico"}
+  -#
+  -# Facebook related
+  -# ----------------
+  -# %meta{:property => "og:title",       :content => ""}
+  -# %meta{:property => "og:description", :content => ""}
+  -# %meta{:property => "og:image",       :content => ""}
+  -#
+  -# Search related
+  -# --------------
+  -# %meta{:name =>"robots", :content => "noindex" !!!WARNING: DO NOT INCLUDE ON PAGES THAT SHOULD APPEAR IN SEARCH ENGINES!!!
+  -# %link{:href => "", :rel => "search", :title => "", :type => "application/opensearchdescription+xml"}
+  -# %link{:href => "", :rel => "canonical"}
+  -# %link{:href => "", :rel => "shortlink"}
+  -# %link{:href => "", :rel => "search", :title => "", :type => "application/opensearchdescription+xml"}
+  -# %link{:rel => "sitemap", :type => "application/xml", :title => "Sitemap", :href => "/sitemap.xml"}
+  -#
+  -# Feed related
+  -# ------------
+  -# %link{:href => "/rss.xml", :rel => "alternate", :title => "RSS", :type => "application/rss+xml"}
+  -# %link{:href => "/atom.xml", :rel => "alternate", :title => "Atom", :type => "application/atom+xml"}
