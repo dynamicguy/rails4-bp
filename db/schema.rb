@@ -40,8 +40,7 @@ ActiveRecord::Schema.define(version: 20130511084222) do
 
   add_index "cities", ["countrycode"], name: "countrycode", using: :btree
 
-  create_table "countries", id: false, force: true do |t|
-    t.string  "code"
+  create_table "countries", primary_key: "code", force: true do |t|
     t.string  "name",                                                     null: false
     t.string  "continent",                               default: "Asia", null: false
     t.string  "region",                                  default: "",     null: false
@@ -58,12 +57,11 @@ ActiveRecord::Schema.define(version: 20130511084222) do
     t.string  "code2",                                   default: "",     null: false
   end
 
-  create_table "countrylanguages", id: false, force: true do |t|
+  create_table "countrylanguages", primary_key: "slug", force: true do |t|
     t.string  "countrycode"
     t.string  "language"
     t.boolean "isofficial",                           default: false
     t.decimal "percentage",  precision: 10, scale: 0, default: 0
-    t.integer "slug"
   end
 
   add_index "countrylanguages", ["slug"], name: "slug", using: :btree
