@@ -1,4 +1,20 @@
 module ApplicationHelper
+
+  module ApplicationHelper
+    def head
+      render :partial => 'layouts/head'
+    end
+
+    def scripts
+      render :partial => 'layouts/scripts'
+    end
+
+    def chromeframe
+      render :partial => 'layouts/chromeframe'
+    end
+  end
+
+
   def setup_search_form(builder)
     fields = builder.grouping_fields builder.object.new_grouping, object_name: 'new_object_name', child_index: "new_grouping" do |f|
       render('grouping_fields', f: f)
@@ -19,6 +35,7 @@ module ApplicationHelper
       });
     }.html_safe
   end
+
   def button_to_remove_fields(name, f)
     content_tag :button, name, class: 'remove_fields btn btn-danger'
   end

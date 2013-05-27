@@ -1,14 +1,14 @@
 class Country < ActiveRecord::Base
   extend FriendlyId
-  friendly_id :code, use: :slugged
-
   has_many :cities
-  belongs_to :countrylanguage, :inverse_of => :countries
+  belongs_to :countrylanguage #, :inverse_of => :countries
+  #friendly_id :countrycode, :use => :slugged
+  friendly_id :code#, :use => :scoped, :scope => :countrylanguage
   paginates_per 20
 
-  def to_param
-  "#{code}".parameterize
-  end
+  #def to_param
+  #"#{code}".parameterize
+  #end
 ##
 ##def language_and_language
 ##  "#{language}-#{countrycode}"
@@ -18,7 +18,7 @@ class Country < ActiveRecord::Base
 ##  Countrylanguage.where(language: id.split('-').first, countrycode: id.split('-').last).first.update_attributes(params)
 ##end
 
-  def self.find(id)
-    Country.where(code: id).first
-  end
+  #def self.find(id)
+  #  Country.where(code: id).first
+  #end
 end

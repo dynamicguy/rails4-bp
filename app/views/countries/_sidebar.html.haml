@@ -17,7 +17,7 @@
       .container
         %span.brand Last 5 search terms
   %ul.nav.nav-tabs.nav-stacked
-    - countries.each do |c|
-      %li= link_to "#{c.name} <i class=\"icon-file float-right\"></i>".html_safe , c if c.present?
+    -#- countries.each do |c|
+    -#  %li= link_to "#{c.name} <i class=\"icon-file float-right\"></i>".html_safe , c if c.present?
     %li= 'nothing found' unless countries.present?
 

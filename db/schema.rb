@@ -38,7 +38,7 @@ ActiveRecord::Schema.define(version: 20130511084222) do
     t.integer "population",             default: 0,  null: false
   end
 
-  add_index "cities", ["countrycode"], name: "countrycode"
+  add_index "cities", ["countrycode"], name: "countrycode", using: :btree
 
   create_table "countries", id: false, force: true do |t|
     t.string  "code"
@@ -63,7 +63,10 @@ ActiveRecord::Schema.define(version: 20130511084222) do
     t.string  "language"
     t.boolean "isofficial",                           default: false
     t.decimal "percentage",  precision: 10, scale: 0, default: 0
+    t.integer "slug"
   end
+
+  add_index "countrylanguages", ["slug"], name: "slug", using: :btree
 
   create_table "pages", force: true do |t|
     t.string   "title"
@@ -100,10 +103,10 @@ ActiveRecord::Schema.define(version: 20130511084222) do
     t.datetime "updated_at"
   end
 
-  add_index "users", ["authentication_token"], name: "index_users_on_authentication_token", unique: true
-  add_index "users", ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true
-  add_index "users", ["email"], name: "index_users_on_email", unique: true
-  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
-  add_index "users", ["unlock_token"], name: "index_users_on_unlock_token", unique: true
+  add_index "users", ["authentication_token"], name: "index_users_on_authentication_token", unique: true, using: :btree
+  add_index "users", ["confirmation_token"], name: "index_users_on_confirmation_token", unique: true, using: :btree
+  add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
+  add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
+  add_index "users", ["unlock_token"], name: "index_users_on_unlock_token", unique: true, using: :btree
 
 end

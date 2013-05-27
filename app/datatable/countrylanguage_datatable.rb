@@ -24,8 +24,10 @@ class CountrylanguageDatatable
   def data
     countrylanguages.page(page).per(per_page).map do |countrylanguage|
       [
-          link_to(countrylanguage.language, countrylanguage),
+          '<input id="bulk_ids_" name="bulk_ids[]" type="checkbox" value="'+countrylanguage.slug.to_s+'">'.html_safe,
+          link_to(countrylanguage.slug, countrylanguage),
           link_to(countrylanguage.countrycode, country_path(countrylanguage.countrycode)),
+          countrylanguage.language,
           countrylanguage.isofficial,
           countrylanguage.percentage,
           (link_to('Edit', edit_countrylanguage_path(countrylanguage), :class => 'btn btn-mini') + " " +
@@ -63,7 +65,7 @@ class CountrylanguageDatatable
   end
 
   def sort_column
-    columns = %w[countrycode language isofficial percentage]
+    columns = %w[slug countrycode language isofficial percentage]
     columns[params[:iSortCol_0].to_i]
   end
 

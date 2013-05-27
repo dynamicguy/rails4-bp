@@ -2,8 +2,10 @@
 %table.datatable.ajaxed.display.table.table-striped.table-bordered{"data-source"=> countrylanguages_url(format: "json", jqdata: true)}
   %thead
     %tr
+      %th{:width => 10} <input type="checkbox" class="toggle">
+      %th= model_class.human_attribute_name(:slug)
+      %th= model_class.human_attribute_name(:country)
       %th= model_class.human_attribute_name(:language)
-      %th= model_class.human_attribute_name(:countrycode)
       %th= model_class.human_attribute_name(:isofficaial)
       %th= model_class.human_attribute_name(:percentage)
       %th=t '.actions', :default => t("helpers.actions")

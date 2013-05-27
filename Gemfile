@@ -19,7 +19,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
   gem 'faker'
 
-  gem 'compass-rails'
+  #gem 'compass-rails'
   gem 'oily_png'
 end
 
@@ -63,7 +63,8 @@ gem "country_select"
 gem 'awesome_nested_set', :git => 'git@github.com:collectiveidea/awesome_nested_set.git', :branch => 'master' # or any similar gem (gem 'nested_set')
 gem "the_sortable_tree", :git => "git@github.com:the-teacher/the_sortable_tree.git"
 
-gem 'friendly_id', :git => "git://github.com/FriendlyId/friendly_id.git", :branch => 'rails4'
+gem 'friendly_id', :git => "git://github.com/FriendlyId/friendly_id.git"#, :branch => 'rails4'
+#gem "friendly_id", "~> 5.0.0" # Note: You MUST use 5.0.0 or greater for Rails 4.0+
 
 group :development do
   #gem "annotate", github: "ctran/annotate_models"

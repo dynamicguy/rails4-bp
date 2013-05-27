@@ -7,7 +7,7 @@ countries_001:
   surfacearea: 193.0
   indepyear: 
   population: 103000
-  lifeexpectancy: 78.4
+  lifeexpectancy: 78.0
   gnp: 828.0
   gnpold: 793.0
   localname: aruba
@@ -23,7 +23,7 @@ countries_002:
   surfacearea: 652090.0
   indepyear: 1919
   population: 22720000
-  lifeexpectancy: 45.9
+  lifeexpectancy: 46.0
   gnp: 5976.0
   gnpold: 
   localname: afganistan/afqanestan
@@ -39,7 +39,7 @@ countries_003:
   surfacearea: 1246700.0
   indepyear: 1975
   population: 12878000
-  lifeexpectancy: 38.3
+  lifeexpectancy: 38.0
   gnp: 6648.0
   gnpold: 7984.0
   localname: angola
@@ -55,8 +55,8 @@ countries_004:
   surfacearea: 96.0
   indepyear: 
   population: 8000
-  lifeexpectancy: 76.1
-  gnp: 63.2
+  lifeexpectancy: 76.0
+  gnp: 63.0
   gnpold: 
   localname: anguilla
   governmentform: dependent territory of the uk
@@ -71,7 +71,7 @@ countries_005:
   surfacearea: 28748.0
   indepyear: 1912
   population: 3401200
-  lifeexpectancy: 71.6
+  lifeexpectancy: 72.0
   gnp: 3205.0
   gnpold: 2500.0
   localname: shqip
@@ -87,7 +87,7 @@ countries_006:
   surfacearea: 468.0
   indepyear: 1278
   population: 78000
-  lifeexpectancy: 83.5
+  lifeexpectancy: 84.0
   gnp: 1630.0
   gnpold: 
   localname: andorra
@@ -103,7 +103,7 @@ countries_007:
   surfacearea: 800.0
   indepyear: 
   population: 217000
-  lifeexpectancy: 74.7
+  lifeexpectancy: 75.0
   gnp: 1941.0
   gnpold: 
   localname: nederlandse antillen
@@ -119,7 +119,7 @@ countries_008:
   surfacearea: 83600.0
   indepyear: 1971
   population: 2441000
-  lifeexpectancy: 74.1
+  lifeexpectancy: 74.0
   gnp: 37966.0
   gnpold: 36846.0
   localname: al-imarat al-
@@ -135,7 +135,7 @@ countries_009:
   surfacearea: 2780400.0
   indepyear: 1816
   population: 37032000
-  lifeexpectancy: 75.1
+  lifeexpectancy: 75.0
   gnp: 340238.0
   gnpold: 323310.0
   localname: argentina
@@ -151,7 +151,7 @@ countries_010:
   surfacearea: 29800.0
   indepyear: 1991
   population: 3520000
-  lifeexpectancy: 66.4
+  lifeexpectancy: 66.0
   gnp: 1813.0
   gnpold: 1627.0
   localname: hajastan
@@ -167,7 +167,7 @@ countries_011:
   surfacearea: 199.0
   indepyear: 
   population: 68000
-  lifeexpectancy: 75.1
+  lifeexpectancy: 75.0
   gnp: 334.0
   gnpold: 
   localname: amerika samoa
@@ -215,7 +215,7 @@ countries_014:
   surfacearea: 442.0
   indepyear: 1981
   population: 68000
-  lifeexpectancy: 70.5
+  lifeexpectancy: 71.0
   gnp: 612.0
   gnpold: 584.0
   localname: antigua and barbuda
@@ -231,7 +231,7 @@ countries_015:
   surfacearea: 7741220.0
   indepyear: 1901
   population: 18886000
-  lifeexpectancy: 79.8
+  lifeexpectancy: 80.0
   gnp: 351182.0
   gnpold: 392911.0
   localname: australia
@@ -247,7 +247,7 @@ countries_016:
   surfacearea: 83859.0
   indepyear: 1918
   population: 8091800
-  lifeexpectancy: 77.7
+  lifeexpectancy: 78.0
   gnp: 211860.0
   gnpold: 206025.0
   localname: ''
@@ -263,7 +263,7 @@ countries_017:
   surfacearea: 86600.0
   indepyear: 1991
   population: 7734000
-  lifeexpectancy: 62.9
+  lifeexpectancy: 63.0
   gnp: 4127.0
   gnpold: 4100.0
   localname: az
@@ -279,7 +279,7 @@ countries_018:
   surfacearea: 27834.0
   indepyear: 1962
   population: 6695000
-  lifeexpectancy: 46.2
+  lifeexpectancy: 46.0
   gnp: 903.0
   gnpold: 982.0
   localname: burundi/uburundi
@@ -295,7 +295,7 @@ countries_019:
   surfacearea: 30518.0
   indepyear: 1830
   population: 10239000
-  lifeexpectancy: 77.8
+  lifeexpectancy: 78.0
   gnp: 249704.0
   gnpold: 243948.0
   localname: belgi
@@ -311,7 +311,7 @@ countries_020:
   surfacearea: 112622.0
   indepyear: 1960
   population: 6097000
-  lifeexpectancy: 50.2
+  lifeexpectancy: 50.0
   gnp: 2357.0
   gnpold: 2141.0
   localname: b
@@ -327,7 +327,7 @@ countries_021:
   surfacearea: 274000.0
   indepyear: 1960
   population: 11937000
-  lifeexpectancy: 46.7
+  lifeexpectancy: 47.0
   gnp: 2425.0
   gnpold: 2201.0
   localname: burkina faso
@@ -343,7 +343,7 @@ countries_022:
   surfacearea: 143998.0
   indepyear: 1971
   population: 129155000
-  lifeexpectancy: 60.2
+  lifeexpectancy: 60.0
   gnp: 32852.0
   gnpold: 31966.0
   localname: bangladesh
@@ -359,7 +359,7 @@ countries_023:
   surfacearea: 110994.0
   indepyear: 1908
   population: 8190900
-  lifeexpectancy: 70.9
+  lifeexpectancy: 71.0
   gnp: 12178.0
   gnpold: 10169.0
   localname: balgarija
@@ -391,7 +391,7 @@ countries_025:
   surfacearea: 13878.0
   indepyear: 1973
   population: 307000
-  lifeexpectancy: 71.1
+  lifeexpectancy: 71.0
   gnp: 3527.0
   gnpold: 3347.0
   localname: the bahamas
@@ -407,7 +407,7 @@ countries_026:
   surfacearea: 51197.0
   indepyear: 1992
   population: 3972000
-  lifeexpectancy: 71.5
+  lifeexpectancy: 72.0
   gnp: 2841.0
   gnpold: 
   localname: bosna i hercegovina
@@ -439,7 +439,7 @@ countries_028:
   surfacearea: 22696.0
   indepyear: 1981
   population: 241000
-  lifeexpectancy: 70.9
+  lifeexpectancy: 71.0
   gnp: 630.0
   gnpold: 616.0
   localname: belize
@@ -455,7 +455,7 @@ countries_029:
   surfacearea: 53.0
   indepyear: 
   population: 65000
-  lifeexpectancy: 76.9
+  lifeexpectancy: 77.0
   gnp: 2328.0
   gnpold: 2190.0
   localname: bermuda
@@ -471,7 +471,7 @@ countries_030:
   surfacearea: 1098581.0
   indepyear: 1825
   population: 8329000
-  lifeexpectancy: 63.7
+  lifeexpectancy: 64.0
   gnp: 8571.0
   gnpold: 7967.0
   localname: bolivia
@@ -487,7 +487,7 @@ countries_031:
   surfacearea: 8547403.0
   indepyear: 1822
   population: 170115000
-  lifeexpectancy: 62.9
+  lifeexpectancy: 63.0
   gnp: 776739.0
   gnpold: 804108.0
   localname: brasil
@@ -519,7 +519,7 @@ countries_033:
   surfacearea: 5765.0
   indepyear: 1984
   population: 328000
-  lifeexpectancy: 73.6
+  lifeexpectancy: 74.0
   gnp: 11705.0
   gnpold: 12460.0
   localname: brunei darussalam
@@ -535,7 +535,7 @@ countries_034:
   surfacearea: 47000.0
   indepyear: 1910
   population: 2124000
-  lifeexpectancy: 52.4
+  lifeexpectancy: 52.0
   gnp: 372.0
   gnpold: 383.0
   localname: druk-yul
@@ -567,7 +567,7 @@ countries_036:
   surfacearea: 581730.0
   indepyear: 1966
   population: 1622000
-  lifeexpectancy: 39.3
+  lifeexpectancy: 39.0
   gnp: 4834.0
   gnpold: 4935.0
   localname: botswana
@@ -599,7 +599,7 @@ countries_038:
   surfacearea: 9970610.0
   indepyear: 1867
   population: 31147000
-  lifeexpectancy: 79.4
+  lifeexpectancy: 79.0
   gnp: 598862.0
   gnpold: 625626.0
   localname: canada
@@ -631,7 +631,7 @@ countries_040:
   surfacearea: 41284.0
   indepyear: 1499
   population: 7160400
-  lifeexpectancy: 79.6
+  lifeexpectancy: 80.0
   gnp: 264478.0
   gnpold: 256092.0
   localname: schweiz/suisse/svizzera/svizra
@@ -647,7 +647,7 @@ countries_041:
   surfacearea: 756626.0
   indepyear: 1810
   population: 15211000
-  lifeexpectancy: 75.7
+  lifeexpectancy: 76.0
   gnp: 72949.0
   gnpold: 75780.0
   localname: chile
@@ -663,7 +663,7 @@ countries_042:
   surfacearea: 9572900.0
   indepyear: -1523
   population: 1277558000
-  lifeexpectancy: 71.4
+  lifeexpectancy: 71.0
   gnp: 982268.0
   gnpold: 917719.0
   localname: zhongquo
@@ -679,7 +679,7 @@ countries_043:
   surfacearea: 322463.0
   indepyear: 1960
   population: 14786000
-  lifeexpectancy: 45.2
+  lifeexpectancy: 45.0
   gnp: 11345.0
   gnpold: 10285.0
   localname: c
@@ -695,7 +695,7 @@ countries_044:
   surfacearea: 475442.0
   indepyear: 1960
   population: 15085000
-  lifeexpectancy: 54.8
+  lifeexpectancy: 55.0
   gnp: 9174.0
   gnpold: 8596.0
   localname: cameroun/cameroon
@@ -711,7 +711,7 @@ countries_045:
   surfacearea: 2344858.0
   indepyear: 1960
   population: 51654000
-  lifeexpectancy: 48.8
+  lifeexpectancy: 49.0
   gnp: 6964.0
   gnpold: 2474.0
   localname: r
@@ -727,7 +727,7 @@ countries_046:
   surfacearea: 342000.0
   indepyear: 1960
   population: 2943000
-  lifeexpectancy: 47.4
+  lifeexpectancy: 47.0
   gnp: 2108.0
   gnpold: 2287.0
   localname: congo
@@ -743,7 +743,7 @@ countries_047:
   surfacearea: 236.0
   indepyear: 
   population: 20000
-  lifeexpectancy: 71.1
+  lifeexpectancy: 71.0
   gnp: 100.0
   gnpold: 
   localname: the cook islands
@@ -759,7 +759,7 @@ countries_048:
   surfacearea: 1138914.0
   indepyear: 1810
   population: 42321000
-  lifeexpectancy: 70.3
+  lifeexpectancy: 70.0
   gnp: 102896.0
   gnpold: 105116.0
   localname: colombia
@@ -791,7 +791,7 @@ countries_050:
   surfacearea: 4033.0
   indepyear: 1975
   population: 428000
-  lifeexpectancy: 68.9
+  lifeexpectancy: 69.0
   gnp: 435.0
   gnpold: 420.0
   localname: cabo verde
@@ -807,12 +807,12 @@ countries_051:
   surfacearea: 51100.0
   indepyear: 1821
   population: 4023000
-  lifeexpectancy: 75.8
+  lifeexpectancy: 76.0
   gnp: 10226.0
   gnpold: 9757.0
   localname: costa rica
   governmentform: republic
-  headofstate: miguel
+  headofstate: 'miguel '
   capital: 584
   code2: cr
 countries_052:
@@ -823,7 +823,7 @@ countries_052:
   surfacearea: 110861.0
   indepyear: 1902
   population: 11201000
-  lifeexpectancy: 76.2
+  lifeexpectancy: 76.0
   gnp: 17843.0
   gnpold: 18862.0
   localname: cuba
@@ -855,7 +855,7 @@ countries_054:
   surfacearea: 264.0
   indepyear: 
   population: 38000
-  lifeexpectancy: 78.9
+  lifeexpectancy: 79.0
   gnp: 1263.0
   gnpold: 1186.0
   localname: cayman islands
@@ -871,7 +871,7 @@ countries_055:
   surfacearea: 9251.0
   indepyear: 1960
   population: 754700
-  lifeexpectancy: 76.7
+  lifeexpectancy: 77.0
   gnp: 9333.0
   gnpold: 8246.0
   localname: k
@@ -887,7 +887,7 @@ countries_056:
   surfacearea: 78866.0
   indepyear: 1993
   population: 10278100
-  lifeexpectancy: 74.5
+  lifeexpectancy: 75.0
   gnp: 55017.0
   gnpold: 52037.0
   localname: ''
@@ -903,7 +903,7 @@ countries_057:
   surfacearea: 357022.0
   indepyear: 1955
   population: 82164700
-  lifeexpectancy: 77.4
+  lifeexpectancy: 77.0
   gnp: 2133367.0
   gnpold: 2102826.0
   localname: deutschland
@@ -919,7 +919,7 @@ countries_058:
   surfacearea: 23200.0
   indepyear: 1977
   population: 638000
-  lifeexpectancy: 50.8
+  lifeexpectancy: 51.0
   gnp: 382.0
   gnpold: 373.0
   localname: djibouti/jibuti
@@ -935,7 +935,7 @@ countries_059:
   surfacearea: 751.0
   indepyear: 1978
   population: 71000
-  lifeexpectancy: 73.4
+  lifeexpectancy: 73.0
   gnp: 256.0
   gnpold: 243.0
   localname: dominica
@@ -951,7 +951,7 @@ countries_060:
   surfacearea: 43094.0
   indepyear: 800
   population: 5330000
-  lifeexpectancy: 76.5
+  lifeexpectancy: 77.0
   gnp: 174099.0
   gnpold: 169264.0
   localname: danmark
@@ -967,7 +967,7 @@ countries_061:
   surfacearea: 48511.0
   indepyear: 1844
   population: 8495000
-  lifeexpectancy: 73.2
+  lifeexpectancy: 73.0
   gnp: 15846.0
   gnpold: 15076.0
   localname: rep
@@ -983,7 +983,7 @@ countries_062:
   surfacearea: 2381741.0
   indepyear: 1962
   population: 31471000
-  lifeexpectancy: 69.7
+  lifeexpectancy: 70.0
   gnp: 49982.0
   gnpold: 46966.0
   localname: al-jaza
@@ -999,7 +999,7 @@ countries_063:
   surfacearea: 283561.0
   indepyear: 1822
   population: 12646000
-  lifeexpectancy: 71.1
+  lifeexpectancy: 71.0
   gnp: 19770.0
   gnpold: 19769.0
   localname: ecuador
@@ -1015,7 +1015,7 @@ countries_064:
   surfacearea: 1001449.0
   indepyear: 1922
   population: 68470000
-  lifeexpectancy: 63.3
+  lifeexpectancy: 63.0
   gnp: 82710.0
   gnpold: 75617.0
   localname: misr
@@ -1031,7 +1031,7 @@ countries_065:
   surfacearea: 117600.0
   indepyear: 1993
   population: 3850000
-  lifeexpectancy: 55.8
+  lifeexpectancy: 56.0
   gnp: 650.0
   gnpold: 755.0
   localname: ertra
@@ -1047,7 +1047,7 @@ countries_066:
   surfacearea: 266000.0
   indepyear: 
   population: 293000
-  lifeexpectancy: 49.8
+  lifeexpectancy: 50.0
   gnp: 60.0
   gnpold: 
   localname: as-sahrawiya
@@ -1063,7 +1063,7 @@ countries_067:
   surfacearea: 505992.0
   indepyear: 1492
   population: 39441700
-  lifeexpectancy: 78.8
+  lifeexpectancy: 79.0
   gnp: 553233.0
   gnpold: 532031.0
   localname: espa
@@ -1079,7 +1079,7 @@ countries_068:
   surfacearea: 45227.0
   indepyear: 1991
   population: 1439200
-  lifeexpectancy: 69.5
+  lifeexpectancy: 70.0
   gnp: 5328.0
   gnpold: 3371.0
   localname: eesti
@@ -1095,7 +1095,7 @@ countries_069:
   surfacearea: 1104300.0
   indepyear: -1000
   population: 62565000
-  lifeexpectancy: 45.2
+  lifeexpectancy: 45.0
   gnp: 6353.0
   gnpold: 6180.0
   localname: yeityop
@@ -1111,7 +1111,7 @@ countries_070:
   surfacearea: 338145.0
   indepyear: 1917
   population: 5171300
-  lifeexpectancy: 77.4
+  lifeexpectancy: 77.0
   gnp: 121914.0
   gnpold: 119833.0
   localname: suomi
@@ -1127,7 +1127,7 @@ countries_071:
   surfacearea: 18274.0
   indepyear: 1970
   population: 817000
-  lifeexpectancy: 67.9
+  lifeexpectancy: 68.0
   gnp: 1536.0
   gnpold: 2149.0
   localname: fiji islands
@@ -1159,7 +1159,7 @@ countries_073:
   surfacearea: 551500.0
   indepyear: 843
   population: 59225700
-  lifeexpectancy: 78.8
+  lifeexpectancy: 79.0
   gnp: 1424285.0
   gnpold: 1392448.0
   localname: france
@@ -1175,7 +1175,7 @@ countries_074:
   surfacearea: 1399.0
   indepyear: 
   population: 43000
-  lifeexpectancy: 78.4
+  lifeexpectancy: 78.0
   gnp: 0.0
   gnpold: 
   localname: f
@@ -1191,7 +1191,7 @@ countries_075:
   surfacearea: 702.0
   indepyear: 1990
   population: 119000
-  lifeexpectancy: 68.6
+  lifeexpectancy: 69.0
   gnp: 212.0
   gnpold: 
   localname: micronesia
@@ -1207,7 +1207,7 @@ countries_076:
   surfacearea: 267668.0
   indepyear: 1960
   population: 1226000
-  lifeexpectancy: 50.1
+  lifeexpectancy: 50.0
   gnp: 5493.0
   gnpold: 5279.0
   localname: le gabon
@@ -1223,7 +1223,7 @@ countries_077:
   surfacearea: 242900.0
   indepyear: 1066
   population: 59623400
-  lifeexpectancy: 77.7
+  lifeexpectancy: 78.0
   gnp: 1378330.0
   gnpold: 1296830.0
   localname: united kingdom
@@ -1239,12 +1239,12 @@ countries_078:
   surfacearea: 69700.0
   indepyear: 1991
   population: 4968000
-  lifeexpectancy: 64.5
+  lifeexpectancy: 65.0
   gnp: 6064.0
   gnpold: 5924.0
   localname: sakartvelo
   governmentform: republic
-  headofstate: eduard
+  headofstate: 'eduard '
   capital: 905
   code2: ge
 countries_079:
@@ -1255,7 +1255,7 @@ countries_079:
   surfacearea: 238533.0
   indepyear: 1957
   population: 20212000
-  lifeexpectancy: 57.4
+  lifeexpectancy: 57.0
   gnp: 7137.0
   gnpold: 6884.0
   localname: ghana
@@ -1287,7 +1287,7 @@ countries_081:
   surfacearea: 245857.0
   indepyear: 1958
   population: 7430000
-  lifeexpectancy: 45.6
+  lifeexpectancy: 46.0
   gnp: 2352.0
   gnpold: 2383.0
   localname: guin
@@ -1319,7 +1319,7 @@ countries_083:
   surfacearea: 11295.0
   indepyear: 1965
   population: 1305000
-  lifeexpectancy: 53.2
+  lifeexpectancy: 53.0
   gnp: 320.0
   gnpold: 325.0
   localname: the gambia
@@ -1351,7 +1351,7 @@ countries_085:
   surfacearea: 28051.0
   indepyear: 1968
   population: 453000
-  lifeexpectancy: 53.6
+  lifeexpectancy: 54.0
   gnp: 283.0
   gnpold: 542.0
   localname: guinea ecuatorial
@@ -1367,7 +1367,7 @@ countries_086:
   surfacearea: 131626.0
   indepyear: 1830
   population: 10545700
-  lifeexpectancy: 78.4
+  lifeexpectancy: 78.0
   gnp: 120724.0
   gnpold: 119946.0
   localname: ell
@@ -1383,7 +1383,7 @@ countries_087:
   surfacearea: 344.0
   indepyear: 1974
   population: 94000
-  lifeexpectancy: 64.5
+  lifeexpectancy: 65.0
   gnp: 318.0
   gnpold: 
   localname: grenada
@@ -1399,7 +1399,7 @@ countries_088:
   surfacearea: 2166090.0
   indepyear: 
   population: 56000
-  lifeexpectancy: 68.1
+  lifeexpectancy: 68.0
   gnp: 0.0
   gnpold: 
   localname: kalaallit nunaat/gr
@@ -1415,7 +1415,7 @@ countries_089:
   surfacearea: 108889.0
   indepyear: 1821
   population: 11385000
-  lifeexpectancy: 66.2
+  lifeexpectancy: 66.0
   gnp: 19008.0
   gnpold: 17797.0
   localname: guatemala
@@ -1431,7 +1431,7 @@ countries_090:
   surfacearea: 90000.0
   indepyear: 
   population: 181000
-  lifeexpectancy: 76.1
+  lifeexpectancy: 76.0
   gnp: 681.0
   gnpold: 
   localname: guyane fran
@@ -1447,7 +1447,7 @@ countries_091:
   surfacearea: 549.0
   indepyear: 
   population: 168000
-  lifeexpectancy: 77.8
+  lifeexpectancy: 78.0
   gnp: 1197.0
   gnpold: 1136.0
   localname: guam
@@ -1479,7 +1479,7 @@ countries_093:
   surfacearea: 1075.0
   indepyear: 
   population: 6782000
-  lifeexpectancy: 79.5
+  lifeexpectancy: 80.0
   gnp: 166448.0
   gnpold: 173610.0
   localname: xianggang/hong kong
@@ -1511,7 +1511,7 @@ countries_095:
   surfacearea: 112088.0
   indepyear: 1838
   population: 6485000
-  lifeexpectancy: 69.9
+  lifeexpectancy: 70.0
   gnp: 5333.0
   gnpold: 4697.0
   localname: honduras
@@ -1527,7 +1527,7 @@ countries_096:
   surfacearea: 56538.0
   indepyear: 1991
   population: 4473000
-  lifeexpectancy: 73.7
+  lifeexpectancy: 74.0
   gnp: 20208.0
   gnpold: 19300.0
   localname: hrvatska
@@ -1543,7 +1543,7 @@ countries_097:
   surfacearea: 27750.0
   indepyear: 1804
   population: 8222000
-  lifeexpectancy: 49.2
+  lifeexpectancy: 49.0
   gnp: 3459.0
   gnpold: 3107.0
   localname: ha
@@ -1559,7 +1559,7 @@ countries_098:
   surfacearea: 93030.0
   indepyear: 1918
   population: 10043200
-  lifeexpectancy: 71.4
+  lifeexpectancy: 71.0
   gnp: 48267.0
   gnpold: 45914.0
   localname: magyarorsz
@@ -1591,7 +1591,7 @@ countries_100:
   surfacearea: 3287263.0
   indepyear: 1947
   population: 1013662000
-  lifeexpectancy: 62.5
+  lifeexpectancy: 63.0
   gnp: 447114.0
   gnpold: 430572.0
   localname: bharat/india
@@ -1623,7 +1623,7 @@ countries_102:
   surfacearea: 70273.0
   indepyear: 1921
   population: 3775100
-  lifeexpectancy: 76.8
+  lifeexpectancy: 77.0
   gnp: 75921.0
   gnpold: 73132.0
   localname: ireland/
@@ -1639,7 +1639,7 @@ countries_103:
   surfacearea: 1648195.0
   indepyear: 1906
   population: 67702000
-  lifeexpectancy: 69.7
+  lifeexpectancy: 70.0
   gnp: 195746.0
   gnpold: 160151.0
   localname: iran
@@ -1655,7 +1655,7 @@ countries_104:
   surfacearea: 438317.0
   indepyear: 1932
   population: 23115000
-  lifeexpectancy: 66.5
+  lifeexpectancy: 67.0
   gnp: 11500.0
   gnpold: 
   localname: al-
@@ -1671,7 +1671,7 @@ countries_105:
   surfacearea: 103000.0
   indepyear: 1944
   population: 279000
-  lifeexpectancy: 79.4
+  lifeexpectancy: 79.0
   gnp: 8255.0
   gnpold: 7474.0
   localname: ''
@@ -1687,7 +1687,7 @@ countries_106:
   surfacearea: 21056.0
   indepyear: 1948
   population: 6217000
-  lifeexpectancy: 78.6
+  lifeexpectancy: 79.0
   gnp: 97477.0
   gnpold: 98577.0
   localname: yisra
@@ -1719,7 +1719,7 @@ countries_108:
   surfacearea: 10990.0
   indepyear: 1962
   population: 2583000
-  lifeexpectancy: 75.2
+  lifeexpectancy: 75.0
   gnp: 6871.0
   gnpold: 6722.0
   localname: jamaica
@@ -1735,7 +1735,7 @@ countries_109:
   surfacearea: 88946.0
   indepyear: 1946
   population: 5083000
-  lifeexpectancy: 77.4
+  lifeexpectancy: 77.0
   gnp: 7526.0
   gnpold: 7051.0
   localname: al-urdunn
@@ -1751,7 +1751,7 @@ countries_110:
   surfacearea: 377829.0
   indepyear: -660
   population: 126714000
-  lifeexpectancy: 80.7
+  lifeexpectancy: 81.0
   gnp: 3787042.0
   gnpold: 4192638.0
   localname: nihon/nippon
@@ -1767,7 +1767,7 @@ countries_111:
   surfacearea: 2724900.0
   indepyear: 1991
   population: 16223000
-  lifeexpectancy: 63.2
+  lifeexpectancy: 63.0
   gnp: 24375.0
   gnpold: 23383.0
   localname: qazaqstan
@@ -1799,7 +1799,7 @@ countries_113:
   surfacearea: 199900.0
   indepyear: 1991
   population: 4699000
-  lifeexpectancy: 63.4
+  lifeexpectancy: 63.0
   gnp: 1626.0
   gnpold: 1767.0
   localname: kyrgyzstan
@@ -1815,7 +1815,7 @@ countries_114:
   surfacearea: 181035.0
   indepyear: 1953
   population: 11168000
-  lifeexpectancy: 56.5
+  lifeexpectancy: 57.0
   gnp: 5121.0
   gnpold: 5670.0
   localname: k
@@ -1831,8 +1831,8 @@ countries_115:
   surfacearea: 726.0
   indepyear: 1979
   population: 83000
-  lifeexpectancy: 59.8
-  gnp: 40.7
+  lifeexpectancy: 60.0
+  gnp: 41.0
   gnpold: 
   localname: kiribati
   governmentform: republic
@@ -1847,7 +1847,7 @@ countries_116:
   surfacearea: 261.0
   indepyear: 1983
   population: 38000
-  lifeexpectancy: 70.7
+  lifeexpectancy: 71.0
   gnp: 299.0
   gnpold: 
   localname: saint kitts and nevis
@@ -1863,7 +1863,7 @@ countries_117:
   surfacearea: 99434.0
   indepyear: 1948
   population: 46844000
-  lifeexpectancy: 74.4
+  lifeexpectancy: 74.0
   gnp: 320749.0
   gnpold: 442544.0
   localname: taehan min
@@ -1879,7 +1879,7 @@ countries_118:
   surfacearea: 17818.0
   indepyear: 1961
   population: 1972000
-  lifeexpectancy: 76.1
+  lifeexpectancy: 76.0
   gnp: 27037.0
   gnpold: 30373.0
   localname: al-kuwayt
@@ -1895,7 +1895,7 @@ countries_119:
   surfacearea: 236800.0
   indepyear: 1953
   population: 5433000
-  lifeexpectancy: 53.1
+  lifeexpectancy: 53.0
   gnp: 1292.0
   gnpold: 1746.0
   localname: lao
@@ -1911,7 +1911,7 @@ countries_120:
   surfacearea: 10400.0
   indepyear: 1941
   population: 3282000
-  lifeexpectancy: 71.3
+  lifeexpectancy: 71.0
   gnp: 17121.0
   gnpold: 15129.0
   localname: lubnan
@@ -1943,7 +1943,7 @@ countries_122:
   surfacearea: 1759540.0
   indepyear: 1951
   population: 5605000
-  lifeexpectancy: 75.5
+  lifeexpectancy: 76.0
   gnp: 44806.0
   gnpold: 40562.0
   localname: libiya
@@ -1959,7 +1959,7 @@ countries_123:
   surfacearea: 622.0
   indepyear: 1979
   population: 154000
-  lifeexpectancy: 72.3
+  lifeexpectancy: 72.0
   gnp: 571.0
   gnpold: 
   localname: saint lucia
@@ -1975,7 +1975,7 @@ countries_124:
   surfacearea: 160.0
   indepyear: 1806
   population: 32300
-  lifeexpectancy: 78.8
+  lifeexpectancy: 79.0
   gnp: 1119.0
   gnpold: 1084.0
   localname: liechtenstein
@@ -1991,7 +1991,7 @@ countries_125:
   surfacearea: 65610.0
   indepyear: 1948
   population: 18827000
-  lifeexpectancy: 71.8
+  lifeexpectancy: 72.0
   gnp: 15706.0
   gnpold: 15091.0
   localname: sri lanka/ilankai
@@ -2007,7 +2007,7 @@ countries_126:
   surfacearea: 30355.0
   indepyear: 1966
   population: 2153000
-  lifeexpectancy: 50.8
+  lifeexpectancy: 51.0
   gnp: 1061.0
   gnpold: 1161.0
   localname: lesotho
@@ -2023,7 +2023,7 @@ countries_127:
   surfacearea: 65301.0
   indepyear: 1991
   population: 3698500
-  lifeexpectancy: 69.1
+  lifeexpectancy: 69.0
   gnp: 10692.0
   gnpold: 9585.0
   localname: lietuva
@@ -2039,7 +2039,7 @@ countries_128:
   surfacearea: 2586.0
   indepyear: 1867
   population: 435700
-  lifeexpectancy: 77.1
+  lifeexpectancy: 77.0
   gnp: 16321.0
   gnpold: 15519.0
   localname: luxembourg/l
@@ -2055,7 +2055,7 @@ countries_129:
   surfacearea: 64589.0
   indepyear: 1991
   population: 2424200
-  lifeexpectancy: 68.4
+  lifeexpectancy: 68.0
   gnp: 6398.0
   gnpold: 5639.0
   localname: latvija
@@ -2071,7 +2071,7 @@ countries_130:
   surfacearea: 18.0
   indepyear: 
   population: 473000
-  lifeexpectancy: 81.6
+  lifeexpectancy: 82.0
   gnp: 5749.0
   gnpold: 5940.0
   localname: macau/aomen
@@ -2087,7 +2087,7 @@ countries_131:
   surfacearea: 446550.0
   indepyear: 1956
   population: 28351000
-  lifeexpectancy: 69.1
+  lifeexpectancy: 69.0
   gnp: 36124.0
   gnpold: 33514.0
   localname: al-maghrib
@@ -2100,10 +2100,10 @@ countries_132:
   name: monaco
   continent: europe
   region: western europe
-  surfacearea: 1.5
+  surfacearea: 2.0
   indepyear: 1861
   population: 34000
-  lifeexpectancy: 78.8
+  lifeexpectancy: 79.0
   gnp: 776.0
   gnpold: 
   localname: monaco
@@ -2119,7 +2119,7 @@ countries_133:
   surfacearea: 33851.0
   indepyear: 1991
   population: 4380000
-  lifeexpectancy: 64.5
+  lifeexpectancy: 65.0
   gnp: 1579.0
   gnpold: 1872.0
   localname: moldova
@@ -2151,7 +2151,7 @@ countries_135:
   surfacearea: 298.0
   indepyear: 1965
   population: 286000
-  lifeexpectancy: 62.2
+  lifeexpectancy: 62.0
   gnp: 199.0
   gnpold: 
   localname: dhivehi raajje/maldives
@@ -2167,7 +2167,7 @@ countries_136:
   surfacearea: 1958201.0
   indepyear: 1810
   population: 98881000
-  lifeexpectancy: 71.5
+  lifeexpectancy: 72.0
   gnp: 414972.0
   gnpold: 401461.0
   localname: m
@@ -2183,7 +2183,7 @@ countries_137:
   surfacearea: 181.0
   indepyear: 1990
   population: 64000
-  lifeexpectancy: 65.5
+  lifeexpectancy: 66.0
   gnp: 97.0
   gnpold: 
   localname: marshall islands/majol
@@ -2199,7 +2199,7 @@ countries_138:
   surfacearea: 25713.0
   indepyear: 1991
   population: 2024000
-  lifeexpectancy: 73.8
+  lifeexpectancy: 74.0
   gnp: 1694.0
   gnpold: 1915.0
   localname: makedonija
@@ -2215,7 +2215,7 @@ countries_139:
   surfacearea: 1240192.0
   indepyear: 1960
   population: 11234000
-  lifeexpectancy: 46.7
+  lifeexpectancy: 47.0
   gnp: 2642.0
   gnpold: 2453.0
   localname: mali
@@ -2231,7 +2231,7 @@ countries_140:
   surfacearea: 316.0
   indepyear: 1964
   population: 380200
-  lifeexpectancy: 77.9
+  lifeexpectancy: 78.0
   gnp: 3512.0
   gnpold: 3338.0
   localname: malta
@@ -2247,7 +2247,7 @@ countries_141:
   surfacearea: 676578.0
   indepyear: 1948
   population: 45611000
-  lifeexpectancy: 54.9
+  lifeexpectancy: 55.0
   gnp: 180375.0
   gnpold: 171028.0
   localname: myanma pye
@@ -2263,7 +2263,7 @@ countries_142:
   surfacearea: 1566500.0
   indepyear: 1921
   population: 2662000
-  lifeexpectancy: 67.3
+  lifeexpectancy: 67.0
   gnp: 1043.0
   gnpold: 933.0
   localname: mongol uls
@@ -2279,7 +2279,7 @@ countries_143:
   surfacearea: 464.0
   indepyear: 
   population: 78000
-  lifeexpectancy: 75.5
+  lifeexpectancy: 76.0
   gnp: 0.0
   gnpold: 
   localname: northern mariana islands
@@ -2295,7 +2295,7 @@ countries_144:
   surfacearea: 801590.0
   indepyear: 1975
   population: 19680000
-  lifeexpectancy: 37.5
+  lifeexpectancy: 38.0
   gnp: 2891.0
   gnpold: 2711.0
   localname: mo
@@ -2311,7 +2311,7 @@ countries_145:
   surfacearea: 1025520.0
   indepyear: 1960
   population: 2670000
-  lifeexpectancy: 50.8
+  lifeexpectancy: 51.0
   gnp: 998.0
   gnpold: 1081.0
   localname: muritaniya/mauritanie
@@ -2343,7 +2343,7 @@ countries_147:
   surfacearea: 1102.0
   indepyear: 
   population: 395000
-  lifeexpectancy: 78.3
+  lifeexpectancy: 78.0
   gnp: 2731.0
   gnpold: 2559.0
   localname: martinique
@@ -2375,7 +2375,7 @@ countries_149:
   surfacearea: 118484.0
   indepyear: 1964
   population: 10925000
-  lifeexpectancy: 37.6
+  lifeexpectancy: 38.0
   gnp: 1687.0
   gnpold: 2527.0
   localname: malawi
@@ -2391,7 +2391,7 @@ countries_150:
   surfacearea: 329758.0
   indepyear: 1957
   population: 22244000
-  lifeexpectancy: 70.8
+  lifeexpectancy: 71.0
   gnp: 69213.0
   gnpold: 97884.0
   localname: malaysia
@@ -2407,7 +2407,7 @@ countries_151:
   surfacearea: 373.0
   indepyear: 
   population: 149000
-  lifeexpectancy: 59.5
+  lifeexpectancy: 60.0
   gnp: 0.0
   gnpold: 
   localname: mayotte
@@ -2423,7 +2423,7 @@ countries_152:
   surfacearea: 824292.0
   indepyear: 1990
   population: 1726000
-  lifeexpectancy: 42.5
+  lifeexpectancy: 43.0
   gnp: 3101.0
   gnpold: 3384.0
   localname: namibia
@@ -2439,7 +2439,7 @@ countries_153:
   surfacearea: 18575.0
   indepyear: 
   population: 214000
-  lifeexpectancy: 72.8
+  lifeexpectancy: 73.0
   gnp: 3563.0
   gnpold: 
   localname: nouvelle-cal
@@ -2455,7 +2455,7 @@ countries_154:
   surfacearea: 1267000.0
   indepyear: 1960
   population: 10730000
-  lifeexpectancy: 41.3
+  lifeexpectancy: 41.0
   gnp: 1706.0
   gnpold: 1580.0
   localname: niger
@@ -2487,7 +2487,7 @@ countries_156:
   surfacearea: 923768.0
   indepyear: 1960
   population: 111506000
-  lifeexpectancy: 51.6
+  lifeexpectancy: 52.0
   gnp: 65707.0
   gnpold: 58623.0
   localname: nigeria
@@ -2503,7 +2503,7 @@ countries_157:
   surfacearea: 130000.0
   indepyear: 1838
   population: 5074000
-  lifeexpectancy: 68.7
+  lifeexpectancy: 69.0
   gnp: 1988.0
   gnpold: 2023.0
   localname: nicaragua
@@ -2535,7 +2535,7 @@ countries_159:
   surfacearea: 41526.0
   indepyear: 1581
   population: 15864000
-  lifeexpectancy: 78.3
+  lifeexpectancy: 78.0
   gnp: 371362.0
   gnpold: 360478.0
   localname: nederland
@@ -2551,7 +2551,7 @@ countries_160:
   surfacearea: 323877.0
   indepyear: 1905
   population: 4478500
-  lifeexpectancy: 78.7
+  lifeexpectancy: 79.0
   gnp: 145895.0
   gnpold: 153370.0
   localname: norge
@@ -2567,7 +2567,7 @@ countries_161:
   surfacearea: 147181.0
   indepyear: 1769
   population: 23930000
-  lifeexpectancy: 57.8
+  lifeexpectancy: 58.0
   gnp: 4768.0
   gnpold: 4837.0
   localname: nepal
@@ -2583,7 +2583,7 @@ countries_162:
   surfacearea: 21.0
   indepyear: 1968
   population: 12000
-  lifeexpectancy: 60.8
+  lifeexpectancy: 61.0
   gnp: 197.0
   gnpold: 
   localname: naoero/nauru
@@ -2599,7 +2599,7 @@ countries_163:
   surfacearea: 270534.0
   indepyear: 1907
   population: 3862000
-  lifeexpectancy: 77.8
+  lifeexpectancy: 78.0
   gnp: 54669.0
   gnpold: 64960.0
   localname: new zealand/aotearoa
@@ -2615,7 +2615,7 @@ countries_164:
   surfacearea: 309500.0
   indepyear: 1951
   population: 2542000
-  lifeexpectancy: 71.8
+  lifeexpectancy: 72.0
   gnp: 16904.0
   gnpold: 16153.0
   localname: ''
@@ -2631,7 +2631,7 @@ countries_165:
   surfacearea: 796095.0
   indepyear: 1947
   population: 156483000
-  lifeexpectancy: 61.1
+  lifeexpectancy: 61.0
   gnp: 61289.0
   gnpold: 58549.0
   localname: pakistan
@@ -2647,7 +2647,7 @@ countries_166:
   surfacearea: 75517.0
   indepyear: 1903
   population: 2856000
-  lifeexpectancy: 75.5
+  lifeexpectancy: 76.0
   gnp: 9131.0
   gnpold: 8700.0
   localname: panam
@@ -2695,7 +2695,7 @@ countries_169:
   surfacearea: 300000.0
   indepyear: 1946
   population: 75967000
-  lifeexpectancy: 67.5
+  lifeexpectancy: 68.0
   gnp: 65107.0
   gnpold: 82239.0
   localname: pilipinas
@@ -2711,7 +2711,7 @@ countries_170:
   surfacearea: 459.0
   indepyear: 1994
   population: 19000
-  lifeexpectancy: 68.6
+  lifeexpectancy: 69.0
   gnp: 105.0
   gnpold: 
   localname: belau/palau
@@ -2727,7 +2727,7 @@ countries_171:
   surfacearea: 462840.0
   indepyear: 1975
   population: 4807000
-  lifeexpectancy: 63.1
+  lifeexpectancy: 63.0
   gnp: 4988.0
   gnpold: 6328.0
   localname: papua new guinea/papua niugini
@@ -2743,7 +2743,7 @@ countries_172:
   surfacearea: 323250.0
   indepyear: 1918
   population: 38653600
-  lifeexpectancy: 73.2
+  lifeexpectancy: 73.0
   gnp: 151697.0
   gnpold: 135636.0
   localname: polska
@@ -2759,7 +2759,7 @@ countries_173:
   surfacearea: 8875.0
   indepyear: 
   population: 3869000
-  lifeexpectancy: 75.6
+  lifeexpectancy: 76.0
   gnp: 34100.0
   gnpold: 32100.0
   localname: puerto rico
@@ -2775,7 +2775,7 @@ countries_174:
   surfacearea: 120538.0
   indepyear: 1948
   population: 24039000
-  lifeexpectancy: 70.7
+  lifeexpectancy: 71.0
   gnp: 5332.0
   gnpold: 
   localname: choson minjujuui in
@@ -2791,7 +2791,7 @@ countries_175:
   surfacearea: 91982.0
   indepyear: 1143
   population: 9997600
-  lifeexpectancy: 75.8
+  lifeexpectancy: 76.0
   gnp: 105954.0
   gnpold: 102133.0
   localname: portugal
@@ -2807,12 +2807,12 @@ countries_176:
   surfacearea: 406752.0
   indepyear: 1811
   population: 5496000
-  lifeexpectancy: 73.7
+  lifeexpectancy: 74.0
   gnp: 8444.0
   gnpold: 9555.0
   localname: paraguay
   governmentform: republic
-  headofstate: luis
+  headofstate: 'luis '
   capital: 2885
   code2: py
 countries_177:
@@ -2823,7 +2823,7 @@ countries_177:
   surfacearea: 6257.0
   indepyear: 
   population: 3101000
-  lifeexpectancy: 71.4
+  lifeexpectancy: 71.0
   gnp: 4173.0
   gnpold: 
   localname: filastin
@@ -2839,7 +2839,7 @@ countries_178:
   surfacearea: 4000.0
   indepyear: 
   population: 235000
-  lifeexpectancy: 74.8
+  lifeexpectancy: 75.0
   gnp: 818.0
   gnpold: 781.0
   localname: polyn
@@ -2855,7 +2855,7 @@ countries_179:
   surfacearea: 11000.0
   indepyear: 1971
   population: 599000
-  lifeexpectancy: 72.4
+  lifeexpectancy: 72.0
   gnp: 9472.0
   gnpold: 8920.0
   localname: qatar
@@ -2871,7 +2871,7 @@ countries_180:
   surfacearea: 2510.0
   indepyear: 
   population: 699000
-  lifeexpectancy: 72.7
+  lifeexpectancy: 73.0
   gnp: 8287.0
   gnpold: 7988.0
   localname: r
@@ -2887,7 +2887,7 @@ countries_181:
   surfacearea: 238391.0
   indepyear: 1878
   population: 22455500
-  lifeexpectancy: 69.9
+  lifeexpectancy: 70.0
   gnp: 38158.0
   gnpold: 34843.0
   localname: rom
@@ -2903,7 +2903,7 @@ countries_182:
   surfacearea: 17075400.0
   indepyear: 1991
   population: 146934000
-  lifeexpectancy: 67.2
+  lifeexpectancy: 67.0
   gnp: 276608.0
   gnpold: 442989.0
   localname: rossija
@@ -2919,7 +2919,7 @@ countries_183:
   surfacearea: 26338.0
   indepyear: 1962
   population: 7733000
-  lifeexpectancy: 39.3
+  lifeexpectancy: 39.0
   gnp: 2036.0
   gnpold: 1863.0
   localname: rwanda/urwanda
@@ -2935,7 +2935,7 @@ countries_184:
   surfacearea: 2149690.0
   indepyear: 1932
   population: 21607000
-  lifeexpectancy: 67.8
+  lifeexpectancy: 68.0
   gnp: 137635.0
   gnpold: 146171.0
   localname: al-
@@ -2951,7 +2951,7 @@ countries_185:
   surfacearea: 2505813.0
   indepyear: 1956
   population: 29490000
-  lifeexpectancy: 56.6
+  lifeexpectancy: 57.0
   gnp: 10162.0
   gnpold: 
   localname: as-sudan
@@ -2967,7 +2967,7 @@ countries_186:
   surfacearea: 196722.0
   indepyear: 1960
   population: 9481000
-  lifeexpectancy: 62.2
+  lifeexpectancy: 62.0
   gnp: 4787.0
   gnpold: 4542.0
   localname: s
@@ -2983,7 +2983,7 @@ countries_187:
   surfacearea: 618.0
   indepyear: 1965
   population: 3567000
-  lifeexpectancy: 80.1
+  lifeexpectancy: 80.0
   gnp: 86503.0
   gnpold: 96318.0
   localname: singapore/singapura/xinjiapo/singapur
@@ -3015,7 +3015,7 @@ countries_189:
   surfacearea: 314.0
   indepyear: 
   population: 6000
-  lifeexpectancy: 76.8
+  lifeexpectancy: 77.0
   gnp: 0.0
   gnpold: 
   localname: saint helena
@@ -3047,7 +3047,7 @@ countries_191:
   surfacearea: 28896.0
   indepyear: 1978
   population: 444000
-  lifeexpectancy: 71.3
+  lifeexpectancy: 71.0
   gnp: 182.0
   gnpold: 220.0
   localname: solomon islands
@@ -3063,7 +3063,7 @@ countries_192:
   surfacearea: 71740.0
   indepyear: 1961
   population: 4854000
-  lifeexpectancy: 45.3
+  lifeexpectancy: 45.0
   gnp: 746.0
   gnpold: 858.0
   localname: sierra leone
@@ -3079,7 +3079,7 @@ countries_193:
   surfacearea: 21041.0
   indepyear: 1841
   population: 6276000
-  lifeexpectancy: 69.7
+  lifeexpectancy: 70.0
   gnp: 11863.0
   gnpold: 11203.0
   localname: el salvador
@@ -3095,7 +3095,7 @@ countries_194:
   surfacearea: 61.0
   indepyear: 885
   population: 27000
-  lifeexpectancy: 81.1
+  lifeexpectancy: 81.0
   gnp: 510.0
   gnpold: 
   localname: san marino
@@ -3111,7 +3111,7 @@ countries_195:
   surfacearea: 637657.0
   indepyear: 1960
   population: 10097000
-  lifeexpectancy: 46.2
+  lifeexpectancy: 46.0
   gnp: 935.0
   gnpold: 
   localname: soomaaliya
@@ -3127,7 +3127,7 @@ countries_196:
   surfacearea: 242.0
   indepyear: 
   population: 7000
-  lifeexpectancy: 77.6
+  lifeexpectancy: 78.0
   gnp: 0.0
   gnpold: 
   localname: saint-pierre-et-miquelon
@@ -3143,7 +3143,7 @@ countries_197:
   surfacearea: 964.0
   indepyear: 1975
   population: 147000
-  lifeexpectancy: 65.3
+  lifeexpectancy: 65.0
   gnp: 6.0
   gnpold: 
   localname: s
@@ -3159,7 +3159,7 @@ countries_198:
   surfacearea: 163265.0
   indepyear: 1975
   population: 417000
-  lifeexpectancy: 71.4
+  lifeexpectancy: 71.0
   gnp: 870.0
   gnpold: 706.0
   localname: suriname
@@ -3175,7 +3175,7 @@ countries_199:
   surfacearea: 49012.0
   indepyear: 1993
   population: 5398700
-  lifeexpectancy: 73.7
+  lifeexpectancy: 74.0
   gnp: 20594.0
   gnpold: 19452.0
   localname: slovensko
@@ -3191,7 +3191,7 @@ countries_200:
   surfacearea: 20256.0
   indepyear: 1991
   population: 1987800
-  lifeexpectancy: 74.9
+  lifeexpectancy: 75.0
   gnp: 19756.0
   gnpold: 18202.0
   localname: slovenija
@@ -3207,7 +3207,7 @@ countries_201:
   surfacearea: 449964.0
   indepyear: 836
   population: 8861400
-  lifeexpectancy: 79.6
+  lifeexpectancy: 80.0
   gnp: 226492.0
   gnpold: 227757.0
   localname: sverige
@@ -3223,7 +3223,7 @@ countries_202:
   surfacearea: 17364.0
   indepyear: 1968
   population: 1008000
-  lifeexpectancy: 40.4
+  lifeexpectancy: 40.0
   gnp: 1206.0
   gnpold: 1312.0
   localname: kangwane
@@ -3239,7 +3239,7 @@ countries_203:
   surfacearea: 455.0
   indepyear: 1976
   population: 77000
-  lifeexpectancy: 70.4
+  lifeexpectancy: 70.0
   gnp: 536.0
   gnpold: 539.0
   localname: sesel/seychelles
@@ -3255,7 +3255,7 @@ countries_204:
   surfacearea: 185180.0
   indepyear: 1941
   population: 16125000
-  lifeexpectancy: 68.5
+  lifeexpectancy: 69.0
   gnp: 65984.0
   gnpold: 64926.0
   localname: suriya
@@ -3271,7 +3271,7 @@ countries_205:
   surfacearea: 430.0
   indepyear: 
   population: 17000
-  lifeexpectancy: 73.3
+  lifeexpectancy: 73.0
   gnp: 96.0
   gnpold: 
   localname: the turks and caicos islands
@@ -3287,7 +3287,7 @@ countries_206:
   surfacearea: 1284000.0
   indepyear: 1960
   population: 7651000
-  lifeexpectancy: 50.5
+  lifeexpectancy: 51.0
   gnp: 1208.0
   gnpold: 1102.0
   localname: tchad/tshad
@@ -3303,7 +3303,7 @@ countries_207:
   surfacearea: 56785.0
   indepyear: 1960
   population: 4629000
-  lifeexpectancy: 54.7
+  lifeexpectancy: 55.0
   gnp: 1449.0
   gnpold: 1400.0
   localname: togo
@@ -3319,7 +3319,7 @@ countries_208:
   surfacearea: 513115.0
   indepyear: 1350
   population: 61399000
-  lifeexpectancy: 68.6
+  lifeexpectancy: 69.0
   gnp: 116416.0
   gnpold: 153907.0
   localname: prathet thai
@@ -3335,7 +3335,7 @@ countries_209:
   surfacearea: 143100.0
   indepyear: 1991
   population: 6188000
-  lifeexpectancy: 64.1
+  lifeexpectancy: 64.0
   gnp: 1990.0
   gnpold: 1056.0
   localname: to
@@ -3367,7 +3367,7 @@ countries_211:
   surfacearea: 488100.0
   indepyear: 1991
   population: 4459000
-  lifeexpectancy: 60.9
+  lifeexpectancy: 61.0
   gnp: 4397.0
   gnpold: 2000.0
   localname: t
@@ -3399,7 +3399,7 @@ countries_213:
   surfacearea: 650.0
   indepyear: 1970
   population: 99000
-  lifeexpectancy: 67.9
+  lifeexpectancy: 68.0
   gnp: 146.0
   gnpold: 170.0
   localname: tonga
@@ -3431,7 +3431,7 @@ countries_215:
   surfacearea: 163610.0
   indepyear: 1956
   population: 9586000
-  lifeexpectancy: 73.7
+  lifeexpectancy: 74.0
   gnp: 20026.0
   gnpold: 18898.0
   localname: tunis/tunisie
@@ -3463,7 +3463,7 @@ countries_217:
   surfacearea: 26.0
   indepyear: 1978
   population: 12000
-  lifeexpectancy: 66.3
+  lifeexpectancy: 66.0
   gnp: 6.0
   gnpold: 
   localname: tuvalu
@@ -3479,7 +3479,7 @@ countries_218:
   surfacearea: 36188.0
   indepyear: 1945
   population: 22256000
-  lifeexpectancy: 76.4
+  lifeexpectancy: 76.0
   gnp: 256254.0
   gnpold: 263451.0
   localname: t
@@ -3495,7 +3495,7 @@ countries_219:
   surfacearea: 883749.0
   indepyear: 1961
   population: 33517000
-  lifeexpectancy: 52.3
+  lifeexpectancy: 52.0
   gnp: 8005.0
   gnpold: 7388.0
   localname: tanzania
@@ -3511,7 +3511,7 @@ countries_220:
   surfacearea: 241038.0
   indepyear: 1962
   population: 21778000
-  lifeexpectancy: 42.9
+  lifeexpectancy: 43.0
   gnp: 6313.0
   gnpold: 6887.0
   localname: uganda
@@ -3559,7 +3559,7 @@ countries_223:
   surfacearea: 175016.0
   indepyear: 1828
   population: 3337000
-  lifeexpectancy: 75.2
+  lifeexpectancy: 75.0
   gnp: 20831.0
   gnpold: 19967.0
   localname: uruguay
@@ -3575,7 +3575,7 @@ countries_224:
   surfacearea: 9363520.0
   indepyear: 1776
   population: 278357000
-  lifeexpectancy: 77.1
+  lifeexpectancy: 77.0
   gnp: 8510700.0
   gnpold: 8110900.0
   localname: united states
@@ -3591,7 +3591,7 @@ countries_225:
   surfacearea: 447400.0
   indepyear: 1991
   population: 24318000
-  lifeexpectancy: 63.7
+  lifeexpectancy: 64.0
   gnp: 14194.0
   gnpold: 21300.0
   localname: uzbekiston
@@ -3604,7 +3604,7 @@ countries_226:
   name: holy see (vatican city state)
   continent: europe
   region: southern europe
-  surfacearea: 0.4
+  surfacearea: 0.0
   indepyear: 1929
   population: 1000
   lifeexpectancy: 
@@ -3623,7 +3623,7 @@ countries_227:
   surfacearea: 388.0
   indepyear: 1979
   population: 114000
-  lifeexpectancy: 72.3
+  lifeexpectancy: 72.0
   gnp: 285.0
   gnpold: 
   localname: saint vincent and the grenadines
@@ -3639,7 +3639,7 @@ countries_228:
   surfacearea: 912050.0
   indepyear: 1811
   population: 24170000
-  lifeexpectancy: 73.1
+  lifeexpectancy: 73.0
   gnp: 95023.0
   gnpold: 88434.0
   localname: venezuela
@@ -3655,7 +3655,7 @@ countries_229:
   surfacearea: 151.0
   indepyear: 
   population: 21000
-  lifeexpectancy: 75.4
+  lifeexpectancy: 75.0
   gnp: 612.0
   gnpold: 573.0
   localname: british virgin islands
@@ -3671,7 +3671,7 @@ countries_230:
   surfacearea: 347.0
   indepyear: 
   population: 93000
-  lifeexpectancy: 78.1
+  lifeexpectancy: 78.0
   gnp: 0.0
   gnpold: 
   localname: virgin islands of the united states
@@ -3687,7 +3687,7 @@ countries_231:
   surfacearea: 331689.0
   indepyear: 1945
   population: 79832000
-  lifeexpectancy: 69.3
+  lifeexpectancy: 69.0
   gnp: 21929.0
   gnpold: 22834.0
   localname: vi
@@ -3703,7 +3703,7 @@ countries_232:
   surfacearea: 12189.0
   indepyear: 1980
   population: 190000
-  lifeexpectancy: 60.6
+  lifeexpectancy: 61.0
   gnp: 261.0
   gnpold: 246.0
   localname: vanuatu
@@ -3735,7 +3735,7 @@ countries_234:
   surfacearea: 2831.0
   indepyear: 1962
   population: 180000
-  lifeexpectancy: 69.2
+  lifeexpectancy: 69.0
   gnp: 141.0
   gnpold: 157.0
   localname: samoa
@@ -3751,7 +3751,7 @@ countries_235:
   surfacearea: 527968.0
   indepyear: 1918
   population: 18112000
-  lifeexpectancy: 59.8
+  lifeexpectancy: 60.0
   gnp: 6041.0
   gnpold: 5729.0
   localname: al-yaman
@@ -3767,7 +3767,7 @@ countries_236:
   surfacearea: 102173.0
   indepyear: 1918
   population: 10640000
-  lifeexpectancy: 72.4
+  lifeexpectancy: 72.0
   gnp: 17000.0
   gnpold: 
   localname: jugoslavija
@@ -3783,7 +3783,7 @@ countries_237:
   surfacearea: 1221037.0
   indepyear: 1910
   population: 40377000
-  lifeexpectancy: 51.1
+  lifeexpectancy: 51.0
   gnp: 116729.0
   gnpold: 129092.0
   localname: south africa
@@ -3799,7 +3799,7 @@ countries_238:
   surfacearea: 752618.0
   indepyear: 1964
   population: 9169000
-  lifeexpectancy: 37.2
+  lifeexpectancy: 37.0
   gnp: 3377.0
   gnpold: 3922.0
   localname: zambia
@@ -3815,7 +3815,7 @@ countries_239:
   surfacearea: 390757.0
   indepyear: 1980
   population: 11669000
-  lifeexpectancy: 37.8
+  lifeexpectancy: 38.0
   gnp: 5951.0
   gnpold: 8670.0
   localname: zimbabwe
