@@ -1,6 +1,6 @@
 /*@import url(../plugins/plupload/js/jquery.plupload.queue/css/jquery.plupload.queue.css);*/
 body {
-    background: #343434;
+    background: #fff url('/assets/ui/gray_jeans.png');
     margin: 0;
     padding: 0;
     line-height: 1.5em;
@@ -280,11 +280,13 @@ more info: https://github.com/twitter/bootstrap/issues/2410
 }
 
 .navbar.navbar-top .nav .active > a, .navbar.navbar-top .nav .active > a:hover {
-    color: #ffffff;
+    color: #333;
     text-decoration: none;
     background-color: #454545;
     text-shadow: 0 1px 0 #000;
 }
+
+
 
 /*==================================================
 * left panel

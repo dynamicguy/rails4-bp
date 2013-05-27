@@ -1,10 +1,66 @@
-%nav{:role => "navigation"}
-  %ul#nav
-    %li
-      = link_to 'link 1', '/', :title => ''
-    %li
-      = link_to 'Link 2', '/', :title => ''
-    %li
-      = link_to 'Link 3', '/', :title => ''
-    %li
-      = link_to 'Link 4', '/', :title => ''
+.navbar.navbar-fixed-top{:role => "navigation"}
+  .navbar-inner
+    .container
+      .span3
+        %a.btn.btn-navbar(data-target=".nav-collapse" data-toggle="collapse")
+          %span.icon-bar
+          %span.icon-bar
+          %span.icon-bar
+        = link_to 'RAILS4bp', root_path, 'data-no-turbolink' => '', :class => 'brand'
+      .nav-collapse.pull-right
+        %ul.nav#main-nav
+          %li{:class => (params[:controller] == 'dashboard' ? 'active' : '')}= link_to "Dashboard", root_path
+          %li{:class => (params[:controller] == 'pages' ? 'active' : '')}= link_to "Pages", pages_path
+          %li{:class => (params[:controller] == 'categories' ? 'active' : '')}= link_to "Categories", categories_path
+          %li.dropdown
+            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+              Countries
+              %b.caret
+            %ul.dropdown-menu
+              %li{:class => (params[:controller] == 'countries' ? 'active' : '')}= link_to "List", countries_path
+              %li{:class => (params[:controller] == 'countries' ? 'active' : '')}= link_to "Search", search_countries_path
+              %li{:class => (params[:controller] == 'countries' ? 'active' : '')}= link_to "Advanced Search", advanced_search_countries_path
+
+          %li.dropdown
+            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+              Cities
+              %b.caret
+            %ul.dropdown-menu
+              %li{:class => (params[:controller] == 'cities' ? 'active' : '')}= link_to "List", cities_path
+              %li{:class => (params[:controller] == 'cities' ? 'active' : '')}= link_to "Search", search_cities_path
+              %li{:class => (params[:controller] == 'cities' ? 'active' : '')}= link_to "Advanced Search", advanced_search_cities_path
+
+          %li.dropdown
+            %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+              Languages
+              %b.caret
+            %ul.dropdown-menu
+              %li{:class => (params[:controller] == 'languages' ? 'active' : '')}= link_to "list", countrylanguages_path
+              %li{:class => (params[:controller] == 'languages' ? 'active' : '')}= link_to "Search", search_countrylanguages_path
+              %li{:class => (params[:controller] == 'languages' ? 'active' : '')}= link_to "Advanched Search", advanced_search_countrylanguages_path
+
+        - if user_signed_in?
+          %ul.nav.pull-right
+            %li= link_to 'Welcome ' + current_user.email, edit_user_registration_path
+            %li.dropdown
+              %a.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+                %i.icon-xlarge.icon-user
+                %b.caret
+              %ul.dropdown-menu.dropdown-user-account
+                %li.account-img-container
+                  - if current_user.profile.present?
+                    %img.thumb.account-img{:src => current_user.profile.avatar_url}
+                %li.account-info
+                  %h3= current_user.email
+                  - if current_user.profile.present?
+                    %p= truncate(current_user.profile.bio, :length => 120)
+                %li.account-footer
+                  .row-fluid
+                    .span8
+                      - if current_user.profile.present?
+                        %a.btn.btn-primary.btn-small{:href => edit_profile_path(current_user.profile)}= t "links.label.edit_profile"
+                      %a.btn.btn-primary.btn-small{:href => edit_user_registration_path}= t "links.label.edit_account"
+                    .span4.align-right
+                      = link_to 'Logout', destroy_user_session_path, :method => :delete, :class => 'btn btn-danger btn-small', 'data-confirm' => 'Please confirm your action'
+  =# render 'layouts/global-alerts'
+  = render 'layouts/progressbar'
