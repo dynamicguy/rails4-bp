@@ -10,11 +10,12 @@
 
   = head
   %body
-    = chromeframe
-    %header{:role => "banner"}
-      = render :partial => 'shared/navigation'
-    #main{:role => "main"}
-      .container-fluid= yield
-      #push
-    = render :partial => 'shared/footer'
-    = scripts
+    = yield
+    -#= chromeframe
+    -#%header{:role => "banner"}
+    -#  = render :partial => 'shared/navigation'
+    -##main{:role => "main"}
+    -#  .container-fluid= yield
+    -#  #push
+    -#= render :partial => 'shared/footer'
+    -#= scripts

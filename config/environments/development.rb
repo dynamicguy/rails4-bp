@@ -27,6 +27,8 @@ Rails4Bp::Application.configure do
   # number of complex assets.
   config.assets.debug = true
 
+  config.assets.initialize_on_precompile = true
+
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 
   config.after_initialize do

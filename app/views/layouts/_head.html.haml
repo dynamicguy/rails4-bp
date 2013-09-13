@@ -1,27 +1,29 @@
 %head
-  %meta{:charset => "utf-8"}
+  / Meta, title, CSS, favicons, etc.
+  %meta{:charset => "utf-8"}/
+  %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+
   %link{:rel => "dns-prefetch", :href => "//fonts.googleapis.com"}
   /[if IE] %meta{"http-equiv" => "X-UA-Compatible", :content => "IE=edge,chrome=1"}
 
   %title= raw [content_for?(:title) ? yield(:title) : [params[:controller], params[:action]].join(" » ").titleize + " : Home", "&raquo; RAAKIB.COM"].join(' ')
-  -# alternative title format.
-  -# %title= content_for?(:title) ? ("XXX - " + yield(:title)) : "XXX"
 
-  %meta{:name => "description", :content => "XXX"}
-  %meta{:name => "viewport", :content => "width=device-width"}
-
-  %link{:rel => "shortcut icon", :href => "/favicon.ico"}
-  %link{:rel => "apple-touch-icon", :href => "/apple-touch-icon.png"}
+  / HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
+  /[if lt IE 9]
+    <script src="/assets/javascripts/html5shiv.js"></script>
+    <script src="/assets/javascripts/respond.min.js"></script>
+  / Favicons
+  %link{:href => "/apple-touch-icon-144-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "144x144"}/
+  %link{:href => "/apple-touch-icon-114-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "114x114"}/
+  %link{:href => "/apple-touch-icon-72-precomposed.png", :rel => "apple-touch-icon-precomposed", :sizes => "72x72"}/
+  %link{:href => "/apple-touch-icon-57-precomposed.png", :rel => "apple-touch-icon-precomposed"}/
+  %link{:href => "/favicon.png", :rel => "shortcut icon"}/
 
   = stylesheet_link_tag "application"
-  -# for production customize modernizr at: http://www.modernizr.com/download/
-  -# IMPORTANT: add the following to production.rb:
-  -# config.assets.precompile += %w( modernizr-2.6.2.min.js )
-  = javascript_include_tag 'modernizr-2.6.2.min'
 
   -# Google Web Fonts combination ideas, if you decide to use, uncomment combination and delete the rest.
-  %link{:href => "http://fonts.googleapis.com/css?family=Droid+Serif", :rel => "stylesheet", :type => "text/css"}
-  %link{:href => "http://fonts.googleapis.com/css?family=Droid+Sans", :rel => "stylesheet", :type => "text/css"}
+  -#%link{:href => "http://fonts.googleapis.com/css?family=Droid+Serif", :rel => "stylesheet", :type => "text/css"}
+  -#%link{:href => "http://fonts.googleapis.com/css?family=Droid+Sans", :rel => "stylesheet", :type => "text/css"}
 
   -# %link{:href => "http://fonts.googleapis.com/css?family=Cantata+One", :rel => "stylesheet", :type => "text/css"}
   -# %link{:href => "http://fonts.googleapis.com/css?family=Imprima", :rel => "stylesheet", :type => "text/css"}
@@ -33,6 +35,8 @@
   -# %link{:href => "http://fonts.googleapis.com/css?family=PT+Sans", :rel => "stylesheet", :type => "text/css"}
 
   = csrf_meta_tag
+
+
 
   -# *******************************************************************************************
   -# MORE OPTIONS: (https://gist.github.com/1981339)

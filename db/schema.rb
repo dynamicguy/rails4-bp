@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130511084222) do
+ActiveRecord::Schema.define(version: 20130912210044) do
 
   create_table "articles", force: true do |t|
     t.string   "name"
@@ -66,6 +66,18 @@ ActiveRecord::Schema.define(version: 20130511084222) do
 
   add_index "countrylanguages", ["slug"], name: "slug", using: :btree
 
+  create_table "crews", force: true do |t|
+    t.integer  "age"
+    t.string   "name"
+    t.string   "avatar"
+    t.string   "title"
+    t.string   "species"
+    t.string   "origin"
+    t.string   "quote"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "pages", force: true do |t|
     t.string   "title"
     t.text     "content"
@@ -76,6 +88,43 @@ ActiveRecord::Schema.define(version: 20130511084222) do
     t.integer  "depth"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "profiles", force: true do |t|
+    t.string   "first_name",       limit: 127
+    t.string   "last_name",        limit: 127
+    t.string   "image_url"
+    t.string   "image_url_small"
+    t.string   "image_url_medium"
+    t.date     "birthday"
+    t.string   "gender"
+    t.text     "bio"
+    t.boolean  "searchable",                   default: true,  null: false
+    t.integer  "user_id",                                      null: false
+    t.string   "location"
+    t.string   "full_name",        limit: 70
+    t.boolean  "nsfw",                         default: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "profiles", ["full_name"], name: "index_profiles_on_full_name", using: :btree
+
+  create_table "taggings", force: true do |t|
+    t.integer  "tag_id"
+    t.integer  "taggable_id"
+    t.string   "taggable_type"
+    t.integer  "tagger_id"
+    t.string   "tagger_type"
+    t.string   "context",       limit: 128
+    t.datetime "created_at"
+  end
+
+  add_index "taggings", ["tag_id"], name: "index_taggings_on_tag_id", using: :btree
+  add_index "taggings", ["taggable_id", "taggable_type", "context"], name: "index_taggings_on_taggable_id_and_taggable_type_and_context", using: :btree
+
+  create_table "tags", force: true do |t|
+    t.string "name"
   end
 
   create_table "users", force: true do |t|

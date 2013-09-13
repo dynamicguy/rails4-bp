@@ -1,10 +1,6 @@
-.span12
-  .footer
-    %ul
-      %li
-
-      %li
-        Copyright @2013 Rails4BP
+%ul
+  %li
+    Copyright @2013 Rails4BP
 
 /
   Javascripts
@@ -12,8 +8,9 @@
 / Placed at the end of the document so the pages load faster
 -#= javascript_include_tag '//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js', :defer=> true, :async => true
 = render 'layouts/confirm_dialog'
-= javascript_include_tag "application"
-= yield :scripts
 
--#%script{:type => 'text/javascript'}
--#  = yield :document_ready
+= jquery_include_tag
+= javascript_include_tag :application
+= load_javascript_locales
+= set_asset_host
+= translation_missing_warnings
