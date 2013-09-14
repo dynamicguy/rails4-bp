@@ -1,0 +1,1047 @@
+#   Copyright (c) 2010-2013, Diaspora Inc.  This file is
+#   licensed under the Affero General Public License version 3 or later.  See
+#   the COPYRIGHT file.
+
+
+
+es-AR:
+  _applications: "Aplicaciones"
+  _comments: "Comentarios"
+  _contacts: "Contactos"
+  _home: "Inicio"
+  _photos: "fotos"
+  _services: "Servicios"
+  account: "Cuenta"
+  activerecord:
+    errors:
+      models:
+        contact:
+          attributes:
+            person_id:
+              taken: "debe ser único entre los contactos del usuario."
+        person:
+          attributes:
+            diaspora_handle:
+              taken: "ya está ocupado."
+        request:
+          attributes:
+            from_id:
+              taken: "es un duplicado de una solicitud preexistente."
+        reshare:
+          attributes:
+            root_guid:
+              taken: "Está bueno, ¿eh? Ya habías compartido esa publicación!"
+        user:
+          attributes:
+            email:
+              taken: "ya está ocupado."
+            person:
+              invalid: "no es válido."
+            username:
+              invalid: "no es válido. Se permiten letras, números y guiones bajos."
+              taken: "ya está ocupado."
+  admins:
+    admin_bar:
+      correlations: "Similitudes"
+      pages: "Páginas"
+      pod_stats: "Estadísticas del servidor"
+      sidekiq_monitor: "Monitor Sidekiq"
+      user_search: "Búsqueda de usuarios"
+      weekly_user_stats: "Estadísticas semanales de usuario"
+    correlations:
+      correlations_count: "Correlaciones con el conteo de inicio de sesión:"
+    stats:
+      2weeks: "2 Semanas"
+      50_most: "Las 50 etiquetas más populares"
+      comments:
+        one: "%{count} comentario"
+        other: "%{count} comentarios"
+        zero: "%{count} comentarios"
+      current_segment: "Este período tiente un promedio de <b>%{post_yest}</b> publicaciones por usuario, desde <b>%{post_day}</b>"
+      daily: "Diario"
+      display_results: "Mostrando los resultados del período <b>%{segment}</b>"
+      go: "Ir"
+      month: "Mes"
+      posts:
+        one: "%{count} publicación"
+        other: "%{count} publicaciones"
+        zero: "%{count} publicaciones"
+      shares:
+        one: "Compartido %{count} vez"
+        other: "Compartido %{count} veces"
+        zero: "Compartido %{count} veces"
+      tag_name: "Nombre de la etiqueta: <b>%{name_tag}</b> Cantidad: <b>%{count_tag}</b>"
+      usage_statistic: "Estadísticas de uso"
+      users:
+        one: "%{count} usuario"
+        other: "%{count} usuarios"
+        zero: "%{count} usuarios"
+      week: "Semana"
+    user_search:
+      add_invites: "Añadir invitaciones"
+      email_to: "Mandar invitación por correo electrónico a"
+      under_13: "Mostrar usuarios menores de 13 años (COPPA)"
+      users:
+        one: "%{count} usuario encontrado"
+        other: "%{count} usuarios encontrados"
+        zero: "%{count} usuarios encontrados"
+      you_currently: "Actualmente te quedan %{user_invitation} invitaciones para enviar %{link}"
+    weekly_user_stats:
+      amount_of:
+        one: "cantidad de nuevos usuarios esta semana: %{count}"
+        other: "cantidad de nuevos usuarios esta semana: %{count}"
+        zero: "cantidad de nuevos usuarios esta semana: ninguno"
+      current_server: "La fecha actual del servidor es %{date}"
+  ago: "hace %{time}"
+  all_aspects: "Todos los aspectos"
+  application:
+    helper:
+      diaspora_alpha: "DIASPORA* ALPHA"
+      unknown_person: "persona desconocida"
+      video_title:
+        unknown: "Título de video desconocido"
+  are_you_sure: "¿Estás seguro?"
+  are_you_sure_delete_account: "¿Seguro que quieres eliminar tu cuenta? ¡Esto no se podrá deshacer!"
+  aspect_memberships:
+    destroy:
+      failure: "No pudo eliminarse al contacto del aspecto"
+      no_membership: "No se encontró a la persona seleccionada en el aspecto"
+      success: "El contacto se eliminó del aspecto"
+  aspects:
+    add_to_aspect:
+      failure: "No pudo agregarse el contacto al aspecto."
+      success: "Se agregó el contacto al aspecto."
+    aspect_contacts:
+      done_editing: "aceptar"
+    aspect_listings:
+      add_an_aspect: "+ Agregar un aspecto"
+      deselect_all: "Deseleccionar todo"
+      edit_aspect: "Editar %{name}"
+      select_all: "Seleccionar todo"
+    aspect_stream:
+      make_something: "Siente la libertad"
+      stay_updated: "Mantenete actualizado"
+      stay_updated_explanation: "En tu stream principal aparecen las publicaciones de tus contactos, más las de las etiquetas que sigues, y si lo deseas, las de algunos miembros creativos de la comunidad."
+    contacts_not_visible: "Los contactos en este aspecto no van a poder verse entre ellos."
+    contacts_visible: "Los contactos en este aspecto van a poder verse entre ellos."
+    create:
+      failure: "Error creando el aspecto."
+      success: "Tu nuevo aspecto %{name} fue creado"
+    destroy:
+      failure: "%{name} no está vacío y no puede ser eliminado."
+      success: "%{name} se eliminó con éxito."
+    edit:
+      add_existing: "Agregar un contacto existente"
+      aspect_list_is_not_visible: "la lista de contactos del aspecto es invisible"
+      aspect_list_is_visible: "la lista de contactos del aspecto es visible"
+      confirm_remove_aspect: "¿Estás seguro de que querés eliminar este aspecto?"
+      done: "Listo"
+      make_aspect_list_visible: "¿Hacer visible los contactos del aspecto entre ellos?"
+      remove_aspect: "Eliminar este aspecto"
+      rename: "renombrar"
+      update: "actualizar"
+      updating: "actualizando"
+    few: "%{count} aspectos"
+    helper:
+      are_you_sure: "¿Estás seguro de que querés eliminar este aspecto?"
+      aspect_not_empty: "El aspecto no está vacío"
+      remove: "eliminar"
+    index:
+      cubbies:
+        explanation: "Cubbi.es es la primera aplicación de Diáspora* en desarrollo."
+        heading: "Conectar a Cubbi.es"
+        learn_more: "Aprendé más"
+      diaspora_id:
+        content_1: "Tu ID de Diáspora es:"
+        content_2: "Dáselo a cualquiera y podrá encontrarte en Diáspora."
+        heading: "ID de Diáspora"
+      donate: "Donar"
+      handle_explanation: "Ésta es tu identificación de Diáspora*. Es como una dirección de correo electrónico, podes dársela a la gente para que te encuentren."
+      help:
+        any_problem: "¿Algún problema?"
+        contact_podmin: "Contacta al administrador de tu pod!"
+        do_you: "Tal vez:"
+        email_feedback: "Si lo prefieres, enviá tus comentarios a este %{link}."
+        email_link: "Correo electrónico"
+        feature_suggestion: "...tengas una %{link} o sugerencia?"
+        find_a_bug: "...encontraste un %{link}?"
+        have_a_question: "...tengas una %{link}?"
+        here_to_help: "La comunidad de Diaspora* está aquí para ayudarte."
+        mail_podmin: "Correo electrónico del administrador del pod"
+        need_help: "¿Necesitás ayuda?"
+        tag_bug: "error"
+        tag_feature: "idea"
+        tag_question: "pregunta"
+        tutorials_wiki_and_forum: "%{tutorial} & %{wiki} & %{forum}: Tutoriales, wiki y noticias."
+      introduce_yourself: "Este es tu stream.  Zambullite en el y presentate."
+      keep_diaspora_running: "¡Haz que el desarrollo de Diaspora vaya más rápido con una donación mensual!"
+      keep_pod_running: "¡Haz que %{pod} siga corriendo rápido, y compra a nuestros servidores su dosis de café con una donación mensual!"
+      new_here:
+        follow: "Sigue la etiqueta %{link} y da la bienvenida a los nuevos usuarios de Diaspora*!"
+        learn_more: "Más información"
+        title: "Bienvenida"
+      no_contacts: "No hay contactos"
+      no_tags: "+ Encuentra una etiqueta para seguir"
+      people_sharing_with_you: "Comparten con vos"
+      post_a_message: "publicar un mensaje >>"
+      services:
+        content: "Podés conectar los siguientes servicios a Diáspora:"
+        heading: "Conectar Servicios"
+      unfollow_tag: "Dejar de seguir #%{tag}"
+      welcome_to_diaspora: "¡Bienvenid@ a Diaspora, %{name}!"
+    many: "%{count} aspectos"
+    move_contact:
+      error: "Se produjo un error al mover el contacto: %{inspect}"
+      failure: "%{inspect} no funcionó"
+      success: "El contacto se movió al nuevo aspecto"
+    new:
+      create: "Crear"
+      name: "Nombre (solo visible para ti)"
+    no_contacts_message:
+      community_spotlight: "comunidad creativa"
+      or_spotlight: "O lo podés compartir con %{link}"
+      try_adding_some_more_contacts: "Podés buscar o invitar más contactos."
+      you_should_add_some_more_contacts: "¡Deberías agregar más contactos!"
+    no_posts_message:
+      start_talking: "Nadie dijo nada todavía. ¡Inicia una conversación!"
+    one: "1 aspecto"
+    other: "%{count} aspectos"
+    seed:
+      acquaintances: "Conocidos"
+      family: "Familia"
+      friends: "Amigos"
+      work: "Trabajo"
+    selected_contacts:
+      manage_your_aspects: "Administra tus aspectos."
+      no_contacts: "Todavía no tenés ningún contacto aquí."
+      view_all_community_spotlight: "Ver \"Comunidad Creativa\""
+      view_all_contacts: "Ver todos los contactos"
+    show:
+      edit_aspect: "editar aspecto"
+    two: "%{count} aspectos"
+    update:
+      failure: "Tu aspecto, %{name}, tenía un nombre muy largo para guardarlo."
+      success: "Tu aspecto, %{name}, se editó con éxito."
+    zero: "no hay aspectos"
+  authorizations:
+    index:
+      no_applications: "No registraste ninguna aplicación todavía."
+      revoke_access: "Revocar Acceso"
+    new:
+      authorize: "Autorizar"
+      cubbies_will: "Cubbies podrá publicar fotos por ti"
+      nope: "No"
+  back: "Atrás"
+  blocks:
+    create:
+      failure: "No se puede ignorar ese usuario.  #evasion"
+      success: "Bien, ya no verás más a ese usuario en tu stream. #silencio!"
+    destroy:
+      failure: "No se pudo dejar de ignorar a ese usuario.  #evasion"
+      success: "¡Veamos que tiene que decir! #dihola"
+  bookmarklet:
+    explanation: "Publicá en Diaspora* desde cualquier página agregando a tus marcadores este enlace: %{link}"
+    heading: "Marcador"
+    post_something: "Publicar en Diaspora*"
+    post_success: "¡Publicado! Cerrando."
+  cancel: "Cancelar"
+  comments:
+    few: "%{count} comentarios"
+    many: "%{count} comentarios"
+    new_comment:
+      comment: "Comentar"
+      commenting: "Comentando..."
+    one: "1 comentario"
+    other: "%{count} comentarios"
+    two: "%{count} comentarios"
+    zero: "no hay comentarios"
+  contacts:
+    create:
+      failure: "No pudo crearse el contacto"
+    few: "%{count} contactos"
+    index:
+      add_a_new_aspect: "Añadir un nuevo aspecto"
+      add_to_aspect: "añade contactos a %{name}"
+      add_to_aspect_link: "Agregar contactos a %{name}"
+      all_contacts: "Todos los Contactos"
+      community_spotlight: "Lo más destacado de la comunidad"
+      many_people_are_you_sure: "Estás seguro que querés comenzar una conversación privada con más de  %{suggested_limit} contactos? Publicando en este aspecto puede ser una mejor manera de contactarlos."
+      my_contacts: "Mis Contactos"
+      no_contacts: "¡Parece que necesitás agregar algunos contactos!"
+      no_contacts_message: "Echa un vistazo a %{community_spotlight}"
+      no_contacts_message_with_aspect: "Echa un vistazo a %{community_spotlight} o %{add_to_aspect_link}"
+      only_sharing_with_me: "Compartiendo solo conmigo"
+      remove_person_from_aspect: "Quitar a %{person_name} de \"%{aspect_name}\""
+      start_a_conversation: "Empezar una conversación"
+      title: "Contactos"
+      your_contacts: "Tus contactos"
+    many: "%{count} contactos"
+    one: "1 contacto"
+    other: "%{count} contactos"
+    sharing:
+      people_sharing: "Compartiendo con vos:"
+    spotlight:
+      community_spotlight: "Comunidad Creativa"
+      suggest_member: "Sugiere un usuario"
+    two: "%{count} contactos"
+    zero: "contactos"
+  conversations:
+    conversation:
+      participants: "Participantes"
+    create:
+      fail: "Mensaje inválido"
+      no_contact: "¡Primero necesitas agregar al contacto!"
+      sent: "Mensaje enviado"
+    destroy:
+      success: "La conversación se eliminó"
+    helper:
+      new_messages:
+        few: "%{count} mensajes nuevos"
+        many: "%{count} mensajes nuevos"
+        one: "1 mensaje nuevo"
+        other: "%{count} mensajes nuevos"
+        two: "%{count} mensajes nuevos"
+        zero: "No hay mensajes nuevos"
+    index:
+      create_a_new_message: "crear un nuevo mensaje"
+      inbox: "Mensajes"
+      message_inbox: "Bandeja de entrada"
+      new_message: "Nuevo mensaje"
+      no_conversation_selected: "ninguna conversación seleccionada"
+      no_messages: "no hay mensajes"
+    new:
+      abandon_changes: "¿Descartar los cambios?"
+      send: "Enviar"
+      sending: "Enviando..."
+      subject: "asunto"
+      to: "para"
+    new_message:
+      fail: "Mensaje inválido"
+    show:
+      delete: "eliminar y bloquear conversación"
+      reply: "responder"
+      replying: "Contestando..."
+  date:
+    formats:
+      birthday: "%d de %B"
+      birthday_with_year: "%d de %B de %Y"
+      fullmonth_day: "%d de %B"
+  delete: "Eliminar"
+  email: "Correo electrónico"
+  error_messages:
+    helper:
+      correct_the_following_errors_and_try_again: "Corregí los siguientes errores e intentá de nuevo."
+      invalid_fields: "Campos inválidos"
+    login_try_again: "Por favor <a href='%{login_link}'>acceder</a> e intenta de nuevo."
+    post_not_public: "¡La publicación que estás tratando de ver no es pública!"
+  fill_me_out: "Completame"
+  find_people: "Encontrá gente o #etiquetas"
+  hide: "Ocultar"
+  invitation_codes:
+    excited: "%{name} está encantado de verte por aquí."
+  invitations:
+    a_facebook_user: "Un usuario de Facebook"
+    check_token:
+      not_found: "No se encontró la udentificación de invitación"
+    create:
+      already_contacts: "Ya estás conectado con esta persona"
+      already_sent: "Ya invitaste a esta persona."
+      empty: "Por favor ingresa al menos una dirección de correo electrónico."
+      no_more: "No tenés más invitaciones."
+      note_already_sent: "Las invitaciones han sido enviadas a: %{emails}"
+      own_address: "No podés enviar una invitación a tu propia dirección."
+      rejected: "Las siguientes direcciones tuvieron problemas: "
+      sent: "Las invitaciones se han enviado a: %{emails}"
+    edit:
+      accept_your_invitation: "Aceptá tu invitación"
+      your_account_awaits: "Tu cuenta está esperando!"
+    new:
+      already_invited: "Las siguientes personas no aceptaron tu invitación:"
+      aspect: "Aspecto"
+      check_out_diaspora: "¡Echa un vistazo a Diaspora!"
+      codes_left:
+        one: "Queda %{count} invitación con este código"
+        other: "Quedan %{count} invitaciones con este código"
+        zero: "No quedan invitaciones con este código"
+      comma_separated_plz: "Puedes introducir múltiples direcciones de correo electrónico separadas por comas."
+      if_they_accept_info: "si aceptan, serán agregados al aspecto que selecciones."
+      invite_someone_to_join: "¡Invitá a alguien a unirse a Diáspora*!"
+      language: "Idioma"
+      paste_link: "Comparte este enlace con tus amigos para invitarlos a Diaspora*, o envíales directamente el enlace por correo electrónico"
+      personal_message: "Mensaje personal"
+      resend: "Reenviar"
+      send_an_invitation: "Enviar una invitación"
+      send_invitation: "Enviar invitación"
+      sending_invitation: "Enviando invitación..."
+      to: "Para"
+  layouts:
+    application:
+      back_to_top: "Volver al inicio"
+      powered_by: "IMPULSADO POR DIÁSPORA*"
+      public_feed: "Canal público para %{name}"
+      source_package: "descargar el paquete del código fuente"
+      toggle: "Cambiar a celular"
+      whats_new: "¿Qué hay de nuevo?"
+      your_aspects: "tus aspectos"
+    header:
+      admin: "administrar"
+      blog: "Blog"
+      code: "código"
+      login: "conectarse"
+      logout: "Salir"
+      profile: "Perfil"
+      recent_notifications: "Notificaciones recientes"
+      settings: "Configuración"
+      view_all: "Ver todo"
+  likes:
+    likes:
+      people_dislike_this:
+        one: "a %{count} le disgusta esto"
+        other: "a %{count} les disgusta esto"
+        zero: "a nadie le disgusta esto"
+      people_like_this:
+        one: "a %{count} le gusta esto"
+        other: "a %{count} les gusta esto"
+        zero: "a nadie le gusta esto"
+      people_like_this_comment:
+        one: "a %{count} le gusta este comentario"
+        other: "a %{count} les gusta este comentario"
+        zero: "a nadie le gusta este comentario"
+  limited: "Limitado"
+  more: "Más"
+  next: "siguiente"
+  no_results: "No hay resultados"
+  notifications:
+    also_commented:
+      few: "%{actors} también comentaron en la %{post_link} de %{post_author}."
+      many: "%{actors} también comentaron en la %{post_link} de %{post_author}."
+      one: "%{actors} también comentó en la %{post_link} de %{post_author}."
+      other: "%{actors} también comentaron en la %{post_link} de %{post_author}."
+      two: "%{actors} también comentó en el %{post_link} de  %{post_author}"
+      zero: "%{actors} también comentó en la %{post_link} de %{post_author}."
+    also_commented_deleted:
+      few: "%{actors} comentaron en una publicación eliminada."
+      many: "%{actors} comentaron en una publicación eliminada."
+      one: "%{actors} comentó en una publicación eliminada."
+      other: "%{actors} comentaron en una publicación eliminada."
+      two: "%{actors} comentaron en una publicación borrada."
+      zero: "%{actors} comentó en una publicación eliminada."
+    comment_on_post:
+      few: "%{actors} comentaron en tu %{post_link}."
+      many: "%{actors} comentaron en tu %{post_link}."
+      one: "%{actors} comentó en tu %{post_link}."
+      other: "%{actors} comentaron en tu %{post_link}."
+      two: "%{actors} comentaron en tu %{post_link}."
+      zero: "%{actors} comentó en tu %{post_link}."
+    helper:
+      new_notifications:
+        few: "%{count} notificaciones nuevas"
+        many: "%{count} notificaciones nuevas"
+        one: "1 notificación nueva"
+        other: "%{count} notificaciones nuevas"
+        two: "%{count} notificaciones nuevas"
+        zero: "Ninguna notificacíon nueva"
+    index:
+      and: "y"
+      and_others:
+        few: "y otros %{count}"
+        many: "y otros %{count}"
+        one: "y alguien más"
+        other: "y otros %{count}"
+        two: "y %{count} otros"
+        zero: "y nadie más"
+      mark_all_as_read: "Marcar todo como leído"
+      mark_unread: "Marcar como no leído"
+      notifications: "Notificaciones"
+    liked:
+      one: "A %{actors} le gustó tu %{post_link}."
+      other: "A %{actors} les gustó tu %{post_link}."
+      zero: "A %{actors} le gustó tu %{post_link}."
+    liked_post_deleted:
+      few: "A %{actors} les gusta tu publicación eliminada."
+      many: "A %{actors} les gusta tu publicación eliminada."
+      one: "A %{actors} le gusta tu publicación eliminada."
+      other: "A %{actors} les gusta tu publicación eliminada."
+      two: "a %{actors} le gustó tu publicación eliminada."
+      zero: "A %{actors} le gusta tu publicación eliminada."
+    mentioned:
+      one: "%{actors} te mencionó en una %{post_link}."
+      other: "%{actors} te mencionaron en una %{post_link}."
+      zero: "%{actors} te mencionó en una %{post_link}."
+    mentioned_deleted:
+      few: "%{actors} te mencionaron en una publicación eliminada."
+      many: "%{actors} te mencionaron en una publicación eliminada."
+      one: "%{actors} te mencionó en una publicación eliminada."
+      other: "%{actors} te mencionaron en una publicación eliminada."
+      two: "%{actors} te mencionó en un mensaje eliminado."
+      zero: "%{actors} te mencionó en una publicación eliminada."
+    post: "publicación"
+    private_message:
+      few: "%{actors} te enviaron un mensaje."
+      many: "%{actors} te enviaron un mensaje."
+      one: "%{actors} te envió un mensaje."
+      other: "%{actors} te enviaron un mensaje."
+      two: "%{actors} te envió un mensaje."
+      zero: "%{actors} te envió un mensaje."
+    reshared:
+      one: "%{actors} compartió tu %{post_link}."
+      other: "%{actors} han compartido tu %{post_link}."
+      zero: "%{actors} compartió tu %{post_link}."
+    reshared_post_deleted:
+      one: "%{actors} compartió tu publicación eliminada."
+      other: "%{actors} compartieron tu publicación eliminada."
+      zero: "%{actors} compartió tu publicación eliminada."
+    started_sharing:
+      few: "%{actors} comparten con vos."
+      many: "%{actors} comparten con vos."
+      one: "%{actors} comparte con vos."
+      other: "%{actors} comparten con vos."
+      two: "%{actors} comenzó a compartir con vos."
+      zero: "%{actors} comparte con vos."
+  notifier:
+    a_post_you_shared: "una publicación."
+    accept_invite: "¡Acepta tu invitación a Diaspora*!"
+    click_here: "click aquí"
+    comment_on_post:
+      reply: "Responder o ver la publicación de %{name} >"
+    confirm_email:
+      click_link: "Para activar tu nueva dirección de correo %{unconfirmed_email}, por favor seguí este enlace::"
+      subject: "Por favor, activá tu nueva dirección de correo %{unconfirmed_email}"
+    email_sent_by_diaspora: "Este correo electrónico fue enviado por %{pod_name}. Si quieres dejar de recibir correos como este,"
+    hello: "¡Hola %{name}!"
+    invite:
+      message: |-
+          ¡Hola!
+
+          ¡Has sido invitado a unirte a Diaspora*!
+
+          Haz click en este enlace para comenzar
+
+          %{invite_url}
+
+
+          Saludos,
+
+          ¡El generador de correo automático de Diaspora*!
+    invited_you: "¡%{name} te ha invitado a Diaspora*!"
+    liked:
+      liked: "A  %{name} le gustó tu publicación"
+      view_post: "Ver publicación >"
+    mentioned:
+      mentioned: "te mencionó en una publicación:"
+      subject: "%{name} te mencionó en Diáspora*"
+    private_message:
+      reply_to_or_view: "Responder o ver esta conversación >"
+    reshared:
+      reshared: "%{name} compartió tu publicación"
+      view_post: "Ver publicación >"
+    single_admin:
+      admin: "Tu administrador de Diáspora*"
+      subject: "Un mensaje sobre tu cuenta Diáspora*:"
+    started_sharing:
+      sharing: "comenzó a compartir con vos."
+      subject: "%{name} comenzó a compartir con vos en Diáspora*"
+      view_profile: "Ver el perfil de %{name}"
+    thanks: "Gracias,"
+    to_change_your_notification_settings: "para cambiar la configuración de tus notificaciones"
+  nsfw: "No apto para todo público"
+  ok: "OK"
+  or: "o"
+  password: "Contraseña"
+  password_confirmation: "Confirmación de contraseña"
+  people:
+    add_contact:
+      invited_by: "fuiste invitado por"
+    add_contact_small:
+      add_contact_from_tag: "añadir contacto desde una etiqueta"
+    aspect_list:
+      edit_membership: "editar aspectos asociados"
+    few: "%{count} personas"
+    helper:
+      is_not_sharing: "%{name} no está compartiendo con vos"
+      is_sharing: "%{name} está compartiendo con vos"
+      people_on_pod_are_aware_of: " personas en POD está al tanto de"
+      results_for: " resultados para %{params}"
+    index:
+      couldnt_find_them_send_invite: "¿No encontrás a alguien? ¡Enviale una invitación!"
+      looking_for: "¿Buscando publicaciones sobre %{tag_link}?"
+      no_one_found: "...y nadie fue encontrado."
+      no_results: "¡Che! Necesitás buscar algo."
+      results_for: "buscar resultados para"
+      searching: "buscando, por favor sé paciente…"
+    last_post: "Última publicación"
+    many: "%{count} personas"
+    one: "1 persona"
+    other: "%{count} personas"
+    person:
+      add_contact: "agregar contacto"
+      already_connected: "Ya estás conectado"
+      pending_request: "Solicitud pendiente"
+      thats_you: "¡Ése sos vos!"
+    profile_sidebar:
+      bio: "Biografía"
+      born: "Fecha de nacimiento"
+      edit_my_profile: "Editar mi perfil"
+      gender: "Género/sexo"
+      in_aspects: "en aspectos"
+      location: "Ubicación"
+      photos: "Fotos"
+      remove_contact: "eliminar contacto"
+      remove_from: "¿Querés eliminar a %{name} de %{aspect}?"
+    show:
+      closed_account: "Esta cuenta ha sido cerrada."
+      does_not_exist: "¡Ese usuario no existe!"
+      has_not_shared_with_you_yet: "¡%{name} no compartió ninguna publicación con vos todavía!"
+      ignoring: "Estás ignorando todas las publicaciones de %{name}."
+      incoming_request: "%{name} quiere compartir con vos"
+      mention: "Mención"
+      message: "Mensaje"
+      not_connected: "No estás conectado con esa persona"
+      recent_posts: "Publicaciones recientes"
+      recent_public_posts: "Publicaciones al mundo recientes"
+      return_to_aspects: "Volver a tu página de aspectos"
+      see_all: "Ver todo"
+      start_sharing: "comenzar a compartir"
+      to_accept_or_ignore: "aceptar o ignorar."
+    sub_header:
+      add_some: "Agregar algo"
+      edit: "editar"
+      you_have_no_tags: "no tenes tags!"
+    two: "%{count} gente"
+    webfinger:
+      fail: "Lo sentimos, no pudimos encontrar a %{handle}."
+    zero: "nadie"
+  photos:
+    comment_email_subject: "La foto de %{name}"
+    create:
+      integrity_error: "Error subiendo la foto. ¿Estás seguro de que era una imagen válida?"
+      runtime_error: "Error subiendo la foto. ¿Hay alguna restricción de seguridad?"
+      type_error: "Error subiendo la foto. ¿Estás seguro que agregaste una imagen?"
+    destroy:
+      notice: "La foto fue eliminada."
+    edit:
+      editing: "Editando"
+    new:
+      back_to_list: "Volver a la lista"
+      new_photo: "Foto nueva"
+      post_it: "¡Publicalo!"
+    new_photo:
+      empty: "{file} está vacío, por favor seleccioná archivos sin él."
+      invalid_ext: "{file} tiene una extensión incorrecta. Sólo se permiten {extensions}."
+      size_error: "{file} es demasiado grande, el tamaño máximo de archivo es {sizeLimit}."
+    new_profile_photo:
+      or_select_one_existing: "o selecciona una %{photos} de las existentes"
+      upload: "¡Subir una nueva foto de perfil!"
+    photo:
+      view_all: "ver todas las fotos de %{name}"
+    show:
+      collection_permalink: "enlace permanente a la colección"
+      delete_photo: "Eliminar foto"
+      edit: "editar"
+      edit_delete_photo: "Editar descripción de foto / eliminar foto"
+      make_profile_photo: "convertir en foto de perfil"
+      show_original_post: "Mostrar la publicación original"
+      update_photo: "Actualizar foto"
+    update:
+      error: "Error al editar la foto."
+      notice: "La foto se subió correctamente."
+  posts:
+    presenter:
+      title: "Una publicación de %{name}"
+    show:
+      destroy: "Eliminar"
+      not_found: "No se pudo encontrar la publicación."
+      permalink: "Enlace permanente"
+      photos_by:
+        one: "Una foto de %{author}"
+        other: "%{count} fotos de %{author}"
+        zero: "Ninguna foto de %{author}"
+      reshare_by: "Compartido por %{author}"
+  previous: "anterior"
+  privacy: "Privacidad"
+  privacy_policy: "Política de Privacidad"
+  profile: "Perfil"
+  profiles:
+    edit:
+      allow_search: "Permitir que la gente te encuentre en Diáspora*"
+      edit_profile: "Editar perfil"
+      first_name: "Tu nombre de pila"
+      last_name: "Tu apellido"
+      update_profile: "Actualizar perfil"
+      you_are_nsfw: "Has marcado tu perfil como no apto para todo público, tu contenido no se mostrará a las personas que hayan descartado ver ese tipo de publicaciones."
+      you_are_safe_for_work: "Has marcado tu perfil como apto para todo público, esto significa que aceptas que el contenido que publiques respetará las normas de toda la comunidad."
+      your_bio: "Tu biografía"
+      your_birthday: "Tu cumpleaños"
+      your_gender: "Tu género"
+      your_location: "Tu ubicación"
+      your_name: "Tu nombre"
+      your_photo: "Tu foto"
+      your_private_profile: "Tu perfil privado"
+      your_public_profile: "Tu perfil público"
+      your_tags: "Vos en 5 palabras"
+      your_tags_placeholder: "Por ejemplo #arte #panqueque #gatitos #música"
+    update:
+      failed: "No pudo actualizarse el perfil"
+      updated: "Perfil actualizado"
+  public: "Público"
+  reactions:
+    few: "%{count} reacciones "
+    many: "%{count} reacciones"
+    one: "1 reacción"
+    other: "%{count} reacciones"
+    two: "%{count} reacciones"
+    zero: "0 reacciones"
+  registrations:
+    closed: "Los registros están cerrados en este servidor de Diáspora*."
+    create:
+      success: "¡Te uniste a Diáspora*!"
+    edit:
+      cancel_my_account: "Cancelá tu cuenta"
+      edit: "Editar %{name}"
+      leave_blank: "(dejalo en blanco si no querés cambiarlo)"
+      password_to_confirm: "(necesitamos tu contraseña actual para confirmar los cambios)"
+      unhappy: "¿Insatisfecho?"
+      update: "Actualizar"
+    invalid_invite: "¡El enlace de la invitación ya no es válido!"
+    new:
+      continue: "Continuar"
+      create_my_account: "¡Crear mi cuenta!"
+      diaspora: "<3 Diaspora*"
+      email: "CORREO ELECTRONICO"
+      enter_email: "Ingresá un correo electrónico"
+      enter_password: "Ingresa una contraseña (seis caracteres mínimo)"
+      enter_password_again: "Repetí la misma contraseña"
+      enter_username: "Elegí un nombre de usuario (sólo letras, números y guión bajo)"
+      hey_make: "HEY,<br/>SIENTE LA<br/>LIBERTAD."
+      join_the_movement: "Unite al movimiento!"
+      password: "CONTRASEÑA"
+      password_confirmation: "Confirmación de contraseña"
+      sign_up: "REGISTRARSE"
+      sign_up_message: "Redes Sociales con un <3"
+      username: "NOMBRE DE USUARIO"
+  requests:
+    create:
+      sending: "Enviando"
+      sent: "Le pediste a %{name} compartir con él. Debería verlo la próxima vez que se conecte."
+    destroy:
+      error: "¡Por favor, seleccioná un aspecto!"
+      ignore: "Se ignoró la solicitud de contacto."
+      success: "Ahora estás compartiendo."
+    helper:
+      new_requests:
+        few: "¡%{count} solicitudes nuevas!"
+        many: "¡%{count} solicitudes nuevas!"
+        one: "¡Una solicitud nueva!"
+        other: "¡%{count} solicitudes nuevas!"
+        two: "%{count} nuevas solicitudes!"
+        zero: "No hay solicitudes nuevas"
+    manage_aspect_contacts:
+      existing: "Contactos existentes"
+      manage_within: "Gestioná tus contactos"
+    new_request_to_person:
+      sent: "¡Enviado!"
+  reshares:
+    comment_email_subject: "%{resharer} compartió una publicación de %{author}"
+    create:
+      failure: "Ocurrió un error al compartir esta publicación."
+    reshare:
+      deleted: "La publicación original fue eliminada por su autor."
+      reshare:
+        one: "Compartido 1 vez"
+        other: "Compartido %{count} veces"
+        zero: "No compartido"
+      reshare_confirmation: "¿Compartir publicación de %{author}?"
+      reshare_original: "Compartir orignial"
+      reshared_via: "compartido a través de"
+      show_original: "Mostrar original "
+  search: "Buscar"
+  services:
+    create:
+      already_authorized: "Un usuario de Diaspora con id %{diaspora_id} ya autorizó la cuenta de servicio %{service_name}."
+      failure: "Falló la autenticación."
+      read_only_access: "El nivel de acceso es de solo lectura, por favor intente autorizar nuevamente más tarde."
+      success: "Autenticacíon correcta."
+    destroy:
+      success: "Autenticación eliminada."
+    failure:
+      error: "hubo un error al conectar al servicio"
+    finder:
+      fetching_contacts: "Diaspora está trasladando tus contactos de %{service}, por favor regresa en unos minutos."
+      no_friends: "No se han encontrado contactos de Facebook."
+      service_friends: "%{service} Amigos"
+    index:
+      connect_to_facebook: "Conectar a Facebook"
+      connect_to_tumblr: "Conectar con Tumblr"
+      connect_to_twitter: "Conectar a Twitter"
+      disconnect: "desconectar"
+      edit_services: "Editar servicios"
+      logged_in_as: "conectado como"
+      no_services: "No conectaste ningún servicio todavía."
+      really_disconnect: "¿Querés desconectarte de %{service}?"
+      services_explanation: "Conectar con otros servicios te ofrece la posibilidad de publicar tus publicaciones a medida que las escribes en Diaspora*."
+    inviter:
+      click_link_to_accept_invitation: "Seguí este enlace para aceptar la invitación"
+      join_me_on_diaspora: "Unite, estoy en DIÁSPORA*"
+    remote_friend:
+      invite: "invitar"
+      not_on_diaspora: "Todavía no está en Diáspora"
+      resend: "reenviar"
+  settings: "Configuración"
+  share_visibilites:
+    update:
+      post_hidden_and_muted: "La publicación de %{name} ha sido ocultada y sus notificaciones desactivadas."
+      see_it_on_their_profile: "Si querés ver actualizaciones sobre este post, visitá la página del perfil de %{name}."
+  shared:
+    add_contact:
+      add_new_contact: "Añadir contacto"
+      create_request: "Encontrar por Diáspora ID"
+      diaspora_handle: "diaspora@pod.org"
+      enter_a_diaspora_username: "Ingresá el nombre de usuario de Diáspora*:"
+      know_email: "¿Conocés sus direcciones de correo? ¡Podés invitarlos a unirse!"
+      your_diaspora_username_is: "Tu nombre de usuario de Diáspora* es: %{diaspora_handle}"
+    aspect_dropdown:
+      add_to_aspect: "Añadir contacto"
+      toggle:
+        one: "En %{count} aspecto"
+        other: "En %{count} aspectos"
+        zero: "Añadir contacto"
+    contact_list:
+      all_contacts: "Todos los contactos"
+    footer:
+      logged_in_as: "conectado como %{name}"
+      your_aspects: "tus aspectos"
+    invitations:
+      by_email: "Vía correo electrónico"
+      dont_have_now: "No tenés ninguna invitación ahora, pero ¡pronto tendrás más!"
+      from_facebook: "Desde Facebook"
+      invitations_left: "quedan %{count}"
+      invite_someone: "Invitá a alguien"
+      invite_your_friends: "Invitá a tus contactos"
+      invites: "Invitaciones"
+      invites_closed: "Las invitaciones en este servidor Diáspora* están cerradas actualmente"
+      share_this: "¡Comparte este enlace a través de correo electrónico, blog o tu red social favorita!"
+    notification:
+      new: "Nueva %{type} de %{from}"
+    public_explain:
+      atom_feed: "canal Atom"
+      control_your_audience: "Controla tu Audiencia"
+      logged_in: "conectado a %{service}"
+      manage: "Gestionar servicios conectados"
+      new_user_welcome_message: "Usa #hashtags para clasificar tus publicaciones y encontrar gente que comparte tus intereses.  Llama a gente interesante usando las @Menciones"
+      outside: "Las publicaciones para \"el mundo\" podrán verse fuera de Diáspora*."
+      share: "Comparte"
+      title: "Gestioná los servicios conectados"
+      visibility_dropdown: "Usa este menú para cambiar la visibilidad de tu publicación.  (Sugerimos hacer público el primero.)"
+    publisher:
+      all: "todo"
+      all_contacts: "todos los contactos"
+      discard_post: "Descartar publicación"
+      get_location: "Obtener tu ubicación"
+      make_public: "hacer público"
+      new_user_prefill:
+        hello: "#%{new_user_tag}, acabo de llegar aquí."
+        i_like: " Tengo interés en %{tags}."
+        invited_by: "Gracias por la invitación, "
+        newhere: "Hola"
+      post_a_message_to: "Publicar un mensaje en %{aspect}"
+      posting: "Publicando..."
+      preview: "Vista previa"
+      publishing_to: "publicar en: "
+      share: "Compartir"
+      share_with: "compartir con"
+      upload_photos: "Subir fotos"
+      whats_on_your_mind: "¿Qué tenés en mente?"
+    reshare:
+      reshare: "Compartir"
+    stream_element:
+      connect_to_comment: "Conecta con este usuario para comentar en su publicación"
+      currently_unavailable: "Comentar no está actualmente disponible"
+      dislike: "Me disgusta"
+      hide_and_mute: "Ignorar la publicación"
+      ignore_user: "Ignorar a %{name}"
+      ignore_user_description: "¿Ignorar y quitar al usuario de todos los aspectos?"
+      like: "Me gusta"
+      nsfw: "Esta publicación ha sido marcada por su autor como no apta para todo público. %{link}"
+      shared_with: "Compartido con: %{aspect_names}"
+      show: "Mostrar"
+      unlike: "No me gusta"
+      via: "vía %{link}"
+      via_mobile: "vía celular"
+      viewable_to_anyone: "Esta publicación puede ser vista por cualquiera en la web"
+  status_messages:
+    create:
+      success: "Se mencionó a: %{names}"
+    destroy:
+      failure: "No pudo eliminarse la publicación"
+    helper:
+      no_message_to_display: "No hay mensajes que mostrar."
+    new:
+      mentioning: "Mencionar a: %{person}"
+    too_long:
+      one: "Por favor, hacé que tu mensaje de estado tenga menos de %{count} caracter"
+      other: "Por favor, hacé que tu mensaje de estado tenga menos de %{count} caracteres"
+      zero: "Por favor, hacé que tu mensaje de estado tenga menos de %{count} caracteres"
+  stream_helper:
+    hide_comments: "Ocultar comentarios"
+    show_comments:
+      few: "Mostrar %{count} comentarios más"
+      many: "Mostrar %{count} comentarios más"
+      one: "Mostrar 1 comentario más"
+      other: "Mostrar %{count} comentarios más"
+      two: "Mostrar 2 comentarios más"
+      zero: "No hay más comentarios"
+  streams:
+    activity:
+      title: "Mi actividad"
+    aspects:
+      title: "Aspectos"
+    aspects_stream: "Aspectos"
+    comment_stream:
+      contacts_title: "Personas que han comentado tu mensaje"
+      title: "Posts Comentados"
+    community_spotlight_stream: "Comunidad Creativa"
+    followed_tag:
+      add_a_tag: "Añade una etiqueta"
+      contacts_title: "Personas que usaron estas etiquetas"
+      follow: "Seguir"
+      title: "#Etiquetas que sigues"
+    followed_tags_stream: "#Etiquetas que sigues"
+    like_stream:
+      contacts_title: "Personas de las que te gustan mensajes"
+      title: "Tus preferidos"
+    mentioned_stream: "@Menciones"
+    mentions:
+      contacts_title: "Gente que te mencionó"
+      title: "@Menciones"
+    multi:
+      contacts_title: "Personas en tu Stream"
+      title: "Entrada"
+    public:
+      contacts_title: "Autores recientes"
+      title: "Actividad Pública"
+    tags:
+      contacts_title: "Personas que usaron esta etiqueta"
+      tag_prefill_text: "Sobre %{tag_name}... "
+      title: "Mensajes tagueados: %{tags}"
+  tag_followings:
+    create:
+      failure: "No has podido seguir a #%{name}. Tal vez ya lo hagas..."
+      none: "No se puedes seguir una etiqueta en blanco!"
+      success: "Ahora estás siguiendo a #%{name}."
+    destroy:
+      failure: "No has podido dejar de seguir a: #%{name}. Tal vez ya lo hiciste..."
+      success: "Dejaste de seguir a #%{name}. "
+  tags:
+    show:
+      follow: "Seguir #%{tag}"
+      followed_by: "seguido por"
+      following: "Siguiendo #%{tag}"
+      nobody_talking: "Nadie está hablado sobre %{tag} todavía."
+      none: "La etiqueta en blanco no existe!"
+      people_tagged_with: "Personas etiquetadas con %{tag}"
+      posts_tagged_with: "Publicaciones etiquetadas con #%{tag}"
+      stop_following: "Dejar de seguir #%{tag}"
+  terms_and_conditions: "Términos y Condiciones"
+  tokens:
+    show:
+      connect_to_cubbies: "Conectar a Cubbi.es"
+      connecting_is_simple: "Conectar tu cuenta Diáspora* es tan simple como introducir tu Diaspora ID (<b>%{diaspora_id}</b>) desde la <a href='%{href_link}'>configuración</a> de Cubbi."
+      daniels_account: "Cuenta de Daniel en Diáspora*"
+      love_to_try: "Nos encantaría que la pruebes."
+      making_the_connection: "Haciendo la conexión"
+      screenshot_explanation: "%{link1}. Este cubby en particular está enlazado a %{link2}."
+      sign_up_today: "¡Registrate ahora mismo!"
+      typical_userpage: "Una típica página de usuario de cubbi.es"
+      via: "(vía %{link})"
+      what_is_cubbies: "Cubbi.es es la primera aplicación de Diáspora*. Es, también, la mejor forma de coleccionar fotos en línea."
+  undo: "¿Deshacer?"
+  username: "Nombre de usuario"
+  users:
+    confirm_email:
+      email_confirmed: "E-Mail %{email} activado"
+      email_not_confirmed: "El E-Mail no pudo ser activado. Link equivocado?"
+    destroy:
+      no_password: "Por favor, introduce tu contraseña actual para cerrar y destruir tu cuenta."
+      success: "Tu cuenta ha sido bloqueada.  Nos puede tomar unos 20 minutos cerrar tu cuenta definitivamente.  Te agradecemos por probar Diaspora."
+      wrong_password: "La contraseña ingresada no coincide con tu contraseña actual."
+    edit:
+      also_commented: "...alguien también comenta en una publicación en la que comentaste?"
+      auto_follow_aspect: "Selecciona el aspecto al que se incuirán los usuarios a quienes sigues automáticamente:"
+      auto_follow_back: "Seguir automáticamente a los usuarios que te sigan"
+      change: "Cambiar"
+      change_email: "Cambiar E-Mail"
+      change_language: "Cambiar idioma"
+      change_password: "Cambiar contraseña"
+      character_minimum_expl: "debe tener al menos seis caracteres"
+      close_account:
+        dont_go: "Hey, por favor no te vayas!"
+        if_you_want_this: "Si realmente es lo que deseas, ingresa tu contraseña debajo y pulsa «Eliminar cuenta»."
+        lock_username: "Esto bloquerá tu nombre de usuario si decides volver a registrarte."
+        locked_out: "Saldrás y eliminarás tu cuenta."
+        make_diaspora_better: "Queremos que nos ayudes a mejorar Diaspora, así que deberías ayudarnos en vez de marcharte. Si en verdad quieres irte, queremos que sepas lo que sucede después."
+        mr_wiggles: "El gatito estará triste por verte partir."
+        no_turning_back: "Actualmente, no hay vuelta atrás."
+        what_we_delete: "Eliminaremos todas tus publicaciones y datos de perfil tan pronto como sea humanamente posible. Tus comentarios seguirán en línea, pero asociados a tu dirección de Diaspora*."
+      close_account_text: "Cerrar cuenta"
+      comment_on_post: "...comentan en una publicación tuya?"
+      current_password: "Contraseña actual"
+      current_password_expl: "con la que inicias sesión…"
+      download_photos: "descargar mis fotos"
+      download_xml: "decargar mi XML"
+      edit_account: "Editar cuenta"
+      email_awaiting_confirmation: "Te hemos enviado un link de activación a %{unconfirmed_email}. Hasta que sigas este link y actives la nueva dirección, continuaremos utilizando tu dirección original %{email}."
+      export_data: "Exportar datos"
+      following: "Opciones de seguimiento"
+      getting_started: "Preferencias de Nuevos Usuarios"
+      liked: "...a alguien le gusta una publicación tuya?"
+      mentioned: "...te mencionan en una publicación?"
+      new_password: "Contraseña nueva"
+      photo_export_unavailable: "Exportar fotos actualmente no está disponible"
+      private_message: "...recibís un mensaje privado?"
+      receive_email_notifications: "¿Recibir notificaciones por correo electrónico cuando..."
+      reshared: "...alguien compartió tu publicación?"
+      show_community_spotlight: "¿Mostrar \"Comunidad Creativa\" en tu Stream?"
+      show_getting_started: "Volver a activar la Introducción de Ayuda"
+      started_sharing: "...alguien comienza a compartir con vos?"
+      stream_preferences: "Preferencias de Stream"
+      your_email: "Tu correo electrónico"
+      your_handle: "Tu identificación de  Diáspora*"
+    getting_started:
+      awesome_take_me_to_diaspora: "¡Asombroso! Llevame a Diaspora*"
+      community_welcome: "¡La comunidad de Diáspora está feliz de tenerte a bordo!"
+      connect_to_facebook: "Podemos acelerar un poco las cosas con un %{link} a Diaspora. Esto extraerá tu nombre y foto, y habilitará la publicación cruzada."
+      connect_to_facebook_link: "conectando tu cuenta de Facebook"
+      hashtag_explanation: "Los hashtags te permiten seguir y hablar sobre tus intereses. También son una gran manera de encontrar gente nueva en Diáspora."
+      hashtag_suggestions: "Probá siguiendo tags como #arte, #películas, #activismo, #geek."
+      saved: "¡Guardado!"
+      well_hello_there: "Bueno, ¡hola!"
+      what_are_you_in_to: "¿Qué sos por dentro?"
+      who_are_you: "¿Quién sos?"
+    privacy_settings:
+      ignored_users: "Usuarios ignorados"
+      stop_ignoring: "Dejar de ignorar"
+      title: "Configuración de Privacidad"
+    public:
+      does_not_exist: "¡El usuariuo %{username} no existe!"
+    update:
+      email_notifications_changed: "Tus notificaciones por correo fueron cambiadas"
+      follow_settings_changed: "La configuración de seguimiento se cambió"
+      follow_settings_not_changed: "Error al cambiar la configuración de seguimiento."
+      language_changed: "Tu idioma se cambió"
+      language_not_changed: "No pudo cambiarse el idioma"
+      password_changed: "Tu contraseña se cambió.  Ya podés conectarte con tu nueva contraseña."
+      password_not_changed: "No pudo cambiarse tu contraseña"
+      settings_not_updated: "Error actualizando la configuración"
+      settings_updated: "Configuración actualizada"
+      unconfirmed_email_changed: "E-Mail Cambiado. Activación necesaria."
+      unconfirmed_email_not_changed: "El cambio de E-Mail fallo"
+  webfinger:
+    fetch_failed: "No pudo encontrarse el perfil webfinger de %{profile_url}"
+    hcard_fetch_failed: "Hubo un problema al buscar el 'hcard' de %{account}"
+    no_person_constructed: "No pudo crearse ninguna persona a partir de esta 'hcard'."
+    not_enabled: "Parece que webfinger no está habilitado para el servidor de %{account}"
+    xrd_fetch_failed: "Hubo un error al buscar el 'xrd' de %{account}"
+  welcome: "¡Bienvenido!"
+  will_paginate:
+    next_label: "siguiente »"
+    previous_label: "« anterior"

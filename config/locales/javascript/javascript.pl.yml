@@ -1,0 +1,158 @@
+#   Copyright (c) 2010-2013, Diaspora Inc.  This file is
+#   licensed under the Affero General Public License version 3 or later.  See
+#   the COPYRIGHT file.
+
+
+
+pl:
+  javascripts:
+    and: "i"
+    aspect_dropdown:
+      add_to_aspect: "Dodaj kontakt"
+      all_aspects: "Wszystkie aspekty"
+      error: "Nie można zacząć dzielić się z <%= name %>. Może go/ją ignorujesz?"
+      error_remove: "<%= name %> nie można usunąć z aspektu :("
+      select_aspects: "Wybierz aspekty"
+      started_sharing_with: "Od teraz dzielisz się z <%= name %>!"
+      stopped_sharing_with: "Nie dzielisz się już z <%= name %>."
+      toggle:
+        few: "W <%= count %> aspektach"
+        many: "W <%= count %> aspektach"
+        one: "W <%= count %> aspekcie"
+        other: "W <%= count %> aspektach"
+        two: "W <%= count %> aspektach"
+        zero: "Wybierz aspekty"
+    aspect_navigation:
+      add_an_aspect: "+ Dodaj aspekt"
+      deselect_all: "Odznacz wszystkie"
+      no_aspects: "Nie wybrano aspektów"
+      select_all: "Zaznacz wszystkie"
+    comma: ","
+    comments:
+      hide: "ukryj komentarze"
+      show: "wyświetl wszystkie komentarze"
+    confirm_dialog: "Czy @{m,f:jesteś|n:na}{ pew}{m:ien|f:na|n:no}?"
+    conversation:
+      participants: "Uczestnicy"
+    delete: "Usuń"
+    edit: "Edycja"
+    failed_to_like: "Nie udało się pulubić!"
+    failed_to_post_message: "Nie można wysłać wiadomości!"
+    getting_started:
+      alright_ill_wait: "Dobrze, poczekam."
+      hey: "Hej, <%= name %>!"
+      no_tags: "Hej, nie obserwujesz żadnych znaczników! Kontynuować mimo to?"
+      preparing_your_stream: "Przygotowanie spersonalizowanego strumienia..."
+    header:
+      admin: "Administrator"
+      close: "zamknij"
+      contacts: "Kontakty"
+      home: "Strona główna"
+      log_out: "Wyloguj"
+      mark_all_as_read: "Oznacz wszystkie jako przeczytane"
+      messages: "Wiadomości"
+      notifications: "Powiadomienia"
+      profile: "Profil"
+      recent_notifications: "Ostatnie powiadomienia"
+      search: "Szukaj"
+      settings: "Ustawienia"
+      view_all: "Wyświetl wszystko"
+    ignore: "Ignoruj"
+    ignore_user: "Zignorować tego użytkownika?"
+    infinite_scroll:
+      no_more: "Nie ma więcej wpisów."
+      no_more_contacts: "Brak dalsyzch kontaktów."
+    my_activity: "Moja aktywność"
+    my_aspects: "Moje aspekty"
+    my_stream: "Strumień"
+    people:
+      not_found: "...i nikogo nie odnaleziono."
+    photo_uploader:
+      completed: "<%= file %> ukończono"
+      empty: "Plik {file} jest pusty. Proszę dokonać nowy wybór bez tego pliku."
+      invalid_ext: "Plik {file} ma niewłaściwe rozszerzenie. Akceptowane rozszerzenia to: {extensions}"
+      looking_good: "O rety! Świetnie wyglądasz!"
+      size_error: "Plik {file} jest za duży. Maksymalny rozmiar pliku to {sizeLimit}."
+    publisher:
+      at_least_one_aspect: "Musisz udostępnić dla co najmniej jednego aspektu"
+      limited: "Ograniczony - wpis będzie widoczny tylko dla wybranej grupy osób"
+      near_from: "Blisko <%= location %>"
+      public: "Publiczny - wpis będzie widoczny dla wszystkich i można go znaleźć przez wyszukiwarki"
+    reshares:
+      duplicate: "Już przekaza@{m:łeś|f:łaś|n:no} dalej ten wpis!"
+      post: "Przesłać dalej wpis użytkownika <%= name %>?"
+      successful: "Wpis został pomyślnie przesłany dalej!"
+    search_for: "Znajdź: <%= name %>"
+    show_more: "wyświetl więcej"
+    stream:
+      comment: "Skomentuj"
+      follow: "Obserwuj"
+      followed_tag:
+        add_a_tag: "Dodaj znacznik"
+        contacts_title: "Osoby, które wykopały te te znaczniki"
+        follow: "Obserwuj"
+        title: "#Obserwowane znaczniki"
+      hide: "Ukryj"
+      hide_nsfw_posts: "Ukryj wpisy #nsfw"
+      like: "Lubię to!"
+      likes:
+        few: "Polubienia: <%= count %>"
+        many: "Polubienia: <%= count %>"
+        one: "<%= count %> polubienie"
+        other: "<%= count %> polubienia"
+        two: "<%= count %> polubienia"
+        zero: "<%= count %> polubień"
+      limited: "Ograniczone"
+      more_comments:
+        few: "Wyświetl <%= count %> komentarze więcej"
+        one: "Wyświetl <%= count %> komentarz więcej"
+        other: "Wyświetl <%= count %> komentarzy więcej"
+        zero: "Wyświetl <%= count %> komentarzy więcej"
+      original_post_deleted: "Oryginalny wpis został usunięty przez autora."
+      public: "Publiczny"
+      reshare: "Przekaż dalej"
+      reshares:
+        few: "<%= count %> razy przekazano dalej"
+        many: "<%= count %> razy przekazano dalej"
+        one: "<%= count %> razy przekazano dalej"
+        other: "<%= count %> razy przekazano dalej"
+        two: "<%= count %> razy przekazano dalej"
+        zero: "<%= count %> razy przekazano dalej"
+      show_nsfw_post: "Wyświetl wpis"
+      show_nsfw_posts: "Wyświetl wszystko"
+      tags:
+        follow: "Obserwuj #<%= tag %>"
+        following: "Obserwowanie #<%= tag %>"
+        stop_following: "Przestań obserwować #<%= tag %>"
+      unfollow: "Nie obserwuj"
+      unlike: "Nie lubię"
+    tags:
+      wasnt_that_interesting: "OK, przypuszczam, że #<%= tagName %> nie był, aż tak interesujący..."
+    timeago:
+      day: "dzień"
+      days: "%d dni"
+      hour: "około godziny"
+      hours: "około %d godzin"
+      minute: "około minuty"
+      minutes: "%d minut"
+      month: "około miesiąca"
+      months: "%d miesięcy"
+      prefixAgo: " "
+      prefixFromNow: "javascripts:timeago:prefixFromNow"
+      seconds: "mniej niż minutę"
+      suffixAgo: "temu"
+      suffixFromNow: "od teraz"
+      year: "około roku"
+      years: "%d lat"
+    videos:
+      unknown: "Nieznany typ wideo"
+      watch: "Zobacz ten film na <%= provider %>"
+    viewer:
+      comment: "Skomentuj"
+      follow_post: "Obserwuj wpis"
+      home: "GŁÓWNA"
+      like: "Lubię to!"
+      reshare: "Przekaż dalej"
+      reshared: "Przekazano dalej"
+      stop_following_post: "Przestań obserwować wpis"
+      unlike: "Nie lubię"

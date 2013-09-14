@@ -1,0 +1,1054 @@
+#   Copyright (c) 2010-2013, Diaspora Inc.  This file is
+#   licensed under the Affero General Public License version 3 or later.  See
+#   the COPYRIGHT file.
+
+
+
+nb:
+  _applications: "Applikasjoner"
+  _comments: "Kommentarer"
+  _contacts: "Kontakter"
+  _home: "Hjem"
+  _photos: "bilder"
+  _services: "Tjenester"
+  account: "Konto"
+  activerecord:
+    errors:
+      models:
+        contact:
+          attributes:
+            person_id:
+              taken: "må være unikt blant denne brukerens kontakter."
+        person:
+          attributes:
+            diaspora_handle:
+              taken: "er allerede tatt."
+        request:
+          attributes:
+            from_id:
+              taken: "er en kopi av en pre-eksisterende forespørsel."
+        reshare:
+          attributes:
+            root_guid:
+              taken: "You've already reshared that post!"
+        user:
+          attributes:
+            email:
+              taken: "er allerede tatt."
+            person:
+              invalid: "er invalid."
+            username:
+              invalid: "is invalid. We only allow letters, numbers, and underscores"
+              taken: "er allerede tatt."
+  admins:
+    admin_bar:
+      correlations: "Korrellert med"
+      pages: "Sider"
+      pod_stats: "Pod statistikk"
+      user_search: "Brukersøk"
+      weekly_user_stats: "Ukentlig brukerstatistikk"
+    correlations:
+      correlations_count: "Korrellasjoner med pålogget antall"
+    stats:
+      2weeks: "To uker"
+      50_most: "50 mest populære tag'er"
+      comments:
+        one: "%{count} kommentarer"
+        other: "%{count} kommentarer"
+        zero: "%{count} kommentarer"
+      current_segment: "Dette segmentet er et snitt av <b>%{post_yest}</b> posteringer per bruker, fra og med <b>%{post_day}</b>"
+      daily: "Daglig"
+      display_results: "Viser resultatene fra det <b>%{segment}</b> segmentet"
+      go: "fortsett"
+      month: "Måned"
+      posts:
+        one: "%{count} post"
+        other: "%{count} poster"
+        zero: "%{count} poster"
+      shares:
+        one: "%{count} deling"
+        other: "%{count} delinger"
+        zero: "%{count} delinger"
+      tag_name: "Tag-navn: <b>%{name_tag}</b> antall <b>%{count_tag}</b>"
+      usage_statistic: "Bruksstatistikk"
+      users:
+        one: "%{count} bruker"
+        other: "%{count} brukere"
+        zero: "%{count} brukere"
+      week: "Uke"
+    user_search:
+      add_invites: "legg til invitasjoner"
+      email_to: "E-post for invitasjon"
+      under_13: "Vis deltakere under 13 (COPPA)"
+      users:
+        one: "%{count} bruker funnet"
+        other: "%{count} brukere funnet"
+        zero: "%{count} brukere funnet"
+      you_currently: "Du har nå %{user_invitation} invitasjoner igjen %{link}"
+    weekly_user_stats:
+      amount_of:
+        one: "Antall nye brukere denne uken: %{count}"
+        other: "Antall nye brukere denne uken: %{count}"
+        zero: "Antall nye brukere denne uken: ingen"
+      current_server: "Dagens server-dato er %{date}"
+  ago: "%{time} siden"
+  all_aspects: "Alle aspekter"
+  application:
+    helper:
+      diaspora_alpha: "DIASPORA* ALPHA"
+      unknown_person: "ukjent person"
+      video_title:
+        unknown: "Ukjent Videotittel"
+  are_you_sure: "Er du sikker?"
+  are_you_sure_delete_account: "Er du sikker på at du vil avslutte eller lukke din konto? Dette kan ikke angres!"
+  aspect_memberships:
+    destroy:
+      failure: "Kunne ikke fjerne person fra aspekt"
+      no_membership: "Kunne ikke finne personen i det aspektet"
+      success: "Personen er fjernet fra aspektet"
+  aspects:
+    add_to_aspect:
+      failure: "Kunne ikke legge kontakt til aspektet."
+      success: "Kontakt lagt til aspekt."
+    aspect_contacts:
+      done_editing: "fullfør"
+    aspect_listings:
+      add_an_aspect: "+ Lag et nytt aspekt"
+      deselect_all: "Fjern alle valg"
+      edit_aspect: "Rediger %{name}"
+      select_all: "Velg alle"
+    aspect_stream:
+      make_something: "Lag noe"
+      stay_updated: "Hold deg oppdatert"
+      stay_updated_explanation: "Din hovedstrøm viser alle kontaktene dine, tags du følger, og innlegg fra noen kreative medlemmer i felleskapet. "
+    contacts_not_visible: "Kontakter i dette aspektet vil ikke kunne se hverandre."
+    contacts_visible: "Kontakter i dette aspektet vil kunne se hverandre."
+    create:
+      failure: "Greide ikke å opprette aspektet."
+      success: "Aspektet %{name} har blitt laget"
+    destroy:
+      failure: "%{Name} er ikke tom, og kunne ikke fjernes."
+      success: "%{name} har blitt fjerna."
+    edit:
+      add_existing: "Legg til en eksisterende kontakt"
+      aspect_list_is_not_visible: "aspektlisten er skjult for andre i aspektet"
+      aspect_list_is_visible: "aspektlisten er synlig for andre i aspektet"
+      confirm_remove_aspect: "Er du sikker på at du vil slette dette aspektet?"
+      done: "Ferdig"
+      make_aspect_list_visible: "gjør aspektlisten synlig?"
+      remove_aspect: "Slett dette aspektet"
+      rename: "endre navn"
+      update: "oppdater"
+      updating: "oppdaterer"
+    few: "%{count} aspekter"
+    helper:
+      are_you_sure: "Er du sikker på at du vil slette dette aspektet?"
+      aspect_not_empty: "Aspektet er ikke tomt"
+      remove: "fjern"
+    index:
+      cubbies:
+        explanation: "Cubbi.es er den første Diaspora-applikasjonen som er i utviklingsfasen."
+        heading: "Koble til Cubbi.es"
+        learn_more: "Lær mer"
+      diaspora_id:
+        content_1: "Diaspora-ID-en din er:"
+        content_2: "Gi det til noen, og de vil kunne finne deg på Diaspora."
+        heading: "Diaspora-ID"
+      donate: "Doner"
+      handle_explanation: "This is your diaspora handle.  Like an email address, you can give this to people to reach you."
+      help:
+        any_problem: "Noen problemer?"
+        contact_podmin: "Kontakt administratoren til din \"pod\"!"
+        do_you: "Har du:"
+        email_feedback: "%{link} gi tilbakemelding, om du har lyst"
+        email_link: "E-post"
+        feature_suggestion: "et %{link}-forslag?"
+        find_a_bug: "... finn en %{link}?"
+        have_a_question: "et %{link}?"
+        here_to_help: "Diaspora-felleskapet er her!"
+        mail_podmin: "Podmin e-post"
+        need_help: "Trenger du hjelp?"
+        tag_bug: "#bug"
+        tag_feature: "funksjon"
+        tag_question: "#question"
+        tutorials_wiki_and_forum: "%{tutorial} & %{wiki} & %{forum}: Fellesskapets leksjoner, veiledninger og nyheter."
+      introduce_yourself: "Dette er strømmen din. Hopp inn og presenter deg selv."
+      keep_diaspora_running: "Sørg for Diasporautvikling går hurtig ved å gi en månedlig donasjon!"
+      keep_pod_running: "Sørg for at %{pod} går kjapt ved å kjøpe kaffe-fiks til dem med en månedlig donasjon!"
+      new_here:
+        follow: "Følg denne %{link} og ønsk nye brukere velkommen til Diaspora*"
+        learn_more: "Lær mer"
+        title: "Ønsk nye brukere velkommen"
+      no_contacts: "Ingen kontakter"
+      no_tags: "No tags"
+      people_sharing_with_you: "Folk som deler med deg"
+      post_a_message: "legg ut en melding >>"
+      services:
+        content: "Du kan koble følgende tjenester til Diaspora:"
+        heading: "Koble til tjenester"
+      unfollow_tag: "Slutt å følge #%{tag}"
+      welcome_to_diaspora: "Velkommen til Diaspora, %{name}!"
+    many: "%{count} aspekter"
+    move_contact:
+      error: "Feil ved flytting av kontakt: %{inspect}"
+      failure: "fungerte ikke % {inspisere}"
+      success: "Person flyttet til nytt aspekt"
+    new:
+      create: "Opprett"
+      name: "Navn"
+    no_contacts_message:
+      community_spotlight: "kreative medlemmer"
+      or_spotlight: "Eller du kan dele med denne %{link}"
+      try_adding_some_more_contacts: "You can search (top) or invite (right) more contacts."
+      you_should_add_some_more_contacts: "Du bør legge til flere kontakter."
+    no_posts_message:
+      start_talking: "Ingen har sagt noe enda!"
+    one: "1 aspekt"
+    other: "%{count} aspekter"
+    seed:
+      acquaintances: "Bekjente"
+      family: "Familie"
+      friends: "Venner"
+      work: "Jobb"
+    selected_contacts:
+      manage_your_aspects: "Håndter aspektene dine."
+      no_contacts: "Du har ingen kontakter her enda."
+      view_all_community_spotlight: "Se alle community spotlight"
+      view_all_contacts: "Vis alle kontakter"
+    show:
+      edit_aspect: "endre aspekt"
+    two: "%{count} aspekter"
+    update:
+      failure: "Aspektet ditt, %{name}, har for langt navn."
+      success: "Aspektet ditt, %{name}, har blitt endra."
+    zero: "ingen aspekter"
+  authorizations:
+    index:
+      no_applications: "Du har ikke registrert noen applikasjoner ennå."
+      revoke_access: "Trekk tilbake tilgangen"
+    new:
+      authorize: "Autoriser"
+      cubbies_will: "Cubbies kan laste fotoer på dine vegne"
+      nope: "Nei"
+  back: "Tilbake"
+  blocks:
+    create:
+      failure: "Jeg klarte ikke å ignorere den brukeren. #evasion"
+      success: "Javel, du kommer ikke til å se denne brukeren i din innholdsstrøm i fremtiden. #silencio!"
+    destroy:
+      failure: "Jeg klarte ikke å slutte å ignorere den brukeren. #evasion"
+      success: "La oss se hva de har å si! #sihallo"
+  bookmarklet:
+    explanation: "%{link} fra hvor som helst ved å bokmerke denne linken."
+    heading: "Diaspora Bookmarklet"
+    post_something: "Post noe på Diaspora"
+    post_success: "Postet! Lukker!"
+  cancel: "Avbryt"
+  comments:
+    few: "%{count} kommentarer"
+    many: "%{count} kommentarer"
+    new_comment:
+      comment: "Kommenter"
+      commenting: "Kommenterer..."
+    one: "1 kommentar"
+    other: "%{count} kommentarer"
+    two: "%{count} kommentarer"
+    zero: "ingen kommentarer"
+  contacts:
+    create:
+      failure: "Kunne ikke opprette kontakt"
+    few: "%{count} kontakter"
+    index:
+      add_a_new_aspect: "Legg til nytt aspekt"
+      add_to_aspect: "Legg kontakter til %{name}"
+      add_to_aspect_link: "Legg kontakter til %{name}"
+      all_contacts: "Alle kontakter"
+      community_spotlight: "Kreative Medlemmer"
+      many_people_are_you_sure: "Er du sikker på at du vil starte en privat samtale med flere enn %{suggested_limit} kontakter? Det kan være bedre å poste dette som et innlegg til dette aspektet. "
+      my_contacts: "Mine kontakter"
+      no_contacts: "Ingen kontakter."
+      no_contacts_message: "Sjekk ut %{community_spotlight}"
+      no_contacts_message_with_aspect: "Sjekk ut %{community_spotlight} eller %{add_to_aspect_link}"
+      only_sharing_with_me: "Deler bare med meg "
+      remove_person_from_aspect: "Fjern %{person_name} fra \"%{aspect_name}\""
+      start_a_conversation: "Start en samtale"
+      title: "Kontakter"
+      your_contacts: "Dine kontakter"
+    many: "%{count} kontakter"
+    one: "1 kontakt"
+    other: "%{count} kontakter"
+    sharing:
+      people_sharing: "Folk som deler med deg:"
+    spotlight:
+      community_spotlight: "kreative medlemmer"
+      suggest_member: "Forslå et nytt medlem"
+    two: "%{count} kontakter"
+    zero: "ingen kontakter"
+  conversations:
+    conversation:
+      participants: "Deltakere"
+    create:
+      fail: "Ugyldig melding"
+      no_contact: "Heisann, du må legge til kontakten først."
+      sent: "Melding sendt"
+    destroy:
+      success: "Samtale fjernet"
+    helper:
+      new_messages:
+        few: "%{count} nye meldinger"
+        many: "%{count} nye meldinger"
+        one: "1 ny melding"
+        other: "%{count} nye meldinger"
+        two: "%{count} nye beskjeder"
+        zero: "ingen nye meldinger"
+    index:
+      create_a_new_message: "skriv en ny melding"
+      inbox: "Innboks"
+      message_inbox: "Meldingsinnboks"
+      new_message: "Ny Melding"
+      no_conversation_selected: "ingen samtaler valgt"
+      no_messages: "ingen meldinger"
+    new:
+      abandon_changes: "Forkaste endringene?"
+      send: "Send"
+      sending: "Sender..."
+      subject: "emne"
+      to: "til"
+    new_message:
+      fail: "Ugyldig melding"
+    show:
+      delete: "slett og blokkér samtalen"
+      reply: "svar"
+      replying: "Svarer..."
+  date:
+    formats:
+      birthday: "%B %d"
+      birthday_with_year: "%B %d %Y"
+      fullmonth_day: "%B %d"
+  delete: "Slett"
+  email: "Epost"
+  error_messages:
+    helper:
+      correct_the_following_errors_and_try_again: "Rett opp de følgende feilene og prøv igjen."
+      invalid_fields: "Ugyldige felter"
+    login_try_again: "Vennligst <a href=%{login_link}>logg på</a> og forsøk igjen."
+    post_not_public: "Innholdet som du forsøker å titte på er ikke alment tilgjengelig!"
+  fill_me_out: "Fortell meg"
+  find_people: "Find people"
+  hide: "Skjul"
+  invitation_codes:
+    excited: "%{name} ble glad for å se deg her."
+  invitations:
+    a_facebook_user: "En Facebook-bruker"
+    check_token:
+      not_found: "Invitasjonsnøkkelen finnes ikke"
+    create:
+      already_contacts: "Du er allerede tilknyttet denne personen"
+      already_sent: "Du har allerede invitert denne personen."
+      empty: "Vennligst angi i hvertfall en e-post adresse"
+      no_more: "Du har ikke flere invitasjoner."
+      note_already_sent: "Invitasjoner har blitt sendt til: %{emails}"
+      own_address: "Du kan ikke sende invitasjoner til din egen adresse."
+      rejected: "Følgende e-postadresser hadde problemer:"
+      sent: "Invitasjoner har blitt sendt til:"
+    edit:
+      accept_your_invitation: "Godta invitasjonen din"
+      your_account_awaits: "Kontoen din er klar!"
+    new:
+      already_invited: "Allerede innvitert"
+      aspect: "Aspekt"
+      check_out_diaspora: "Sjekk ut Diaspora!"
+      codes_left:
+        one: "En invitasjon er igjen med denne koden"
+        other: "%{count} invitasjoner er igjen med denne koden"
+        zero: "Ingen flere invitasjoner kan gjøres med denne koden"
+      comma_separated_plz: "Du kan skrive inn flere e-post adresser adskilt med komma."
+      if_they_accept_info: "Hvis de aksepterer, vil de bli lagt til i aspektet du valgte."
+      invite_someone_to_join: "Inviter noen til Diaspora!"
+      language: "Språk"
+      paste_link: "Del denne lenken med vennene dine for å invitere dem til Diaspora* eller send e-post til dem med lenken direkte."
+      personal_message: "Personlig melding"
+      resend: "Send på nytt"
+      send_an_invitation: "Send en invitasjon"
+      send_invitation: "Send invitasjon"
+      sending_invitation: "Sender invitasjon..."
+      to: "Til"
+  layouts:
+    application:
+      back_to_top: "Til toppen"
+      powered_by: "DREVET AV DIASPORA*"
+      public_feed: "Offentlig Diaspora feed for %{name}"
+      source_package: "Last ned kildekodepakken"
+      toggle: "vis mobilsiden"
+      whats_new: "hva er nytt?"
+      your_aspects: "dine aspekt"
+    header:
+      admin: "administrator"
+      blog: "blogg"
+      code: "kode"
+      login: "logg inn"
+      logout: "logg ut"
+      profile: "profil"
+      recent_notifications: "Nye notifications"
+      settings: "innstillinger"
+      view_all: "Vis alle"
+  likes:
+    likes:
+      people_dislike_this:
+        few: "%{count} personer misliker dette"
+        many: "%{count} personer misliker dette"
+        one: "1 person misliker dette"
+        other: "%{count} personer misliker dette"
+        two: "%{count} misliker dette"
+        zero: "ingen misliker dette"
+      people_like_this:
+        few: "%{count} personer liker dette"
+        many: "%{count} personer liker dette"
+        one: "1 person liker dette"
+        other: "%{count} personer liker dette"
+        two: "%{count} liker dette"
+        zero: "ingen liker dette"
+      people_like_this_comment:
+        few: "%{count} liker"
+        many: "%{count} liker"
+        one: "%{count} liker"
+        other: "%{count} liker"
+        two: "%{count} liker dette"
+        zero: "ingen liker"
+  limited: "Begrenset"
+  more: "Mer"
+  next: "neste"
+  no_results: "Ingen resultater ble funnet"
+  notifications:
+    also_commented:
+      few: "%{actors} kommenterte også på %{post_author}s %{post_link}."
+      many: "%{actors} kommenterte også på %{post_author}s %{post_link}."
+      one: "%{actors} kommenterte også på %{post_author}s %{post_link}."
+      other: "%{actors} har også kommentert på %{post_author}'s %{post_link}."
+      two: "%{actors} kommenterte også %{post_author}s %{post_link}."
+      zero: "%{actors} har også kommentert på %{post_author}'s %{post_link}."
+    also_commented_deleted:
+      few: "%{actors} kommenterte på en slettet post."
+      many: "%{actors} kommenterte på en slettet post."
+      one: "%{actors} kommenterte på en slettet post."
+      other: "%{actors} kommenterte på en slettet post."
+      two: "%{actors} kommenterte en slettet post."
+      zero: "%{actors} kommenterte på en slettet post."
+    comment_on_post:
+      few: "%{actors} kommenterte på din %{post_link}."
+      many: "%{actors} kommenterte på din %{post_link}."
+      one: "%{actors} kommenterte på din %{post_link}."
+      other: "%{actors} kommenterte på din %{post_link}."
+      two: "%{actors} kommenterte din %{post_link}."
+      zero: "%{actors} kommenterte på din %{post_link}."
+    helper:
+      new_notifications:
+        few: "%{count} nye varsler"
+        many: "%{count} nye varsler"
+        one: "1 nytt varsel"
+        other: "%{count} nye varsler"
+        two: "%{count} nye varsler"
+        zero: "ingen nye varsler"
+    index:
+      and: "og"
+      and_others:
+        few: "og %{count} andre"
+        many: "og %{count} andre"
+        one: "og en annen"
+        other: "og %{count} andre"
+        two: "og %{count} andre"
+        zero: "og ingen andre"
+      mark_all_as_read: "Merk alle som leste"
+      mark_unread: "Merk som ulest"
+      notifications: "Varsler"
+    liked:
+      one: "%{actors} liker din %{post_link}."
+      other: "%{actors} liker din %{post_link}."
+      zero: "%{actors} liker din %{post_link}."
+    liked_post_deleted:
+      few: "%{actors} likte ditt innlegg du har slettet."
+      many: "%{actors} likte ditt innlegg du har slettet."
+      one: "%{actors} likte ditt innlegg du har slettet."
+      other: "%{actors} likte ditt innlegg du har slettet."
+      two: "%{actors} likte din slettede post."
+      zero: "%{actors} likte ditt innlegg du har slettet."
+    mentioned:
+      one: "%{actors} har nevnt deg i en %{post_link}."
+      other: "%{actors} har nevnt deg i en %{post_link}."
+      zero: "%{actors} har nevnt deg i en %{post_link}."
+    mentioned_deleted:
+      few: "%{actors} nevnte deg i en slettet post."
+      many: "%{actors} nevnte deg i en slettet post."
+      one: "%{actors} nevnte deg i en slettet post."
+      other: "%{actors} nevnte deg i en slettet post."
+      two: "%{actors} nevnte deg i en slettet post."
+      zero: "%{actors} nevnte deg i en slettet post."
+    post: "innlegg"
+    private_message:
+      few: "%{actors} sendte deg en melding."
+      many: "%{actors} sendte deg en melding."
+      one: "%{actors} sendte deg en melding."
+      other: "%{actors} sendte deg en melding."
+      two: "%{actors} sendte deg en melding."
+      zero: "%{actors} sendte deg en melding."
+    reshared:
+      one: "%{actors} har delt din %{post_link}."
+      other: "%{actors} har delt din %{post_link}."
+      zero: "%{actors} har delt din %{post_link}."
+    reshared_post_deleted:
+      few: "%{actors} har delt innlegget du slettet."
+      many: "%{actors} har delt innlegget du slettet."
+      one: "%{actors} har delt innlegget du slettet."
+      other: "%{actors} har delt innlegget du slettet."
+      two: "%{actors} delte din slettede post."
+      zero: "%{actors} har delt innlegget du slettet."
+    started_sharing:
+      one: "%{actors} har begynt å dele med deg."
+      other: "%{actors} har begynt å dele med deg."
+      zero: "%{actors} har begynt å dele med deg."
+  notifier:
+    a_post_you_shared: "en post"
+    accept_invite: "Godta Diaspora*-invitasjonen din."
+    click_here: "klikk her"
+    comment_on_post:
+      reply: "Svar eller se %{name}'s innlegg >"
+    confirm_email:
+      click_link: "To activate your new e-mail address %{unconfirmed_email}, please click this link:"
+      subject: "Please activate your new e-mail address %{unconfirmed_email}"
+    email_sent_by_diaspora: "Denne e-posten er sendt av Diaspora. Hvis du ikke vil motta flere e-poster som denne, "
+    hello: "Hei %{name}!"
+    invite:
+      message: |-
+          Hei!
+
+          Du har blitt invitert til å bruke Diaspora*!
+
+          Klikk på denne linken for å sette i gang
+
+          [%{invite_url}][1]
+
+
+          Hjertelig hilsen,
+
+          Diaspora*s mail-robot!
+
+          [1]: %{invite_url}
+    invited_you: "%{name} har invitert deg til Diaspora*"
+    liked:
+      liked: "%{name} has just liked your post: "
+      view_post: "Se innlegg >"
+    mentioned:
+      mentioned: "nevnte deg i et innlegg:"
+      subject: "%{name} har nevnt deg på Diaspora*"
+    private_message:
+      reply_to_or_view: "Svar eller se på denne samtalen >"
+    reshared:
+      reshared: "%{name} just reshared your post"
+      view_post: "Se innlegg >"
+    single_admin:
+      admin: "Din Diaspora administrator"
+      subject: "A message from your Diaspora administrator:"
+    started_sharing:
+      sharing: "har begynt å dele med deg!"
+      subject: "%{name} has started sharing with you on Diaspora*"
+      view_profile: "Se %{name}'s profil"
+    thanks: "Takk,"
+    to_change_your_notification_settings: "for å endre innstilliger for varsler"
+  nsfw: "NSFW"
+  ok: "OK"
+  or: "eller"
+  password: "Passord"
+  password_confirmation: "Passord bekreftelse"
+  people:
+    add_contact:
+      invited_by: "du ble invitert av"
+    add_contact_small:
+      add_contact_from_tag: "legg til kontakt fra tag"
+    aspect_list:
+      edit_membership: "endre aspektmedlemskap"
+    few: "%{count} personer"
+    helper:
+      is_sharing: "%{name} deler med deg"
+      people_on_pod_are_aware_of: "folk på poden snakker om"
+      results_for: " resultater for %{params}"
+    index:
+      couldnt_find_them_send_invite: "Finner du dem ikke? Send en invitasjon!"
+      looking_for: "Ser du etter innlegg tagget %{tag_link}?"
+      no_one_found: "...og ingen ble funnet."
+      no_results: "Hei! Du må søke etter noe."
+      results_for: "søkeresultater for"
+      searching: "Søker. Vennligst vent..."
+    last_post: "Siste post"
+    many: "%{count} personer"
+    one: "1 person"
+    other: "%{count} personer"
+    person:
+      add_contact: "legg til kontakt"
+      already_connected: "Allerede tilkoblet"
+      pending_request: "Venter på svar"
+      thats_you: "Det er deg!"
+    profile_sidebar:
+      bio: "mitt livsløp (bio)"
+      born: "født"
+      edit_my_profile: "Endre profilen min"
+      gender: "kjønn"
+      in_aspects: "i aspekt"
+      location: "sted"
+      remove_contact: "fjern kontakt"
+      remove_from: "Fjern %{name} fra %{aspect}?"
+    show:
+      closed_account: "Denne kontoen har blitt avsluttet."
+      does_not_exist: "Personen eksisterer ikke!"
+      has_not_shared_with_you_yet: "%{name} har ikke delt noe med deg enda."
+      ignoring: "Du ignorerer innlegg fra %{name}."
+      incoming_request: "You have an incoming request from this person."
+      mention: "Nevn"
+      message: "Melding"
+      not_connected: "You are not connected with this person"
+      recent_posts: "Nylige Innlegg"
+      recent_public_posts: "Nylige Offentlige Innlegg"
+      return_to_aspects: "Tilbake til aspektene"
+      see_all: "Vis alle"
+      start_sharing: "begynn å dele"
+      to_accept_or_ignore: "for å akseptere eller ignorere."
+    sub_header:
+      add_some: "legg til noen"
+      edit: "endre"
+      you_have_no_tags: "du har ingen tags!"
+    two: "%{count} personer"
+    webfinger:
+      fail: "Beklager, vi kunne ikke finne %{handle}."
+    zero: "ingen personer"
+  photos:
+    comment_email_subject: "%{name} sitt foto"
+    create:
+      integrity_error: "Bildeopplastning mislyktes. Er du sikker på det var et bilde?"
+      runtime_error: "Bildeopplastning mislyktes. Har du festet sikkerhetsbeltet?"
+      type_error: "Bildeopplastning mislyktes. ER du sikker på at et bilde ble lagt til?"
+    destroy:
+      notice: "Bildet er sletta."
+    edit:
+      editing: "Redigerer"
+    new:
+      back_to_list: "Tilbake til lista"
+      new_photo: "Nytt bilde"
+      post_it: "legg ut!"
+    new_photo:
+      empty: "{file} er tom, vennligst velg filer igjen uten den"
+      invalid_ext: "{file} er en ugyldig filtype. Bare {extensions} er tillatt."
+      size_error: "{file} er for stor, maks filstørrelse er {sizeLimit}."
+    new_profile_photo:
+      or_select_one_existing: "eller selekter en fra dine allerede eksisterende %{photos}"
+      upload: "Last opp et nytt profilbilde!"
+    photo:
+      view_all: "se alle bildene til %{name}"
+    show:
+      collection_permalink: "kolleksjon permalink"
+      delete_photo: "Slett bilde"
+      edit: "rediger"
+      edit_delete_photo: "Rediger bildebeskrivelse / slett bilde"
+      make_profile_photo: "gjør til profilbilde"
+      show_original_post: "Vis originalpost"
+      update_photo: "Oppdater Bilde"
+    update:
+      error: "Greide ikke å endre bildet."
+      notice: "Bildet er oppdatert."
+  posts:
+    presenter:
+      title: "En post fra %{name}"
+    show:
+      destroy: "Slett"
+      not_found: "Beklager, vi fant ikke det inlegget. "
+      permalink: "permalenke"
+      photos_by:
+        one: "Et bilde av %{author}"
+        other: "%{count} bilder av %{author}"
+        zero: "Ingen bilder av %{author}"
+      reshare_by: "Delt videre av %{author}"
+  previous: "forrige"
+  privacy: "Personvern"
+  privacy_policy: "Personvernspolise"
+  profile: "Profil"
+  profiles:
+    edit:
+      allow_search: "Tillat folk å søke på deg i Diaspora"
+      edit_profile: "Endre profil"
+      first_name: "Fornavn"
+      last_name: "Etternavn"
+      update_profile: "Oppdater Profil"
+      you_are_nsfw: "Du har merket innholdet ditt som 'ikke passende' og det vil skjules for folk som ikke ønsker å se potensielt støtende innhold i strømmen."
+      you_are_safe_for_work: "Du har merket innholdet ditt som 'passende for alle formål', dette betyr at du bekrefter at innholdet i det du legger ut samsvarer med de sosiale retningslinjene for dette nettstedet."
+      your_bio: "Om meg"
+      your_birthday: "Din Fødselsdato"
+      your_gender: "Ditt kjønn"
+      your_location: "Hvor bor du?"
+      your_name: "Ditt navn"
+      your_photo: "Ditt profilbilde"
+      your_private_profile: "Din private profil"
+      your_public_profile: "Din offentlige profil"
+      your_tags: "Deg: i 5 #tagger"
+      your_tags_placeholder: "f.eks. #diaspora #matlaging #skiskyting #musikk"
+    update:
+      failed: "Kunne ikke oppdatere profil"
+      updated: "Profil oppdatert"
+  public: "Offentlig"
+  reactions:
+    few: "%{count} reaksjoner"
+    many: "%{count} reaksjoner"
+    one: "1 reaksjon"
+    other: "%{count} reaksjoner"
+    two: "%{count} reaksjoner"
+    zero: "0 reaksjoner"
+  registrations:
+    closed: "Registreringer er stengt på denne Diaspora poden."
+    create:
+      success: "Du er nå med i Diaspora!"
+    edit:
+      cancel_my_account: "Avbryt kontoen min"
+      edit: "Endre %{name}"
+      leave_blank: "(La stå tom hvis du ikke ønsker å endre det)"
+      password_to_confirm: "(vi trenger ditt nåværende passord for å bekrefte endringene)"
+      unhappy: "Ulykkelig?"
+      update: "Oppdater"
+    invalid_invite: "Invitasjonslenken som du anga er ikke gyldig lenger!"
+    new:
+      continue: "Fortsett"
+      create_my_account: "Create my account"
+      diaspora: "<3 Diaspora*"
+      email: "E-POST"
+      enter_email: "Skriv en e-post"
+      enter_password: "Skriv inn et passord"
+      enter_password_again: "Skriv inn samme passord som før"
+      enter_username: "Velg et brukernavn (kun bokstaver, nummer og understreker)"
+      hey_make: "HALLO,<br/>LAG<br/>ET ELLER ANNET."
+      join_the_movement: "Bli med i nettverket!"
+      password: "PASSORD"
+      password_confirmation: "PASSORDBEKREFTELSE"
+      sign_up: "REGISTRER DEG"
+      sign_up_message: "Social Networking with a <3"
+      username: "BRUKERNAVN"
+  requests:
+    create:
+      sending: "Sending..."
+      sent: "Du har bedt om å dele med %{name}.  De burde se det neste gang de logger inn på Diaspora"
+    destroy:
+      error: "Velg et aspekt først!"
+      ignore: "Ignorerte venneforespørsel"
+      success: "Dere deler nå oppdateringer."
+    helper:
+      new_requests:
+        few: "%{count} nye forespørsler!"
+        many: "%{count} nye forespørsler!"
+        one: "nye forespørsler!"
+        other: "%{count} nye forespørsler!"
+        two: "%{count} nye forespørsler!"
+        zero: "ingen nye forespørsler"
+    manage_aspect_contacts:
+      existing: "Eksisterende kontakter"
+      manage_within: "Administrer kontakter innen"
+    new_request_to_person:
+      sent: "sendt!"
+  reshares:
+    comment_email_subject: "%{resharer} sin videredeling av %{author} sitt innhold"
+    create:
+      failure: "Noe gikk galt med å dele dette innlegget."
+    reshare:
+      deleted: "Opprinnelig innlegg slettet av forfatteren."
+      reshare:
+        one: "1 deling"
+        other: "%{count} delinger"
+        zero: "Del igjen"
+      reshare_confirmation: "Reshare %{author} - %{text}?"
+      reshare_original: "Reshare orignial"
+      reshared_via: "delt via"
+      show_original: "Show Original"
+  search: "Søk"
+  services:
+    create:
+      already_authorized: "En bruker med diaspora id %{diaspora_id} har alllerede autorisert denne %{service_name} kontoen."
+      failure: "Autentisering gikk galt."
+      success: "Autentisering vellykket."
+    destroy:
+      success: "Bekrefter slettet autentisering."
+    failure:
+      error: "feil under tilkobling av tjenesten"
+    finder:
+      fetching_contacts: "Diaspora finner dine %{service} venner, vær så snill og sjekk igjen om noen få minutter."
+      no_friends: "Ingen Facebook-venner ble funnet."
+      service_friends: "%{service}-venner"
+    index:
+      connect_to_facebook: "Koble til facebook"
+      connect_to_tumblr: "Koble til Tumblr"
+      connect_to_twitter: "Koble til twitter"
+      disconnect: "koble fra"
+      edit_services: "Rediger tjenester"
+      logged_in_as: "logget inn som"
+      no_services: "Du har ikke koblet til noen tjenester ennå."
+      really_disconnect: "koble fra %{service}?"
+      services_explanation: "Ved å koble til tjenester får du muligheten å publisere dine innlegg til dem mens du skriver dem i Diaspora."
+    inviter:
+      click_link_to_accept_invitation: "Klikk denne linken for å akseptere invitasjonen din"
+      join_me_on_diaspora: "Bli med meg på DIASPORA*"
+    remote_friend:
+      invite: "inviter"
+      not_on_diaspora: "Finnes ikke på Diaspora ennå."
+      resend: "send på nytt"
+  settings: "Innstillinger"
+  share_visibilites:
+    update:
+      post_hidden_and_muted: "%{name}'s innlegg har blitt gjemt, og varsler har blitt skrudd av."
+      see_it_on_their_profile: "Hvis du vil se oppdateringer til dette innlegget, besøk %{name}'s profilside."
+  shared:
+    add_contact:
+      add_new_contact: "Legg til en ny kontakt"
+      create_request: "Finn etter Diaspora brukernavn"
+      diaspora_handle: "Diaspora handle"
+      enter_a_diaspora_username: "Skriv inn et Diaspora brukernavn:"
+      know_email: "Kan du epostadressen deres? Inviter dem!"
+      your_diaspora_username_is: "Ditt Diaspora brukernavn er: %{diaspora_handle}"
+    aspect_dropdown:
+      add_to_aspect: "Add to aspect"
+      toggle:
+        one: "I %{count} aspekt"
+        other: "I %{count} aspekter"
+        zero: "Lag et aspekt"
+    contact_list:
+      all_contacts: "Alle kontakter"
+    footer:
+      logged_in_as: "innlogget som %{name}"
+      your_aspects: "dine aspekter"
+    invitations:
+      by_email: "via Epost"
+      dont_have_now: "Du har ingen akkurat nå, men flere invitasjoner kommer snart!"
+      from_facebook: "Fra Facebook"
+      invitations_left: "%{count} igjen"
+      invite_someone: "Inviter noen"
+      invite_your_friends: "Innviter vennene dine"
+      invites: "Invitasjoner "
+      invites_closed: "Invites are currently closed on this Diaspora seed"
+      share_this: "Del denne lenken via e-post, blogg eller ditt foretrukne sosiale nettverk!"
+    notification:
+      new: "Ny %{type} fra %{from}"
+    public_explain:
+      atom_feed: "Atom-strøm"
+      control_your_audience: "Kontrollér ditt publikum"
+      logged_in: "innlogget på %{service}"
+      manage: "Behandle tilkoblede tjenester"
+      new_user_welcome_message: "Bruk #hashtags for å sette merkelapp på innleggene dine og finne folk som deler samme interessefelt. Rop ut til bra folk med @Mentions"
+      outside: "Offentlige meldinger vil være synlige for personer utenfor Diaspora."
+      share: "Del"
+      title: "Du er i ferd med å poste et offentlig innlegg!"
+      visibility_dropdown: "Bruk denne menyen for å endre publikum for ditt innlegg. (Vi foreslår at du gjør dette første innlegget offentlig.)\n"
+    publisher:
+      all: "alle"
+      all_contacts: "alle kontakter"
+      discard_post: "Forkast det innsendte/registrerte"
+      get_location: "Hent din posisjon"
+      make_public: "gjør offentlig"
+      new_user_prefill:
+        hello: "Hei alle sammen, jeg er #%{new_user_tag}. "
+        i_like: "Jeg er interessert i %{tags}."
+        invited_by: "Takk for invitasjonen,  "
+        newhere: "NyHer"
+      post_a_message_to: "Post et innlegg til %{aspect}"
+      posting: "Poster..."
+      preview: "Forhåndsvisning"
+      publishing_to: "publiserer til:"
+      share: "Del"
+      share_with: "del med"
+      upload_photos: "Last opp bilder"
+      whats_on_your_mind: "Hva tenker du på?"
+    reshare:
+      reshare: "Del på nytt"
+    stream_element:
+      connect_to_comment: "Koble til denne brukeren for å kommentere posten"
+      currently_unavailable: "kommentering er ikke tilgjengelig"
+      dislike: "Liker ikke"
+      hide_and_mute: "Hide and Mute"
+      ignore_user: "Ignorér %{name}"
+      ignore_user_description: "Ignorér og fjern bruker fra alle aspekter?"
+      like: "Liker"
+      nsfw: "Dette innholdet har blitt merket som NSFW av den som har laget det. %{link}"
+      shared_with: "Delt med: %{aspect_names}"
+      show: "vis"
+      unlike: "Liker ikke"
+      via: "via %{link}"
+      via_mobile: "via mobil"
+      viewable_to_anyone: "Denne posten er synlig for alle på Internett"
+  status_messages:
+    create:
+      success: "Nevnte :%{navn}"
+    destroy:
+      failure: "Kunne ikke slette innlegget"
+    helper:
+      no_message_to_display: "Ingen melding å vise."
+    new:
+      mentioning: "Nevner: %{person}"
+    too_long:
+      few: "du bør begrense statusmeldingene dine til %{count} tegn"
+      many: "Du bør begrense statusmeldingene dine til %{count} characters"
+      one: "du bør begrense statusmeldingene dine til %{count} tegn"
+      other: "du må gjøre statusmeldingene dine kortere enn %{count} tegn"
+      two: "vær så snill og skriv statusoppdateringer som er under %{count} tegn"
+      zero: "Statusmeldinger må være lengre enn ingenting."
+  stream_helper:
+    hide_comments: "skjul kommentarer"
+    show_comments:
+      one: "Vis en kommentar til"
+      other: "Vis %{count} flere kommentarer"
+      zero: "Ingen kommentarer"
+  streams:
+    activity:
+      title: "Min aktivitet"
+    aspects:
+      title: "Your Aspects"
+    aspects_stream: "Aspekter"
+    comment_stream:
+      contacts_title: "Personer hvis poster du har kommentert"
+      title: "Kommenterte poster"
+    community_spotlight_stream: "Fremhevet av fellesskapet"
+    followed_tag:
+      add_a_tag: "Legg til en tag"
+      contacts_title: "Folk som digger disse tag'ene"
+      follow: "Følg"
+      title: "#Fulgte tag'er"
+    followed_tags_stream: "Fulgte tag'er"
+    like_stream:
+      contacts_title: "Personer hvis poster du liker"
+      title: "Liker strøm"
+    mentioned_stream: "@Mentions"
+    mentions:
+      contacts_title: "Folk som har nevnt deg"
+      title: "Your Mentions"
+    multi:
+      contacts_title: "Folk i din \"strøm\""
+      title: "Strøm"
+    public:
+      contacts_title: "Folk som har lagt ut noe nytt"
+      title: "Offentlig aktivitet"
+    tags:
+      contacts_title: "People who dig these tags"
+      tag_prefill_text: "Greia med %{tag_name} er... "
+      title: "Innlegg med tags: %{tags}"
+  tag_followings:
+    create:
+      failure: "Failed to follow: #%{name}"
+      none: "Du kan ikke følge en blank tag"
+      success: "Successfully following: #%{name}"
+    destroy:
+      failure: "Failed to stop following: #%{name}"
+      success: "Successfully stopped following: #%{name}"
+  tags:
+    show:
+      follow: "Følg #%{tag}"
+      followed_by: "fulgt av"
+      following: "Følger #%{tag}"
+      nobody_talking: "Ingen snakker om %{tag} ennå."
+      none: "Den tomme tag'en eksisterer ikke."
+      people_tagged_with: "Personer tagget med %{tag}"
+      posts_tagged_with: "Innlegg tagget med #%{tag}"
+      stop_following: "Slutt å følge #%{tag}"
+  terms_and_conditions: "Vilkår og begrensninger"
+  tokens:
+    show:
+      connect_to_cubbies: "Koble til Cubbi.es"
+      connecting_is_simple: "Connecting your Diaspora account is as simple as filling out two fields on your Cubbi.es account page."
+      daniels_account: "Daniels Diasporabruker"
+      love_to_try: "Vi vil veldig gjerne at du skal prøve det."
+      making_the_connection: "Oppretter koblingen"
+      screenshot_explanation: "%{link1}.  Denne cubby-en er lenket til %{link2}."
+      sign_up_today: "Registrer deg nå!"
+      typical_userpage: "En typisk cubbi.es brukerside"
+      via: "(via %{link})"
+      what_is_cubbies: "Cubbi.es er verdens første Diasporaapplikasjon. Det er også den beste måten å samle bilder på nettet."
+  undo: "Angre?"
+  username: "Brukernavn"
+  users:
+    confirm_email:
+      email_confirmed: "E-Mail %{email} activated"
+      email_not_confirmed: "E-Mail could not be activated. Wrong link?"
+    destroy:
+      no_password: "Skriv inn ditt nåværende passord for å stenge din konto."
+      success: "Kontoen din har blitt stengt. Det kan ta oss opp til 20 minutter for å gjøre ferdig stengningen av din konto. Takk for at du prøvde Diaspora."
+      wrong_password: "Passordet du skrev inn er ikke lik ditt nåværende passord."
+    edit:
+      also_commented: " noen andre også kommenterte på din kontakts innlegg?"
+      auto_follow_aspect: "Aspekt for automatisk fulgte brukere:"
+      auto_follow_back: "Automatically follow back if a someone follows you"
+      change: "Endre"
+      change_email: "Change E-Mail"
+      change_language: "Endre Språk"
+      change_password: "Endre Passord"
+      character_minimum_expl: "må være minst seks tegn"
+      close_account:
+        dont_go: "Hei hei - ikke forsvinn nå!"
+        if_you_want_this: "Om du virkelig ønsker dette så skriv inn passordet ditt under og klikk på 'Avslutt Konto'"
+        lock_username: "Dette vil reservere brukernavnet ditt hvis du bestemmer deg for å registrere deg igjen."
+        locked_out: "Du kommer til å bli avlogget og låst ute fra din konto"
+        make_diaspora_better: "Vi ønsker at du hjelper oss å gjøre Diaspora bedre, så det hadde vært fint om du hjalp oss i stedet for å forlate oss. Hvis du allikevel ønsker å forsvinne så vil vi gjerne at du skal få vite hva som skjer videre."
+        mr_wiggles: "Mr Wiggles blir lei seg om du forlater oss nå"
+        no_turning_back: "På dette tidspunktet er det ingen vei tilbake."
+        what_we_delete: "Vi kommer til å slette dine tidligere innlegg og profildata så snart som menneskelig mulig. Dine kommentarer vil fortsatt stå, men vil bli assosiert med din Diaspora ID istedet for ditt navn."
+      close_account_text: "Avslutt konto"
+      comment_on_post: " noen kommenterer på dine innlegg?"
+      current_password: "Nåverende passord"
+      current_password_expl: "den som du logget inn som..."
+      download_photos: "last ned mine bilder"
+      download_xml: "last ned min xml"
+      edit_account: "Endre konto"
+      email_awaiting_confirmation: "We have sent you an activation link to %{unconfirmed_email}. Till you follow this link and activate the new address, we will continue to use your original address %{email}."
+      export_data: "Eksporter Data"
+      following: "Følgende innstillinger"
+      getting_started: "Ny bruker preferences"
+      liked: "... noen liker innlegget ditt?"
+      mentioned: " du nevnes i et innlegg?"
+      new_password: "Nytt Passord"
+      photo_export_unavailable: "Eksportering av bilder er for øyeblikket utilgjengelig"
+      private_message: " du mottar en privat melding?"
+      receive_email_notifications: "Motta varsler på epost når:"
+      reshared: "...noen deler igjen ditt innlegg?"
+      show_community_spotlight: "Vis sosiale rampelys i strømmen?"
+      show_getting_started: "Skru på Start igjen."
+      started_sharing: "... noen begynner å dele med deg?"
+      stream_preferences: "Innstillinger for strøm"
+      your_email: "Din epost"
+      your_handle: "Ditt Diaspora brukernavn"
+    getting_started:
+      awesome_take_me_to_diaspora: "Supert! Ta meg til Diaspora*"
+      community_welcome: "Diaspora-felleskapet er glad for å ha deg med på laget!"
+      connect_to_facebook: "Vi kan gjøre dette litt kjappere ved hjelp av %{link} til Diaspora*. Dette vil trekke ut ditt navn og foto og tillate krysslagring/oppdatering av innhold."
+      connect_to_facebook_link: "kobler opp til din Facebook konto"
+      hashtag_explanation: "Hastags lar deg beskrive og følge dine interesser. De er også en fin måte å finne nye folk i Diaspora."
+      hashtag_suggestions: "Prøv å følge tags som #art, #movies, #gif, osv."
+      saved: "Lagret!"
+      well_hello_there: "Vel, hallo !"
+      what_are_you_in_to: "Hva er det du virkelig liker?"
+      who_are_you: "Hvem er du?"
+    privacy_settings:
+      ignored_users: "Ignorerte brukere"
+      stop_ignoring: "Slutt å ignorere"
+      title: "Personverninnstillinger"
+    public:
+      does_not_exist: "Bruker %{username} finnes ikke!"
+    update:
+      email_notifications_changed: "Language Change Failed"
+      follow_settings_changed: "Følgende innstillinger ble endret"
+      follow_settings_not_changed: "Følgende innstilinger feilet"
+      language_changed: "Språk Endret"
+      language_not_changed: "Endring av språk mislyktes"
+      password_changed: "Passord Endret"
+      password_not_changed: "Endring av Passord mislyktes"
+      settings_not_updated: "Oppdatering av instillinger feilet."
+      settings_updated: "Innstillinger oppdatert"
+      unconfirmed_email_changed: "E-Mail Changed. Needs activation."
+      unconfirmed_email_not_changed: "E-Mail Change Failed"
+  webfinger:
+    fetch_failed: "klarte ikke å hente webfinger profil for % {profile_url}"
+    hcard_fetch_failed: "there was a problem fetching the hcard for #{@account}"
+    no_person_constructed: "Ingen personer kunne konstrueres fra dette hCard."
+    not_enabled: "det virker ikke som webfinger er aktivert for % {account}'s vert"
+    xrd_fetch_failed: "kunne ikke få xrd fra kontoen %{account}"
+  welcome: "Velkommen!"
+  will_paginate:
+    next_label: "neste &raquo;"
+    previous_label: "&laquo; forrige"

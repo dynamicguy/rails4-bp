@@ -1,0 +1,994 @@
+#   Copyright (c) 2010-2013, Diaspora Inc.  This file is
+#   licensed under the Affero General Public License version 3 or later.  See
+#   the COPYRIGHT file.
+
+
+
+ml:
+  _applications: "പ്രയോഗങ്ങള്‍"
+  _comments: "അഭിപ്രായങ്ങള്‍"
+  _contacts: "സമ്പര്‍ക്കങ്ങള്‍"
+  _home: "പൂമുഖം"
+  _photos: "ചിത്രങ്ങള്‍"
+  _services: "സേവനങ്ങള്‍"
+  account: "അക്കൗണ്ട്"
+  activerecord:
+    errors:
+      models:
+        contact:
+          attributes:
+            person_id:
+              taken: "ഈ ഉപയോകതാവിന്റെ സമ്പര്‍ക്കങ്ങളുടേതില്‍നിന്നും വ്യത്യസ്തമായിരിക്കണം."
+        person:
+          attributes:
+            diaspora_handle:
+              taken: "നേരത്തേ എടുത്തിട്ടുണ്ട്."
+        request:
+          attributes:
+            from_id:
+              taken: "നിലവിലുള്ള ഒരു അപേക്ഷയുടെ പകര്‍പ്പാണ്."
+        user:
+          attributes:
+            email:
+              taken: "നേരത്തേ എടുത്തിട്ടുണ്ട്."
+            person:
+              invalid: "സാധുവല്ല."
+            username:
+              taken: "നേരത്തേ എടുത്തിട്ടുണ്ട്."
+  admins:
+    admin_bar:
+      correlations: "പരസ്പരബന്ധം"
+      pages: "താളുകൾ"
+      pod_stats: "പോഡിന്റെ അവസ്ഥ"
+      user_search: "ഉപയോക്താക്കളെ തിരയുക"
+      weekly_user_stats: "ആഴ്ചതോറുമുള്ള അവസ്ഥ"
+    correlations:
+      correlations_count: "സൈൻ ഇൻ എണ്ണവുമായുള്ള പരസ്പരബന്ധം"
+    stats:
+      2weeks: "2 ആഴ്ച"
+      50_most: "ഏറ്റവും പ്രശസ്തമായ 50 ടാഗുകൾ"
+      comments:
+        one: "%{count} അഭിപ്രായം"
+        other: "%{count} അഭിപ്രായങ്ങൾ"
+        zero: "%{count} അഭിപ്രായങ്ങൾ"
+      current_segment: "<b>%{post_day}</b> മുതൽ ഉപയോക്താവിൽ നിന്നും നിലവിലുള്ള അംശത്തിൽ ശരാശരി <b>%{post_yest}</b> കുറിപ്പുകൾ ഉണ്ട്."
+      daily: "ദിവസേന"
+      display_results: "<b>%{segment}</b> അംശത്തിൽ നിന്നുമുള്ള ഫലങ്ങൾ കാണിക്കുന്നു"
+      go: "പോകൂ"
+      month: "മാസം"
+      posts:
+        one: "%{count} കുറിപ്പ്"
+        other: "%{count} കുറിപ്പുകൾ"
+        zero: "%{count} കുറിപ്പുകൾ"
+      shares:
+        one: "%{count} പങ്കിടൽ"
+        other: "%{count} പങ്കിടലുകൾ"
+        zero: "%{count} പങ്കിടൽ"
+      tag_name: "ടാഗിന്റെ പേര്:  <b>%{name_tag}</b>, എണ്ണം:<b>%{count_tag}</b>"
+      usage_statistic: "ഉപയോഗത്തിന്റെ അവസ്ഥ"
+      users:
+        one: "%{count} ഉപയോക്താവ്"
+        other: "%{count} ഉപയോക്താക്കൾ"
+        zero: "%{count} ഉപയോക്താക്കൾ"
+      week: "ആഴ്ച"
+    user_search:
+      add_invites: "കുടുതല്‍ ക്ഷണിക്കുക"
+      email_to: "ക്ഷണിക്കേണ്ട ഇമെയില്‍"
+      users:
+        one: "%{count} ഉപയോക്താവിനെ കണ്ടെത്തി"
+        other: "%{count} ഉപയോക്താക്കളെ കണ്ടെത്തി"
+        zero: "ഒരു ഉപയോക്താവിനെ പോലും കണ്ടെത്തിയില്ല"
+      you_currently: "താങ്കൾക്ക് നിലവിൽ %{user_invitation} ക്ഷണങ്ങൾ ഉണ്ട് %{link}"
+    weekly_user_stats:
+      amount_of:
+        one: "ഈ ആഴ്ചയിലെ പുതിയ ഉപയോക്താക്കളുടെ എണ്ണം : %{count}"
+        other: "ഈ ആഴ്ചയിലെ പുതിയ ഉപയോക്താക്കളുടെ എണ്ണം : %{count}"
+        zero: "ഈ ആഴ്ചയിലെ പുതിയ ഉപയോക്താക്കളുടെ എണ്ണം :ഒന്നുമില്ല"
+      current_server: "നിലവിലുള്ള സെർവർ ദിവസം %{date} ആണ്"
+  ago: "%{time} മുന്‍പ്"
+  all_aspects: "എല്ലാം"
+  application:
+    helper:
+      diaspora_alpha: "ഡയസ്പോറ* ആൽഫ"
+      unknown_person: "അറിയാത്ത വ്യക്തി"
+      video_title:
+        unknown: "ചലചിത്രത്തിന്റെ തലക്കെട്ട് അറിയില്ല"
+  are_you_sure: "താങ്കള്‍ക്ക് ഉറപ്പാണോ?"
+  are_you_sure_delete_account: "താങ്കളുടെ അക്കൗണ്ട് നിർത്തണം എന്ന് താങ്കൾക്ക്ഉറപ്പാണോ?? ഈ പ്രവൃത്തി വീണ്ടെടുക്കാൻ കഴിയില്ല!"
+  aspect_memberships:
+    destroy:
+      failure: "ഈ വ്യക്തിയെ പരിചയത്തില്‍ നിന്ന് മാറ്റാന്‍ കഴിഞ്ഞില്ല"
+      no_membership: "തെരഞ്ഞെടുത്ത വ്യക്തി ഈ പരിചയത്തില്‍ ഇല്ല"
+      success: "വ്യക്തിയെ വിജയകരമായി പരിചയത്തില്‍ നിന്നും നീക്കം ചെയ്തു"
+  aspects:
+    add_to_aspect:
+      failure: "സമ്പര്‍ക്കം പരിചയത്തിലേക്ക് കൂട്ടിചേര്‍ക്കുന്നതില്‍ പരാജയപ്പെട്ടു."
+      success: "വിജയകരമായി സമ്പര്‍ക്കം പരിചയത്തിലേക്ക് കൂട്ടിചേര്‍ത്തു."
+    aspect_contacts:
+      done_editing: "മാറ്റം വരുത്തി കഴിഞ്ഞു"
+    aspect_listings:
+      add_an_aspect: "+ഒരു ഭാവം ചേർക്കുക"
+      deselect_all: "ഒന്നും തിരഞ്ഞെടുക്കാതിരിക്കുക"
+      edit_aspect: "%{name} തിരുത്തു"
+      select_all: "എല്ലാം തെരഞ്ഞെടുക്കുക"
+    aspect_stream:
+      make_something: "എന്തെങ്കിലും സൃഷ്ടിക്കുക"
+    contacts_not_visible: "ഈ പരിചയത്തില്‍പ്പെട്ട സമ്പര്‍ക്കങ്ങള്‍ക്ക് പരസ്പരം കാണാന്‍ സാധിക്കുകയില്ല "
+    contacts_visible: "ഈ പരിചയത്തിലുള്ള സമ്പര്‍ക്കങ്ങള്‍ക്ക് പരസ്പരം കാണാന്‍ സാധിക്കുന്നതാണ്."
+    create:
+      failure: "പരിചയം സൃഷ്ടിക്കല്‍ പരാജയപ്പെട്ടു."
+      success: "നിങ്ങളുടെ പുതിയ പരിചയം %{name} സൃഷ്ടിക്കപ്പെട്ടു."
+    destroy:
+      failure: "%{name} ശുന്യമല്ലാത്തതിനാല്‍ നീക്കാനാകുന്നില്ല."
+      success: "%{name} വിജയകരമായി നീക്കം ചെയ്തിരിക്കുന്നു."
+    edit:
+      add_existing: "നിലവിലുള്ള സമ്പര്‍ക്കം ചേര്‍കുക"
+      aspect_list_is_not_visible: "പരിചയത്തിന്റെ പട്ടിക പരിചയത്തിലുള്ള മറ്റൂള്ളവരില്‍നിന്നും മറച്ചുവച്ചിരിക്കുന്നു"
+      aspect_list_is_visible: "പരിചയപട്ടിക പരിചയത്തിലുള്ളവര്‍ക്ക് ദൃശ്യമാണ്."
+      confirm_remove_aspect: "താങ്കള്‍ക്ക് ഈ പരിചയം നീക്കണമെന്ന് ഉറപ്പാണോ?"
+      done: "ചെയ്തു"
+      make_aspect_list_visible: "പരിചയം ദൃശ്യമാക്കുക"
+      remove_aspect: "ഈ പരിചയം നീക്കം ചെയ്യുക"
+      rename: "പേര് മാറ്റുക"
+      update: "പുതുക്കു"
+      updating: "പുതുക്കുന്നു"
+    few: "%{count} പരിചയങ്ങള്‍"
+    helper:
+      are_you_sure: "നിങ്ങള്‍ ഈ പരിചയം നീക്കം ചെയ്യുവാന്‍ ആഗ്രഹിക്കുന്നു, നിങ്ങള്‍ക്ക് തീര്‍ച്ചയാണോ?"
+      aspect_not_empty: "പരിചയം ശൂന്യമല്ല "
+      remove: "നീക്കം ചെയ്യു"
+    index:
+      cubbies:
+        learn_more: "കൂടുതല്‍ അറിയുക"
+      diaspora_id:
+        content_1: "നിങ്ങളുടെ ഡയസ്പോറ ഐഡി:"
+        heading: "ഡയസ്പോറ ഐഡി"
+      donate: "സംഭാവന"
+      handle_explanation: "ഇത് താങ്കളുടെ ഡയസ്പോറ ഐഡിയാണ്. അളുകള്‍ക്ക് താങ്കളെ ബന്ധപെടാന്‍ ഇത് ഇമെയില്‍ പോലെ കൊടുക്കാം."
+      help:
+        any_problem: "എന്തെങ്കിലും പ്രശ്നം?"
+        contact_podmin: "താങ്കളുടെ പോഡിന്റെ കാര്യനിർവാഹകനെ ബന്ധപ്പെടുക"
+        email_link: "ഈമെയിൽ"
+        mail_podmin: "പോഡ്മിൻ ഈമെയിൽ"
+        need_help: "സഹായം വേണോ?"
+        tag_bug: "bug"
+        tag_feature: "പ്രത്യേകത"
+        tag_question: "question"
+      keep_diaspora_running: "ഒരു സംഭാവനയിലൂടെ ഡയസ്പോറ വികസനം വേഗത്തിലാക്കുക"
+      keep_pod_running: "ഒരു സംഭാവന കൊണ്ട് %{pod} സുഗമമായി പ്രവർത്തിപ്പിക്കുന്നതിലും സെർവറുകൾ നിലനിർത്തുന്നതിലും സഹായിക്കുക"
+      new_here:
+        learn_more: "കൂടുതല്‍ അറിയുക"
+        title: "പുതിയ ഉപയോക്താക്കളെ സ്വാഗതം ചെയ്യുക"
+      no_contacts: "സമ്പര്‍ക്കങ്ങളില്ല"
+      post_a_message: "ഒരു കത്തയക്കുക >>"
+      services:
+        content: "താഴെപ്പറയുന്ന സേവനങ്ങളുമായി ബന്ധപ്പെടാം"
+        heading: "സേവനങ്ങൾ ഉൾപ്പെടുത്തുക"
+      unfollow_tag: "#%{tag} പിന്തുടരുന്നത് നിർത്തുക"
+      welcome_to_diaspora: "ഡയസ്പോറയിലേക്ക് സ്വഗതം, %{name}!"
+    many: "%{count} പരിചയങ്ങള്‍"
+    move_contact:
+      error: "സമ്പര്‍ക്കം മാറ്റാന്‍ സാധിക്കുന്നില്ല : %{inspect}"
+      failure: "ശരിയായില്ല. %{inspect}"
+      success: "വ്യക്തിയെ പുതിയ പരിചയത്തിലേക്ക് മാറ്റിയിരിക്കുന്നു"
+    new:
+      create: "ഉണ്ടാക്കു"
+      name: "പേര്"
+    no_posts_message:
+      start_talking: "ആരും ഇതുവരെ ഒന്നും പറഞ്ഞില്ല!"
+    one: "ഒരു പരിചയം"
+    other: "%{count} പരിചയങ്ങള്‍"
+    seed:
+      acquaintances: "പരിചയക്കാര്‍"
+      family: "കുടുംബം"
+      friends: "കൂട്ടുകാര്‍"
+      work: "ജോലി"
+    selected_contacts:
+      no_contacts: "നിങ്ങൾക്കിതുവരെ സമ്പർക്കങ്ങളൊന്നുമില്ല"
+      view_all_contacts: "എല്ലാ സമ്പർക്കങ്ങളും കാണുക"
+    show:
+      edit_aspect: "പരിചയം ചിട്ടപെടുത്തുക"
+    two: "%{count} aspects"
+    update:
+      failure: "താങ്കള്‍ നല്കിയ %{name} എന്ന പരിചയത്തിന്റെ പേര് അനുവദിനീയമായതിലും വലുതാണ്."
+      success: "നിങ്ങളുടെ പരിചയം, %{name}, വിജയകരമായി ചിട്ടപ്പെടുത്തി."
+    zero: "പരിചയങ്ങള്‍ ഇല്ല"
+  authorizations:
+    index:
+      no_applications: "You haven't registered any applications yet."
+      revoke_access: "Revoke Access"
+    new:
+      authorize: "അധികാരപ്പെടുത്തുക"
+      cubbies_will: "Cubbiesന് താങ്കൾക്ക് വേണ്ടി ചിത്രങ്ങൾ ഇടാൻ ആകും"
+      nope: "ഇല്ല"
+  back: "പിന്നോട്ട്"
+  blocks:
+    create:
+      failure: "I couldn't ignore that user.  #evasion"
+      success: "Alright, you won't see that user in your stream again. #silencio!"
+    destroy:
+      failure: "I couldn't stop ignoring that user.  #evasion"
+      success: "Let's see what they have to say! #sayhello"
+  bookmarklet:
+    explanation: "എവിടെ നിന്നും ഡയസ്പോറയിലേക്ക് കുറിക്കുവാനായി ഈ ലിങ്ക് ബുക്ക്മാര്‍ക്ക് ചെയ്യുക => %{link}."
+    heading: "അടയാളക്കുറിപ്പാക്കുക"
+    post_something: "ഡയസ്പോറയിലേക്ക് കുറിക്കുക"
+    post_success: "കുറിച്ചു! അടയ്ക്കുന്നു!"
+  cancel: "റദ്ദാക്കുക"
+  comments:
+    few: "%{count} അഭിപ്രായങ്ങള്‍"
+    many: "%{count} അഭിപ്രായങ്ങള്‍"
+    new_comment:
+      comment: "അഭിപ്രായം"
+      commenting: "അഭിപ്രായം രേഖപ്പെടുത്തുന്നു..."
+    one: "1 അഭിപ്രായം"
+    other: "%{count} അഭിപ്രായങ്ങള്‍"
+    two: "%{count} comments"
+    zero: "അഭിപ്രായങ്ങളൊന്നുമില്ല."
+  contacts:
+    create:
+      failure: "സമ്പര്‍ക്കം ഉണ്ടാക്കാനാകുന്നില്ല"
+    few: "%{count} സമ്പര്‍ക്കങ്ങള്‍"
+    index:
+      all_contacts: "എല്ലാ സമ്പര്‍ക്കവും"
+      my_contacts: "എന്റെ സമ്പര്‍ക്കങ്ങള്‍"
+      only_sharing_with_me: "നിങ്ങളുമായി മാത്രം പങ്ക് വച്ചത്"
+      start_a_conversation: "സംഭാഷണം ആരംഭിക്കൂ"
+      title: "സമ്പര്‍ക്കങ്ങള്‍"
+      your_contacts: "നിങ്ങളുടെ സമ്പര്‍ക്കങ്ങള്‍"
+    many: "%{count} സമ്പര്‍ക്കങ്ങള്‍"
+    one: "ഒരു സമ്പര്‍ക്കം"
+    other: "%{count} മറ്റു സമ്പര്‍ക്കങ്ങള്‍"
+    sharing:
+      people_sharing: "നിങ്ങളുമായി പങ്കിടുന്ന സുഹൃത്തുക്കൾ"
+    spotlight:
+      suggest_member: "ഒരു ഉപയോക്ത്താവിനെ നിർദ്ദേശിക്കുക"
+    two: "%{count} contacts"
+    zero: "സമ്പര്‍ക്കമൊന്നുമില്ല"
+  conversations:
+    conversation:
+      participants: "അംഗങ്ങൾ"
+    create:
+      fail: "സാധുവല്ലാത്ത സന്ദേശം"
+      no_contact: "നമസ്കാരം, താങ്കൾ ആദ്യം ഒരു ബന്ധം ചേർക്കണം!"
+      sent: "സന്ദേശം അയച്ചു."
+    destroy:
+      success: "സംഭാഷണം വിജയകരമായി നീക്കം ചെയ്തിരിക്കുന്നു."
+    helper:
+      new_messages:
+        few: "%{count} പുതിയ സന്ദേശങ്ങള്‍"
+        many: "%{count} പുതിയ സന്ദേശങ്ങള്‍"
+        one: "ഒരു പുതിയ സന്ദേശം"
+        other: "%{count} പുതിയ സന്ദേശങ്ങള്‍"
+        two: "%{count} new messages"
+        zero: "പുതിയ സന്ദേശങ്ങളില്ല"
+    index:
+      create_a_new_message: "പുതിയ സന്ദേശം ഉണ്ടാക്കുക"
+      inbox: "ഇന്‍ബോക്സ്"
+      message_inbox: "സന്ദേശ ഇന്‍ബോക്സ്"
+      new_message: "പുതിയ സന്ദേശം"
+      no_conversation_selected: "സംവാദങ്ങളൊന്നും തിരഞ്ഞെടുത്തില്ല"
+      no_messages: "സന്ദേശങ്ങളൊന്നുമില്ല"
+    new:
+      send: "അയക്കു"
+      sending: "അയയ്ക്കുന്നു..."
+      subject: "വിഷയം"
+      to: "സ്വീകര്‍ത്താവ്"
+    new_message:
+      fail: "സാധുവല്ലാത്ത സന്ദേശം"
+    show:
+      delete: "സംഭാഷണം തടഞ്ഞ് നീക്കം ചെയ്യുക."
+      reply: "മറുപടി"
+      replying: "മറുപടി നൽകുന്നു.."
+  date:
+    formats:
+      birthday: "%B %d"
+      birthday_with_year: "%B %d %Y"
+      fullmonth_day: "%B %d"
+  delete: "നീക്കം ചെയ്യുക"
+  email: "ഇമെയില്‍"
+  error_messages:
+    helper:
+      correct_the_following_errors_and_try_again: "ഈ പിഴവുകള്‍ പരിഹരിച്ച ശേഷം വീണ്ടും ശ്രമിക്കുക."
+      invalid_fields: "അസാധുവായ കള്ളികള്‍"
+    login_try_again: "ദയവായി <a href='%{login_link}'>ലോഗിൻ ചെയ്തിട്ട്</a> വീണ്ടും ശ്രമിക്കുക."
+    post_not_public: "താങ്കൾ കാണാൻ ശ്രമിക്കുന്ന കുറിപ്പ് പൊതുദർശനത്തിനുള്ളതല്ല!"
+  fill_me_out: "എന്നെ പൂരിപ്പിക്കു"
+  hide: "മറയ്ക്കു"
+  invitation_codes:
+    excited: "%{name} താങ്കളെ ഇവിടെ കണ്ടതിൽ ആഹ്ലാദിക്കുന്നു."
+  invitations:
+    a_facebook_user: "ഒരു ഫേസ്ബുക്ക് ഉപയോക്താവ്"
+    check_token:
+      not_found: "ക്ഷണത്തിന്റെ ടോക്കണ്‍ കാണുന്നില്ല"
+    create:
+      already_contacts: "താങ്കള്‍ ഇതിനകം തന്നെ ഈ വ്യക്തിയുമായി ബന്ധിപ്പിച്ചിരിക്കുകയാണ്"
+      already_sent: "താങ്കള്‍ ഇതിനകം തന്നെ ഈ വ്യക്തിയെ ക്ഷണിച്ചു."
+      empty: "ദയവായി കുറഞ്ഞത് ഒരു ഈമെയിൽ വിലാസമെങ്കിലും നൽകുക"
+      no_more: "താങ്കള്‍ക്ക് ഇനി ക്ഷണങ്ങളൊന്നും ബാക്കിയില്ല."
+      note_already_sent: "ക്ഷണക്കത്തുകൾ മുൻപേ തന്നെ അയച്ചിട്ടുണ്ട്: %{emails}"
+      rejected: "ഈ ഇമെയില്‍ വിലാസങ്ങള്‍ക്ക് പ്രശ്നങ്ങളുണ്ട്: "
+    edit:
+      accept_your_invitation: "നിങ്ങൾക്കുള്ള ക്ഷണം സ്വീകരിക്കുക"
+    new:
+      aspect: "പരിചയം"
+      codes_left:
+        one: "ഈ ക്ഷണക്കത്തിൽ ഒരു ക്ഷണം ബാക്കിയുണ്ട്."
+        other: "ഈ ക്ഷണക്കത്തിൽ %{count} ക്ഷണങ്ങൾ ബാക്കിയുണ്ട്."
+        zero: "ഈ ക്ഷണക്കത്തിൽ ക്ഷണങ്ങൾ ഒന്നും ബാക്കിയില്ല"
+      comma_separated_plz: "താങ്കള്‍ക്ക് കോമാ ഉപയോഗിച്ച് ഒന്നില്‍ കൂടൂതല്‍ ഇമെയില്‍ വിലാസങ്ങള്‍ ചേര്‍ക്കാം."
+      if_they_accept_info: "അവര്‍ അംഗീകരിക്കുകയാണെങ്കില്‍, അവരെ താങ്കള്‍ ക്ഷണിച്ച പരിചയത്തിലേയ്ക്ക് ചേര്‍ക്കും."
+      invite_someone_to_join: "ഡയസ്പോറയില്‍ ചേരാന്‍ ആരെയെങ്കിലും ക്ഷണിക്കു!"
+      language: "ഭാഷ"
+      paste_link: "താങ്കളുടെ സുഹൃത്തുക്കളെ ഡയസ്പോറ*യിലേക്ക് ക്ഷണിക്കാൻ ഈ ലിങ്ക് അവരുമായി പങ്കുവയ്ക്കുക അല്ലെങ്കിൽ അവർക്ക് ഈ ലിങ്ക് നേരിട്ട് ഈമെയിൽ അയയ്ക്കുക."
+      personal_message: "വ്യക്തിപരമായ സന്ദേശം"
+      resend: "വീണ്ടും അയയ്ക്കുക"
+      send_an_invitation: "ഒരു ക്ഷണം അയയ്ക്കു"
+      send_invitation: "ക്ഷണം അയയ്ക്കു"
+      sending_invitation: "ക്ഷണം അയയ്ക്കുന്നു"
+      to: "സ്വീകര്‍ത്താവ്"
+  layouts:
+    application:
+      back_to_top: "തിരികെ മുകളിലേക്ക്"
+      powered_by: "ഡയസ്പോറയാല്‍* ശക്തമാക്കിയത്"
+      public_feed: "%{name} -ന്റെ പൊതു ഡയസ്പോറ ഫീഡ്"
+      source_package: "സോഴ്സ് കോഡ് പൊതിക്കെട്ട് സൂക്ഷിക്കുക"
+      toggle: "മൊബൈല്‍ സൈറ്റിലേക്ക് മാറുക"
+      whats_new: "പുതിയത്?"
+      your_aspects: "നിങ്ങളുടെ പരിചയങ്ങള്‍"
+    header:
+      admin: "കാര്യനിർവാഹകൻ"
+      blog: "ബ്ലോഗ്"
+      code: "കോഡ്"
+      login: "അകത്ത് കടക്കുക"
+      logout: "പുറത്ത് കടക്കു"
+      profile: "പ്രൊഫൈല്‍"
+      recent_notifications: "അടുത്തിടെയുള്ള അറിയിപ്പുകള്‍"
+      settings: "ക്രമീകരണങ്ങള്‍"
+      view_all: "എല്ലാം കാണുക"
+  likes:
+    likes:
+      people_dislike_this:
+        one: "ഒരാള്‍ ഇതിഷ്ടപ്പെടുന്നില്ല."
+        other: "%{count} പേര്‍ ഇത് ഇഷ്ടപ്പെടുന്നില്ല"
+        zero: "ഇത് ഇഷ്ടപ്പെടാത്തതാരുമില്ല"
+      people_like_this:
+        one: "ഒരാള്‍ ഇത് ഇഷ്ടപ്പെടുന്നു"
+        other: "%{count} ആളുകള്‍ ഇത് ഇഷ്ടപ്പെടുന്നു"
+        zero: "ആരും ഇത് ഇഷ്ടപ്പെടുന്നില്ല."
+      people_like_this_comment:
+        one: "%{count} ഇഷ്ട്ടപ്പെടല്‍"
+        other: "%{count} ഇഷ്ട്ടപ്പെടലുകള്‍"
+        zero: "ഇഷ്ട്ടപ്പെടലുകളില്ല"
+  limited: "പരിമിതം"
+  more: "കൂടുതല്‍"
+  next: "അടുത്തത്"
+  no_results: "ഫലങ്ങളൊന്നും കണ്ടെത്താനായില്ല."
+  notifications:
+    also_commented:
+      few: "%{actors} also commented on %{post_author}'s %{post_link}."
+      many: "%{actors} also commented on %{post_author}'s %{post_link}."
+      one: "%{actors} also commented on %{post_author}'s %{post_link}."
+      other: "%{actors} also commented on %{post_author}'s %{post_link}."
+      two: "%{actors} also commented on %{post_author}'s %{post_link}."
+      zero: "%{actors} also commented on %{post_author}'s %{post_link}."
+    also_commented_deleted:
+      few: "%{actors} commented on a deleted post."
+      many: "%{actors} commented on a deleted post."
+      one: "%{actors} commented on a deleted post."
+      other: "%{actors} commented on a deleted post."
+      two: "%{actors} commented on a deleted post."
+      zero: "%{actors} commented on a deleted post."
+    comment_on_post:
+      few: "%{actors} commented on your %{post_link}."
+      many: "%{actors} commented on your %{post_link}."
+      one: "%{actors} commented on your %{post_link}."
+      other: "%{actors} commented on your %{post_link}."
+      two: "%{actors} commented on your %{post_link}."
+      zero: "%{actors} commented on your %{post_link}."
+    helper:
+      new_notifications:
+        few: "%{count} new notifications"
+        many: "%{count} new notifications"
+        one: "1 new notifications"
+        other: "%{count} new notifications"
+        two: "%{count} new notifications"
+        zero: "No new notifications"
+    index:
+      and: "കൂടാതെ"
+      and_others:
+        few: "and %{count} others"
+        many: "and %{count} others"
+        one: "and one more"
+        other: "and %{count} others"
+        two: "and %{count} others"
+        zero: "and nobody else"
+      mark_all_as_read: "എല്ലാം വായിച്ചതായി അടയാളപ്പെടുത്തുക"
+      mark_unread: "\"വായിച്ചിട്ടില്ല\" എന്ന് രേഖപ്പെടുത്തുക"
+      notifications: "അറിയിപ്പുകള്‍"
+    liked:
+      few: "%{actors} has just liked your %{post_link}."
+      many: "%{actors} has just liked your %{post_link}."
+      one: "%{actors} has just liked your %{post_link}."
+      other: "%{actors} has just liked your %{post_link}."
+      two: "%{actors} have liked your %{post_link}."
+      zero: "%{actors} has just liked your %{post_link}."
+    liked_post_deleted:
+      few: "%{actors} liked your deleted post."
+      many: "%{actors} liked your deleted post."
+      one: "%{actors} liked your deleted post."
+      other: "%{actors} liked your deleted post."
+      two: "%{actors} liked your deleted post."
+      zero: "%{actors} liked your deleted post."
+    mentioned:
+      few: "%{actors} has mentioned you in a %{post_link}."
+      many: "%{actors} has mentioned you in a %{post_link}."
+      one: "%{actors} has mentioned you in a %{post_link}."
+      other: "%{actors} has mentioned you in a %{post_link}."
+      two: "%{actors} have mentioned you in a %{post_link}."
+      zero: "%{actors} has mentioned you in a %{post_link}."
+    mentioned_deleted:
+      few: "%{actors} mentioned you in a deleted post."
+      many: "%{actors} mentioned you in a deleted post."
+      one: "%{actors} mentioned you in a deleted post."
+      other: "%{actors} mentioned you in a deleted post."
+      two: "%{actors} mentioned you in a deleted post."
+      zero: "%{actors} mentioned you in a deleted post."
+    post: "കുറിപ്പ്"
+    private_message:
+      few: "%{actors} sent you a message."
+      many: "%{actors} sent you a message."
+      one: "%{actors} sent you a message."
+      other: "%{actors} sent you a message."
+      two: "%{actors} sent you a message."
+      zero: "%{actors} sent you a message."
+    reshared:
+      few: "%{actors} have reshared your %{post_link}."
+      many: "%{actors} have reshared your %{post_link}."
+      one: "%{actors} has reshared your %{post_link}."
+      other: "%{actors} have reshared your %{post_link}."
+      two: "%{actors} have reshared your %{post_link}."
+      zero: "%{actors} have reshared your %{post_link}."
+    reshared_post_deleted:
+      few: "%{actors} reshared your deleted post."
+      many: "%{actors} reshared your deleted post."
+      one: "%{actors} reshared your deleted post."
+      other: "%{actors} reshared your deleted post."
+      two: "%{actors} reshared your deleted post."
+      zero: "%{actors} reshared your deleted post."
+  notifier:
+    a_post_you_shared: "ഒരു കുറിപ്പ്."
+    accept_invite: "താങ്കളുടെ ഡയസ്പോറ* ക്ഷണം സ്വീകരിക്കുക!"
+    click_here: "ഇവിടെ ഞെക്കുക"
+    email_sent_by_diaspora: "This email was sent by Diaspora.  If you'd like to stop getting emails like this,"
+    hello: "നമസ്‌കാരം %{name}!"
+    invite:
+      message: |-
+          നമസ്കാരം 
+           
+          താങ്കൾ ഡയസ്പോറ*യിലേക്ക്  ക്ഷണിക്കപ്പെട്ടിരിക്കുന്നു*! 
+           
+          തുടങ്ങാനായി ഈ കണ്ണിയില്‍ അമർത്തുക
+           
+          %{invite_url}[1] 
+           
+           
+          സസ്നേഹം, 
+           
+          ഡയസ്പോറ* ഈ-മെയില്‍ യന്ത്രം
+           
+          [1]:%{invite_url}
+    invited_you: "%{name} താങ്കളെ ഡയസ്പോറ*യിലേക്ക് ക്ഷണിച്ചിരിക്കുന്നു"
+    liked:
+      liked: "%{name} നിങ്ങളുടെ പോസ്റ്റ് ഇഷ്ടപ്പെടുന്നു"
+      view_post: "കുറിപ്പ് കാണുക >"
+    mentioned:
+      mentioned: "താങ്കളെ ഒരു കുറിപ്പില്‍ സൂചിപ്പിച്ചു:"
+      subject: "%{name} താങ്കളെ ഡയസ്പോറയില്‍* സൂചിപ്പിച്ചു"
+    reshared:
+      view_post: "കുറിപ്പ് കാണുക >"
+    single_admin:
+      admin: "നിങ്ങളുടെ ഡയസ്പോറ മേല്‍നോട്ടക്കാരന്‍"
+      subject: "നിങ്ങളുടെ ഡയസ്പോറ അക്കൌണ്ടിനെ സംബന്ധിച്ച് ഒരു സന്ദേശം:"
+    started_sharing:
+      sharing: "നിങ്ങളുമായി പങ്കിടാൻ ആരംഭിച്ചിരിക്കുന്നു"
+      subject: "%{name} താങ്കളുമായി ഡയസ്പോറയില്‍ പങ്കിടാന്‍ തുടങ്ങി"
+    thanks: "നന്ദിയോടെ,"
+    to_change_your_notification_settings: "അറിയിപ്പുകളെപ്പറ്റിയുള്ള സജ്ജീകരണങ്ങളിൽ മാറ്റം വരുത്തുക"
+  ok: "ശരി"
+  or: "അല്ലെങ്കില്‍"
+  password: "അടയാളവാക്ക്"
+  password_confirmation: "അടയാളവാക്ക് തിര്‍ച്ചപ്പെടുത്തുക"
+  people:
+    add_contact:
+      invited_by: "താങ്കളെ ക്ഷണിച്ചത്"
+    add_contact_small:
+      add_contact_from_tag: "ടാഗില്‍ നിന്ന് സമ്പര്‍ക്കം ചേര്‍ക്കുക"
+    aspect_list:
+      edit_membership: "പരിചയത്തിലെ അംഗത്വം തിരുത്തു"
+    few: "%{count} ആളുകള്‍"
+    helper:
+      people_on_pod_are_aware_of: " ഈ പോഡിലെ ആളുകള്‍ക്ക് ഇതിനെകുറിച്ച് അറിവുണ്ട്"
+      results_for: " %{params} ന്റെ ഫലങ്ങള്‍"
+    index:
+      couldnt_find_them_send_invite: "കണ്ടുപിടിയ്ക്കാനാകുന്നില്ലേ? ഒരു ക്ഷണം അയക്കു!"
+      no_one_found: "...പക്ഷേ, ഒരാളെയും കണ്ടുപിടിച്ചില്ല."
+      no_results: "താങ്കള്‍ എന്തിനെങ്കിലും വേണ്ടി തിരയേണ്ടതുണ്ട്."
+      results_for: "വിവരങ്ങള്‍ക്കായി തെരയുക"
+      searching: "തിരഞ്ഞുകൊണ്ടിരിക്കുന്നു, ദയവായി കാത്തിരിക്കുക..."
+    last_post: "അവസാനത്തെ കുറിപ്പ്"
+    many: "%{count} ആളുകള്‍"
+    one: "ഒരാള്‍"
+    other: "%{count} ആളുകള്‍"
+    person:
+      add_contact: "സമ്പര്‍ക്കം ചേര്‍ക്കുക"
+      already_connected: "ഇപ്പോള്‍ തന്നെ ബന്ധിപ്പിച്ചിട്ടുണ്ട്"
+      pending_request: "അപേക്ഷ ബാക്കി നില്‍കുന്നു"
+      thats_you: "ഇത് താങ്കളാണ്!"
+    profile_sidebar:
+      bio: "സ്വയം വിവരണം"
+      born: "ജന്മദിനം"
+      edit_my_profile: "എന്റെ പ്രൊഫൈല്‍ തിരുത്തുക"
+      gender: "ലിംഗം"
+      in_aspects: "പരിചയത്തില്‍"
+      location: "സ്ഥലം"
+      remove_contact: "സമ്പര്‍ക്കം മാറ്റുക"
+      remove_from: "%{name} നെ %{aspect} നിന്ന് മാറ്റട്ടേ?"
+    show:
+      does_not_exist: "വ്യക്തി നിലവിലില്ല!"
+      has_not_shared_with_you_yet: "%{name} has not shared any posts with you yet!"
+      incoming_request: "%{name} നിങ്ങളുമായി പങ്കിടാന്‍ ആഗ്രഹിക്കുന്നു"
+      mention: "സൂചിപ്പിച്ചു"
+      message: "സന്ദേശം"
+      not_connected: "താങ്കള്‍ %{name} യുമായി പങ്കുവെയ്ക്കുന്നില്ല"
+      recent_posts: "സമീപകാല കുറിപ്പുകള്‍"
+      recent_public_posts: "സമീപകാല പൊതു കുറിപ്പുകള്‍"
+      return_to_aspects: "താങ്കളുടെ പരിചയം താളിലേയ്ക്ക് തിരിച്ച് പോവുക"
+      see_all: "എല്ലാം കാണു"
+      start_sharing: "പങ്കുവച്ച് തുടങ്ങുക"
+      to_accept_or_ignore: "സ്വീകരിക്കുകയോ ത്യജിക്കുകയോ ചെയ്യാന്‍."
+    sub_header:
+      add_some: "എന്തെങ്കിലും ചേർക്കൂ"
+      edit: "തിരുത്തുക"
+    two: "%{count} ആളുകള്‍"
+    webfinger:
+      fail: "ക്ഷമിക്കണം, ഞങ്ങള്‍ക്ക് %{handle} കണ്ടെത്താനായില്ല.."
+    zero: "ആളുകളില്ല"
+  photos:
+    comment_email_subject: "%{name}'s photo"
+    create:
+      integrity_error: "ചിത്രം അപ്‌ലോഡ് പരാജയപ്പെട്ടു. അത് ഒരു ചിത്രം തന്നെയായിരുന്നോ?"
+      runtime_error: "ചിത്രം അപ്‌ലോഡ് പരാജയപ്പെട്ടു."
+      type_error: "ചിത്രം അപ്‌ലോഡ് പരാജയപ്പെട്ടു..  താങ്കള്‍ ഒരു ചിത്രം അപ്‌ലോഡ് ചെയ്യാന്‍ തിരഞ്ഞെടുത്തിരുന്നോ?"
+    destroy:
+      notice: "ചിത്രം നീക്കം ചെയ്തു."
+    edit:
+      editing: "തിരുത്തുന്നു"
+    new:
+      back_to_list: "തിരിച്ച് പട്ടികയിലേയ്ക്ക്"
+      new_photo: "പുതിയ ചിത്രം"
+      post_it: "കുറിക്കു!"
+    new_photo:
+      empty: "{file} ശൂന്യമാണ്, അതല്ലാത്ത ഫയലുകള്‍ ദയവായി വീണ്ടും തെരഞ്ഞെടുക്കുക."
+      invalid_ext: "{file} ന് തെറ്റായ extension ആണ്.  {extensions} മാത്രം അനുവദിച്ചിരിക്കുന്നു."
+      size_error: "{file} വളരെ വലുതാണ്, കൂടിയ ഫയല്‍ വലിപ്പം {sizeLimit} ആകുന്നു."
+    new_profile_photo:
+      or_select_one_existing: "or select one from your already existing %{photos}"
+      upload: "പുതിയ പ്രൊഫൈല്‍ ചിത്രം ചേര്‍ക്കുക!"
+    photo:
+      view_all: "%{name}യുടെ എല്ലാ ചിത്രങ്ങളും കാണുക"
+    show:
+      collection_permalink: "ശേഖരണത്തിന്റെ സ്ഥിരംകണ്ണി"
+      delete_photo: "ചിത്രം നീക്കുക"
+      edit: "തിരുത്തുക"
+      edit_delete_photo: "ചിത്രത്തിന്റെ വിവരണം തിരുത്തുക / ചിത്രം നീക്കം ചെയ്യുക"
+      make_profile_photo: "പ്രൊഫൈല്‍ ചിത്രം ഉണ്ടാക്കുക"
+      show_original_post: "Show original post"
+      update_photo: "ചിത്രം പുതുക്കുക"
+    update:
+      error: "ചിത്രം പുതുക്കാന്‍ പറ്റുന്നില്ല.."
+      notice: "ചിത്രം വിജയകരമായി പുതുക്കി."
+  posts:
+    presenter:
+      title: "%{name}ല്‍ നിന്നുള്ള കുറിപ്പ്"
+    show:
+      destroy: "Delete"
+      not_found: "Sorry, we couldn't find that post."
+      permalink: "permalink"
+      photos_by:
+        few: "%{count} photos by %{author}"
+        many: "%{count} photos by %{author}"
+        one: "One photo by %{author}"
+        other: "%{count} photos by %{author}"
+        two: "Two photos by %{author}"
+        zero: "No photos by %{author}"
+      reshare_by: "Reshare by %{author}"
+  previous: "മുന്‍‌പത്തെ"
+  privacy: "സ്വകര്യത"
+  privacy_policy: "സ്വകര്യത നയം"
+  profile: "പ്രൊഫൈല്‍"
+  profiles:
+    edit:
+      allow_search: "ഡയസ്പോറയ്ക്കകത്ത് മറ്റുള്ളവര്‍ എന്നെ കണ്ടെത്താന്‍ അനുവദിക്കുക"
+      edit_profile: "പ്രൊഫൈല്‍ തിരുത്തുക"
+      first_name: "ആദ്യ പേര്"
+      last_name: "അവസാന പേര്"
+      update_profile: "പ്രൊഫൈല്‍ പുതുക്കുക"
+      you_are_nsfw: "You have marked yourself not safe for work, your content will not show up in people who have opted out of seeing objectionable content's streams."
+      you_are_safe_for_work: "You have marked yourself as safe for work, this means you agree the content you post will agree with the community guidelines."
+      your_bio: "നിങ്ങളുടെ സ്വയം വിവരണം"
+      your_birthday: "താങ്കളുടെ ജന്മദിനം"
+      your_gender: "താങ്കളുടെ ലിംഗം"
+      your_location: "താങ്കളുടെ സ്ഥലം"
+      your_name: "താങ്കളുടെ പേര്"
+      your_photo: "താങ്കളുടെ ചിത്രം"
+      your_private_profile: "താങ്കളുടെ സ്വകാര്യ പ്രൊഫൈല്‍ "
+      your_public_profile: "താങ്കളുടെ പൊതു പ്രൊഫൈല്‍ "
+      your_tags: "Describe yourself in 5 words"
+      your_tags_placeholder: "like #movies #kittens #travel #teacher #newyork"
+    update:
+      failed: "പ്രൊഫൈല്‍ തിരുത്തുന്നത് പരാജയപ്പെട്ടിരിക്കുന്നു."
+      updated: "പ്രൊഫൈല്‍ വിജയകരമായൊ തിരുത്തിയിരിക്കുന്നു."
+  public: "പൊതുവായ"
+  reactions:
+    one: "ഒരു പ്രതികരണം"
+    other: "%{count} പ്രതികരണങ്ങള്‍"
+    zero: "0 പ്രതികരണങ്ങള്‍"
+  registrations:
+    closed: "ഈ ഡയസ്പോറ പോഡില്‍ ചേരുന്നത് അടച്ചിരിക്കുന്നു."
+    create:
+      success: "താങ്കള്‍ ഡയസ്പോറയില്‍ ചേര്‍ന്നിരിക്കുന്നു!"
+    edit:
+      cancel_my_account: "എന്റെ അക്കൌണ്ട് റദ്ദാക്കു"
+      edit: "%{name} തിരുത്തു"
+      leave_blank: "(മാറ്റേണ്ടെങ്കില്‍ ഒഴിച്ച് തന്നെ ഇടുക)"
+      password_to_confirm: "(മാറ്റങ്ങള്‍ സ്ഥിരികരിക്കാന്‍ വേണ്ടി താങ്കളുടെ നിലവിലുള്ള രഹസ്യവാക്ക് ആവശ്യമുണ്ട്)"
+      unhappy: "സന്തോഷമായില്ല?"
+      update: "പുതുക്കു"
+    invalid_invite: "താങ്കൾ നൽകിയ ക്ഷണക്കത്ത് സാധുവല്ല!"
+    new:
+      continue: "തുടരുക"
+      create_my_account: "Create my account"
+      diaspora: "<3 ഡയസ്പോറ*"
+      email: "ഈമെയിൽ"
+      enter_email: "Enter an email"
+      enter_password: "അടയാളവാക്ക് നല്‍കുക"
+      enter_password_again: "അടയാളവാക്ക് വീണ്ടും നല്‍കുക"
+      enter_username: "ഉപഭാക്തൃ നാമം തിരഞ്ഞെടുക്കുക (അക്ഷരങ്ങളും സംഖ്യകളും അണ്ടര്‍ സ്കോറും മാത്രം)"
+      hey_make: "നമസ്കാരം, എന്തെങ്കിലും <br/>ഉണ്ടാക്കുക<br/>"
+      join_the_movement: "Join the movement!"
+      password: "രഹസ്യവാക്ക്"
+      password_confirmation: "രഹസ്യവാക്ക് ഉറപ്പാക്കൽ"
+      sign_up: "അംഗത്വമെടുക്കുക"
+      sign_up_message: "Social Networking with a ♥"
+      username: "ഉപയോക്തൃനാമം"
+  requests:
+    create:
+      sending: "അയയ്ക്കുന്നു"
+      sent: " %{name}-മായി പങ്കുവയ്ക്കാന്‍ താങ്കള്‍ അപേക്ഷിച്ചിരിക്കുന്നു. അടുത്ത തവണ ഡയസ്പോറയില്‍ %{name} പ്രവേശിക്കുമ്പോള്‍ താങ്കളുടെ അഭ്യര്‍ത്ഥന കാണുന്നതാണ്."
+    destroy:
+      error: "ദയവായി ഒരു പരിചയം തിരഞ്ഞെടുക്കുക!"
+      ignore: "സമ്പര്‍ക്ക അഭ്യര്‍ത്ഥന അവഗണിച്ചു."
+      success: "നിങ്ങള്‍ ഇപ്പോള്‍ സുഹൃത്തുക്കളാണ്."
+    helper:
+      new_requests:
+        one: "ഒരു പുതിയ അപേക്ഷ!"
+        other: "%{count} പുതിയ അപേക്ഷകള്‍!"
+        zero: "പുതിയ അപേക്ഷയൊന്നുമില്ല"
+    manage_aspect_contacts:
+      existing: "നിലവിലുള്ള സമ്പര്‍ക്കങ്ങള്‍"
+      manage_within: "ഉള്ളിലുള്ള സമ്പര്‍ക്കങ്ങളെ നിയന്ത്രിക്കുക"
+    new_request_to_person:
+      sent: "അയച്ചു!"
+  reshares:
+    comment_email_subject: "%{resharer}'s reshare of %{author}'s post"
+    create:
+      failure: "There was an error resharing this post."
+    reshare:
+      deleted: "Original post deleted by author."
+      reshare:
+        few: "%{count} reshares"
+        many: "%{count} reshares"
+        one: "1 reshare"
+        other: "%{count} reshares"
+        two: "%{count} reshares"
+        zero: "Reshare"
+      reshare_confirmation: "Reshare %{author}'s post?"
+      reshare_original: "Reshare original"
+      reshared_via: "reshared via"
+      show_original: "Show original"
+  search: "തിരയുക"
+  services:
+    create:
+      already_authorized: "A user with diaspora id %{diaspora_id} already authorized that %{service_name} account."
+      failure: "Authentication failed."
+      success: "തിരിച്ചറിയല്‍ വിജയകരം."
+    destroy:
+      success: "തിരിച്ചറിയല്‍ വിജയകരമായി നീക്കം ചെയ്തു."
+    failure:
+      error: "അ സേവനവുമായി ബന്ധിപ്പിക്കുന്നതില്‍ അവിടെ ഒരു തെറ്റുണ്ട്"
+    finder:
+      fetching_contacts: "Diaspora is populating your %{service} friends please check back in a few minutes."
+      no_friends: "No Facebook friends found."
+      service_friends: "%{service} Friends"
+    index:
+      connect_to_facebook: "ഫേസ്ബുക്കുമായി ബന്ധിപ്പിക്കു"
+      connect_to_tumblr: "Connect to Tumblr"
+      connect_to_twitter: "ട്വിറ്ററുമായി ബന്ധിപ്പിക്കു"
+      disconnect: "വിച്ഛേദിക്കു"
+      edit_services: "സേവനങ്ങളില്‍ മാറ്റം വരുത്തുക"
+      logged_in_as: "ആയി പ്രവേശിച്ചിരിക്കുന്നു"
+      no_services: "You have not connected any services yet."
+      really_disconnect: "%{service} വിച്ഛേദിക്കണോ?"
+    inviter:
+      click_link_to_accept_invitation: "ക്ഷണം സ്വീകരിക്കുന്നതിനായി കണ്ണിയില്‍ അമര്‍ത്തുക"
+      join_me_on_diaspora: "എന്നെ ഡയസ്പോറ*യില്‍ ചേര്‍ക്കൂ*"
+    remote_friend:
+      invite: "ക്ഷണിക്കു"
+      not_on_diaspora: "Not yet on Diaspora"
+      resend: "വീണ്ടും അയയ്ക്കു"
+  settings: "ക്രമീകരണങ്ങള്‍"
+  share_visibilites:
+    update:
+      post_hidden_and_muted: "%{name}'s post has been hidden, and notifications have been muted."
+      see_it_on_their_profile: "If you want to see updates on this post, visit %{name}'s profile page."
+  shared:
+    add_contact:
+      add_new_contact: "Add a new contact"
+      create_request: "ഡയസ്പോറ ഐഡി വെച്ച് കണ്ട് പിടിക്കുക"
+      diaspora_handle: "diaspora@pod.org"
+      enter_a_diaspora_username: "ഒരു ഡയസ്പോറ ഉപയോക്തനാമം നല്‍കുക :"
+      know_email: "ആളിന്റെ ഇമെയില്‍ വിലാസം അറിയാമോ? നിങ്ങള്‍ക്ക് ആ വ്യക്തിയെ ക്ഷണിക്കാം."
+      your_diaspora_username_is: "താങ്കളുടെ ഡയസ്പോറ ഉപയോക്തൃ നാമം: %{diaspora_handle}"
+    aspect_dropdown:
+      add_to_aspect: "Add contact"
+      toggle:
+        few: "In %{count} aspects"
+        many: "In %{count} aspects"
+        one: "In %{count} aspect"
+        other: "In %{count} aspects"
+        two: "In %{count} aspects"
+        zero: "Add contact"
+    contact_list:
+      all_contacts: "എല്ലാ സമ്പര്‍ക്കവും"
+    footer:
+      logged_in_as: "%{name} ആയി പ്രവേശിച്ചിരിക്കുന്നു."
+      your_aspects: "നിങ്ങളുടെ പരിചയങ്ങള്‍"
+    invitations:
+      by_email: "ഇമെയില്‍ വഴി"
+      dont_have_now: "താങ്കള്‍ക്ക് ക്ഷണമൊന്നും ബാക്കിയില്ല, പക്ഷേ കൂടുതല്‍ വരുന്നുണ്ട്!"
+      from_facebook: "ഫേസ്ബുക്കില്‍ നിന്ന്"
+      invitations_left: "%{count}ക്ഷണങ്ങള്‍ ബാക്കി"
+      invite_someone: "ആരെയെങ്കിലും ക്ഷണിക്കുക"
+      invite_your_friends: "നിങ്ങളുടെ കൂട്ടുകാരെ ക്ഷണിക്കു."
+      invites: "ക്ഷണങ്ങള്‍"
+      invites_closed: "ഈ ഡയസ്പോറ പോഡിലെ ക്ഷണങ്ങള്‍ നിര്‍ത്തിവെച്ചിരിക്കുന്നു"
+      share_this: "ഈ ലിങ്ക് ഈമെയിൽ വഴിയോ, ബ്ലോഗ് വഴിയോ അല്ലെങ്കിൽ ഇഷ്ടപ്പെട്ട സോഷ്യൽ നെറ്റ്‌വർക്ക് വഴിയോ പങ്കിടുക"
+    notification:
+      new: "പുതിയ %{type} %{from} ല്‍ നിന്ന്"
+    public_explain:
+      atom_feed: "Atom feed"
+      control_your_audience: "Control your Audience"
+      logged_in: "%{service} ലേയ്ക്ക് പ്രവേശിച്ചിരിക്കുന്നു."
+      manage: "ബന്ധിപ്പിച്ചിരിക്കുന്ന സേവനങ്ങളെ കൈകാര്യം ചെയ്യുക"
+      new_user_welcome_message: "Use #hashtags to classify your posts and find people who share your interests.  Call out awesome people with @Mentions"
+      outside: "പൊതു സന്ദേശങ്ങള്‍ ഡയസ്പോറയ്ക്ക് വെളിയിലുള്ളവര്‍ക്കും കാണാനാകും."
+      share: "Share"
+      title: "നിങ്ങള്‍ ഒരു പൊതു സന്ദേശം കുറിക്കുവാന്‍ പോകുന്നു!"
+      visibility_dropdown: "Use this dropdown to change visibility of your post.  (We suggest you make this first one public.)"
+    publisher:
+      all: "എല്ലാം"
+      all_contacts: "എല്ലാ സമ്പര്‍ക്കവും"
+      discard_post: "Discard post"
+      get_location: "നിങ്ങളുടെ സ്ഥാനം പ്രാപ്തമാക്കുക"
+      make_public: "പൊതുവാക്കുക"
+      new_user_prefill:
+        hello: "Hey everyone, I'm #%{new_user_tag}. "
+        i_like: "I'm interested in %{tags}. "
+        invited_by: "Thanks for the invite, "
+        newhere: "NewHere"
+      post_a_message_to: "%{aspect}ല്‍ ഒരു സന്ദേശം പ്രസിദ്ധീകരിക്കുക"
+      posting: "കുറിക്കുന്നു..."
+      preview: "തിരനോട്ടം"
+      publishing_to: "പ്രസിദ്ധീകരിക്കുന്നു: "
+      share: "പങ്കുവെയ്ക്കുക"
+      share_with: "പങ്കുവെയ്ക്കുക"
+      upload_photos: "Upload photos"
+      whats_on_your_mind: "എന്താണ് നിങ്ങളുടെ മനസ്സില്‍?"
+    reshare:
+      reshare: "വീണ്ടും പങ്കിടുക"
+    stream_element:
+      connect_to_comment: "Connect to this user to comment on their post"
+      currently_unavailable: "commenting currently unavailable"
+      dislike: "ഇഷ്ടപ്പെടുന്നില്ല"
+      hide_and_mute: "Hide and mute post"
+      ignore_user: "Ignore %{name}"
+      ignore_user_description: "Ignore and remove user from all aspects?"
+      like: "ഇഷ്ടപ്പെടുന്നു"
+      nsfw: "This post has been flagged as NSFW by its author. %{link}"
+      shared_with: "Shared with: %{aspect_names}"
+      show: "show"
+      unlike: "Unlike"
+      via: "via %{link}"
+      via_mobile: "മൊബൈൽ ഉപയോഗിച്ച്"
+      viewable_to_anyone: "This post is viewable to anyone on the web"
+  status_messages:
+    create:
+      success: "വിജയകരമായി സൂചിപ്പിച്ചു: %{names}"
+    destroy:
+      failure: "കുറിപ്പ് നീക്കം ചെയ്യാന്‍ സാധിക്കുന്നില്ല"
+    helper:
+      no_message_to_display: "സന്ദേശമൊന്നും കാണിക്കാനില്ല."
+    new:
+      mentioning: "സൂചിപ്പിക്കുന്നു: %{person}"
+    too_long:
+      few: "please make your status messages less than %{count} characters"
+      many: "please make your status messages less than %{count} characters"
+      one: "please make your status messages less than %{count} character"
+      other: "please make your status messages less than %{count} characters"
+      two: "please make your status messages less than %{count} characters"
+      zero: "please make your status messages less than %{count} characters"
+  stream_helper:
+    hide_comments: "Hide all comments"
+    show_comments:
+      few: "Show %{count} more comments"
+      many: "Show %{count} more comments"
+      one: "Show one more comment"
+      other: "Show %{count} more comments"
+      two: "Show two more comments"
+      zero: "No more comments"
+  streams:
+    activity:
+      title: "My Activity"
+    aspects:
+      title: "Your Aspects"
+    aspects_stream: "Aspects"
+    comment_stream:
+      contacts_title: "People whose posts you commented on"
+      title: "Commented Posts"
+    community_spotlight_stream: "Community Spotlight"
+    followed_tag:
+      add_a_tag: "Add a tag"
+      contacts_title: "People who dig these tags"
+      follow: "Follow"
+      title: "#Followed Tags"
+    followed_tags_stream: "#Followed Tags"
+    like_stream:
+      contacts_title: "People whose posts you like"
+      title: "Like Stream"
+    mentioned_stream: "@Mentions"
+    mentions:
+      contacts_title: "People who mentioned you"
+      title: "@Mentions"
+    multi:
+      contacts_title: "People in your Stream"
+      title: "Stream"
+    public:
+      contacts_title: "Recent Posters"
+      title: "Public Activity"
+    tags:
+      contacts_title: "People who dig this tag"
+      tag_prefill_text: "The thing about %{tag_name} is... "
+      title: "Posts tagged: %{tags}"
+  tag_followings:
+    create:
+      failure: "Failed to follow: #%{name}"
+      none: "You cannot follow a blank tag!"
+      success: "Successfully following: #%{name}"
+    destroy:
+      failure: "Failed to stop following: #%{name}"
+      success: "Successfully stopped following: #%{name}"
+  tags:
+    show:
+      follow: "Follow #%{tag}"
+      followed_by: "followed by"
+      following: "Following #%{tag}"
+      nobody_talking: "നിലവില്‍ ആരും %{tag}-നെ കുറിച്ച് സംസാരിക്കുന്നില്ല."
+      none: "The empty tag does not exist!"
+      people_tagged_with: "%{tag} ചേര്‍ത്തിട്ടുള്ള ആളുകള്‍"
+      posts_tagged_with: "#%{tag} ചേര്‍ത്തിട്ടുള്ള കുറിപ്പുകള്‍"
+      stop_following: "Stop Following #%{tag}"
+  terms_and_conditions: "വ്യവസ്ഥകളും നിബന്ധനകളും"
+  tokens:
+    show:
+      connect_to_cubbies: "Connect to Cubbi.es"
+      connecting_is_simple: "Connecting your Diaspora account is simple!  Just enter your Diaspora ID (<b>%{diaspora_id}</b>) from your cubbies <a href='%{href_link}'>settings page</a> and hit connect."
+      daniels_account: "Daniel's Diaspora account"
+      love_to_try: "We'd love for you to try it out."
+      making_the_connection: "Making the Connection"
+      screenshot_explanation: "%{link1}.  This particular cubby is linked to %{link2}."
+      sign_up_today: "Sign up today!"
+      typical_userpage: "A typical cubbi.es userpage"
+      via: "(via %{link})"
+      what_is_cubbies: "Cubbi.es is the world's first Diaspora application.  It's also the best way to collect photos online."
+  undo: "പൂര്‍വരൂപത്തിലാക്കണോ?"
+  username: "ഉപയോക്തൃനാമം"
+  users:
+    confirm_email:
+      email_confirmed: "Email %{email} activated"
+      email_not_confirmed: "Email could not be activated. Wrong link?"
+    destroy:
+      no_password: "Please enter your current password to close your account."
+      success: "Your account has been locked.  It may take 20 minutes for us to finish closing your account.  Thank you for trying Diaspora."
+      wrong_password: "The entered password didn't match your current password."
+    edit:
+      also_commented: "...താങ്കളുടെ സമ്പര്‍ക്കത്തിന്റെ പോസ്റ്റില്‍ ആരെങ്കിലും അഭിപ്രായമിടുമ്പോള്‍?"
+      auto_follow_aspect: "Aspect for automatically followed users:"
+      auto_follow_back: "Automatically follow back if someone follows you"
+      change: "മാറ്റുക"
+      change_email: "Change email"
+      change_language: "ഭാഷ മാറ്റു"
+      change_password: "അടയാളവാക്ക് മാറ്റു"
+      character_minimum_expl: "കുറഞ്ഞത് ആറ് അക്ഷരങ്ങള്‍ വേണം"
+      close_account:
+        dont_go: "Hey, please don't go!"
+        if_you_want_this: "If you really want this, type in your password below and click 'Close Account'"
+        lock_username: "This will lock your username if you decided to sign back up."
+        locked_out: "You will get signed out and locked out of your account."
+        make_diaspora_better: "We want you to help us make Diaspora better, so you should help us out instead of leaving. If you do want to leave, we want you to know what happens next."
+        mr_wiggles: "Mr Wiggles will be sad to see you go"
+        no_turning_back: "Currently, there is no turning back."
+        what_we_delete: "We delete all of your posts, profile data, as soon as humanly possible. Your comments will hang around, but be associated with your Diaspora Handle."
+      close_account_text: "Close Account"
+      comment_on_post: "...താങ്കളുടെ പോസ്റ്റില്‍ ആരെങ്കിലും അഭിപ്രായമിടുമ്പോള്‍?"
+      current_password: "ഇപ്പോഴത്തെ അടയാളവാക്ക്"
+      current_password_expl: "താങ്കൾ സൈൻ ഇൻ ചെയ്യുന്ന ആ ഒരെണ്ണം."
+      download_photos: "എന്റെ ചിത്രങ്ങള്‍ ഇറക്കു"
+      download_xml: "എന്റെ എക്സ് എം എല്‍ ഇറക്കു"
+      edit_account: "അക്കൌണ്ട് തിരുത്തു"
+      email_awaiting_confirmation: "We have sent you an activation link to %{unconfirmed_email}. Until you follow this link and activate the new address, we will continue to use your original address %{email}."
+      export_data: "വിവരങ്ങള്‍ കയറ്റുമതി ചെയ്യു"
+      following: "Following Settings"
+      getting_started: "New User Prefrences"
+      liked: "...someone likes your post?"
+      mentioned: "...ഒരു കുറിപ്പില്‍ ആരെങ്കിലും സൂചിപ്പിക്കുമ്പോള്‍?"
+      new_password: "പുതിയ അടയാളവാക്ക്"
+      photo_export_unavailable: "Photo exporting currently unavailable"
+      private_message: "...ഒരു സ്വകാര്യ സന്ദേശം കിട്ടുമ്പോള്‍?"
+      receive_email_notifications: "ഇമെയില്‍ അറിയിപ്പുകള്‍ വേണോ?"
+      reshared: "...someone reshares your post?"
+      show_community_spotlight: "Show Community Spotlight in Stream?"
+      show_getting_started: "Re-enable Getting Started"
+      started_sharing: "...someone starts sharing with you?"
+      stream_preferences: "Stream Preferences"
+      your_email: "താങ്കളുടെ ഈമെയില്‍"
+      your_handle: "താങ്കളുടെ ഡയസ്പോറ ഐഡി"
+    getting_started:
+      awesome_take_me_to_diaspora: "Awesome! Take me to Diaspora*"
+      community_welcome: "Diaspora's community is happy to have you aboard!"
+      connect_to_facebook: "ഡയസ്പോറയിലേക്ക് %{link} വഴി ഞങ്ങൾക്ക് കാര്യങ്ങൾ കുറച്ചുകൂടി വേഗത്തിലാക്കാൻ പറ്റും. ഇങ്ങനെ ചെയ്യുന്നത് താങ്കളുടെ പേരും ചിത്രവും വലിച്ചെടുക്കുകയും, ക്രോസ് പോസ്റ്റിങ്ങ് സാധുവാക്കുകയും ചെയ്യും."
+      connect_to_facebook_link: "താങ്കളുടെ ഫേസ്ബുക്ക് അക്കൗണ്ട് ബന്ധിപ്പിക്കുക"
+      hashtag_explanation: "Hashtags allow you to talk about and follow your interests.  They're also a great way to find new people on Diaspora."
+      hashtag_suggestions: "Try following tags like #art, #movies, #gif, etc."
+      saved: "Saved!"
+      well_hello_there: "Well, hello there!"
+      what_are_you_in_to: "What are you into?"
+      who_are_you: "Who are you?"
+    privacy_settings:
+      ignored_users: "Ignored Users"
+      stop_ignoring: "Stop ignoring"
+      title: "Privacy Settings"
+    public:
+      does_not_exist: "%{username} ഉപയോക്താവ് നിലവിലില്ല!"
+    update:
+      email_notifications_changed: "ഇമെയില്‍ അറിയിപ്പുകള്‍ മാറ്റി"
+      follow_settings_changed: "Follow settings changed"
+      follow_settings_not_changed: "Follow settings change failed."
+      language_changed: "ഭാഷ മാറ്റി"
+      language_not_changed: "ഭാഷ മാറ്റാനാകുന്നില്ല"
+      password_changed: "Password changed.  You can now log in with your new password."
+      password_not_changed: "അടയാളവാക്ക് മാറ്റാനാകുന്നില്ല"
+      settings_not_updated: "Settings update failed"
+      settings_updated: "Settings updated"
+      unconfirmed_email_changed: "Email changed. Needs activation."
+      unconfirmed_email_not_changed: "Email change failed"
+  webfinger:
+    fetch_failed: "%{profile_url} -ന്റെ വെബ്ഫിംഗര്‍ പ്രൊഫൈല്‍ എടുക്കുന്നതില്‍ പരാജയം"
+    hcard_fetch_failed: "%{account} -ന്റെ hcard എടുക്കുന്നതിന് പ്രശ്നം ഉണ്ട്"
+    no_person_constructed: "ഒരു വ്യക്തിയ്ക്കും ഈ hcard ല്‍ നിന്ന്  നിര്‍മ്മിക്കാന്‍ കഴിയില്ല."
+    not_enabled: "%{account}-ന്റെ ഹോസ്റ്റില്‍ വെബ്ഫിംഗര്‍ സജ്ജമാക്കിയിട്ടില്ലെന്ന് തോന്നുന്നു."
+    xrd_fetch_failed: "അവിടെ %{account} അക്കൌണ്ടില്‍ നിന്നും  xrd കിട്ടുന്നതിന്  ഒരു തെറ്റുണ്ട്."
+  welcome: "സ്വാഗതം!"
+  will_paginate:
+    next_label: "next &raquo;"
+    previous_label: "&laquo; previous"

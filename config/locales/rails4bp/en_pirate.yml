@@ -1,0 +1,330 @@
+#   Copyright (c) 2010-2013, Diaspora Inc.  This file is
+#   licensed under the Affero General Public License version 3 or later.  See
+#   the COPYRIGHT file.
+
+
+
+en_pirate:
+  _contacts: "Mateys"
+  _home: "Home Port"
+  _photos: "Portraits"
+  activerecord:
+    errors:
+      models:
+        reshare:
+          attributes:
+            root_guid:
+              taken: "Ye've already reshared that post!"
+        user:
+          attributes:
+            username:
+              invalid: "is invalid. We only allow letters, numbers, 'n underscores"
+  all_aspects: "Yer Crews"
+  aspect_memberships:
+    destroy:
+      failure: "Blast! Failed to kick matey out yer crew"
+      no_membership: "Could nah find th' selected scallywag in that crew"
+      success: "Successfully scuttled scallywag from that crew"
+  aspects:
+    add_to_aspect:
+      failure: "Failed to add contact to crew."
+      success: "Successfully added contact to crew."
+    aspect_listings:
+      add_an_aspect: "+ Add a crew"
+    contacts_not_visible: "Contacts in this crew will nah be able to see each other."
+    contacts_visible: "Contacts in this crew will be able to see each other."
+    create:
+      failure: "Crew creation failed."
+      success: "Yer new crew %{name} was created"
+    edit:
+      aspect_list_is_not_visible: "Yer crew list is hidden to others in crew"
+      aspect_list_is_visible: "Yer crew list is visible to others in crew"
+      confirm_remove_aspect: "Are ye sure ye wants t' scuttle this crew?"
+      make_aspect_list_visible: "make crew list visible?"
+      remove_aspect: "Fire this crew"
+    few: "%{count} crews"
+    helper:
+      are_you_sure: "Are ye sure ye want t' scuttle this crew?"
+      aspect_not_empty: "Crew not empty"
+    index:
+      handle_explanation: "This is yer diaspora id. Like an email address, you can give this to scallywags to reach you."
+      help:
+        here_to_help: "Diaspora community is here to help!"
+      no_contacts: "No mateys"
+    many: "%{count} crews"
+    new:
+      name: "Name"
+    no_contacts_message:
+      try_adding_some_more_contacts: "You can search (top) or invite (right) more mateys."
+    one: "1 crew"
+    other: "%{count} crews"
+    seed:
+      acquaintances: "Landlubbers"
+      family: "Kin"
+      friends: "Mateys"
+      work: "Shipmates"
+  contacts:
+    few: "%{count} contacts"
+    index:
+      add_to_aspect: "Add more mateys to %{name}"
+      all_contacts: "All yer mateys"
+      my_contacts: "Me Mateys"
+      no_contacts: "No Mateys."
+      title: "Mateys"
+      your_contacts: "Yer Mateys"
+    many: "%{count} contacts"
+    one: "1 contact"
+    other: "%{count} contacts"
+    two: "%{count} contacts"
+    zero: "contacts"
+  conversations:
+    helper:
+      new_messages:
+        few: "%{count} new messages"
+        many: "%{count} new messages"
+        one: "1 new messages"
+        other: "%{count} new messages"
+        two: "%{count} new messages"
+        zero: "No new messages"
+  layouts:
+    application:
+      toggle: "toggl' mobile site"
+    header:
+      logout: "Abandon Ship"
+      profile: "Ye Ship"
+      settings: "Ye Ships Rigging"
+  likes:
+    likes:
+      people_dislike_this:
+        few: "%{count} dislikes"
+        many: "%{count} dislikes"
+        one: "%{count} dislike"
+        other: "%{count} dislikes"
+        two: "%{count} dislikes"
+        zero: "no dislikes"
+      people_like_this:
+        few: "%{count} likes"
+        many: "%{count} likes"
+        one: "%{count} like"
+        other: "%{count} likes"
+        two: "%{count} likes"
+        zero: "no likes"
+      people_like_this_comment:
+        few: "%{count} likes"
+        many: "%{count} likes"
+        one: "%{count} like"
+        other: "%{count} likes"
+        two: "%{count} likes"
+        zero: "no likes"
+  notifications:
+    also_commented:
+      few: "%{actors} also commented on %{post_author}'s %{post_link}."
+      many: "%{actors} also commented on %{post_author}'s %{post_link}."
+      one: "%{actors} also commented on %{post_author}'s %{post_link}."
+      other: "%{actors} also commented on %{post_author}'s %{post_link}."
+      two: "%{actors} also commented on %{post_author}'s %{post_link}."
+      zero: "%{actors} also commented on %{post_author}'s %{post_link}."
+    also_commented_deleted:
+      few: "%{actors} commented on a scuttled post."
+      many: "%{actors} commented on a scuttled post."
+      one: "%{actors} commented on a scuttled post."
+      other: "%{actors} commented on a scuttled post."
+      two: "%{actors} commented on a scuttled post."
+      zero: "%{actors} commented on a scuttled post."
+    comment_on_post:
+      few: "%{actors} commented on yer %{post_link}."
+      many: "%{actors} commented on yer %{post_link}."
+      one: "%{actors} commented on yer %{post_link}."
+      other: "%{actors} commented on yer %{post_link}."
+      two: "%{actors} commented on yer %{post_link}."
+      zero: "%{actors} commented on yer %{post_link}."
+    helper:
+      new_notifications:
+        few: "%{count} new notifications"
+        many: "%{count} new notifications"
+        one: "1 new notifications"
+        other: "%{count} new notifications"
+        two: "%{count} new notifications"
+        zero: "No new notifications"
+    index:
+      and_others:
+        few: "'n %{count} others"
+        many: "'n %{count} others"
+        one: "'n one more"
+        other: "'n %{count} others"
+        two: "'n %{count} others"
+        zero: "'n nobody else"
+    liked:
+      few: "%{actors} has just liked yer %{post_link}."
+      many: "%{actors} has just liked yer %{post_link}."
+      one: "%{actors} has just liked yer %{post_link}."
+      other: "%{actors} has just liked yer %{post_link}."
+      two: "%{actors} has just liked yer %{post_link}."
+      zero: "%{actors} has just liked yer %{post_link}."
+    liked_post_deleted:
+      few: "%{actors} liked yer scuttled post."
+      many: "%{actors} liked yer scuttled post."
+      one: "%{actors} liked yer scuttled post."
+      other: "%{actors} liked yer scuttled post."
+      two: "%{actors} liked yer scuttled post."
+      zero: "%{actors} liked yer scuttled post."
+    mentioned:
+      few: "%{actors} has mentioned you in a %{post_link}."
+      many: "%{actors} has mentioned you in a %{post_link}."
+      one: "%{actors} has mentioned you in a %{post_link}."
+      other: "%{actors} has mentioned you in a %{post_link}."
+      two: "%{actors} has mentioned you in a %{post_link}."
+      zero: "%{actors} has mentioned you in a %{post_link}."
+    mentioned_deleted:
+      few: "%{actors} mentioned you in a scuttled post."
+      many: "%{actors} mentioned you in a scuttled post."
+      one: "%{actors} mentioned you in a scuttled post."
+      other: "%{actors} mentioned you in a scuttled post."
+      two: "%{actors} mentioned you in a scuttled post."
+      zero: "%{actors} mentioned you in a scuttled post."
+    private_message:
+      few: "%{actors} sent you a message."
+      many: "%{actors} sent you a message."
+      one: "%{actors} sent you a message."
+      other: "%{actors} sent you a message."
+      two: "%{actors} sent you a message."
+      zero: "%{actors} sent you a message."
+    reshared:
+      few: "%{actors} has reshared yer %{post_link}."
+      many: "%{actors} has reshared yer %{post_link}."
+      one: "%{actors} has reshared yer %{post_link}."
+      other: "%{actors} has reshared yer %{post_link}."
+      two: "%{actors} has reshared yer %{post_link}."
+      zero: "%{actors} has reshared yer %{post_link}."
+    reshared_post_deleted:
+      few: "%{actors} reshared yer scuttled post."
+      many: "%{actors} reshared yer scuttled post."
+      one: "%{actors} reshared yer scuttled post."
+      other: "%{actors} reshared yer scuttled post."
+      two: "%{actors} reshared yer scuttled post."
+      zero: "%{actors} reshared yer scuttled post."
+    started_sharing:
+      few: "%{actors} started sharin' with ye."
+      many: "%{actors} started sharin' with ye."
+      one: "%{actors} started sharin' with ye."
+      other: "%{actors} started sharin' with ye."
+      two: "%{actors} started sharin' with ye."
+      zero: "%{actors} started sharin' with ye."
+  notifier:
+    confirm_email:
+      click_link: "To activate yer new email %{unconfirmed_email} in a bottle coordinates , please click 'tis link."
+    liked:
+      liked: "%{name} just liked yer post"
+    reshared:
+      reshared: "%{name} just reshared yer post"
+  people:
+    few: "%{count} people"
+    many: "%{count} people"
+    one: "1 person"
+    other: "%{count} people"
+    profile_sidebar:
+      born: "date o' birth"
+    two: "%{count} people"
+    zero: "no people"
+  photos:
+    new:
+      new_photo: "New Portrait"
+  posts:
+    show:
+      photos_by:
+        few: "%{count} photos by %{author}"
+        many: "%{count} photos by %{author}"
+        one: "One photo by %{author}"
+        other: "%{count} photos by %{author}"
+        two: "Two photos by %{author}"
+        zero: "No photos by %{author}"
+  profiles:
+    edit:
+      your_birthday: "Yer day o' birth"
+  reactions:
+    few: "%{count} reactions"
+    many: "%{count} reactions"
+    one: "1 reaction"
+    other: "%{count} reactions"
+    two: "%{count} reactions"
+    zero: "0 reactions"
+  registrations:
+    new:
+      create_my_account: "Create my account"
+      sign_up_message: "Social Networking with a <3"
+  requests:
+    helper:
+      new_requests:
+        few: "%{count} new requests!"
+        many: "%{count} new requests!"
+        one: "new request!"
+        other: "%{count} new requests!"
+        two: "%{count} new requests!"
+        zero: "no new requests"
+  reshares:
+    reshare:
+      reshare:
+        few: "%{count} reshares"
+        many: "%{count} reshares"
+        one: "1 reshare"
+        other: "%{count} reshares"
+        two: "%{count} reshares"
+        zero: "Reshare"
+  search: "Scour"
+  services:
+    inviter:
+      click_link_to_accept_invitation: "Click this link t' accept yer invitation"
+  shared:
+    aspect_dropdown:
+      add_to_aspect: "Add to aspect"
+      toggle:
+        few: "In %{count} aspects"
+        many: "In %{count} aspects"
+        one: "In %{count} aspect"
+        other: "In %{count} aspects"
+        two: "In %{count} aspects"
+        zero: "Add to aspect"
+    publisher:
+      new_user_prefill:
+        i_like: "I be interested in %{tags}."
+      share: "Fire!"
+      whats_on_your_mind: "What be botherin' you?"
+    stream_element:
+      hide_and_mute: "Hide and Mute"
+      shared_with: "Fired at: %{aspect_names}"
+  status_messages:
+    too_long:
+      few: "Ye scallywag, make yer status messages less than %{count} characters"
+      many: "Ye scallywag,make yer status messages less than %{count} characters"
+      one: "Ye scallywag, make yer status messages less than %{count} character"
+      other: "Ye scallywag, make yer status messages less than %{count} characters"
+      two: "Ye scallywag, make yer status messages less than %{count} characters"
+      zero: "Ye scallywag,make yer status messages less than %{count} characters"
+  stream_helper:
+    show_comments:
+      few: "Show %{count} more comments"
+      many: "Show %{count} more comments"
+      one: "Show one more comment"
+      other: "Show %{count} more comments"
+      two: "Show two more comments"
+      zero: "No more comments"
+  streams:
+    aspects:
+      title: "Yer Aspects"
+    mentions:
+      title: "Yer Mentions"
+    tags:
+      contacts_title: "scallywags who dig these tags"
+  tag_followings:
+    create:
+      failure: "Failed to follow: #%{name}"
+      success: "Successfully followin': #%{name}"
+    destroy:
+      failure: "Failed to stop followin': #%{name}"
+      success: "Successfully stopped followin': #%{name}"
+  users:
+    edit:
+      auto_follow_back: "Automatically follow back if someone follows ye"
+      close_account:
+        what_we_delete: "We scuttle all of yer posts, profile data, as soon as humanly possible. Yer comments will hang around, but be associated with yer Diaspora Handle."
+      your_handle: "Yer diaspora id"

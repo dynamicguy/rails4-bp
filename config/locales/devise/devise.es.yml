@@ -1,0 +1,122 @@
+#   Copyright (c) 2010-2013, Diaspora Inc.  This file is
+#   licensed under the Affero General Public License version 3 or later.  See
+#   the COPYRIGHT file.
+
+
+
+es:
+  devise:
+    confirmations:
+      confirmed: "Hemos confirmado tu cuenta correctamente. ¡Ya estás dentro!"
+      new:
+        resend_confirmation: "Reenviar las instrucciones de confirmación"
+      send_instructions: "Recibirás un correo con instrucciones para confirmar tu cuenta en unos minutos."
+    failure:
+      inactive: "Tu cuenta no se ha activado todavía."
+      invalid: "Nombre de usuario o contraseña incorrectos."
+      invalid_token: "Identificador de autenticación incorrecto."
+      locked: "Tu cuenta está bloqueada."
+      timeout: "Tu sesión ha expirado, por favor accede de nuevo para continuar."
+      unauthenticated: "Necesitas acceder a tu cuenta o registrarte antes de continuar."
+      unconfirmed: "Necesitas confirmar tu cuenta antes de continuar."
+    invitations:
+      invitation_token_invalid: "¡Discúlpanos! Ese identificador de invitación no es valido."
+      send_instructions: "Tu invitación se ha enviado."
+      updated: "Has establecido tu contraseña correctamente. ¡Ya estás dentro!"
+    mailer:
+      confirmation_instructions:
+        confirm: "Confirmar mi cuenta"
+        subject: "Instrucciones de confirmación"
+        you_can_confirm: "Puedes confirmar tu cuenta a través del siguiente enlace:"
+      hello: "¡Hola %{email}!"
+      invitation_instructions:
+        accept: "Aceptar invitación"
+        arrived: "La red social que has estado esperando ha llegado. Renovada, más segura y divertida, %{strong_diaspora} está lista para ayudarte a compartir y explorar la red de una forma totalmente nueva."
+        be_yourself: "Sé tú mism@"
+        be_yourself_paragraph: "Internet ha creado nuevas y únicas formas para expresarnos. %{strong_diaspora} deja que seas tú mismo y compartas como quieras, con o sin tu nombre real."
+        cubbies: "Cubbi.es"
+        displaying_correctly: "¿El correo electrónico no se visualiza correctamente? %{link}"
+        email_address: "questions@joindiaspora.com"
+        email_us: "Para consultas generales o soporte sobre tu cuenta Diaspora*, por favor escríbenos a %{email}."
+        finally: "Por fin - Está aquí"
+        friends_saying: "Lo que tus amigos están diciendo..."
+        get_connected: "Conéctate"
+        get_connected_paragraph: "Un movimiento internacional que comparte la visión de una red mejor, la principal característica de %{strong_diaspora} es su comunidad. Conoce gente nueva, conéctate con amigos, y únete a la diversión."
+        have_fun: "Diviértete"
+        have_fun_paragraph: "Con %{strong_diaspora} descubrirás información y gente nueva e interesante. %{link}, la primera aplicación de %{strong_diaspora} del mundo es sólo el principio. Colecciona y comparte la red en todo su esplendor."
+        help_fund: "ayuda a financiar Diaspora*"
+        here: "aquí"
+        ignore: "Si no quieres aceptar la invitación, ignora este email."
+        join_team: "Únete a nuestro equipo"
+        love: "Saludos,"
+        made_by_people: "%{strong_diaspora} está hecha por personas que aman Internet tanto como tú. ¡%{jointeam} o %{helpfund}!"
+        more_people: "¡Incluso hay más personas que están esperando verte!"
+        no_account_till: "Tu cuenta no será creada hasta que no accedas al enlace superior para registrarte."
+        or: "o"
+        sign_up_now: "Regístrate ahora →"
+        subject: "¡Has sido invitado a unirte a Diaspora*!"
+        team_diaspora: "Equipo Diaspora*"
+        unsubscribe: "Para anular tu suscripción haz clic en %{link}."
+        view_in: "Ver en el navegador."
+      inviter:
+        accept_at: "en %{url}, puedes aceptar en el enlace inferior."
+        has_invited_you: "%{name} te ha invitado a unirte a Diaspora"
+        have_invited_you: "%{names} te ha invitado a unirte a Diaspora*"
+      reset_password_instructions:
+        change: "Cambiar mi contraseña"
+        ignore: "Si no has solicitado esto, por favor ignora este mensaje."
+        someone_requested: "Alguien ha solicitado un enlace para cambiar tu contraseña, puedes cambiarla a través del siguiente enlace."
+        subject: "Instrucciones para cambiar tu contraseña"
+        wont_change: "Tu contraseña no cambiará hasta que accedas al enlace anterior y crees una nueva."
+      unlock_instructions:
+        account_locked: "Tu cuenta ha sido bloqueada debido a una excesiva cantidad de intentos de ingreso fallidos."
+        click_to_unlock: "Sigue el siguiente enlace para desbloquear tu cuenta:"
+        subject: "Instrucciones para desbloquear tu cuenta"
+        unlock: "Desbloquear mi cuenta"
+      welcome: "¡Bienvenid@ %{email}!"
+    passwords:
+      edit:
+        change_password: "Cambiar mi contraseña"
+      new:
+        forgot_password: "¿Has olvidado tu contraseña?"
+        no_account: "No existe una cuenta con ese correo. Si estás esperando una invitación, las haremos llegar tan pronto como nos sea posible."
+        send_password_instructions: "Envíame instrucciones para restablecer la contraseña"
+      send_instructions: "Recibirás un correo con instrucciones para cambiar tu contraseña en unos minutos."
+      updated: "Has modificado tu contraseña. ¡Ya estás dentro!"
+    registrations:
+      destroyed: "¡Adiós! Hemos cancelado tu cuenta. Esperamos volver a verte pronto."
+      signed_up: "Te has registrado con éxito. Si tu registro está activado, recibirás un mensaje de confirmación en tu correo electrónico."
+      updated: "Has actualizado tu cuenta con éxito."
+    sessions:
+      new:
+        alpha_software: "Estás a punto de utilizar software en versión alpha."
+        bugs_and_feedback: "Ten en cuenta que puedes encontrar errores. ¡Te animamos a que utilices el botón de Feedback situado a la derecha de tu navegador para informar de cualquier fallo! Trabajaremos tan rápido como nos sea posible para resolver cualquier problema que nos remitas."
+        bugs_and_feedback_mobile: "Ten en cuenta que puedes encontrar errores. ¡Te animamos a informar de cualquier fallo! Trabajaremos tan rápido como nos sea posible para resolver cualquier problema que nos remitas."
+        login: "Acceder"
+        modern_browsers: "Sólo es compatible con navegadores modernos."
+        password: "Contraseña"
+        remember_me: "Recordarme"
+        sign_in: "Acceder"
+        username: "Usuario"
+      signed_in: "Accediste con éxito. A navegar libre..."
+      signed_out: "Saliste con éxito. Hasta luego..."
+    shared:
+      links:
+        forgot_your_password: "¿Olvidaste tu contraseña?"
+        receive_confirmation: "¿No has recibido instrucciones de confirmación?"
+        receive_unlock: "¿No has recibido las instrucciones de desbloqueo?"
+        sign_in: "Acceder"
+        sign_up: "Regístrate"
+        sign_up_closed: "Los registros están cerrados temporalmente."
+      mail_signup_form:
+        sign_up_for_an_invite: "¡Regístrate para ser invitado!"
+    unlocks:
+      new:
+        resend_unlock: "Volver a enviar las instrucciones de desbloqueo."
+      send_instructions: "Recibirás un correo con instrucciones para desbloquear tu cuenta en pocos minutos."
+      unlocked: "Tu cuenta se ha desbloqueado. ¡Ya estás dentro!"
+  errors:
+    messages:
+      already_confirmed: "ya fue confirmada"
+      not_found: "no se ha encontrado"
+      not_locked: "no estaba bloqueada"

@@ -1,0 +1,135 @@
+#   Copyright (c) 2010-2013, Diaspora Inc.  This file is
+#   licensed under the Affero General Public License version 3 or later.  See
+#   the COPYRIGHT file.
+
+
+
+uk:
+  javascripts:
+    aspect_dropdown:
+      add_to_aspect: "Додати контакт"
+      all_aspects: "Усі аспекти"
+      error: "Неможливо почати ділитися з користувачем {{name}}. Можливо, ви його заблокували?"
+      select_aspects: "Вибрати аспекти"
+      started_sharing_with: "Ви почали ділитися з {{name}}!"
+      stopped_sharing_with: "Ви перестали ділитися з {{name}}."
+      toggle:
+        few: "У {{count}} аспектах"
+        many: "У {{count}} аспектах"
+        one: "У {{count}} аспектах"
+        other: "У {{count}} аспектах"
+        two: "У {{count}} аспектах"
+        zero: "Вибрати аспекти"
+    aspect_navigation:
+      deselect_all: "Зняти вибір з усіх"
+      no_aspects: "Аспект не вибраний"
+      select_all: "Вибрати всі"
+    comments:
+      hide: "приховати коментарі"
+      show: "Показати усі коментарі"
+    confirm_dialog: "Ви упевнені?"
+    delete: "Вилучити"
+    failed_to_like: "Не вдалося!"
+    failed_to_post_message: "Не вдалося надіслати повідомлення!"
+    getting_started:
+      alright_ill_wait: "Добре, я почекаю."
+      hey: "Привіт, {{name}}!"
+      no_tags: "Ви не стежите ні за однією міткою! Все одно продовжити?"
+      preparing_your_stream: "Підготовка вашого особистого потоку..."
+    header:
+      admin: "Керування"
+      close: "закрити"
+      contacts: "Контакти"
+      home: "На головну"
+      log_out: "Вийти"
+      mark_all_as_read: "Позначити все як прочитане"
+      messages: "Новини"
+      notifications: "Повідомлення"
+      profile: "Профіль"
+      recent_notifications: "Останнє повідомлення"
+      search: "Пошук людей чи #міток"
+      settings: "Налаштування"
+      view_all: "Показати все"
+    ignore: "Iгнорувати"
+    infinite_scroll:
+      no_more: "Повідомлень більше немає."
+    my_activity: "Моя активність"
+    my_stream: "Мій потік"
+    people:
+      not_found: "нікого не знайдено..."
+    photo_uploader:
+      looking_good: "Боже мій, ви виглядаєте приголомшливо!"
+    publisher:
+      at_least_one_aspect: "Вам потрібно створити мінімум один аспект"
+      limited: "Обмежена - ваш запис буде видимий тільки вказаним вами людям"
+      public: "Публічна - ваш запис буде видимий усім, зокрема пошуковим системам"
+    reshares:
+      duplicate: "Настільки круто, так? Ви вже поділилися цим записом!"
+      post: "Поширити допис <%= name %>?"
+    search_for: "Шукати {{name}}"
+    show_more: "показати більше"
+    stream:
+      comment: "Коментувати"
+      follow: "Слідкувати"
+      hide: "Приховати"
+      hide_nsfw_posts: "приховати NSFW повідомлення"
+      like: "Подобається"
+      likes:
+        few: "<%= count %> Likes"
+        many: "<%= count %> Likes"
+        one: "<%= count %> Like"
+        other: "<%= count %> Likes"
+        two: "<%= count %> Likes"
+        zero: "<%= count %> Likes"
+      limited: "Обмежений"
+      more_comments:
+        few: "Показати ще <%= count %> відгуків"
+        many: "Показати ще <%= count %> відгуків"
+        one: "Показати ще <%= count %> відгуків"
+        other: "Показати ще <%= count %> відгуків"
+        two: "Показати ще <%= count %> відгуків"
+        zero: "Показати ще <%= count %> відгуків"
+      original_post_deleted: "Початкове повідомлення було вилучено автором."
+      public: "Публічна"
+      reshare: "Поділитись"
+      reshares:
+        few: "<%= count %> поширень"
+        many: "<%= count %> поширень"
+        one: "<%= count %> поширень"
+        other: "<%= count %> поширень"
+        two: "<%= count %> поширень"
+        zero: "<%= count %> поширень"
+      show_nsfw_post: "Переглянути запис"
+      show_nsfw_posts: "Показати все"
+      unfollow: "Не слідкувати"
+      unlike: "Hе подобається"
+    tags:
+      wasnt_that_interesting: "Гаразд, мабуть, стежити за міткою #{{tagName}} було не так вже цікаво..."
+    timeago:
+      day: "день"
+      days: "%d днів[-я]"
+      hour: "біля години"
+      hours: "біля %d годин"
+      minute: "біля хвилини"
+      minutes: "%d хвилин[-и]"
+      month: "біля місяця"
+      months: "%d місяця[-ів]"
+      prefixAgo: ""
+      prefixFromNow: "через"
+      seconds: "декілька секунд"
+      suffixAgo: "тому"
+      suffixFromNow: "з цієї миті"
+      year: "біля року"
+      years: "%d років"
+    videos:
+      unknown: "Невідомий відеоформат"
+      watch: "Дивитися це відео на {{provider}}"
+    viewer:
+      comment: "Коментувати"
+      follow_post: "Слідкувати за записом"
+      home: "Домівка"
+      like: "Подобається"
+      reshare: "Поділитися"
+      reshared: "Поділилися"
+      stop_following_post: "Не слідкувати за записом"
+      unlike: "Не подобається"
