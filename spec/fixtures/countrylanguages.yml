@@ -1,0 +1,5905 @@
+---
+countrylanguages_001:
+  countrycode: abw
+  language: dutch
+  isofficial: 1
+  percentage: 5.0
+  slug: abw-dutch
+countrylanguages_002:
+  countrycode: abw
+  language: english
+  isofficial: 0
+  percentage: 10.0
+  slug: abw-english
+countrylanguages_003:
+  countrycode: abw
+  language: papiamento
+  isofficial: 0
+  percentage: 77.0
+  slug: abw-papiamento
+countrylanguages_004:
+  countrycode: abw
+  language: spanish
+  isofficial: 0
+  percentage: 7.0
+  slug: abw-spanish
+countrylanguages_005:
+  countrycode: afg
+  language: balochi
+  isofficial: 0
+  percentage: 1.0
+  slug: afg-balochi
+countrylanguages_006:
+  countrycode: afg
+  language: dari
+  isofficial: 1
+  percentage: 32.0
+  slug: afg-dari
+countrylanguages_007:
+  countrycode: afg
+  language: pashto
+  isofficial: 1
+  percentage: 52.0
+  slug: afg-pashto
+countrylanguages_008:
+  countrycode: afg
+  language: turkmenian
+  isofficial: 0
+  percentage: 2.0
+  slug: afg-turkmenian
+countrylanguages_009:
+  countrycode: afg
+  language: uzbek
+  isofficial: 0
+  percentage: 9.0
+  slug: afg-uzbek
+countrylanguages_010:
+  countrycode: ago
+  language: ambo
+  isofficial: 0
+  percentage: 2.0
+  slug: ago-ambo
+countrylanguages_011:
+  countrycode: ago
+  language: chokwe
+  isofficial: 0
+  percentage: 4.0
+  slug: ago-chokwe
+countrylanguages_012:
+  countrycode: ago
+  language: kongo
+  isofficial: 0
+  percentage: 13.0
+  slug: ago-kongo
+countrylanguages_013:
+  countrycode: ago
+  language: luchazi
+  isofficial: 0
+  percentage: 2.0
+  slug: ago-luchazi
+countrylanguages_014:
+  countrycode: ago
+  language: luimbe-nganguela
+  isofficial: 0
+  percentage: 5.0
+  slug: ago-luimbe-nganguela
+countrylanguages_015:
+  countrycode: ago
+  language: luvale
+  isofficial: 0
+  percentage: 4.0
+  slug: ago-luvale
+countrylanguages_016:
+  countrycode: ago
+  language: mbundu
+  isofficial: 0
+  percentage: 22.0
+  slug: ago-mbundu
+countrylanguages_017:
+  countrycode: ago
+  language: nyaneka-nkhumbi
+  isofficial: 0
+  percentage: 5.0
+  slug: ago-nyaneka-nkhumbi
+countrylanguages_018:
+  countrycode: ago
+  language: ovimbundu
+  isofficial: 0
+  percentage: 37.0
+  slug: ago-ovimbundu
+countrylanguages_019:
+  countrycode: aia
+  language: english
+  isofficial: 1
+  percentage: 0.0
+  slug: aia-english
+countrylanguages_020:
+  countrycode: alb
+  language: albaniana
+  isofficial: 1
+  percentage: 98.0
+  slug: alb-albaniana
+countrylanguages_021:
+  countrycode: alb
+  language: greek
+  isofficial: 0
+  percentage: 2.0
+  slug: alb-greek
+countrylanguages_022:
+  countrycode: alb
+  language: macedonian
+  isofficial: 0
+  percentage: 0.0
+  slug: alb-macedonian
+countrylanguages_023:
+  countrycode: and
+  language: catalan
+  isofficial: 1
+  percentage: 32.0
+  slug: and-catalan
+countrylanguages_024:
+  countrycode: and
+  language: french
+  isofficial: 0
+  percentage: 6.0
+  slug: and-french
+countrylanguages_025:
+  countrycode: and
+  language: portuguese
+  isofficial: 0
+  percentage: 11.0
+  slug: and-portuguese
+countrylanguages_026:
+  countrycode: and
+  language: spanish
+  isofficial: 0
+  percentage: 45.0
+  slug: and-spanish
+countrylanguages_027:
+  countrycode: ant
+  language: dutch
+  isofficial: 1
+  percentage: 0.0
+  slug: ant-dutch
+countrylanguages_028:
+  countrycode: ant
+  language: english
+  isofficial: 0
+  percentage: 8.0
+  slug: ant-english
+countrylanguages_029:
+  countrycode: ant
+  language: papiamento
+  isofficial: 1
+  percentage: 86.0
+  slug: ant-papiamento
+countrylanguages_030:
+  countrycode: are
+  language: arabic
+  isofficial: 1
+  percentage: 42.0
+  slug: are-arabic
+countrylanguages_031:
+  countrycode: are
+  language: hindi
+  isofficial: 0
+  percentage: 0.0
+  slug: are-hindi
+countrylanguages_032:
+  countrycode: arg
+  language: indian languages
+  isofficial: 0
+  percentage: 0.0
+  slug: arg-indian languages
+countrylanguages_033:
+  countrycode: arg
+  language: italian
+  isofficial: 0
+  percentage: 2.0
+  slug: arg-italian
+countrylanguages_034:
+  countrycode: arg
+  language: spanish
+  isofficial: 1
+  percentage: 97.0
+  slug: arg-spanish
+countrylanguages_035:
+  countrycode: arm
+  language: armenian
+  isofficial: 1
+  percentage: 93.0
+  slug: arm-armenian
+countrylanguages_036:
+  countrycode: arm
+  language: azerbaijani
+  isofficial: 0
+  percentage: 3.0
+  slug: arm-azerbaijani
+countrylanguages_037:
+  countrycode: asm
+  language: english
+  isofficial: 1
+  percentage: 3.0
+  slug: asm-english
+countrylanguages_038:
+  countrycode: asm
+  language: samoan
+  isofficial: 1
+  percentage: 91.0
+  slug: asm-samoan
+countrylanguages_039:
+  countrycode: asm
+  language: tongan
+  isofficial: 0
+  percentage: 3.0
+  slug: asm-tongan
+countrylanguages_040:
+  countrycode: atg
+  language: creole english
+  isofficial: 0
+  percentage: 96.0
+  slug: atg-creole english
+countrylanguages_041:
+  countrycode: atg
+  language: english
+  isofficial: 1
+  percentage: 0.0
+  slug: atg-english
+countrylanguages_042:
+  countrycode: aus
+  language: arabic
+  isofficial: 0
+  percentage: 1.0
+  slug: aus-arabic
+countrylanguages_043:
+  countrycode: aus
+  language: canton chinese
+  isofficial: 0
+  percentage: 1.0
+  slug: aus-canton chinese
+countrylanguages_044:
+  countrycode: aus
+  language: english
+  isofficial: 1
+  percentage: 81.0
+  slug: aus-english
+countrylanguages_045:
+  countrycode: aus
+  language: german
+  isofficial: 0
+  percentage: 1.0
+  slug: aus-german
+countrylanguages_046:
+  countrycode: aus
+  language: greek
+  isofficial: 0
+  percentage: 2.0
+  slug: aus-greek
+countrylanguages_047:
+  countrycode: aus
+  language: italian
+  isofficial: 0
+  percentage: 2.0
+  slug: aus-italian
+countrylanguages_048:
+  countrycode: aus
+  language: serbo-croatian
+  isofficial: 0
+  percentage: 1.0
+  slug: aus-serbo-croatian
+countrylanguages_049:
+  countrycode: aus
+  language: vietnamese
+  isofficial: 0
+  percentage: 1.0
+  slug: aus-vietnamese
+countrylanguages_050:
+  countrycode: aut
+  language: czech
+  isofficial: 0
+  percentage: 0.0
+  slug: aut-czech
+countrylanguages_051:
+  countrycode: aut
+  language: german
+  isofficial: 1
+  percentage: 92.0
+  slug: aut-german
+countrylanguages_052:
+  countrycode: aut
+  language: hungarian
+  isofficial: 0
+  percentage: 0.0
+  slug: aut-hungarian
+countrylanguages_053:
+  countrycode: aut
+  language: polish
+  isofficial: 0
+  percentage: 0.0
+  slug: aut-polish
+countrylanguages_054:
+  countrycode: aut
+  language: romanian
+  isofficial: 0
+  percentage: 0.0
+  slug: aut-romanian
+countrylanguages_055:
+  countrycode: aut
+  language: serbo-croatian
+  isofficial: 0
+  percentage: 2.0
+  slug: aut-serbo-croatian
+countrylanguages_056:
+  countrycode: aut
+  language: slovene
+  isofficial: 0
+  percentage: 0.0
+  slug: aut-slovene
+countrylanguages_057:
+  countrycode: aut
+  language: turkish
+  isofficial: 0
+  percentage: 2.0
+  slug: aut-turkish
+countrylanguages_058:
+  countrycode: aze
+  language: armenian
+  isofficial: 0
+  percentage: 2.0
+  slug: aze-armenian
+countrylanguages_059:
+  countrycode: aze
+  language: azerbaijani
+  isofficial: 1
+  percentage: 89.0
+  slug: aze-azerbaijani
+countrylanguages_060:
+  countrycode: aze
+  language: lezgian
+  isofficial: 0
+  percentage: 2.0
+  slug: aze-lezgian
+countrylanguages_061:
+  countrycode: aze
+  language: russian
+  isofficial: 0
+  percentage: 3.0
+  slug: aze-russian
+countrylanguages_062:
+  countrycode: bdi
+  language: french
+  isofficial: 1
+  percentage: 0.0
+  slug: bdi-french
+countrylanguages_063:
+  countrycode: bdi
+  language: kirundi
+  isofficial: 1
+  percentage: 98.0
+  slug: bdi-kirundi
+countrylanguages_064:
+  countrycode: bdi
+  language: swahili
+  isofficial: 0
+  percentage: 0.0
+  slug: bdi-swahili
+countrylanguages_065:
+  countrycode: bel
+  language: arabic
+  isofficial: 0
+  percentage: 2.0
+  slug: bel-arabic
+countrylanguages_066:
+  countrycode: bel
+  language: dutch
+  isofficial: 1
+  percentage: 59.0
+  slug: bel-dutch
+countrylanguages_067:
+  countrycode: bel
+  language: french
+  isofficial: 1
+  percentage: 33.0
+  slug: bel-french
+countrylanguages_068:
+  countrycode: bel
+  language: german
+  isofficial: 1
+  percentage: 1.0
+  slug: bel-german
+countrylanguages_069:
+  countrycode: bel
+  language: italian
+  isofficial: 0
+  percentage: 2.0
+  slug: bel-italian
+countrylanguages_070:
+  countrycode: bel
+  language: turkish
+  isofficial: 0
+  percentage: 1.0
+  slug: bel-turkish
+countrylanguages_071:
+  countrycode: ben
+  language: adja
+  isofficial: 0
+  percentage: 11.0
+  slug: ben-adja
+countrylanguages_072:
+  countrycode: ben
+  language: aizo
+  isofficial: 0
+  percentage: 9.0
+  slug: ben-aizo
+countrylanguages_073:
+  countrycode: ben
+  language: bariba
+  isofficial: 0
+  percentage: 9.0
+  slug: ben-bariba
+countrylanguages_074:
+  countrycode: ben
+  language: fon
+  isofficial: 0
+  percentage: 40.0
+  slug: ben-fon
+countrylanguages_075:
+  countrycode: ben
+  language: ful
+  isofficial: 0
+  percentage: 6.0
+  slug: ben-ful
+countrylanguages_076:
+  countrycode: ben
+  language: joruba
+  isofficial: 0
+  percentage: 12.0
+  slug: ben-joruba
+countrylanguages_077:
+  countrycode: ben
+  language: somba
+  isofficial: 0
+  percentage: 7.0
+  slug: ben-somba
+countrylanguages_078:
+  countrycode: bfa
+  language: busansi
+  isofficial: 0
+  percentage: 4.0
+  slug: bfa-busansi
+countrylanguages_079:
+  countrycode: bfa
+  language: dagara
+  isofficial: 0
+  percentage: 3.0
+  slug: bfa-dagara
+countrylanguages_080:
+  countrycode: bfa
+  language: dyula
+  isofficial: 0
+  percentage: 3.0
+  slug: bfa-dyula
+countrylanguages_081:
+  countrycode: bfa
+  language: ful
+  isofficial: 0
+  percentage: 10.0
+  slug: bfa-ful
+countrylanguages_082:
+  countrycode: bfa
+  language: gurma
+  isofficial: 0
+  percentage: 6.0
+  slug: bfa-gurma
+countrylanguages_083:
+  countrycode: bfa
+  language: mossi
+  isofficial: 0
+  percentage: 50.0
+  slug: bfa-mossi
+countrylanguages_084:
+  countrycode: bgd
+  language: bengali
+  isofficial: 1
+  percentage: 98.0
+  slug: bgd-bengali
+countrylanguages_085:
+  countrycode: bgd
+  language: chakma
+  isofficial: 0
+  percentage: 0.0
+  slug: bgd-chakma
+countrylanguages_086:
+  countrycode: bgd
+  language: garo
+  isofficial: 0
+  percentage: 0.0
+  slug: bgd-garo
+countrylanguages_087:
+  countrycode: bgd
+  language: khasi
+  isofficial: 0
+  percentage: 0.0
+  slug: bgd-khasi
+countrylanguages_088:
+  countrycode: bgd
+  language: marma
+  isofficial: 0
+  percentage: 0.0
+  slug: bgd-marma
+countrylanguages_089:
+  countrycode: bgd
+  language: santhali
+  isofficial: 0
+  percentage: 0.0
+  slug: bgd-santhali
+countrylanguages_090:
+  countrycode: bgd
+  language: tripuri
+  isofficial: 0
+  percentage: 0.0
+  slug: bgd-tripuri
+countrylanguages_091:
+  countrycode: bgr
+  language: bulgariana
+  isofficial: 1
+  percentage: 83.0
+  slug: bgr-bulgariana
+countrylanguages_092:
+  countrycode: bgr
+  language: macedonian
+  isofficial: 0
+  percentage: 3.0
+  slug: bgr-macedonian
+countrylanguages_093:
+  countrycode: bgr
+  language: romani
+  isofficial: 0
+  percentage: 4.0
+  slug: bgr-romani
+countrylanguages_094:
+  countrycode: bgr
+  language: turkish
+  isofficial: 0
+  percentage: 9.0
+  slug: bgr-turkish
+countrylanguages_095:
+  countrycode: bhr
+  language: arabic
+  isofficial: 1
+  percentage: 68.0
+  slug: bhr-arabic
+countrylanguages_096:
+  countrycode: bhr
+  language: english
+  isofficial: 0
+  percentage: 0.0
+  slug: bhr-english
+countrylanguages_097:
+  countrycode: bhs
+  language: creole english
+  isofficial: 0
+  percentage: 90.0
+  slug: bhs-creole english
+countrylanguages_098:
+  countrycode: bhs
+  language: creole french
+  isofficial: 0
+  percentage: 10.0
+  slug: bhs-creole french
+countrylanguages_099:
+  countrycode: bih
+  language: serbo-croatian
+  isofficial: 1
+  percentage: 99.0
+  slug: bih-serbo-croatian
+countrylanguages_100:
+  countrycode: blr
+  language: belorussian
+  isofficial: 1
+  percentage: 66.0
+  slug: blr-belorussian
+countrylanguages_101:
+  countrycode: blr
+  language: polish
+  isofficial: 0
+  percentage: 1.0
+  slug: blr-polish
+countrylanguages_102:
+  countrycode: blr
+  language: russian
+  isofficial: 1
+  percentage: 32.0
+  slug: blr-russian
+countrylanguages_103:
+  countrycode: blr
+  language: ukrainian
+  isofficial: 0
+  percentage: 1.0
+  slug: blr-ukrainian
+countrylanguages_104:
+  countrycode: blz
+  language: english
+  isofficial: 1
+  percentage: 51.0
+  slug: blz-english
+countrylanguages_105:
+  countrycode: blz
+  language: garifuna
+  isofficial: 0
+  percentage: 7.0
+  slug: blz-garifuna
+countrylanguages_106:
+  countrycode: blz
+  language: maya languages
+  isofficial: 0
+  percentage: 10.0
+  slug: blz-maya languages
+countrylanguages_107:
+  countrycode: blz
+  language: spanish
+  isofficial: 0
+  percentage: 32.0
+  slug: blz-spanish
+countrylanguages_108:
+  countrycode: bmu
+  language: english
+  isofficial: 1
+  percentage: 100.0
+  slug: bmu-english
+countrylanguages_109:
+  countrycode: bol
+  language: aimar·
+  isofficial: 1
+  percentage: 3.0
+  slug: bol-aimar·
+countrylanguages_110:
+  countrycode: bol
+  language: guaranì
+  isofficial: 0
+  percentage: 0.0
+  slug: bol-guaranì
+countrylanguages_111:
+  countrycode: bol
+  language: ketöua
+  isofficial: 1
+  percentage: 8.0
+  slug: bol-ketöua
+countrylanguages_112:
+  countrycode: bol
+  language: spanish
+  isofficial: 1
+  percentage: 88.0
+  slug: bol-spanish
+countrylanguages_113:
+  countrycode: bra
+  language: german
+  isofficial: 0
+  percentage: 1.0
+  slug: bra-german
+countrylanguages_114:
+  countrycode: bra
+  language: indian languages
+  isofficial: 0
+  percentage: 0.0
+  slug: bra-indian languages
+countrylanguages_115:
+  countrycode: bra
+  language: italian
+  isofficial: 0
+  percentage: 0.0
+  slug: bra-italian
+countrylanguages_116:
+  countrycode: bra
+  language: japanese
+  isofficial: 0
+  percentage: 0.0
+  slug: bra-japanese
+countrylanguages_117:
+  countrycode: bra
+  language: portuguese
+  isofficial: 1
+  percentage: 98.0
+  slug: bra-portuguese
+countrylanguages_118:
+  countrycode: brb
+  language: bajan
+  isofficial: 0
+  percentage: 95.0
+  slug: brb-bajan
+countrylanguages_119:
+  countrycode: brb
+  language: english
+  isofficial: 1
+  percentage: 0.0
+  slug: brb-english
+countrylanguages_120:
+  countrycode: brn
+  language: chinese
+  isofficial: 0
+  percentage: 9.0
+  slug: brn-chinese
+countrylanguages_121:
+  countrycode: brn
+  language: english
+  isofficial: 0
+  percentage: 3.0
+  slug: brn-english
+countrylanguages_122:
+  countrycode: brn
+  language: malay
+  isofficial: 1
+  percentage: 46.0
+  slug: brn-malay
+countrylanguages_123:
+  countrycode: brn
+  language: malay-english
+  isofficial: 0
+  percentage: 29.0
+  slug: brn-malay-english
+countrylanguages_124:
+  countrycode: btn
+  language: asami
+  isofficial: 0
+  percentage: 15.0
+  slug: btn-asami
+countrylanguages_125:
+  countrycode: btn
+  language: dzongkha
+  isofficial: 1
+  percentage: 50.0
+  slug: btn-dzongkha
+countrylanguages_126:
+  countrycode: btn
+  language: nepali
+  isofficial: 0
+  percentage: 35.0
+  slug: btn-nepali
+countrylanguages_127:
+  countrycode: bwa
+  language: khoekhoe
+  isofficial: 0
+  percentage: 3.0
+  slug: bwa-khoekhoe
+countrylanguages_128:
+  countrycode: bwa
+  language: ndebele
+  isofficial: 0
+  percentage: 1.0
+  slug: bwa-ndebele
+countrylanguages_129:
+  countrycode: bwa
+  language: san
+  isofficial: 0
+  percentage: 4.0
+  slug: bwa-san
+countrylanguages_130:
+  countrycode: bwa
+  language: shona
+  isofficial: 0
+  percentage: 12.0
+  slug: bwa-shona
+countrylanguages_131:
+  countrycode: bwa
+  language: tswana
+  isofficial: 0
+  percentage: 76.0
+  slug: bwa-tswana
+countrylanguages_132:
+  countrycode: caf
+  language: banda
+  isofficial: 0
+  percentage: 24.0
+  slug: caf-banda
+countrylanguages_133:
+  countrycode: caf
+  language: gbaya
+  isofficial: 0
+  percentage: 24.0
+  slug: caf-gbaya
+countrylanguages_134:
+  countrycode: caf
+  language: mandjia
+  isofficial: 0
+  percentage: 15.0
+  slug: caf-mandjia
+countrylanguages_135:
+  countrycode: caf
+  language: mbum
+  isofficial: 0
+  percentage: 6.0
+  slug: caf-mbum
+countrylanguages_136:
+  countrycode: caf
+  language: ngbaka
+  isofficial: 0
+  percentage: 8.0
+  slug: caf-ngbaka
+countrylanguages_137:
+  countrycode: caf
+  language: sara
+  isofficial: 0
+  percentage: 6.0
+  slug: caf-sara
+countrylanguages_138:
+  countrycode: can
+  language: chinese
+  isofficial: 0
+  percentage: 3.0
+  slug: can-chinese
+countrylanguages_139:
+  countrycode: can
+  language: dutch
+  isofficial: 0
+  percentage: 1.0
+  slug: can-dutch
+countrylanguages_140:
+  countrycode: can
+  language: english
+  isofficial: 1
+  percentage: 60.0
+  slug: can-english
+countrylanguages_141:
+  countrycode: can
+  language: eskimo languages
+  isofficial: 0
+  percentage: 0.0
+  slug: can-eskimo languages
+countrylanguages_142:
+  countrycode: can
+  language: french
+  isofficial: 1
+  percentage: 23.0
+  slug: can-french
+countrylanguages_143:
+  countrycode: can
+  language: german
+  isofficial: 0
+  percentage: 2.0
+  slug: can-german
+countrylanguages_144:
+  countrycode: can
+  language: italian
+  isofficial: 0
+  percentage: 2.0
+  slug: can-italian
+countrylanguages_145:
+  countrycode: can
+  language: polish
+  isofficial: 0
+  percentage: 1.0
+  slug: can-polish
+countrylanguages_146:
+  countrycode: can
+  language: portuguese
+  isofficial: 0
+  percentage: 1.0
+  slug: can-portuguese
+countrylanguages_147:
+  countrycode: can
+  language: punjabi
+  isofficial: 0
+  percentage: 1.0
+  slug: can-punjabi
+countrylanguages_148:
+  countrycode: can
+  language: spanish
+  isofficial: 0
+  percentage: 1.0
+  slug: can-spanish
+countrylanguages_149:
+  countrycode: can
+  language: ukrainian
+  isofficial: 0
+  percentage: 1.0
+  slug: can-ukrainian
+countrylanguages_150:
+  countrycode: cck
+  language: english
+  isofficial: 1
+  percentage: 0.0
+  slug: cck-english
+countrylanguages_151:
+  countrycode: cck
+  language: malay
+  isofficial: 0
+  percentage: 0.0
+  slug: cck-malay
+countrylanguages_152:
+  countrycode: che
+  language: french
+  isofficial: 1
+  percentage: 19.0
+  slug: che-french
+countrylanguages_153:
+  countrycode: che
+  language: german
+  isofficial: 1
+  percentage: 64.0
+  slug: che-german
+countrylanguages_154:
+  countrycode: che
+  language: italian
+  isofficial: 1
+  percentage: 8.0
+  slug: che-italian
+countrylanguages_155:
+  countrycode: che
+  language: romansh
+  isofficial: 1
+  percentage: 1.0
+  slug: che-romansh
+countrylanguages_156:
+  countrycode: chl
+  language: aimar·
+  isofficial: 0
+  percentage: 1.0
+  slug: chl-aimar·
+countrylanguages_157:
+  countrycode: chl
+  language: araucan
+  isofficial: 0
+  percentage: 10.0
+  slug: chl-araucan
+countrylanguages_158:
+  countrycode: chl
+  language: rapa nui
+  isofficial: 0
+  percentage: 0.0
+  slug: chl-rapa nui
+countrylanguages_159:
+  countrycode: chl
+  language: spanish
+  isofficial: 1
+  percentage: 90.0
+  slug: chl-spanish
+countrylanguages_160:
+  countrycode: chn
+  language: chinese
+  isofficial: 1
+  percentage: 92.0
+  slug: chn-chinese
+countrylanguages_161:
+  countrycode: chn
+  language: dong
+  isofficial: 0
+  percentage: 0.0
+  slug: chn-dong
+countrylanguages_162:
+  countrycode: chn
+  language: hui
+  isofficial: 0
+  percentage: 1.0
+  slug: chn-hui
+countrylanguages_163:
+  countrycode: chn
+  language: mantöu
+  isofficial: 0
+  percentage: 1.0
+  slug: chn-mantöu
+countrylanguages_164:
+  countrycode: chn
+  language: miao
+  isofficial: 0
+  percentage: 1.0
+  slug: chn-miao
+countrylanguages_165:
+  countrycode: chn
+  language: mongolian
+  isofficial: 0
+  percentage: 0.0
+  slug: chn-mongolian
+countrylanguages_166:
+  countrycode: chn
+  language: puyi
+  isofficial: 0
+  percentage: 0.0
+  slug: chn-puyi
+countrylanguages_167:
+  countrycode: chn
+  language: tibetan
+  isofficial: 0
+  percentage: 0.0
+  slug: chn-tibetan
+countrylanguages_168:
+  countrycode: chn
+  language: tujia
+  isofficial: 0
+  percentage: 1.0
+  slug: chn-tujia
+countrylanguages_169:
+  countrycode: chn
+  language: uighur
+  isofficial: 0
+  percentage: 1.0
+  slug: chn-uighur
+countrylanguages_170:
+  countrycode: chn
+  language: yi
+  isofficial: 0
+  percentage: 1.0
+  slug: chn-yi
+countrylanguages_171:
+  countrycode: chn
+  language: zhuang
+  isofficial: 0
+  percentage: 1.0
+  slug: chn-zhuang
+countrylanguages_172:
+  countrycode: civ
+  language: '[south]mande'
+  isofficial: 0
+  percentage: 8.0
+  slug: civ-[south]mande
+countrylanguages_173:
+  countrycode: civ
+  language: akan
+  isofficial: 0
+  percentage: 30.0
+  slug: civ-akan
+countrylanguages_174:
+  countrycode: civ
+  language: gur
+  isofficial: 0
+  percentage: 12.0
+  slug: civ-gur
+countrylanguages_175:
+  countrycode: civ
+  language: kru
+  isofficial: 0
+  percentage: 11.0
+  slug: civ-kru
+countrylanguages_176:
+  countrycode: civ
+  language: malinke
+  isofficial: 0
+  percentage: 11.0
+  slug: civ-malinke
+countrylanguages_177:
+  countrycode: cmr
+  language: bamileke-bamum
+  isofficial: 0
+  percentage: 19.0
+  slug: cmr-bamileke-bamum
+countrylanguages_178:
+  countrycode: cmr
+  language: duala
+  isofficial: 0
+  percentage: 11.0
+  slug: cmr-duala
+countrylanguages_179:
+  countrycode: cmr
+  language: fang
+  isofficial: 0
+  percentage: 20.0
+  slug: cmr-fang
+countrylanguages_180:
+  countrycode: cmr
+  language: ful
+  isofficial: 0
+  percentage: 10.0
+  slug: cmr-ful
+countrylanguages_181:
+  countrycode: cmr
+  language: maka
+  isofficial: 0
+  percentage: 5.0
+  slug: cmr-maka
+countrylanguages_182:
+  countrycode: cmr
+  language: mandara
+  isofficial: 0
+  percentage: 6.0
+  slug: cmr-mandara
+countrylanguages_183:
+  countrycode: cmr
+  language: masana
+  isofficial: 0
+  percentage: 4.0
+  slug: cmr-masana
+countrylanguages_184:
+  countrycode: cmr
+  language: tikar
+  isofficial: 0
+  percentage: 7.0
+  slug: cmr-tikar
+countrylanguages_185:
+  countrycode: cod
+  language: boa
+  isofficial: 0
+  percentage: 2.0
+  slug: cod-boa
+countrylanguages_186:
+  countrycode: cod
+  language: chokwe
+  isofficial: 0
+  percentage: 2.0
+  slug: cod-chokwe
+countrylanguages_187:
+  countrycode: cod
+  language: kongo
+  isofficial: 0
+  percentage: 16.0
+  slug: cod-kongo
+countrylanguages_188:
+  countrycode: cod
+  language: luba
+  isofficial: 0
+  percentage: 18.0
+  slug: cod-luba
+countrylanguages_189:
+  countrycode: cod
+  language: mongo
+  isofficial: 0
+  percentage: 14.0
+  slug: cod-mongo
+countrylanguages_190:
+  countrycode: cod
+  language: ngala and bangi
+  isofficial: 0
+  percentage: 6.0
+  slug: cod-ngala and bangi
+countrylanguages_191:
+  countrycode: cod
+  language: rundi
+  isofficial: 0
+  percentage: 4.0
+  slug: cod-rundi
+countrylanguages_192:
+  countrycode: cod
+  language: rwanda
+  isofficial: 0
+  percentage: 10.0
+  slug: cod-rwanda
+countrylanguages_193:
+  countrycode: cod
+  language: teke
+  isofficial: 0
+  percentage: 3.0
+  slug: cod-teke
+countrylanguages_194:
+  countrycode: cod
+  language: zande
+  isofficial: 0
+  percentage: 6.0
+  slug: cod-zande
+countrylanguages_195:
+  countrycode: cog
+  language: kongo
+  isofficial: 0
+  percentage: 52.0
+  slug: cog-kongo
+countrylanguages_196:
+  countrycode: cog
+  language: mbete
+  isofficial: 0
+  percentage: 5.0
+  slug: cog-mbete
+countrylanguages_197:
+  countrycode: cog
+  language: mboshi
+  isofficial: 0
+  percentage: 11.0
+  slug: cog-mboshi
+countrylanguages_198:
+  countrycode: cog
+  language: punu
+  isofficial: 0
+  percentage: 3.0
+  slug: cog-punu
+countrylanguages_199:
+  countrycode: cog
+  language: sango
+  isofficial: 0
+  percentage: 3.0
+  slug: cog-sango
+countrylanguages_200:
+  countrycode: cog
+  language: teke
+  isofficial: 0
+  percentage: 17.0
+  slug: cog-teke
+countrylanguages_201:
+  countrycode: cok
+  language: english
+  isofficial: 0
+  percentage: 0.0
+  slug: cok-english
+countrylanguages_202:
+  countrycode: cok
+  language: maori
+  isofficial: 1
+  percentage: 0.0
+  slug: cok-maori
+countrylanguages_203:
+  countrycode: col
+  language: arawakan
+  isofficial: 0
+  percentage: 0.0
+  slug: col-arawakan
+countrylanguages_204:
+  countrycode: col
+  language: caribbean
+  isofficial: 0
+  percentage: 0.0
+  slug: col-caribbean
+countrylanguages_205:
+  countrycode: col
+  language: chibcha
+  isofficial: 0
+  percentage: 0.0
+  slug: col-chibcha
+countrylanguages_206:
+  countrycode: col
+  language: creole english
+  isofficial: 0
+  percentage: 0.0
+  slug: col-creole english
+countrylanguages_207:
+  countrycode: col
+  language: spanish
+  isofficial: 1
+  percentage: 99.0
+  slug: col-spanish
+countrylanguages_208:
+  countrycode: com
+  language: comorian
+  isofficial: 1
+  percentage: 75.0
+  slug: com-comorian
+countrylanguages_209:
+  countrycode: com
+  language: comorian-arabic
+  isofficial: 0
+  percentage: 2.0
+  slug: com-comorian-arabic
+countrylanguages_210:
+  countrycode: com
+  language: comorian-french
+  isofficial: 0
+  percentage: 13.0
+  slug: com-comorian-french
+countrylanguages_211:
+  countrycode: com
+  language: comorian-madagassi
+  isofficial: 0
+  percentage: 6.0
+  slug: com-comorian-madagassi
+countrylanguages_212:
+  countrycode: com
+  language: comorian-swahili
+  isofficial: 0
+  percentage: 1.0
+  slug: com-comorian-swahili
+countrylanguages_213:
+  countrycode: cpv
+  language: crioulo
+  isofficial: 0
+  percentage: 100.0
+  slug: cpv-crioulo
+countrylanguages_214:
+  countrycode: cpv
+  language: portuguese
+  isofficial: 1
+  percentage: 0.0
+  slug: cpv-portuguese
+countrylanguages_215:
+  countrycode: cri
+  language: chibcha
+  isofficial: 0
+  percentage: 0.0
+  slug: cri-chibcha
+countrylanguages_216:
+  countrycode: cri
+  language: chinese
+  isofficial: 0
+  percentage: 0.0
+  slug: cri-chinese
+countrylanguages_217:
+  countrycode: cri
+  language: creole english
+  isofficial: 0
+  percentage: 2.0
+  slug: cri-creole english
+countrylanguages_218:
+  countrycode: cri
+  language: spanish
+  isofficial: 1
+  percentage: 98.0
+  slug: cri-spanish
+countrylanguages_219:
+  countrycode: cub
+  language: spanish
+  isofficial: 1
+  percentage: 100.0
+  slug: cub-spanish
+countrylanguages_220:
+  countrycode: cxr
+  language: chinese
+  isofficial: 0
+  percentage: 0.0
+  slug: cxr-chinese
+countrylanguages_221:
+  countrycode: cxr
+  language: english
+  isofficial: 1
+  percentage: 0.0
+  slug: cxr-english
+countrylanguages_222:
+  countrycode: cym
+  language: english
+  isofficial: 1
+  percentage: 0.0
+  slug: cym-english
+countrylanguages_223:
+  countrycode: cyp
+  language: greek
+  isofficial: 1
+  percentage: 74.0
+  slug: cyp-greek
+countrylanguages_224:
+  countrycode: cyp
+  language: turkish
+  isofficial: 1
+  percentage: 22.0
+  slug: cyp-turkish
+countrylanguages_225:
+  countrycode: cze
+  language: czech
+  isofficial: 1
+  percentage: 81.0
+  slug: cze-czech
+countrylanguages_226:
+  countrycode: cze
+  language: german
+  isofficial: 0
+  percentage: 1.0
+  slug: cze-german
+countrylanguages_227:
+  countrycode: cze
+  language: hungarian
+  isofficial: 0
+  percentage: 0.0
+  slug: cze-hungarian
+countrylanguages_228:
+  countrycode: cze
+  language: moravian
+  isofficial: 0
+  percentage: 13.0
+  slug: cze-moravian
+countrylanguages_229:
+  countrycode: cze
+  language: polish
+  isofficial: 0
+  percentage: 1.0
+  slug: cze-polish
+countrylanguages_230:
+  countrycode: cze
+  language: romani
+  isofficial: 0
+  percentage: 0.0
+  slug: cze-romani
+countrylanguages_231:
+  countrycode: cze
+  language: silesiana
+  isofficial: 0
+  percentage: 0.0
+  slug: cze-silesiana
+countrylanguages_232:
+  countrycode: cze
+  language: slovak
+  isofficial: 0
+  percentage: 3.0
+  slug: cze-slovak
+countrylanguages_233:
+  countrycode: deu
+  language: german
+  isofficial: 1
+  percentage: 91.0
+  slug: deu-german
+countrylanguages_234:
+  countrycode: deu
+  language: greek
+  isofficial: 0
+  percentage: 0.0
+  slug: deu-greek
+countrylanguages_235:
+  countrycode: deu
+  language: italian
+  isofficial: 0
+  percentage: 1.0
+  slug: deu-italian
+countrylanguages_236:
+  countrycode: deu
+  language: polish
+  isofficial: 0
+  percentage: 0.0
+  slug: deu-polish
+countrylanguages_237:
+  countrycode: deu
+  language: southern slavic languages
+  isofficial: 0
+  percentage: 1.0
+  slug: deu-southern slavic languages
+countrylanguages_238:
+  countrycode: deu
+  language: turkish
+  isofficial: 0
+  percentage: 3.0
+  slug: deu-turkish
+countrylanguages_239:
+  countrycode: dji
+  language: afar
+  isofficial: 0
+  percentage: 35.0
+  slug: dji-afar
+countrylanguages_240:
+  countrycode: dji
+  language: arabic
+  isofficial: 1
+  percentage: 11.0
+  slug: dji-arabic
+countrylanguages_241:
+  countrycode: dji
+  language: somali
+  isofficial: 0
+  percentage: 44.0
+  slug: dji-somali
+countrylanguages_242:
+  countrycode: dma
+  language: creole english
+  isofficial: 0
+  percentage: 100.0
+  slug: dma-creole english
+countrylanguages_243:
+  countrycode: dma
+  language: creole french
+  isofficial: 0
+  percentage: 0.0
+  slug: dma-creole french
+countrylanguages_244:
+  countrycode: dnk
+  language: arabic
+  isofficial: 0
+  percentage: 1.0
+  slug: dnk-arabic
+countrylanguages_245:
+  countrycode: dnk
+  language: danish
+  isofficial: 1
+  percentage: 94.0
+  slug: dnk-danish
+countrylanguages_246:
+  countrycode: dnk
+  language: english
+  isofficial: 0
+  percentage: 0.0
+  slug: dnk-english
+countrylanguages_247:
+  countrycode: dnk
+  language: german
+  isofficial: 0
+  percentage: 1.0
+  slug: dnk-german
+countrylanguages_248:
+  countrycode: dnk
+  language: norwegian
+  isofficial: 0
+  percentage: 0.0
+  slug: dnk-norwegian
+countrylanguages_249:
+  countrycode: dnk
+  language: swedish
+  isofficial: 0
+  percentage: 0.0
+  slug: dnk-swedish
+countrylanguages_250:
+  countrycode: dnk
+  language: turkish
+  isofficial: 0
+  percentage: 1.0
+  slug: dnk-turkish
+countrylanguages_251:
+  countrycode: dom
+  language: creole french
+  isofficial: 0
+  percentage: 2.0
+  slug: dom-creole french
+countrylanguages_252:
+  countrycode: dom
+  language: spanish
+  isofficial: 1
+  percentage: 98.0
+  slug: dom-spanish
+countrylanguages_253:
+  countrycode: dza
+  language: arabic
+  isofficial: 1
+  percentage: 86.0
+  slug: dza-arabic
+countrylanguages_254:
+  countrycode: dza
+  language: berberi
+  isofficial: 0
+  percentage: 14.0
+  slug: dza-berberi
+countrylanguages_255:
+  countrycode: ecu
+  language: ketöua
+  isofficial: 0
+  percentage: 7.0
+  slug: ecu-ketöua
+countrylanguages_256:
+  countrycode: ecu
+  language: spanish
+  isofficial: 1
+  percentage: 93.0
+  slug: ecu-spanish
+countrylanguages_257:
+  countrycode: egy
+  language: arabic
+  isofficial: 1
+  percentage: 99.0
+  slug: egy-arabic
+countrylanguages_258:
+  countrycode: egy
+  language: sinaberberi
+  isofficial: 0
+  percentage: 0.0
+  slug: egy-sinaberberi
+countrylanguages_259:
+  countrycode: eri
+  language: afar
+  isofficial: 0
+  percentage: 4.0
+  slug: eri-afar
+countrylanguages_260:
+  countrycode: eri
+  language: bilin
+  isofficial: 0
+  percentage: 3.0
+  slug: eri-bilin
+countrylanguages_261:
+  countrycode: eri
+  language: hadareb
+  isofficial: 0
+  percentage: 4.0
+  slug: eri-hadareb
+countrylanguages_262:
+  countrycode: eri
+  language: saho
+  isofficial: 0
+  percentage: 3.0
+  slug: eri-saho
+countrylanguages_263:
+  countrycode: eri
+  language: tigre
+  isofficial: 0
+  percentage: 32.0
+  slug: eri-tigre
+countrylanguages_264:
+  countrycode: eri
+  language: tigrinja
+  isofficial: 1
+  percentage: 49.0
+  slug: eri-tigrinja
+countrylanguages_265:
+  countrycode: esh
+  language: arabic
+  isofficial: 1
+  percentage: 100.0
+  slug: esh-arabic
+countrylanguages_266:
+  countrycode: esp
+  language: basque
+  isofficial: 0
+  percentage: 2.0
+  slug: esp-basque
+countrylanguages_267:
+  countrycode: esp
+  language: catalan
+  isofficial: 0
+  percentage: 17.0
+  slug: esp-catalan
+countrylanguages_268:
+  countrycode: esp
+  language: galecian
+  isofficial: 0
+  percentage: 6.0
+  slug: esp-galecian
+countrylanguages_269:
+  countrycode: esp
+  language: spanish
+  isofficial: 1
+  percentage: 74.0
+  slug: esp-spanish
+countrylanguages_270:
+  countrycode: est
+  language: belorussian
+  isofficial: 0
+  percentage: 1.0
+  slug: est-belorussian
+countrylanguages_271:
+  countrycode: est
+  language: estonian
+  isofficial: 1
+  percentage: 65.0
+  slug: est-estonian
+countrylanguages_272:
+  countrycode: est
+  language: finnish
+  isofficial: 0
+  percentage: 1.0
+  slug: est-finnish
+countrylanguages_273:
+  countrycode: est
+  language: russian
+  isofficial: 0
+  percentage: 28.0
+  slug: est-russian
+countrylanguages_274:
+  countrycode: est
+  language: ukrainian
+  isofficial: 0
+  percentage: 3.0
+  slug: est-ukrainian
+countrylanguages_275:
+  countrycode: eth
+  language: amhara
+  isofficial: 0
+  percentage: 30.0
+  slug: eth-amhara
+countrylanguages_276:
+  countrycode: eth
+  language: gurage
+  isofficial: 0
+  percentage: 5.0
+  slug: eth-gurage
+countrylanguages_277:
+  countrycode: eth
+  language: oromo
+  isofficial: 0
+  percentage: 31.0
+  slug: eth-oromo
+countrylanguages_278:
+  countrycode: eth
+  language: sidamo
+  isofficial: 0
+  percentage: 3.0
+  slug: eth-sidamo
+countrylanguages_279:
+  countrycode: eth
+  language: somali
+  isofficial: 0
+  percentage: 4.0
+  slug: eth-somali
+countrylanguages_280:
+  countrycode: eth
+  language: tigrinja
+  isofficial: 0
+  percentage: 7.0
+  slug: eth-tigrinja
+countrylanguages_281:
+  countrycode: eth
+  language: walaita
+  isofficial: 0
+  percentage: 3.0
+  slug: eth-walaita
+countrylanguages_282:
+  countrycode: fin
+  language: estonian
+  isofficial: 0
+  percentage: 0.0
+  slug: fin-estonian
+countrylanguages_283:
+  countrycode: fin
+  language: finnish
+  isofficial: 1
+  percentage: 93.0
+  slug: fin-finnish
+countrylanguages_284:
+  countrycode: fin
+  language: russian
+  isofficial: 0
+  percentage: 0.0
+  slug: fin-russian
+countrylanguages_285:
+  countrycode: fin
+  language: saame
+  isofficial: 0
+  percentage: 0.0
+  slug: fin-saame
+countrylanguages_286:
+  countrycode: fin
+  language: swedish
+  isofficial: 1
+  percentage: 6.0
+  slug: fin-swedish
+countrylanguages_287:
+  countrycode: fji
+  language: fijian
+  isofficial: 1
+  percentage: 51.0
+  slug: fji-fijian
+countrylanguages_288:
+  countrycode: fji
+  language: hindi
+  isofficial: 0
+  percentage: 44.0
+  slug: fji-hindi
+countrylanguages_289:
+  countrycode: flk
+  language: english
+  isofficial: 1
+  percentage: 0.0
+  slug: flk-english
+countrylanguages_290:
+  countrycode: fra
+  language: arabic
+  isofficial: 0
+  percentage: 3.0
+  slug: fra-arabic
+countrylanguages_291:
+  countrycode: fra
+  language: french
+  isofficial: 1
+  percentage: 94.0
+  slug: fra-french
+countrylanguages_292:
+  countrycode: fra
+  language: italian
+  isofficial: 0
+  percentage: 0.0
+  slug: fra-italian
+countrylanguages_293:
+  countrycode: fra
+  language: portuguese
+  isofficial: 0
+  percentage: 1.0
+  slug: fra-portuguese
+countrylanguages_294:
+  countrycode: fra
+  language: spanish
+  isofficial: 0
+  percentage: 0.0
+  slug: fra-spanish
+countrylanguages_295:
+  countrycode: fra
+  language: turkish
+  isofficial: 0
+  percentage: 0.0
+  slug: fra-turkish
+countrylanguages_296:
+  countrycode: fro
+  language: danish
+  isofficial: 1
+  percentage: 0.0
+  slug: fro-danish
+countrylanguages_297:
+  countrycode: fro
+  language: faroese
+  isofficial: 1
+  percentage: 100.0
+  slug: fro-faroese
+countrylanguages_298:
+  countrycode: fsm
+  language: kosrean
+  isofficial: 0
+  percentage: 7.0
+  slug: fsm-kosrean
+countrylanguages_299:
+  countrycode: fsm
+  language: mortlock
+  isofficial: 0
+  percentage: 8.0
+  slug: fsm-mortlock
+countrylanguages_300:
+  countrycode: fsm
+  language: pohnpei
+  isofficial: 0
+  percentage: 24.0
+  slug: fsm-pohnpei
+countrylanguages_301:
+  countrycode: fsm
+  language: trukese
+  isofficial: 0
+  percentage: 42.0
+  slug: fsm-trukese
+countrylanguages_302:
+  countrycode: fsm
+  language: wolea
+  isofficial: 0
+  percentage: 4.0
+  slug: fsm-wolea
+countrylanguages_303:
+  countrycode: fsm
+  language: yap
+  isofficial: 0
+  percentage: 6.0
+  slug: fsm-yap
+countrylanguages_304:
+  countrycode: gab
+  language: fang
+  isofficial: 0
+  percentage: 36.0
+  slug: gab-fang
+countrylanguages_305:
+  countrycode: gab
+  language: mbete
+  isofficial: 0
+  percentage: 14.0
+  slug: gab-mbete
+countrylanguages_306:
+  countrycode: gab
+  language: mpongwe
+  isofficial: 0
+  percentage: 15.0
+  slug: gab-mpongwe
+countrylanguages_307:
+  countrycode: gab
+  language: punu-sira-nzebi
+  isofficial: 0
+  percentage: 17.0
+  slug: gab-punu-sira-nzebi
+countrylanguages_308:
+  countrycode: gbr
+  language: english
+  isofficial: 1
+  percentage: 97.0
+  slug: gbr-english
+countrylanguages_309:
+  countrycode: gbr
+  language: gaeli
+  isofficial: 0
+  percentage: 0.0
+  slug: gbr-gaeli
+countrylanguages_310:
+  countrycode: gbr
+  language: kymri
+  isofficial: 0
+  percentage: 1.0
+  slug: gbr-kymri
+countrylanguages_311:
+  countrycode: geo
+  language: abhyasi
+  isofficial: 0
+  percentage: 2.0
+  slug: geo-abhyasi
+countrylanguages_312:
+  countrycode: geo
+  language: armenian
+  isofficial: 0
+  percentage: 7.0
+  slug: geo-armenian
+countrylanguages_313:
+  countrycode: geo
+  language: azerbaijani
+  isofficial: 0
+  percentage: 6.0
+  slug: geo-azerbaijani
+countrylanguages_314:
+  countrycode: geo
+  language: georgiana
+  isofficial: 1
+  percentage: 72.0
+  slug: geo-georgiana
+countrylanguages_315:
+  countrycode: geo
+  language: osseetti
+  isofficial: 0
+  percentage: 2.0
+  slug: geo-osseetti
+countrylanguages_316:
+  countrycode: geo
+  language: russian
+  isofficial: 0
+  percentage: 9.0
+  slug: geo-russian
+countrylanguages_317:
+  countrycode: gha
+  language: akan
+  isofficial: 0
+  percentage: 52.0
+  slug: gha-akan
+countrylanguages_318:
+  countrycode: gha
+  language: ewe
+  isofficial: 0
+  percentage: 12.0
+  slug: gha-ewe
+countrylanguages_319:
+  countrycode: gha
+  language: ga-adangme
+  isofficial: 0
+  percentage: 8.0
+  slug: gha-ga-adangme
+countrylanguages_320:
+  countrycode: gha
+  language: gurma
+  isofficial: 0
+  percentage: 3.0
+  slug: gha-gurma
+countrylanguages_321:
+  countrycode: gha
+  language: joruba
+  isofficial: 0
+  percentage: 1.0
+  slug: gha-joruba
+countrylanguages_322:
+  countrycode: gha
+  language: mossi
+  isofficial: 0
+  percentage: 16.0
+  slug: gha-mossi
+countrylanguages_323:
+  countrycode: gib
+  language: arabic
+  isofficial: 0
+  percentage: 7.0
+  slug: gib-arabic
+countrylanguages_324:
+  countrycode: gib
+  language: english
+  isofficial: 1
+  percentage: 89.0
+  slug: gib-english
+countrylanguages_325:
+  countrycode: gin
+  language: ful
+  isofficial: 0
+  percentage: 39.0
+  slug: gin-ful
+countrylanguages_326:
+  countrycode: gin
+  language: kissi
+  isofficial: 0
+  percentage: 6.0
+  slug: gin-kissi
+countrylanguages_327:
+  countrycode: gin
+  language: kpelle
+  isofficial: 0
+  percentage: 5.0
+  slug: gin-kpelle
+countrylanguages_328:
+  countrycode: gin
+  language: loma
+  isofficial: 0
+  percentage: 2.0
+  slug: gin-loma
+countrylanguages_329:
+  countrycode: gin
+  language: malinke
+  isofficial: 0
+  percentage: 23.0
+  slug: gin-malinke
+countrylanguages_330:
+  countrycode: gin
+  language: susu
+  isofficial: 0
+  percentage: 11.0
+  slug: gin-susu
+countrylanguages_331:
+  countrycode: gin
+  language: yalunka
+  isofficial: 0
+  percentage: 3.0
+  slug: gin-yalunka
+countrylanguages_332:
+  countrycode: glp
+  language: creole french
+  isofficial: 0
+  percentage: 95.0
+  slug: glp-creole french
+countrylanguages_333:
+  countrycode: glp
+  language: french
+  isofficial: 1
+  percentage: 0.0
+  slug: glp-french
+countrylanguages_334:
+  countrycode: gmb
+  language: diola
+  isofficial: 0
+  percentage: 9.0
+  slug: gmb-diola
+countrylanguages_335:
+  countrycode: gmb
+  language: ful
+  isofficial: 0
+  percentage: 16.0
+  slug: gmb-ful
+countrylanguages_336:
+  countrycode: gmb
+  language: malinke
+  isofficial: 0
+  percentage: 34.0
+  slug: gmb-malinke
+countrylanguages_337:
+  countrycode: gmb
+  language: soninke
+  isofficial: 0
+  percentage: 8.0
+  slug: gmb-soninke
+countrylanguages_338:
+  countrycode: gmb
+  language: wolof
+  isofficial: 0
+  percentage: 13.0
+  slug: gmb-wolof
+countrylanguages_339:
+  countrycode: gnb
+  language: balante
+  isofficial: 0
+  percentage: 15.0
+  slug: gnb-balante
+countrylanguages_340:
+  countrycode: gnb
+  language: crioulo
+  isofficial: 0
+  percentage: 36.0
+  slug: gnb-crioulo
+countrylanguages_341:
+  countrycode: gnb
+  language: ful
+  isofficial: 0
+  percentage: 17.0
+  slug: gnb-ful
+countrylanguages_342:
+  countrycode: gnb
+  language: malinke
+  isofficial: 0
+  percentage: 7.0
+  slug: gnb-malinke
+countrylanguages_343:
+  countrycode: gnb
+  language: mandyako
+  isofficial: 0
+  percentage: 5.0
+  slug: gnb-mandyako
+countrylanguages_344:
+  countrycode: gnb
+  language: portuguese
+  isofficial: 1
+  percentage: 8.0
+  slug: gnb-portuguese
+countrylanguages_345:
+  countrycode: gnq
+  language: bubi
+  isofficial: 0
+  percentage: 9.0
+  slug: gnq-bubi
+countrylanguages_346:
+  countrycode: gnq
+  language: fang
+  isofficial: 0
+  percentage: 85.0
+  slug: gnq-fang
+countrylanguages_347:
+  countrycode: grc
+  language: greek
+  isofficial: 1
+  percentage: 99.0
+  slug: grc-greek
+countrylanguages_348:
+  countrycode: grc
+  language: turkish
+  isofficial: 0
+  percentage: 1.0
+  slug: grc-turkish
+countrylanguages_349:
+  countrycode: grd
+  language: creole english
+  isofficial: 0
+  percentage: 100.0
+  slug: grd-creole english
+countrylanguages_350:
+  countrycode: grl
+  language: danish
+  isofficial: 1
+  percentage: 13.0
+  slug: grl-danish
+countrylanguages_351:
+  countrycode: grl
+  language: greenlandic
+  isofficial: 1
+  percentage: 88.0
+  slug: grl-greenlandic
+countrylanguages_352:
+  countrycode: gtm
+  language: cakchiquel
+  isofficial: 0
+  percentage: 9.0
+  slug: gtm-cakchiquel
+countrylanguages_353:
+  countrycode: gtm
+  language: kekchì
+  isofficial: 0
+  percentage: 5.0
+  slug: gtm-kekchì
+countrylanguages_354:
+  countrycode: gtm
+  language: mam
+  isofficial: 0
+  percentage: 3.0
+  slug: gtm-mam
+countrylanguages_355:
+  countrycode: gtm
+  language: quichè
+  isofficial: 0
+  percentage: 10.0
+  slug: gtm-quichè
+countrylanguages_356:
+  countrycode: gtm
+  language: spanish
+  isofficial: 1
+  percentage: 65.0
+  slug: gtm-spanish
+countrylanguages_357:
+  countrycode: guf
+  language: creole french
+  isofficial: 0
+  percentage: 94.0
+  slug: guf-creole french
+countrylanguages_358:
+  countrycode: guf
+  language: indian languages
+  isofficial: 0
+  percentage: 2.0
+  slug: guf-indian languages
+countrylanguages_359:
+  countrycode: gum
+  language: chamorro
+  isofficial: 1
+  percentage: 30.0
+  slug: gum-chamorro
+countrylanguages_360:
+  countrycode: gum
+  language: english
+  isofficial: 1
+  percentage: 38.0
+  slug: gum-english
+countrylanguages_361:
+  countrycode: gum
+  language: japanese
+  isofficial: 0
+  percentage: 2.0
+  slug: gum-japanese
+countrylanguages_362:
+  countrycode: gum
+  language: korean
+  isofficial: 0
+  percentage: 3.0
+  slug: gum-korean
+countrylanguages_363:
+  countrycode: gum
+  language: philippene languages
+  isofficial: 0
+  percentage: 20.0
+  slug: gum-philippene languages
+countrylanguages_364:
+  countrycode: guy
+  language: arawakan
+  isofficial: 0
+  percentage: 1.0
+  slug: guy-arawakan
+countrylanguages_365:
+  countrycode: guy
+  language: caribbean
+  isofficial: 0
+  percentage: 2.0
+  slug: guy-caribbean
+countrylanguages_366:
+  countrycode: guy
+  language: creole english
+  isofficial: 0
+  percentage: 96.0
+  slug: guy-creole english
+countrylanguages_367:
+  countrycode: hkg
+  language: canton chinese
+  isofficial: 0
+  percentage: 89.0
+  slug: hkg-canton chinese
+countrylanguages_368:
+  countrycode: hkg
+  language: chiu chau
+  isofficial: 0
+  percentage: 1.0
+  slug: hkg-chiu chau
+countrylanguages_369:
+  countrycode: hkg
+  language: english
+  isofficial: 1
+  percentage: 2.0
+  slug: hkg-english
+countrylanguages_370:
+  countrycode: hkg
+  language: fukien
+  isofficial: 0
+  percentage: 2.0
+  slug: hkg-fukien
+countrylanguages_371:
+  countrycode: hkg
+  language: hakka
+  isofficial: 0
+  percentage: 2.0
+  slug: hkg-hakka
+countrylanguages_372:
+  countrycode: hnd
+  language: creole english
+  isofficial: 0
+  percentage: 0.0
+  slug: hnd-creole english
+countrylanguages_373:
+  countrycode: hnd
+  language: garifuna
+  isofficial: 0
+  percentage: 1.0
+  slug: hnd-garifuna
+countrylanguages_374:
+  countrycode: hnd
+  language: miskito
+  isofficial: 0
+  percentage: 0.0
+  slug: hnd-miskito
+countrylanguages_375:
+  countrycode: hnd
+  language: spanish
+  isofficial: 1
+  percentage: 97.0
+  slug: hnd-spanish
+countrylanguages_376:
+  countrycode: hrv
+  language: serbo-croatian
+  isofficial: 1
+  percentage: 96.0
+  slug: hrv-serbo-croatian
+countrylanguages_377:
+  countrycode: hrv
+  language: slovene
+  isofficial: 0
+  percentage: 0.0
+  slug: hrv-slovene
+countrylanguages_378:
+  countrycode: hti
+  language: french
+  isofficial: 1
+  percentage: 0.0
+  slug: hti-french
+countrylanguages_379:
+  countrycode: hti
+  language: haiti creole
+  isofficial: 0
+  percentage: 100.0
+  slug: hti-haiti creole
+countrylanguages_380:
+  countrycode: hun
+  language: german
+  isofficial: 0
+  percentage: 0.0
+  slug: hun-german
+countrylanguages_381:
+  countrycode: hun
+  language: hungarian
+  isofficial: 1
+  percentage: 99.0
+  slug: hun-hungarian
+countrylanguages_382:
+  countrycode: hun
+  language: romani
+  isofficial: 0
+  percentage: 1.0
+  slug: hun-romani
+countrylanguages_383:
+  countrycode: hun
+  language: romanian
+  isofficial: 0
+  percentage: 0.0
+  slug: hun-romanian
+countrylanguages_384:
+  countrycode: hun
+  language: serbo-croatian
+  isofficial: 0
+  percentage: 0.0
+  slug: hun-serbo-croatian
+countrylanguages_385:
+  countrycode: hun
+  language: slovak
+  isofficial: 0
+  percentage: 0.0
+  slug: hun-slovak
+countrylanguages_386:
+  countrycode: idn
+  language: bali
+  isofficial: 0
+  percentage: 2.0
+  slug: idn-bali
+countrylanguages_387:
+  countrycode: idn
+  language: banja
+  isofficial: 0
+  percentage: 2.0
+  slug: idn-banja
+countrylanguages_388:
+  countrycode: idn
+  language: batakki
+  isofficial: 0
+  percentage: 2.0
+  slug: idn-batakki
+countrylanguages_389:
+  countrycode: idn
+  language: bugi
+  isofficial: 0
+  percentage: 2.0
+  slug: idn-bugi
+countrylanguages_390:
+  countrycode: idn
+  language: javanese
+  isofficial: 0
+  percentage: 39.0
+  slug: idn-javanese
+countrylanguages_391:
+  countrycode: idn
+  language: madura
+  isofficial: 0
+  percentage: 4.0
+  slug: idn-madura
+countrylanguages_392:
+  countrycode: idn
+  language: malay
+  isofficial: 1
+  percentage: 12.0
+  slug: idn-malay
+countrylanguages_393:
+  countrycode: idn
+  language: minangkabau
+  isofficial: 0
+  percentage: 2.0
+  slug: idn-minangkabau
+countrylanguages_394:
+  countrycode: idn
+  language: sunda
+  isofficial: 0
+  percentage: 16.0
+  slug: idn-sunda
+countrylanguages_395:
+  countrycode: ind
+  language: asami
+  isofficial: 0
+  percentage: 2.0
+  slug: ind-asami
+countrylanguages_396:
+  countrycode: ind
+  language: bengali
+  isofficial: 0
+  percentage: 8.0
+  slug: ind-bengali
+countrylanguages_397:
+  countrycode: ind
+  language: gujarati
+  isofficial: 0
+  percentage: 5.0
+  slug: ind-gujarati
+countrylanguages_398:
+  countrycode: ind
+  language: hindi
+  isofficial: 1
+  percentage: 40.0
+  slug: ind-hindi
+countrylanguages_399:
+  countrycode: ind
+  language: kannada
+  isofficial: 0
+  percentage: 4.0
+  slug: ind-kannada
+countrylanguages_400:
+  countrycode: ind
+  language: malajalam
+  isofficial: 0
+  percentage: 4.0
+  slug: ind-malajalam
+countrylanguages_401:
+  countrycode: ind
+  language: marathi
+  isofficial: 0
+  percentage: 7.0
+  slug: ind-marathi
+countrylanguages_402:
+  countrycode: ind
+  language: orija
+  isofficial: 0
+  percentage: 3.0
+  slug: ind-orija
+countrylanguages_403:
+  countrycode: ind
+  language: punjabi
+  isofficial: 0
+  percentage: 3.0
+  slug: ind-punjabi
+countrylanguages_404:
+  countrycode: ind
+  language: tamil
+  isofficial: 0
+  percentage: 6.0
+  slug: ind-tamil
+countrylanguages_405:
+  countrycode: ind
+  language: telugu
+  isofficial: 0
+  percentage: 8.0
+  slug: ind-telugu
+countrylanguages_406:
+  countrycode: ind
+  language: urdu
+  isofficial: 0
+  percentage: 5.0
+  slug: ind-urdu
+countrylanguages_407:
+  countrycode: irl
+  language: english
+  isofficial: 1
+  percentage: 98.0
+  slug: irl-english
+countrylanguages_408:
+  countrycode: irl
+  language: irish
+  isofficial: 1
+  percentage: 2.0
+  slug: irl-irish
+countrylanguages_409:
+  countrycode: irn
+  language: arabic
+  isofficial: 0
+  percentage: 2.0
+  slug: irn-arabic
+countrylanguages_410:
+  countrycode: irn
+  language: azerbaijani
+  isofficial: 0
+  percentage: 17.0
+  slug: irn-azerbaijani
+countrylanguages_411:
+  countrycode: irn
+  language: bakhtyari
+  isofficial: 0
+  percentage: 2.0
+  slug: irn-bakhtyari
+countrylanguages_412:
+  countrycode: irn
+  language: balochi
+  isofficial: 0
+  percentage: 2.0
+  slug: irn-balochi
+countrylanguages_413:
+  countrycode: irn
+  language: gilaki
+  isofficial: 0
+  percentage: 5.0
+  slug: irn-gilaki
+countrylanguages_414:
+  countrycode: irn
+  language: kurdish
+  isofficial: 0
+  percentage: 9.0
+  slug: irn-kurdish
+countrylanguages_415:
+  countrycode: irn
+  language: luri
+  isofficial: 0
+  percentage: 4.0
+  slug: irn-luri
+countrylanguages_416:
+  countrycode: irn
+  language: mazandarani
+  isofficial: 0
+  percentage: 4.0
+  slug: irn-mazandarani
+countrylanguages_417:
+  countrycode: irn
+  language: persian
+  isofficial: 1
+  percentage: 46.0
+  slug: irn-persian
+countrylanguages_418:
+  countrycode: irn
+  language: turkmenian
+  isofficial: 0
+  percentage: 2.0
+  slug: irn-turkmenian
+countrylanguages_419:
+  countrycode: irq
+  language: arabic
+  isofficial: 1
+  percentage: 77.0
+  slug: irq-arabic
+countrylanguages_420:
+  countrycode: irq
+  language: assyrian
+  isofficial: 0
+  percentage: 1.0
+  slug: irq-assyrian
+countrylanguages_421:
+  countrycode: irq
+  language: azerbaijani
+  isofficial: 0
+  percentage: 2.0
+  slug: irq-azerbaijani
+countrylanguages_422:
+  countrycode: irq
+  language: kurdish
+  isofficial: 0
+  percentage: 19.0
+  slug: irq-kurdish
+countrylanguages_423:
+  countrycode: irq
+  language: persian
+  isofficial: 0
+  percentage: 1.0
+  slug: irq-persian
+countrylanguages_424:
+  countrycode: isl
+  language: english
+  isofficial: 0
+  percentage: 0.0
+  slug: isl-english
+countrylanguages_425:
+  countrycode: isl
+  language: icelandic
+  isofficial: 1
+  percentage: 96.0
+  slug: isl-icelandic
+countrylanguages_426:
+  countrycode: isr
+  language: arabic
+  isofficial: 1
+  percentage: 18.0
+  slug: isr-arabic
+countrylanguages_427:
+  countrycode: isr
+  language: hebrew
+  isofficial: 1
+  percentage: 63.0
+  slug: isr-hebrew
+countrylanguages_428:
+  countrycode: isr
+  language: russian
+  isofficial: 0
+  percentage: 9.0
+  slug: isr-russian
+countrylanguages_429:
+  countrycode: ita
+  language: albaniana
+  isofficial: 0
+  percentage: 0.0
+  slug: ita-albaniana
+countrylanguages_430:
+  countrycode: ita
+  language: french
+  isofficial: 0
+  percentage: 1.0
+  slug: ita-french
+countrylanguages_431:
+  countrycode: ita
+  language: friuli
+  isofficial: 0
+  percentage: 1.0
+  slug: ita-friuli
+countrylanguages_432:
+  countrycode: ita
+  language: german
+  isofficial: 0
+  percentage: 1.0
+  slug: ita-german
+countrylanguages_433:
+  countrycode: ita
+  language: italian
+  isofficial: 1
+  percentage: 94.0
+  slug: ita-italian
+countrylanguages_434:
+  countrycode: ita
+  language: romani
+  isofficial: 0
+  percentage: 0.0
+  slug: ita-romani
+countrylanguages_435:
+  countrycode: ita
+  language: sardinian
+  isofficial: 0
+  percentage: 3.0
+  slug: ita-sardinian
+countrylanguages_436:
+  countrycode: ita
+  language: slovene
+  isofficial: 0
+  percentage: 0.0
+  slug: ita-slovene
+countrylanguages_437:
+  countrycode: jam
+  language: creole english
+  isofficial: 0
+  percentage: 94.0
+  slug: jam-creole english
+countrylanguages_438:
+  countrycode: jam
+  language: hindi
+  isofficial: 0
+  percentage: 2.0
+  slug: jam-hindi
+countrylanguages_439:
+  countrycode: jor
+  language: arabic
+  isofficial: 1
+  percentage: 98.0
+  slug: jor-arabic
+countrylanguages_440:
+  countrycode: jor
+  language: armenian
+  isofficial: 0
+  percentage: 1.0
+  slug: jor-armenian
+countrylanguages_441:
+  countrycode: jor
+  language: circassian
+  isofficial: 0
+  percentage: 1.0
+  slug: jor-circassian
+countrylanguages_442:
+  countrycode: jpn
+  language: ainu
+  isofficial: 0
+  percentage: 0.0
+  slug: jpn-ainu
+countrylanguages_443:
+  countrycode: jpn
+  language: chinese
+  isofficial: 0
+  percentage: 0.0
+  slug: jpn-chinese
+countrylanguages_444:
+  countrycode: jpn
+  language: english
+  isofficial: 0
+  percentage: 0.0
+  slug: jpn-english
+countrylanguages_445:
+  countrycode: jpn
+  language: japanese
+  isofficial: 1
+  percentage: 99.0
+  slug: jpn-japanese
+countrylanguages_446:
+  countrycode: jpn
+  language: korean
+  isofficial: 0
+  percentage: 1.0
+  slug: jpn-korean
+countrylanguages_447:
+  countrycode: jpn
+  language: philippene languages
+  isofficial: 0
+  percentage: 0.0
+  slug: jpn-philippene languages
+countrylanguages_448:
+  countrycode: kaz
+  language: german
+  isofficial: 0
+  percentage: 3.0
+  slug: kaz-german
+countrylanguages_449:
+  countrycode: kaz
+  language: kazakh
+  isofficial: 1
+  percentage: 46.0
+  slug: kaz-kazakh
+countrylanguages_450:
+  countrycode: kaz
+  language: russian
+  isofficial: 0
+  percentage: 35.0
+  slug: kaz-russian
+countrylanguages_451:
+  countrycode: kaz
+  language: tatar
+  isofficial: 0
+  percentage: 2.0
+  slug: kaz-tatar
+countrylanguages_452:
+  countrycode: kaz
+  language: ukrainian
+  isofficial: 0
+  percentage: 5.0
+  slug: kaz-ukrainian
+countrylanguages_453:
+  countrycode: kaz
+  language: uzbek
+  isofficial: 0
+  percentage: 2.0
+  slug: kaz-uzbek
+countrylanguages_454:
+  countrycode: ken
+  language: gusii
+  isofficial: 0
+  percentage: 6.0
+  slug: ken-gusii
+countrylanguages_455:
+  countrycode: ken
+  language: kalenjin
+  isofficial: 0
+  percentage: 11.0
+  slug: ken-kalenjin
+countrylanguages_456:
+  countrycode: ken
+  language: kamba
+  isofficial: 0
+  percentage: 11.0
+  slug: ken-kamba
+countrylanguages_457:
+  countrycode: ken
+  language: kikuyu
+  isofficial: 0
+  percentage: 21.0
+  slug: ken-kikuyu
+countrylanguages_458:
+  countrycode: ken
+  language: luhya
+  isofficial: 0
+  percentage: 14.0
+  slug: ken-luhya
+countrylanguages_459:
+  countrycode: ken
+  language: luo
+  isofficial: 0
+  percentage: 13.0
+  slug: ken-luo
+countrylanguages_460:
+  countrycode: ken
+  language: masai
+  isofficial: 0
+  percentage: 2.0
+  slug: ken-masai
+countrylanguages_461:
+  countrycode: ken
+  language: meru
+  isofficial: 0
+  percentage: 6.0
+  slug: ken-meru
+countrylanguages_462:
+  countrycode: ken
+  language: nyika
+  isofficial: 0
+  percentage: 5.0
+  slug: ken-nyika
+countrylanguages_463:
+  countrycode: ken
+  language: turkana
+  isofficial: 0
+  percentage: 1.0
+  slug: ken-turkana
+countrylanguages_464:
+  countrycode: kgz
+  language: kazakh
+  isofficial: 0
+  percentage: 1.0
+  slug: kgz-kazakh
+countrylanguages_465:
+  countrycode: kgz
+  language: kirgiz
+  isofficial: 1
+  percentage: 60.0
+  slug: kgz-kirgiz
+countrylanguages_466:
+  countrycode: kgz
+  language: russian
+  isofficial: 1
+  percentage: 16.0
+  slug: kgz-russian
+countrylanguages_467:
+  countrycode: kgz
+  language: tadzhik
+  isofficial: 0
+  percentage: 1.0
+  slug: kgz-tadzhik
+countrylanguages_468:
+  countrycode: kgz
+  language: tatar
+  isofficial: 0
+  percentage: 1.0
+  slug: kgz-tatar
+countrylanguages_469:
+  countrycode: kgz
+  language: ukrainian
+  isofficial: 0
+  percentage: 2.0
+  slug: kgz-ukrainian
+countrylanguages_470:
+  countrycode: kgz
+  language: uzbek
+  isofficial: 0
+  percentage: 14.0
+  slug: kgz-uzbek
+countrylanguages_471:
+  countrycode: khm
+  language: chinese
+  isofficial: 0
+  percentage: 3.0
+  slug: khm-chinese
+countrylanguages_472:
+  countrycode: khm
+  language: khmer
+  isofficial: 1
+  percentage: 89.0
+  slug: khm-khmer
+countrylanguages_473:
+  countrycode: khm
+  language: töam
+  isofficial: 0
+  percentage: 2.0
+  slug: khm-töam
+countrylanguages_474:
+  countrycode: khm
+  language: vietnamese
+  isofficial: 0
+  percentage: 6.0
+  slug: khm-vietnamese
+countrylanguages_475:
+  countrycode: kir
+  language: kiribati
+  isofficial: 1
+  percentage: 99.0
+  slug: kir-kiribati
+countrylanguages_476:
+  countrycode: kir
+  language: tuvalu
+  isofficial: 0
+  percentage: 1.0
+  slug: kir-tuvalu
+countrylanguages_477:
+  countrycode: kna
+  language: creole english
+  isofficial: 0
+  percentage: 100.0
+  slug: kna-creole english
+countrylanguages_478:
+  countrycode: kna
+  language: english
+  isofficial: 1
+  percentage: 0.0
+  slug: kna-english
+countrylanguages_479:
+  countrycode: kor
+  language: chinese
+  isofficial: 0
+  percentage: 0.0
+  slug: kor-chinese
+countrylanguages_480:
+  countrycode: kor
+  language: korean
+  isofficial: 1
+  percentage: 100.0
+  slug: kor-korean
+countrylanguages_481:
+  countrycode: kwt
+  language: arabic
+  isofficial: 1
+  percentage: 78.0
+  slug: kwt-arabic
+countrylanguages_482:
+  countrycode: kwt
+  language: english
+  isofficial: 0
+  percentage: 0.0
+  slug: kwt-english
+countrylanguages_483:
+  countrycode: lao
+  language: lao
+  isofficial: 1
+  percentage: 67.0
+  slug: lao-lao
+countrylanguages_484:
+  countrycode: lao
+  language: lao-soung
+  isofficial: 0
+  percentage: 5.0
+  slug: lao-lao-soung
+countrylanguages_485:
+  countrycode: lao
+  language: mon-khmer
+  isofficial: 0
+  percentage: 17.0
+  slug: lao-mon-khmer
+countrylanguages_486:
+  countrycode: lao
+  language: thai
+  isofficial: 0
+  percentage: 8.0
+  slug: lao-thai
+countrylanguages_487:
+  countrycode: lbn
+  language: arabic
+  isofficial: 1
+  percentage: 93.0
+  slug: lbn-arabic
+countrylanguages_488:
+  countrycode: lbn
+  language: armenian
+  isofficial: 0
+  percentage: 6.0
+  slug: lbn-armenian
+countrylanguages_489:
+  countrycode: lbn
+  language: french
+  isofficial: 0
+  percentage: 0.0
+  slug: lbn-french
+countrylanguages_490:
+  countrycode: lbr
+  language: bassa
+  isofficial: 0
+  percentage: 14.0
+  slug: lbr-bassa
+countrylanguages_491:
+  countrycode: lbr
+  language: gio
+  isofficial: 0
+  percentage: 8.0
+  slug: lbr-gio
+countrylanguages_492:
+  countrycode: lbr
+  language: grebo
+  isofficial: 0
+  percentage: 9.0
+  slug: lbr-grebo
+countrylanguages_493:
+  countrycode: lbr
+  language: kpelle
+  isofficial: 0
+  percentage: 20.0
+  slug: lbr-kpelle
+countrylanguages_494:
+  countrycode: lbr
+  language: kru
+  isofficial: 0
+  percentage: 7.0
+  slug: lbr-kru
+countrylanguages_495:
+  countrycode: lbr
+  language: loma
+  isofficial: 0
+  percentage: 6.0
+  slug: lbr-loma
+countrylanguages_496:
+  countrycode: lbr
+  language: malinke
+  isofficial: 0
+  percentage: 5.0
+  slug: lbr-malinke
+countrylanguages_497:
+  countrycode: lbr
+  language: mano
+  isofficial: 0
+  percentage: 7.0
+  slug: lbr-mano
+countrylanguages_498:
+  countrycode: lby
+  language: arabic
+  isofficial: 1
+  percentage: 96.0
+  slug: lby-arabic
+countrylanguages_499:
+  countrycode: lby
+  language: berberi
+  isofficial: 0
+  percentage: 1.0
+  slug: lby-berberi
+countrylanguages_500:
+  countrycode: lca
+  language: creole french
+  isofficial: 0
+  percentage: 80.0
+  slug: lca-creole french
+countrylanguages_501:
+  countrycode: lca
+  language: english
+  isofficial: 1
+  percentage: 20.0
+  slug: lca-english
+countrylanguages_502:
+  countrycode: lie
+  language: german
+  isofficial: 1
+  percentage: 89.0
+  slug: lie-german
+countrylanguages_503:
+  countrycode: lie
+  language: italian
+  isofficial: 0
+  percentage: 3.0
+  slug: lie-italian
+countrylanguages_504:
+  countrycode: lie
+  language: turkish
+  isofficial: 0
+  percentage: 3.0
+  slug: lie-turkish
+countrylanguages_505:
+  countrycode: lka
+  language: mixed languages
+  isofficial: 0
+  percentage: 20.0
+  slug: lka-mixed languages
+countrylanguages_506:
+  countrycode: lka
+  language: singali
+  isofficial: 1
+  percentage: 60.0
+  slug: lka-singali
+countrylanguages_507:
+  countrycode: lka
+  language: tamil
+  isofficial: 1
+  percentage: 20.0
+  slug: lka-tamil
+countrylanguages_508:
+  countrycode: lso
+  language: english
+  isofficial: 1
+  percentage: 0.0
+  slug: lso-english
+countrylanguages_509:
+  countrycode: lso
+  language: sotho
+  isofficial: 1
+  percentage: 85.0
+  slug: lso-sotho
+countrylanguages_510:
+  countrycode: lso
+  language: zulu
+  isofficial: 0
+  percentage: 15.0
+  slug: lso-zulu
+countrylanguages_511:
+  countrycode: ltu
+  language: belorussian
+  isofficial: 0
+  percentage: 1.0
+  slug: ltu-belorussian
+countrylanguages_512:
+  countrycode: ltu
+  language: lithuanian
+  isofficial: 1
+  percentage: 82.0
+  slug: ltu-lithuanian
+countrylanguages_513:
+  countrycode: ltu
+  language: polish
+  isofficial: 0
+  percentage: 7.0
+  slug: ltu-polish
+countrylanguages_514:
+  countrycode: ltu
+  language: russian
+  isofficial: 0
+  percentage: 8.0
+  slug: ltu-russian
+countrylanguages_515:
+  countrycode: ltu
+  language: ukrainian
+  isofficial: 0
+  percentage: 1.0
+  slug: ltu-ukrainian
+countrylanguages_516:
+  countrycode: lux
+  language: french
+  isofficial: 1
+  percentage: 4.0
+  slug: lux-french
+countrylanguages_517:
+  countrycode: lux
+  language: german
+  isofficial: 1
+  percentage: 2.0
+  slug: lux-german
+countrylanguages_518:
+  countrycode: lux
+  language: italian
+  isofficial: 0
+  percentage: 5.0
+  slug: lux-italian
+countrylanguages_519:
+  countrycode: lux
+  language: luxembourgish
+  isofficial: 1
+  percentage: 64.0
+  slug: lux-luxembourgish
+countrylanguages_520:
+  countrycode: lux
+  language: portuguese
+  isofficial: 0
+  percentage: 13.0
+  slug: lux-portuguese
+countrylanguages_521:
+  countrycode: lva
+  language: belorussian
+  isofficial: 0
+  percentage: 4.0
+  slug: lva-belorussian
+countrylanguages_522:
+  countrycode: lva
+  language: latvian
+  isofficial: 1
+  percentage: 55.0
+  slug: lva-latvian
+countrylanguages_523:
+  countrycode: lva
+  language: lithuanian
+  isofficial: 0
+  percentage: 1.0
+  slug: lva-lithuanian
+countrylanguages_524:
+  countrycode: lva
+  language: polish
+  isofficial: 0
+  percentage: 2.0
+  slug: lva-polish
+countrylanguages_525:
+  countrycode: lva
+  language: russian
+  isofficial: 0
+  percentage: 33.0
+  slug: lva-russian
+countrylanguages_526:
+  countrycode: lva
+  language: ukrainian
+  isofficial: 0
+  percentage: 3.0
+  slug: lva-ukrainian
+countrylanguages_527:
+  countrycode: mac
+  language: canton chinese
+  isofficial: 0
+  percentage: 86.0
+  slug: mac-canton chinese
+countrylanguages_528:
+  countrycode: mac
+  language: english
+  isofficial: 0
+  percentage: 1.0
+  slug: mac-english
+countrylanguages_529:
+  countrycode: mac
+  language: mandarin chinese
+  isofficial: 0
+  percentage: 1.0
+  slug: mac-mandarin chinese
+countrylanguages_530:
+  countrycode: mac
+  language: portuguese
+  isofficial: 1
+  percentage: 2.0
+  slug: mac-portuguese
+countrylanguages_531:
+  countrycode: mar
+  language: arabic
+  isofficial: 1
+  percentage: 65.0
+  slug: mar-arabic
+countrylanguages_532:
+  countrycode: mar
+  language: berberi
+  isofficial: 0
+  percentage: 33.0
+  slug: mar-berberi
+countrylanguages_533:
+  countrycode: mco
+  language: english
+  isofficial: 0
+  percentage: 7.0
+  slug: mco-english
+countrylanguages_534:
+  countrycode: mco
+  language: french
+  isofficial: 1
+  percentage: 42.0
+  slug: mco-french
+countrylanguages_535:
+  countrycode: mco
+  language: italian
+  isofficial: 0
+  percentage: 16.0
+  slug: mco-italian
+countrylanguages_536:
+  countrycode: mco
+  language: monegasque
+  isofficial: 0
+  percentage: 16.0
+  slug: mco-monegasque
+countrylanguages_537:
+  countrycode: mda
+  language: bulgariana
+  isofficial: 0
+  percentage: 2.0
+  slug: mda-bulgariana
+countrylanguages_538:
+  countrycode: mda
+  language: gagauzi
+  isofficial: 0
+  percentage: 3.0
+  slug: mda-gagauzi
+countrylanguages_539:
+  countrycode: mda
+  language: romanian
+  isofficial: 1
+  percentage: 62.0
+  slug: mda-romanian
+countrylanguages_540:
+  countrycode: mda
+  language: russian
+  isofficial: 0
+  percentage: 23.0
+  slug: mda-russian
+countrylanguages_541:
+  countrycode: mda
+  language: ukrainian
+  isofficial: 0
+  percentage: 9.0
+  slug: mda-ukrainian
+countrylanguages_542:
+  countrycode: mdg
+  language: french
+  isofficial: 1
+  percentage: 0.0
+  slug: mdg-french
+countrylanguages_543:
+  countrycode: mdg
+  language: malagasy
+  isofficial: 1
+  percentage: 99.0
+  slug: mdg-malagasy
+countrylanguages_544:
+  countrycode: mdv
+  language: dhivehi
+  isofficial: 1
+  percentage: 100.0
+  slug: mdv-dhivehi
+countrylanguages_545:
+  countrycode: mdv
+  language: english
+  isofficial: 0
+  percentage: 0.0
+  slug: mdv-english
+countrylanguages_546:
+  countrycode: mex
+  language: mixtec
+  isofficial: 0
+  percentage: 1.0
+  slug: mex-mixtec
+countrylanguages_547:
+  countrycode: mex
+  language: n·huatl
+  isofficial: 0
+  percentage: 2.0
+  slug: mex-n·huatl
+countrylanguages_548:
+  countrycode: mex
+  language: otomì
+  isofficial: 0
+  percentage: 0.0
+  slug: mex-otomì
+countrylanguages_549:
+  countrycode: mex
+  language: spanish
+  isofficial: 1
+  percentage: 92.0
+  slug: mex-spanish
+countrylanguages_550:
+  countrycode: mex
+  language: yucatec
+  isofficial: 0
+  percentage: 1.0
+  slug: mex-yucatec
+countrylanguages_551:
+  countrycode: mex
+  language: zapotec
+  isofficial: 0
+  percentage: 1.0
+  slug: mex-zapotec
+countrylanguages_552:
+  countrycode: mhl
+  language: english
+  isofficial: 1
+  percentage: 0.0
+  slug: mhl-english
+countrylanguages_553:
+  countrycode: mhl
+  language: marshallese
+  isofficial: 1
+  percentage: 97.0
+  slug: mhl-marshallese
+countrylanguages_554:
+  countrycode: mkd
+  language: albaniana
+  isofficial: 0
+  percentage: 23.0
+  slug: mkd-albaniana
+countrylanguages_555:
+  countrycode: mkd
+  language: macedonian
+  isofficial: 1
+  percentage: 67.0
+  slug: mkd-macedonian
+countrylanguages_556:
+  countrycode: mkd
+  language: romani
+  isofficial: 0
+  percentage: 2.0
+  slug: mkd-romani
+countrylanguages_557:
+  countrycode: mkd
+  language: serbo-croatian
+  isofficial: 0
+  percentage: 2.0
+  slug: mkd-serbo-croatian
+countrylanguages_558:
+  countrycode: mkd
+  language: turkish
+  isofficial: 0
+  percentage: 4.0
+  slug: mkd-turkish
+countrylanguages_559:
+  countrycode: mli
+  language: bambara
+  isofficial: 0
+  percentage: 32.0
+  slug: mli-bambara
+countrylanguages_560:
+  countrycode: mli
+  language: ful
+  isofficial: 0
+  percentage: 14.0
+  slug: mli-ful
+countrylanguages_561:
+  countrycode: mli
+  language: senufo and minianka
+  isofficial: 0
+  percentage: 12.0
+  slug: mli-senufo and minianka
+countrylanguages_562:
+  countrycode: mli
+  language: songhai
+  isofficial: 0
+  percentage: 7.0
+  slug: mli-songhai
+countrylanguages_563:
+  countrycode: mli
+  language: soninke
+  isofficial: 0
+  percentage: 9.0
+  slug: mli-soninke
+countrylanguages_564:
+  countrycode: mli
+  language: tamashek
+  isofficial: 0
+  percentage: 7.0
+  slug: mli-tamashek
+countrylanguages_565:
+  countrycode: mlt
+  language: english
+  isofficial: 1
+  percentage: 2.0
+  slug: mlt-english
+countrylanguages_566:
+  countrycode: mlt
+  language: maltese
+  isofficial: 1
+  percentage: 96.0
+  slug: mlt-maltese
+countrylanguages_567:
+  countrycode: mmr
+  language: burmese
+  isofficial: 1
+  percentage: 69.0
+  slug: mmr-burmese
+countrylanguages_568:
+  countrycode: mmr
+  language: chin
+  isofficial: 0
+  percentage: 2.0
+  slug: mmr-chin
+countrylanguages_569:
+  countrycode: mmr
+  language: kachin
+  isofficial: 0
+  percentage: 1.0
+  slug: mmr-kachin
+countrylanguages_570:
+  countrycode: mmr
+  language: karen
+  isofficial: 0
+  percentage: 6.0
+  slug: mmr-karen
+countrylanguages_571:
+  countrycode: mmr
+  language: kayah
+  isofficial: 0
+  percentage: 0.0
+  slug: mmr-kayah
+countrylanguages_572:
+  countrycode: mmr
+  language: mon
+  isofficial: 0
+  percentage: 2.0
+  slug: mmr-mon
+countrylanguages_573:
+  countrycode: mmr
+  language: rakhine
+  isofficial: 0
+  percentage: 5.0
+  slug: mmr-rakhine
+countrylanguages_574:
+  countrycode: mmr
+  language: shan
+  isofficial: 0
+  percentage: 9.0
+  slug: mmr-shan
+countrylanguages_575:
+  countrycode: mng
+  language: bajad
+  isofficial: 0
+  percentage: 2.0
+  slug: mng-bajad
+countrylanguages_576:
+  countrycode: mng
+  language: buryat
+  isofficial: 0
+  percentage: 2.0
+  slug: mng-buryat
+countrylanguages_577:
+  countrycode: mng
+  language: dariganga
+  isofficial: 0
+  percentage: 1.0
+  slug: mng-dariganga
+countrylanguages_578:
+  countrycode: mng
+  language: dorbet
+  isofficial: 0
+  percentage: 3.0
+  slug: mng-dorbet
+countrylanguages_579:
+  countrycode: mng
+  language: kazakh
+  isofficial: 0
+  percentage: 6.0
+  slug: mng-kazakh
+countrylanguages_580:
+  countrycode: mng
+  language: mongolian
+  isofficial: 1
+  percentage: 79.0
+  slug: mng-mongolian
+countrylanguages_581:
+  countrycode: mnp
+  language: carolinian
+  isofficial: 0
+  percentage: 5.0
+  slug: mnp-carolinian
+countrylanguages_582:
+  countrycode: mnp
+  language: chamorro
+  isofficial: 0
+  percentage: 30.0
+  slug: mnp-chamorro
+countrylanguages_583:
+  countrycode: mnp
+  language: chinese
+  isofficial: 0
+  percentage: 7.0
+  slug: mnp-chinese
+countrylanguages_584:
+  countrycode: mnp
+  language: english
+  isofficial: 1
+  percentage: 5.0
+  slug: mnp-english
+countrylanguages_585:
+  countrycode: mnp
+  language: korean
+  isofficial: 0
+  percentage: 7.0
+  slug: mnp-korean
+countrylanguages_586:
+  countrycode: mnp
+  language: philippene languages
+  isofficial: 0
+  percentage: 34.0
+  slug: mnp-philippene languages
+countrylanguages_587:
+  countrycode: moz
+  language: chuabo
+  isofficial: 0
+  percentage: 6.0
+  slug: moz-chuabo
+countrylanguages_588:
+  countrycode: moz
+  language: lomwe
+  isofficial: 0
+  percentage: 8.0
+  slug: moz-lomwe
+countrylanguages_589:
+  countrycode: moz
+  language: makua
+  isofficial: 0
+  percentage: 28.0
+  slug: moz-makua
+countrylanguages_590:
+  countrycode: moz
+  language: marendje
+  isofficial: 0
+  percentage: 4.0
+  slug: moz-marendje
+countrylanguages_591:
+  countrycode: moz
+  language: nyanja
+  isofficial: 0
+  percentage: 3.0
+  slug: moz-nyanja
+countrylanguages_592:
+  countrycode: moz
+  language: ronga
+  isofficial: 0
+  percentage: 4.0
+  slug: moz-ronga
+countrylanguages_593:
+  countrycode: moz
+  language: sena
+  isofficial: 0
+  percentage: 9.0
+  slug: moz-sena
+countrylanguages_594:
+  countrycode: moz
+  language: shona
+  isofficial: 0
+  percentage: 7.0
+  slug: moz-shona
+countrylanguages_595:
+  countrycode: moz
+  language: tsonga
+  isofficial: 0
+  percentage: 12.0
+  slug: moz-tsonga
+countrylanguages_596:
+  countrycode: moz
+  language: tswa
+  isofficial: 0
+  percentage: 6.0
+  slug: moz-tswa
+countrylanguages_597:
+  countrycode: mrt
+  language: ful
+  isofficial: 0
+  percentage: 1.0
+  slug: mrt-ful
+countrylanguages_598:
+  countrycode: mrt
+  language: hassaniya
+  isofficial: 0
+  percentage: 82.0
+  slug: mrt-hassaniya
+countrylanguages_599:
+  countrycode: mrt
+  language: soninke
+  isofficial: 0
+  percentage: 3.0
+  slug: mrt-soninke
+countrylanguages_600:
+  countrycode: mrt
+  language: tukulor
+  isofficial: 0
+  percentage: 5.0
+  slug: mrt-tukulor
+countrylanguages_601:
+  countrycode: mrt
+  language: wolof
+  isofficial: 0
+  percentage: 7.0
+  slug: mrt-wolof
+countrylanguages_602:
+  countrycode: mrt
+  language: zenaga
+  isofficial: 0
+  percentage: 1.0
+  slug: mrt-zenaga
+countrylanguages_603:
+  countrycode: msr
+  language: english
+  isofficial: 1
+  percentage: 0.0
+  slug: msr-english
+countrylanguages_604:
+  countrycode: mtq
+  language: creole french
+  isofficial: 0
+  percentage: 97.0
+  slug: mtq-creole french
+countrylanguages_605:
+  countrycode: mtq
+  language: french
+  isofficial: 1
+  percentage: 0.0
+  slug: mtq-french
+countrylanguages_606:
+  countrycode: mus
+  language: bhojpuri
+  isofficial: 0
+  percentage: 21.0
+  slug: mus-bhojpuri
+countrylanguages_607:
+  countrycode: mus
+  language: creole french
+  isofficial: 0
+  percentage: 71.0
+  slug: mus-creole french
+countrylanguages_608:
+  countrycode: mus
+  language: french
+  isofficial: 0
+  percentage: 3.0
+  slug: mus-french
+countrylanguages_609:
+  countrycode: mus
+  language: hindi
+  isofficial: 0
+  percentage: 1.0
+  slug: mus-hindi
+countrylanguages_610:
+  countrycode: mus
+  language: marathi
+  isofficial: 0
+  percentage: 1.0
+  slug: mus-marathi
+countrylanguages_611:
+  countrycode: mus
+  language: tamil
+  isofficial: 0
+  percentage: 1.0
+  slug: mus-tamil
+countrylanguages_612:
+  countrycode: mwi
+  language: chichewa
+  isofficial: 1
+  percentage: 58.0
+  slug: mwi-chichewa
+countrylanguages_613:
+  countrycode: mwi
+  language: lomwe
+  isofficial: 0
+  percentage: 18.0
+  slug: mwi-lomwe
+countrylanguages_614:
+  countrycode: mwi
+  language: ngoni
+  isofficial: 0
+  percentage: 7.0
+  slug: mwi-ngoni
+countrylanguages_615:
+  countrycode: mwi
+  language: yao
+  isofficial: 0
+  percentage: 13.0
+  slug: mwi-yao
+countrylanguages_616:
+  countrycode: mys
+  language: chinese
+  isofficial: 0
+  percentage: 9.0
+  slug: mys-chinese
+countrylanguages_617:
+  countrycode: mys
+  language: dusun
+  isofficial: 0
+  percentage: 1.0
+  slug: mys-dusun
+countrylanguages_618:
+  countrycode: mys
+  language: english
+  isofficial: 0
+  percentage: 2.0
+  slug: mys-english
+countrylanguages_619:
+  countrycode: mys
+  language: iban
+  isofficial: 0
+  percentage: 3.0
+  slug: mys-iban
+countrylanguages_620:
+  countrycode: mys
+  language: malay
+  isofficial: 1
+  percentage: 58.0
+  slug: mys-malay
+countrylanguages_621:
+  countrycode: mys
+  language: tamil
+  isofficial: 0
+  percentage: 4.0
+  slug: mys-tamil
+countrylanguages_622:
+  countrycode: myt
+  language: french
+  isofficial: 1
+  percentage: 20.0
+  slug: myt-french
+countrylanguages_623:
+  countrycode: myt
+  language: mahorè
+  isofficial: 0
+  percentage: 42.0
+  slug: myt-mahorè
+countrylanguages_624:
+  countrycode: myt
+  language: malagasy
+  isofficial: 0
+  percentage: 16.0
+  slug: myt-malagasy
+countrylanguages_625:
+  countrycode: nam
+  language: afrikaans
+  isofficial: 0
+  percentage: 10.0
+  slug: nam-afrikaans
+countrylanguages_626:
+  countrycode: nam
+  language: caprivi
+  isofficial: 0
+  percentage: 5.0
+  slug: nam-caprivi
+countrylanguages_627:
+  countrycode: nam
+  language: german
+  isofficial: 0
+  percentage: 1.0
+  slug: nam-german
+countrylanguages_628:
+  countrycode: nam
+  language: herero
+  isofficial: 0
+  percentage: 8.0
+  slug: nam-herero
+countrylanguages_629:
+  countrycode: nam
+  language: kavango
+  isofficial: 0
+  percentage: 10.0
+  slug: nam-kavango
+countrylanguages_630:
+  countrycode: nam
+  language: nama
+  isofficial: 0
+  percentage: 12.0
+  slug: nam-nama
+countrylanguages_631:
+  countrycode: nam
+  language: ovambo
+  isofficial: 0
+  percentage: 51.0
+  slug: nam-ovambo
+countrylanguages_632:
+  countrycode: nam
+  language: san
+  isofficial: 0
+  percentage: 2.0
+  slug: nam-san
+countrylanguages_633:
+  countrycode: ncl
+  language: french
+  isofficial: 1
+  percentage: 34.0
+  slug: ncl-french
+countrylanguages_634:
+  countrycode: ncl
+  language: malenasian languages
+  isofficial: 0
+  percentage: 45.0
+  slug: ncl-malenasian languages
+countrylanguages_635:
+  countrycode: ncl
+  language: polynesian languages
+  isofficial: 0
+  percentage: 12.0
+  slug: ncl-polynesian languages
+countrylanguages_636:
+  countrycode: ner
+  language: ful
+  isofficial: 0
+  percentage: 10.0
+  slug: ner-ful
+countrylanguages_637:
+  countrycode: ner
+  language: hausa
+  isofficial: 0
+  percentage: 53.0
+  slug: ner-hausa
+countrylanguages_638:
+  countrycode: ner
+  language: kanuri
+  isofficial: 0
+  percentage: 4.0
+  slug: ner-kanuri
+countrylanguages_639:
+  countrycode: ner
+  language: songhai-zerma
+  isofficial: 0
+  percentage: 21.0
+  slug: ner-songhai-zerma
+countrylanguages_640:
+  countrycode: ner
+  language: tamashek
+  isofficial: 0
+  percentage: 10.0
+  slug: ner-tamashek
+countrylanguages_641:
+  countrycode: nfk
+  language: english
+  isofficial: 1
+  percentage: 0.0
+  slug: nfk-english
+countrylanguages_642:
+  countrycode: nga
+  language: bura
+  isofficial: 0
+  percentage: 2.0
+  slug: nga-bura
+countrylanguages_643:
+  countrycode: nga
+  language: edo
+  isofficial: 0
+  percentage: 3.0
+  slug: nga-edo
+countrylanguages_644:
+  countrycode: nga
+  language: ful
+  isofficial: 0
+  percentage: 11.0
+  slug: nga-ful
+countrylanguages_645:
+  countrycode: nga
+  language: hausa
+  isofficial: 0
+  percentage: 21.0
+  slug: nga-hausa
+countrylanguages_646:
+  countrycode: nga
+  language: ibibio
+  isofficial: 0
+  percentage: 6.0
+  slug: nga-ibibio
+countrylanguages_647:
+  countrycode: nga
+  language: ibo
+  isofficial: 0
+  percentage: 18.0
+  slug: nga-ibo
+countrylanguages_648:
+  countrycode: nga
+  language: ijo
+  isofficial: 0
+  percentage: 2.0
+  slug: nga-ijo
+countrylanguages_649:
+  countrycode: nga
+  language: joruba
+  isofficial: 0
+  percentage: 21.0
+  slug: nga-joruba
+countrylanguages_650:
+  countrycode: nga
+  language: kanuri
+  isofficial: 0
+  percentage: 4.0
+  slug: nga-kanuri
+countrylanguages_651:
+  countrycode: nga
+  language: tiv
+  isofficial: 0
+  percentage: 2.0
+  slug: nga-tiv
+countrylanguages_652:
+  countrycode: nic
+  language: creole english
+  isofficial: 0
+  percentage: 1.0
+  slug: nic-creole english
+countrylanguages_653:
+  countrycode: nic
+  language: miskito
+  isofficial: 0
+  percentage: 2.0
+  slug: nic-miskito
+countrylanguages_654:
+  countrycode: nic
+  language: spanish
+  isofficial: 1
+  percentage: 98.0
+  slug: nic-spanish
+countrylanguages_655:
+  countrycode: nic
+  language: sumo
+  isofficial: 0
+  percentage: 0.0
+  slug: nic-sumo
+countrylanguages_656:
+  countrycode: niu
+  language: english
+  isofficial: 1
+  percentage: 0.0
+  slug: niu-english
+countrylanguages_657:
+  countrycode: niu
+  language: niue
+  isofficial: 0
+  percentage: 0.0
+  slug: niu-niue
+countrylanguages_658:
+  countrycode: nld
+  language: arabic
+  isofficial: 0
+  percentage: 1.0
+  slug: nld-arabic
+countrylanguages_659:
+  countrycode: nld
+  language: dutch
+  isofficial: 1
+  percentage: 96.0
+  slug: nld-dutch
+countrylanguages_660:
+  countrycode: nld
+  language: fries
+  isofficial: 0
+  percentage: 4.0
+  slug: nld-fries
+countrylanguages_661:
+  countrycode: nld
+  language: turkish
+  isofficial: 0
+  percentage: 1.0
+  slug: nld-turkish
+countrylanguages_662:
+  countrycode: nor
+  language: danish
+  isofficial: 0
+  percentage: 0.0
+  slug: nor-danish
+countrylanguages_663:
+  countrycode: nor
+  language: english
+  isofficial: 0
+  percentage: 1.0
+  slug: nor-english
+countrylanguages_664:
+  countrycode: nor
+  language: norwegian
+  isofficial: 1
+  percentage: 97.0
+  slug: nor-norwegian
+countrylanguages_665:
+  countrycode: nor
+  language: saame
+  isofficial: 0
+  percentage: 0.0
+  slug: nor-saame
+countrylanguages_666:
+  countrycode: nor
+  language: swedish
+  isofficial: 0
+  percentage: 0.0
+  slug: nor-swedish
+countrylanguages_667:
+  countrycode: npl
+  language: bhojpuri
+  isofficial: 0
+  percentage: 8.0
+  slug: npl-bhojpuri
+countrylanguages_668:
+  countrycode: npl
+  language: hindi
+  isofficial: 0
+  percentage: 3.0
+  slug: npl-hindi
+countrylanguages_669:
+  countrycode: npl
+  language: maithili
+  isofficial: 0
+  percentage: 12.0
+  slug: npl-maithili
+countrylanguages_670:
+  countrycode: npl
+  language: nepali
+  isofficial: 1
+  percentage: 50.0
+  slug: npl-nepali
+countrylanguages_671:
+  countrycode: npl
+  language: newari
+  isofficial: 0
+  percentage: 4.0
+  slug: npl-newari
+countrylanguages_672:
+  countrycode: npl
+  language: tamang
+  isofficial: 0
+  percentage: 5.0
+  slug: npl-tamang
+countrylanguages_673:
+  countrycode: npl
+  language: tharu
+  isofficial: 0
+  percentage: 5.0
+  slug: npl-tharu
+countrylanguages_674:
+  countrycode: nru
+  language: chinese
+  isofficial: 0
+  percentage: 9.0
+  slug: nru-chinese
+countrylanguages_675:
+  countrycode: nru
+  language: english
+  isofficial: 1
+  percentage: 8.0
+  slug: nru-english
+countrylanguages_676:
+  countrycode: nru
+  language: kiribati
+  isofficial: 0
+  percentage: 18.0
+  slug: nru-kiribati
+countrylanguages_677:
+  countrycode: nru
+  language: nauru
+  isofficial: 1
+  percentage: 58.0
+  slug: nru-nauru
+countrylanguages_678:
+  countrycode: nru
+  language: tuvalu
+  isofficial: 0
+  percentage: 9.0
+  slug: nru-tuvalu
+countrylanguages_679:
+  countrycode: nzl
+  language: english
+  isofficial: 1
+  percentage: 87.0
+  slug: nzl-english
+countrylanguages_680:
+  countrycode: nzl
+  language: maori
+  isofficial: 0
+  percentage: 4.0
+  slug: nzl-maori
+countrylanguages_681:
+  countrycode: omn
+  language: arabic
+  isofficial: 1
+  percentage: 77.0
+  slug: omn-arabic
+countrylanguages_682:
+  countrycode: omn
+  language: balochi
+  isofficial: 0
+  percentage: 0.0
+  slug: omn-balochi
+countrylanguages_683:
+  countrycode: pak
+  language: balochi
+  isofficial: 0
+  percentage: 3.0
+  slug: pak-balochi
+countrylanguages_684:
+  countrycode: pak
+  language: brahui
+  isofficial: 0
+  percentage: 1.0
+  slug: pak-brahui
+countrylanguages_685:
+  countrycode: pak
+  language: hindko
+  isofficial: 0
+  percentage: 2.0
+  slug: pak-hindko
+countrylanguages_686:
+  countrycode: pak
+  language: pashto
+  isofficial: 0
+  percentage: 13.0
+  slug: pak-pashto
+countrylanguages_687:
+  countrycode: pak
+  language: punjabi
+  isofficial: 0
+  percentage: 48.0
+  slug: pak-punjabi
+countrylanguages_688:
+  countrycode: pak
+  language: saraiki
+  isofficial: 0
+  percentage: 10.0
+  slug: pak-saraiki
+countrylanguages_689:
+  countrycode: pak
+  language: sindhi
+  isofficial: 0
+  percentage: 12.0
+  slug: pak-sindhi
+countrylanguages_690:
+  countrycode: pak
+  language: urdu
+  isofficial: 1
+  percentage: 8.0
+  slug: pak-urdu
+countrylanguages_691:
+  countrycode: pan
+  language: arabic
+  isofficial: 0
+  percentage: 1.0
+  slug: pan-arabic
+countrylanguages_692:
+  countrycode: pan
+  language: creole english
+  isofficial: 0
+  percentage: 14.0
+  slug: pan-creole english
+countrylanguages_693:
+  countrycode: pan
+  language: cuna
+  isofficial: 0
+  percentage: 2.0
+  slug: pan-cuna
+countrylanguages_694:
+  countrycode: pan
+  language: embera
+  isofficial: 0
+  percentage: 1.0
+  slug: pan-embera
+countrylanguages_695:
+  countrycode: pan
+  language: guaymì
+  isofficial: 0
+  percentage: 5.0
+  slug: pan-guaymì
+countrylanguages_696:
+  countrycode: pan
+  language: spanish
+  isofficial: 1
+  percentage: 77.0
+  slug: pan-spanish
+countrylanguages_697:
+  countrycode: pcn
+  language: pitcairnese
+  isofficial: 0
+  percentage: 0.0
+  slug: pcn-pitcairnese
+countrylanguages_698:
+  countrycode: per
+  language: aimar·
+  isofficial: 1
+  percentage: 2.0
+  slug: per-aimar·
+countrylanguages_699:
+  countrycode: per
+  language: ketöua
+  isofficial: 1
+  percentage: 16.0
+  slug: per-ketöua
+countrylanguages_700:
+  countrycode: per
+  language: spanish
+  isofficial: 1
+  percentage: 80.0
+  slug: per-spanish
+countrylanguages_701:
+  countrycode: phl
+  language: bicol
+  isofficial: 0
+  percentage: 6.0
+  slug: phl-bicol
+countrylanguages_702:
+  countrycode: phl
+  language: cebuano
+  isofficial: 0
+  percentage: 23.0
+  slug: phl-cebuano
+countrylanguages_703:
+  countrycode: phl
+  language: hiligaynon
+  isofficial: 0
+  percentage: 9.0
+  slug: phl-hiligaynon
+countrylanguages_704:
+  countrycode: phl
+  language: ilocano
+  isofficial: 0
+  percentage: 9.0
+  slug: phl-ilocano
+countrylanguages_705:
+  countrycode: phl
+  language: maguindanao
+  isofficial: 0
+  percentage: 1.0
+  slug: phl-maguindanao
+countrylanguages_706:
+  countrycode: phl
+  language: maranao
+  isofficial: 0
+  percentage: 1.0
+  slug: phl-maranao
+countrylanguages_707:
+  countrycode: phl
+  language: pampango
+  isofficial: 0
+  percentage: 3.0
+  slug: phl-pampango
+countrylanguages_708:
+  countrycode: phl
+  language: pangasinan
+  isofficial: 0
+  percentage: 2.0
+  slug: phl-pangasinan
+countrylanguages_709:
+  countrycode: phl
+  language: pilipino
+  isofficial: 1
+  percentage: 29.0
+  slug: phl-pilipino
+countrylanguages_710:
+  countrycode: phl
+  language: waray-waray
+  isofficial: 0
+  percentage: 4.0
+  slug: phl-waray-waray
+countrylanguages_711:
+  countrycode: plw
+  language: chinese
+  isofficial: 0
+  percentage: 2.0
+  slug: plw-chinese
+countrylanguages_712:
+  countrycode: plw
+  language: english
+  isofficial: 1
+  percentage: 3.0
+  slug: plw-english
+countrylanguages_713:
+  countrycode: plw
+  language: palau
+  isofficial: 1
+  percentage: 82.0
+  slug: plw-palau
+countrylanguages_714:
+  countrycode: plw
+  language: philippene languages
+  isofficial: 0
+  percentage: 9.0
+  slug: plw-philippene languages
+countrylanguages_715:
+  countrycode: png
+  language: malenasian languages
+  isofficial: 0
+  percentage: 20.0
+  slug: png-malenasian languages
+countrylanguages_716:
+  countrycode: png
+  language: papuan languages
+  isofficial: 0
+  percentage: 78.0
+  slug: png-papuan languages
+countrylanguages_717:
+  countrycode: pol
+  language: belorussian
+  isofficial: 0
+  percentage: 1.0
+  slug: pol-belorussian
+countrylanguages_718:
+  countrycode: pol
+  language: german
+  isofficial: 0
+  percentage: 1.0
+  slug: pol-german
+countrylanguages_719:
+  countrycode: pol
+  language: polish
+  isofficial: 1
+  percentage: 98.0
+  slug: pol-polish
+countrylanguages_720:
+  countrycode: pol
+  language: ukrainian
+  isofficial: 0
+  percentage: 1.0
+  slug: pol-ukrainian
+countrylanguages_721:
+  countrycode: pri
+  language: english
+  isofficial: 0
+  percentage: 47.0
+  slug: pri-english
+countrylanguages_722:
+  countrycode: pri
+  language: spanish
+  isofficial: 1
+  percentage: 51.0
+  slug: pri-spanish
+countrylanguages_723:
+  countrycode: prk
+  language: chinese
+  isofficial: 0
+  percentage: 0.0
+  slug: prk-chinese
+countrylanguages_724:
+  countrycode: prk
+  language: korean
+  isofficial: 1
+  percentage: 100.0
+  slug: prk-korean
+countrylanguages_725:
+  countrycode: prt
+  language: portuguese
+  isofficial: 1
+  percentage: 99.0
+  slug: prt-portuguese
+countrylanguages_726:
+  countrycode: pry
+  language: german
+  isofficial: 0
+  percentage: 1.0
+  slug: pry-german
+countrylanguages_727:
+  countrycode: pry
+  language: guaranì
+  isofficial: 1
+  percentage: 40.0
+  slug: pry-guaranì
+countrylanguages_728:
+  countrycode: pry
+  language: portuguese
+  isofficial: 0
+  percentage: 3.0
+  slug: pry-portuguese
+countrylanguages_729:
+  countrycode: pry
+  language: spanish
+  isofficial: 1
+  percentage: 55.0
+  slug: pry-spanish
+countrylanguages_730:
+  countrycode: pse
+  language: arabic
+  isofficial: 0
+  percentage: 96.0
+  slug: pse-arabic
+countrylanguages_731:
+  countrycode: pse
+  language: hebrew
+  isofficial: 0
+  percentage: 4.0
+  slug: pse-hebrew
+countrylanguages_732:
+  countrycode: pyf
+  language: chinese
+  isofficial: 0
+  percentage: 3.0
+  slug: pyf-chinese
+countrylanguages_733:
+  countrycode: pyf
+  language: french
+  isofficial: 1
+  percentage: 41.0
+  slug: pyf-french
+countrylanguages_734:
+  countrycode: pyf
+  language: tahitian
+  isofficial: 0
+  percentage: 46.0
+  slug: pyf-tahitian
+countrylanguages_735:
+  countrycode: qat
+  language: arabic
+  isofficial: 1
+  percentage: 41.0
+  slug: qat-arabic
+countrylanguages_736:
+  countrycode: qat
+  language: urdu
+  isofficial: 0
+  percentage: 0.0
+  slug: qat-urdu
+countrylanguages_737:
+  countrycode: reu
+  language: chinese
+  isofficial: 0
+  percentage: 3.0
+  slug: reu-chinese
+countrylanguages_738:
+  countrycode: reu
+  language: comorian
+  isofficial: 0
+  percentage: 3.0
+  slug: reu-comorian
+countrylanguages_739:
+  countrycode: reu
+  language: creole french
+  isofficial: 0
+  percentage: 92.0
+  slug: reu-creole french
+countrylanguages_740:
+  countrycode: reu
+  language: malagasy
+  isofficial: 0
+  percentage: 1.0
+  slug: reu-malagasy
+countrylanguages_741:
+  countrycode: reu
+  language: tamil
+  isofficial: 0
+  percentage: 0.0
+  slug: reu-tamil
+countrylanguages_742:
+  countrycode: rom
+  language: german
+  isofficial: 0
+  percentage: 0.0
+  slug: rom-german
+countrylanguages_743:
+  countrycode: rom
+  language: hungarian
+  isofficial: 0
+  percentage: 7.0
+  slug: rom-hungarian
+countrylanguages_744:
+  countrycode: rom
+  language: romani
+  isofficial: 1
+  percentage: 1.0
+  slug: rom-romani
+countrylanguages_745:
+  countrycode: rom
+  language: romanian
+  isofficial: 1
+  percentage: 91.0
+  slug: rom-romanian
+countrylanguages_746:
+  countrycode: rom
+  language: serbo-croatian
+  isofficial: 0
+  percentage: 0.0
+  slug: rom-serbo-croatian
+countrylanguages_747:
+  countrycode: rom
+  language: ukrainian
+  isofficial: 0
+  percentage: 0.0
+  slug: rom-ukrainian
+countrylanguages_748:
+  countrycode: rus
+  language: avarian
+  isofficial: 0
+  percentage: 0.0
+  slug: rus-avarian
+countrylanguages_749:
+  countrycode: rus
+  language: bashkir
+  isofficial: 0
+  percentage: 1.0
+  slug: rus-bashkir
+countrylanguages_750:
+  countrycode: rus
+  language: belorussian
+  isofficial: 0
+  percentage: 0.0
+  slug: rus-belorussian
+countrylanguages_751:
+  countrycode: rus
+  language: chechen
+  isofficial: 0
+  percentage: 1.0
+  slug: rus-chechen
+countrylanguages_752:
+  countrycode: rus
+  language: chuvash
+  isofficial: 0
+  percentage: 1.0
+  slug: rus-chuvash
+countrylanguages_753:
+  countrycode: rus
+  language: kazakh
+  isofficial: 0
+  percentage: 0.0
+  slug: rus-kazakh
+countrylanguages_754:
+  countrycode: rus
+  language: mari
+  isofficial: 0
+  percentage: 0.0
+  slug: rus-mari
+countrylanguages_755:
+  countrycode: rus
+  language: mordva
+  isofficial: 0
+  percentage: 1.0
+  slug: rus-mordva
+countrylanguages_756:
+  countrycode: rus
+  language: russian
+  isofficial: 1
+  percentage: 87.0
+  slug: rus-russian
+countrylanguages_757:
+  countrycode: rus
+  language: tatar
+  isofficial: 0
+  percentage: 3.0
+  slug: rus-tatar
+countrylanguages_758:
+  countrycode: rus
+  language: udmur
+  isofficial: 0
+  percentage: 0.0
+  slug: rus-udmur
+countrylanguages_759:
+  countrycode: rus
+  language: ukrainian
+  isofficial: 0
+  percentage: 1.0
+  slug: rus-ukrainian
+countrylanguages_760:
+  countrycode: rwa
+  language: french
+  isofficial: 1
+  percentage: 0.0
+  slug: rwa-french
+countrylanguages_761:
+  countrycode: rwa
+  language: rwanda
+  isofficial: 1
+  percentage: 100.0
+  slug: rwa-rwanda
+countrylanguages_762:
+  countrycode: sau
+  language: arabic
+  isofficial: 1
+  percentage: 95.0
+  slug: sau-arabic
+countrylanguages_763:
+  countrycode: sdn
+  language: arabic
+  isofficial: 1
+  percentage: 49.0
+  slug: sdn-arabic
+countrylanguages_764:
+  countrycode: sdn
+  language: bari
+  isofficial: 0
+  percentage: 3.0
+  slug: sdn-bari
+countrylanguages_765:
+  countrycode: sdn
+  language: beja
+  isofficial: 0
+  percentage: 6.0
+  slug: sdn-beja
+countrylanguages_766:
+  countrycode: sdn
+  language: chilluk
+  isofficial: 0
+  percentage: 2.0
+  slug: sdn-chilluk
+countrylanguages_767:
+  countrycode: sdn
+  language: dinka
+  isofficial: 0
+  percentage: 12.0
+  slug: sdn-dinka
+countrylanguages_768:
+  countrycode: sdn
+  language: fur
+  isofficial: 0
+  percentage: 2.0
+  slug: sdn-fur
+countrylanguages_769:
+  countrycode: sdn
+  language: lotuko
+  isofficial: 0
+  percentage: 2.0
+  slug: sdn-lotuko
+countrylanguages_770:
+  countrycode: sdn
+  language: nubian languages
+  isofficial: 0
+  percentage: 8.0
+  slug: sdn-nubian languages
+countrylanguages_771:
+  countrycode: sdn
+  language: nuer
+  isofficial: 0
+  percentage: 5.0
+  slug: sdn-nuer
+countrylanguages_772:
+  countrycode: sdn
+  language: zande
+  isofficial: 0
+  percentage: 3.0
+  slug: sdn-zande
+countrylanguages_773:
+  countrycode: sen
+  language: diola
+  isofficial: 0
+  percentage: 5.0
+  slug: sen-diola
+countrylanguages_774:
+  countrycode: sen
+  language: ful
+  isofficial: 0
+  percentage: 22.0
+  slug: sen-ful
+countrylanguages_775:
+  countrycode: sen
+  language: malinke
+  isofficial: 0
+  percentage: 4.0
+  slug: sen-malinke
+countrylanguages_776:
+  countrycode: sen
+  language: serer
+  isofficial: 0
+  percentage: 13.0
+  slug: sen-serer
+countrylanguages_777:
+  countrycode: sen
+  language: soninke
+  isofficial: 0
+  percentage: 1.0
+  slug: sen-soninke
+countrylanguages_778:
+  countrycode: sen
+  language: wolof
+  isofficial: 1
+  percentage: 48.0
+  slug: sen-wolof
+countrylanguages_779:
+  countrycode: sgp
+  language: chinese
+  isofficial: 1
+  percentage: 77.0
+  slug: sgp-chinese
+countrylanguages_780:
+  countrycode: sgp
+  language: malay
+  isofficial: 1
+  percentage: 14.0
+  slug: sgp-malay
+countrylanguages_781:
+  countrycode: sgp
+  language: tamil
+  isofficial: 1
+  percentage: 7.0
+  slug: sgp-tamil
+countrylanguages_782:
+  countrycode: shn
+  language: english
+  isofficial: 1
+  percentage: 0.0
+  slug: shn-english
+countrylanguages_783:
+  countrycode: sjm
+  language: norwegian
+  isofficial: 1
+  percentage: 0.0
+  slug: sjm-norwegian
+countrylanguages_784:
+  countrycode: sjm
+  language: russian
+  isofficial: 0
+  percentage: 0.0
+  slug: sjm-russian
+countrylanguages_785:
+  countrycode: slb
+  language: malenasian languages
+  isofficial: 0
+  percentage: 86.0
+  slug: slb-malenasian languages
+countrylanguages_786:
+  countrycode: slb
+  language: papuan languages
+  isofficial: 0
+  percentage: 9.0
+  slug: slb-papuan languages
+countrylanguages_787:
+  countrycode: slb
+  language: polynesian languages
+  isofficial: 0
+  percentage: 4.0
+  slug: slb-polynesian languages
+countrylanguages_788:
+  countrycode: sle
+  language: bullom-sherbro
+  isofficial: 0
+  percentage: 4.0
+  slug: sle-bullom-sherbro
+countrylanguages_789:
+  countrycode: sle
+  language: ful
+  isofficial: 0
+  percentage: 4.0
+  slug: sle-ful
+countrylanguages_790:
+  countrycode: sle
+  language: kono-vai
+  isofficial: 0
+  percentage: 5.0
+  slug: sle-kono-vai
+countrylanguages_791:
+  countrycode: sle
+  language: kuranko
+  isofficial: 0
+  percentage: 3.0
+  slug: sle-kuranko
+countrylanguages_792:
+  countrycode: sle
+  language: limba
+  isofficial: 0
+  percentage: 8.0
+  slug: sle-limba
+countrylanguages_793:
+  countrycode: sle
+  language: mende
+  isofficial: 0
+  percentage: 35.0
+  slug: sle-mende
+countrylanguages_794:
+  countrycode: sle
+  language: temne
+  isofficial: 0
+  percentage: 32.0
+  slug: sle-temne
+countrylanguages_795:
+  countrycode: sle
+  language: yalunka
+  isofficial: 0
+  percentage: 3.0
+  slug: sle-yalunka
+countrylanguages_796:
+  countrycode: slv
+  language: nahua
+  isofficial: 0
+  percentage: 0.0
+  slug: slv-nahua
+countrylanguages_797:
+  countrycode: slv
+  language: spanish
+  isofficial: 1
+  percentage: 100.0
+  slug: slv-spanish
+countrylanguages_798:
+  countrycode: smr
+  language: italian
+  isofficial: 1
+  percentage: 100.0
+  slug: smr-italian
+countrylanguages_799:
+  countrycode: som
+  language: arabic
+  isofficial: 1
+  percentage: 0.0
+  slug: som-arabic
+countrylanguages_800:
+  countrycode: som
+  language: somali
+  isofficial: 1
+  percentage: 98.0
+  slug: som-somali
+countrylanguages_801:
+  countrycode: spm
+  language: french
+  isofficial: 1
+  percentage: 0.0
+  slug: spm-french
+countrylanguages_802:
+  countrycode: stp
+  language: crioulo
+  isofficial: 0
+  percentage: 86.0
+  slug: stp-crioulo
+countrylanguages_803:
+  countrycode: stp
+  language: french
+  isofficial: 0
+  percentage: 1.0
+  slug: stp-french
+countrylanguages_804:
+  countrycode: sur
+  language: hindi
+  isofficial: 0
+  percentage: 0.0
+  slug: sur-hindi
+countrylanguages_805:
+  countrycode: sur
+  language: sranantonga
+  isofficial: 0
+  percentage: 81.0
+  slug: sur-sranantonga
+countrylanguages_806:
+  countrycode: svk
+  language: czech and moravian
+  isofficial: 0
+  percentage: 1.0
+  slug: svk-czech and moravian
+countrylanguages_807:
+  countrycode: svk
+  language: hungarian
+  isofficial: 0
+  percentage: 11.0
+  slug: svk-hungarian
+countrylanguages_808:
+  countrycode: svk
+  language: romani
+  isofficial: 0
+  percentage: 2.0
+  slug: svk-romani
+countrylanguages_809:
+  countrycode: svk
+  language: slovak
+  isofficial: 1
+  percentage: 86.0
+  slug: svk-slovak
+countrylanguages_810:
+  countrycode: svk
+  language: ukrainian and russian
+  isofficial: 0
+  percentage: 1.0
+  slug: svk-ukrainian and russian
+countrylanguages_811:
+  countrycode: svn
+  language: hungarian
+  isofficial: 0
+  percentage: 1.0
+  slug: svn-hungarian
+countrylanguages_812:
+  countrycode: svn
+  language: serbo-croatian
+  isofficial: 0
+  percentage: 8.0
+  slug: svn-serbo-croatian
+countrylanguages_813:
+  countrycode: svn
+  language: slovene
+  isofficial: 1
+  percentage: 88.0
+  slug: svn-slovene
+countrylanguages_814:
+  countrycode: swe
+  language: arabic
+  isofficial: 0
+  percentage: 1.0
+  slug: swe-arabic
+countrylanguages_815:
+  countrycode: swe
+  language: finnish
+  isofficial: 0
+  percentage: 2.0
+  slug: swe-finnish
+countrylanguages_816:
+  countrycode: swe
+  language: norwegian
+  isofficial: 0
+  percentage: 1.0
+  slug: swe-norwegian
+countrylanguages_817:
+  countrycode: swe
+  language: southern slavic languages
+  isofficial: 0
+  percentage: 1.0
+  slug: swe-southern slavic languages
+countrylanguages_818:
+  countrycode: swe
+  language: spanish
+  isofficial: 0
+  percentage: 1.0
+  slug: swe-spanish
+countrylanguages_819:
+  countrycode: swe
+  language: swedish
+  isofficial: 1
+  percentage: 90.0
+  slug: swe-swedish
+countrylanguages_820:
+  countrycode: swz
+  language: swazi
+  isofficial: 1
+  percentage: 90.0
+  slug: swz-swazi
+countrylanguages_821:
+  countrycode: swz
+  language: zulu
+  isofficial: 0
+  percentage: 2.0
+  slug: swz-zulu
+countrylanguages_822:
+  countrycode: syc
+  language: english
+  isofficial: 1
+  percentage: 4.0
+  slug: syc-english
+countrylanguages_823:
+  countrycode: syc
+  language: french
+  isofficial: 1
+  percentage: 1.0
+  slug: syc-french
+countrylanguages_824:
+  countrycode: syc
+  language: seselwa
+  isofficial: 0
+  percentage: 91.0
+  slug: syc-seselwa
+countrylanguages_825:
+  countrycode: syr
+  language: arabic
+  isofficial: 1
+  percentage: 90.0
+  slug: syr-arabic
+countrylanguages_826:
+  countrycode: syr
+  language: kurdish
+  isofficial: 0
+  percentage: 9.0
+  slug: syr-kurdish
+countrylanguages_827:
+  countrycode: tca
+  language: english
+  isofficial: 1
+  percentage: 0.0
+  slug: tca-english
+countrylanguages_828:
+  countrycode: tcd
+  language: arabic
+  isofficial: 1
+  percentage: 12.0
+  slug: tcd-arabic
+countrylanguages_829:
+  countrycode: tcd
+  language: gorane
+  isofficial: 0
+  percentage: 6.0
+  slug: tcd-gorane
+countrylanguages_830:
+  countrycode: tcd
+  language: hadjarai
+  isofficial: 0
+  percentage: 7.0
+  slug: tcd-hadjarai
+countrylanguages_831:
+  countrycode: tcd
+  language: kanem-bornu
+  isofficial: 0
+  percentage: 9.0
+  slug: tcd-kanem-bornu
+countrylanguages_832:
+  countrycode: tcd
+  language: mayo-kebbi
+  isofficial: 0
+  percentage: 12.0
+  slug: tcd-mayo-kebbi
+countrylanguages_833:
+  countrycode: tcd
+  language: ouaddai
+  isofficial: 0
+  percentage: 9.0
+  slug: tcd-ouaddai
+countrylanguages_834:
+  countrycode: tcd
+  language: sara
+  isofficial: 0
+  percentage: 28.0
+  slug: tcd-sara
+countrylanguages_835:
+  countrycode: tcd
+  language: tandjile
+  isofficial: 0
+  percentage: 7.0
+  slug: tcd-tandjile
+countrylanguages_836:
+  countrycode: tgo
+  language: ane
+  isofficial: 0
+  percentage: 6.0
+  slug: tgo-ane
+countrylanguages_837:
+  countrycode: tgo
+  language: ewe
+  isofficial: 1
+  percentage: 23.0
+  slug: tgo-ewe
+countrylanguages_838:
+  countrycode: tgo
+  language: gurma
+  isofficial: 0
+  percentage: 3.0
+  slug: tgo-gurma
+countrylanguages_839:
+  countrycode: tgo
+  language: kabyè
+  isofficial: 1
+  percentage: 14.0
+  slug: tgo-kabyè
+countrylanguages_840:
+  countrycode: tgo
+  language: kotokoli
+  isofficial: 0
+  percentage: 6.0
+  slug: tgo-kotokoli
+countrylanguages_841:
+  countrycode: tgo
+  language: moba
+  isofficial: 0
+  percentage: 5.0
+  slug: tgo-moba
+countrylanguages_842:
+  countrycode: tgo
+  language: naudemba
+  isofficial: 0
+  percentage: 4.0
+  slug: tgo-naudemba
+countrylanguages_843:
+  countrycode: tgo
+  language: watyi
+  isofficial: 0
+  percentage: 10.0
+  slug: tgo-watyi
+countrylanguages_844:
+  countrycode: tha
+  language: chinese
+  isofficial: 0
+  percentage: 12.0
+  slug: tha-chinese
+countrylanguages_845:
+  countrycode: tha
+  language: khmer
+  isofficial: 0
+  percentage: 1.0
+  slug: tha-khmer
+countrylanguages_846:
+  countrycode: tha
+  language: kuy
+  isofficial: 0
+  percentage: 1.0
+  slug: tha-kuy
+countrylanguages_847:
+  countrycode: tha
+  language: lao
+  isofficial: 0
+  percentage: 27.0
+  slug: tha-lao
+countrylanguages_848:
+  countrycode: tha
+  language: malay
+  isofficial: 0
+  percentage: 4.0
+  slug: tha-malay
+countrylanguages_849:
+  countrycode: tha
+  language: thai
+  isofficial: 1
+  percentage: 53.0
+  slug: tha-thai
+countrylanguages_850:
+  countrycode: tjk
+  language: russian
+  isofficial: 0
+  percentage: 10.0
+  slug: tjk-russian
+countrylanguages_851:
+  countrycode: tjk
+  language: tadzhik
+  isofficial: 1
+  percentage: 62.0
+  slug: tjk-tadzhik
+countrylanguages_852:
+  countrycode: tjk
+  language: uzbek
+  isofficial: 0
+  percentage: 23.0
+  slug: tjk-uzbek
+countrylanguages_853:
+  countrycode: tkl
+  language: english
+  isofficial: 1
+  percentage: 0.0
+  slug: tkl-english
+countrylanguages_854:
+  countrycode: tkl
+  language: tokelau
+  isofficial: 0
+  percentage: 0.0
+  slug: tkl-tokelau
+countrylanguages_855:
+  countrycode: tkm
+  language: kazakh
+  isofficial: 0
+  percentage: 2.0
+  slug: tkm-kazakh
+countrylanguages_856:
+  countrycode: tkm
+  language: russian
+  isofficial: 0
+  percentage: 7.0
+  slug: tkm-russian
+countrylanguages_857:
+  countrycode: tkm
+  language: turkmenian
+  isofficial: 1
+  percentage: 77.0
+  slug: tkm-turkmenian
+countrylanguages_858:
+  countrycode: tkm
+  language: uzbek
+  isofficial: 0
+  percentage: 9.0
+  slug: tkm-uzbek
+countrylanguages_859:
+  countrycode: tmp
+  language: portuguese
+  isofficial: 1
+  percentage: 0.0
+  slug: tmp-portuguese
+countrylanguages_860:
+  countrycode: tmp
+  language: sunda
+  isofficial: 0
+  percentage: 0.0
+  slug: tmp-sunda
+countrylanguages_861:
+  countrycode: ton
+  language: english
+  isofficial: 1
+  percentage: 0.0
+  slug: ton-english
+countrylanguages_862:
+  countrycode: ton
+  language: tongan
+  isofficial: 1
+  percentage: 98.0
+  slug: ton-tongan
+countrylanguages_863:
+  countrycode: tto
+  language: creole english
+  isofficial: 0
+  percentage: 3.0
+  slug: tto-creole english
+countrylanguages_864:
+  countrycode: tto
+  language: english
+  isofficial: 0
+  percentage: 94.0
+  slug: tto-english
+countrylanguages_865:
+  countrycode: tto
+  language: hindi
+  isofficial: 0
+  percentage: 3.0
+  slug: tto-hindi
+countrylanguages_866:
+  countrycode: tun
+  language: arabic
+  isofficial: 1
+  percentage: 70.0
+  slug: tun-arabic
+countrylanguages_867:
+  countrycode: tun
+  language: arabic-french
+  isofficial: 0
+  percentage: 26.0
+  slug: tun-arabic-french
+countrylanguages_868:
+  countrycode: tun
+  language: arabic-french-english
+  isofficial: 0
+  percentage: 3.0
+  slug: tun-arabic-french-english
+countrylanguages_869:
+  countrycode: tur
+  language: arabic
+  isofficial: 0
+  percentage: 1.0
+  slug: tur-arabic
+countrylanguages_870:
+  countrycode: tur
+  language: kurdish
+  isofficial: 0
+  percentage: 11.0
+  slug: tur-kurdish
+countrylanguages_871:
+  countrycode: tur
+  language: turkish
+  isofficial: 1
+  percentage: 88.0
+  slug: tur-turkish
+countrylanguages_872:
+  countrycode: tuv
+  language: english
+  isofficial: 1
+  percentage: 0.0
+  slug: tuv-english
+countrylanguages_873:
+  countrycode: tuv
+  language: kiribati
+  isofficial: 0
+  percentage: 8.0
+  slug: tuv-kiribati
+countrylanguages_874:
+  countrycode: tuv
+  language: tuvalu
+  isofficial: 1
+  percentage: 93.0
+  slug: tuv-tuvalu
+countrylanguages_875:
+  countrycode: twn
+  language: ami
+  isofficial: 0
+  percentage: 1.0
+  slug: twn-ami
+countrylanguages_876:
+  countrycode: twn
+  language: atayal
+  isofficial: 0
+  percentage: 0.0
+  slug: twn-atayal
+countrylanguages_877:
+  countrycode: twn
+  language: hakka
+  isofficial: 0
+  percentage: 11.0
+  slug: twn-hakka
+countrylanguages_878:
+  countrycode: twn
+  language: mandarin chinese
+  isofficial: 1
+  percentage: 20.0
+  slug: twn-mandarin chinese
+countrylanguages_879:
+  countrycode: twn
+  language: min
+  isofficial: 0
+  percentage: 67.0
+  slug: twn-min
+countrylanguages_880:
+  countrycode: twn
+  language: paiwan
+  isofficial: 0
+  percentage: 0.0
+  slug: twn-paiwan
+countrylanguages_881:
+  countrycode: tza
+  language: chaga and pare
+  isofficial: 0
+  percentage: 5.0
+  slug: tza-chaga and pare
+countrylanguages_882:
+  countrycode: tza
+  language: gogo
+  isofficial: 0
+  percentage: 4.0
+  slug: tza-gogo
+countrylanguages_883:
+  countrycode: tza
+  language: ha
+  isofficial: 0
+  percentage: 4.0
+  slug: tza-ha
+countrylanguages_884:
+  countrycode: tza
+  language: haya
+  isofficial: 0
+  percentage: 6.0
+  slug: tza-haya
+countrylanguages_885:
+  countrycode: tza
+  language: hehet
+  isofficial: 0
+  percentage: 7.0
+  slug: tza-hehet
+countrylanguages_886:
+  countrycode: tza
+  language: luguru
+  isofficial: 0
+  percentage: 5.0
+  slug: tza-luguru
+countrylanguages_887:
+  countrycode: tza
+  language: makonde
+  isofficial: 0
+  percentage: 6.0
+  slug: tza-makonde
+countrylanguages_888:
+  countrycode: tza
+  language: nyakusa
+  isofficial: 0
+  percentage: 5.0
+  slug: tza-nyakusa
+countrylanguages_889:
+  countrycode: tza
+  language: nyamwesi
+  isofficial: 0
+  percentage: 21.0
+  slug: tza-nyamwesi
+countrylanguages_890:
+  countrycode: tza
+  language: shambala
+  isofficial: 0
+  percentage: 4.0
+  slug: tza-shambala
+countrylanguages_891:
+  countrycode: tza
+  language: swahili
+  isofficial: 1
+  percentage: 9.0
+  slug: tza-swahili
+countrylanguages_892:
+  countrycode: uga
+  language: acholi
+  isofficial: 0
+  percentage: 4.0
+  slug: uga-acholi
+countrylanguages_893:
+  countrycode: uga
+  language: ganda
+  isofficial: 0
+  percentage: 18.0
+  slug: uga-ganda
+countrylanguages_894:
+  countrycode: uga
+  language: gisu
+  isofficial: 0
+  percentage: 5.0
+  slug: uga-gisu
+countrylanguages_895:
+  countrycode: uga
+  language: kiga
+  isofficial: 0
+  percentage: 8.0
+  slug: uga-kiga
+countrylanguages_896:
+  countrycode: uga
+  language: lango
+  isofficial: 0
+  percentage: 6.0
+  slug: uga-lango
+countrylanguages_897:
+  countrycode: uga
+  language: lugbara
+  isofficial: 0
+  percentage: 5.0
+  slug: uga-lugbara
+countrylanguages_898:
+  countrycode: uga
+  language: nkole
+  isofficial: 0
+  percentage: 11.0
+  slug: uga-nkole
+countrylanguages_899:
+  countrycode: uga
+  language: rwanda
+  isofficial: 0
+  percentage: 3.0
+  slug: uga-rwanda
+countrylanguages_900:
+  countrycode: uga
+  language: soga
+  isofficial: 0
+  percentage: 8.0
+  slug: uga-soga
+countrylanguages_901:
+  countrycode: uga
+  language: teso
+  isofficial: 0
+  percentage: 6.0
+  slug: uga-teso
+countrylanguages_902:
+  countrycode: ukr
+  language: belorussian
+  isofficial: 0
+  percentage: 0.0
+  slug: ukr-belorussian
+countrylanguages_903:
+  countrycode: ukr
+  language: bulgariana
+  isofficial: 0
+  percentage: 0.0
+  slug: ukr-bulgariana
+countrylanguages_904:
+  countrycode: ukr
+  language: hungarian
+  isofficial: 0
+  percentage: 0.0
+  slug: ukr-hungarian
+countrylanguages_905:
+  countrycode: ukr
+  language: polish
+  isofficial: 0
+  percentage: 0.0
+  slug: ukr-polish
+countrylanguages_906:
+  countrycode: ukr
+  language: romanian
+  isofficial: 0
+  percentage: 1.0
+  slug: ukr-romanian
+countrylanguages_907:
+  countrycode: ukr
+  language: russian
+  isofficial: 0
+  percentage: 33.0
+  slug: ukr-russian
+countrylanguages_908:
+  countrycode: ukr
+  language: ukrainian
+  isofficial: 1
+  percentage: 65.0
+  slug: ukr-ukrainian
+countrylanguages_909:
+  countrycode: umi
+  language: english
+  isofficial: 1
+  percentage: 0.0
+  slug: umi-english
+countrylanguages_910:
+  countrycode: ury
+  language: spanish
+  isofficial: 1
+  percentage: 96.0
+  slug: ury-spanish
+countrylanguages_911:
+  countrycode: usa
+  language: chinese
+  isofficial: 0
+  percentage: 1.0
+  slug: usa-chinese
+countrylanguages_912:
+  countrycode: usa
+  language: english
+  isofficial: 1
+  percentage: 86.0
+  slug: usa-english
+countrylanguages_913:
+  countrycode: usa
+  language: french
+  isofficial: 0
+  percentage: 1.0
+  slug: usa-french
+countrylanguages_914:
+  countrycode: usa
+  language: german
+  isofficial: 0
+  percentage: 1.0
+  slug: usa-german
+countrylanguages_915:
+  countrycode: usa
+  language: italian
+  isofficial: 0
+  percentage: 1.0
+  slug: usa-italian
+countrylanguages_916:
+  countrycode: usa
+  language: japanese
+  isofficial: 0
+  percentage: 0.0
+  slug: usa-japanese
+countrylanguages_917:
+  countrycode: usa
+  language: korean
+  isofficial: 0
+  percentage: 0.0
+  slug: usa-korean
+countrylanguages_918:
+  countrycode: usa
+  language: polish
+  isofficial: 0
+  percentage: 0.0
+  slug: usa-polish
+countrylanguages_919:
+  countrycode: usa
+  language: portuguese
+  isofficial: 0
+  percentage: 0.0
+  slug: usa-portuguese
+countrylanguages_920:
+  countrycode: usa
+  language: spanish
+  isofficial: 0
+  percentage: 8.0
+  slug: usa-spanish
+countrylanguages_921:
+  countrycode: usa
+  language: tagalog
+  isofficial: 0
+  percentage: 0.0
+  slug: usa-tagalog
+countrylanguages_922:
+  countrycode: usa
+  language: vietnamese
+  isofficial: 0
+  percentage: 0.0
+  slug: usa-vietnamese
+countrylanguages_923:
+  countrycode: uzb
+  language: karakalpak
+  isofficial: 0
+  percentage: 2.0
+  slug: uzb-karakalpak
+countrylanguages_924:
+  countrycode: uzb
+  language: kazakh
+  isofficial: 0
+  percentage: 4.0
+  slug: uzb-kazakh
+countrylanguages_925:
+  countrycode: uzb
+  language: russian
+  isofficial: 0
+  percentage: 11.0
+  slug: uzb-russian
+countrylanguages_926:
+  countrycode: uzb
+  language: tadzhik
+  isofficial: 0
+  percentage: 4.0
+  slug: uzb-tadzhik
+countrylanguages_927:
+  countrycode: uzb
+  language: tatar
+  isofficial: 0
+  percentage: 2.0
+  slug: uzb-tatar
+countrylanguages_928:
+  countrycode: uzb
+  language: uzbek
+  isofficial: 1
+  percentage: 73.0
+  slug: uzb-uzbek
+countrylanguages_929:
+  countrycode: vat
+  language: italian
+  isofficial: 1
+  percentage: 0.0
+  slug: vat-italian
+countrylanguages_930:
+  countrycode: vct
+  language: creole english
+  isofficial: 0
+  percentage: 99.0
+  slug: vct-creole english
+countrylanguages_931:
+  countrycode: vct
+  language: english
+  isofficial: 1
+  percentage: 0.0
+  slug: vct-english
+countrylanguages_932:
+  countrycode: ven
+  language: goajiro
+  isofficial: 0
+  percentage: 0.0
+  slug: ven-goajiro
+countrylanguages_933:
+  countrycode: ven
+  language: spanish
+  isofficial: 1
+  percentage: 97.0
+  slug: ven-spanish
+countrylanguages_934:
+  countrycode: ven
+  language: warrau
+  isofficial: 0
+  percentage: 0.0
+  slug: ven-warrau
+countrylanguages_935:
+  countrycode: vgb
+  language: english
+  isofficial: 1
+  percentage: 0.0
+  slug: vgb-english
+countrylanguages_936:
+  countrycode: vir
+  language: english
+  isofficial: 1
+  percentage: 82.0
+  slug: vir-english
+countrylanguages_937:
+  countrycode: vir
+  language: french
+  isofficial: 0
+  percentage: 3.0
+  slug: vir-french
+countrylanguages_938:
+  countrycode: vir
+  language: spanish
+  isofficial: 0
+  percentage: 13.0
+  slug: vir-spanish
+countrylanguages_939:
+  countrycode: vnm
+  language: chinese
+  isofficial: 0
+  percentage: 1.0
+  slug: vnm-chinese
+countrylanguages_940:
+  countrycode: vnm
+  language: khmer
+  isofficial: 0
+  percentage: 1.0
+  slug: vnm-khmer
+countrylanguages_941:
+  countrycode: vnm
+  language: man
+  isofficial: 0
+  percentage: 1.0
+  slug: vnm-man
+countrylanguages_942:
+  countrycode: vnm
+  language: miao
+  isofficial: 0
+  percentage: 1.0
+  slug: vnm-miao
+countrylanguages_943:
+  countrycode: vnm
+  language: muong
+  isofficial: 0
+  percentage: 2.0
+  slug: vnm-muong
+countrylanguages_944:
+  countrycode: vnm
+  language: nung
+  isofficial: 0
+  percentage: 1.0
+  slug: vnm-nung
+countrylanguages_945:
+  countrycode: vnm
+  language: thai
+  isofficial: 0
+  percentage: 2.0
+  slug: vnm-thai
+countrylanguages_946:
+  countrycode: vnm
+  language: tho
+  isofficial: 0
+  percentage: 2.0
+  slug: vnm-tho
+countrylanguages_947:
+  countrycode: vnm
+  language: vietnamese
+  isofficial: 1
+  percentage: 87.0
+  slug: vnm-vietnamese
+countrylanguages_948:
+  countrycode: vut
+  language: bislama
+  isofficial: 1
+  percentage: 57.0
+  slug: vut-bislama
+countrylanguages_949:
+  countrycode: vut
+  language: english
+  isofficial: 1
+  percentage: 28.0
+  slug: vut-english
+countrylanguages_950:
+  countrycode: vut
+  language: french
+  isofficial: 1
+  percentage: 14.0
+  slug: vut-french
+countrylanguages_951:
+  countrycode: wlf
+  language: futuna
+  isofficial: 0
+  percentage: 0.0
+  slug: wlf-futuna
+countrylanguages_952:
+  countrycode: wlf
+  language: wallis
+  isofficial: 0
+  percentage: 0.0
+  slug: wlf-wallis
+countrylanguages_953:
+  countrycode: wsm
+  language: english
+  isofficial: 1
+  percentage: 1.0
+  slug: wsm-english
+countrylanguages_954:
+  countrycode: wsm
+  language: samoan
+  isofficial: 1
+  percentage: 48.0
+  slug: wsm-samoan
+countrylanguages_955:
+  countrycode: wsm
+  language: samoan-english
+  isofficial: 0
+  percentage: 52.0
+  slug: wsm-samoan-english
+countrylanguages_956:
+  countrycode: yem
+  language: arabic
+  isofficial: 1
+  percentage: 100.0
+  slug: yem-arabic
+countrylanguages_957:
+  countrycode: yem
+  language: soqutri
+  isofficial: 0
+  percentage: 0.0
+  slug: yem-soqutri
+countrylanguages_958:
+  countrycode: yug
+  language: albaniana
+  isofficial: 0
+  percentage: 17.0
+  slug: yug-albaniana
+countrylanguages_959:
+  countrycode: yug
+  language: hungarian
+  isofficial: 0
+  percentage: 3.0
+  slug: yug-hungarian
+countrylanguages_960:
+  countrycode: yug
+  language: macedonian
+  isofficial: 0
+  percentage: 1.0
+  slug: yug-macedonian
+countrylanguages_961:
+  countrycode: yug
+  language: romani
+  isofficial: 0
+  percentage: 1.0
+  slug: yug-romani
+countrylanguages_962:
+  countrycode: yug
+  language: serbo-croatian
+  isofficial: 1
+  percentage: 75.0
+  slug: yug-serbo-croatian
+countrylanguages_963:
+  countrycode: yug
+  language: slovak
+  isofficial: 0
+  percentage: 1.0
+  slug: yug-slovak
+countrylanguages_964:
+  countrycode: zaf
+  language: afrikaans
+  isofficial: 1
+  percentage: 14.0
+  slug: zaf-afrikaans
+countrylanguages_965:
+  countrycode: zaf
+  language: english
+  isofficial: 1
+  percentage: 9.0
+  slug: zaf-english
+countrylanguages_966:
+  countrycode: zaf
+  language: ndebele
+  isofficial: 0
+  percentage: 2.0
+  slug: zaf-ndebele
+countrylanguages_967:
+  countrycode: zaf
+  language: northsotho
+  isofficial: 0
+  percentage: 9.0
+  slug: zaf-northsotho
+countrylanguages_968:
+  countrycode: zaf
+  language: southsotho
+  isofficial: 0
+  percentage: 8.0
+  slug: zaf-southsotho
+countrylanguages_969:
+  countrycode: zaf
+  language: swazi
+  isofficial: 0
+  percentage: 3.0
+  slug: zaf-swazi
+countrylanguages_970:
+  countrycode: zaf
+  language: tsonga
+  isofficial: 0
+  percentage: 4.0
+  slug: zaf-tsonga
+countrylanguages_971:
+  countrycode: zaf
+  language: tswana
+  isofficial: 0
+  percentage: 8.0
+  slug: zaf-tswana
+countrylanguages_972:
+  countrycode: zaf
+  language: venda
+  isofficial: 0
+  percentage: 2.0
+  slug: zaf-venda
+countrylanguages_973:
+  countrycode: zaf
+  language: xhosa
+  isofficial: 1
+  percentage: 18.0
+  slug: zaf-xhosa
+countrylanguages_974:
+  countrycode: zaf
+  language: zulu
+  isofficial: 1
+  percentage: 23.0
+  slug: zaf-zulu
+countrylanguages_975:
+  countrycode: zmb
+  language: bemba
+  isofficial: 0
+  percentage: 30.0
+  slug: zmb-bemba
+countrylanguages_976:
+  countrycode: zmb
+  language: chewa
+  isofficial: 0
+  percentage: 6.0
+  slug: zmb-chewa
+countrylanguages_977:
+  countrycode: zmb
+  language: lozi
+  isofficial: 0
+  percentage: 6.0
+  slug: zmb-lozi
+countrylanguages_978:
+  countrycode: zmb
+  language: nsenga
+  isofficial: 0
+  percentage: 4.0
+  slug: zmb-nsenga
+countrylanguages_979:
+  countrycode: zmb
+  language: nyanja
+  isofficial: 0
+  percentage: 8.0
+  slug: zmb-nyanja
+countrylanguages_980:
+  countrycode: zmb
+  language: tongan
+  isofficial: 0
+  percentage: 11.0
+  slug: zmb-tongan
+countrylanguages_981:
+  countrycode: zwe
+  language: english
+  isofficial: 1
+  percentage: 2.0
+  slug: zwe-english
+countrylanguages_982:
+  countrycode: zwe
+  language: ndebele
+  isofficial: 0
+  percentage: 16.0
+  slug: zwe-ndebele
+countrylanguages_983:
+  countrycode: zwe
+  language: nyanja
+  isofficial: 0
+  percentage: 2.0
+  slug: zwe-nyanja
+countrylanguages_984:
+  countrycode: zwe
+  language: shona
+  isofficial: 0
+  percentage: 72.0
+  slug: zwe-shona

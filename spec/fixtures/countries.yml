@@ -1,0 +1,3825 @@
+---
+countries_001:
+  code: abw
+  name: aruba
+  continent: north america
+  region: caribbean
+  surfacearea: 193.0
+  indepyear: 
+  population: 103000
+  lifeexpectancy: 68.0
+  gnp: 828.0
+  gnpold: 793.0
+  localname: aruba
+  governmentform: nonmetropolitan territory of the netherlands
+  headofstate: beatrix
+  capital: 129
+  code2: aw
+countries_002:
+  code: afg
+  name: afghanistan
+  continent: asia
+  region: southern and central asia
+  surfacearea: 652090.0
+  indepyear: 1919
+  population: 22720000
+  lifeexpectancy: 46.0
+  gnp: 5976.0
+  gnpold: 
+  localname: afganistan/afqanestan
+  governmentform: islamic emirate
+  headofstate: mohammad omar
+  capital: 1
+  code2: af
+countries_003:
+  code: ago
+  name: angola
+  continent: africa
+  region: central africa
+  surfacearea: 1246700.0
+  indepyear: 1975
+  population: 12878000
+  lifeexpectancy: 38.0
+  gnp: 6648.0
+  gnpold: 7984.0
+  localname: angola
+  governmentform: republic
+  headofstate: jos
+  capital: 56
+  code2: ao
+countries_004:
+  code: aia
+  name: anguilla
+  continent: north america
+  region: caribbean
+  surfacearea: 96.0
+  indepyear: 
+  population: 8000
+  lifeexpectancy: 76.0
+  gnp: 63.0
+  gnpold: 
+  localname: anguilla
+  governmentform: dependent territory of the uk
+  headofstate: elisabeth ii
+  capital: 62
+  code2: ai
+countries_005:
+  code: alb
+  name: albania
+  continent: europe
+  region: southern europe
+  surfacearea: 28748.0
+  indepyear: 1912
+  population: 3401200
+  lifeexpectancy: 72.0
+  gnp: 3205.0
+  gnpold: 2500.0
+  localname: shqip
+  governmentform: republic
+  headofstate: rexhep mejdani
+  capital: 34
+  code2: al
+countries_006:
+  code: and
+  name: andorra
+  continent: europe
+  region: southern europe
+  surfacearea: 468.0
+  indepyear: 1278
+  population: 78000
+  lifeexpectancy: 84.0
+  gnp: 1630.0
+  gnpold: 
+  localname: andorra
+  governmentform: parliamentary coprincipality
+  headofstate: ''
+  capital: 55
+  code2: ad
+countries_007:
+  code: ant
+  name: netherlands antilles
+  continent: north america
+  region: caribbean
+  surfacearea: 800.0
+  indepyear: 
+  population: 217000
+  lifeexpectancy: 75.0
+  gnp: 1941.0
+  gnpold: 
+  localname: nederlandse antillen
+  governmentform: nonmetropolitan territory of the netherlands
+  headofstate: beatrix
+  capital: 33
+  code2: an
+countries_008:
+  code: are
+  name: united arab emirates
+  continent: asia
+  region: middle east
+  surfacearea: 83600.0
+  indepyear: 1971
+  population: 2441000
+  lifeexpectancy: 74.0
+  gnp: 37966.0
+  gnpold: 36846.0
+  localname: al-imarat al-
+  governmentform: emirate federation
+  headofstate: zayid bin sultan al-nahayan
+  capital: 65
+  code2: ae
+countries_009:
+  code: arg
+  name: argentina
+  continent: south america
+  region: south america
+  surfacearea: 2780400.0
+  indepyear: 1816
+  population: 37032000
+  lifeexpectancy: 75.0
+  gnp: 340238.0
+  gnpold: 323310.0
+  localname: argentina
+  governmentform: federal republic
+  headofstate: fernando de la r
+  capital: 69
+  code2: ar
+countries_010:
+  code: arm
+  name: armenia
+  continent: asia
+  region: middle east
+  surfacearea: 29800.0
+  indepyear: 1991
+  population: 3520000
+  lifeexpectancy: 66.0
+  gnp: 1813.0
+  gnpold: 1627.0
+  localname: hajastan
+  governmentform: republic
+  headofstate: robert kot
+  capital: 126
+  code2: am
+countries_011:
+  code: asm
+  name: american samoa
+  continent: oceania
+  region: polynesia
+  surfacearea: 199.0
+  indepyear: 
+  population: 68000
+  lifeexpectancy: 75.0
+  gnp: 334.0
+  gnpold: 
+  localname: amerika samoa
+  governmentform: us territory
+  headofstate: george w. bush
+  capital: 54
+  code2: as
+countries_012:
+  code: ata
+  name: antarctica
+  continent: antarctica
+  region: antarctica
+  surfacearea: 13120000.0
+  indepyear: 
+  population: 0
+  lifeexpectancy: 
+  gnp: 0.0
+  gnpold: 
+  localname: ''
+  governmentform: co-administrated
+  headofstate: ''
+  capital: 
+  code2: aq
+countries_013:
+  code: atf
+  name: french southern territories
+  continent: antarctica
+  region: antarctica
+  surfacearea: 7780.0
+  indepyear: 
+  population: 0
+  lifeexpectancy: 
+  gnp: 0.0
+  gnpold: 
+  localname: terres australes fran
+  governmentform: nonmetropolitan territory of france
+  headofstate: jacques chirac
+  capital: 
+  code2: tf
+countries_014:
+  code: atg
+  name: antigua and barbuda
+  continent: north america
+  region: caribbean
+  surfacearea: 442.0
+  indepyear: 1981
+  population: 68000
+  lifeexpectancy: 71.0
+  gnp: 612.0
+  gnpold: 584.0
+  localname: antigua and barbuda
+  governmentform: constitutional monarchy
+  headofstate: elisabeth ii
+  capital: 63
+  code2: ag
+countries_015:
+  code: aus
+  name: australia
+  continent: oceania
+  region: australia and new zealand
+  surfacearea: 7741220.0
+  indepyear: 1901
+  population: 18886000
+  lifeexpectancy: 80.0
+  gnp: 351182.0
+  gnpold: 392911.0
+  localname: australia
+  governmentform: constitutional monarchy, federation
+  headofstate: elisabeth ii
+  capital: 135
+  code2: au
+countries_016:
+  code: aut
+  name: austria
+  continent: europe
+  region: western europe
+  surfacearea: 83859.0
+  indepyear: 1918
+  population: 8091800
+  lifeexpectancy: 78.0
+  gnp: 211860.0
+  gnpold: 206025.0
+  localname: ''
+  governmentform: federal republic
+  headofstate: thomas klestil
+  capital: 1523
+  code2: at
+countries_017:
+  code: aze
+  name: azerbaijan
+  continent: asia
+  region: middle east
+  surfacearea: 86600.0
+  indepyear: 1991
+  population: 7734000
+  lifeexpectancy: 63.0
+  gnp: 4127.0
+  gnpold: 4100.0
+  localname: az
+  governmentform: federal republic
+  headofstate: heyd
+  capital: 144
+  code2: az
+countries_018:
+  code: bdi
+  name: burundi
+  continent: africa
+  region: eastern africa
+  surfacearea: 27834.0
+  indepyear: 1962
+  population: 6695000
+  lifeexpectancy: 46.0
+  gnp: 903.0
+  gnpold: 982.0
+  localname: burundi/uburundi
+  governmentform: republic
+  headofstate: pierre buyoya
+  capital: 552
+  code2: bi
+countries_019:
+  code: bel
+  name: belgium
+  continent: europe
+  region: western europe
+  surfacearea: 30518.0
+  indepyear: 1830
+  population: 10239000
+  lifeexpectancy: 78.0
+  gnp: 249704.0
+  gnpold: 243948.0
+  localname: belgi
+  governmentform: constitutional monarchy, federation
+  headofstate: albert ii
+  capital: 179
+  code2: be
+countries_020:
+  code: ben
+  name: benin
+  continent: africa
+  region: western africa
+  surfacearea: 112622.0
+  indepyear: 1960
+  population: 6097000
+  lifeexpectancy: 50.0
+  gnp: 2357.0
+  gnpold: 2141.0
+  localname: b
+  governmentform: republic
+  headofstate: mathieu k
+  capital: 187
+  code2: bj
+countries_021:
+  code: bfa
+  name: burkina faso
+  continent: africa
+  region: western africa
+  surfacearea: 274000.0
+  indepyear: 1960
+  population: 11937000
+  lifeexpectancy: 47.0
+  gnp: 2425.0
+  gnpold: 2201.0
+  localname: burkina faso
+  governmentform: republic
+  headofstate: blaise compaor
+  capital: 549
+  code2: bf
+countries_022:
+  code: bgd
+  name: bangladesh
+  continent: asia
+  region: southern and central asia
+  surfacearea: 143998.0
+  indepyear: 1971
+  population: 129155000
+  lifeexpectancy: 60.0
+  gnp: 32852.0
+  gnpold: 31966.0
+  localname: bangladesh
+  governmentform: republic
+  headofstate: shahabuddin ahmad
+  capital: 150
+  code2: bd
+countries_023:
+  code: bgr
+  name: bulgaria
+  continent: europe
+  region: eastern europe
+  surfacearea: 110994.0
+  indepyear: 1908
+  population: 8190900
+  lifeexpectancy: 71.0
+  gnp: 12178.0
+  gnpold: 10169.0
+  localname: balgarija
+  governmentform: republic
+  headofstate: petar stojanov
+  capital: 539
+  code2: bg
+countries_024:
+  code: bhr
+  name: bahrain
+  continent: asia
+  region: middle east
+  surfacearea: 694.0
+  indepyear: 1971
+  population: 617000
+  lifeexpectancy: 73.0
+  gnp: 6366.0
+  gnpold: 6097.0
+  localname: al-bahrayn
+  governmentform: monarchy (emirate)
+  headofstate: hamad ibn isa al-khalifa
+  capital: 149
+  code2: bh
+countries_025:
+  code: bhs
+  name: bahamas
+  continent: north america
+  region: caribbean
+  surfacearea: 13878.0
+  indepyear: 1973
+  population: 307000
+  lifeexpectancy: 71.0
+  gnp: 3527.0
+  gnpold: 3347.0
+  localname: the bahamas
+  governmentform: constitutional monarchy
+  headofstate: elisabeth ii
+  capital: 148
+  code2: bs
+countries_026:
+  code: bih
+  name: bosnia and herzegovina
+  continent: europe
+  region: southern europe
+  surfacearea: 51197.0
+  indepyear: 1992
+  population: 3972000
+  lifeexpectancy: 72.0
+  gnp: 2841.0
+  gnpold: 
+  localname: bosna i hercegovina
+  governmentform: federal republic
+  headofstate: ante jelavic
+  capital: 201
+  code2: ba
+countries_027:
+  code: blr
+  name: belarus
+  continent: europe
+  region: eastern europe
+  surfacearea: 207600.0
+  indepyear: 1991
+  population: 10236000
+  lifeexpectancy: 68.0
+  gnp: 13714.0
+  gnpold: 
+  localname: belarus
+  governmentform: republic
+  headofstate: aljaksandr luka
+  capital: 3520
+  code2: by
+countries_028:
+  code: blz
+  name: belize
+  continent: north america
+  region: central america
+  surfacearea: 22696.0
+  indepyear: 1981
+  population: 241000
+  lifeexpectancy: 71.0
+  gnp: 630.0
+  gnpold: 616.0
+  localname: belize
+  governmentform: constitutional monarchy
+  headofstate: elisabeth ii
+  capital: 185
+  code2: bz
+countries_029:
+  code: bmu
+  name: bermuda
+  continent: north america
+  region: north america
+  surfacearea: 53.0
+  indepyear: 
+  population: 65000
+  lifeexpectancy: 77.0
+  gnp: 2328.0
+  gnpold: 2190.0
+  localname: bermuda
+  governmentform: dependent territory of the uk
+  headofstate: elisabeth ii
+  capital: 191
+  code2: bm
+countries_030:
+  code: bol
+  name: bolivia
+  continent: south america
+  region: south america
+  surfacearea: 1098581.0
+  indepyear: 1825
+  population: 8329000
+  lifeexpectancy: 64.0
+  gnp: 8571.0
+  gnpold: 7967.0
+  localname: bolivia
+  governmentform: republic
+  headofstate: hugo b
+  capital: 194
+  code2: bo
+countries_031:
+  code: bra
+  name: brazil
+  continent: south america
+  region: south america
+  surfacearea: 8547403.0
+  indepyear: 1822
+  population: 170115000
+  lifeexpectancy: 63.0
+  gnp: 776739.0
+  gnpold: 804108.0
+  localname: brasil
+  governmentform: federal republic
+  headofstate: fernando henrique cardoso
+  capital: 211
+  code2: br
+countries_032:
+  code: brb
+  name: barbados
+  continent: north america
+  region: caribbean
+  surfacearea: 430.0
+  indepyear: 1966
+  population: 270000
+  lifeexpectancy: 73.0
+  gnp: 2223.0
+  gnpold: 2186.0
+  localname: barbados
+  governmentform: constitutional monarchy
+  headofstate: elisabeth ii
+  capital: 174
+  code2: bb
+countries_033:
+  code: brn
+  name: brunei
+  continent: asia
+  region: southeast asia
+  surfacearea: 5765.0
+  indepyear: 1984
+  population: 328000
+  lifeexpectancy: 74.0
+  gnp: 11705.0
+  gnpold: 12460.0
+  localname: brunei darussalam
+  governmentform: monarchy (sultanate)
+  headofstate: haji hassan al-bolkiah
+  capital: 538
+  code2: bn
+countries_034:
+  code: btn
+  name: bhutan
+  continent: asia
+  region: southern and central asia
+  surfacearea: 47000.0
+  indepyear: 1910
+  population: 2124000
+  lifeexpectancy: 52.0
+  gnp: 372.0
+  gnpold: 383.0
+  localname: druk-yul
+  governmentform: monarchy
+  headofstate: jigme singye wangchuk
+  capital: 192
+  code2: bt
+countries_035:
+  code: bvt
+  name: bouvet island
+  continent: antarctica
+  region: antarctica
+  surfacearea: 59.0
+  indepyear: 
+  population: 0
+  lifeexpectancy: 
+  gnp: 0.0
+  gnpold: 
+  localname: bouvet
+  governmentform: dependent territory of norway
+  headofstate: harald v
+  capital: 
+  code2: bv
+countries_036:
+  code: bwa
+  name: botswana
+  continent: africa
+  region: southern africa
+  surfacearea: 581730.0
+  indepyear: 1966
+  population: 1622000
+  lifeexpectancy: 39.0
+  gnp: 4834.0
+  gnpold: 4935.0
+  localname: botswana
+  governmentform: republic
+  headofstate: festus g. mogae
+  capital: 204
+  code2: bw
+countries_037:
+  code: caf
+  name: central african republic
+  continent: africa
+  region: central africa
+  surfacearea: 622984.0
+  indepyear: 1960
+  population: 3615000
+  lifeexpectancy: 44.0
+  gnp: 1054.0
+  gnpold: 993.0
+  localname: centrafrique/b
+  governmentform: republic
+  headofstate: ange-f
+  capital: 1889
+  code2: cf
+countries_038:
+  code: can
+  name: canada
+  continent: north america
+  region: north america
+  surfacearea: 9970610.0
+  indepyear: 1867
+  population: 31147000
+  lifeexpectancy: 79.0
+  gnp: 598862.0
+  gnpold: 625626.0
+  localname: canada
+  governmentform: constitutional monarchy, federation
+  headofstate: elisabeth ii
+  capital: 1822
+  code2: ca
+countries_039:
+  code: cck
+  name: cocos (keeling) islands
+  continent: oceania
+  region: australia and new zealand
+  surfacearea: 14.0
+  indepyear: 
+  population: 600
+  lifeexpectancy: 
+  gnp: 0.0
+  gnpold: 
+  localname: cocos (keeling) islands
+  governmentform: territory of australia
+  headofstate: elisabeth ii
+  capital: 2317
+  code2: cc
+countries_040:
+  code: che
+  name: switzerland
+  continent: europe
+  region: western europe
+  surfacearea: 41284.0
+  indepyear: 1499
+  population: 7160400
+  lifeexpectancy: 80.0
+  gnp: 264478.0
+  gnpold: 256092.0
+  localname: schweiz/suisse/svizzera/svizra
+  governmentform: federation
+  headofstate: adolf ogi
+  capital: 3248
+  code2: ch
+countries_041:
+  code: chl
+  name: chile
+  continent: south america
+  region: south america
+  surfacearea: 756626.0
+  indepyear: 1810
+  population: 15211000
+  lifeexpectancy: 76.0
+  gnp: 72949.0
+  gnpold: 75780.0
+  localname: chile
+  governmentform: republic
+  headofstate: ricardo lagos escobar
+  capital: 554
+  code2: cl
+countries_042:
+  code: chn
+  name: china
+  continent: asia
+  region: eastern asia
+  surfacearea: 9572900.0
+  indepyear: -1523
+  population: 1277558000
+  lifeexpectancy: 71.0
+  gnp: 982268.0
+  gnpold: 917719.0
+  localname: zhongquo
+  governmentform: people'srepublic
+  headofstate: jiang zemin
+  capital: 1891
+  code2: cn
+countries_043:
+  code: civ
+  name: c
+  continent: africa
+  region: western africa
+  surfacearea: 322463.0
+  indepyear: 1960
+  population: 14786000
+  lifeexpectancy: 45.0
+  gnp: 11345.0
+  gnpold: 10285.0
+  localname: c
+  governmentform: republic
+  headofstate: laurent gbagbo
+  capital: 2814
+  code2: ci
+countries_044:
+  code: cmr
+  name: cameroon
+  continent: africa
+  region: central africa
+  surfacearea: 475442.0
+  indepyear: 1960
+  population: 15085000
+  lifeexpectancy: 55.0
+  gnp: 9174.0
+  gnpold: 8596.0
+  localname: cameroun/cameroon
+  governmentform: republic
+  headofstate: paul biya
+  capital: 1804
+  code2: cm
+countries_045:
+  code: cod
+  name: congo, the democratic republic of the
+  continent: africa
+  region: central africa
+  surfacearea: 2344858.0
+  indepyear: 1960
+  population: 51654000
+  lifeexpectancy: 49.0
+  gnp: 6964.0
+  gnpold: 2474.0
+  localname: r
+  governmentform: republic
+  headofstate: joseph kabila
+  capital: 2298
+  code2: cd
+countries_046:
+  code: cog
+  name: congo
+  continent: africa
+  region: central africa
+  surfacearea: 342000.0
+  indepyear: 1960
+  population: 2943000
+  lifeexpectancy: 47.0
+  gnp: 2108.0
+  gnpold: 2287.0
+  localname: congo
+  governmentform: republic
+  headofstate: denis sassou-nguesso
+  capital: 2296
+  code2: cg
+countries_047:
+  code: cok
+  name: cook islands
+  continent: oceania
+  region: polynesia
+  surfacearea: 236.0
+  indepyear: 
+  population: 20000
+  lifeexpectancy: 71.0
+  gnp: 100.0
+  gnpold: 
+  localname: the cook islands
+  governmentform: nonmetropolitan territory of new zealand
+  headofstate: elisabeth ii
+  capital: 583
+  code2: ck
+countries_048:
+  code: col
+  name: colombia
+  continent: south america
+  region: south america
+  surfacearea: 1138914.0
+  indepyear: 1810
+  population: 42321000
+  lifeexpectancy: 70.0
+  gnp: 102896.0
+  gnpold: 105116.0
+  localname: colombia
+  governmentform: republic
+  headofstate: andr
+  capital: 2257
+  code2: co
+countries_049:
+  code: com
+  name: comoros
+  continent: africa
+  region: eastern africa
+  surfacearea: 1862.0
+  indepyear: 1975
+  population: 578000
+  lifeexpectancy: 60.0
+  gnp: 4401.0
+  gnpold: 4361.0
+  localname: komori/comores
+  governmentform: republic
+  headofstate: azali assoumani
+  capital: 2295
+  code2: km
+countries_050:
+  code: cpv
+  name: cape verde
+  continent: africa
+  region: western africa
+  surfacearea: 4033.0
+  indepyear: 1975
+  population: 428000
+  lifeexpectancy: 69.0
+  gnp: 435.0
+  gnpold: 420.0
+  localname: cabo verde
+  governmentform: republic
+  headofstate: ant
+  capital: 1859
+  code2: cv
+countries_051:
+  code: cri
+  name: costa rica
+  continent: north america
+  region: central america
+  surfacearea: 51100.0
+  indepyear: 1821
+  population: 4023000
+  lifeexpectancy: 76.0
+  gnp: 10226.0
+  gnpold: 9757.0
+  localname: costa rica
+  governmentform: republic
+  headofstate: 'miguel '
+  capital: 584
+  code2: cr
+countries_052:
+  code: cub
+  name: cuba
+  continent: north america
+  region: caribbean
+  surfacearea: 110861.0
+  indepyear: 1902
+  population: 11201000
+  lifeexpectancy: 76.0
+  gnp: 17843.0
+  gnpold: 18862.0
+  localname: cuba
+  governmentform: socialistic republic
+  headofstate: fidel castro ruz
+  capital: 2413
+  code2: cu
+countries_053:
+  code: cxr
+  name: christmas island
+  continent: oceania
+  region: australia and new zealand
+  surfacearea: 135.0
+  indepyear: 
+  population: 2500
+  lifeexpectancy: 
+  gnp: 0.0
+  gnpold: 
+  localname: christmas island
+  governmentform: territory of australia
+  headofstate: elisabeth ii
+  capital: 1791
+  code2: cx
+countries_054:
+  code: cym
+  name: cayman islands
+  continent: north america
+  region: caribbean
+  surfacearea: 264.0
+  indepyear: 
+  population: 38000
+  lifeexpectancy: 79.0
+  gnp: 1263.0
+  gnpold: 1186.0
+  localname: cayman islands
+  governmentform: dependent territory of the uk
+  headofstate: elisabeth ii
+  capital: 553
+  code2: ky
+countries_055:
+  code: cyp
+  name: cyprus
+  continent: asia
+  region: middle east
+  surfacearea: 9251.0
+  indepyear: 1960
+  population: 754700
+  lifeexpectancy: 77.0
+  gnp: 9333.0
+  gnpold: 8246.0
+  localname: k
+  governmentform: republic
+  headofstate: glafkos klerides
+  capital: 2430
+  code2: cy
+countries_056:
+  code: cze
+  name: czech republic
+  continent: europe
+  region: eastern europe
+  surfacearea: 78866.0
+  indepyear: 1993
+  population: 10278100
+  lifeexpectancy: 75.0
+  gnp: 55017.0
+  gnpold: 52037.0
+  localname: ''
+  governmentform: republic
+  headofstate: v
+  capital: 3339
+  code2: cz
+countries_057:
+  code: deu
+  name: germany
+  continent: europe
+  region: western europe
+  surfacearea: 357022.0
+  indepyear: 1955
+  population: 82164700
+  lifeexpectancy: 77.0
+  gnp: 2133367.0
+  gnpold: 2102826.0
+  localname: deutschland
+  governmentform: federal republic
+  headofstate: johannes rau
+  capital: 3068
+  code2: de
+countries_058:
+  code: dji
+  name: djibouti
+  continent: africa
+  region: eastern africa
+  surfacearea: 23200.0
+  indepyear: 1977
+  population: 638000
+  lifeexpectancy: 51.0
+  gnp: 382.0
+  gnpold: 373.0
+  localname: djibouti/jibuti
+  governmentform: republic
+  headofstate: ismail omar guelleh
+  capital: 585
+  code2: dj
+countries_059:
+  code: dma
+  name: dominica
+  continent: north america
+  region: caribbean
+  surfacearea: 751.0
+  indepyear: 1978
+  population: 71000
+  lifeexpectancy: 73.0
+  gnp: 256.0
+  gnpold: 243.0
+  localname: dominica
+  governmentform: republic
+  headofstate: vernon shaw
+  capital: 586
+  code2: dm
+countries_060:
+  code: dnk
+  name: denmark
+  continent: europe
+  region: nordic countries
+  surfacearea: 43094.0
+  indepyear: 800
+  population: 5330000
+  lifeexpectancy: 77.0
+  gnp: 174099.0
+  gnpold: 169264.0
+  localname: danmark
+  governmentform: constitutional monarchy
+  headofstate: margrethe ii
+  capital: 3315
+  code2: dk
+countries_061:
+  code: dom
+  name: dominican republic
+  continent: north america
+  region: caribbean
+  surfacearea: 48511.0
+  indepyear: 1844
+  population: 8495000
+  lifeexpectancy: 73.0
+  gnp: 15846.0
+  gnpold: 15076.0
+  localname: rep
+  governmentform: republic
+  headofstate: hip
+  capital: 587
+  code2: do
+countries_062:
+  code: dza
+  name: algeria
+  continent: africa
+  region: northern africa
+  surfacearea: 2381741.0
+  indepyear: 1962
+  population: 31471000
+  lifeexpectancy: 70.0
+  gnp: 49982.0
+  gnpold: 46966.0
+  localname: al-jaza
+  governmentform: republic
+  headofstate: abdelaziz bouteflika
+  capital: 35
+  code2: dz
+countries_063:
+  code: ecu
+  name: ecuador
+  continent: south america
+  region: south america
+  surfacearea: 283561.0
+  indepyear: 1822
+  population: 12646000
+  lifeexpectancy: 71.0
+  gnp: 19770.0
+  gnpold: 19769.0
+  localname: ecuador
+  governmentform: republic
+  headofstate: gustavo noboa bejarano
+  capital: 594
+  code2: ec
+countries_064:
+  code: egy
+  name: egypt
+  continent: africa
+  region: northern africa
+  surfacearea: 1001449.0
+  indepyear: 1922
+  population: 68470000
+  lifeexpectancy: 63.0
+  gnp: 82710.0
+  gnpold: 75617.0
+  localname: misr
+  governmentform: republic
+  headofstate: hosni mubarak
+  capital: 608
+  code2: eg
+countries_065:
+  code: eri
+  name: eritrea
+  continent: africa
+  region: eastern africa
+  surfacearea: 117600.0
+  indepyear: 1993
+  population: 3850000
+  lifeexpectancy: 56.0
+  gnp: 650.0
+  gnpold: 755.0
+  localname: ertra
+  governmentform: republic
+  headofstate: isayas afewerki [isaias afwerki]
+  capital: 652
+  code2: er
+countries_066:
+  code: esh
+  name: western sahara
+  continent: africa
+  region: northern africa
+  surfacearea: 266000.0
+  indepyear: 
+  population: 293000
+  lifeexpectancy: 50.0
+  gnp: 60.0
+  gnpold: 
+  localname: as-sahrawiya
+  governmentform: occupied by marocco
+  headofstate: mohammed abdel aziz
+  capital: 2453
+  code2: eh
+countries_067:
+  code: esp
+  name: spain
+  continent: europe
+  region: southern europe
+  surfacearea: 505992.0
+  indepyear: 1492
+  population: 39441700
+  lifeexpectancy: 79.0
+  gnp: 553233.0
+  gnpold: 532031.0
+  localname: espa
+  governmentform: constitutional monarchy
+  headofstate: juan carlos i
+  capital: 653
+  code2: es
+countries_068:
+  code: est
+  name: estonia
+  continent: europe
+  region: baltic countries
+  surfacearea: 45227.0
+  indepyear: 1991
+  population: 1439200
+  lifeexpectancy: 70.0
+  gnp: 5328.0
+  gnpold: 3371.0
+  localname: eesti
+  governmentform: republic
+  headofstate: lennart meri
+  capital: 3791
+  code2: ee
+countries_069:
+  code: eth
+  name: ethiopia
+  continent: africa
+  region: eastern africa
+  surfacearea: 1104300.0
+  indepyear: -1000
+  population: 62565000
+  lifeexpectancy: 45.0
+  gnp: 6353.0
+  gnpold: 6180.0
+  localname: yeityop
+  governmentform: republic
+  headofstate: negasso gidada
+  capital: 756
+  code2: et
+countries_070:
+  code: fin
+  name: finland
+  continent: europe
+  region: nordic countries
+  surfacearea: 338145.0
+  indepyear: 1917
+  population: 5171300
+  lifeexpectancy: 77.0
+  gnp: 121914.0
+  gnpold: 119833.0
+  localname: suomi
+  governmentform: republic
+  headofstate: tarja halonen
+  capital: 3236
+  code2: fi
+countries_071:
+  code: fji
+  name: fiji islands
+  continent: oceania
+  region: melanesia
+  surfacearea: 18274.0
+  indepyear: 1970
+  population: 817000
+  lifeexpectancy: 68.0
+  gnp: 1536.0
+  gnpold: 2149.0
+  localname: fiji islands
+  governmentform: republic
+  headofstate: josefa iloilo
+  capital: 764
+  code2: fj
+countries_072:
+  code: flk
+  name: falkland islands
+  continent: south america
+  region: south america
+  surfacearea: 12173.0
+  indepyear: 
+  population: 2000
+  lifeexpectancy: 
+  gnp: 0.0
+  gnpold: 
+  localname: falkland islands
+  governmentform: dependent territory of the uk
+  headofstate: elisabeth ii
+  capital: 763
+  code2: fk
+countries_073:
+  code: fra
+  name: france
+  continent: europe
+  region: western europe
+  surfacearea: 551500.0
+  indepyear: 843
+  population: 59225700
+  lifeexpectancy: 79.0
+  gnp: 1424285.0
+  gnpold: 1392448.0
+  localname: france
+  governmentform: republic
+  headofstate: jacques chirac
+  capital: 2974
+  code2: fr
+countries_074:
+  code: fro
+  name: faroe islands
+  continent: europe
+  region: nordic countries
+  surfacearea: 1399.0
+  indepyear: 
+  population: 43000
+  lifeexpectancy: 78.0
+  gnp: 0.0
+  gnpold: 
+  localname: f
+  governmentform: part of denmark
+  headofstate: margrethe ii
+  capital: 901
+  code2: fo
+countries_075:
+  code: fsm
+  name: micronesia, federated states of
+  continent: oceania
+  region: micronesia
+  surfacearea: 702.0
+  indepyear: 1990
+  population: 119000
+  lifeexpectancy: 69.0
+  gnp: 212.0
+  gnpold: 
+  localname: micronesia
+  governmentform: federal republic
+  headofstate: leo a. falcam
+  capital: 2689
+  code2: fm
+countries_076:
+  code: gab
+  name: gabon
+  continent: africa
+  region: central africa
+  surfacearea: 267668.0
+  indepyear: 1960
+  population: 1226000
+  lifeexpectancy: 50.0
+  gnp: 5493.0
+  gnpold: 5279.0
+  localname: le gabon
+  governmentform: republic
+  headofstate: omar bongo
+  capital: 902
+  code2: ga
+countries_077:
+  code: gbr
+  name: united kingdom
+  continent: europe
+  region: british islands
+  surfacearea: 242900.0
+  indepyear: 1066
+  population: 59623400
+  lifeexpectancy: 78.0
+  gnp: 1378330.0
+  gnpold: 1296830.0
+  localname: united kingdom
+  governmentform: constitutional monarchy
+  headofstate: elisabeth ii
+  capital: 456
+  code2: gb
+countries_078:
+  code: geo
+  name: georgia
+  continent: asia
+  region: middle east
+  surfacearea: 69700.0
+  indepyear: 1991
+  population: 4968000
+  lifeexpectancy: 65.0
+  gnp: 6064.0
+  gnpold: 5924.0
+  localname: sakartvelo
+  governmentform: republic
+  headofstate: 'eduard '
+  capital: 905
+  code2: ge
+countries_079:
+  code: gha
+  name: ghana
+  continent: africa
+  region: western africa
+  surfacearea: 238533.0
+  indepyear: 1957
+  population: 20212000
+  lifeexpectancy: 57.0
+  gnp: 7137.0
+  gnpold: 6884.0
+  localname: ghana
+  governmentform: republic
+  headofstate: john kufuor
+  capital: 910
+  code2: gh
+countries_080:
+  code: gib
+  name: gibraltar
+  continent: europe
+  region: southern europe
+  surfacearea: 6.0
+  indepyear: 
+  population: 25000
+  lifeexpectancy: 79.0
+  gnp: 258.0
+  gnpold: 
+  localname: gibraltar
+  governmentform: dependent territory of the uk
+  headofstate: elisabeth ii
+  capital: 915
+  code2: gi
+countries_081:
+  code: gin
+  name: guinea
+  continent: africa
+  region: western africa
+  surfacearea: 245857.0
+  indepyear: 1958
+  population: 7430000
+  lifeexpectancy: 46.0
+  gnp: 2352.0
+  gnpold: 2383.0
+  localname: guin
+  governmentform: republic
+  headofstate: lansana cont
+  capital: 926
+  code2: gn
+countries_082:
+  code: glp
+  name: guadeloupe
+  continent: north america
+  region: caribbean
+  surfacearea: 1705.0
+  indepyear: 
+  population: 456000
+  lifeexpectancy: 77.0
+  gnp: 3501.0
+  gnpold: 
+  localname: guadeloupe
+  governmentform: overseas department of france
+  headofstate: jacques chirac
+  capital: 919
+  code2: gp
+countries_083:
+  code: gmb
+  name: gambia
+  continent: africa
+  region: western africa
+  surfacearea: 11295.0
+  indepyear: 1965
+  population: 1305000
+  lifeexpectancy: 53.0
+  gnp: 320.0
+  gnpold: 325.0
+  localname: the gambia
+  governmentform: republic
+  headofstate: yahya jammeh
+  capital: 904
+  code2: gm
+countries_084:
+  code: gnb
+  name: guinea-bissau
+  continent: africa
+  region: western africa
+  surfacearea: 36125.0
+  indepyear: 1974
+  population: 1213000
+  lifeexpectancy: 49.0
+  gnp: 293.0
+  gnpold: 272.0
+  localname: guin
+  governmentform: republic
+  headofstate: kumba ial
+  capital: 927
+  code2: gw
+countries_085:
+  code: gnq
+  name: equatorial guinea
+  continent: africa
+  region: central africa
+  surfacearea: 28051.0
+  indepyear: 1968
+  population: 453000
+  lifeexpectancy: 54.0
+  gnp: 283.0
+  gnpold: 542.0
+  localname: guinea ecuatorial
+  governmentform: republic
+  headofstate: teodoro obiang nguema mbasogo
+  capital: 2972
+  code2: gq
+countries_086:
+  code: grc
+  name: greece
+  continent: europe
+  region: southern europe
+  surfacearea: 131626.0
+  indepyear: 1830
+  population: 10545700
+  lifeexpectancy: 78.0
+  gnp: 120724.0
+  gnpold: 119946.0
+  localname: ell
+  governmentform: republic
+  headofstate: kostis stefanopoulos
+  capital: 2401
+  code2: gr
+countries_087:
+  code: grd
+  name: grenada
+  continent: north america
+  region: caribbean
+  surfacearea: 344.0
+  indepyear: 1974
+  population: 94000
+  lifeexpectancy: 65.0
+  gnp: 318.0
+  gnpold: 
+  localname: grenada
+  governmentform: constitutional monarchy
+  headofstate: elisabeth ii
+  capital: 916
+  code2: gd
+countries_088:
+  code: grl
+  name: greenland
+  continent: north america
+  region: north america
+  surfacearea: 2166090.0
+  indepyear: 
+  population: 56000
+  lifeexpectancy: 68.0
+  gnp: 0.0
+  gnpold: 
+  localname: kalaallit nunaat/gr
+  governmentform: part of denmark
+  headofstate: margrethe ii
+  capital: 917
+  code2: gl
+countries_089:
+  code: gtm
+  name: guatemala
+  continent: north america
+  region: central america
+  surfacearea: 108889.0
+  indepyear: 1821
+  population: 11385000
+  lifeexpectancy: 66.0
+  gnp: 19008.0
+  gnpold: 17797.0
+  localname: guatemala
+  governmentform: republic
+  headofstate: alfonso portillo cabrera
+  capital: 922
+  code2: gt
+countries_090:
+  code: guf
+  name: french guiana
+  continent: south america
+  region: south america
+  surfacearea: 90000.0
+  indepyear: 
+  population: 181000
+  lifeexpectancy: 76.0
+  gnp: 681.0
+  gnpold: 
+  localname: guyane fran
+  governmentform: overseas department of france
+  headofstate: jacques chirac
+  capital: 3014
+  code2: gf
+countries_091:
+  code: gum
+  name: guam
+  continent: oceania
+  region: micronesia
+  surfacearea: 549.0
+  indepyear: 
+  population: 168000
+  lifeexpectancy: 78.0
+  gnp: 1197.0
+  gnpold: 1136.0
+  localname: guam
+  governmentform: us territory
+  headofstate: george w. bush
+  capital: 921
+  code2: gu
+countries_092:
+  code: guy
+  name: guyana
+  continent: south america
+  region: south america
+  surfacearea: 214969.0
+  indepyear: 1966
+  population: 861000
+  lifeexpectancy: 64.0
+  gnp: 722.0
+  gnpold: 743.0
+  localname: guyana
+  governmentform: republic
+  headofstate: bharrat jagdeo
+  capital: 928
+  code2: gy
+countries_093:
+  code: hkg
+  name: hong kong
+  continent: asia
+  region: eastern asia
+  surfacearea: 1075.0
+  indepyear: 
+  population: 6782000
+  lifeexpectancy: 80.0
+  gnp: 166448.0
+  gnpold: 173610.0
+  localname: xianggang/hong kong
+  governmentform: special administrative region of china
+  headofstate: jiang zemin
+  capital: 937
+  code2: hk
+countries_094:
+  code: hmd
+  name: heard island and mcdonald islands
+  continent: antarctica
+  region: antarctica
+  surfacearea: 359.0
+  indepyear: 
+  population: 0
+  lifeexpectancy: 
+  gnp: 0.0
+  gnpold: 
+  localname: heard and mcdonald islands
+  governmentform: territory of australia
+  headofstate: elisabeth ii
+  capital: 
+  code2: hm
+countries_095:
+  code: hnd
+  name: honduras
+  continent: north america
+  region: central america
+  surfacearea: 112088.0
+  indepyear: 1838
+  population: 6485000
+  lifeexpectancy: 70.0
+  gnp: 5333.0
+  gnpold: 4697.0
+  localname: honduras
+  governmentform: republic
+  headofstate: carlos roberto flores facuss
+  capital: 933
+  code2: hn
+countries_096:
+  code: hrv
+  name: croatia
+  continent: europe
+  region: southern europe
+  surfacearea: 56538.0
+  indepyear: 1991
+  population: 4473000
+  lifeexpectancy: 74.0
+  gnp: 20208.0
+  gnpold: 19300.0
+  localname: hrvatska
+  governmentform: republic
+  headofstate: ''
+  capital: 2409
+  code2: hr
+countries_097:
+  code: hti
+  name: haiti
+  continent: north america
+  region: caribbean
+  surfacearea: 27750.0
+  indepyear: 1804
+  population: 8222000
+  lifeexpectancy: 49.0
+  gnp: 3459.0
+  gnpold: 3107.0
+  localname: ha
+  governmentform: republic
+  headofstate: jean-bertrand aristide
+  capital: 929
+  code2: ht
+countries_098:
+  code: hun
+  name: hungary
+  continent: europe
+  region: eastern europe
+  surfacearea: 93030.0
+  indepyear: 1918
+  population: 10043200
+  lifeexpectancy: 71.0
+  gnp: 48267.0
+  gnpold: 45914.0
+  localname: magyarorsz
+  governmentform: republic
+  headofstate: ferenc m
+  capital: 3483
+  code2: hu
+countries_099:
+  code: idn
+  name: indonesia
+  continent: asia
+  region: southeast asia
+  surfacearea: 1904569.0
+  indepyear: 1945
+  population: 212107000
+  lifeexpectancy: 68.0
+  gnp: 84982.0
+  gnpold: 215002.0
+  localname: indonesia
+  governmentform: republic
+  headofstate: abdurrahman wahid
+  capital: 939
+  code2: id
+countries_100:
+  code: ind
+  name: india
+  continent: asia
+  region: southern and central asia
+  surfacearea: 3287263.0
+  indepyear: 1947
+  population: 1013662000
+  lifeexpectancy: 63.0
+  gnp: 447114.0
+  gnpold: 430572.0
+  localname: bharat/india
+  governmentform: federal republic
+  headofstate: kocheril raman narayanan
+  capital: 1109
+  code2: in
+countries_101:
+  code: iot
+  name: british indian ocean territory
+  continent: africa
+  region: eastern africa
+  surfacearea: 78.0
+  indepyear: 
+  population: 0
+  lifeexpectancy: 
+  gnp: 0.0
+  gnpold: 
+  localname: british indian ocean territory
+  governmentform: dependent territory of the uk
+  headofstate: elisabeth ii
+  capital: 
+  code2: io
+countries_102:
+  code: irl
+  name: ireland
+  continent: europe
+  region: british islands
+  surfacearea: 70273.0
+  indepyear: 1921
+  population: 3775100
+  lifeexpectancy: 77.0
+  gnp: 75921.0
+  gnpold: 73132.0
+  localname: ireland/
+  governmentform: republic
+  headofstate: mary mcaleese
+  capital: 1447
+  code2: ie
+countries_103:
+  code: irn
+  name: iran
+  continent: asia
+  region: southern and central asia
+  surfacearea: 1648195.0
+  indepyear: 1906
+  population: 67702000
+  lifeexpectancy: 70.0
+  gnp: 195746.0
+  gnpold: 160151.0
+  localname: iran
+  governmentform: islamic republic
+  headofstate: ali mohammad khatami-ardakani
+  capital: 1380
+  code2: ir
+countries_104:
+  code: irq
+  name: iraq
+  continent: asia
+  region: middle east
+  surfacearea: 438317.0
+  indepyear: 1932
+  population: 23115000
+  lifeexpectancy: 67.0
+  gnp: 11500.0
+  gnpold: 
+  localname: al-
+  governmentform: republic
+  headofstate: saddam hussein al-takriti
+  capital: 1365
+  code2: iq
+countries_105:
+  code: isl
+  name: iceland
+  continent: europe
+  region: nordic countries
+  surfacearea: 103000.0
+  indepyear: 1944
+  population: 279000
+  lifeexpectancy: 79.0
+  gnp: 8255.0
+  gnpold: 7474.0
+  localname: ''
+  governmentform: republic
+  headofstate: ''
+  capital: 1449
+  code2: is
+countries_106:
+  code: isr
+  name: israel
+  continent: asia
+  region: middle east
+  surfacearea: 21056.0
+  indepyear: 1948
+  population: 6217000
+  lifeexpectancy: 79.0
+  gnp: 97477.0
+  gnpold: 98577.0
+  localname: yisra
+  governmentform: republic
+  headofstate: moshe katzav
+  capital: 1450
+  code2: il
+countries_107:
+  code: ita
+  name: italy
+  continent: europe
+  region: southern europe
+  surfacearea: 301316.0
+  indepyear: 1861
+  population: 57680000
+  lifeexpectancy: 79.0
+  gnp: 1161755.0
+  gnpold: 1145372.0
+  localname: italia
+  governmentform: republic
+  headofstate: carlo azeglio ciampi
+  capital: 1464
+  code2: it
+countries_108:
+  code: jam
+  name: jamaica
+  continent: north america
+  region: caribbean
+  surfacearea: 10990.0
+  indepyear: 1962
+  population: 2583000
+  lifeexpectancy: 75.0
+  gnp: 6871.0
+  gnpold: 6722.0
+  localname: jamaica
+  governmentform: constitutional monarchy
+  headofstate: elisabeth ii
+  capital: 1530
+  code2: jm
+countries_109:
+  code: jor
+  name: jordan
+  continent: asia
+  region: middle east
+  surfacearea: 88946.0
+  indepyear: 1946
+  population: 5083000
+  lifeexpectancy: 77.0
+  gnp: 7526.0
+  gnpold: 7051.0
+  localname: al-urdunn
+  governmentform: constitutional monarchy
+  headofstate: abdullah ii
+  capital: 1786
+  code2: jo
+countries_110:
+  code: jpn
+  name: japan
+  continent: asia
+  region: eastern asia
+  surfacearea: 377829.0
+  indepyear: -660
+  population: 126714000
+  lifeexpectancy: 81.0
+  gnp: 3787042.0
+  gnpold: 4192638.0
+  localname: nihon/nippon
+  governmentform: constitutional monarchy
+  headofstate: akihito
+  capital: 1532
+  code2: jp
+countries_111:
+  code: kaz
+  name: kazakstan
+  continent: asia
+  region: southern and central asia
+  surfacearea: 2724900.0
+  indepyear: 1991
+  population: 16223000
+  lifeexpectancy: 63.0
+  gnp: 24375.0
+  gnpold: 23383.0
+  localname: qazaqstan
+  governmentform: republic
+  headofstate: nursultan nazarbajev
+  capital: 1864
+  code2: kz
+countries_112:
+  code: ken
+  name: kenya
+  continent: africa
+  region: eastern africa
+  surfacearea: 580367.0
+  indepyear: 1963
+  population: 30080000
+  lifeexpectancy: 48.0
+  gnp: 9217.0
+  gnpold: 10241.0
+  localname: kenya
+  governmentform: republic
+  headofstate: daniel arap moi
+  capital: 1881
+  code2: ke
+countries_113:
+  code: kgz
+  name: kyrgyzstan
+  continent: asia
+  region: southern and central asia
+  surfacearea: 199900.0
+  indepyear: 1991
+  population: 4699000
+  lifeexpectancy: 63.0
+  gnp: 1626.0
+  gnpold: 1767.0
+  localname: kyrgyzstan
+  governmentform: republic
+  headofstate: askar akajev
+  capital: 2253
+  code2: kg
+countries_114:
+  code: khm
+  name: cambodia
+  continent: asia
+  region: southeast asia
+  surfacearea: 181035.0
+  indepyear: 1953
+  population: 11168000
+  lifeexpectancy: 57.0
+  gnp: 5121.0
+  gnpold: 5670.0
+  localname: k
+  governmentform: constitutional monarchy
+  headofstate: norodom sihanouk
+  capital: 1800
+  code2: kh
+countries_115:
+  code: kir
+  name: kiribati
+  continent: oceania
+  region: micronesia
+  surfacearea: 726.0
+  indepyear: 1979
+  population: 83000
+  lifeexpectancy: 60.0
+  gnp: 41.0
+  gnpold: 
+  localname: kiribati
+  governmentform: republic
+  headofstate: teburoro tito
+  capital: 2256
+  code2: ki
+countries_116:
+  code: kna
+  name: saint kitts and nevis
+  continent: north america
+  region: caribbean
+  surfacearea: 261.0
+  indepyear: 1983
+  population: 38000
+  lifeexpectancy: 71.0
+  gnp: 299.0
+  gnpold: 
+  localname: saint kitts and nevis
+  governmentform: constitutional monarchy
+  headofstate: elisabeth ii
+  capital: 3064
+  code2: kn
+countries_117:
+  code: kor
+  name: south korea
+  continent: asia
+  region: eastern asia
+  surfacearea: 99434.0
+  indepyear: 1948
+  population: 46844000
+  lifeexpectancy: 74.0
+  gnp: 320749.0
+  gnpold: 442544.0
+  localname: taehan min
+  governmentform: republic
+  headofstate: kim dae-jung
+  capital: 2331
+  code2: kr
+countries_118:
+  code: kwt
+  name: kuwait
+  continent: asia
+  region: middle east
+  surfacearea: 17818.0
+  indepyear: 1961
+  population: 1972000
+  lifeexpectancy: 76.0
+  gnp: 27037.0
+  gnpold: 30373.0
+  localname: al-kuwayt
+  governmentform: constitutional monarchy (emirate)
+  headofstate: jabir al-ahmad al-jabir al-sabah
+  capital: 2429
+  code2: kw
+countries_119:
+  code: lao
+  name: laos
+  continent: asia
+  region: southeast asia
+  surfacearea: 236800.0
+  indepyear: 1953
+  population: 5433000
+  lifeexpectancy: 53.0
+  gnp: 1292.0
+  gnpold: 1746.0
+  localname: lao
+  governmentform: republic
+  headofstate: khamtay siphandone
+  capital: 2432
+  code2: la
+countries_120:
+  code: lbn
+  name: lebanon
+  continent: asia
+  region: middle east
+  surfacearea: 10400.0
+  indepyear: 1941
+  population: 3282000
+  lifeexpectancy: 71.0
+  gnp: 17121.0
+  gnpold: 15129.0
+  localname: lubnan
+  governmentform: republic
+  headofstate: ''
+  capital: 2438
+  code2: lb
+countries_121:
+  code: lbr
+  name: liberia
+  continent: africa
+  region: western africa
+  surfacearea: 111369.0
+  indepyear: 1847
+  population: 3154000
+  lifeexpectancy: 51.0
+  gnp: 2012.0
+  gnpold: 
+  localname: liberia
+  governmentform: republic
+  headofstate: charles taylor
+  capital: 2440
+  code2: lr
+countries_122:
+  code: lby
+  name: libyan arab jamahiriya
+  continent: africa
+  region: northern africa
+  surfacearea: 1759540.0
+  indepyear: 1951
+  population: 5605000
+  lifeexpectancy: 76.0
+  gnp: 44806.0
+  gnpold: 40562.0
+  localname: libiya
+  governmentform: socialistic state
+  headofstate: muammar al-qadhafi
+  capital: 2441
+  code2: ly
+countries_123:
+  code: lca
+  name: saint lucia
+  continent: north america
+  region: caribbean
+  surfacearea: 622.0
+  indepyear: 1979
+  population: 154000
+  lifeexpectancy: 72.0
+  gnp: 571.0
+  gnpold: 
+  localname: saint lucia
+  governmentform: constitutional monarchy
+  headofstate: elisabeth ii
+  capital: 3065
+  code2: lc
+countries_124:
+  code: lie
+  name: liechtenstein
+  continent: europe
+  region: western europe
+  surfacearea: 160.0
+  indepyear: 1806
+  population: 32300
+  lifeexpectancy: 79.0
+  gnp: 1119.0
+  gnpold: 1084.0
+  localname: liechtenstein
+  governmentform: constitutional monarchy
+  headofstate: hans-adam ii
+  capital: 2446
+  code2: li
+countries_125:
+  code: lka
+  name: sri lanka
+  continent: asia
+  region: southern and central asia
+  surfacearea: 65610.0
+  indepyear: 1948
+  population: 18827000
+  lifeexpectancy: 72.0
+  gnp: 15706.0
+  gnpold: 15091.0
+  localname: sri lanka/ilankai
+  governmentform: republic
+  headofstate: chandrika kumaratunga
+  capital: 3217
+  code2: lk
+countries_126:
+  code: lso
+  name: lesotho
+  continent: africa
+  region: southern africa
+  surfacearea: 30355.0
+  indepyear: 1966
+  population: 2153000
+  lifeexpectancy: 51.0
+  gnp: 1061.0
+  gnpold: 1161.0
+  localname: lesotho
+  governmentform: constitutional monarchy
+  headofstate: letsie iii
+  capital: 2437
+  code2: ls
+countries_127:
+  code: ltu
+  name: lithuania
+  continent: europe
+  region: baltic countries
+  surfacearea: 65301.0
+  indepyear: 1991
+  population: 3698500
+  lifeexpectancy: 69.0
+  gnp: 10692.0
+  gnpold: 9585.0
+  localname: lietuva
+  governmentform: republic
+  headofstate: valdas adamkus
+  capital: 2447
+  code2: lt
+countries_128:
+  code: lux
+  name: luxembourg
+  continent: europe
+  region: western europe
+  surfacearea: 2586.0
+  indepyear: 1867
+  population: 435700
+  lifeexpectancy: 77.0
+  gnp: 16321.0
+  gnpold: 15519.0
+  localname: luxembourg/l
+  governmentform: constitutional monarchy
+  headofstate: henri
+  capital: 2452
+  code2: lu
+countries_129:
+  code: lva
+  name: latvia
+  continent: europe
+  region: baltic countries
+  surfacearea: 64589.0
+  indepyear: 1991
+  population: 2424200
+  lifeexpectancy: 68.0
+  gnp: 6398.0
+  gnpold: 5639.0
+  localname: latvija
+  governmentform: republic
+  headofstate: vaira vike-freiberga
+  capital: 2434
+  code2: lv
+countries_130:
+  code: mac
+  name: macao
+  continent: asia
+  region: eastern asia
+  surfacearea: 18.0
+  indepyear: 
+  population: 473000
+  lifeexpectancy: 82.0
+  gnp: 5749.0
+  gnpold: 5940.0
+  localname: macau/aomen
+  governmentform: special administrative region of china
+  headofstate: jiang zemin
+  capital: 2454
+  code2: mo
+countries_131:
+  code: mar
+  name: morocco
+  continent: africa
+  region: northern africa
+  surfacearea: 446550.0
+  indepyear: 1956
+  population: 28351000
+  lifeexpectancy: 69.0
+  gnp: 36124.0
+  gnpold: 33514.0
+  localname: al-maghrib
+  governmentform: constitutional monarchy
+  headofstate: mohammed vi
+  capital: 2486
+  code2: ma
+countries_132:
+  code: mco
+  name: monaco
+  continent: europe
+  region: western europe
+  surfacearea: 2.0
+  indepyear: 1861
+  population: 34000
+  lifeexpectancy: 79.0
+  gnp: 776.0
+  gnpold: 
+  localname: monaco
+  governmentform: constitutional monarchy
+  headofstate: rainier iii
+  capital: 2695
+  code2: mc
+countries_133:
+  code: mda
+  name: moldova
+  continent: europe
+  region: eastern europe
+  surfacearea: 33851.0
+  indepyear: 1991
+  population: 4380000
+  lifeexpectancy: 65.0
+  gnp: 1579.0
+  gnpold: 1872.0
+  localname: moldova
+  governmentform: republic
+  headofstate: vladimir voronin
+  capital: 2690
+  code2: md
+countries_134:
+  code: mdg
+  name: madagascar
+  continent: africa
+  region: eastern africa
+  surfacearea: 587041.0
+  indepyear: 1960
+  population: 15942000
+  lifeexpectancy: 55.0
+  gnp: 3750.0
+  gnpold: 3545.0
+  localname: madagasikara/madagascar
+  governmentform: federal republic
+  headofstate: didier ratsiraka
+  capital: 2455
+  code2: mg
+countries_135:
+  code: mdv
+  name: maldives
+  continent: asia
+  region: southern and central asia
+  surfacearea: 298.0
+  indepyear: 1965
+  population: 286000
+  lifeexpectancy: 62.0
+  gnp: 199.0
+  gnpold: 
+  localname: dhivehi raajje/maldives
+  governmentform: republic
+  headofstate: maumoon abdul gayoom
+  capital: 2463
+  code2: mv
+countries_136:
+  code: mex
+  name: mexico
+  continent: north america
+  region: central america
+  surfacearea: 1958201.0
+  indepyear: 1810
+  population: 98881000
+  lifeexpectancy: 72.0
+  gnp: 414972.0
+  gnpold: 401461.0
+  localname: m
+  governmentform: federal republic
+  headofstate: vicente fox quesada
+  capital: 2515
+  code2: mx
+countries_137:
+  code: mhl
+  name: marshall islands
+  continent: oceania
+  region: micronesia
+  surfacearea: 181.0
+  indepyear: 1990
+  population: 64000
+  lifeexpectancy: 66.0
+  gnp: 97.0
+  gnpold: 
+  localname: marshall islands/majol
+  governmentform: republic
+  headofstate: kessai note
+  capital: 2507
+  code2: mh
+countries_138:
+  code: mkd
+  name: macedonia
+  continent: europe
+  region: southern europe
+  surfacearea: 25713.0
+  indepyear: 1991
+  population: 2024000
+  lifeexpectancy: 74.0
+  gnp: 1694.0
+  gnpold: 1915.0
+  localname: makedonija
+  governmentform: republic
+  headofstate: boris trajkovski
+  capital: 2460
+  code2: mk
+countries_139:
+  code: mli
+  name: mali
+  continent: africa
+  region: western africa
+  surfacearea: 1240192.0
+  indepyear: 1960
+  population: 11234000
+  lifeexpectancy: 47.0
+  gnp: 2642.0
+  gnpold: 2453.0
+  localname: mali
+  governmentform: republic
+  headofstate: alpha oumar konar
+  capital: 2482
+  code2: ml
+countries_140:
+  code: mlt
+  name: malta
+  continent: europe
+  region: southern europe
+  surfacearea: 316.0
+  indepyear: 1964
+  population: 380200
+  lifeexpectancy: 78.0
+  gnp: 3512.0
+  gnpold: 3338.0
+  localname: malta
+  governmentform: republic
+  headofstate: guido de marco
+  capital: 2484
+  code2: mt
+countries_141:
+  code: mmr
+  name: myanmar
+  continent: asia
+  region: southeast asia
+  surfacearea: 676578.0
+  indepyear: 1948
+  population: 45611000
+  lifeexpectancy: 55.0
+  gnp: 180375.0
+  gnpold: 171028.0
+  localname: myanma pye
+  governmentform: republic
+  headofstate: kenraali than shwe
+  capital: 2710
+  code2: mm
+countries_142:
+  code: mng
+  name: mongolia
+  continent: asia
+  region: eastern asia
+  surfacearea: 1566500.0
+  indepyear: 1921
+  population: 2662000
+  lifeexpectancy: 67.0
+  gnp: 1043.0
+  gnpold: 933.0
+  localname: mongol uls
+  governmentform: republic
+  headofstate: natsagiin bagabandi
+  capital: 2696
+  code2: mn
+countries_143:
+  code: mnp
+  name: northern mariana islands
+  continent: oceania
+  region: micronesia
+  surfacearea: 464.0
+  indepyear: 
+  population: 78000
+  lifeexpectancy: 76.0
+  gnp: 0.0
+  gnpold: 
+  localname: northern mariana islands
+  governmentform: commonwealth of the us
+  headofstate: george w. bush
+  capital: 2913
+  code2: mp
+countries_144:
+  code: moz
+  name: mozambique
+  continent: africa
+  region: eastern africa
+  surfacearea: 801590.0
+  indepyear: 1975
+  population: 19680000
+  lifeexpectancy: 38.0
+  gnp: 2891.0
+  gnpold: 2711.0
+  localname: mo
+  governmentform: republic
+  headofstate: joaqu
+  capital: 2698
+  code2: mz
+countries_145:
+  code: mrt
+  name: mauritania
+  continent: africa
+  region: western africa
+  surfacearea: 1025520.0
+  indepyear: 1960
+  population: 2670000
+  lifeexpectancy: 51.0
+  gnp: 998.0
+  gnpold: 1081.0
+  localname: muritaniya/mauritanie
+  governmentform: republic
+  headofstate: maaouiya ould sid
+  capital: 2509
+  code2: mr
+countries_146:
+  code: msr
+  name: montserrat
+  continent: north america
+  region: caribbean
+  surfacearea: 102.0
+  indepyear: 
+  population: 11000
+  lifeexpectancy: 78.0
+  gnp: 109.0
+  gnpold: 
+  localname: montserrat
+  governmentform: dependent territory of the uk
+  headofstate: elisabeth ii
+  capital: 2697
+  code2: ms
+countries_147:
+  code: mtq
+  name: martinique
+  continent: north america
+  region: caribbean
+  surfacearea: 1102.0
+  indepyear: 
+  population: 395000
+  lifeexpectancy: 78.0
+  gnp: 2731.0
+  gnpold: 2559.0
+  localname: martinique
+  governmentform: overseas department of france
+  headofstate: jacques chirac
+  capital: 2508
+  code2: mq
+countries_148:
+  code: mus
+  name: mauritius
+  continent: africa
+  region: eastern africa
+  surfacearea: 2040.0
+  indepyear: 1968
+  population: 1158000
+  lifeexpectancy: 71.0
+  gnp: 4251.0
+  gnpold: 4186.0
+  localname: mauritius
+  governmentform: republic
+  headofstate: cassam uteem
+  capital: 2511
+  code2: mu
+countries_149:
+  code: mwi
+  name: malawi
+  continent: africa
+  region: eastern africa
+  surfacearea: 118484.0
+  indepyear: 1964
+  population: 10925000
+  lifeexpectancy: 38.0
+  gnp: 1687.0
+  gnpold: 2527.0
+  localname: malawi
+  governmentform: republic
+  headofstate: bakili muluzi
+  capital: 2462
+  code2: mw
+countries_150:
+  code: mys
+  name: malaysia
+  continent: asia
+  region: southeast asia
+  surfacearea: 329758.0
+  indepyear: 1957
+  population: 22244000
+  lifeexpectancy: 71.0
+  gnp: 69213.0
+  gnpold: 97884.0
+  localname: malaysia
+  governmentform: constitutional monarchy, federation
+  headofstate: salahuddin abdul aziz shah alhaj
+  capital: 2464
+  code2: my
+countries_151:
+  code: myt
+  name: mayotte
+  continent: africa
+  region: eastern africa
+  surfacearea: 373.0
+  indepyear: 
+  population: 149000
+  lifeexpectancy: 60.0
+  gnp: 0.0
+  gnpold: 
+  localname: mayotte
+  governmentform: territorial collectivity of france
+  headofstate: jacques chirac
+  capital: 2514
+  code2: yt
+countries_152:
+  code: nam
+  name: namibia
+  continent: africa
+  region: southern africa
+  surfacearea: 824292.0
+  indepyear: 1990
+  population: 1726000
+  lifeexpectancy: 43.0
+  gnp: 3101.0
+  gnpold: 3384.0
+  localname: namibia
+  governmentform: republic
+  headofstate: sam nujoma
+  capital: 2726
+  code2: na
+countries_153:
+  code: ncl
+  name: new caledonia
+  continent: oceania
+  region: melanesia
+  surfacearea: 18575.0
+  indepyear: 
+  population: 214000
+  lifeexpectancy: 73.0
+  gnp: 3563.0
+  gnpold: 
+  localname: nouvelle-cal
+  governmentform: nonmetropolitan territory of france
+  headofstate: jacques chirac
+  capital: 3493
+  code2: nc
+countries_154:
+  code: ner
+  name: niger
+  continent: africa
+  region: western africa
+  surfacearea: 1267000.0
+  indepyear: 1960
+  population: 10730000
+  lifeexpectancy: 41.0
+  gnp: 1706.0
+  gnpold: 1580.0
+  localname: niger
+  governmentform: republic
+  headofstate: mamadou tandja
+  capital: 2738
+  code2: ne
+countries_155:
+  code: nfk
+  name: norfolk island
+  continent: oceania
+  region: australia and new zealand
+  surfacearea: 36.0
+  indepyear: 
+  population: 2000
+  lifeexpectancy: 
+  gnp: 0.0
+  gnpold: 
+  localname: norfolk island
+  governmentform: territory of australia
+  headofstate: elisabeth ii
+  capital: 2806
+  code2: nf
+countries_156:
+  code: nga
+  name: nigeria
+  continent: africa
+  region: western africa
+  surfacearea: 923768.0
+  indepyear: 1960
+  population: 111506000
+  lifeexpectancy: 52.0
+  gnp: 65707.0
+  gnpold: 58623.0
+  localname: nigeria
+  governmentform: federal republic
+  headofstate: olusegun obasanjo
+  capital: 2754
+  code2: ng
+countries_157:
+  code: nic
+  name: nicaragua
+  continent: north america
+  region: central america
+  surfacearea: 130000.0
+  indepyear: 1838
+  population: 5074000
+  lifeexpectancy: 69.0
+  gnp: 1988.0
+  gnpold: 2023.0
+  localname: nicaragua
+  governmentform: republic
+  headofstate: arnoldo alem
+  capital: 2734
+  code2: ni
+countries_158:
+  code: niu
+  name: niue
+  continent: oceania
+  region: polynesia
+  surfacearea: 260.0
+  indepyear: 
+  population: 2000
+  lifeexpectancy: 
+  gnp: 0.0
+  gnpold: 
+  localname: niue
+  governmentform: nonmetropolitan territory of new zealand
+  headofstate: elisabeth ii
+  capital: 2805
+  code2: nu
+countries_159:
+  code: nld
+  name: netherlands
+  continent: europe
+  region: western europe
+  surfacearea: 41526.0
+  indepyear: 1581
+  population: 15864000
+  lifeexpectancy: 78.0
+  gnp: 371362.0
+  gnpold: 360478.0
+  localname: nederland
+  governmentform: constitutional monarchy
+  headofstate: beatrix
+  capital: 5
+  code2: nl
+countries_160:
+  code: nor
+  name: norway
+  continent: europe
+  region: nordic countries
+  surfacearea: 323877.0
+  indepyear: 1905
+  population: 4478500
+  lifeexpectancy: 79.0
+  gnp: 145895.0
+  gnpold: 153370.0
+  localname: norge
+  governmentform: constitutional monarchy
+  headofstate: harald v
+  capital: 2807
+  code2: 'no'
+countries_161:
+  code: npl
+  name: nepal
+  continent: asia
+  region: southern and central asia
+  surfacearea: 147181.0
+  indepyear: 1769
+  population: 23930000
+  lifeexpectancy: 58.0
+  gnp: 4768.0
+  gnpold: 4837.0
+  localname: nepal
+  governmentform: constitutional monarchy
+  headofstate: gyanendra bir bikram
+  capital: 2729
+  code2: np
+countries_162:
+  code: nru
+  name: nauru
+  continent: oceania
+  region: micronesia
+  surfacearea: 21.0
+  indepyear: 1968
+  population: 12000
+  lifeexpectancy: 61.0
+  gnp: 197.0
+  gnpold: 
+  localname: naoero/nauru
+  governmentform: republic
+  headofstate: bernard dowiyogo
+  capital: 2728
+  code2: nr
+countries_163:
+  code: nzl
+  name: new zealand
+  continent: oceania
+  region: australia and new zealand
+  surfacearea: 270534.0
+  indepyear: 1907
+  population: 3862000
+  lifeexpectancy: 78.0
+  gnp: 54669.0
+  gnpold: 64960.0
+  localname: new zealand/aotearoa
+  governmentform: constitutional monarchy
+  headofstate: elisabeth ii
+  capital: 3499
+  code2: nz
+countries_164:
+  code: omn
+  name: oman
+  continent: asia
+  region: middle east
+  surfacearea: 309500.0
+  indepyear: 1951
+  population: 2542000
+  lifeexpectancy: 72.0
+  gnp: 16904.0
+  gnpold: 16153.0
+  localname: ''
+  governmentform: monarchy (sultanate)
+  headofstate: qabus ibn sa
+  capital: 2821
+  code2: om
+countries_165:
+  code: pak
+  name: pakistan
+  continent: asia
+  region: southern and central asia
+  surfacearea: 796095.0
+  indepyear: 1947
+  population: 156483000
+  lifeexpectancy: 61.0
+  gnp: 61289.0
+  gnpold: 58549.0
+  localname: pakistan
+  governmentform: republic
+  headofstate: mohammad rafiq tarar
+  capital: 2831
+  code2: pk
+countries_166:
+  code: pan
+  name: panama
+  continent: north america
+  region: central america
+  surfacearea: 75517.0
+  indepyear: 1903
+  population: 2856000
+  lifeexpectancy: 76.0
+  gnp: 9131.0
+  gnpold: 8700.0
+  localname: panam
+  governmentform: republic
+  headofstate: mireya elisa moscoso rodr
+  capital: 2882
+  code2: pa
+countries_167:
+  code: pcn
+  name: pitcairn
+  continent: oceania
+  region: polynesia
+  surfacearea: 49.0
+  indepyear: 
+  population: 50
+  lifeexpectancy: 
+  gnp: 0.0
+  gnpold: 
+  localname: pitcairn
+  governmentform: dependent territory of the uk
+  headofstate: elisabeth ii
+  capital: 2912
+  code2: pn
+countries_168:
+  code: per
+  name: peru
+  continent: south america
+  region: south america
+  surfacearea: 1285216.0
+  indepyear: 1821
+  population: 25662000
+  lifeexpectancy: 70.0
+  gnp: 64140.0
+  gnpold: 65186.0
+  localname: per
+  governmentform: republic
+  headofstate: valentin paniagua corazao
+  capital: 2890
+  code2: pe
+countries_169:
+  code: phl
+  name: philippines
+  continent: asia
+  region: southeast asia
+  surfacearea: 300000.0
+  indepyear: 1946
+  population: 75967000
+  lifeexpectancy: 68.0
+  gnp: 65107.0
+  gnpold: 82239.0
+  localname: pilipinas
+  governmentform: republic
+  headofstate: gloria macapagal-arroyo
+  capital: 766
+  code2: ph
+countries_170:
+  code: plw
+  name: palau
+  continent: oceania
+  region: micronesia
+  surfacearea: 459.0
+  indepyear: 1994
+  population: 19000
+  lifeexpectancy: 69.0
+  gnp: 105.0
+  gnpold: 
+  localname: belau/palau
+  governmentform: republic
+  headofstate: kuniwo nakamura
+  capital: 2881
+  code2: pw
+countries_171:
+  code: png
+  name: papua new guinea
+  continent: oceania
+  region: melanesia
+  surfacearea: 462840.0
+  indepyear: 1975
+  population: 4807000
+  lifeexpectancy: 63.0
+  gnp: 4988.0
+  gnpold: 6328.0
+  localname: papua new guinea/papua niugini
+  governmentform: constitutional monarchy
+  headofstate: elisabeth ii
+  capital: 2884
+  code2: pg
+countries_172:
+  code: pol
+  name: poland
+  continent: europe
+  region: eastern europe
+  surfacearea: 323250.0
+  indepyear: 1918
+  population: 38653600
+  lifeexpectancy: 73.0
+  gnp: 151697.0
+  gnpold: 135636.0
+  localname: polska
+  governmentform: republic
+  headofstate: aleksander kwasniewski
+  capital: 2928
+  code2: pl
+countries_173:
+  code: pri
+  name: puerto rico
+  continent: north america
+  region: caribbean
+  surfacearea: 8875.0
+  indepyear: 
+  population: 3869000
+  lifeexpectancy: 76.0
+  gnp: 34100.0
+  gnpold: 32100.0
+  localname: puerto rico
+  governmentform: commonwealth of the us
+  headofstate: george w. bush
+  capital: 2919
+  code2: pr
+countries_174:
+  code: prk
+  name: north korea
+  continent: asia
+  region: eastern asia
+  surfacearea: 120538.0
+  indepyear: 1948
+  population: 24039000
+  lifeexpectancy: 71.0
+  gnp: 5332.0
+  gnpold: 
+  localname: choson minjujuui in
+  governmentform: socialistic republic
+  headofstate: kim jong-il
+  capital: 2318
+  code2: kp
+countries_175:
+  code: prt
+  name: portugal
+  continent: europe
+  region: southern europe
+  surfacearea: 91982.0
+  indepyear: 1143
+  population: 9997600
+  lifeexpectancy: 76.0
+  gnp: 105954.0
+  gnpold: 102133.0
+  localname: portugal
+  governmentform: republic
+  headofstate: jorge samp
+  capital: 2914
+  code2: pt
+countries_176:
+  code: pry
+  name: paraguay
+  continent: south america
+  region: south america
+  surfacearea: 406752.0
+  indepyear: 1811
+  population: 5496000
+  lifeexpectancy: 74.0
+  gnp: 8444.0
+  gnpold: 9555.0
+  localname: paraguay
+  governmentform: republic
+  headofstate: 'luis '
+  capital: 2885
+  code2: py
+countries_177:
+  code: pse
+  name: palestine
+  continent: asia
+  region: middle east
+  surfacearea: 6257.0
+  indepyear: 
+  population: 3101000
+  lifeexpectancy: 71.0
+  gnp: 4173.0
+  gnpold: 
+  localname: filastin
+  governmentform: autonomous area
+  headofstate: yasser (yasir) arafat
+  capital: 4074
+  code2: ps
+countries_178:
+  code: pyf
+  name: french polynesia
+  continent: oceania
+  region: polynesia
+  surfacearea: 4000.0
+  indepyear: 
+  population: 235000
+  lifeexpectancy: 75.0
+  gnp: 818.0
+  gnpold: 781.0
+  localname: polyn
+  governmentform: nonmetropolitan territory of france
+  headofstate: jacques chirac
+  capital: 3016
+  code2: pf
+countries_179:
+  code: qat
+  name: qatar
+  continent: asia
+  region: middle east
+  surfacearea: 11000.0
+  indepyear: 1971
+  population: 599000
+  lifeexpectancy: 72.0
+  gnp: 9472.0
+  gnpold: 8920.0
+  localname: qatar
+  governmentform: monarchy
+  headofstate: hamad ibn khalifa al-thani
+  capital: 2973
+  code2: qa
+countries_180:
+  code: reu
+  name: r
+  continent: africa
+  region: eastern africa
+  surfacearea: 2510.0
+  indepyear: 
+  population: 699000
+  lifeexpectancy: 73.0
+  gnp: 8287.0
+  gnpold: 7988.0
+  localname: r
+  governmentform: overseas department of france
+  headofstate: jacques chirac
+  capital: 3017
+  code2: re
+countries_181:
+  code: rom
+  name: romania
+  continent: europe
+  region: eastern europe
+  surfacearea: 238391.0
+  indepyear: 1878
+  population: 22455500
+  lifeexpectancy: 70.0
+  gnp: 38158.0
+  gnpold: 34843.0
+  localname: rom
+  governmentform: republic
+  headofstate: ion iliescu
+  capital: 3018
+  code2: ro
+countries_182:
+  code: rus
+  name: russian federation
+  continent: europe
+  region: eastern europe
+  surfacearea: 17075400.0
+  indepyear: 1991
+  population: 146934000
+  lifeexpectancy: 67.0
+  gnp: 276608.0
+  gnpold: 442989.0
+  localname: rossija
+  governmentform: federal republic
+  headofstate: vladimir putin
+  capital: 3580
+  code2: ru
+countries_183:
+  code: rwa
+  name: rwanda
+  continent: africa
+  region: eastern africa
+  surfacearea: 26338.0
+  indepyear: 1962
+  population: 7733000
+  lifeexpectancy: 39.0
+  gnp: 2036.0
+  gnpold: 1863.0
+  localname: rwanda/urwanda
+  governmentform: republic
+  headofstate: paul kagame
+  capital: 3047
+  code2: rw
+countries_184:
+  code: sau
+  name: saudi arabia
+  continent: asia
+  region: middle east
+  surfacearea: 2149690.0
+  indepyear: 1932
+  population: 21607000
+  lifeexpectancy: 68.0
+  gnp: 137635.0
+  gnpold: 146171.0
+  localname: al-
+  governmentform: monarchy
+  headofstate: fahd ibn abdul-aziz al-sa
+  capital: 3173
+  code2: sa
+countries_185:
+  code: sdn
+  name: sudan
+  continent: africa
+  region: northern africa
+  surfacearea: 2505813.0
+  indepyear: 1956
+  population: 29490000
+  lifeexpectancy: 57.0
+  gnp: 10162.0
+  gnpold: 
+  localname: as-sudan
+  governmentform: islamic republic
+  headofstate: omar hassan ahmad al-bashir
+  capital: 3225
+  code2: sd
+countries_186:
+  code: sen
+  name: senegal
+  continent: africa
+  region: western africa
+  surfacearea: 196722.0
+  indepyear: 1960
+  population: 9481000
+  lifeexpectancy: 62.0
+  gnp: 4787.0
+  gnpold: 4542.0
+  localname: s
+  governmentform: republic
+  headofstate: abdoulaye wade
+  capital: 3198
+  code2: sn
+countries_187:
+  code: sgp
+  name: singapore
+  continent: asia
+  region: southeast asia
+  surfacearea: 618.0
+  indepyear: 1965
+  population: 3567000
+  lifeexpectancy: 80.0
+  gnp: 86503.0
+  gnpold: 96318.0
+  localname: singapore/singapura/xinjiapo/singapur
+  governmentform: republic
+  headofstate: sellapan rama nathan
+  capital: 3208
+  code2: sg
+countries_188:
+  code: sgs
+  name: south georgia and the south sandwich islands
+  continent: antarctica
+  region: antarctica
+  surfacearea: 3903.0
+  indepyear: 
+  population: 0
+  lifeexpectancy: 
+  gnp: 0.0
+  gnpold: 
+  localname: south georgia and the south sandwich islands
+  governmentform: dependent territory of the uk
+  headofstate: elisabeth ii
+  capital: 
+  code2: gs
+countries_189:
+  code: shn
+  name: saint helena
+  continent: africa
+  region: western africa
+  surfacearea: 314.0
+  indepyear: 
+  population: 6000
+  lifeexpectancy: 77.0
+  gnp: 0.0
+  gnpold: 
+  localname: saint helena
+  governmentform: dependent territory of the uk
+  headofstate: elisabeth ii
+  capital: 3063
+  code2: sh
+countries_190:
+  code: sjm
+  name: svalbard and jan mayen
+  continent: europe
+  region: nordic countries
+  surfacearea: 62422.0
+  indepyear: 
+  population: 3200
+  lifeexpectancy: 
+  gnp: 0.0
+  gnpold: 
+  localname: svalbard og jan mayen
+  governmentform: dependent territory of norway
+  headofstate: harald v
+  capital: 938
+  code2: sj
+countries_191:
+  code: slb
+  name: solomon islands
+  continent: oceania
+  region: melanesia
+  surfacearea: 28896.0
+  indepyear: 1978
+  population: 444000
+  lifeexpectancy: 71.0
+  gnp: 182.0
+  gnpold: 220.0
+  localname: solomon islands
+  governmentform: constitutional monarchy
+  headofstate: elisabeth ii
+  capital: 3161
+  code2: sb
+countries_192:
+  code: sle
+  name: sierra leone
+  continent: africa
+  region: western africa
+  surfacearea: 71740.0
+  indepyear: 1961
+  population: 4854000
+  lifeexpectancy: 45.0
+  gnp: 746.0
+  gnpold: 858.0
+  localname: sierra leone
+  governmentform: republic
+  headofstate: ahmed tejan kabbah
+  capital: 3207
+  code2: sl
+countries_193:
+  code: slv
+  name: el salvador
+  continent: north america
+  region: central america
+  surfacearea: 21041.0
+  indepyear: 1841
+  population: 6276000
+  lifeexpectancy: 70.0
+  gnp: 11863.0
+  gnpold: 11203.0
+  localname: el salvador
+  governmentform: republic
+  headofstate: francisco guillermo flores p
+  capital: 645
+  code2: sv
+countries_194:
+  code: smr
+  name: san marino
+  continent: europe
+  region: southern europe
+  surfacearea: 61.0
+  indepyear: 885
+  population: 27000
+  lifeexpectancy: 81.0
+  gnp: 510.0
+  gnpold: 
+  localname: san marino
+  governmentform: republic
+  headofstate: 
+  capital: 3171
+  code2: sm
+countries_195:
+  code: som
+  name: somalia
+  continent: africa
+  region: eastern africa
+  surfacearea: 637657.0
+  indepyear: 1960
+  population: 10097000
+  lifeexpectancy: 46.0
+  gnp: 935.0
+  gnpold: 
+  localname: soomaaliya
+  governmentform: republic
+  headofstate: abdiqassim salad hassan
+  capital: 3214
+  code2: so
+countries_196:
+  code: spm
+  name: saint pierre and miquelon
+  continent: north america
+  region: north america
+  surfacearea: 242.0
+  indepyear: 
+  population: 7000
+  lifeexpectancy: 78.0
+  gnp: 0.0
+  gnpold: 
+  localname: saint-pierre-et-miquelon
+  governmentform: territorial collectivity of france
+  headofstate: jacques chirac
+  capital: 3067
+  code2: pm
+countries_197:
+  code: stp
+  name: sao tome and principe
+  continent: africa
+  region: central africa
+  surfacearea: 964.0
+  indepyear: 1975
+  population: 147000
+  lifeexpectancy: 65.0
+  gnp: 6.0
+  gnpold: 
+  localname: s
+  governmentform: republic
+  headofstate: miguel trovoada
+  capital: 3172
+  code2: st
+countries_198:
+  code: sur
+  name: suriname
+  continent: south america
+  region: south america
+  surfacearea: 163265.0
+  indepyear: 1975
+  population: 417000
+  lifeexpectancy: 71.0
+  gnp: 870.0
+  gnpold: 706.0
+  localname: suriname
+  governmentform: republic
+  headofstate: ronald venetiaan
+  capital: 3243
+  code2: sr
+countries_199:
+  code: svk
+  name: slovakia
+  continent: europe
+  region: eastern europe
+  surfacearea: 49012.0
+  indepyear: 1993
+  population: 5398700
+  lifeexpectancy: 74.0
+  gnp: 20594.0
+  gnpold: 19452.0
+  localname: slovensko
+  governmentform: republic
+  headofstate: rudolf schuster
+  capital: 3209
+  code2: sk
+countries_200:
+  code: svn
+  name: slovenia
+  continent: europe
+  region: southern europe
+  surfacearea: 20256.0
+  indepyear: 1991
+  population: 1987800
+  lifeexpectancy: 75.0
+  gnp: 19756.0
+  gnpold: 18202.0
+  localname: slovenija
+  governmentform: republic
+  headofstate: milan kucan
+  capital: 3212
+  code2: si
+countries_201:
+  code: swe
+  name: sweden
+  continent: europe
+  region: nordic countries
+  surfacearea: 449964.0
+  indepyear: 836
+  population: 8861400
+  lifeexpectancy: 80.0
+  gnp: 226492.0
+  gnpold: 227757.0
+  localname: sverige
+  governmentform: constitutional monarchy
+  headofstate: carl xvi gustaf
+  capital: 3048
+  code2: se
+countries_202:
+  code: swz
+  name: swaziland
+  continent: africa
+  region: southern africa
+  surfacearea: 17364.0
+  indepyear: 1968
+  population: 1008000
+  lifeexpectancy: 40.0
+  gnp: 1206.0
+  gnpold: 1312.0
+  localname: kangwane
+  governmentform: monarchy
+  headofstate: mswati iii
+  capital: 3244
+  code2: sz
+countries_203:
+  code: syc
+  name: seychelles
+  continent: africa
+  region: eastern africa
+  surfacearea: 455.0
+  indepyear: 1976
+  population: 77000
+  lifeexpectancy: 70.0
+  gnp: 536.0
+  gnpold: 539.0
+  localname: sesel/seychelles
+  governmentform: republic
+  headofstate: france-albert ren
+  capital: 3206
+  code2: sc
+countries_204:
+  code: syr
+  name: syria
+  continent: asia
+  region: middle east
+  surfacearea: 185180.0
+  indepyear: 1941
+  population: 16125000
+  lifeexpectancy: 69.0
+  gnp: 65984.0
+  gnpold: 64926.0
+  localname: suriya
+  governmentform: republic
+  headofstate: bashar al-assad
+  capital: 3250
+  code2: sy
+countries_205:
+  code: tca
+  name: turks and caicos islands
+  continent: north america
+  region: caribbean
+  surfacearea: 430.0
+  indepyear: 
+  population: 17000
+  lifeexpectancy: 73.0
+  gnp: 96.0
+  gnpold: 
+  localname: the turks and caicos islands
+  governmentform: dependent territory of the uk
+  headofstate: elisabeth ii
+  capital: 3423
+  code2: tc
+countries_206:
+  code: tcd
+  name: chad
+  continent: africa
+  region: central africa
+  surfacearea: 1284000.0
+  indepyear: 1960
+  population: 7651000
+  lifeexpectancy: 51.0
+  gnp: 1208.0
+  gnpold: 1102.0
+  localname: tchad/tshad
+  governmentform: republic
+  headofstate: idriss d
+  capital: 3337
+  code2: td
+countries_207:
+  code: tgo
+  name: togo
+  continent: africa
+  region: western africa
+  surfacearea: 56785.0
+  indepyear: 1960
+  population: 4629000
+  lifeexpectancy: 55.0
+  gnp: 1449.0
+  gnpold: 1400.0
+  localname: togo
+  governmentform: republic
+  headofstate: gnassingb
+  capital: 3332
+  code2: tg
+countries_208:
+  code: tha
+  name: thailand
+  continent: asia
+  region: southeast asia
+  surfacearea: 513115.0
+  indepyear: 1350
+  population: 61399000
+  lifeexpectancy: 69.0
+  gnp: 116416.0
+  gnpold: 153907.0
+  localname: prathet thai
+  governmentform: constitutional monarchy
+  headofstate: bhumibol adulyadej
+  capital: 3320
+  code2: th
+countries_209:
+  code: tjk
+  name: tajikistan
+  continent: asia
+  region: southern and central asia
+  surfacearea: 143100.0
+  indepyear: 1991
+  population: 6188000
+  lifeexpectancy: 64.0
+  gnp: 1990.0
+  gnpold: 1056.0
+  localname: to
+  governmentform: republic
+  headofstate: emomali rahmonov
+  capital: 3261
+  code2: tj
+countries_210:
+  code: tkl
+  name: tokelau
+  continent: oceania
+  region: polynesia
+  surfacearea: 12.0
+  indepyear: 
+  population: 2000
+  lifeexpectancy: 
+  gnp: 0.0
+  gnpold: 
+  localname: tokelau
+  governmentform: nonmetropolitan territory of new zealand
+  headofstate: elisabeth ii
+  capital: 3333
+  code2: tk
+countries_211:
+  code: tkm
+  name: turkmenistan
+  continent: asia
+  region: southern and central asia
+  surfacearea: 488100.0
+  indepyear: 1991
+  population: 4459000
+  lifeexpectancy: 61.0
+  gnp: 4397.0
+  gnpold: 2000.0
+  localname: t
+  governmentform: republic
+  headofstate: saparmurad nijazov
+  capital: 3419
+  code2: tm
+countries_212:
+  code: tmp
+  name: east timor
+  continent: asia
+  region: southeast asia
+  surfacearea: 14874.0
+  indepyear: 
+  population: 885000
+  lifeexpectancy: 46.0
+  gnp: 0.0
+  gnpold: 
+  localname: timor timur
+  governmentform: administrated by the un
+  headofstate: jos
+  capital: 1522
+  code2: tp
+countries_213:
+  code: ton
+  name: tonga
+  continent: oceania
+  region: polynesia
+  surfacearea: 650.0
+  indepyear: 1970
+  population: 99000
+  lifeexpectancy: 68.0
+  gnp: 146.0
+  gnpold: 170.0
+  localname: tonga
+  governmentform: monarchy
+  headofstate: taufa'ahau tupou iv
+  capital: 3334
+  code2: to
+countries_214:
+  code: tto
+  name: trinidad and tobago
+  continent: north america
+  region: caribbean
+  surfacearea: 5130.0
+  indepyear: 1962
+  population: 1295000
+  lifeexpectancy: 68.0
+  gnp: 6232.0
+  gnpold: 5867.0
+  localname: trinidad and tobago
+  governmentform: republic
+  headofstate: arthur n. r. robinson
+  capital: 3336
+  code2: tt
+countries_215:
+  code: tun
+  name: tunisia
+  continent: africa
+  region: northern africa
+  surfacearea: 163610.0
+  indepyear: 1956
+  population: 9586000
+  lifeexpectancy: 74.0
+  gnp: 20026.0
+  gnpold: 18898.0
+  localname: tunis/tunisie
+  governmentform: republic
+  headofstate: zine al-abidine ben ali
+  capital: 3349
+  code2: tn
+countries_216:
+  code: tur
+  name: turkey
+  continent: asia
+  region: middle east
+  surfacearea: 774815.0
+  indepyear: 1923
+  population: 66591000
+  lifeexpectancy: 71.0
+  gnp: 210721.0
+  gnpold: 189122.0
+  localname: t
+  governmentform: republic
+  headofstate: ahmet necdet sezer
+  capital: 3358
+  code2: tr
+countries_217:
+  code: tuv
+  name: tuvalu
+  continent: oceania
+  region: polynesia
+  surfacearea: 26.0
+  indepyear: 1978
+  population: 12000
+  lifeexpectancy: 66.0
+  gnp: 6.0
+  gnpold: 
+  localname: tuvalu
+  governmentform: constitutional monarchy
+  headofstate: elisabeth ii
+  capital: 3424
+  code2: tv
+countries_218:
+  code: twn
+  name: taiwan
+  continent: asia
+  region: eastern asia
+  surfacearea: 36188.0
+  indepyear: 1945
+  population: 22256000
+  lifeexpectancy: 76.0
+  gnp: 256254.0
+  gnpold: 263451.0
+  localname: t
+  governmentform: republic
+  headofstate: chen shui-bian
+  capital: 3263
+  code2: tw
+countries_219:
+  code: tza
+  name: tanzania
+  continent: africa
+  region: eastern africa
+  surfacearea: 883749.0
+  indepyear: 1961
+  population: 33517000
+  lifeexpectancy: 52.0
+  gnp: 8005.0
+  gnpold: 7388.0
+  localname: tanzania
+  governmentform: republic
+  headofstate: benjamin william mkapa
+  capital: 3306
+  code2: tz
+countries_220:
+  code: uga
+  name: uganda
+  continent: africa
+  region: eastern africa
+  surfacearea: 241038.0
+  indepyear: 1962
+  population: 21778000
+  lifeexpectancy: 43.0
+  gnp: 6313.0
+  gnpold: 6887.0
+  localname: uganda
+  governmentform: republic
+  headofstate: yoweri museveni
+  capital: 3425
+  code2: ug
+countries_221:
+  code: ukr
+  name: ukraine
+  continent: europe
+  region: eastern europe
+  surfacearea: 603700.0
+  indepyear: 1991
+  population: 50456000
+  lifeexpectancy: 66.0
+  gnp: 42168.0
+  gnpold: 49677.0
+  localname: ukrajina
+  governmentform: republic
+  headofstate: leonid kut
+  capital: 3426
+  code2: ua
+countries_222:
+  code: umi
+  name: united states minor outlying islands
+  continent: oceania
+  region: micronesia/caribbean
+  surfacearea: 16.0
+  indepyear: 
+  population: 0
+  lifeexpectancy: 
+  gnp: 0.0
+  gnpold: 
+  localname: united states minor outlying islands
+  governmentform: dependent territory of the us
+  headofstate: george w. bush
+  capital: 
+  code2: um
+countries_223:
+  code: ury
+  name: uruguay
+  continent: south america
+  region: south america
+  surfacearea: 175016.0
+  indepyear: 1828
+  population: 3337000
+  lifeexpectancy: 75.0
+  gnp: 20831.0
+  gnpold: 19967.0
+  localname: uruguay
+  governmentform: republic
+  headofstate: jorge batlle ib
+  capital: 3492
+  code2: uy
+countries_224:
+  code: usa
+  name: united states
+  continent: north america
+  region: north america
+  surfacearea: 9363520.0
+  indepyear: 1776
+  population: 278357000
+  lifeexpectancy: 77.0
+  gnp: 8510700.0
+  gnpold: 8110900.0
+  localname: united states
+  governmentform: federal republic
+  headofstate: george w. bush
+  capital: 3813
+  code2: us
+countries_225:
+  code: uzb
+  name: uzbekistan
+  continent: asia
+  region: southern and central asia
+  surfacearea: 447400.0
+  indepyear: 1991
+  population: 24318000
+  lifeexpectancy: 64.0
+  gnp: 14194.0
+  gnpold: 21300.0
+  localname: uzbekiston
+  governmentform: republic
+  headofstate: islam karimov
+  capital: 3503
+  code2: uz
+countries_226:
+  code: vat
+  name: holy see (vatican city state)
+  continent: europe
+  region: southern europe
+  surfacearea: 0.0
+  indepyear: 1929
+  population: 1000
+  lifeexpectancy: 
+  gnp: 9.0
+  gnpold: 
+  localname: santa sede/citt
+  governmentform: independent church state
+  headofstate: johannes paavali ii
+  capital: 3538
+  code2: va
+countries_227:
+  code: vct
+  name: saint vincent and the grenadines
+  continent: north america
+  region: caribbean
+  surfacearea: 388.0
+  indepyear: 1979
+  population: 114000
+  lifeexpectancy: 72.0
+  gnp: 285.0
+  gnpold: 
+  localname: saint vincent and the grenadines
+  governmentform: constitutional monarchy
+  headofstate: elisabeth ii
+  capital: 3066
+  code2: vc
+countries_228:
+  code: ven
+  name: venezuela
+  continent: south america
+  region: south america
+  surfacearea: 912050.0
+  indepyear: 1811
+  population: 24170000
+  lifeexpectancy: 73.0
+  gnp: 95023.0
+  gnpold: 88434.0
+  localname: venezuela
+  governmentform: federal republic
+  headofstate: hugo ch
+  capital: 3539
+  code2: ve
+countries_229:
+  code: vgb
+  name: virgin islands, british
+  continent: north america
+  region: caribbean
+  surfacearea: 151.0
+  indepyear: 
+  population: 21000
+  lifeexpectancy: 75.0
+  gnp: 612.0
+  gnpold: 573.0
+  localname: british virgin islands
+  governmentform: dependent territory of the uk
+  headofstate: elisabeth ii
+  capital: 537
+  code2: vg
+countries_230:
+  code: vir
+  name: virgin islands, u.s.
+  continent: north america
+  region: caribbean
+  surfacearea: 347.0
+  indepyear: 
+  population: 93000
+  lifeexpectancy: 78.0
+  gnp: 0.0
+  gnpold: 
+  localname: virgin islands of the united states
+  governmentform: us territory
+  headofstate: george w. bush
+  capital: 4067
+  code2: vi
+countries_231:
+  code: vnm
+  name: vietnam
+  continent: asia
+  region: southeast asia
+  surfacearea: 331689.0
+  indepyear: 1945
+  population: 79832000
+  lifeexpectancy: 69.0
+  gnp: 21929.0
+  gnpold: 22834.0
+  localname: vi
+  governmentform: socialistic republic
+  headofstate: tr
+  capital: 3770
+  code2: vn
+countries_232:
+  code: vut
+  name: vanuatu
+  continent: oceania
+  region: melanesia
+  surfacearea: 12189.0
+  indepyear: 1980
+  population: 190000
+  lifeexpectancy: 61.0
+  gnp: 261.0
+  gnpold: 246.0
+  localname: vanuatu
+  governmentform: republic
+  headofstate: john bani
+  capital: 3537
+  code2: vu
+countries_233:
+  code: wlf
+  name: wallis and futuna
+  continent: oceania
+  region: polynesia
+  surfacearea: 200.0
+  indepyear: 
+  population: 15000
+  lifeexpectancy: 
+  gnp: 0.0
+  gnpold: 
+  localname: wallis-et-futuna
+  governmentform: nonmetropolitan territory of france
+  headofstate: jacques chirac
+  capital: 3536
+  code2: wf
+countries_234:
+  code: wsm
+  name: samoa
+  continent: oceania
+  region: polynesia
+  surfacearea: 2831.0
+  indepyear: 1962
+  population: 180000
+  lifeexpectancy: 69.0
+  gnp: 141.0
+  gnpold: 157.0
+  localname: samoa
+  governmentform: parlementary monarchy
+  headofstate: malietoa tanumafili ii
+  capital: 3169
+  code2: ws
+countries_235:
+  code: yem
+  name: yemen
+  continent: asia
+  region: middle east
+  surfacearea: 527968.0
+  indepyear: 1918
+  population: 18112000
+  lifeexpectancy: 60.0
+  gnp: 6041.0
+  gnpold: 5729.0
+  localname: al-yaman
+  governmentform: republic
+  headofstate: ali abdallah salih
+  capital: 1780
+  code2: ye
+countries_236:
+  code: yug
+  name: yugoslavia
+  continent: europe
+  region: southern europe
+  surfacearea: 102173.0
+  indepyear: 1918
+  population: 10640000
+  lifeexpectancy: 72.0
+  gnp: 17000.0
+  gnpold: 
+  localname: jugoslavija
+  governmentform: federal republic
+  headofstate: vojislav ko
+  capital: 1792
+  code2: yu
+countries_237:
+  code: zaf
+  name: south africa
+  continent: africa
+  region: southern africa
+  surfacearea: 1221037.0
+  indepyear: 1910
+  population: 40377000
+  lifeexpectancy: 51.0
+  gnp: 116729.0
+  gnpold: 129092.0
+  localname: south africa
+  governmentform: republic
+  headofstate: thabo mbeki
+  capital: 716
+  code2: za
+countries_238:
+  code: zmb
+  name: zambia
+  continent: africa
+  region: eastern africa
+  surfacearea: 752618.0
+  indepyear: 1964
+  population: 9169000
+  lifeexpectancy: 37.0
+  gnp: 3377.0
+  gnpold: 3922.0
+  localname: zambia
+  governmentform: republic
+  headofstate: frederick chiluba
+  capital: 3162
+  code2: zm
+countries_239:
+  code: zwe
+  name: zimbabwe
+  continent: africa
+  region: eastern africa
+  surfacearea: 390757.0
+  indepyear: 1980
+  population: 11669000
+  lifeexpectancy: 38.0
+  gnp: 5951.0
+  gnpold: 8670.0
+  localname: zimbabwe
+  governmentform: republic
+  headofstate: robert g. mugabe
+  capital: 4068
+  code2: zw

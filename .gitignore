@@ -16,3 +16,4 @@
 /log/*.log
 /tmp
 .zeus.sock
+vendor/assets/javascripts/components
