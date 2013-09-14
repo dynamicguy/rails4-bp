@@ -11,11 +11,11 @@
 # WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 # GO AFTER THE REQUIRES BELOW.
 #
-#= require jquery
 #= require components/underscore-amd/underscore
 #= require components/backbone-amd/backbone
 #= require components/backbone.marionette/lib/backbone.marionette
 #= require components/bootstrap/dist/js/bootstrap
+#= require components/backbone.syphon/lib/backbone.syphon
 #= require js-routes
 #= require_tree ./backbone/config
 #= require backbone/app

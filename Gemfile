@@ -215,7 +215,7 @@ end
 group :development, :test do
   # RSpec (unit tests, some integration tests)
   gem "rspec-rails"
-
+  gem 'thin'
   # Cucumber (integration tests)
   gem 'cucumber-rails', :require => false
 

@@ -58,10 +58,11 @@ module Rails4Bp
     # in your app. As such, your models will need to explicitly whitelist or blacklist accessible
     # parameters by using an attr_accessible or attr_protected declaration.
     #config.active_record.whitelist_attributes = false
-    config.active_record.whitelist_attributes = true
+    #config.active_record.whitelist_attributes = true
 
     # Enable the asset pipeline
     config.assets.enabled = true
+
 
     # Speed up precompile by not loading the environment
     config.assets.initialize_on_precompile = false
