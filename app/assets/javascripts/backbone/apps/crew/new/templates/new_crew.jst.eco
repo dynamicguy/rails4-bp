@@ -1,0 +1,10 @@
+<div id="new-crew">
+    <div class="row">
+        <div class="form-group">
+            <label for="inputName" class="col-lg-2 control-label">What's their name?</label>
+            <div class="col-lg-10">
+                <input type="text" name="name" class="form-control col-md-6" id="inputName" placeholder="Crew Member Name">
+            </div>
+        </div>
+    </div>
+</div>

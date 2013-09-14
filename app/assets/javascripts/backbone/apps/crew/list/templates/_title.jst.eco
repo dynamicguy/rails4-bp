@@ -1,0 +1,11 @@
+<div class="container">
+    <h1>Rails 4 boilerplate</h1>
+    <p>A rails 4 backbone, marionette boilerplate built with lots of love and coffee.</p>
+    <div id="carbonads-container">
+        <div class="carbonad">
+            <div id="azcarbon">
+                <span>place for ad</span>
+            </div>
+        </div>
+    </div>
+</div>

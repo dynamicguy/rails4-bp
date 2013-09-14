@@ -1,0 +1,13 @@
+<div class="pull-left">
+	<button id="new-crew" class="btn btn-primary btn-sm">
+		<i class="icon icon-plus"></i>
+		Add
+	</button>
+</div>
+<div class="pull-right">
+    <span>Sort:</span>
+    <div class="btn-group">
+        <button type="button" class="btn btn-default btn-sm active">Name</button>
+        <button type="button" class="btn btn-default btn-sm">Title</button>
+    </div>
+</div>

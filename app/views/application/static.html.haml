@@ -1,0 +1,123 @@
+#wrap
+  #header-region
+    %header
+      .contain-to-grid
+        %nav.top-bar
+          %ul.title-area
+            %li.name
+              %h1
+                %a{:href => "#"}
+                  %span#logo
+                    %img{:src => "assets/ship.png"}/
+                  Planet Express
+          %section.top-bar-section
+            %ul.right
+              %li.divider
+              %li
+                %a{:href => "#"}
+                  %i.general.foundicon-graph
+                  Dashboard
+              %li.divider
+              %li.active
+                %a{:href => "#"}
+                  %i.social.foundicon-torso
+                  Crew
+              %li.divider
+  #main-region
+    #crew-list
+      #page-title
+        .row
+          .large-12.columns
+            %h1 Crew
+            %h4 The Crew Members of Planet Express
+            #page-icons
+              %i.accessibility.foundicon-person
+              %i.accessibility.foundicon-person
+              %i.accessibility.foundicon-person
+      .breadcrumbs
+        .row
+          .columns.large-12
+            %ul.right
+              %li
+                %a{:href => "#"} Home
+              %li.unavailable
+                %a{:href => "#"} Crew
+              %li.current
+                %a{:href => "#"} Fry
+      %section
+        .row
+          .large-12.columns
+            .left
+              %button#new-crew.button.radius.small.secondary
+                %i.general-enclosed.foundicon-plus
+                Add
+            .right
+              %dl.sub-nav
+                %dt Sort:
+                %dd.active
+                  %a{:href => "#"} Name
+                %dd
+                  %a{:href => "#"} Title
+          .large-12.columns
+            %form{"data-type" => "new"}
+              .panel.radius
+                #new-crew
+                  .row
+                    .large-12.columns
+                      %label What's their name?
+                      %input.large-6.columns{:placeholder => "Crew Member Name", :type => "text"}/
+                %footer
+                  %ul.inline-list
+                    %li
+                      %button.button.small.radius{"data-form-button" => "primary"} Save
+                    %li
+                      %button.button.small.secondary.radius{"data-form-button" => "cancel"} Cancel
+      .row
+        .large-12.columns.text-center
+          .panel.radius
+            %h2
+              %small No Crew Members Found!
+            %p.subheader Add a crew member to get started.
+      %section
+        .large-12.columns
+          .row
+            %ul.large-12.columns
+              %li.crew-member
+                .large-3.columns.text-center
+                  %a.th.radius{:href => "#"}
+                    %img{:src => "assets/Fry_Looking_Squint.jpg"}/
+                .large-9.columns.stats-container
+                  .row
+                    .large-6.columns
+                      .row
+                        .large-5.columns.attribute-label Age
+                        .large-7.columns 24
+                      .row
+                        .large-5.columns.attribute-label Name
+                        .large-7.columns Philip Fry
+                      .row
+                        .large-5.columns.attribute-label Title
+                        .large-7.columns Delivery Boy
+                      .row
+                        .large-5.columns.attribute-label Species
+                        .large-7.columns Human
+                      .row
+                        .large-5.columns.attribute-label Origin
+                        .large-7.columns Earth
+                    .large-6.columns
+                      %blockquote
+                        %ul.large-block-grid-2.text-center.stats
+                          %li
+                            %div
+                              %span.label.round 5
+                            .stat-type Completed
+                          %li
+                            %div
+                              %span.label.round.success $5,000
+                            .stat-type Earnings
+  #push
+#footer-region
+  %footer
+    .row
+      .columns
+        %h6.subheader BackboneRails.com - Planet Express - Episode 07

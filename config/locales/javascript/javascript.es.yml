@@ -1,0 +1,148 @@
+#   Copyright (c) 2010-2013, Diaspora Inc.  This file is
+#   licensed under the Affero General Public License version 3 or later.  See
+#   the COPYRIGHT file.
+
+
+
+es:
+  javascripts:
+    and: "y"
+    aspect_dropdown:
+      add_to_aspect: "Añadir contacto"
+      all_aspects: "Todos los aspectos"
+      error: "No podrás compartir con <%= name %>. ¿Estás ignorándole?"
+      error_remove: "No se pudo eliminar a <%= name %> del aspecto :("
+      select_aspects: "Elige los aspectos"
+      started_sharing_with: "¡Has empezado a compartir con <%= name %>!"
+      stopped_sharing_with: "Ya no compartes más con <%= name %>."
+      toggle:
+        one: "En <%= count %> aspecto"
+        other: "En <%= count %> aspectos"
+        zero: "Elige los aspectos"
+    aspect_navigation:
+      add_an_aspect: "+ Añadir un aspecto"
+      deselect_all: "Desmarcar todos"
+      no_aspects: "No hay aspectos seleccionados"
+      select_all: "Marcar todos"
+    comma: ","
+    comments:
+      hide: "ocultar comentarios"
+      show: "mostrar todos los comentarios"
+    confirm_dialog: "¿Estás seguro?"
+    conversation:
+      participants: "Participantes"
+    delete: "Eliminar"
+    edit: "Editar"
+    failed_to_like: "\"Me gusta\" no ha funcionado."
+    failed_to_post_message: "¡Error al publicar el mensaje!"
+    getting_started:
+      alright_ill_wait: "Está bien, esperaré."
+      hey: "¡Hola, <%= name %>!"
+      no_tags: "¡Eh, aún no sigues ninguna etiqueta! ¿Quieres continuar de todas formas?"
+      preparing_your_stream: "Preparando tus novedades personalizadas..."
+    header:
+      admin: "Administrar"
+      close: "cerrar"
+      contacts: "Contactos"
+      home: "Inicio"
+      log_out: "Salir"
+      mark_all_as_read: "Marcar todo como leido"
+      messages: "Mensajes"
+      notifications: "Notificaciones"
+      profile: "Perfil"
+      recent_notifications: "Notificaciones recientes"
+      search: "Buscar"
+      settings: "Ajustes"
+      view_all: "Ver todo"
+    ignore: "Ignorar"
+    ignore_user: "¿Ignorar a este usuario?"
+    infinite_scroll:
+      no_more: "No hay más publicaciones."
+      no_more_contacts: "No hay más contactos."
+    my_activity: "Mi Actividad"
+    my_aspects: "Mis aspectos"
+    my_stream: "Entrada"
+    people:
+      not_found: "...y no se encontró a nadie."
+    photo_uploader:
+      completed: "<%= file %> completado"
+      empty: "{file} está vacío, por favor selecciona otros archivos."
+      invalid_ext: "{file} tiene una extensión inválida. Solo se permiten {extensions}."
+      looking_good: "¡Guau, estás increíble!"
+      size_error: "{file} es demasiado grande, el tamaño máximo de un archivo es de {sizeLimit}."
+    publisher:
+      at_least_one_aspect: "Debes publicarlo al menos en un aspecto"
+      limited: "Limitado - tu publicación solo es visible para gente con quien compartes"
+      near_from: "Cerca de: <%= location %>"
+      public: "Público - tu publicación es visible para todos, incluyendo buscadores"
+    reshares:
+      duplicate: "¿Verdad que te ha gustado? Pero ya has esa publicación."
+      post: "¿Compartir la publicación de <%= name %>?"
+      successful: "¡Publicación compartida con éxito!"
+    search_for: "Buscar a <%= name %>"
+    show_more: "mostrar más"
+    stream:
+      comment: "Comentar"
+      follow: "Seguir"
+      followed_tag:
+        add_a_tag: "Añadir una etiqueta"
+        contacts_title: "Personas que buscaron esas etiquetas"
+        follow: "Seguir"
+        title: "#Etiquetas seguidas"
+      hide: "Ocultar publicación"
+      hide_nsfw_posts: "Ocultar publicaciones no aptas para todos los públicos"
+      like: "Me gusta"
+      likes:
+        one: "A <%= count %> persona le gusta"
+        other: "A <%= count %> personas les gusta"
+        zero: "Esto gusta a <%= count %> personas"
+      limited: "Restringido"
+      more_comments:
+        one: "Mostrar <%= count %> comentario más"
+        other: "Mostrar <%= count %> comentarios más"
+        zero: "Mostrar <%= count %> comentarios más"
+      original_post_deleted: "Publicación original borrada por el autor."
+      public: "Público"
+      reshare: "Compartir"
+      reshares:
+        one: "Compartido <%= count %> vez"
+        other: "Compartido <%= count %> veces"
+        zero: "Compartido <%= count %> veces"
+      show_nsfw_post: "Mostrar publicación"
+      show_nsfw_posts: "Mostrar todas las publicaciones"
+      tags:
+        follow: "Seguir #<%= tag %>"
+        following: "Siguiendo #<%= tag %>"
+        stop_following: "Dejar de seguir #<%= tag %>"
+      unfollow: "Dejar de seguir"
+      unlike: "No me gusta"
+    tags:
+      wasnt_that_interesting: "Muy bien, supongo que #<%= tagName %> no era tan interesante..."
+    timeago:
+      day: "1 día"
+      days: "%d días"
+      hour: "1 hora aproximadamente"
+      hours: "%d horas aproximadamente"
+      minute: "1 minuto aproximadamente"
+      minutes: "%d minutos"
+      month: "1 mes aproximadamente"
+      months: "%d meses"
+      prefixAgo: "Hace"
+      prefixFromNow: "dentro de"
+      seconds: "menos de 1 minuto"
+      suffixAgo: ""
+      suffixFromNow: ""
+      year: "un año aproximadamente"
+      years: "%d años"
+    videos:
+      unknown: "Tipo de vídeo desconocido"
+      watch: "Ver este video con <%= provider %>"
+    viewer:
+      comment: "Comentar"
+      follow_post: "Seguir"
+      home: "INICIO"
+      like: "Me gusta"
+      reshare: "Compartir"
+      reshared: "Compartido"
+      stop_following_post: "Dejar de seguir"
+      unlike: "No me gusta"

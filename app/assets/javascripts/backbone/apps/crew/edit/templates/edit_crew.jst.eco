@@ -1,0 +1,85 @@
+<div id="edit-crew">
+	<fieldset>
+		<legend>Details</legend>
+		<div class="row form-group">
+			<div class="col-md-3 columns">
+				<label class="right inline">Age</label>
+	        </div>
+	        <div class="col-md-9 columns">
+				<div class="col-md-5">
+					<input type="text" name="age" class="col-md-2" value="<%= @age %>" />
+				</div>
+	        </div>
+		</div>
+		<div class="row form-group">
+			<div class="col-md-3 columns">
+				<label class="right inline">Name</label>
+	        </div>
+	        <div class="col-md-9 columns">
+				<div class="col-md-5">
+					<input type="text" name="name" value="<%= @name %>" />
+				</div>
+	        </div>
+		</div>
+		<div class="row form-group">
+			<div class="col-md-3 columns">
+				<label class="right inline">Avatar</label>
+	        </div>
+	        <div class="col-md-9 columns">
+				<div class="col-md-5">
+					<input type="text" name="avatar"value="<%= @avatar %>" />
+				</div>
+	        </div>
+		</div>
+		<div class="row form-group">
+			<div class="col-md-3 columns">
+				<label class="right inline">Title</label>
+	        </div>
+	        <div class="col-md-9 columns">
+				<div class="col-md-5 left">
+					<input type="text" name="title" value="<%= @title %>" />
+				</div>
+				<div class="col-md-7 columns">
+					<h6 class="subheader hint">Job Title at Planet Express</h6>
+				</div>
+	        </div>
+		</div>
+		<div class="row form-group">
+			<div class="col-md-3 columns">
+				<label class="right inline">Species</label>
+	        </div>
+			<div class="col-md-9 columns">
+				<div class="col-md-5 left">
+					<input type="text" name="species" value="<%= @species %>" />
+				</div>
+				<div class="col-md-7 columns">
+					<h6 class="subheader hint">Ex: Human, Robot, Mutant</h6>
+				</div>
+	        </div>
+		</div>
+		<div class="row form-group">
+			<div class="col-md-3 columns">
+				<label class="right inline">Origin</label>
+	        </div>
+			<div class="col-md-9 columns">
+				<div class="col-md-5 left">
+					<input type="text" name="origin" value="<%= @origin %>" />
+				</div>
+				<div class="col-md-7 columns">
+					<h6 class="subheader hint">Planet they were born on</h6>
+				</div>
+	        </div>
+		</div>
+	</fieldset>
+	<fieldset>
+		<legend>Quote</legend>
+		<div class="row form-group">
+			<div class="col-md-3 columns">
+				<label class="right inline">Favorite Quote</label>
+	        </div>
+	        <div class="col-md-9 columns">
+				<textarea name="quote" class="col-md-6"><%= @quote %></textarea>
+	        </div>
+		</div>
+	</fieldset>
+</div>

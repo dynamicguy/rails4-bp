@@ -1,0 +1,16 @@
+<div class="panel well">
+    <div id="form-content-region" class="form-horizontal"></div>
+    <% if @footer: %>
+    <footer class="form-group">
+        <div class="col-lg-offset-3 col-lg-9 form-buttons">
+            <% if @buttons: %>
+            <% for button in @buttons: %>
+            <button type="<%= button.buttonType %>" data-form-button="<%= button.type %>"
+                    class="btn btn-default btn-sm btn-<%= button.type %> <%= button.className %>"><%= button.text %>
+            </button>
+            <% end %>
+            <% end %>
+        </div>
+    </footer>
+    <% end %>
+</div>

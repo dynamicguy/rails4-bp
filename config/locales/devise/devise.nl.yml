@@ -1,0 +1,122 @@
+#   Copyright (c) 2010-2013, Diaspora Inc.  This file is
+#   licensed under the Affero General Public License version 3 or later.  See
+#   the COPYRIGHT file.
+
+
+
+nl:
+  devise:
+    confirmations:
+      confirmed: "Je account is geactiveerd. Je bent nu ingelogd."
+      new:
+        resend_confirmation: "Stuur bevestigingsinstructies nogmaals"
+      send_instructions: "Je ontvangt binnen enkele minuten een e-mail met instructies om je account te activeren."
+    failure:
+      inactive: "Je account is nog niet geactiveerd."
+      invalid: "Gebruikersnaam of wachtwoord ongeldig."
+      invalid_token: "Ongeldig authenticatietoken."
+      locked: "Je account is geblokkeerd."
+      timeout: "Je sessie is verlopen. Log opnieuw in om verder te gaan."
+      unauthenticated: "Log in of registreer om verder te gaan."
+      unconfirmed: "Activeer je account om verder te gaan."
+    invitations:
+      invitation_token_invalid: "Onze excuses! Die uitnodigingstoken is ongeldig."
+      send_instructions: "Je uitnodiging is verzonden."
+      updated: "Wachtwoord succesvol veranderd. Je bent nu ingelogd."
+    mailer:
+      confirmation_instructions:
+        confirm: "Bevestig mijn account"
+        subject: "Bevestigingsinstructies"
+        you_can_confirm: "Je kunt je account bevestigen via onderstaande link:"
+      hello: "Hallo %{email}!"
+      invitation_instructions:
+        accept: "Accepteer uitnodiging"
+        arrived: "Het sociale netwerk waar je op hebt gewacht is hier. Vernieuwd, veiliger en leuker. %{strong_diaspora} laat je het web op een hele nieuwe manier verkennen."
+        be_yourself: "Wees jezelf"
+        be_yourself_paragraph: "Het internet heeft unieke, nieuwe manieren mogelijk gemaakt om onszelf te uiten. %{strong_diaspora} laat jou jezelf zijn en laat jou delen hoe je dat wilt, met of zonder je echte naam."
+        cubbies: "Cubbi.es"
+        displaying_correctly: "Ziet deze e-mail er niet goed uit? %{link}"
+        email_address: "questions@joindiaspora.com"
+        email_us: "Voor algemene vragen of hulp met je Diaspora account kun je een e-mail sturen naar %{email}."
+        finally: "Eindelijk - het is er"
+        friends_saying: "Wat je vrienden zeggen..."
+        get_connected: "Doe mee"
+        get_connected_paragraph: "Als internationale beweging met een gedeelde visie voor een beter web, is de community het belangrijkste kenmerk van %{strong_diaspora}. Ontmoet nieuwe mensen, verbind met vrienden, en neem deel aan gesprekken."
+        have_fun: "Veel plezier"
+        have_fun_paragraph: "%{strong_diaspora} draait helemaal om het online ontdekken van geweldige content en mensen. %{link}, 's werelds eerste %{strong_diaspora} toepassing is nog maar het begin. Verzamel en deel het web in al zijn glorie."
+        help_fund: "help ons Diaspora te financieren"
+        here: "hier"
+        ignore: "Als je de uitnodiging niet wilt accepteren, negeer dan deze E-mail."
+        join_team: "Sluit je aan bij ons team"
+        love: "Liefs,"
+        made_by_people: "%{strong_diaspora} is gemaakt door mensen die net zoveel van het Internet houden als jij. %{jointeam}, of %{helpfund}!"
+        more_people: "Nog meer mensen zijn enthousiast je te zien!"
+        no_account_till: "Je account wordt niet aangemaakt totdat je de bovenstaande link bezoekt en je aanmeldt."
+        or: "of"
+        sign_up_now: "Meld je nu aan &rarr;"
+        subject: "Je bent uitgenodigd om lid te worden van Diaspora!"
+        team_diaspora: "Het Diaspora Team"
+        unsubscribe: "Om je af te melden, klik %{link}."
+        view_in: "Toon het in je browser."
+      inviter:
+        accept_at: "op %{url}, je kunt deze accepteren via onderstaande link."
+        has_invited_you: "%{name}"
+        have_invited_you: "%{names} hebben je uitgenodigd om lid te worden van Diaspora"
+      reset_password_instructions:
+        change: "Wijzig mijn wachtwoord"
+        ignore: "Als je hier niet om hebt gevraagd kun je deze mail gewoon negeren."
+        someone_requested: "Iemand heeft een aanvraag gedaan om je wachtwoord te wijzigen. Je kunt dit doen via onderstaande link."
+        subject: "Wachtwoord reset instructies"
+        wont_change: "Je wachtwoord zal niet worden gewijzigd totdat je via bovenstaande link een nieuwe hebt gekozen."
+      unlock_instructions:
+        account_locked: "Je account is vergrendeld vanwege te veel mislukte aanmeldpogingen."
+        click_to_unlock: "Klik op onderstaande link om je account te ontgrendelen:"
+        subject: "Ontgrendelingsinstructies"
+        unlock: "Ontgrendel mijn account"
+      welcome: "Welkom %{email}!"
+    passwords:
+      edit:
+        change_password: "Wijzig mijn wachtwoord"
+      new:
+        forgot_password: "Wachtwoord vergeten?"
+        no_account: "Er bestaat geen account met dit e-mailadres.  Mocht je op een uitnodiging wachten; deze komen zo snel mogelijk beschikbaar."
+        send_password_instructions: "Stuur mij instructies om mijn wachtwoord te resetten"
+      send_instructions: "Je ontvangt binnen enkele minuten een e-mail met instructies om je wachtwoord opnieuw in te stellen."
+      updated: "Je wachtwoord is veranderd. Je bent nu ingelogd."
+    registrations:
+      destroyed: "Tot ziens! Je account is succesvol verwijderd. We hopen je snel terug te zien."
+      signed_up: "Je bent succesvol geregistreerd. Indien aangevinkt is er een bevestiging naar je e-mail gestuurd."
+      updated: "Je account is succesvol geüpdate."
+    sessions:
+      new:
+        alpha_software: "Je staat op het punt om alpha-software te gebruiken."
+        bugs_and_feedback: "Wees je ervan bewust dat je bugs tegen zult komen.  Gebruik de Feedback-button aan de rechterzijde van je browser om alle problemen melden (in het Engels)!  We doen ons uiterste best om problemen zo snel mogelijk op te lossen."
+        bugs_and_feedback_mobile: "Wees je ervan bewust dat je bugs tegen zult komen.  We vragen je alle problemen vooral te melden!  We doen ons uiterste best om problemen zo snel mogelijk op te lossen."
+        login: "Inloggen"
+        modern_browsers: "ondersteunt alleen moderne browsers."
+        password: "Wachtwoord"
+        remember_me: "Onthoud mij"
+        sign_in: "Log in"
+        username: "Gebruikersnaam"
+      signed_in: "Je bent succesvol ingelogd."
+      signed_out: "Je bent succesvol uitgelogd."
+    shared:
+      links:
+        forgot_your_password: "Wachtwoord vergeten?"
+        receive_confirmation: "Geen bevestigingsinstructies ontvangen?"
+        receive_unlock: "Geen ontgrendelinstructies ontvangen?"
+        sign_in: "Inloggen"
+        sign_up: "Registreer"
+        sign_up_closed: "Vrij registreren is momenteel niet mogelijk."
+      mail_signup_form:
+        sign_up_for_an_invite: "Meld je aan voor een uitnodiging!"
+    unlocks:
+      new:
+        resend_unlock: "Stuur ontgrendelinstructies nogmaals"
+      send_instructions: "Je ontvangt binnen enkele minuten een e-mail met instructies om je account te deblokkeren."
+      unlocked: "Je account is succesvol gedeblokkeerd. Je bent nu ingelogd."
+  errors:
+    messages:
+      already_confirmed: "is al geactiveerd"
+      not_found: "niet gevonden"
+      not_locked: "is niet geblokkeerd"

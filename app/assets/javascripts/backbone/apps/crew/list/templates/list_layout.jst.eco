@@ -1,0 +1,7 @@
+<div id="crew-list">
+    <div id="panel-region" class="container"></div>
+    <div id="new-region" class="container"></div>
+    <section>
+        <div id="crew-region" class="container"></div>
+    </section>
+</div>
