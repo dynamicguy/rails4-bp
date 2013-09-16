@@ -32,12 +32,15 @@
 		newRegion: ->
 			App.execute "new:crew:member", @layout.newRegion
 		
-		crewRegion: (crew) ->
-			crewView = @getCrewView crew
+		crewRegion: (crews) ->
+			crewView = @getCrewView crews
 			
+			@listenTo crewView, "crew:scrolled", (args) ->
+				App.vent.trigger "crew:more", args
+
 			@listenTo crewView, "childview:crew:member:clicked", (child, args) ->
 				App.vent.trigger "crew:member:clicked", args.model
-			
+
 			@listenTo crewView, "childview:crew:delete:clicked", (child, args) ->
 				model = args.model
 				if confirm "Are you sure you want to delete #{model.get("name")}?" then model.destroy() else false

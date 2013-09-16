@@ -1,7 +1,8 @@
 class CategoriesController < ApplicationController
   include TheSortableTreeController::Rebuild
   before_action :set_category, only: [:show, :edit, :update, :destroy, :rebuild]
-  add_breadcrumb :categories, :categories_path
+  #add_breadcrumb :categories, :categories_path
+
   # GET /categories
   # GET /categories.json
   def index

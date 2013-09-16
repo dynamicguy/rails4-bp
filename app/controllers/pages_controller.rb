@@ -1,7 +1,8 @@
 class PagesController < ApplicationController
   include TheSortableTreeController::Rebuild
   before_action :set_page, only: [:show, :edit, :update, :destroy, :rebuild]
-  add_breadcrumb :pages, :pages_path
+  #add_breadcrumb :pages, :pages_path
+
   # GET /pages
   # GET /pages.json
   def index

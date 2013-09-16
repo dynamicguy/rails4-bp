@@ -1,6 +1,7 @@
 class ArticlesController < ApplicationController
   before_action :set_article, only: [:show, :edit, :update, :destroy]
-  add_breadcrumb :articles, :articles_path
+  #add_breadcrumb :articles, :articles_path
+
   # GET /articles
   # GET /articles.json
   def index

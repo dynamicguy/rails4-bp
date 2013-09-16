@@ -1,11 +1,4 @@
 GIT
-  remote: git://github.com/Nerian/bootstrap-wysihtml5-rails.git
-  revision: 9a1f0f6953da7ba43716e0347476fead5fefd701
-  specs:
-    bootstrap-wysihtml5-rails (0.3.1.23)
-      railties (>= 3.0)
-
-GIT
   remote: git://github.com/ctran/annotate_models.git
   revision: aaab884fe430bf6ef418cfbedde603d660c78f9b
   specs:
@@ -31,6 +24,14 @@ GIT
       activesupport (>= 3.1, < 4.1)
       haml (>= 3.1, < 4.1)
       railties (>= 3.1, < 4.1)
+
+GIT
+  remote: git://github.com/mbleigh/seed-fu.git
+  revision: f89ea306472c500ec7911c7be111a4aad9c1bc78
+  specs:
+    seed-fu (2.2.0)
+      activerecord (>= 3.1, < 4.1)
+      activesupport (>= 3.1, < 4.1)
 
 GIT
   remote: git://github.com/plataformatec/devise.git
@@ -78,16 +79,6 @@ GIT
       jquery-rails
 
 GIT
-  remote: git://github.com/seyhunak/twitter-bootstrap-rails.git
-  revision: 40ffd567ee6bea9974710c58646d309d6a95faaf
-  specs:
-    twitter-bootstrap-rails (2.2.8)
-      actionpack (>= 3.1)
-      execjs
-      rails (>= 3.1)
-      railties (>= 3.1)
-
-GIT
   remote: git@github.com:collectiveidea/awesome_nested_set.git
   revision: 0429d6a82be40081caf40b976fed6a4d6ab294e3
   branch: master
@@ -112,7 +103,7 @@ GIT
       rails (>= 3.1)
 
 GEM
-  remote: http://rubygems.org/
+  remote: https://rubygems.org/
   specs:
     actionmailer (4.0.0)
       actionpack (= 4.0.0)
@@ -208,7 +199,7 @@ GEM
       chunky_png (~> 1.2)
       fssm (>= 0.2.7)
       sass (~> 3.1)
-    compass-rails (1.0.3)
+    compass-rails (2.0.alpha.0)
       compass (>= 0.12.2, < 0.14)
     configurate (0.0.8)
     connection_pool (1.1.0)
@@ -255,6 +246,7 @@ GEM
       multipart-post (~> 1.2.0)
     faraday_middleware (0.9.0)
       faraday (>= 0.7.4, < 0.9)
+    ffaker (1.18.0)
     ffi (1.9.0)
     fixture_builder (0.3.6)
       activerecord (>= 2)
@@ -322,9 +314,6 @@ GEM
       rspec (>= 1.3.1)
       selenium-webdriver (>= 0.1.3)
     jasmine-core (1.3.1)
-    jbuilder (1.5.1)
-      activesupport (>= 3.0.0)
-      multi_json (>= 1.2.0)
     jquery-rails (2.1.4)
       railties (>= 3.0, < 5.0)
       thor (>= 0.14, < 2.0)
@@ -436,6 +425,8 @@ GEM
       addressable
       nokogiri
     orm_adapter (0.4.0)
+    paginate-responder (1.3.0)
+      rack-link_headers (>= 2.2)
     polyamorous (0.6.4)
       activerecord (>= 3.0)
     polyglot (0.3.3)
@@ -447,6 +438,8 @@ GEM
     rack-cors (0.2.8)
       rack
     rack-google-analytics (0.11.0)
+    rack-link_headers (2.2.2)
+      rack
     rack-mobile-detect (0.4.0)
       rack
     rack-piwik (0.2.2)
@@ -488,6 +481,7 @@ GEM
       redis (~> 3.0.0)
     ref (1.0.5)
     remotipart (1.2.1)
+    responders (0.6.5)
     rest-client (1.6.7)
       mime-types (>= 1.16)
     roxml (3.1.6)
@@ -608,7 +602,6 @@ DEPENDENCIES
   awesome_nested_set!
   better_errors
   binding_of_caller
-  bootstrap-wysihtml5-rails!
   bullet
   capistrano
   capistrano-ext
@@ -617,7 +610,7 @@ DEPENDENCIES
   client_side_validations
   coffee-rails (~> 4.0.0)
   commands
-  compass-rails
+  compass-rails (~> 2.0.alpha.0)
   configurate
   country_select
   cucumber-rails
@@ -628,6 +621,7 @@ DEPENDENCIES
   factory_girl_rails
   faraday (= 0.8.8)
   faraday_middleware (= 0.9.0)
+  ffaker
   fixture_builder (= 0.3.6)
   fog (= 1.14.0)
   foreman (= 0.62)
@@ -644,7 +638,6 @@ DEPENDENCIES
   http_accept_language
   i18n-inflector-rails!
   jasmine (= 1.3.2)
-  jbuilder (~> 1.2)
   jquery-datatables-rails!
   jquery-rails (>= 2.1.4)
   js-routes
@@ -666,6 +659,7 @@ DEPENDENCIES
   omniauth-twitter (= 1.0.0)
   omniauth-wordpress (= 0.2.0)
   opengraph_parser (= 0.2.3)
+  paginate-responder
   rabl
   rack-cors (= 0.2.8)
   rack-google-analytics (= 0.11.0)
@@ -681,10 +675,12 @@ DEPENDENCIES
   rb-inotify (~> 0.9)
   redcarpet (= 3.0.0)
   remotipart (= 1.2.1)
+  responders
   roxml (= 3.1.6)
   rspec-instafail (= 0.2.4)
   rspec-rails
   ruby-oembed (= 0.8.8)
+  seed-fu!
   sidekiq
   simple_form!
   sinatra
@@ -700,7 +696,6 @@ DEPENDENCIES
   timecop
   turbolinks!
   twitter (= 4.8.1)
-  twitter-bootstrap-rails!
   typhoeus (= 0.6.3)
   uglifier (>= 1.3.0)
   unicorn (= 4.6.3)

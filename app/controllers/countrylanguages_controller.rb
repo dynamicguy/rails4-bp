@@ -1,7 +1,7 @@
 class CountrylanguagesController < ApplicationController
   before_action :set_countrylanguage, only: [:view, :show, :edit, :update, :destroy]
   respond_to :html, :json
-  add_breadcrumb :language, :countrylanguages_path
+  #add_breadcrumb :language, :countrylanguages_path
 
   def search
     #params[:distinct] = 0

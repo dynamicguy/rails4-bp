@@ -1,6 +1,7 @@
 class CitiesController < ApplicationController
   before_action :set_city, only: [:show, :edit, :update, :destroy]
-  add_breadcrumb :cities, :cities_path
+  #add_breadcrumb :cities, :cities_path
+
   respond_to :html, :json
   # GET /cities
   # GET /cities.json

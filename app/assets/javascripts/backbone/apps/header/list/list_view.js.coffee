@@ -2,6 +2,7 @@
 
 	class List.Layout extends App.Views.Layout
 		template: "header/list/list_layout"
+		className: 'container-fluid'
 
 		regions:
 			headerRegion: "#nav-region"
@@ -12,11 +13,12 @@
 		template: "header/list/_title"
 		className: 'container'
 
+
 	class List.Notice extends App.Views.ItemView
 		template: "header/list/_notice"
-		className: 'row'
+		className: 'container'
 
 	class List.Header extends App.Views.ItemView
 		template: "header/list/header"
-		className: 'container'
+
 

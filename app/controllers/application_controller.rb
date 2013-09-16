@@ -1,4 +1,9 @@
+require "application_responder"
+
 class ApplicationController < ActionController::Base
+  self.responder = ApplicationResponder
+  respond_to :html, :json, :xml
+
   has_mobile_fu
   protect_from_forgery :except => :receive
 
@@ -19,6 +24,11 @@ class ApplicationController < ActionController::Base
   layout ->(c) { request.format == :mobile ? "application" : "centered_with_header_with_footer" }
 
   def index
+    gon.environment = Rails.env
+    gon.rabl
+    @user = User.first
+    gon.rabl template: "app/views/users/show.json.rabl", as: "current_user"
+
   end
 
   def static

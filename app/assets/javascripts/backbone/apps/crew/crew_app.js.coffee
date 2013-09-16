@@ -28,6 +28,14 @@
 		App.navigate Routes.crews_path()
 		API.list()
 
+	App.vent.on "crew:more", (options) ->
+		totalHeight = $(options.view.el).find("ul:first").height()
+		scrollTop = options.view.el.scrollTop + $(options.view.el).height()
+		if scrollTop + 100 >= totalHeight
+			console.log("scrollTop is: " + scrollTop)
+			console.log("totalHeight is: " + totalHeight)
+#			App.request "crew:fetch:more", options
+
 	App.addInitializer ->
 		new CrewApp.Router
 			controller: API

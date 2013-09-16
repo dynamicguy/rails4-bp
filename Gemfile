@@ -1,4 +1,4 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
 gem 'rails', '4.0.0'
 gem 'arel', github: 'rails/arel'
@@ -47,7 +47,7 @@ group :assets do
   gem 'coffee-rails', '~> 4.0.0'
 
   #gem 'bootstrap-sass'
-  gem 'compass-rails'
+  gem "compass-rails", "~> 2.0.alpha.0"
 
   # JavaScript
   gem 'handlebars_assets', '>= 0.12.0'
@@ -63,7 +63,7 @@ group :assets do
 end
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 1.2'
+#gem 'jbuilder', '~> 1.2'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -110,7 +110,7 @@ gem 'typhoeus', '0.6.3'
 gem "country_select"
 gem 'awesome_nested_set', :git => 'git@github.com:collectiveidea/awesome_nested_set.git', :branch => 'master' # or any similar gem (gem 'nested_set')
 gem "the_sortable_tree", :git => "git@github.com:the-teacher/the_sortable_tree.git"
-gem 'bootstrap-wysihtml5-rails', :require => 'bootstrap-wysihtml5-rails', :git => 'git://github.com/Nerian/bootstrap-wysihtml5-rails.git'
+#gem 'bootstrap-wysihtml5-rails', :require => 'bootstrap-wysihtml5-rails', :git => 'git://github.com/Nerian/bootstrap-wysihtml5-rails.git'
 gem 'jquery-datatables-rails', git: 'git://github.com/rweng/jquery-datatables-rails.git'
 gem "simple_form", git: 'git://github.com/plataformatec/simple_form.git'
 gem 'turbolinks', github: 'rails/turbolinks'
@@ -123,8 +123,10 @@ gem 'mobile-fu'
 gem "rabl"
 gem "oj"
 gem "gon"
+#gem "rabl-rails"
 gem "js-routes"
-
+gem 'responders'
+gem 'paginate-responder'
 
 # we don't install these on travis to speed up test runs
 group :production do
@@ -181,7 +183,7 @@ group :development do
 
   gem 'librarian-chef'
 
-  gem 'twitter-bootstrap-rails', github: 'seyhunak/twitter-bootstrap-rails'
+  #gem 'twitter-bootstrap-rails', github: 'seyhunak/twitter-bootstrap-rails'
 end
 
 
@@ -216,6 +218,13 @@ group :development, :test do
   # RSpec (unit tests, some integration tests)
   gem "rspec-rails"
   gem 'thin'
+
+  # Generate Fake data
+  gem 'ffaker'
+
+# Seed data
+  gem 'seed-fu', github: 'mbleigh/seed-fu'
+
   # Cucumber (integration tests)
   gem 'cucumber-rails', :require => false
 

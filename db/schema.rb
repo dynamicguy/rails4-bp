@@ -11,12 +11,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130912210044) do
+ActiveRecord::Schema.define(version: 20130914142424) do
 
   create_table "articles", force: true do |t|
     t.string   "name"
     t.string   "content"
     t.datetime "published_on"
+    t.integer  "author_id",                               null: false
+    t.boolean  "public",                  default: false, null: false
+    t.boolean  "guid",                                    null: false
+    t.boolean  "pending",                 default: false, null: false
+    t.string   "type",         limit: 40,                 null: false
+    t.text     "text"
+    t.integer  "likes_count",             default: 0
+    t.boolean  "favorite",                default: false
   end
 
   create_table "categories", force: true do |t|

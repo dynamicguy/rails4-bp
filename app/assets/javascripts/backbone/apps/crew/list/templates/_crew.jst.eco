@@ -1,3 +1,6 @@
-<div class="row">
-	<ul class="col-md-12 columns"></ul>
-</div>
+<ul class="list-group">
+    <li class="list-group-item active">
+        <h4 class="list-group-item-heading">Crews Listing</h4>
+        <p class="list-group-item-text">List of all crews.</p>
+    </li>
+</ul>

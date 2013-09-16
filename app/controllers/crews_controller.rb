@@ -1,18 +1,19 @@
 class CrewsController < ApplicationController
   before_action :set_crew, only: [:show, :edit, :update, :destroy]
-  respond_to :json
+  respond_to :json, :xml
+  helper :api
+  responders :collection, Responders::PaginateResponder
 
   def index
-    @crew = Crew.all
+    @crew = Crew.order(params[:order]).page(params[:page]).per(params[:per_page])
+    respond_with @crew
   end
 
   def show
-    # sleep 5
     @member = Crew.find params[:id]
   end
 
   def update
-    sleep 2
     @member = Crew.find params[:id]
     if @member.update_attributes crew_params
       render "crews/show"
