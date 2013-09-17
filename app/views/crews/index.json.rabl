@@ -1,3 +1,3 @@
-collection @crew
+collection @crews
 
 extends "crews/_base"

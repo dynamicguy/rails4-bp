@@ -7,74 +7,28 @@
 		model: Entities.Crew
 		mode: "infinite"
 		url: Routes.crews_path({format: 'json'})
+
 		queryParams:
 			totalPages: null
 			totalRecords: null
 			sortKey: "order"
-			order: "direction"
+			order: "dir"
 			directions:
 				"-1": "asc"
 				1: "desc"
 
 		state:
-			sortKey: "name"
+			firstPage: 1
+			pageSize: 20
+			sortKey: "id"
 			order: 1
-			pageSize: 10
-
-	columns = [
-		name: "id"
-		cell: Backgrid.IntegerCell.extend(orderSeparator: "")
-		editable: false
-		sortable: true
-	,
-		name: "name"
-		cell: "string"
-		sortable: false
-	,
-		name: "avatar"
-		cell: "string"
-		sortable: false
-	,
-		name: "title"
-		cell: "string"
-		sortable: false
-	,
-		name: "species"
-		cell: "string"
-		sortable: false
-	,
-		name: "origin"
-		cell: "string"
-		sortable: false
-	,
-		name: "quote"
-		cell: "text"
-	]
 
 	API =
 		getCrews: ->
-			crews = new Entities.CrewCollection
-				reset: true
-			crews
-#			grid = new Backgrid.Grid
-#				columns: columns
-#				collection: crews.fullCollection
-#			paginator = new Paginator(
-#				columns: columns
-#				collection: crews
-#			)
-
-
+			new Entities.CrewCollection()
 
 		fetchMoreCrews: (args) ->
 			console.log args.collection.state
-#			args.collection.getNextPage
-#				fetch: true
-
-#			crews = args.collection.getNextPage
-#				fetch: true
-#			crews
-
 
 		getCrewMember: (id) ->
 			member = new Entities.Crew

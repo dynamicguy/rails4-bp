@@ -5,8 +5,8 @@ class CrewsController < ApplicationController
   responders :collection, Responders::PaginateResponder
 
   def index
-    @crew = Crew.order(params[:order]).page(params[:page]).per(params[:per_page])
-    respond_with @crew
+    @crews = Crew.order("#{params[:order]} #{params[:dir]}").page(params[:page]).per(params[:per_page])
+    respond_with @crews
   end
 
   def show

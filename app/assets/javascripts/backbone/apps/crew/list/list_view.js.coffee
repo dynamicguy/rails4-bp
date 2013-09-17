@@ -33,10 +33,9 @@
 	class List.Crew extends App.Views.CompositeView
 		template: "crew/list/_crew"
 		id: "crewList"
-		itemView: List.CrewMember
-		emptyView: List.Empty
-		itemViewContainer: "ul"
 		className: 'row'
 
 		triggers:
 			"scroll": "crew:scrolled"
+
+

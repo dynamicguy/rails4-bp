@@ -21,6 +21,7 @@
 #= require components/backbone-pageable/lib/backbone-pageable
 #= require components/backgrid/lib/backgrid
 #= require components/backgrid/lib/extensions/paginator/backgrid-paginator
+#= require components/backgrid/lib/extensions/text-cell/backgrid-text-cell
 #= require js-routes
 #= require_tree ./backbone/config
 #= require ./backbone/app
