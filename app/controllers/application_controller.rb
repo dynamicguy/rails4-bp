@@ -2,7 +2,7 @@ require "application_responder"
 
 class ApplicationController < ActionController::Base
   self.responder = ApplicationResponder
-  respond_to :html, :json, :xml
+  respond_to :html, :json, :xml, :js
 
   has_mobile_fu
   protect_from_forgery :except => :receive

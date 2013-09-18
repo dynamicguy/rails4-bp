@@ -85,6 +85,7 @@
 					collection: crewListView.collection
 				)
 				$("#paginator").append paginator.render().$el
+				$("thead tr").addClass("warning")
 				crewListView.collection.getFirstPage()
 
 
