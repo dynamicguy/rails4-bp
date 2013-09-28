@@ -2,8 +2,6 @@
 	
 	App = new Marionette.Application
 
-
-
 	App.on "initialize:before", (options) ->
 		App.environment = options.environment
 		@currentUser = App.request "set:current:user", options.currentUser
@@ -16,7 +14,7 @@
 		mainRegion:		"#main-region"
 		footerRegion: "#footer-region"
 	
-	App.rootRoute = Routes.crews_path()
+	App.rootRoute = Routes.root_path()
 	
 	App.addInitializer ->
 		App.module("HeaderApp").start()

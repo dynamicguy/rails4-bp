@@ -31,27 +31,33 @@
 				App.vent.trigger "crews:more", args
 
 			@listenTo crewListView, "childview:crew:member:clicked", (child, args) ->
-				App.vent.trigger "crew:member:clicked", args.model
-
-			@listenTo crewListView, "childview:crew:delete:clicked", (child, args) ->
-				model = args.model
-				if confirm "Are you sure you want to delete #{model.get("name")}?" then model.destroy() else false
+				App.vent.trigger "crew:member:clicked", child.model
 
 			@layout.crewRegion.show crewListView
 
+			ActionsCell = Backgrid.Cell.extend(
+				className: 'actions'
+				template: _.template("<button data-id='<%= id %>' class='crew-edit btn btn-default btn-xs'><span class='glyphicon glyphicon-pencil'></span></button> <button data-id='<%= id %>' class='crew-delete btn btn-danger btn-xs'><span class='glyphicon glyphicon-trash'></span></button>")
+
+				events:
+					"click .crew-delete": "deleteRow"
+
+				deleteRow: (e) ->
+#					console.log @model
+					if confirm "Are you sure you want to delete #{@model.get("name")} with ID: #{@model.get("id")}?" then @model.destroy({id: @model.get("id")}) else false
+
+				render: ->
+					@$el.html @template({id: @model.id})
+					@delegateEvents()
+					@
+			)
+
 			columns = [
-				name: "id"
-				cell: Backgrid.IntegerCell.extend(orderSeparator: "")
-				editable: false
-			,
-				name: "age"
-				cell: "number"
-			,
 				name: "name"
 				cell: "string"
 			,
-				name: "avatar"
-				cell: "string"
+				name: "age"
+				cell: "number"
 			,
 				name: "title"
 				cell: "string"
@@ -59,11 +65,11 @@
 				name: "species"
 				cell: "string"
 			,
-				name: "origin"
-				cell: "string"
-			,
-				name: "quote"
-				cell: "string"
+				name: "id"
+				label: "Actions"
+				sortable: false
+				editable: false
+				cell: ActionsCell
 			]
 
 			if crewListView.hasOwnProperty 'collection'
@@ -72,20 +78,33 @@
 					collection: crewListView.collection.fullCollection
 					columns: columns
 				$("#grid").append(grid.render().$el)
+				$("thead tr").addClass("warning")
 
-				Paginator = Backgrid.Extension.Paginator.extend(
+				class Paginator extends Backgrid.Extension.Paginator
 					windowSize: 20 # Default is 10
+					className: 'pager'
 					hasFastForward: true # true is the xt: ">"
 					fastForwardHandleLabels:
-						prev: "<"
-						next: ">"
-				)
+						prev: '&larr; Older'
+						next: 'Newer &rarr;'
+
 				paginator = new Paginator(
 					columns: columns
 					collection: crewListView.collection
 				)
 				$("#paginator").append paginator.render().$el
-				$("thead tr").addClass("warning")
+
+				class Filter extends Backgrid.Extension.ServerSideFilter
+					template: _.template('<div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span><input class="form-control h35" type="text" <% if (placeholder) { %> placeholder="<%- placeholder %>" <% } %> name="<%- name %>" /><span class="input-group-addon"><a class="close" href="#">&times;</a></span></div>')
+					className: 'backgrid-filter form-search'
+					placeholder: "Search"
+
+				filter = new Filter(
+					collection: crewListView.collection.fullCollection
+					fields: ["name", "title", "species"]
+				)
+				$("#filters").append filter.render().$el
+
 				crewListView.collection.getFirstPage()
 
 

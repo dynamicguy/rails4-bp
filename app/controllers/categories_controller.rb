@@ -1,4 +1,6 @@
 class CategoriesController < ApplicationController
+  before_filter :authenticate_user!
+
   include TheSortableTreeController::Rebuild
   before_action :set_category, only: [:show, :edit, :update, :destroy, :rebuild]
   #add_breadcrumb :categories, :categories_path
@@ -6,11 +8,11 @@ class CategoriesController < ApplicationController
   # GET /categories
   # GET /categories.json
   def index
-    add_breadcrumb :list
-    @categories = Category.nested_set.select(:id, :title, :content, :secret_field, :parent_id, :lft, :rgt, :depth).page(params[:page])
+    authorize! :index, @user, :message => 'Not authorized as an administrator.'
+    @categories = Category.nested_set.select(:id, :title, :content, :secret_field, :parent_id, :lft, :rgt, :depth).paginate(:page => params[:page]).order('id DESC')
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: CategoriesDatatable.new(view_context) }
+      format.json { render json: @categories }
       format.xml { render xml: Category.all }
     end
   end
@@ -19,20 +21,20 @@ class CategoriesController < ApplicationController
   # GET /categories/1.json
   def show
     add_breadcrumb :details
-    @categories = Category.nested_set.select(:id, :title, :content, :secret_field, :parent_id, :lft, :rgt, :depth).page(params[:page])
+    @categories = Category.nested_set.select(:id, :title, :content, :secret_field, :parent_id, :lft, :rgt, :depth).paginate(:page => params[:page]).order('id DESC')
   end
 
   # GET /categories/new
   def new
     add_breadcrumb :new
-    @categories = Category.nested_set.select(:id, :title, :content, :secret_field, :parent_id, :lft, :rgt, :depth).page(params[:page])
+    @categories = Category.nested_set.select(:id, :title, :content, :secret_field, :parent_id, :lft, :rgt, :depth).paginate(:page => params[:page]).order('id DESC')
     @category = Category.new
   end
 
   # GET /categories/1/edit
   def edit
     add_breadcrumb :edit
-    @categories = Category.nested_set.select(:id, :title, :content, :secret_field, :parent_id, :lft, :rgt, :depth).page(params[:page])
+    @categories = Category.nested_set.select(:id, :title, :content, :secret_field, :parent_id, :lft, :rgt, :depth).paginate(:page => params[:page]).order('id DESC')
   end
 
   # POST /categories

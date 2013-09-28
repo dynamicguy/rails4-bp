@@ -1,18 +1,52 @@
-<div class="navbar navbar-inverse navbar-fixed-top rbp-app-nav">
+<div class="navbar navbar-inverse navbar-info navbar-fixed-top rbp-app-nav" role="navigation">
     <div class="navbar-header">
         <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+            <span class="glyphicon-bar"></span>
+            <span class="glyphicon-bar"></span>
+            <span class="glyphicon-bar"></span>
         </button>
-        <a href="../" class="navbar-brand">Rails4BP</a>
+        <a href="#" class="navbar-brand"><span class="glyphicon glyphicon-home"></span> Rails4BP</a>
     </div>
 
     <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-        <ul class="nav navbar-nav pull-right">
-            <li class="active"><a href="#crew"><i class="icon icon-group"></i>Crew</a></li>
-            <li><a href="#users"><i class="icon icon-user"></i>Users</a></li>
+        <ul class="nav navbar-nav pull-right" role="menu">
+            <li><a href="#countries"><i class="glyphicon glyphicon-globe"></i> Countries</a></li>
+            <li><a href="#cities"><i class="glyphicon glyphicon-cloud"></i> Cities</a></li>
+            <li><a href="#categories"><i class="glyphicon glyphicon-tags"></i> Categories</a></li>
+            <li><a href="#pages"><i class="glyphicon glyphicon-list"></i> Pages</a></li>
+            <li><a href="#crew"><i class="glyphicon glyphicon-eye-open"></i> Crews</a></li>
+            <li><a href="#users"><i class="glyphicon glyphicon-user"></i> Users</a></li>
+            <% if gon.user: %>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="glyphicon glyphicon-cog"></i>
+                        Settings
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="javascript:;">Account Settings</a></li>
+                        <li><a href="javascript:;">Privacy Settings</a></li>
+                        <li class="divider"></li>
+                        <li><a href="javascript:;">Help</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <i class="glyphicon  glyphicon-user"></i>
+                        <%= gon.user.email %>
+                        <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="javascript:;">My Profile</a></li>
+                        <li><a href="javascript:;">My Groups</a></li>
+                        <li class="divider"></li>
+                        <li><a href="<%= Routes.destroy_user_session_path() %>" data-method="delete">Logout</a></li>
+                    </ul>
+                </li>
+            <% else: %>
+            <li><a href="<%= Routes.new_user_session_path() %>"><i class="glyphicon glyphicon-user"></i>Login</a></li>
+            <% end %>
         </ul>
     </nav>
 </div>

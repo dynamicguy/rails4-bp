@@ -1,0 +1,10 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %title rails4bp
+    = stylesheet_link_tag "minimal"
+
+  %body
+    = yield
+    = javascript_include_tag "jquery"
+    = javascript_include_tag "jquery_ujs"

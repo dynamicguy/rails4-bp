@@ -13,24 +13,14 @@ require 'typhoeus'
 # Presenters
 #require 'post_presenter'
 
-# Helpers
-require 'markdownify_helper'
-
 # Our libs
-require 'collect_user_photos'
 require 'rails4bp'
 require 'direction_detector'
-require 'email_inviter'
 require 'evil_query'
-require 'federation_logger'
 require 'h_card'
 require 'hydra_wrapper'
 require 'postzord'
-require 'publisher'
-require 'pubsubhubbub'
 require 'salmon'
-require 'statistics'
-require 'stream'
 require 'template_picker'
 require 'webfinger'
 require 'webfinger_profile'

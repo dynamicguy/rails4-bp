@@ -1,11 +1,16 @@
+# encoding: utf-8
 require "application_responder"
 
 class ApplicationController < ActionController::Base
+  has_mobile_fu
+  protect_from_forgery
+
+  rescue_from CanCan::AccessDenied do |exception|
+    redirect_to root_url, :alert => exception.message
+  end
+
   self.responder = ApplicationResponder
   respond_to :html, :json, :xml, :js
-
-  has_mobile_fu
-  protect_from_forgery :except => :receive
 
   before_filter :ensure_http_referer_is_set
   before_filter :set_locale
@@ -17,18 +22,19 @@ class ApplicationController < ActionController::Base
 
   inflection_method :grammatical_gender => :gender
 
-  helper_method :tag_followings,
-                :tags,
-                :open_publisher
-
-  layout ->(c) { request.format == :mobile ? "application" : "centered_with_header_with_footer" }
+  layout ->(c) {
+    if user_signed_in?
+      "marionette"
+    else
+      'public'
+    end
+  }
 
   def index
     gon.environment = Rails.env
     gon.rabl
     @user = User.first
     gon.rabl template: "app/views/users/show.json.rabl", as: "current_user"
-
   end
 
   def static
@@ -50,10 +56,6 @@ class ApplicationController < ActionController::Base
     else
       new_user_session_path
     end
-  end
-
-  def tags
-    @tags ||= current_user.followed_tags
   end
 
   def ensure_page
@@ -85,7 +87,7 @@ class ApplicationController < ActionController::Base
       gender = current_user.gender.to_s.tr('!()[]"\'`*=|/\#.,-:', '').downcase
       unless gender.empty?
         i_langs = I18n.inflector.inflected_locales(:gender)
-        i_langs.delete  I18n.locale
+        i_langs.delete I18n.locale
         i_langs.unshift I18n.locale
         i_langs.each do |lang|
           token = I18n.inflector.true_token(gender, :gender, lang)
@@ -113,18 +115,13 @@ class ApplicationController < ActionController::Base
     end
   end
 
-  def after_sign_in_path_for(resource)
-    stored_location_for(:user) || current_user_redirect_path
-  end
-
   def max_time
     params[:max_time] ? Time.at(params[:max_time].to_i) : Time.now + 1
   end
 
   def gon_set_current_user
     return unless user_signed_in?
-    a_ids = session[:a_ids] || []
-    user = UserPresenter.new(current_user, a_ids)
+    user = UserPresenter.new(current_user)
     gon.push({:user => user})
   end
 

@@ -79,25 +79,25 @@ configuration: ## Section
       ## increase it to 25 and more on a medium sized pod.
       ## This applies per started Sidekiq worker, so if you set it to
       ## 25 and start two workers you'll process up to 50 jobs in parallel.
-      #concurrency: 25
+      concurrency: 25
 
       ## Number of times a job is retried
       ## There's an exponential backoff, if you set this too
       ## high you might get too many jobs in the queue
       ## Set this to false to disable it completely 
-      #retry: 10
+      retry: 10
 
       ## Namespace to use in Redis, useful if you need to run
       ## multiple instances of Rails4Bp using the same Redis instance
-      #namespace: "rails4bp"
+      namespace: "rails4bp"
 
       ## Lines of backtrace that is stored on failure
       ## Set this to false if you're not interested in this data to
       ## reduce memory usage (and log size)
-      #backtrace: 15
+      backtrace: 15
 
       ## Log file for Sidekiq
-      #log: "log/sidekiq.log"
+      log: "log/sidekiq.log"
     
     ## Use Amazon S3 instead of your local filesystem
     ## to handle uploaded pictures.
@@ -174,6 +174,7 @@ configuration: ## Section
     ## This potentially saves you some traffic and speeds up
     ## load time since most clients already have this one cached
     #jquery_cdn: true
+    jquery_cdn: false
     
     ## Provide a key to enable tracking by Google Analytics 
     #google_analytics_key:

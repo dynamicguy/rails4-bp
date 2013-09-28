@@ -9,6 +9,8 @@ ENV['DB'] ||= 'mysql'
 gem 'mysql2', '0.3.13' if ENV['DB'] == 'all' || ENV['DB'] == 'mysql'
 gem 'pg', '0.16.0' if ENV['DB'] == 'all' || ENV['DB'] == 'postgres'
 
+gem 'state_machine', '~> 1.2.0'
+
 # File uploading
 gem 'carrierwave', '0.9.0'
 gem 'fog',         '1.14.0'
@@ -51,7 +53,7 @@ group :assets do
 
   # JavaScript
   gem 'handlebars_assets', '>= 0.12.0'
-  gem 'jquery-rails', '>= 2.1.4'
+  gem 'jquery-rails', '~> 3.0'
 
   # Windows and OSX have an execjs compatible runtime built-in, Linux users should
   # install Node.js or use 'therubyracer'.
@@ -88,6 +90,8 @@ gem 'rack-cors', '0.2.8', :require => 'rack/cors'
 
 # Authentication
 gem "devise", github: "plataformatec/devise"
+gem 'cancan'
+gem 'rolify'
 
 # Services
 gem 'omniauth', '1.1.4'
@@ -114,8 +118,10 @@ gem "the_sortable_tree", :git => "git@github.com:the-teacher/the_sortable_tree.g
 gem 'jquery-datatables-rails', git: 'git://github.com/rweng/jquery-datatables-rails.git'
 gem "simple_form", git: 'git://github.com/plataformatec/simple_form.git'
 gem 'turbolinks', github: 'rails/turbolinks'
-gem 'client_side_validations'
-gem 'kaminari'
+#gem 'jquery-turbolinks'
+#gem 'kaminari'
+gem 'will_paginate', '~> 3.0.5'
+gem 'paper_trail', '>= 3.0.0.beta1'
 gem "haml-rails", github: 'indirect/haml-rails'
 gem 'mobile-fu'
 
@@ -127,6 +133,9 @@ gem "gon"
 gem "js-routes"
 gem 'responders'
 gem 'paginate-responder'
+
+gem 'rails_admin', git: 'git@github.com:sferik/rails_admin.git'
+gem 'rails_admin_tag_list'
 
 # we don't install these on travis to speed up test runs
 group :production do
@@ -162,8 +171,8 @@ group :development do
   #gem 'rails_best_practices'
   gem 'bullet'
   gem 'growl'
-  gem 'zeus'
-  gem 'spring'
+  #gem 'zeus'
+  #gem 'spring'
 
   # Notification
   #gem 'rb-fsevent', require: darwin_only('rb-fsevent')
@@ -215,6 +224,7 @@ end
 
 
 group :development, :test do
+  gem "awesome_print"
   # RSpec (unit tests, some integration tests)
   gem "rspec-rails"
   gem 'thin'
@@ -237,4 +247,9 @@ group :development, :test do
   # Jasmine (client side application tests (JS))
   gem 'jasmine', '1.3.2'
   gem 'sinon-rails', '1.7.3'
+
+  #gem "rails_best_practices"
 end
+
+#gem 'active_model_serializers'
+#gem 'dotenv-rails', :groups => [:development, :test]

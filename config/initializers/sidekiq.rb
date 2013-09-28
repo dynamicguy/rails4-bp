@@ -19,7 +19,6 @@ Sidekiq.configure_server do |config|
     concurrency: AppConfig.environment.sidekiq.concurrency.to_i,
     queues: %w{
       socket_webfinger
-      photos
       http_service
       dispatch
       mail

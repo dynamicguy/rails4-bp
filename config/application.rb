@@ -1,17 +1,10 @@
-#require File.expand_path('../boot', __FILE__)
-#
-#require 'rails/all'
-#
-## Assets should be precompiled for production (so we don't need the gems loaded then)
-#Bundler.require(*Rails.groups(assets: %w(development test)))
-
-require_relative 'boot'
+require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
-Bundler.require(*Rails.groups(assets: %w(development test)))
-#Bundler.require(*Rails.groups(:assets => %w(development test))) if defined?(Bundler)
 
-# Load asset_sync early
+# Require the gems listed in Gemfile, including any gems
+# you've limited to :test, :development, or :production.
+Bundler.require(:default, Rails.env)
 require_relative 'asset_sync'
 
 module Rails4Bp
@@ -20,9 +13,11 @@ module Rails4Bp
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
 
+    config.assets.paths << Rails.root.join('vendor', 'assets', 'components')
     # Custom directories with classes and modules you want to be autoloadable.
     config.autoload_paths      += %W{#{config.root}/app}
     config.autoload_once_paths += %W{#{config.root}/lib}
+    #config.autoload_paths += %W(#{config.root}/lib)
 
     # Only load the plugins named here, in the order given (default is alphabetical).
     # :all can be used as a placeholder for all plugins not explicitly named.
@@ -37,13 +32,15 @@ module Rails4Bp
 
     # The default locale is :en and all translations from config/locales/*.rb,yml are auto loaded.
     # config.i18n.load_path += Dir[Rails.root.join('my', 'locales', '*.{rb,yml}').to_s]
+    config.i18n.load_path += Dir[Rails.root.join('config', 'locales', '*.{rb,yml}').to_s]
     config.i18n.default_locale = :en
+    config.i18n.fallbacks = true
 
     # Configure the default encoding used in templates for Ruby 1.9.
     config.encoding = "utf-8"
 
     # Configure sensitive parameters which will be filtered from the log file.
-    config.filter_parameters += [:password, :xml,:message, :text, :bio]
+    config.filter_parameters += [:password, :password_confirmation]
 
     # Enable escaping HTML in JSON.
     config.active_support.escape_html_entities_in_json = true
@@ -51,7 +48,7 @@ module Rails4Bp
     # Use SQL instead of Active Record's schema dumper when creating the database.
     # This is necessary if your schema can't be completely dumped by the schema dumper,
     # like if you have constraints or database-specific column types
-    # config.active_record.schema_format = :sql
+    config.active_record.schema_format = :ruby
 
     # Enforce whitelist mode for mass assignment.
     # This will create an empty whitelist of attributes available for mass-assignment for all models
@@ -63,22 +60,21 @@ module Rails4Bp
     # Enable the asset pipeline
     config.assets.enabled = true
 
-
     # Speed up precompile by not loading the environment
     config.assets.initialize_on_precompile = false
 
     # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
-    #config.assets.precompile += %w{
-    #  js-routes.js
-    #}
+    config.assets.precompile += %w{
+      js-routes.js
+    }
 
     # Version of your assets, change this if you want to expire all your assets
-    config.assets.version = '2.0'
+    config.assets.version = '10'
 
     # Configure generators values. Many other options are available, be sure to check the documentation.
     config.generators do |g|
       g.template_engine :haml
-      g.test_framework  :rspec
+      g.test_framework :rspec
       g.test_framework :rspec, fixture: true
       #g.fixture_replacement :factory_girl, dir: 'spec/factories'
       g.view_specs false

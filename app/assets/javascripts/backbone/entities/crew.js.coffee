@@ -1,12 +1,12 @@
 @Rails4Bp.module "Entities", (Entities, App, Backbone, Marionette, $, _) ->
 	class Entities.Crew extends App.Entities.Model
 		urlRoot: ->
-			Routes.crews_path()
+			Routes.crews_path(format: 'json')
 
 	class Entities.CrewCollection extends App.Entities.PageableCollection
 		model: Entities.Crew
 		mode: "infinite"
-		url: Routes.crews_path({format: 'json'})
+		url: Routes.crews_path(format: 'json')
 
 		queryParams:
 			totalPages: null

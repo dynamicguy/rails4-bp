@@ -1,12 +1,6 @@
-User.delete_all
+admin = User.create!(id: 1, password: 'please', confirmed_at: Time.now, email: 'admin@local.host') unless User.find_by(email: 'admin@local.host')
 
-User.seed(:id, [{id: 1, password: 'please', confirmed_at: Time.now, email: 'admin@local.host'}])
-
-admin = User.find 1
-#admin.add_role :admin
-admin.save!
-
-if admin.valid?
+if admin
   puts %q[
 Administrator account created:
 

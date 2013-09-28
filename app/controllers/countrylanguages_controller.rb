@@ -7,7 +7,7 @@ class CountrylanguagesController < ApplicationController
     #params[:distinct] = 0
     add_breadcrumb :search
     @search = Countrylanguage.search(params[:q])
-    @countrylanguages = params[:distinct].to_i.zero? ? @search.result.page(params[:page]).per(15) : @search.result(distinct: false).page(params[:page]).per(15)
+    @countrylanguages = params[:distinct].to_i.zero? ? @search.result.paginate(:page => params[:page]).order('id DESC') : @search.result(distinct: false).paginate(:page => params[:page]).order('id DESC')
     respond_with @countrylanguages
   end
 
@@ -15,7 +15,7 @@ class CountrylanguagesController < ApplicationController
     add_breadcrumb :advanced_search
     @search = Countrylanguage.search(params[:q])
     @search.build_grouping unless @search.groupings.any?
-    @countrylanguages = params[:distinct].to_i.zero? ? @search.result.page(params[:page]).per(15) : @search.result(distinct: false).page(params[:page]).per(15)
+    @countrylanguages = params[:distinct].to_i.zero? ? @search.result.paginate(:page => params[:page]).order('id DESC') : @search.result(distinct: false).paginate(:page => params[:page]).order('id DESC')
 
     respond_with @countrylanguages
   end
@@ -24,11 +24,12 @@ class CountrylanguagesController < ApplicationController
   # GET /countrylanguages.json
   def index
     add_breadcrumb :list
+    @countrylanguages = Countrylanguage.all
 
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: CountrylanguageDatatable.new(view_context) }
-      format.xml { render xml: City.all }
+      format.json { render json: @countrylanguages }
+      format.xml { render xml: @countrylanguages }
     end
   end
 
@@ -89,14 +90,14 @@ class CountrylanguagesController < ApplicationController
 
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_countrylanguage
-      #@countrylanguage = Countrylanguage.where(language: params[:id].split('-').first, countrycode: params[:id].split('-').last).first
-      @countrylanguage = Countrylanguage.find_by_slug(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_countrylanguage
+    #@countrylanguage = Countrylanguage.where(language: params[:id].split('-').first, countrycode: params[:id].split('-').last).first
+    @countrylanguage = Countrylanguage.find_by_slug(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def countrylanguage_params
-      params.require(:countrylanguage).permit(:slug, :countrycode, :language, :isofficial, :percentage)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def countrylanguage_params
+    params.require(:countrylanguage).permit(:slug, :countrycode, :language, :isofficial, :percentage)
+  end
 end

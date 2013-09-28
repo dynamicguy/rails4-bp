@@ -11,17 +11,20 @@
 # WARNING: THE FIRST BLANK LINE MARKS THE END OF WHAT'S TO BE PROCESSED, ANY BLANK LINE SHOULD
 # GO AFTER THE REQUIRES BELOW.
 #
+#= require jquery
+#= require jquery_ujs
 #= require turbolinks
-#= require components/nprogress/nprogress
-#= require components/underscore-amd/underscore
-#= require components/backbone-amd/backbone
-#= require components/backbone.marionette/lib/backbone.marionette
-#= require components/bootstrap/dist/js/bootstrap
-#= require components/backbone.syphon/lib/backbone.syphon
-#= require components/backbone-pageable/lib/backbone-pageable
-#= require components/backgrid/lib/backgrid
-#= require components/backgrid/lib/extensions/paginator/backgrid-paginator
-#= require components/backgrid/lib/extensions/text-cell/backgrid-text-cell
+#= require pace/pace
+#= require underscore-amd/underscore
+#= require backbone-amd/backbone
+#= require backbone.marionette/lib/backbone.marionette
+#= require bootstrap/dist/js/bootstrap
+#= require backbone.syphon/lib/backbone.syphon
+#= require backbone-pageable/lib/backbone-pageable
+#= require backgrid/lib/backgrid
+#= require backgrid/lib/extensions/paginator/backgrid-paginator
+#= require backgrid/assets/js/lunr
+#= require backgrid/lib/extensions/filter/backgrid-filter
 #= require js-routes
 #= require_tree ./backbone/config
 #= require ./backbone/app

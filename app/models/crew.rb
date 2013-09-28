@@ -1,4 +1,6 @@
 class Crew < ActiveRecord::Base
-  paginates_per 10
+  resourcify
+  self.per_page = 20
+
   validates_presence_of :name
 end

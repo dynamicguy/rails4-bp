@@ -20,6 +20,9 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
+  layouts:
+    application:
+      current_locale: 'Current locale: '
   hello: "Hello world"
   labels:
     edit: "Edit"

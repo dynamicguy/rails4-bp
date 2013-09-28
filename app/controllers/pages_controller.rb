@@ -1,4 +1,5 @@
 class PagesController < ApplicationController
+
   include TheSortableTreeController::Rebuild
   before_action :set_page, only: [:show, :edit, :update, :destroy, :rebuild]
   #add_breadcrumb :pages, :pages_path
@@ -6,8 +7,8 @@ class PagesController < ApplicationController
   # GET /pages
   # GET /pages.json
   def index
-    add_breadcrumb :list
-    @pages = Page.nested_set.select(:id, :title, :content, :secret_field, :parent_id, :lft, :rgt, :depth).page(params[:page])
+    #add_breadcrumb :list
+    @pages = Page.with_state(:published).nested_set.select(:id, :title, :content, :secret_field, :parent_id, :lft, :rgt, :depth).paginate(:page => params[:page])
 
     respond_to do |format|
       format.html # index.html.erb
@@ -20,21 +21,21 @@ class PagesController < ApplicationController
   # GET /pages/1
   # GET /pages/1.json
   def show
-    add_breadcrumb :details
-    @pages = Page.nested_set.select(:id, :title, :content, :secret_field, :parent_id, :lft, :rgt, :depth).page(params[:page])
+    #add_breadcrumb :details
+    @pages = Page.with_state(:published).nested_set.select(:id, :title, :content, :secret_field, :parent_id, :lft, :rgt, :depth, :user_id, :state).paginate(:page => params[:page])
   end
 
   # GET /pages/new
   def new
-    add_breadcrumb :new
+    #add_breadcrumb :new
     @page = Page.new
-    @pages = Page.nested_set.select(:id, :title, :content, :secret_field, :parent_id, :lft, :rgt, :depth).page(params[:page])
+    @pages = Page.nested_set.select(:id, :title, :content, :secret_field, :parent_id, :lft, :rgt, :depth, :user_id, :state).paginate(:page => params[:page])
   end
 
   # GET /pages/1/edit
   def edit
-    add_breadcrumb :edit
-    @pages = Page.nested_set.select(:id, :title, :content, :secret_field, :parent_id, :lft, :rgt, :depth).page(params[:page])
+    #add_breadcrumb :edit
+    @pages = Page.nested_set.select(:id, :title, :content, :secret_field, :parent_id, :lft, :rgt, :depth).paginate(:page => params[:page])
   end
 
   # POST /pages
@@ -114,10 +115,12 @@ class PagesController < ApplicationController
   # Use callbacks to share common setup or constraints between actions.
   def set_page
     @page = Page.find(page_params[:id])
+
+    @owner_check_object = @page
   end
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def page_params
-    params.permit(:id, :title, :content, :secret_field, :parent_id, :lft, :rgt, :depth, :prev_id, :next_id)
+    params.permit(:id, :title, :content, :secret_field, :parent_id, :lft, :rgt, :depth, :prev_id, :next_id, :user_id, :state)
   end
 end

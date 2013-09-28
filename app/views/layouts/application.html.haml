@@ -1,21 +1,20 @@
 !!!
--# Uncomment if you want to address IE browser issues via these classes/method.
--# http://paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/
--# /[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]
--# /[if IE 7]>   <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]
--# /[if IE 8]>   <html class="no-js lt-ie9" lang="en"> <![endif]
--# /[if gt IE 8]><!-->
-%html.no-js{:lang => "en"}
-  -# /<![endif]
-
-  = head
+%html{:lang => "en"}
+  %head
+    %title rails4bp
+    = stylesheet_link_tag "application"
   %body
-    = yield
-    -#= chromeframe
-    -#%header{:role => "banner"}
-    -#  = render :partial => 'shared/navigation'
-    -##main{:role => "main"}
-    -#  .container-fluid= yield
-    -#  #push
-    -#= render :partial => 'shared/footer'
-    -#= scripts
+    %a.sr-only{:href => "#content"} Skip navigation
+
+    %header#header-region.navbar.navbar-inverse.navbar-fixed-top.rbp-app-nav{:role => "banner"}
+      = render 'layouts/nav'
+
+    #main-region.container-fluid
+      = yield
+
+    %footer#footer-region.rbp-footer
+      = render 'shared/footer'
+
+    = javascript_include_tag "jquery"
+    = javascript_include_tag "jquery_ujs"
+    = javascript_include_tag "bootstrap/dist/js/bootstrap"

@@ -1,9 +1,10 @@
 class Countrylanguage < ActiveRecord::Base
+  resourcify
+  self.per_page = 20
+
   extend FriendlyId
 
   has_many :countries
-  paginates_per 50
-
   friendly_id :slug_candidates, use: :slugged
 
   # Try building a slug based on the following fields in

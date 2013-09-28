@@ -13,7 +13,7 @@ module Federated
     xml_attr :rails4bp_handle
 
     belongs_to :target, :polymorphic => true
-    belongs_to :author, :class_name => 'Person'
+    belongs_to :author, :class_name => 'User'
     #end crazy ordering issues
 
     validates_uniqueness_of :target_id, :scope => [:target_type, :author_id]

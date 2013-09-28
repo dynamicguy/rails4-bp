@@ -1,10 +1,11 @@
 - content_for :title do 'Rails 4.0.0 boilerplate' end
 
-%a.sr-only{:href => "#content"} Skip navigation
-%header#header-region{:role => "banner"}
+#wrap
+  %a.sr-only{:href => "#content"} Skip navigation
+  %header#header-region{:role => "banner"}
 
-#main-region.rbp-app-container.container
+  #main-region.rbp-app-container.container
 
-%footer#footer-region.rbp-footer{:role => "contentinfo"}
+%footer#footer-region.rbp-footer.navbar-fixed-bottom{:role => "contentinfo"}
 
 = render 'layouts/scripts'

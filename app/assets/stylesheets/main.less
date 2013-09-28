@@ -1,26 +1,43 @@
-#main-region{
+html,
+body {
+  height: 100%;
+}
+body {
+  background: #e9e9e9 url(/assets/tiny_grid.png) repeat 0 0;
+  font: 13px/1.7em 'Open Sans';
+  padding-bottom: 70px;
+}
+#wrap {
   min-height: 100%;
   height: auto !important;
   height: 100%;
   /* Negative indent footer by its height */
-  margin: 0 auto -40px;
+  margin: 0 auto -110px;
   /* Pad bottom by footer height */
   padding: 0 0 60px;
 }
-#crewList{
-  height: auto;
-  position: relative;
-  margin: auto;
-  overflow-y: scroll;
-  box-shadow: 0 0 20px rgba(0,0,0,1);
-  -webkit-box-shadow: 0 0 20px rgba(0,0,0,1);
-  -moz-box-shadow: 0 0 20px rgba(0,0,0,1);
-}
-#panel-region{
-  display: block;
-  margin: 30px 0;
+
+/* Set the fixed height of the footer here */
+#footer-region {
+  height: 60px;
 }
 
+#header-region{
+  margin-bottom: 20px;
+}
+
+#main-region{
+  height: 90%;
+}
+#crew-region{
+
+}
+#panel-region{
+  margin-bottom: 15px;
+}
+.rbp-app-container{
+  padding: 0;
+}
 .search-grp .input-group-btn button{border-left: 0px;}
 .list-group-item:first-child,.list-group-item:last-child{
   border-radius: 0px;
@@ -30,4 +47,54 @@
 tr.warning th{
   text-transform: uppercase;
   text-align: center;
+}
+
+.pager{
+  padding: 0 20px;
+  margin-top: 0;
+}
+.pager ul{
+  padding-left: 0;
+  margin: 20px 0;
+  text-align: center;
+  list-style: none;
+}
+.pager ul li:last-child {
+  float: right;
+}
+.pager ul li:first-child {
+  float: left;
+}
+.pager ul li > a{
+  display: inline-block;
+  padding: 5px 14px;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 15px;
+}
+.no-padx{
+  padding-left: 0;
+  padding-right: 0;
+}
+#sidebar-region{padding-left: 0;}
+#content-block{padding-right: 0}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  color: #463265;
+}
+.dropdown-menu > li > a:hover,.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus{
+  background-color: #463265;
+}
+.page-header{
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+.panel-title > a:hover{
+  text-decoration: none;
+  color: #463265;
+}
+#back-to-top {
+  border: 1px solid red;
 }

@@ -1,9 +1,16 @@
 require 'sidekiq/web'
 
 Rails4Bp::Application.routes.draw do
+  
+  
+  mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
+  root :to => 'application#index'
+
+  devise_for :users
+
+  mount Sidekiq::Web, at: '/sidekiq'
 
   resources :crews
-
   resources :profiles
 
   resources :pages do
@@ -17,8 +24,6 @@ Rails4Bp::Application.routes.draw do
       post 'rebuild'
     end
   end
-
-  devise_for :users
 
   resources :countrylanguages do
     match 'advanced_search' => 'countrylanguages#advanced_search', on: :collection, via: [:get, :post], as: :advanced_search
@@ -46,7 +51,7 @@ Rails4Bp::Application.routes.draw do
 
 
   match "static" => "application#static", via: [:get, :post]
-  root :to => 'application#index'
+
 
   #root to: 'dashboard#index'
 

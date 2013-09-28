@@ -1,3 +1,5 @@
 class Article < ActiveRecord::Base
-  paginates_per 50
+  resourcify
+  self.per_page = 20
+
 end

@@ -1,11 +1,10 @@
 class CrewsController < ApplicationController
   before_action :set_crew, only: [:show, :edit, :update, :destroy]
   respond_to :json, :xml
-  helper :api
   responders :collection, Responders::PaginateResponder
 
   def index
-    @crews = Crew.order("#{params[:order]} #{params[:dir]}").page(params[:page]).per(params[:per_page])
+    @crews = Crew.order("#{params[:order]} #{params[:dir]}").paginate(:page => params[:page])
     respond_with @crews
   end
 

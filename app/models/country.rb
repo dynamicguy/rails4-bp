@@ -1,10 +1,12 @@
 class Country < ActiveRecord::Base
+  resourcify
+  self.per_page = 20
+
   extend FriendlyId
   has_many :cities
   belongs_to :countrylanguage #, :inverse_of => :countries
   #friendly_id :countrycode, :use => :slugged
   friendly_id :code#, :use => :scoped, :scope => :countrylanguage
-  paginates_per 20
 
   #def to_param
   #"#{code}".parameterize

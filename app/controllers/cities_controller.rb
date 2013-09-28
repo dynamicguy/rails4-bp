@@ -9,7 +9,7 @@ class CitiesController < ApplicationController
   def search
     add_breadcrumb :search
     @search = City.search(params[:q])
-    @cities  = params[:distinct].to_i.zero? ? @search.result.page(params[:page]).per(15) : @search.result(distinct: true).page(params[:page]).per(15)
+    @cities  = params[:distinct].to_i.zero? ? @search.result.paginate(:page => params[:page]).order('id DESC') : @search.result(distinct: true).paginate(:page => params[:page]).order('id DESC')
     respond_with @cities
   end
 
@@ -17,18 +17,18 @@ class CitiesController < ApplicationController
     add_breadcrumb :advanced_search
     @search = City.search(params[:q])
     @search.build_grouping unless @search.groupings.any?
-    @cities  = params[:distinct].to_i.zero? ? @search.result.page(params[:page]).per(15) : @search.result(distinct: true).page(params[:page]).per(15)
+    @cities  = params[:distinct].to_i.zero? ? @search.result.paginate(:page => params[:page]).order('id DESC') : @search.result(distinct: true).paginate(:page => params[:page]).order('id DESC')
 
     respond_with @cities
   end
 
   def index
     add_breadcrumb :list
-
+    @cities = City.all
     respond_to do |format|
       format.html # index.html.erb
-      format.json { render json: CitiesDatatable.new(view_context) }
-      format.xml { render xml: City.all }
+      format.json { render json: @cities }
+      format.xml { render xml: @cities }
     end
   end
 

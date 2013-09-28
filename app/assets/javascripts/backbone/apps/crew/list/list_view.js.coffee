@@ -2,7 +2,7 @@
 	class List.Layout extends App.Views.Layout
 		template: "crew/list/list_layout"
 		regions:
-			titleRegion: "#title-region"
+			pageHeaderRegion: "#page-header-region"
 			panelRegion: "#panel-region"
 			newRegion: "#new-region"
 			crewRegion: "#crew-region"
@@ -23,17 +23,11 @@
 		className: "crew-member media list-group-item"
 
 		triggers:
-			"click .crew-delete button": "crew:delete:clicked"
 			"click": "crew:member:clicked"
-
-	class List.Empty extends App.Views.ItemView
-		template: "crew/list/_empty"
-		tagName: "li"
 
 	class List.Crew extends App.Views.CompositeView
 		template: "crew/list/_crew"
 		id: "crewList"
-		className: 'row'
 
 		triggers:
 			"scroll": "crew:scrolled"
