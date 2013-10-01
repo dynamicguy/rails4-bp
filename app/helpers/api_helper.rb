@@ -1,10 +1,10 @@
 # app/helpers/api_helper
 module ApiHelper
 
-  def kaminari_paginate(collection)
+  def will_paginate(collection)
     {
         :per_page => collection.limit_value,
-        :total_entries => collection.total_count,
+        :total_entries => collection.total_entries,
         :total_pages => collection.total_pages,
         :page => collection.current_page
     }

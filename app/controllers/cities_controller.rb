@@ -1,10 +1,7 @@
 class CitiesController < ApplicationController
   before_action :set_city, only: [:show, :edit, :update, :destroy]
   #add_breadcrumb :cities, :cities_path
-
-  respond_to :html, :json
-  # GET /cities
-  # GET /cities.json
+  respond_to :html, :json, :js
 
   def search
     add_breadcrumb :search
@@ -22,6 +19,8 @@ class CitiesController < ApplicationController
     respond_with @cities
   end
 
+  # GET /cities
+  # GET /cities.json
   def index
     add_breadcrumb :list
     @cities = City.all

@@ -6,9 +6,14 @@
 			panelRegion: "#panel-region"
 			newRegion: "#new-region"
 			crewRegion: "#crew-region"
+			breadcrumbRegion: "#breadcrumb-region"
+			sidebarRegion: "#sidebar-region"
 
-	class List.Title extends App.Views.ItemView
-		template: "crew/list/_title"
+	class List.Breadcrumb extends App.Views.ItemView
+		template: "crew/list/_breadcrumb"
+
+	class List.Sidebar extends App.Views.ItemView
+		template: "crew/list/_sidebar"
 
 	class List.Panel extends App.Views.ItemView
 		template: "crew/list/_panel"

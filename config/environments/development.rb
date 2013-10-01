@@ -31,8 +31,10 @@ Rails4Bp::Application.configure do
   #config.assets.debug = true
 
   # Do not compress assets
+  config.assets.initialize_on_precompile = true
+  config.assets.compile = true
   config.assets.compress = false
-  config.assets.debug = true
+  config.assets.debug = false
 
 
 

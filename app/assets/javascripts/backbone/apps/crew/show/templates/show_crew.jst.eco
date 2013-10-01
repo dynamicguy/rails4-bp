@@ -1,0 +1,13 @@
+<div id="crew-details">
+    <table class="table table-bordered table-striped">
+          <tbody>
+            <tr><th>Name</th><td><%= @name %></td></tr>
+            <tr><th>Age</th><td><%= @age %></td></tr>
+            <tr><th>Avatar</th><td><%= @Avatar %></td></tr>
+            <tr><th>Title</th><td><%= @title %></td></tr>
+            <tr><th>Species</th><td><%= @species %></td></tr>
+            <tr><th>Origin</th><td><%= @origin %></td></tr>
+            <tr><th>Favorite Quote</th><td><%= @quote %></td></tr>
+          </tbody>
+    </table>
+</div>

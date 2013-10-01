@@ -1,0 +1,18 @@
+<div class="container">
+    <div class="col-sm-8">
+        <ol class="breadcrumb">
+            <li><a href="#">Home</a></li>
+            <li><a href="#crew">Crew</a></li>
+            <li class="active">Details</li>
+        </ol>
+    </div>
+
+    <div class="col-sm-4">
+        <div class="input-group search-grp">
+            <input type="text" class="form-control">
+          <span class="input-group-btn">
+            <button class="btn btn-default" type="button">Go!</button>
+          </span>
+        </div>
+    </div>
+</div>

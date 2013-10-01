@@ -1,3 +1,3 @@
-object @member
+object @crew
 
 extends "crews/_base"

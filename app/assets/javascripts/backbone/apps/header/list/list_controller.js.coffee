@@ -6,7 +6,6 @@
 			@layout = @getLayoutView()
 			@listenTo @layout, "show", =>
 				@titleRegion()
-				@noticeRegion()
 				@headerRegion()
 
 			@show @layout
@@ -15,10 +14,6 @@
 		titleRegion: ->
 			titleView = @getTitleView()
 			@layout.titleRegion.show titleView
-
-		noticeRegion: ->
-			noticeView = @getNoticeView()
-			@layout.noticeRegion.show noticeView
 
 		headerRegion: ->
 			headerView = @getHeaderView()
@@ -29,9 +24,6 @@
 
 		getTitleView: ->
 			new List.Title
-
-		getNoticeView: ->
-			new List.Notice
 
 		getHeaderView: ->
 			new List.Header

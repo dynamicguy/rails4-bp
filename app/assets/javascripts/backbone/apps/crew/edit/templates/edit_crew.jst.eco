@@ -7,7 +7,7 @@
 	        </div>
 	        <div class="col-md-9 columns">
 				<div class="col-md-5">
-					<input type="text" name="age" class="col-md-2" value="<%= @age %>" />
+					<input type="text" name="age" class="form-control" value="<%= @age %>" />
 				</div>
 	        </div>
 		</div>
@@ -17,7 +17,7 @@
 	        </div>
 	        <div class="col-md-9 columns">
 				<div class="col-md-5">
-					<input type="text" name="name" value="<%= @name %>" />
+					<input type="text" name="name" class="form-control" value="<%= @name %>" />
 				</div>
 	        </div>
 		</div>
@@ -27,7 +27,7 @@
 	        </div>
 	        <div class="col-md-9 columns">
 				<div class="col-md-5">
-					<input type="text" name="avatar"value="<%= @avatar %>" />
+					<input type="text" name="avatar" class="form-control" value="<%= @avatar %>" />
 				</div>
 	        </div>
 		</div>
@@ -37,7 +37,7 @@
 	        </div>
 	        <div class="col-md-9 columns">
 				<div class="col-md-5 left">
-					<input type="text" name="title" value="<%= @title %>" />
+					<input type="text" name="title" class="form-control" value="<%= @title %>" />
 				</div>
 				<div class="col-md-7 columns">
 					<h6 class="subheader hint">Job Title at Planet Express</h6>
@@ -50,7 +50,7 @@
 	        </div>
 			<div class="col-md-9 columns">
 				<div class="col-md-5 left">
-					<input type="text" name="species" value="<%= @species %>" />
+					<input type="text" name="species" class="form-control" value="<%= @species %>" />
 				</div>
 				<div class="col-md-7 columns">
 					<h6 class="subheader hint">Ex: Human, Robot, Mutant</h6>
@@ -63,7 +63,7 @@
 	        </div>
 			<div class="col-md-9 columns">
 				<div class="col-md-5 left">
-					<input type="text" name="origin" value="<%= @origin %>" />
+					<input type="text" name="origin" class="form-control" value="<%= @origin %>" />
 				</div>
 				<div class="col-md-7 columns">
 					<h6 class="subheader hint">Planet they were born on</h6>
@@ -74,11 +74,11 @@
 	<fieldset>
 		<legend>Quote</legend>
 		<div class="row form-group">
-			<div class="col-md-3 columns">
+			<div class="col-md-3 left">
 				<label class="right inline">Favorite Quote</label>
 	        </div>
 	        <div class="col-md-9 columns">
-				<textarea name="quote" class="col-md-6"><%= @quote %></textarea>
+				<textarea name="quote" class="form-control" class="col-md-6"><%= @quote %></textarea>
 	        </div>
 		</div>
 	</fieldset>

@@ -26,7 +26,7 @@
 				collection: collection
 		
 		onClose: ->
-			console.log "onClose", @
+			#console.log "onClose", @
 		
 		formContentRegion: ->
 			@region = @formLayout.formContentRegion

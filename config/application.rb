@@ -2,9 +2,11 @@ require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
 
-# Require the gems listed in Gemfile, including any gems
-# you've limited to :test, :development, or :production.
-Bundler.require(:default, Rails.env)
+# If you precompile assets before deploying to production, use this line
+#Bundler.require *Rails.groups(:assets => %w(development test))
+# If you want your assets lazily compiled in production, use this line
+Bundler.require(:default, :assets, Rails.env)
+
 require_relative 'asset_sync'
 
 module Rails4Bp
@@ -13,10 +15,10 @@ module Rails4Bp
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
 
-    config.assets.paths << Rails.root.join('vendor', 'assets', 'components')
+    #config.assets.paths << Rails.root.join('vendor', 'assets', 'components')
     # Custom directories with classes and modules you want to be autoloadable.
-    config.autoload_paths      += %W{#{config.root}/app}
-    config.autoload_once_paths += %W{#{config.root}/lib}
+    #config.autoload_paths      += %W{#{config.root}/app}
+    #config.autoload_once_paths += %W{#{config.root}/lib}
     #config.autoload_paths += %W(#{config.root}/lib)
 
     # Only load the plugins named here, in the order given (default is alphabetical).
@@ -63,13 +65,8 @@ module Rails4Bp
     # Speed up precompile by not loading the environment
     config.assets.initialize_on_precompile = false
 
-    # Precompile additional assets (application.js, application.css, and all non-JS/CSS are already added)
-    config.assets.precompile += %w{
-      js-routes.js
-    }
-
     # Version of your assets, change this if you want to expire all your assets
-    config.assets.version = '10'
+    config.assets.version = '20'
 
     # Configure generators values. Many other options are available, be sure to check the documentation.
     config.generators do |g|

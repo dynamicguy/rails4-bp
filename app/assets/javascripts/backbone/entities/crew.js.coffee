@@ -1,16 +1,13 @@
 @Rails4Bp.module "Entities", (Entities, App, Backbone, Marionette, $, _) ->
 	class Entities.Crew extends App.Entities.Model
-		urlRoot: ->
-			Routes.crews_path(format: 'json')
+		initialize: (options) ->
+			@url = (if @id then "/crews/" + @id else "/crews")
 
 	class Entities.CrewCollection extends App.Entities.PageableCollection
 		model: Entities.Crew
-		mode: "infinite"
-		url: Routes.crews_path(format: 'json')
+		url: Routes.crews_path()
 
 		queryParams:
-			totalPages: null
-			totalRecords: null
 			sortKey: "order"
 			order: "dir"
 			directions:
@@ -18,7 +15,6 @@
 				1: "desc"
 
 		state:
-			firstPage: 1
 			pageSize: 20
 			sortKey: "id"
 			order: 1

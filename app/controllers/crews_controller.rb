@@ -1,39 +1,58 @@
 class CrewsController < ApplicationController
   before_action :set_crew, only: [:show, :edit, :update, :destroy]
-  respond_to :json, :xml
+  respond_to :json, :xml, :js
   responders :collection, Responders::PaginateResponder
 
+  # GET /crews
+  # GET /crews.json
   def index
-    @crews = Crew.order("#{params[:order]} #{params[:dir]}").paginate(:page => params[:page])
-    respond_with @crews
+    @crews = Crew.all.paginate(:page => params[:page]).order("#{params[:order]} #{params[:dir]}")
+    respond_to do |format|
+      format.json { render json: @crews }
+      format.xml { render xml: @crews }
+    end
+    #respond_with @crews
   end
 
   def show
-    @member = Crew.find params[:id]
+    @crew = Crew.find params[:id]
   end
 
+
+  # PATCH/PUT /crews/1
+  # PATCH/PUT /crews/1.json
   def update
-    @member = Crew.find params[:id]
-    if @member.update_attributes crew_params
-      render "crews/show"
-    else
-      respond_with @member
+    respond_to do |format|
+      if @crew.update(crew_params)
+        format.html { redirect_to @crew, notice: 'Crew was successfully updated.' }
+        format.json { head :no_content }
+      else
+        format.html { render action: 'edit' }
+        format.json { render json: @crew.errors, status: :unprocessable_entity }
+      end
     end
   end
 
+  # POST /crews
+  # POST /crews.json
   def create
-    @member = Crew.new
-    if @member.update_attributes crew_params
+    @crew = Crew.new
+    if @crew.update_attributes crew_params
       render "crews/show"
     else
-      respond_with @member
+      respond_with @crew
     end
   end
 
+
+  # DELETE /crews/1
+  # DELETE /crews/1.json
   def destroy
-    member = Crew.find params[:id]
-    member.destroy()
-    render json: {}
+    @crew.destroy
+    respond_to do |format|
+      format.html { redirect_to crews_url }
+      format.json { head :no_content }
+    end
   end
 
   private
@@ -44,6 +63,6 @@ class CrewsController < ApplicationController
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def crew_params
-    params.require(:crew).permit(:age, :name, :avatar, :title, :species, :origin, :quote)
+    params.require(:crew).permit(:id, :age, :name, :avatar, :title, :species, :origin, :quote)
   end
 end

@@ -7,13 +7,19 @@
 				@layout = @getLayoutView crews
 				@listenTo @layout, "close", @close
 				@listenTo @layout, "show", =>
+					@breadcrumbRegion()
+					@sidebarRegion()
 					@panelRegion()
 					@crewRegion crews
 				@show @layout
 
-		titleRegion: ->
-			titleView = @getTitleView()
-			@layout.titleRegion.show titleView
+		breadcrumbRegion: ->
+			breadcrumbView = @getBreadcrumbView()
+			@layout.breadcrumbRegion.show breadcrumbView
+
+		sidebarRegion: ->
+			sidebarView = @getSidebarView()
+			@layout.sidebarRegion.show sidebarView
 
 		panelRegion: ->
 			panelView = @getPanelView()
@@ -26,26 +32,18 @@
 
 		crewRegion: (crews) ->
 			crewListView = @getCrewView crews
-
-			@listenTo crewListView, "crews:scrolled", (args) ->
-				App.vent.trigger "crews:more", args
-
 			@listenTo crewListView, "childview:crew:member:clicked", (child, args) ->
 				App.vent.trigger "crew:member:clicked", child.model
-
 			@layout.crewRegion.show crewListView
 
 			ActionsCell = Backgrid.Cell.extend(
 				className: 'actions'
-				template: _.template("<button data-id='<%= id %>' class='crew-edit btn btn-default btn-xs'><span class='glyphicon glyphicon-pencil'></span></button> <button data-id='<%= id %>' class='crew-delete btn btn-danger btn-xs'><span class='glyphicon glyphicon-trash'></span></button>")
-
+				template: _.template("<a href='#crew/<%= id %>' class='btn btn-default btn-xs'><span class='glyphicon glyphicon-eye-open'></span></a> <a href='#crew/<%= id %>/edit' class='btn crew-edit btn-default btn-xs'><span class='glyphicon glyphicon-pencil'></span> </a> <button data-id='<%= id %>' class='crew-delete btn btn-danger btn-xs'><span class='glyphicon glyphicon-trash'></span></button>")
 				events:
 					"click .crew-delete": "deleteRow"
-
 				deleteRow: (e) ->
-#					console.log @model
-					if confirm "Are you sure you want to delete #{@model.get("name")} with ID: #{@model.get("id")}?" then @model.destroy({id: @model.get("id")}) else false
-
+					e.preventDefault() # stop the hash being added to the URL
+					if confirm "Are you sure you want to delete #{@model.get("name")} with ID: #{@model.get("id")}?" then @model.destroy() else false
 				render: ->
 					@$el.html @template({id: @model.id})
 					@delegateEvents()
@@ -75,18 +73,16 @@
 			if crewListView.hasOwnProperty 'collection'
 				grid = new Backgrid.Grid
 					className: "backgrid table table-striped table-bordered table-hover"
-					collection: crewListView.collection.fullCollection
+					collection: crewListView.collection
 					columns: columns
+
 				$("#grid").append(grid.render().$el)
 				$("thead tr").addClass("warning")
 
 				class Paginator extends Backgrid.Extension.Paginator
-					windowSize: 20 # Default is 10
-					className: 'pager'
-					hasFastForward: true # true is the xt: ">"
-					fastForwardHandleLabels:
-						prev: '&larr; Older'
-						next: 'Newer &rarr;'
+					columns: columns
+					collection: crewListView.collection
+					className: 'backgrid-paginator'
 
 				paginator = new Paginator(
 					columns: columns
@@ -98,14 +94,15 @@
 					template: _.template('<div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span><input class="form-control h35" type="text" <% if (placeholder) { %> placeholder="<%- placeholder %>" <% } %> name="<%- name %>" /><span class="input-group-addon"><a class="close" href="#">&times;</a></span></div>')
 					className: 'backgrid-filter form-search'
 					placeholder: "Search"
+					collection: crewListView.collection
 
 				filter = new Filter(
-					collection: crewListView.collection.fullCollection
-					fields: ["name", "title", "species"]
+					collection: crewListView.collection
+					fields: ["name", "breadcrumb", "species"]
 				)
 				$("#filters").append filter.render().$el
 
-				crewListView.collection.getFirstPage()
+				crewListView.collection.fetch(reset: true)
 
 
 		getCrewView: (crews) ->
@@ -115,8 +112,11 @@
 		getPanelView: ->
 			new List.Panel
 
-		getTitleView: ->
-			new List.Title
+		getBreadcrumbView: ->
+			new List.Breadcrumb
+
+		getSidebarView: ->
+			new List.Sidebar
 
 		getLayoutView: (crews) ->
 			new List.Layout

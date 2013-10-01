@@ -81,7 +81,7 @@ module ApplicationHelper
   end
 
   def head
-    render :partial => 'layouts/head'
+    render 'shared/head'
   end
 
   def scripts

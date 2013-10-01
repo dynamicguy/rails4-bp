@@ -7,7 +7,6 @@
 		regions:
 			headerRegion: "#nav-region"
 			titleRegion: "#title-region"
-			noticeRegion: "#notice-region"
 
 	class List.Title extends App.Views.ItemView
 		template: "header/list/_title"

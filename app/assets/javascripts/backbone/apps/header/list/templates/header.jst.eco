@@ -13,7 +13,7 @@
         <ul class="nav navbar-nav pull-right" role="menu">
             <li><a href="#countries"><i class="glyphicon glyphicon-globe"></i> Countries</a></li>
             <li><a href="#cities"><i class="glyphicon glyphicon-cloud"></i> Cities</a></li>
-            <li><a href="#categories"><i class="glyphicon glyphicon-tags"></i> Categories</a></li>
+            <li><a href="#categories"><i class="glyphicon glyphicon-tag"></i> Categories</a></li>
             <li><a href="#pages"><i class="glyphicon glyphicon-list"></i> Pages</a></li>
             <li><a href="#crew"><i class="glyphicon glyphicon-eye-open"></i> Crews</a></li>
             <li><a href="#users"><i class="glyphicon glyphicon-user"></i> Users</a></li>
