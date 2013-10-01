@@ -17,3 +17,5 @@
 /tmp
 .zeus.sock
 vendor/assets/javascripts/components
+vendor
+.DS_Store
