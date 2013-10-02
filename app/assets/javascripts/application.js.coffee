@@ -15,6 +15,9 @@
 #= require jquery_ujs
 #= require turbolinks
 #= require pace/pace
+#= require noty/js/noty/jquery.noty
+#= require noty/js/noty/layouts/bottomRight
+#= require noty/js/noty/themes/default
 #= require underscore-amd/underscore
 #= require backbone-amd/backbone
 #= require backbone.marionette/lib/backbone.marionette

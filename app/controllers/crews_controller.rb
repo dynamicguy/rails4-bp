@@ -1,6 +1,6 @@
 class CrewsController < ApplicationController
   before_action :set_crew, only: [:show, :edit, :update, :destroy]
-  respond_to :json, :xml, :js
+  respond_to :html, :json, :xml, :js
   responders :collection, Responders::PaginateResponder
 
   # GET /crews
@@ -14,6 +14,8 @@ class CrewsController < ApplicationController
     #respond_with @crews
   end
 
+  # GET /crews/1
+  # GET /crews/1.json
   def show
     @crew = Crew.find params[:id]
   end
@@ -36,11 +38,16 @@ class CrewsController < ApplicationController
   # POST /crews
   # POST /crews.json
   def create
-    @crew = Crew.new
-    if @crew.update_attributes crew_params
-      render "crews/show"
-    else
-      respond_with @crew
+    @crew = Crew.new(crew_params)
+
+    respond_to do |format|
+      if @crew.save
+        format.html { redirect_to @crew, notice: 'Crew was successfully created.' }
+        format.json { render action: 'show', status: :created, location: @crew }
+      else
+        format.html { render action: 'new' }
+        format.json { render json: @crew.errors, status: :unprocessable_entity }
+      end
     end
   end
 

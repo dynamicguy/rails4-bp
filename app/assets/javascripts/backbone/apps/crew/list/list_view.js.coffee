@@ -22,13 +22,13 @@
 		triggers:
 			"click #new-crew": "new:crew:button:clicked"
 
-	class List.CrewMember extends App.Views.ItemView
-		template: "crew/list/_crew_member"
+	class List.Crewcrew extends App.Views.ItemView
+		template: "crew/list/_crew_crew"
 		tagName: "li"
-		className: "crew-member media list-group-item"
+		className: "crew-crew media list-group-item"
 
 		triggers:
-			"click": "crew:member:clicked"
+			"click": "crew:crew:clicked"
 
 	class List.Crew extends App.Views.CompositeView
 		template: "crew/list/_crew"

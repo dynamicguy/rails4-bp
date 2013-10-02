@@ -16,7 +16,7 @@
             <a href="#countries" class="list-group-item">
                 <i class="glyphicon glyphicon-flag"></i> Countries
             </a>
-            <a href="#crew" class="list-group-item">
+            <a href="#crews" class="list-group-item">
                 <i class="glyphicon glyphicon-briefcase"></i> Crews
             </a>
         </div>

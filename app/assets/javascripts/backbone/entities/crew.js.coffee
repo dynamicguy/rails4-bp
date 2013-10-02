@@ -1,6 +1,6 @@
 @Rails4Bp.module "Entities", (Entities, App, Backbone, Marionette, $, _) ->
 	class Entities.Crew extends App.Entities.Model
-		initialize: (options) ->
+		initialize: ->
 			@url = (if @id then "/crews/" + @id else "/crews")
 
 	class Entities.CrewCollection extends App.Entities.PageableCollection

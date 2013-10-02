@@ -28,17 +28,17 @@
 			@layout.panelRegion.show panelView
 
 		newRegion: ->
-			App.execute "new:crew:member", @layout.newRegion
+			App.execute "new:crew:crew", @layout.newRegion
 
 		crewRegion: (crews) ->
 			crewListView = @getCrewView crews
-			@listenTo crewListView, "childview:crew:member:clicked", (child, args) ->
-				App.vent.trigger "crew:member:clicked", child.model
+			@listenTo crewListView, "childview:crew:crew:clicked", (child, args) ->
+				App.vent.trigger "crew:crew:clicked", child.model
 			@layout.crewRegion.show crewListView
 
 			ActionsCell = Backgrid.Cell.extend(
 				className: 'actions'
-				template: _.template("<a href='#crew/<%= id %>' class='btn btn-default btn-xs'><span class='glyphicon glyphicon-eye-open'></span></a> <a href='#crew/<%= id %>/edit' class='btn crew-edit btn-default btn-xs'><span class='glyphicon glyphicon-pencil'></span> </a> <button data-id='<%= id %>' class='crew-delete btn btn-danger btn-xs'><span class='glyphicon glyphicon-trash'></span></button>")
+				template: _.template("<a href='#crews/<%= id %>' class='btn btn-default btn-xs'><span class='glyphicon glyphicon-eye-open'></span></a> <a href='#crews/<%= id %>/edit' class='btn crew-edit btn-default btn-xs'><span class='glyphicon glyphicon-pencil'></span> </a> <button data-id='<%= id %>' class='crew-delete btn btn-danger btn-xs'><span class='glyphicon glyphicon-trash'></span></button>")
 				events:
 					"click .crew-delete": "deleteRow"
 				deleteRow: (e) ->

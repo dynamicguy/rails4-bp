@@ -4,14 +4,12 @@ class CitiesController < ApplicationController
   respond_to :html, :json, :js
 
   def search
-    add_breadcrumb :search
     @search = City.search(params[:q])
     @cities  = params[:distinct].to_i.zero? ? @search.result.paginate(:page => params[:page]).order('id DESC') : @search.result(distinct: true).paginate(:page => params[:page]).order('id DESC')
     respond_with @cities
   end
 
   def advanced_search
-    add_breadcrumb :advanced_search
     @search = City.search(params[:q])
     @search.build_grouping unless @search.groupings.any?
     @cities  = params[:distinct].to_i.zero? ? @search.result.paginate(:page => params[:page]).order('id DESC') : @search.result(distinct: true).paginate(:page => params[:page]).order('id DESC')
@@ -22,7 +20,6 @@ class CitiesController < ApplicationController
   # GET /cities
   # GET /cities.json
   def index
-    add_breadcrumb :list
     @cities = City.all
     respond_to do |format|
       format.html # index.html.erb
@@ -34,18 +31,15 @@ class CitiesController < ApplicationController
   # GET /cities/1
   # GET /cities/1.json
   def show
-    add_breadcrumb :details
   end
 
   # GET /cities/new
   def new
-    add_breadcrumb :new
     @city = City.new
   end
 
   # GET /cities/1/edit
   def edit
-    add_breadcrumb :edit
   end
 
   # POST /cities

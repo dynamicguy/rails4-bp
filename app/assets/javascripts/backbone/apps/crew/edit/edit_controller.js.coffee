@@ -3,11 +3,9 @@
 
 		initialize: (options) ->
 			{ crew, id } = options
-			crew or= App.request "crew:entity", id
-
+			crew = App.request "crew:entity", id
 			@listenTo crew, "updated", ->
 				App.vent.trigger "crew:updated", crew
-
 			App.execute "when:fetched", crew, =>
 				@layout = @getLayoutView crew
 				@listenTo @layout, "show", =>

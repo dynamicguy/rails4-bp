@@ -1,9 +1,9 @@
 @Rails4Bp.module "CrewApp", (CrewApp, App, Backbone, Marionette, $, _) ->
 	class CrewApp.Router extends Marionette.AppRouter
 		appRoutes:
-			"crew/:id": "show"
-			"crew/:id/edit": "edit"
-			"crew": "list"
+			"crews/:id": "show"
+			"crews/:id/edit": "edit"
+			"crews": "list"
 
 	API =
 		list: ->
@@ -13,22 +13,22 @@
 			new CrewApp.New.Controller
 				region: region
 
-		edit: (id, member) ->
+		edit: (id, crew) ->
 			new CrewApp.Edit.Controller
 				id: id
-				crew: member
+				crew: crew
 
-		show: (id, member) ->
+		show: (id, crew) ->
 			new CrewApp.Show.Controller
 				id: id
-				crew: member
+				crew: crew
 
-	App.commands.setHandler "new:crew:member", (region) ->
+	App.commands.setHandler "new:crew:crew", (region) ->
 		API.newCrew region
 
-	App.vent.on "crew:member:clicked crew:created", (member) ->
-		App.navigate Routes.edit_crew_path(member.id)
-		API.edit member.id, member
+	App.vent.on "crew:crew:clicked crew:created", (crew) ->
+		App.navigate Routes.edit_crew_path(crew.id)
+		API.edit crew.id, crew
 
 	App.vent.on "crew:cancelled crew:updated", (crew) ->
 		App.navigate Routes.crews_path()

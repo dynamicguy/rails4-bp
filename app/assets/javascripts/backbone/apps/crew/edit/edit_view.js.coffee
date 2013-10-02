@@ -15,6 +15,7 @@
 
 	class Edit.Crew extends App.Views.ItemView
 		template: "crew/edit/edit_crew"
+
 		# 
 		# onFormSubmit: (data) ->
 		# 	console.log "Edit.Crew onFormSubmit", data

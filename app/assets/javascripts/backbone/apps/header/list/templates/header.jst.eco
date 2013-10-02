@@ -15,7 +15,7 @@
             <li><a href="#cities"><i class="glyphicon glyphicon-cloud"></i> Cities</a></li>
             <li><a href="#categories"><i class="glyphicon glyphicon-tag"></i> Categories</a></li>
             <li><a href="#pages"><i class="glyphicon glyphicon-list"></i> Pages</a></li>
-            <li><a href="#crew"><i class="glyphicon glyphicon-eye-open"></i> Crews</a></li>
+            <li><a href="#crews"><i class="glyphicon glyphicon-eye-open"></i> Crews</a></li>
             <li><a href="#users"><i class="glyphicon glyphicon-user"></i> Users</a></li>
             <% if gon.user: %>
                 <li class="dropdown">

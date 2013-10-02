@@ -1,10 +1,9 @@
-<div id="new-crew">
-    <div class="row">
-        <div class="form-group">
-            <label for="inputName" class="col-md-3 control-label">What's their name?</label>
-            <div class="col-md-9">
-                <input type="text" name="name" class="form-control col-md-6" id="inputName" placeholder="Crew Member Name">
-            </div>
+<div id="new-crew" class="">
+    <div class="row form-group">
+        <label for="inputName" class="col-md-3 control-label">What's their name?</label>
+
+        <div class="col-md-9">
+            <input type="text" name="name" class="form-control col-md-6" id="inputName" placeholder="Crew crew Name">
         </div>
     </div>
 </div>

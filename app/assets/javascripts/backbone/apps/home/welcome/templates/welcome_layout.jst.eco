@@ -1,61 +1,18 @@
-<div id="sidebar-region" class="col-sm-1 col-md-2">
-    <div class="panel-group" id="nav-accordion">
+<div class="rbp-breadcrumb container-fluid" id="breadcrumb-region"></div>
+
+<div class="container">
+    <div id="sidebar-region" class="col-sm-1 col-md-2"></div>
+    <div id="content-block" class="col-sm-11 col-md-10">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h6 class="panel-title">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#nav-accordion" href="#nav-panel-1">
-                        <i class="glyphicon glyphicon-globe"></i> App
-                    </a>
-                    <span class="badge badge-info pull-right">3</span>
-                </h6>
+                <h3 class="panel-title">Silence is golden</h3>
             </div>
-            <div id="nav-panel-1" class="list-group panel-collapse collapse">
-                <a href="/app/continent/" class="list-group-item">
-                    <i class="glyphicon glyphicon-globe"></i> Continents
-                </a>
-                <a href="/app/country/" class="list-group-item">
-                    <i class="glyphicon glyphicon-flag"></i> Countries
-                </a>
-                <a href="/app/kitchensink/" class="list-group-item">
-                    <i class="glyphicon glyphicon-briefcase"></i> Kitchen sinks
-                </a>
+            <div class="panel-body">
+                Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML
+                and CSS. A fixed navbar has been added within <code>#wrap</code> with <code>padding-top: 60px;</code> on
+                the
+                <code>.container</code>
             </div>
-        </div>
-
-        <div class="panel panel-default">
-            <div class="panel-heading">
-                <h6 class="panel-title">
-                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#nav-accordion"
-                       href="#nav-panel-2">
-                        <i class="glyphicon glyphicon-lock"></i> Auth
-                    </a>
-                    <span class="badge badge-info pull-right">3</span>
-                </h6>
-            </div>
-            <div id="nav-panel-2" class="list-group panel-collapse collapse">
-                <a href="/auth/group/" class="list-group-item">
-                    <i class="glyphicon glyphicon-th"></i> Groups
-                </a>
-                <a href="/auth/permission/" class="list-group-item">
-                    <i class="glyphicon glyphicon-lock"></i> Permissions
-                </a>
-                <a href="/auth/user/" class="list-group-item">
-                    <i class="glyphicon glyphicon-user"></i> Users
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div id="content-block" class="col-sm-11 col-md-10">
-    <div class="panel panel-default">
-        <div class="panel-heading">
-            <h3 class="panel-title">Silence is golden</h3>
-        </div>
-        <div class="panel-body">
-            Pin a fixed-height footer to the bottom of the viewport in desktop browsers with this custom HTML
-            and CSS. A fixed navbar has been added within <code>#wrap</code> with <code>padding-top: 60px;</code> on the
-            <code>.container</code>
         </div>
     </div>
 </div>

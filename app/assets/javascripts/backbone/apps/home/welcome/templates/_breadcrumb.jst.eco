@@ -1,9 +1,7 @@
 <div class="container">
     <div class="col-sm-8">
         <ol class="breadcrumb">
-            <li><a href="#">Home</a></li>
-            <li><a href="#crews">Crew</a></li>
-            <li class="active">Details</li>
+            <li class="active">Home</li>
         </ol>
     </div>
 
