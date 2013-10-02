@@ -19,3 +19,4 @@
 vendor/assets/javascripts/components
 vendor
 .DS_Store
+dump.rdb
