@@ -15,7 +15,9 @@
 #= require jquery_ujs
 #= require turbolinks
 #= require pace/pace
+#= require bootbox/bootbox
 #= require noty/js/noty/jquery.noty
+#= require noty/js/noty/layouts/center
 #= require noty/js/noty/layouts/bottomRight
 #= require noty/js/noty/themes/default
 #= require underscore-amd/underscore

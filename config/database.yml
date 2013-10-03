@@ -2,9 +2,9 @@ mysql: &mysql
   adapter: mysql2
   host: "localhost"
   port: 3306
-  username: "root"
-  password: ""
-#  socket: /tmp/mysql.sock
+  username: "ferdous"
+  password: "f"
+  socket: /tmp/mysql.sock
   charset: utf8
   collation: utf8_bin
 
@@ -12,8 +12,8 @@ postgres: &postgres
   adapter: postgresql
   host: localhost
   port: 5432
-  username: postgres
-  password:
+  username: ferdous
+  password: f
   encoding: unicode
 
 # Comment the the mysql line and uncomment the postgres line
@@ -45,7 +45,7 @@ production:
   database: rails4bp_production
 test: &test
   <<: *combined
-  database: "rails4bp_test"
+  database: rails4bp_test
 integration1:
   <<: *combined
   database: rails4bp_integration1

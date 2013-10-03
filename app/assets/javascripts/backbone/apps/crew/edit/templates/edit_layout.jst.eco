@@ -6,7 +6,7 @@
             <div class="panel-heading">
                 <h3 class="panel-title">Edit Crew
                     <span class="pull-right">
-                        <a href='#crew' class='btn crew-edit btn-default btn-xs'>
+                        <a href='#crews' class='btn crew-edit btn-default btn-xs'>
                             <span class='glyphicon glyphicon-th-list'></span>
                         </a>
                         <button data-id='<%= @id %>' class='crew-delete btn btn-danger btn-xs'>

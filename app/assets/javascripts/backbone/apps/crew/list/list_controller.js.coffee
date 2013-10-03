@@ -38,12 +38,12 @@
 
 			ActionsCell = Backgrid.Cell.extend(
 				className: 'actions'
-				template: _.template("<a href='#crews/<%= id %>' class='btn btn-default btn-xs'><span class='glyphicon glyphicon-eye-open'></span></a> <a href='#crews/<%= id %>/edit' class='btn crew-edit btn-default btn-xs'><span class='glyphicon glyphicon-pencil'></span> </a> <button data-id='<%= id %>' class='crew-delete btn btn-danger btn-xs'><span class='glyphicon glyphicon-trash'></span></button>")
+				template: _.template("<a href='#crews/<%= id %>' class='btn btn-default btn-xs'><span class='glyphicon glyphicon-eye-open'></span></a> <a href='#crews/<%= id %>/edit' class='btn crew-edit btn-default btn-xs'><span class='glyphicon glyphicon-pencil'></span> </a> <button data-id='<%= id %>' class='crew-delete btn btn-danger btn-xs' data-type='confirm'><span class='glyphicon glyphicon-trash'></span></button>")
 				events:
 					"click .crew-delete": "deleteRow"
 				deleteRow: (e) ->
 					e.preventDefault() # stop the hash being added to the URL
-					if confirm "Are you sure you want to delete #{@model.get("name")} with ID: #{@model.get("id")}?" then @model.destroy() else false
+					Rails4Bp.Notify.confirm(@model)
 				render: ->
 					@$el.html @template({id: @model.id})
 					@delegateEvents()

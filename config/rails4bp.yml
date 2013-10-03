@@ -361,3 +361,7 @@ production: ## Section
 development: ## Section
   environment: ## Section
     #redis_url: 'redis://production.example.org:6379'
+
+test: ## Section
+  environment: ## Section
+    #redis_url: 'redis://production.example.org:6379'

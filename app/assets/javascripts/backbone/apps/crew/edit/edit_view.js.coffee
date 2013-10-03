@@ -2,6 +2,11 @@
 	
 	class Edit.Layout extends App.Views.Layout
 		template: "crew/edit/edit_layout"
+		events:
+			"click .crew-delete": "deleteRow"
+		deleteRow: (e) ->
+			e.preventDefault() # stop the hash being added to the URL
+			Rails4Bp.Notify.confirm(@model)
 		regions:
 			breadcrumbRegion: "#breadcrumb-region"
 			sidebarRegion: "#sidebar-region"
@@ -15,8 +20,3 @@
 
 	class Edit.Crew extends App.Views.ItemView
 		template: "crew/edit/edit_crew"
-
-		# 
-		# onFormSubmit: (data) ->
-		# 	console.log "Edit.Crew onFormSubmit", data
-		# 	false
