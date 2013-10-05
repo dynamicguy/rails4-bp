@@ -5,10 +5,10 @@ require Rails.root.join('lib', 'messagebus', 'mailer')
 
 Rails4Bp::Application.configure do
   config.action_mailer.default_url_options = {
-    protocol: AppConfig.pod_uri.scheme,
-    host:     AppConfig.pod_uri.authority
+    protocol: AppConfig.app_uri.scheme,
+    host:     AppConfig.app_uri.authority
   }
-  config.action_mailer.asset_host = AppConfig.pod_uri.to_s
+  config.action_mailer.asset_host = AppConfig.app_uri.to_s
   config.action_mailer.perform_deliveries = AppConfig.mail.enable?
 
   unless Rails.env == 'test' || !AppConfig.mail.enable?

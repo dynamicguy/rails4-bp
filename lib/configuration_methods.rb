@@ -1,23 +1,23 @@
 module Configuration
   module Methods
-    def pod_uri
-      return @pod_uri unless @pod_uri.nil?
+    def app_uri
+      return @app_uri unless @app_uri.nil?
       
       url = environment.url.get
       url = "http://#{url}" unless url =~ /^(https?:\/\/)/
       url << "/" unless url.end_with?("/")
       
       begin
-        @pod_url = Addressable::URI.parse(url)
+        @app_url = Addressable::URI.parse(url)
       rescue
         puts "WARNING: pod url #{url} is not a legal URI"
       end
       
-      @pod_url
+      @app_url
     end
     
-    def bare_pod_uri
-      pod_uri.authority.gsub('www.', '')
+    def bare_app_uri
+      app_uri.authority.gsub('www.', '')
     end
     
     def configured_services

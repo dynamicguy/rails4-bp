@@ -1,9 +1,17 @@
 <h1>Rails 4 boilerplate</h1>
-<p>A rails 4 boilerplate built with backbone, marionette, coffee-script, postgresql, solr, less, haml, rspec, cucumber, bootstrap3, lots of love, cigarettes and coffee.</p>
+<p>A rails 4 boilerplate built with backbone, marionette, coffee-script, postgresql, solr, less, haml, rspec, cucumber,
+    bootstrap3, lots of love, cigarettes and coffee.</p>
 <div id="carbonads-container">
     <div class="carbonad">
-        <div id="azcarbon">
-            <span>place for ad or featured post excerpt</span>
+        <div class="media">
+            <a class="pull-left" href="#">
+                <img class="media-object img-thumbnail" src="/assets/trending.png" alt="...">
+            </a>
+            <div class="media-body">
+                <h4 class="media-heading">Now Trending</h4>
+                Pin a fixed-height footer to the bottom of the viewport.
+                Pin a fixed-height footer to the bottom of the viewport.
+            </div>
         </div>
     </div>
 </div>

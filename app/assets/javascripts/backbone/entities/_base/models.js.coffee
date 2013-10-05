@@ -27,12 +27,12 @@
 				collection.add @ if collection
 				collection.trigger "model:created", @ if collection
 				@trigger "created", @
-				Rails4Bp.Notify.show("success","item with id \"#{@.get('id')}\" has been created successfully.","bottomRight")
+				Rails4Bp.Notify.show("success","item with ID \"#{@.get('id')}\" has been created successfully.","bottomRight")
 			else ## model is being updated
 				collection ?= @collection ## if model has collection property defined, use that if no collection option exists
 				collection.trigger "model:updated", @ if collection
 				@trigger "updated", @
-				Rails4Bp.Notify.show("success","item named with \"#{@.get('id')}\" has been saved successfully.","bottomRight")
+				Rails4Bp.Notify.show("success","item with ID \"#{@.get('id')}\" has been saved successfully.","bottomRight")
 
 		saveError: (model, xhr, options) =>
 			## set errors directly on the model unless status returned was 500 or 404

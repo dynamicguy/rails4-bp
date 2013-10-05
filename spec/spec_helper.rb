@@ -1,114 +1,51 @@
-#   Copyright (c) 2010-2011, Rails4Bp Inc.  This file is
-#   licensed under the Affero General Public License version 3 or later.  See
-#   the COPYRIGHT file.
+# This file is copied to spec/ when you run 'rails generate rspec:install'
+ENV["RAILS_ENV"] ||= 'test'
+require File.expand_path("../../config/environment", __FILE__)
+require 'rspec/rails'
+require 'email_spec'
+require 'rspec/autorun'
 
-require 'rubygems'
+# Requires supporting ruby files with custom matchers and macros, etc,
+# in spec/support/ and its subdirectories.
+Dir[Rails.root.join("spec/support/**/*.rb")].each {|f| require f}
 
-prefork = proc do
-  # Loading more in this block will cause your tests to run faster. However,
-  # if you change any configuration or code from libraries loaded here, you'll
-  # need to restart spork for it take effect.
-
-  #require "rails/application"
-  #Spork.trap_method(Rails::Application::RoutesReloader, :reload!)
-
-  ENV["RAILS_ENV"] ||= 'test'
-  require File.join(File.dirname(__FILE__), '..', 'config', 'environment') unless defined?(Rails)
-  require Rails.root.join('spec', 'helper_methods')
-  require Rails.root.join('spec', 'spec-doc')
-  require 'rspec/rails'
-  require 'webmock/rspec'
-  require 'factory_girl'
-  require 'sidekiq/testing'
-
-  include HelperMethods
-
-  Dir["#{File.dirname(__FILE__)}/shared_behaviors/**/*.rb"].each do |f|
-    require f
-  end
-
-  def set_up_friends
-    [local_luke, local_leia, remote_raphael]
-  end
-
-  def alice
-    @alice ||= User.where(:username => 'alice').first
-  end
-
-  def bob
-    @bob ||= User.where(:username => 'bob').first
-  end
-
-  def eve
-    @eve ||= User.where(:username => 'eve').first
-  end
-
-  def local_luke
-    @local_luke ||= User.where(:username => 'luke').first
-  end
-
-  def local_leia
-    @local_leia ||= User.where(:username => 'leia').first
-  end
-
-  def remote_raphael
-    @remote_raphael ||= Person.where(:rails4bp_handle => 'raphael@remote.net').first
-  end
-
-  def photo_fixture_name
-    @photo_fixture_name = File.join(File.dirname(__FILE__), 'fixtures', 'button.png')
-  end
-
-  # Force fixture rebuild
-  FileUtils.rm_f(Rails.root.join('tmp', 'fixture_builder.yml'))
-
-  # Requires supporting files with custom matchers and macros, etc,
-  # in ./support/ and its subdirectories.
-  fixture_builder_file = "#{File.dirname(__FILE__)}/support/fixture_builder.rb"
-  support_files = Dir["#{File.dirname(__FILE__)}/support/**/*.rb"] - [fixture_builder_file]
-  support_files.each {|f| require f }
-  require fixture_builder_file
-
-  RSpec.configure do |config|
-    config.include Devise::TestHelpers, :type => :controller
-    config.mock_with :rspec
-
-    config.render_views
-    config.use_transactional_fixtures = true
-
-    config.before(:each) do
-      I18n.locale = :en
-      stub_request(:post, "https://pubsubhubbub.appspot.com/")
-      disable_typhoeus
-      $process_queue = false
-      Postzord::Dispatcher::Public.any_instance.stub(:deliver_to_remote)
-      Postzord::Dispatcher::Private.any_instance.stub(:deliver_to_remote)
-    end
-
-
-
-    config.after(:all) do
-      `rm -rf #{Rails.root}/tmp/uploads/*`
-    end
-  end
-end
-
-begin
-  require 'spork'
-  #uncomment the following line to use spork with the debugger
-  #require 'spork/ext/ruby-debug'
-
-  Spork.prefork(&prefork)
-rescue LoadError
-  prefork.call
-end
-
-# https://makandracards.com/makandra/950-speed-up-rspec-by-deferring-garbage-collection
 RSpec.configure do |config|
-  config.before(:all) do
-    DeferredGarbageCollection.start
+  config.include(EmailSpec::Helpers)
+  config.include(EmailSpec::Matchers)
+  # ## Mock Framework
+  #
+  # If you prefer to use mocha, flexmock or RR, uncomment the appropriate line:
+  #
+  # config.mock_with :mocha
+  # config.mock_with :flexmock
+  # config.mock_with :rr
+
+  # Remove this line if you're not using ActiveRecord or ActiveRecord fixtures
+  config.fixture_path = "#{::Rails.root}/spec/fixtures"
+
+  # If you're not using ActiveRecord, or you'd prefer not to run each of your
+  # examples within a transaction, remove the following line or assign false
+  # instead of true.
+  config.use_transactional_fixtures = true
+
+  # If true, the base class of anonymous controllers will be inferred
+  # automatically. This will be the default behavior in future versions of
+  # rspec-rails.
+  config.infer_base_class_for_anonymous_controllers = false
+
+  # Run specs in random order to surface order dependencies. If you find an
+  # order dependency and want to debug it, you can fix the order by providing
+  # the seed, which is printed after each run.
+  #     --seed 1234
+  config.order = "random"
+
+  config.before(:suite) do
+    DatabaseCleaner.strategy = :truncation
   end
-  config.after(:all) do
-    DeferredGarbageCollection.reconsider
+  config.before(:each) do
+    DatabaseCleaner.start
+  end
+  config.after(:each) do
+    DatabaseCleaner.clean
   end
 end

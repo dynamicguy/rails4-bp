@@ -187,7 +187,7 @@ group :development do
   gem 'guard-rspec'
   gem 'spork', '> 0.9.0.rc'
   gem 'guard-spork'
-  gem 'guard-livereload'
+  gem 'guard-livereload', github: "guard/guard-livereload"
   gem 'guard-rails'
 
   gem 'librarian-chef'
