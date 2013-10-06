@@ -1,0 +1,29 @@
+<div id="edit-city">
+	<fieldset>
+		<legend>Details</legend>
+		<div class="row form-group">
+			<div class="col-md-3 columns">
+				<label class="right inline">Name</label>
+	        </div>
+	        <div class="col-md-9 columns">
+				<div class="col-md-5">
+					<input type="text" name="name" class="form-control" value="<%= @name %>" />
+				</div>
+	        </div>
+		</div>
+
+		<div class="row form-group">
+			<div class="col-md-3 columns">
+				<label class="right inline">Country code</label>
+	        </div>
+			<div class="col-md-9 columns">
+				<div class="col-md-5 left">
+					<input type="text" name="origin" class="form-control" value="<%= @countrycode %>" />
+				</div>
+				<div class="col-md-7 columns">
+					<h6 class="subheader hint">3 letter code</h6>
+				</div>
+	        </div>
+		</div>
+	</fieldset>
+</div>

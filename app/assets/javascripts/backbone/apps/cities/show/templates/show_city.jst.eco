@@ -1,0 +1,10 @@
+<div id="city-details">
+    <table class="table table-bordered table-striped">
+          <tbody>
+            <tr><th>Name</th><td><%= @name %></td></tr>
+            <tr><th>Population</th><td><%= @population %></td></tr>
+            <tr><th>Country code</th><td><%= @countrycode %></td></tr>
+            <tr><th>District</th><td><%= @district %></td></tr>
+          </tbody>
+    </table>
+</div>

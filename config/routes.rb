@@ -11,6 +11,8 @@ Rails4Bp::Application.routes.draw do
   mount Sidekiq::Web, at: '/sidekiq'
 
   resources :crews
+  resources :countries
+  resources :cities
   resources :profiles
 
   resources :pages do
@@ -25,28 +27,7 @@ Rails4Bp::Application.routes.draw do
     end
   end
 
-  resources :countrylanguages do
-    match 'advanced_search' => 'countrylanguages#advanced_search', on: :collection, via: [:get, :post], as: :advanced_search
-    collection do
-      #match ':language/:countrycode' => 'countrylanguages#view', :via => [:get, :post], :as => :countrylanguage
-      match 'search' => 'countrylanguages#search', :via => [:get, :post], :as => :search
-    end
-  end
-
-  resources :cities do
-    match 'advanced_search' => 'cities#advanced_search', on: :collection, via: [:get, :post], as: :advanced_search
-    collection do
-      match 'search' => 'cities#search', :via => [:get, :post], :as => :search
-    end
-  end
-
-  resources :countries do
-    match 'advanced_search' => 'countries#advanced_search', on: :collection, via: [:get, :post], as: :advanced_search
-    collection do
-      match 'search' => 'countries#search', :via => [:get, :post], :as => :search
-    end
-  end
-
+  resources :countrylanguages
   resources :articles
 
 

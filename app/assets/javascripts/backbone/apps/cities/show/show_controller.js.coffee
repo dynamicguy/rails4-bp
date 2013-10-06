@@ -1,15 +1,15 @@
-@Rails4Bp.module "CrewApp.Show", (Show, App, Backbone, Marionette, $, _) ->
+@Rails4Bp.module "CitiesApp.Show", (Show, App, Backbone, Marionette, $, _) ->
 	class Show.Controller extends App.Controllers.Base
 		initialize: (options) ->
-			{ crew, id } = options
-			crew or= App.request "crew:entity", id
+			{ city, id } = options
+			city or= App.request "city:entity", id
 
-			App.execute "when:fetched", crew, =>
-				@layout = @getLayoutView crew
+			App.execute "when:fetched", city, =>
+				@layout = @getLayoutView city
 				@listenTo @layout, "show", =>
 					@breadcrumbRegion()
 					@sidebarRegion()
-					@crewRegion crew
+					@cityRegion city
 				@show @layout
 
 		breadcrumbRegion: ->
@@ -20,17 +20,17 @@
 			sidebarView = @getSidebarView()
 			@layout.sidebarRegion.show sidebarView
 
-		crewRegion: (crew) ->
-			showView = @getShowView crew
-			@layout.crewRegion.show showView
+		cityRegion: (city) ->
+			showView = @getShowView city
+			@layout.cityRegion.show showView
 
-		getLayoutView: (crew) ->
+		getLayoutView: (city) ->
 			new Show.Layout
-				model: crew
+				model: city
 
-		getShowView: (crew) ->
-			new Show.Crew
-				model: crew
+		getShowView: (city) ->
+			new Show.City
+				model: city
 
 		getBreadcrumbView: ->
 			new Show.Breadcrumb

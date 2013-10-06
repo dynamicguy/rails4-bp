@@ -23,9 +23,6 @@
 		getCrews: ->
 			new Entities.CrewCollection()
 
-		fetchMoreCrews: (args) ->
-			console.log args.collection.state
-
 		getCrewMember: (id) ->
 			member = new Entities.Crew
 				id: id
@@ -37,9 +34,6 @@
 
 	App.reqres.setHandler "crew:entities", ->
 		API.getCrews()
-
-	App.reqres.setHandler "crew:fetch:more", (args)->
-		API.fetchMoreCrews(args)
 
 	App.reqres.setHandler "crew:entity", (id) ->
 		API.getCrewMember id

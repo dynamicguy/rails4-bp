@@ -6,12 +6,12 @@
 			"crews": "list"
 
 	API =
-		list: ->
-			new CrewApp.List.Controller
-
 		newCrew: (region) ->
 			new CrewApp.New.Controller
 				region: region
+
+		list: ->
+			new CrewApp.List.Controller
 
 		edit: (id, crew) ->
 			new CrewApp.Edit.Controller

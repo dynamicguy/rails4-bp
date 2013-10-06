@@ -1,33 +1,15 @@
 class CountriesController < ApplicationController
   before_action :set_country, only: [:show, :edit, :update, :destroy]
-  respond_to :html, :json
-  #add_breadcrumb :countries, :countries_path
+  respond_to :html, :json, :xml, :js
+  responders :collection, Responders::PaginateResponder
 
-  def search
-    add_breadcrumb :search
-    @search = Country.search(params[:q])
-    @countries  = params[:distinct].to_i.zero? ? @search.result.paginate(:page => params[:page]).order('id DESC') : @search.result(distinct: true).paginate(:page => params[:page]).order('id DESC')
-    respond_with @countries
-  end
-
-  def advanced_search
-    add_breadcrumb :advanced_search
-    @search = Country.search(params[:q])
-    @search.build_grouping unless @search.groupings.any?
-    @countries  = params[:distinct].to_i.zero? ? @search.result.paginate(:page => params[:page]).order('id DESC') : @search.result(distinct: true).paginate(:page => params[:page]).order('id DESC')
-
-    respond_with @countries
-  end
 
   # GET /countries
   # GET /countries.json
   def index
-    add_breadcrumb :list
-
-    @countries = Country.all
+    @countries = Country.all.paginate(:page => params[:page]).order("#{params[:order]} #{params[:dir]}")
 
     respond_to do |format|
-      format.html # index.html.erb
       format.json { render json: @countries }
       format.xml { render xml: @countries }
     end
@@ -36,12 +18,10 @@ class CountriesController < ApplicationController
   # GET /countries/1
   # GET /countries/1.json
   def show
-    add_breadcrumb :details
   end
 
   # GET /countries/new
   def new
-    add_breadcrumb :new
     @country = Country.new
   end
 
@@ -91,13 +71,13 @@ class CountriesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_country
-      @country = Country.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_country
+    @country = Country.find_by_code params[:id]
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def country_params
-      params.require(:country).permit(:code, :name, :continent, :region, :surfacearea, :indepyear, :population, :lifeexpectancy, :gnp, :gnpold, :localname, :governmentform, :headofstate, :capital, :code2)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def country_params
+    params.require(:country).permit(:code, :name, :continent, :region, :surfacearea, :indepyear, :population, :lifeexpectancy, :gnp, :gnpold, :localname, :governmentform, :headofstate, :capital, :code2)
+  end
 end

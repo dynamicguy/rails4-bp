@@ -4,7 +4,7 @@
   class <%= module_name_class %>.Router extends Marionette.AppRouter
     appRoutes:
     <% actions.each do |action| -%>
-  "<%= action %>": "<%= action %>"
+  "#<%= module_name_underscore %>/<%= action %>": "<%= action %>"
     <% end -%>
   <%- end -%>
 

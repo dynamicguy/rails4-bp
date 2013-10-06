@@ -1,28 +1,13 @@
 class CitiesController < ApplicationController
   before_action :set_city, only: [:show, :edit, :update, :destroy]
-  #add_breadcrumb :cities, :cities_path
-  respond_to :html, :json, :js
-
-  def search
-    @search = City.search(params[:q])
-    @cities  = params[:distinct].to_i.zero? ? @search.result.paginate(:page => params[:page]).order('id DESC') : @search.result(distinct: true).paginate(:page => params[:page]).order('id DESC')
-    respond_with @cities
-  end
-
-  def advanced_search
-    @search = City.search(params[:q])
-    @search.build_grouping unless @search.groupings.any?
-    @cities  = params[:distinct].to_i.zero? ? @search.result.paginate(:page => params[:page]).order('id DESC') : @search.result(distinct: true).paginate(:page => params[:page]).order('id DESC')
-
-    respond_with @cities
-  end
+  respond_to :json, :xml, :js
+  responders :collection, Responders::PaginateResponder
 
   # GET /cities
   # GET /cities.json
   def index
-    @cities = City.all
+    @cities = City.all.paginate(:page => params[:page]).order("#{params[:order]} #{params[:dir]}")
     respond_to do |format|
-      format.html # index.html.erb
       format.json { render json: @cities }
       format.xml { render xml: @cities }
     end

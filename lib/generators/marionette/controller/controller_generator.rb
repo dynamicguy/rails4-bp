@@ -31,6 +31,7 @@ module Marionette
 			def create_controller
 				actions.each do |action|
 					%W{ controller view }.each do |type|
+						@action = action
 						@controller = action.capitalize
 						template "#{type}.js.coffee", "#{backbone_path}/apps/#{module_name_underscore}/#{action}/#{action}_#{type}.js.coffee"
 					end
@@ -41,11 +42,19 @@ module Marionette
 				actions.each do |action|
 					@controller = action.capitalize
 					template "layout.jst.eco", "#{backbone_path}/apps/#{module_name_underscore}/#{action}/templates/#{action}_layout.jst.eco"
+					template "_entity.jst.eco", "#{backbone_path}/apps/#{module_name_underscore}/#{action}/templates/_#{action}.jst.eco"
+					template "_breadcrumb.jst.eco", "#{backbone_path}/apps/#{module_name_underscore}/#{action}/templates/_breadcrumb.jst.eco"
+					template "_panel.jst.eco", "#{backbone_path}/apps/#{module_name_underscore}/#{action}/templates/_panel.jst.eco"
+					template "_sidebar.jst.eco", "#{backbone_path}/apps/#{module_name_underscore}/#{action}/templates/_sidebar.jst.eco"
 				end
 			end
 			
 			private
 			
+			def view_base_template_path
+				"#{module_name_underscore}/#{@controller.downcase}"
+			end
+
 			def view_template_path
 				"#{module_name_underscore}/#{@controller.downcase}/#{@controller.downcase}_layout"
 			end

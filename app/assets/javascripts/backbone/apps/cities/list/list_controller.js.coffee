@@ -1,18 +1,18 @@
-@Rails4Bp.module "CrewApp.List", (List, App, Backbone, Marionette, $, _) ->
+@Rails4Bp.module "CitiesApp.List", (List, App, Backbone, Marionette, $, _) ->
+
 	class List.Controller extends App.Controllers.Base
 
 		initialize: ->
-			crews = App.request "crew:entities"
-			App.execute "when:fetched", crews, =>
-				@layout = @getLayoutView crews
+			cities = App.request "city:entities"
+			App.execute "when:fetched", cities, =>
+				@layout = @getLayoutView cities
 				@listenTo @layout, "close", @close
 				@listenTo @layout, "show", =>
 					@breadcrumbRegion()
 					@sidebarRegion()
 					@panelRegion()
-					@crewRegion crews
+					@listRegion cities
 				@show @layout
-
 
 		breadcrumbRegion: ->
 			breadcrumbView = @getBreadcrumbView()
@@ -24,24 +24,24 @@
 
 		panelRegion: ->
 			panelView = @getPanelView()
-			@listenTo panelView, "new:crew:button:clicked", =>
+			@listenTo panelView, "new:city:button:clicked", =>
 				@newRegion()
 			@layout.panelRegion.show panelView
 
 		newRegion: ->
-			App.execute "new:crew:crew", @layout.newRegion
+			App.execute "new:city", @layout.newRegion
 
-		crewRegion: (crews) ->
-			crewListView = @getCrewView crews
-			@listenTo crewListView, "childview:crew:crew:clicked", (child, args) ->
-				App.vent.trigger "crew:crew:clicked", child.model
-			@layout.crewRegion.show crewListView
+		listRegion: (cities) ->
+			listView = @getListView cities
+			@listenTo listView, "childview:city:clicked", (child, args) ->
+				App.vent.trigger "city:clicked", child.model
+			@layout.listRegion.show listView
 
 			ActionsCell = Backgrid.Cell.extend(
 				className: 'actions'
-				template: _.template("<a href='#crews/<%= id %>' class='btn btn-default btn-xs'><span class='glyphicon glyphicon-eye-open'></span></a> <a href='#crews/<%= id %>/edit' class='btn crew-edit btn-default btn-xs'><span class='glyphicon glyphicon-pencil'></span> </a> <button data-id='<%= id %>' class='crew-delete btn btn-danger btn-xs' data-type='confirm'><span class='glyphicon glyphicon-trash'></span></button>")
+				template: _.template("<a href='#cities/<%= id %>' class='btn btn-default btn-xs'><span class='glyphicon glyphicon-eye-open'></span></a> <a href='#cities/<%= id %>/edit' class='btn city-edit btn-default btn-xs'><span class='glyphicon glyphicon-pencil'></span> </a> <button data-id='<%= id %>' class='city-delete btn btn-danger btn-xs' data-type='confirm'><span class='glyphicon glyphicon-trash'></span></button>")
 				events:
-					"click .crew-delete": "deleteRow"
+					"click .city-delete": "deleteRow"
 				deleteRow: (e) ->
 					e.preventDefault()
 					Rails4Bp.Notify.confirm(@model)
@@ -55,13 +55,13 @@
 				name: "name"
 				cell: "string"
 			,
-				name: "age"
+				name: "population"
 				cell: "number"
 			,
-				name: "title"
+				name: "countrycode"
 				cell: "string"
 			,
-				name: "species"
+				name: "district"
 				cell: "string"
 			,
 				name: "id"
@@ -71,10 +71,10 @@
 				cell: ActionsCell
 			]
 
-			if crewListView.hasOwnProperty 'collection'
+			if listView.hasOwnProperty 'collection'
 				grid = new Backgrid.Grid
 					className: "backgrid table table-striped table-bordered table-hover"
-					collection: crewListView.collection
+					collection: listView.collection
 					columns: columns
 
 				$("#grid").append(grid.render().$el)
@@ -82,12 +82,12 @@
 
 				class Paginator extends Backgrid.Extension.Paginator
 					columns: columns
-					collection: crewListView.collection
+					collection: listView.collection
 					className: 'backgrid-paginator'
 
 				paginator = new Paginator(
 					columns: columns
-					collection: crewListView.collection
+					collection: listView.collection
 				)
 				$("#paginator").append paginator.render().$el
 
@@ -95,23 +95,15 @@
 					template: _.template('<div class="input-group"><span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span><input class="form-control h35" type="text" <% if (placeholder) { %> placeholder="<%- placeholder %>" <% } %> name="<%- name %>" /><span class="input-group-addon"><a class="close" href="#">&times;</a></span></div>')
 					className: 'backgrid-filter form-search'
 					placeholder: "Search"
-					collection: crewListView.collection
+					collection: listView.collection
 
 				filter = new Filter(
-					collection: crewListView.collection
-					fields: ["name", "breadcrumb", "species"]
+					collection: listView.collection
+					fields: ["name", "countrycode", "district"]
 				)
 				$("#filters").append filter.render().$el
 
-				crewListView.collection.fetch(reset: true)
-
-
-		getCrewView: (crews) ->
-			new List.Crew
-				collection: crews
-
-		getPanelView: ->
-			new List.Panel
+				listView.collection.fetch(reset: true)
 
 		getBreadcrumbView: ->
 			new List.Breadcrumb
@@ -119,6 +111,14 @@
 		getSidebarView: ->
 			new List.Sidebar
 
-		getLayoutView: (crews) ->
+		getListView: (cities) ->
+			new List.ListView
+				collection: cities
+
+		getPanelView: ->
+			new List.Panel
+
+		getLayoutView: (cities) ->
 			new List.Layout
-				collection: crews
+				collection: cities
+
