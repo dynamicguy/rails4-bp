@@ -18,6 +18,7 @@ class ApplicationController < ActionController::Base
   before_filter :set_grammatical_gender
   before_filter :mobile_switch
   before_filter :gon_set_current_user
+  before_filter :gon_set_global_config
   before_filter :gon_set_preloads
   before_filter :authenticate_user!
 
@@ -118,6 +119,10 @@ class ApplicationController < ActionController::Base
 
   def max_time
     params[:max_time] ? Time.at(params[:max_time].to_i) : Time.now + 1
+  end
+
+  def gon_set_global_config
+    gon.push({:config => AppConfig.settings})
   end
 
   def gon_set_current_user

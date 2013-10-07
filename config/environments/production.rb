@@ -84,8 +84,10 @@ Rails4Bp::Application.configure do
 
   # Disable automatic flushing of the log to improve performance.
   # config.autoflush_log = false
+  # For nginx:
+   config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect'
 
-  # Use default logging formatter so that PID and timestamp are not suppressed.
-  config.log_formatter = ::Logger::Formatter.new
-  config.action_mailer.default_url_options = {:host => 'localhost:3000'}
+  if AppConfig.environment.assets.host.present?
+    config.action_controller.asset_host = AppConfig.environment.assets.host.get
+  end
 end

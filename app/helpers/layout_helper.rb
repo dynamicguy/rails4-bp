@@ -8,7 +8,7 @@ module LayoutHelper
 
   def page_title(text=nil)
     return text unless text.blank?
-    pod_name
+    app_name
   end
 
   def set_asset_host

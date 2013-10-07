@@ -16,7 +16,7 @@ module LanguageHelper
     end
     
     defaults['pluralization_rule'] = I18n.t('i18n.plural.js_rule', :locale => language)
-    defaults['pod_name'] = pod_name
+    defaults['app_name'] = app_name
     defaults
   end
 

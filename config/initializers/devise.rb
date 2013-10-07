@@ -10,10 +10,20 @@ Devise.setup do |config|
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
   # with default "from" parameter.
-  config.mailer_sender = 'please-change-me-at-config-initializers-devise@example.com'
+  #config.mailer_sender = 'please-change-me-at-config-initializers-devise@example.com'
+  if AppConfig.mail.sender_address.present?
+    config.mailer_sender = AppConfig.mail.sender_address
+  elsif AppConfig.mail.enable?
+    unless Rails.env == 'test'
+      Rails.logger.warn("No smtp sender address set, mail may fail.")
+      puts "WARNING: No smtp sender address set, mail may fail."
+    end
+    config.mailer_sender = 'please-change-me-at-config-initializers-devise@example.com'
+  end
 
   # Configure the class responsible to send e-mails.
   # config.mailer = 'Devise::Mailer'
+  config.mailer = 'Rails4BpDeviseMailer'
 
   # ==> ORM configuration
   # Load and configure the ORM. Supports :active_record (default) and
@@ -95,7 +105,7 @@ Devise.setup do |config|
   config.stretches = Rails.env.test? ? 1 : 10
 
   # Setup a pepper to generate the encrypted password.
-  # config.pepper = '316f4e19941a5c8d6e0f7bef933d5667d1d8bd4f00c8d19a0e55f61f071ce262bd77655ede6c2ee7fc9842649718e4245b2e36a18688aba555ba3379366f4a1a'
+  #config.pepper = '316f4e19941a5c8d6e0f7bef933d5667d1d8bd4f00c8d19a0e55f61f071ce262bd77655ede6c2ee7fc9842649718e4245b2e36a18688aba555ba3379366f4a1a'
 
   # ==> Configuration for :confirmable
   # A period that the user is allowed to access the website even without

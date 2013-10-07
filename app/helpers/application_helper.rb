@@ -12,11 +12,11 @@ module ApplicationHelper
   #  html.html_safe
   #end
 
-  def pod_name
-    AppConfig.settings.pod_name.present? ? AppConfig.settings.pod_name : "rails4bp*"
+  def app_name
+    AppConfig.settings.app_name.present? ? AppConfig.settings.app_name : "rails4bp*"
   end
 
-  def pod_version
+  def app_version
     AppConfig.version.number.present? ? AppConfig.version.number : ""
   end
 

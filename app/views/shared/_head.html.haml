@@ -6,7 +6,7 @@
   %link{:rel => "dns-prefetch", :href => "//fonts.googleapis.com"}
   /[if IE] %meta{"http-equiv" => "X-UA-Compatible", :content => "IE=edge,chrome=1"}
 
-  %title= raw [content_for?(:title) ? yield(:title) : [params[:controller], params[:action]].join(" » ").titleize + " : Home", "&raquo; RAILS4BP.COM"].join(' ')
+  %title= raw [content_for?(:title) ? yield(:title) : [params[:controller], params[:action]].join(" » ").titleize + " : Home", AppConfig.settings.app_name].join(" &raquo; ")
 
   / HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries
   /[if lt IE 9]
@@ -35,7 +35,6 @@
   -# %link{:href => "http://fonts.googleapis.com/css?family=PT+Sans", :rel => "stylesheet", :type => "text/css"}
 
   = csrf_meta_tag
-
 
 
   -# *******************************************************************************************
