@@ -1,12 +1,20 @@
 class CitiesController < ApplicationController
   before_action :set_city, only: [:show, :edit, :update, :destroy]
   respond_to :json, :xml, :js
-  responders :collection, Responders::PaginateResponder
 
   # GET /cities
   # GET /cities.json
   def index
-    @cities = City.all.paginate(:page => params[:page]).order("#{params[:order]} #{params[:dir]}")
+    #@cities = City.all.paginate(:page => params[:page]).order("#{params[:order]} #{params[:dir]}")
+    @start = Time.now
+    @search = City.search do
+      fulltext params[:q]
+      order_by sort_column, sort_direction
+      paginate :page => params[:page], :per_page => params[:per_page]
+    end
+
+    @cities = prepare_api_collection(@search)
+
     respond_to do |format|
       format.json { render json: @cities }
       format.xml { render xml: @cities }
@@ -68,13 +76,22 @@ class CitiesController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_city
-      @city = City.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_city
+    @city = City.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def city_params
-      params.require(:city).permit(:name, :countrycode, :district, :population)
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def city_params
+    params.require(:city).permit(:name, :countrycode, :district, :population)
+  end
+
+  def sort_column
+    City.column_names.include?(params[:order]) ? params[:order] : "id"
+  end
+
+  def sort_direction
+    %w[asc desc].include?(params[:dir]) ? params[:dir] : "desc"
+  end
+
 end

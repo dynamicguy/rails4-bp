@@ -45,6 +45,18 @@ class ApplicationController < ActionController::Base
 
   private
 
+  def prepare_api_collection(search)
+    [
+        {
+            :total_entries => search.total,
+            :current_page => search.results.current_page,
+            :total_pages => search.results.total_pages,
+            :per_page => search.results.per_page
+        },
+        search.results
+    ]
+  end
+
   def ensure_http_referer_is_set
     request.env['HTTP_REFERER'] ||= '/'
   end

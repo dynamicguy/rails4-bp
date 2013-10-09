@@ -18,8 +18,16 @@
 		template: "cities/list/_panel"
 		className: 'row'
 		triggers:
-			"click #new-crew": "new:city:button:clicked"
+			"click #new-city": "new:city:button:clicked"
 
 	class List.ListView extends App.Views.CompositeView
 		template: "cities/list/_list"
 		id: "cityList"
+
+	class List.Add extends App.Views.ItemView
+		template: "cities/list/new_city"
+		tagName: "li"
+		className: "new-city media list-group-item"
+		triggers:
+			"click": "new:city:clicked"
+		

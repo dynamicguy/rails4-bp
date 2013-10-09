@@ -1,4 +1,4 @@
-source 'https://rubygems.org'
+source 'http://rubygems.org'
 
 gem 'rails', '4.0.0'
 gem 'arel', github: 'rails/arel'
@@ -197,9 +197,9 @@ end
 
 
 # solr and friends
-gem "ransack", :git => "git://github.com/ernie/ransack.git"
-#gem 'sunspot_rails', :git => 'git://github.com/sunspot/sunspot'
-#gem 'sunspot_solr'
+#gem "ransack", :git => "git://github.com/ernie/ransack.git"
+gem 'sunspot_rails'#, :git => 'git://github.com/sunspot/sunspot'
+gem 'sunspot_solr'
 
 group :test do
   # RSpec (unit tests, some integration tests)
@@ -220,6 +220,8 @@ group :test do
   gem 'factory_girl_rails'
   gem 'timecop'
   gem 'webmock', :require => false
+
+  gem "sunspot_test"
 end
 
 

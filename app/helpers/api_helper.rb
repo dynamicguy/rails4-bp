@@ -3,10 +3,10 @@ module ApiHelper
 
   def will_paginate(collection)
     {
-        :per_page => collection.limit_value,
-        :total_entries => collection.total_entries,
-        :total_pages => collection.total_pages,
-        :page => collection.current_page
+        :per_page => collection.results.per_page,
+        :total_entries => collection.total,
+        :total_pages => collection.results.total_pages,
+        :page => collection.results.current_page
     }
   end
 

@@ -4,7 +4,7 @@
     <div id="content-block" class="col-sm-11 col-md-10">
         <div class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title">Edit Crew
+                <h3 class="panel-title">Edit City
                     <span class="pull-right">
                         <a href='#cities' class='btn city-edit btn-default btn-xs'>
                             <span class='glyphicon glyphicon-th-list'></span>

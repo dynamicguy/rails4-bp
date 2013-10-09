@@ -2,7 +2,7 @@
     <div class="col-sm-8">
         <ol class="breadcrumb">
             <li><a href="#">Home</a></li>
-            <li><a href="#crews">Crew</a></li>
+            <li><a href="#crews">City</a></li>
             <li class="active">List</li>
         </ol>
     </div>

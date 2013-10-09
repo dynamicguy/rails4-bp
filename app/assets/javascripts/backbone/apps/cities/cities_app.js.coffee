@@ -24,7 +24,7 @@
 				city: city
 
 	App.commands.setHandler "new:city", (region) ->
-		API.newCrew region
+		API.newCity region
 
 	App.vent.on "city:clicked city:created", (city) ->
 		App.navigate Routes.edit_city_path(city.id)

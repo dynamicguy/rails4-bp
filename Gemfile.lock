@@ -7,15 +7,6 @@ GIT
       rake (>= 0.8.7)
 
 GIT
-  remote: git://github.com/ernie/ransack.git
-  revision: 3250d339bed60ae6c152e5c1827e13aab72dd8be
-  specs:
-    ransack (1.0.0)
-      actionpack (>= 3.0)
-      activerecord (>= 3.0)
-      polyamorous (~> 0.6.0)
-
-GIT
   remote: git://github.com/guard/guard-livereload.git
   revision: 4aa9534e6a205623416d40b9009b198e40f1e387
   specs:
@@ -132,7 +123,7 @@ GIT
       rails (>= 3.1)
 
 GEM
-  remote: https://rubygems.org/
+  remote: http://rubygems.org/
   specs:
     actionmailer (4.0.0)
       actionpack (= 4.0.0)
@@ -468,9 +459,8 @@ GEM
       rack-link_headers (>= 2.2)
     paper_trail (3.0.0.beta1)
       activerecord (>= 3.0, < 5.0)
-    polyamorous (0.6.4)
-      activerecord (>= 3.0)
     polyglot (0.3.3)
+    pr_geohash (1.0.0)
     pry (0.9.12.2)
       coderay (~> 1.0.5)
       method_source (~> 0.8)
@@ -540,6 +530,8 @@ GEM
     roxml (3.1.6)
       activesupport (>= 2.3.0)
       nokogiri (>= 1.3.3)
+    rsolr (1.0.9)
+      builder (>= 2.1.2)
     rspec (2.14.1)
       rspec-core (~> 2.14.0)
       rspec-expectations (~> 2.14.0)
@@ -600,6 +592,15 @@ GEM
       sprockets (~> 2.8)
     state_machine (1.2.0)
     subexec (0.2.3)
+    sunspot (2.0.0)
+      pr_geohash (~> 1.0)
+      rsolr (~> 1.0.7)
+    sunspot_rails (2.0.0)
+      nokogiri
+      sunspot (= 2.0.0)
+    sunspot_solr (2.0.0)
+    sunspot_test (0.4.0)
+      sunspot_rails (>= 1.2.1)
     systemu (2.5.2)
     temple (0.6.7)
     terminal-notifier-guard (1.5.3)
@@ -730,7 +731,6 @@ DEPENDENCIES
   rails_admin!
   rails_admin_tag_list
   rails_autolink (= 1.1.0)
-  ransack!
   rb-fsevent
   rb-inotify (~> 0.9)
   redcarpet (= 3.0.0)
@@ -749,6 +749,9 @@ DEPENDENCIES
   slim
   spork (> 0.9.0.rc)
   state_machine (~> 1.2.0)
+  sunspot_rails
+  sunspot_solr
+  sunspot_test
   terminal-notifier-guard
   test_after_commit (= 0.2.0)
   the_sortable_tree!

@@ -1,0 +1,9 @@
+<div id="new-city" class="">
+    <div class="row form-group">
+        <label for="inputName" class="col-md-3 control-label">City Name</label>
+
+        <div class="col-md-9">
+            <input type="text" name="name" class="form-control col-md-6" id="inputName" placeholder="city name">
+        </div>
+    </div>
+</div>
