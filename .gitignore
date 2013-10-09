@@ -20,4 +20,4 @@ vendor/assets/javascripts/components
 vendor
 .DS_Store
 dump.rdb
-solr-4.5.0
+solr
