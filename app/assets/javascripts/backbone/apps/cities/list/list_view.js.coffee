@@ -23,6 +23,10 @@
 	class List.ListView extends App.Views.CompositeView
 		template: "cities/list/_list"
 		id: "cityList"
+		onRender: ->
+			if @model
+				$('#found_count').text(@model.collection.state.totalRecords)
+
 
 	class List.Add extends App.Views.ItemView
 		template: "cities/list/new_city"

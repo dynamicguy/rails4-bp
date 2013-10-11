@@ -7,13 +7,11 @@ class City < ActiveRecord::Base
   searchable :auto_index => true, :auto_remove => false do
     text :name, :more_like_this => true
     string :name
+    string :district
+    string :countrycode
     text :district
     integer :id
     integer :population
-
-    string :sort_name do
-      name.downcase.gsub(/^(an?|the)/, '')
-    end
   end
 
 end

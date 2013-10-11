@@ -5,8 +5,6 @@ class CitiesController < ApplicationController
   # GET /cities
   # GET /cities.json
   def index
-    #@cities = City.all.paginate(:page => params[:page]).order("#{params[:order]} #{params[:dir]}")
-    @start = Time.now
     @search = City.search do
       fulltext params[:q]
       order_by sort_column, sort_direction

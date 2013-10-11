@@ -1,29 +1,35 @@
 <div id="edit-city">
-	<fieldset>
-		<legend>Details</legend>
-		<div class="row form-group">
-			<div class="col-md-3 columns">
-				<label class="right inline">Name</label>
-	        </div>
-	        <div class="col-md-9 columns">
-				<div class="col-md-5">
-					<input type="text" name="name" class="form-control" value="<%= @name %>" />
-				</div>
-	        </div>
-		</div>
+    <fieldset>
+        <legend>Details</legend>
 
-		<div class="row form-group">
-			<div class="col-md-3 columns">
-				<label class="right inline">Country code</label>
-	        </div>
-			<div class="col-md-9 columns">
-				<div class="col-md-5 left">
-					<input type="text" name="origin" class="form-control" value="<%= @countrycode %>" />
-				</div>
-				<div class="col-md-7 columns">
-					<h6 class="subheader hint">3 letter code</h6>
-				</div>
-	        </div>
-		</div>
-	</fieldset>
+        <div class="form-group">
+            <label for="name" class="col-sm-3 control-label">Name</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" id="name" name="name" placeholder="Name" value="<%= @name %>">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="countrycode" class="col-sm-3 control-label">Country Code</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" id="countrycode" name="countrycode" placeholder="country code" value="<%= @countrycode %>">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="district" class="col-sm-3 control-label">district</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" id="district" name="district" placeholder="district" value="<%= @district %>">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label for="population" class="col-sm-3 control-label">population</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" id="population" name="population" placeholder="population" value="<%= @population %>">
+            </div>
+        </div>
+
+
+    </fieldset>
 </div>

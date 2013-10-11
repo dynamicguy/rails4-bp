@@ -8,8 +8,8 @@
 
       .login-fields
         %p Sign in using your registered account:
-        .field= f.input :email, :required => true, :autofocus => true, :class => 'username-field'
-        .field= f.input :password, :required => true, :class => 'password-field'
+        .field= f.input :email, :required => true, :autofocus => true, :class => 'username-field', :placeholder => 'Email'
+        .field= f.input :password, :required => true, :class => 'password-field', :placeholder => 'Password'
 
       .login-actions
         %div.login-checkbox

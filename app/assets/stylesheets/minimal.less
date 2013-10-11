@@ -12,9 +12,18 @@ body {
 }
 
 .container h1 {
-  margin-bottom: .4em;
-  color: #357ebd;
-  font-size: 32px;
+  display: block;
+  margin: 2px 0 20px;
+  font-weight: 300;
+  line-height: 40px;
+  padding-bottom: 10px;
+  border-bottom: 1px dotted transparent;
+  text-transform: capitalize;
+  text-shadow: 0px 1px 0px white;
+  font-size: 40px;
+  -webkit-text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+  -moz-text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
+  text-shadow: 0px 1px 5px rgba(0, 0, 0, 0.25);
   text-align: center;
 }
 
@@ -152,7 +161,6 @@ div.login-buttons {
 }
 
 .list-inline > li a, .list-inline > li a:visited {
-  color: #838383;
   text-decoration: none;
 }
 
@@ -162,7 +170,25 @@ div.login-buttons {
   padding-left: 5px;
 }
 
-#flash_alert, #flash_error {
+a {
+  color: #428bca;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #2a6496;
+  text-decoration: underline;
+}
+
+a:focus {
+  outline: thin dotted #333
+;
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}
+
+#flash_alert, #flash_error, #flash_notice {
   position: fixed;
   z-index: 999;
   top: 10px;
@@ -191,6 +217,10 @@ div.login-buttons {
   font-size: 13px;
 }
 
+#flash_notice .message {
+  background-color: #129A29;
+  border-color: #049a3b;
+}
 #flash_alert .message {
   background-color: #CA410B;
   border-color: #9a3108;

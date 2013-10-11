@@ -102,8 +102,10 @@
 					fields: ["name", "countrycode", "district"]
 				)
 				$("#filters").append filter.render().$el
-
+				started_at = Date.now()
 				listView.collection.fetch(reset: true)
+				$('#elapsed_time').text((Date.now() - started_at) / 1000)
+
 
 		getBreadcrumbView: ->
 			new List.Breadcrumb

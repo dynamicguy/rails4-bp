@@ -1,5 +1,4 @@
 @Rails4Bp.module "Entities", (Entities, App, Backbone, Marionette, $, _) ->
-
 	class Entities.City extends Entities.Model
 		initialize: ->
 			@url = (if @id then "/cities/" + @id else "/cities")
