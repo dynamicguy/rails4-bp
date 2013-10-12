@@ -12,6 +12,7 @@
     <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
         <ul class="nav navbar-nav pull-right" role="menu">
             <!--<li><a href="#countries"><i class="glyphicon glyphicon-globe"></i> Countries</a></li>-->
+            <li><a href="#pages"><i class="glyphicon glyphicon-cloud"></i> Pages</a></li>
             <li><a href="#cities"><i class="glyphicon glyphicon-cloud"></i> Cities</a></li>
             <!--<li><a href="#categories"><i class="glyphicon glyphicon-tag"></i> Categories</a></li>-->
             <!--<li><a href="#pages"><i class="glyphicon glyphicon-list"></i> Pages</a></li>-->

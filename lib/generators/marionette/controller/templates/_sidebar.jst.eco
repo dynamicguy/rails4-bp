@@ -10,7 +10,7 @@
             </h6>
         </div>
         <div id="nav-panel-1" class="list-group panel-collapse collapse in">
-            <a href="#cities" class="list-group-item">
+            <a href="#<%= module_name_underscore %>" class="list-group-item">
                 <i class="glyphicon glyphicon-globe"></i> Cities
             </a>
             <a href="#countries" class="list-group-item">

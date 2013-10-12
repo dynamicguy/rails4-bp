@@ -4,7 +4,7 @@
 <div class="col-md-6">
     <div class="content-toolbar btn-toolbar pull-right clearfix">
         <div class="btn-group">
-            <button id="new-crew" class="btn btn-primary btn-sm">
+            <button id="new-<%= singlularized_lower_module_name %>" class="btn btn-primary btn-sm">
                 <i class="glyphicon glyphicon-plus-sign"></i>
                 Add
             </button>

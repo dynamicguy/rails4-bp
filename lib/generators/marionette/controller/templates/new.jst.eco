@@ -1,0 +1,10 @@
+<div id="new-<%= singlularized_lower_module_name %>" class="">
+    <div class="row form-group">
+        <label for="inputTitle" class="col-md-3 control-label"><%= singlularized_capital_module_name %> Title</label>
+
+        <div class="col-md-9">
+            <input type="text" name="title" class="form-control col-md-6" id="inputTitle" placeholder="<%= singlularized_lower_module_name %> title">
+        </div>
+    </div>
+</div>
+

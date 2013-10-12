@@ -1,19 +1,26 @@
 class PagesController < ApplicationController
-
-  include TheSortableTreeController::Rebuild
-  before_action :set_page, only: [:show, :edit, :update, :destroy, :rebuild]
-  #add_breadcrumb :pages, :pages_path
+  #include TheSortableTreeController::Rebuild
+  before_action :set_page, only: [:show, :edit, :update, :destroy]
+  #before_action :set_page, only: [:show, :edit, :update, :destroy, :rebuild]
+  respond_to :json, :xml, :js
 
   # GET /pages
   # GET /pages.json
   def index
     #add_breadcrumb :list
-    @pages = Page.with_state(:published).nested_set.select(:id, :title, :content, :secret_field, :parent_id, :lft, :rgt, :depth).paginate(:page => params[:page])
+    #@pages = Page.with_state(:published).nested_set.select(:id, :title, :content, :secret_field, :parent_id, :lft, :rgt, :depth).paginate(:page => params[:page])
+
+    @search = Page.search do
+      fulltext params[:q]
+      order_by sort_column, sort_direction
+      paginate :page => params[:page], :per_page => params[:per_page]
+    end
+
+    @pages = prepare_api_collection(@search)
 
     respond_to do |format|
-      format.html # index.html.erb
-      format.json { render json: PagesDatatable.new(view_context) }
-      format.xml { render xml: Page.all }
+      format.json { render json: @pages }
+      format.xml { render xml: @pages }
     end
   end
 
@@ -21,21 +28,19 @@ class PagesController < ApplicationController
   # GET /pages/1
   # GET /pages/1.json
   def show
-    #add_breadcrumb :details
-    @pages = Page.with_state(:published).nested_set.select(:id, :title, :content, :secret_field, :parent_id, :lft, :rgt, :depth, :user_id, :state).paginate(:page => params[:page])
+    #respond_with @page
+    #@pages = Page.with_state(:published).nested_set.select(:id, :title, :content, :secret_field, :parent_id, :lft, :rgt, :depth, :user_id, :state).paginate(:page => params[:page])
   end
 
   # GET /pages/new
   def new
-    #add_breadcrumb :new
     @page = Page.new
-    @pages = Page.nested_set.select(:id, :title, :content, :secret_field, :parent_id, :lft, :rgt, :depth, :user_id, :state).paginate(:page => params[:page])
+    #@pages = Page.nested_set.select(:id, :title, :content, :secret_field, :parent_id, :lft, :rgt, :depth, :user_id, :state).paginate(:page => params[:page])
   end
 
   # GET /pages/1/edit
   def edit
-    #add_breadcrumb :edit
-    @pages = Page.nested_set.select(:id, :title, :content, :secret_field, :parent_id, :lft, :rgt, :depth).paginate(:page => params[:page])
+    #@pages = Page.nested_set.select(:id, :title, :content, :secret_field, :parent_id, :lft, :rgt, :depth).paginate(:page => params[:page])
   end
 
   # POST /pages
@@ -66,10 +71,8 @@ class PagesController < ApplicationController
 
       respond_to do |format|
         if @page.save
-          format.html { redirect_to @page, notice: 'Page was successfully created.' }
           format.json { render action: 'show', status: :created, location: @page }
         else
-          format.html { render action: 'new' }
           format.json { render json: @page.errors, status: :unprocessable_entity }
         end
       end
@@ -81,10 +84,8 @@ class PagesController < ApplicationController
   def update
     respond_to do |format|
       if @page.update(page_params)
-        format.html { redirect_to @page, notice: 'Page was successfully updated.' }
         format.json { head :no_content }
       else
-        format.html { render action: 'edit' }
         format.json { render json: @page.errors, status: :unprocessable_entity }
       end
     end
@@ -95,32 +96,40 @@ class PagesController < ApplicationController
   def destroy
     @page.destroy
     respond_to do |format|
-      format.html { redirect_to pages_url }
       format.json { head :no_content }
     end
   end
 
 
-  protected
-
-  def sortable_model
-    Page
-  end
-
-  def sortable_collection
-    "pages"
-  end
+  #protected
+  #
+  #def sortable_model
+  #  Page
+  #end
+  #
+  #def sortable_collection
+  #  "pages"
+  #end
 
   private
   # Use callbacks to share common setup or constraints between actions.
   def set_page
     @page = Page.find(page_params[:id])
 
-    @owner_check_object = @page
+    #@owner_check_object = @page
   end
 
   # Never trust parameters from the scary internet, only allow the white list through.
   def page_params
     params.permit(:id, :title, :content, :secret_field, :parent_id, :lft, :rgt, :depth, :prev_id, :next_id, :user_id, :state)
   end
+
+  def sort_column
+    Page.column_names.include?(params[:order]) ? params[:order] : "id"
+  end
+
+  def sort_direction
+    %w[asc desc].include?(params[:dir]) ? params[:dir] : "desc"
+  end
+
 end

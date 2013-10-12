@@ -26,6 +26,14 @@ module Marionette
 				file_name.camelize + "App"
 			end
 			
+			def singlularized_lower_module_name
+				file_name.underscore.classify.singularize.downcase
+      end
+
+			def singlularized_capital_module_name
+				file_name.underscore.classify.singularize.capitalize
+      end
+
 			def module_name_underscore
 				file_name.underscore
 			end

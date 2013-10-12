@@ -2,7 +2,7 @@
 ENV["RAILS_ENV"] ||= 'test'
 require File.expand_path("../../config/environment", __FILE__)
 require 'rspec/rails'
-#require 'email_spec'
+require 'email_spec'
 require 'rspec/autorun'
 #require 'sunspot_test/rspec'
 #require 'simplecov'

@@ -15,12 +15,13 @@ Rails4Bp::Application.routes.draw do
   resources :countries
   resources :cities
   resources :profiles
+  resources :pages
 
-  resources :pages do
-    collection do
-      post 'rebuild'
-    end
-  end
+  #resources :pages do
+  #  collection do
+  #    post 'rebuild'
+  #  end
+  #end
 
   resources :categories do
     collection do

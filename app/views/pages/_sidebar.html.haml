@@ -1,7 +1,0 @@
-.well
-  .navbar.navbar-heading
-    .navbar-inner
-      .container
-        %span.brand Reorder pages
-  %ol.sortable_tree{ data: { rebuild_url: rebuild_pages_url(format: :js) } }
-    = sortable_tree @pages

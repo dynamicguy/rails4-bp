@@ -21,7 +21,7 @@ module Marionette
 			def create_module
 				@routable = yes?("Should this module be routable? (y/n)") ## double check to make sure we don't want this module to be routable
 				@module = module_name_class ## should not use this ivar
-				template "module.js.coffee", "#{backbone_path}/apps/#{module_name_underscore}/#{module_name_underscore}_app.js.coffee"
+				template "module.js.coffee.erb", "#{backbone_path}/apps/#{module_name_underscore}/#{module_name_underscore}_app.js.coffee"
 			end
 			
 			def generate_controllers

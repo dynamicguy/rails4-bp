@@ -1,0 +1,29 @@
+<div class="rbp-breadcrumb container-fluid" id="breadcrumb-region"></div>
+
+<div class="container">
+    <div id="sidebar-region" class="col-sm-1 col-md-2"></div>
+
+    <div id="content-block" class="col-sm-11 col-md-10">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title"><%= singlularized_capital_module_name %> details
+                    <span class="pull-right">
+                        <a href='#<%= module_name_underscore %>' class='btn <%= singlularized_lower_module_name %>-edit btn-default btn-xs'>
+                            <span class='glyphicon glyphicon-th-list'></span>
+                        </a>
+                        <a href='#<%= module_name_underscore %>/<%%= @id %>/edit' class='btn <%= singlularized_lower_module_name %>-edit btn-default btn-xs'>
+                            <span class='glyphicon glyphicon-pencil'></span> </a>
+                        <button data-id='<%%= @id %>' class='<%= singlularized_lower_module_name %>-delete btn btn-danger btn-xs'>
+                            <span class='glyphicon glyphicon-trash'></span>
+                        </button>
+                    </span>
+                </h3>
+            </div>
+            <div class="panel-body">
+                <div id="panel-region"></div>
+                <div id="new-region"></div>
+                <div id="<%= singlularized_lower_module_name %>-region"></div>
+            </div>
+        </div>
+    </div>
+</div>
