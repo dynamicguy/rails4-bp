@@ -1,0 +1,38 @@
+@<%= js_application_name %>.module "<%= module_name_class %>.<%= @controller %>", (<%= @controller %>, App, Backbone, Marionette, $, _) ->
+
+    class <%= @controller %>.Layout extends <%= Rails.configuration.marionette[:base_views] ? "App.Views.Layout" : "Marionette.Layout" %>
+        template: "<%= view_template_path %>"
+        regions:
+            panelRegion: "#panel-region"
+            newRegion: "#new-region"
+            listRegion: "#list-region"
+            breadcrumbRegion: "#breadcrumb-region"
+            sidebarRegion: "#sidebar-region"
+
+    class List.Breadcrumb extends App.Views.ItemView
+        template: "<%= module_name_underscore %>/list/_breadcrumb"
+
+    class List.Sidebar extends App.Views.ItemView
+        template: "<%= module_name_underscore %>/list/_sidebar"
+
+    class List.Panel extends App.Views.ItemView
+        template: "<%= module_name_underscore %>/list/_panel"
+        className: 'row'
+        triggers:
+            "click #new-<%= singlularized_lower_module_name %>": "new:<%= singlularized_lower_module_name %>:button:clicked"
+
+    class List.ListView extends App.Views.CompositeView
+        template: "<%= module_name_underscore %>/list/list_<%= singlularized_lower_module_name %>"
+        id: "<%= singlularized_lower_module_name %>List"
+        onRender: ->
+            if @model
+                $('#found_count').text(@model.collection.state.totalRecords)
+
+
+    class List.Add extends App.Views.ItemView
+        template: "<%= module_name_underscore %>/list/new_<%= singlularized_lower_module_name %>"
+        tagName: "li"
+        className: "new-<%= singlularized_lower_module_name %> media list-group-item"
+        triggers:
+            "click": "new:<%= singlularized_lower_module_name %>:clicked"
+

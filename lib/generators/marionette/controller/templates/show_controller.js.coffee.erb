@@ -1,0 +1,41 @@
+@<%= js_application_name %>.module "<%= module_name_class %>.<%= @controller %>", (<%= @controller %>, App, Backbone, Marionette, $, _) ->
+  
+  class <%= @controller %>.Controller extends App.Controllers.Base
+  
+    initialize: (options) ->
+      { <%= singlularized_lower_module_name %>, id } = options
+      <%= singlularized_lower_module_name %> or= App.request "<%= singlularized_lower_module_name %>:entity", id
+
+      App.execute "when:fetched", <%= singlularized_lower_module_name %>, =>
+        @layout = @getLayoutView <%= singlularized_lower_module_name %>
+        @listenTo @layout, "show", =>
+          @breadcrumbRegion()
+          @sidebarRegion()
+          @<%= singlularized_lower_module_name %>Region <%= singlularized_lower_module_name %>
+        @show @layout
+
+    breadcrumbRegion: ->
+      breadcrumbView = @getBreadcrumbView()
+      @layout.breadcrumbRegion.show breadcrumbView
+
+    sidebarRegion: ->
+      sidebarView = @getSidebarView()
+      @layout.sidebarRegion.show sidebarView
+
+    <%= singlularized_lower_module_name %>Region: (<%= singlularized_lower_module_name %>) ->
+      showView = @getShowView <%= singlularized_lower_module_name %>
+      @layout.<%= singlularized_lower_module_name %>Region.show showView
+
+    getLayoutView: (<%= singlularized_lower_module_name %>) ->
+      new Show.Layout
+        model: <%= singlularized_lower_module_name %>
+
+    getShowView: (<%= singlularized_lower_module_name %>) ->
+      new Show.<%= singlularized_capital_module_name %>
+        model: <%= singlularized_lower_module_name %>
+
+    getBreadcrumbView: ->
+      new Show.Breadcrumb
+
+    getSidebarView: ->
+      new Show.Sidebar

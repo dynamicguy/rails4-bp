@@ -1,0 +1,14 @@
+<div id="edit-page">
+    <fieldset>
+        <legend>Details</legend>
+
+        <div class="form-group">
+            <label for="title" class="col-sm-3 control-label">Title</label>
+            <div class="col-sm-9">
+                <input type="text" class="form-control" id="title" name="title" placeholder="Title" value="<%= @title %>">
+            </div>
+        </div>
+
+
+    </fieldset>
+</div>

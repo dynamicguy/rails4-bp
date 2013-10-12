@@ -1,0 +1,22 @@
+@<%= js_application_name %>.module "<%= module_name_class %>.<%= @controller %>", (<%= @controller %>, App, Backbone, Marionette, $, _) ->
+
+	class <%= @controller %>.Layout extends <%= Rails.configuration.marionette[:base_views] ? "App.Views.Layout" : "Marionette.Layout" %>
+		template: "<%= view_template_path %>"
+		events:
+			"click .<%= singlularized_lower_module_name %>-delete": "deleteRow"
+		deleteRow: (e) ->
+			e.preventDefault()
+			Rails4Bp.Notify.confirm(@model)
+		regions:
+			breadcrumbRegion: "#breadcrumb-region"
+			sidebarRegion: "#sidebar-region"
+			formRegion: "#form-region"
+
+	class Edit.Breadcrumb extends App.Views.ItemView
+		template: "<%= module_name_underscore %>/edit/_breadcrumb"
+
+	class Edit.Sidebar extends App.Views.ItemView
+		template: "<%= module_name_underscore %>/edit/_sidebar"
+
+	class Edit.<%= singlularized_capital_module_name %> extends App.Views.ItemView
+		template: "<%= module_name_underscore %>/edit/edit_<%= singlularized_lower_module_name %>"

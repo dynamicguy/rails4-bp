@@ -1,0 +1,29 @@
+Description:
+    Explain the generator
+
+Example:
+    rails generate marionette:module Pages list show edit
+
+    This will create:
+      Should this module be routable? (y/n) y
+      create  app/assets/javascripts/backbone/apps/pages/pages_app.js.coffee
+      generate  marionette:controller
+      create  app/assets/javascripts/backbone/apps/pages/list/list_controller.js.coffee
+      create  app/assets/javascripts/backbone/apps/pages/list/list_view.js.coffee
+      create  app/assets/javascripts/backbone/apps/pages/show/show_controller.js.coffee
+      create  app/assets/javascripts/backbone/apps/pages/show/show_view.js.coffee
+      create  app/assets/javascripts/backbone/apps/pages/edit/edit_controller.js.coffee
+      create  app/assets/javascripts/backbone/apps/pages/edit/edit_view.js.coffee
+      create  app/assets/javascripts/backbone/apps/pages/list/templates/list_layout.jst.eco
+      create  app/assets/javascripts/backbone/apps/pages/list/templates/list_page.jst.eco
+      create  app/assets/javascripts/backbone/apps/pages/list/templates/_breadcrumb.jst.eco
+      create  app/assets/javascripts/backbone/apps/pages/list/templates/_panel.jst.eco
+      create  app/assets/javascripts/backbone/apps/pages/list/templates/_sidebar.jst.eco
+      create  app/assets/javascripts/backbone/apps/pages/show/templates/show_layout.jst.eco
+      create  app/assets/javascripts/backbone/apps/pages/show/templates/show_page.jst.eco
+      create  app/assets/javascripts/backbone/apps/pages/show/templates/_breadcrumb.jst.eco
+      create  app/assets/javascripts/backbone/apps/pages/show/templates/_sidebar.jst.eco
+      create  app/assets/javascripts/backbone/apps/pages/edit/templates/edit_layout.jst.eco
+      create  app/assets/javascripts/backbone/apps/pages/edit/templates/edit_page.jst.eco
+      create  app/assets/javascripts/backbone/apps/pages/edit/templates/_breadcrumb.jst.eco
+      create  app/assets/javascripts/backbone/apps/pages/edit/templates/_sidebar.jst.eco

@@ -1,0 +1,3 @@
+@<%= js_application_name %>.module "<%= module_name_class %>.<%= @controller %>", (<%= @controller %>, App, Backbone, Marionette, $, _) ->
+	class New.<%= singlularized_capital_module_name %> extends App.Views.ItemView
+		template: "<%= module_name_underscore %>/new/new_<%= singlularized_lower_module_name %>"

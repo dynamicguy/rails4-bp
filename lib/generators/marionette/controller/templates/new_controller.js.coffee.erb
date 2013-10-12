@@ -1,0 +1,17 @@
+@<%= js_application_name %>.module "<%= module_name_class %>.<%= @controller %>", (<%= @controller %>, App, Backbone, Marionette, $, _) ->
+
+  class <%= @controller %>.Controller extends App.Controllers.Base
+
+		initialize: ->
+			<%= singlularized_lower_module_name %> = App.request "new:<%= singlularized_lower_module_name %>:entity"
+			@listenTo <%= singlularized_lower_module_name %>, "created", ->
+				App.vent.trigger "<%= singlularized_lower_module_name %>:created", <%= singlularized_lower_module_name %>
+			newView = @getNewView <%= singlularized_lower_module_name %>
+			formView = App.request "form:wrapper", newView
+			@listenTo newView, "form:cancel", =>
+				@region.close()
+			@show formView
+
+		getNewView: (<%= singlularized_lower_module_name %>) ->
+			new New.<%= singlularized_capital_module_name %>
+				model: <%= singlularized_lower_module_name %>
