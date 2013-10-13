@@ -1,0 +1,9 @@
+<div id="company-details">
+    <table class="table table-bordered table-striped">
+          <tbody>
+            <tr><th>Name</th><td><%= @name %></td></tr>
+            <tr><th>Website</th><td><%= @website %></td></tr>
+            <tr><th>Phone</th><td><%= @phone %></td></tr>
+          </tbody>
+    </table>
+</div>

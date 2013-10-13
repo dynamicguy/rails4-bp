@@ -128,7 +128,8 @@ gem 'mobile-fu'
 
 
 gem "rabl"
-gem "oj"
+#gem "oj"
+gem 'yajl-ruby', :require => "yajl"
 gem "gon"
 #gem "rabl-rails"
 gem "js-routes"

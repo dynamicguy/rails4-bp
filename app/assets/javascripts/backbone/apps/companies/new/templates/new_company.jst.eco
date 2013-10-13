@@ -1,0 +1,10 @@
+<div id="new-company" class="">
+    <div class="row form-group">
+        <label for="inputName" class="col-md-3 control-label">Company name</label>
+
+        <div class="col-md-9">
+            <input type="text" name="name" class="form-control col-md-6" id="inputName" placeholder="company name">
+        </div>
+    </div>
+</div>
+

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20130928161326) do
+ActiveRecord::Schema.define(version: 20131013213707) do
 
   create_table "articles", force: true do |t|
     t.string   "name"
@@ -47,6 +47,20 @@ ActiveRecord::Schema.define(version: 20130928161326) do
   end
 
   add_index "cities", ["countrycode"], name: "countrycode", using: :btree
+
+  create_table "companies", force: true do |t|
+    t.string   "name"
+    t.integer  "status",       limit: 1, default: 0
+    t.integer  "hidden",       limit: 1, default: 0
+    t.string   "created_uid"
+    t.string   "modified_uid"
+    t.integer  "global_admin", limit: 1, default: 0
+    t.string   "website"
+    t.string   "phone"
+    t.integer  "ssl",          limit: 1, default: 0
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "countries", primary_key: "code", force: true do |t|
     t.string  "name",                                                     null: false
@@ -89,6 +103,19 @@ ActiveRecord::Schema.define(version: 20130928161326) do
     t.datetime "updated_at"
   end
 
+  create_table "folders", force: true do |t|
+    t.string   "name"
+    t.integer  "parent_id"
+    t.integer  "project_id"
+    t.integer  "import_id"
+    t.boolean  "deleted",    default: false
+    t.boolean  "hidden",     default: false
+    t.boolean  "toc_open",   default: false
+    t.string   "link_url"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "pages", force: true do |t|
     t.string   "title"
     t.text     "content"
@@ -124,6 +151,44 @@ ActiveRecord::Schema.define(version: 20130928161326) do
 
   add_index "profiles", ["full_name"], name: "index_profiles_on_full_name", using: :btree
   add_index "profiles", ["user_id"], name: "index_profiles_on_user_id", using: :btree
+
+  create_table "projects", force: true do |t|
+    t.string   "name"
+    t.string   "site_address"
+    t.integer  "topic_id"
+    t.string   "created_uid"
+    t.string   "modified_uid"
+    t.boolean  "master",            default: false
+    t.string   "domain"
+    t.boolean  "private",           default: false
+    t.boolean  "keyword_index",     default: false
+    t.string   "theme"
+    t.string   "token"
+    t.string   "default_view",      default: "tab"
+    t.boolean  "user_view",         default: false
+    t.boolean  "show_folder_icon",  default: false
+    t.boolean  "show_page_icon",    default: false
+    t.string   "toc_font_size",     default: "11px"
+    t.string   "toc_line_height",   default: "18px"
+    t.integer  "primary_site"
+    t.string   "lang",              default: "en"
+    t.boolean  "primary_lang",      default: true
+    t.boolean  "link_lang_sites",   default: false
+    t.boolean  "ckfinder_delete",   default: false
+    t.string   "favicon"
+    t.boolean  "toc_visible",       default: true
+    t.boolean  "filter_visible",    default: true
+    t.integer  "toc_width"
+    t.string   "toc_bg_color"
+    t.boolean  "toc_bold_folder",   default: false
+    t.string   "toc_font_family"
+    t.boolean  "enable_mobile",     default: false
+    t.string   "phone_home"
+    t.boolean  "tablet_home",       default: false
+    t.boolean  "enable_mobile_css", default: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "rails_admin_histories", force: true do |t|
     t.text     "message"

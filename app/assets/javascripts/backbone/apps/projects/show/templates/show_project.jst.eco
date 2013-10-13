@@ -1,0 +1,9 @@
+<div id="project-details">
+    <table class="table table-bordered table-striped">
+          <tbody>
+            <tr><th>name</th><td><%= @name %></td></tr>
+            <tr><th>site address</th><td><%= @site_address %></td></tr>
+            <tr><th>phone_home</th><td><%= @phone_home %></td></tr>
+          </tbody>
+    </table>
+</div>

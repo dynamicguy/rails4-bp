@@ -13,58 +13,64 @@
         <ul class="nav navbar-nav pull-right" role="menu">
             <!--<li><a href="#countries"><i class="icon-globe"></i> Countries</a></li>-->
             <li>
-                <a href="#pages">
-                    <span class="icon-stack">
-                      <i class="icon-check-empty icon-stack-base"></i>
-                      <i class="icon-map-marker icon-light"></i>
-                    </span>
-                    Pages
+                <a href="#companies">
+                    <i class="icon-briefcase icon-light"></i>
+                    Companies
                 </a>
             </li>
             <li>
-                <a href="#cities">
-                    <span class="icon-stack">
-                      <i class="icon-check-empty icon-stack-base"></i>
-                      <i class="icon-location-arrow icon-light"></i>
-                    </span>
-                    Cities
+                <a href="#projects">
+                    <i class="icon-desktop icon-light"></i>
+                    Projects
                 </a>
             </li>
-            <!--<li><a href="#categories"><i class="icon-tag"></i> Categories</a></li>-->
-            <!--<li><a href="#pages"><i class="icon-list"></i> Pages</a></li>-->
             <li>
-                <a href="#crews">
-                    <span class="icon-stack">
-                      <i class="icon-check-empty icon-stack-base"></i>
-                      <i class="icon-group icon-light"></i>
-                    </span>
-                    Crews
+                <a href="#folders">
+                    <i class="icon-folder-open icon-light"></i>
+                    Folders
                 </a>
             </li>
+            <!--<li>-->
+                <!--<a href="#pages">-->
+                    <!--<i class="icon-map-marker icon-light"></i>-->
+                    <!--Pages-->
+                <!--</a>-->
+            <!--</li>-->
+            <!--<li>-->
+                <!--<a href="#cities">-->
+                    <!--<i class="icon-location-arrow icon-light"></i>-->
+                    <!--Cities-->
+                <!--</a>-->
+            <!--</li>-->
+            <!--&lt;!&ndash;<li><a href="#categories"><i class="icon-tag"></i> Categories</a></li>&ndash;&gt;-->
+            <!--&lt;!&ndash;<li><a href="#pages"><i class="icon-list"></i> Pages</a></li>&ndash;&gt;-->
+            <!--<li>-->
+                <!--<a href="#crews">-->
+                    <!--<i class="icon-group icon-light"></i>-->
+                    <!--Crews-->
+                <!--</a>-->
+            <!--</li>-->
             <!--<li><a href="#users"><i class="icon-user"></i> Users</a></li>-->
             <% if gon.user: %>
             <!--<li class="dropdown">-->
-                <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">-->
-                    <!--<span class="icon-stack">-->
-                      <!--<i class="icon-check-empty icon-stack-base"></i>-->
-                      <!--<i class="icon-cogs icon-light"></i>-->
-                    <!--</span>-->
-                    <!--Settings-->
-                    <!--<span class="caret"></span>-->
-                <!--</a>-->
-                <!--<ul class="dropdown-menu" role="menu">-->
-                    <!--<li><a href="javascript:;">Account Settings</a></li>-->
-                    <!--<li><a href="javascript:;">Privacy Settings</a></li>-->
-                    <!--<li class="divider"></li>-->
-                    <!--<li><a href="javascript:;">Help</a></li>-->
-                <!--</ul>-->
+            <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">-->
+            <!--<span class="icon-stack">-->
+            <!---->
+            <!--<i class="icon-cogs icon-light"></i>-->
+            <!--</span>-->
+            <!--Settings-->
+            <!--<span class="caret"></span>-->
+            <!--</a>-->
+            <!--<ul class="dropdown-menu" role="menu">-->
+            <!--<li><a href="javascript:;">Account Settings</a></li>-->
+            <!--<li><a href="javascript:;">Privacy Settings</a></li>-->
+            <!--<li class="divider"></li>-->
+            <!--<li><a href="javascript:;">Help</a></li>-->
+            <!--</ul>-->
             <!--</li>-->
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                    <span class="icon-stack">
-                      <i class="icon-check-empty icon-stack-base"></i>
-                      <i class="icon-user icon-light"></i>
-                    </span>
+                    <i class="icon-user icon-light"></i>
                     <%= gon.user.email %>
                     <span class="caret"></span>
                 </a>

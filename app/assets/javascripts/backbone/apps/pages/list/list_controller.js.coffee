@@ -54,6 +54,19 @@
       columns = [
         name: "title"
         cell: "string"
+        editable: false
+      ,
+        name: "state"
+        cell: "string"
+        editable: false
+      ,
+        name: "updated_at"
+        label: 'Updated'
+        cell: Backgrid.Extension.MomentCell.extend(
+          displayLang: "en-gb"
+          displayFormat: "YYYY-MM-DD HH:mm"
+        )
+        editable: false
       ,
         name: "id"
         label: "Actions"
@@ -72,6 +85,7 @@
         $("thead tr").addClass("warning")
 
         class Paginator extends Backgrid.Extension.Paginator
+          template: _.template('<ul class="pagination"><% _.each(handles, function (handle) { %><li <% if (handle.className) { %>class="<%= handle.className %>"<% } %>><a href="#" <% if (handle.title) {%> title="<%= handle.title %>"<% } %>><%= handle.label %></a></li><% }); %></ul>')
           columns: columns
           collection: listView.collection
           className: 'backgrid-paginator'
@@ -90,7 +104,7 @@
 
         filter = new Filter(
           collection: listView.collection
-          fields: ["title"]
+          fields: ["title", "state"]
         )
         $("#filters").append filter.render().$el
         started_at = Date.now()

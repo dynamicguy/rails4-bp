@@ -1,0 +1,9 @@
+<div id="folder-details">
+    <table class="table table-bordered table-striped">
+          <tbody>
+            <tr><th>name</th><td><%= @name %></td></tr>
+            <tr><th>link url</th><td><%= @link_url %></td></tr>
+            <tr><th>updated</th><td><%= @updated_at %></td></tr>
+          </tbody>
+    </table>
+</div>

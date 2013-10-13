@@ -30,6 +30,9 @@
 #= require backgrid/lib/extensions/paginator/backgrid-paginator
 #= require backgrid/assets/js/lunr
 #= require backgrid/lib/extensions/filter/backgrid-filter
+#= require backgrid/assets/js/moment/moment
+#= require backgrid/lib/extensions/moment-cell/backgrid-moment-cell
+#= require backgrid/assets/js/moment/lang/en-gb
 #= require js-routes
 #= require_tree ./backbone/config
 #= require ./backbone/app

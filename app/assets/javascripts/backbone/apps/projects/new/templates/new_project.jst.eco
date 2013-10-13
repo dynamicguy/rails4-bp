@@ -1,0 +1,10 @@
+<div id="new-project" class="">
+    <div class="row form-group">
+        <label for="inputTitle" class="col-md-3 control-label">Project Title</label>
+
+        <div class="col-md-9">
+            <input type="text" name="title" class="form-control col-md-6" id="inputTitle" placeholder="project title">
+        </div>
+    </div>
+</div>
+

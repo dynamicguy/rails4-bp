@@ -3,9 +3,9 @@
         <legend>Details</legend>
 
         <div class="form-group">
-            <label for="title" class="col-sm-3 control-label">Title</label>
+            <label for="name" class="col-sm-3 control-label">name</label>
             <div class="col-sm-9">
-                <input type="text" class="form-control" id="title" name="title" placeholder="Title" value="<%%= @title %>">
+                <input type="text" class="form-control" id="name" name="name" placeholder="name" value="<%%= @name %>">
             </div>
         </div>
 

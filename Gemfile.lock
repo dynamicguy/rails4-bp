@@ -430,7 +430,6 @@ GEM
       mixlib-shellout
       systemu
       yajl-ruby
-    oj (2.1.4)
     omniauth (1.1.4)
       hashie (>= 1.2, < 3)
       rack
@@ -708,7 +707,6 @@ DEPENDENCIES
   mobile-fu
   mysql2 (= 0.3.13)
   nokogiri (= 1.6.0)
-  oj
   omniauth (= 1.1.4)
   omniauth-facebook (= 1.4.1)
   omniauth-tumblr (= 1.1)
@@ -763,3 +761,4 @@ DEPENDENCIES
   unicorn (= 4.6.3)
   webmock
   will_paginate (~> 3.0.5)
+  yajl-ruby
