@@ -1,8 +1,10 @@
 <div id="page-details">
-    <table class="table table-bordered table-striped">
+    <table class="table table-bordered table-striped table-hover">
           <tbody>
             <tr><th>Title</th><td><%= @title %></td></tr>
             <tr><th>Content</th><td><%= @content %></td></tr>
+            <tr><th>Created</th><td><%= @created_at %></td></tr>
+            <tr><th>Updated</th><td><%= @updated_at %></td></tr>
           </tbody>
     </table>
 </div>

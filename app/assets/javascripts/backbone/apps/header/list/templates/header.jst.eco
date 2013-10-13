@@ -11,42 +11,72 @@
 
     <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
         <ul class="nav navbar-nav pull-right" role="menu">
-            <!--<li><a href="#countries"><i class="glyphicon glyphicon-globe"></i> Countries</a></li>-->
-            <li><a href="#pages"><i class="glyphicon glyphicon-cloud"></i> Pages</a></li>
-            <li><a href="#cities"><i class="glyphicon glyphicon-cloud"></i> Cities</a></li>
-            <!--<li><a href="#categories"><i class="glyphicon glyphicon-tag"></i> Categories</a></li>-->
-            <!--<li><a href="#pages"><i class="glyphicon glyphicon-list"></i> Pages</a></li>-->
-            <li><a href="#crews"><i class="glyphicon glyphicon-eye-open"></i> Crews</a></li>
-            <!--<li><a href="#users"><i class="glyphicon glyphicon-user"></i> Users</a></li>-->
+            <!--<li><a href="#countries"><i class="icon-globe"></i> Countries</a></li>-->
+            <li>
+                <a href="#pages">
+                    <span class="icon-stack">
+                      <i class="icon-check-empty icon-stack-base"></i>
+                      <i class="icon-map-marker icon-light"></i>
+                    </span>
+                    Pages
+                </a>
+            </li>
+            <li>
+                <a href="#cities">
+                    <span class="icon-stack">
+                      <i class="icon-check-empty icon-stack-base"></i>
+                      <i class="icon-location-arrow icon-light"></i>
+                    </span>
+                    Cities
+                </a>
+            </li>
+            <!--<li><a href="#categories"><i class="icon-tag"></i> Categories</a></li>-->
+            <!--<li><a href="#pages"><i class="icon-list"></i> Pages</a></li>-->
+            <li>
+                <a href="#crews">
+                    <span class="icon-stack">
+                      <i class="icon-check-empty icon-stack-base"></i>
+                      <i class="icon-group icon-light"></i>
+                    </span>
+                    Crews
+                </a>
+            </li>
+            <!--<li><a href="#users"><i class="icon-user"></i> Users</a></li>-->
             <% if gon.user: %>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <i class="glyphicon glyphicon-cog"></i>
-                        Settings
-                        <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="javascript:;">Account Settings</a></li>
-                        <li><a href="javascript:;">Privacy Settings</a></li>
-                        <li class="divider"></li>
-                        <li><a href="javascript:;">Help</a></li>
-                    </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <i class="glyphicon  glyphicon-user"></i>
-                        <%= gon.user.email %>
-                        <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a href="javascript:;">My Profile</a></li>
-                        <li><a href="javascript:;">My Groups</a></li>
-                        <li class="divider"></li>
-                        <li><a href="<%= Routes.destroy_user_session_path() %>" data-method="delete">Logout</a></li>
-                    </ul>
-                </li>
+            <!--<li class="dropdown">-->
+                <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">-->
+                    <!--<span class="icon-stack">-->
+                      <!--<i class="icon-check-empty icon-stack-base"></i>-->
+                      <!--<i class="icon-cogs icon-light"></i>-->
+                    <!--</span>-->
+                    <!--Settings-->
+                    <!--<span class="caret"></span>-->
+                <!--</a>-->
+                <!--<ul class="dropdown-menu" role="menu">-->
+                    <!--<li><a href="javascript:;">Account Settings</a></li>-->
+                    <!--<li><a href="javascript:;">Privacy Settings</a></li>-->
+                    <!--<li class="divider"></li>-->
+                    <!--<li><a href="javascript:;">Help</a></li>-->
+                <!--</ul>-->
+            <!--</li>-->
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="icon-stack">
+                      <i class="icon-check-empty icon-stack-base"></i>
+                      <i class="icon-user icon-light"></i>
+                    </span>
+                    <%= gon.user.email %>
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu" role="menu">
+                    <li><a href="javascript:;">My Profile</a></li>
+                    <li><a href="javascript:;">My Groups</a></li>
+                    <li class="divider"></li>
+                    <li><a href="<%= Routes.destroy_user_session_path() %>" data-method="delete">Logout</a></li>
+                </ul>
+            </li>
             <% else: %>
-            <li><a href="<%= Routes.new_user_session_path() %>"><i class="glyphicon glyphicon-user"></i>Login</a></li>
+            <li><a href="<%= Routes.new_user_session_path() %>"><i class="icon-user"></i>Login</a></li>
             <% end %>
         </ul>
     </nav>

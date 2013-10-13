@@ -2,8 +2,8 @@
     <div class="col-sm-8">
         <ol class="breadcrumb">
             <li><a href="#">Home</a></li>
-            <li><a href="#crews">Crew</a></li>
-            <li class="active">List</li>
+            <li><a href="#pages">PagesApp</a></li>
+            <li class="active">Edit</li>
         </ol>
     </div>
 

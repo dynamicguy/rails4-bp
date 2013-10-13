@@ -42,4 +42,4 @@
       new Edit.Breadcrumb
 
     getSidebarView: ->
-      new Edit.Sidebar
+      new Edit.Sidebar    

@@ -18,6 +18,7 @@ class Page < ActiveRecord::Base
     string :title
     string :state
     text :content, :more_like_this => true
+    time :updated_at
   end
 
 

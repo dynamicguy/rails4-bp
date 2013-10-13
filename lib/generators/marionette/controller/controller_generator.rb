@@ -47,8 +47,9 @@ module Marionette
           else
             template "#{action}_layout.jst.eco", "#{backbone_path}/apps/#{module_name_underscore}/#{action}/templates/#{action}_layout.jst.eco"
             template "#{action}.jst.eco", "#{backbone_path}/apps/#{module_name_underscore}/#{action}/templates/#{action}_#{singlularized_lower_module_name}.jst.eco"
-            template "_breadcrumb.jst.eco", "#{backbone_path}/apps/#{module_name_underscore}/#{action}/templates/_breadcrumb.jst.eco"
+            template "#{action}_breadcrumb.jst.eco", "#{backbone_path}/apps/#{module_name_underscore}/#{action}/templates/_breadcrumb.jst.eco"
             template "_panel.jst.eco", "#{backbone_path}/apps/#{module_name_underscore}/#{action}/templates/_panel.jst.eco" if action == 'list'
+            template "blank.jst.eco", "#{backbone_path}/apps/#{module_name_underscore}/#{action}/templates/new_#{singlularized_lower_module_name}.jst.eco" if action == 'list'
             template "_sidebar.jst.eco", "#{backbone_path}/apps/#{module_name_underscore}/#{action}/templates/_sidebar.jst.eco"
           end
         end

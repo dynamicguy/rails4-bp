@@ -10,7 +10,7 @@
 
 	API =
         <% actions.each do |action| -%>
-            <% if ("list" != action) %>
+            <% if "list" != action && "new" != action %>
 		<%= action %>: (id, <%= singlularized_lower_module_name %>) ->
 			new <%= module_name_class %>.<%= action.capitalize %>.Controller
 				id: id
@@ -27,7 +27,7 @@
 
 
 	App.commands.setHandler "new:<%= singlularized_lower_module_name %>", (region) ->
-		API.new<%= module_name_class %> region
+		API.new<%= singlularized_capital_module_name %> region
 
 	App.vent.on "<%= singlularized_lower_module_name %>:clicked <%= singlularized_lower_module_name %>:created", (<%= singlularized_lower_module_name %>) ->
 		App.navigate Routes.edit_<%= singlularized_lower_module_name %>_path(<%= singlularized_lower_module_name %>.id)

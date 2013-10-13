@@ -40,7 +40,8 @@ gem 'opengraph_parser', '0.2.3'
 group :assets do
   gem "eco"
   # Icons
-  gem 'entypo-rails'
+  gem "font-awesome-rails"
+  #gem 'entypo-rails'
 
   # CSS
   # Use SCSS for stylesheets

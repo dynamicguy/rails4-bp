@@ -1,5 +1,7 @@
 @Rails4Bp.module "PagesApp.Show", (Show, App, Backbone, Marionette, $, _) ->
+  
   class Show.Controller extends App.Controllers.Base
+  
     initialize: (options) ->
       { page, id } = options
       page or= App.request "page:entity", id
