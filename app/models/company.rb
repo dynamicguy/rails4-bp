@@ -1,15 +1,17 @@
 class Company < ActiveRecord::Base
+  self.primary_key = 'comp_id'
+  self.table_name = 'company'
+
   resourcify
   self.per_page = 20
-  validates :name, presence: true
+  validates :comp_name, presence: true
 
   searchable :auto_index => true, :auto_remove => false do
-    integer :id
-    text :name, :more_like_this => true
-    string :name
+    integer :comp_id
+    text :comp_name, :more_like_this => true
+    string :comp_name
     string :website
     string :phone
-    time :updated_at
   end
 
 end

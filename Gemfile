@@ -1,8 +1,17 @@
 source 'http://rubygems.org'
 
-gem 'rails', '4.0.0'
-gem 'arel', github: 'rails/arel'
-gem 'activerecord-deprecated_finders', github: 'rails/activerecord-deprecated_finders'
+gem 'rails', :git => 'git://github.com/rails/rails.git', :branch => '4-0-stable'
+gem 'redis-rails', :git => 'git://github.com/SamSaffron/redis-store.git'
+gem 'rails-observers'
+gem 'actionpack-action_caching'
+
+#gem 'arel', github: 'rails/arel'
+#gem 'activerecord-deprecated_finders', github: 'rails/activerecord-deprecated_finders'
+
+gem 'seed-fu', github: 'mbleigh/seed-fu'
+
+gem 'hiredis'
+gem 'redis', :require => ["redis", "redis/connection/hiredis"]
 
 ENV['DB'] ||= 'mysql'
 
@@ -12,10 +21,10 @@ gem 'pg', '0.16.0' if ENV['DB'] == 'all' || ENV['DB'] == 'postgres'
 gem 'state_machine', '~> 1.2.0'
 
 # File uploading
-gem 'carrierwave', '0.9.0'
-gem 'fog',         '1.14.0'
-gem 'mini_magick', '3.6.0'
-gem 'remotipart',  '1.2.1'
+gem 'carrierwave'
+gem 'fog'
+gem 'mini_magick'
+gem 'remotipart'
 
 # Localization
 gem 'http_accept_language'
@@ -23,15 +32,16 @@ gem "i18n-inflector-rails", :git => 'git@github.com:dynamicguy/i18n-inflector-ra
 gem 'rails-i18n', '~> 4.0.0.pre'
 
 # Mail
-gem 'markerb',             '1.0.1'
+gem 'markerb', '1.0.1'
 gem 'messagebus_ruby_api', '1.0.3'
 
 # Parsing
-gem 'nokogiri',         '1.6.0'
-gem 'rails_autolink',   '1.1.0'
-gem 'redcarpet',        '3.0.0'
-gem 'roxml',            '3.1.6'
-gem 'ruby-oembed',      '0.8.8'
+gem 'multi_json'
+gem 'nokogiri', '1.6.0'
+gem 'rails_autolink', '1.1.0'
+gem 'redcarpet', '3.0.0'
+gem 'roxml', '3.1.6'
+gem 'ruby-oembed', '0.8.8'
 gem 'opengraph_parser', '0.2.3'
 
 
@@ -53,19 +63,19 @@ group :assets do
   gem "compass-rails", "~> 2.0.alpha.0"
 
   # JavaScript
-  gem 'handlebars_assets', '>= 0.12.0'
+  #gem 'handlebars_assets', '>= 0.12.0'
   gem 'jquery-rails', '~> 3.0'
 
   # Windows and OSX have an execjs compatible runtime built-in, Linux users should
   # install Node.js or use 'therubyracer'.
   #
-  # See https://github.com/sstephenson/execjs#readme for more supported runtimes
+  # See git://github.com/sstephenson/execjs#readme for more supported runtimes
 
   gem 'therubyracer', :platform => :ruby
 
 end
 
-# Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
+# Build JSON APIs with ease. Read more: git://github.com/rails/jbuilder
 #gem 'jbuilder', '~> 1.2'
 
 # To use ActiveModel has_secure_password
@@ -73,12 +83,34 @@ end
 
 # Background processing
 gem 'sidekiq'
+gem 'sidekiq-failures'
 gem 'sinatra'
 gem 'slim'
 
 # Use unicorn as the app server
-gem 'unicorn', '4.6.3', :require => false
+#gem 'unicorn', '4.6.3', :require => false
 #gem 'puma'
+
+# this is an optional gem, it provides a high performance replacement
+# to String#blank? a method that is called quite frequently in current
+# ActiveRecord, this may change in the future
+gem 'fast_blank' #, github: "SamSaffron/fast_blank"
+
+# this provides a very efficient lru cache
+gem 'lru_redux'
+
+# IMPORTANT: mini profiler monkey patches, so it better be required last
+#  If you want to amend mini profiler to do the monkey patches in the railstie
+#  we are open to it. by deferring require to the initializer we can configure disourse installs without it
+
+gem 'flamegraph', git: 'git://github.com/SamSaffron/flamegraph.git', require: false
+gem 'rack-mini-profiler', git: 'git://github.com/MiniProfiler/rack-mini-profiler.git', require: false
+
+# used for caching, optional
+gem 'rack-cors', require: false
+gem 'unicorn', require: false
+gem 'puma', require: false
+
 
 # Configurations
 gem 'configurate'
@@ -87,20 +119,23 @@ gem 'configurate'
 #gem 'friendly_id', :git => "git://github.com/FriendlyId/friendly_id.git" #, :branch => 'rails4'
 gem "friendly_id" # Note: You MUST use 5.0.0 or greater for Rails 4.0+
 
-gem 'rack-cors', '0.2.8', :require => 'rack/cors'
-
 # Authentication
 gem "devise", github: "plataformatec/devise"
 gem 'cancan'
 gem 'rolify'
 
 # Services
-gem 'omniauth', '1.1.4'
-gem 'omniauth-facebook', '1.4.1'
-gem 'omniauth-tumblr', '1.1'
-gem 'omniauth-twitter', '1.0.0'
-gem 'twitter', '4.8.1'
-gem 'omniauth-wordpress', '0.2.0'
+gem 'omniauth'
+gem 'omniauth-openid'
+gem 'openid-redis-store'
+gem 'omniauth-facebook'
+gem 'omniauth-twitter'
+gem 'omniauth-github'
+gem 'omniauth-oauth2', require: false
+gem 'omniauth-browserid', git: 'git://github.com/callahad/omniauth-browserid.git', branch: 'observer_api'
+gem 'omniauth-cas'
+gem 'omniauth-tumblr'
+gem 'omniauth-wordpress'
 
 # Tags
 gem 'acts-as-taggable-on', '2.4.1'
@@ -149,7 +184,7 @@ group :production do
   gem 'rack-piwik', '0.2.2', :require => 'rack/piwik'
 
   # Click-jacking protection
-  gem 'rack-protection', '1.2'
+  gem 'rack-protection', '1.5.0'
 
   # Process management
   gem 'foreman', '0.62'
@@ -187,8 +222,8 @@ group :development do
 
   # Guard
   gem 'guard-rspec'
-  gem 'spork', '> 0.9.0.rc'
-  gem 'guard-spork'
+  #gem 'spork', '> 0.9.0.rc'
+  #gem 'guard-spork'
   gem 'guard-livereload', github: "guard/guard-livereload"
   gem 'guard-rails'
 
@@ -200,7 +235,7 @@ end
 
 # solr and friends
 #gem "ransack", :git => "git://github.com/ernie/ransack.git"
-gem 'sunspot_rails'#, :git => 'git://github.com/sunspot/sunspot'
+gem 'sunspot_rails' #, :git => 'git://github.com/sunspot/sunspot'
 gem 'sunspot_solr'
 
 group :test do
@@ -220,7 +255,7 @@ group :test do
   # General helpers
 
   gem 'factory_girl_rails'
-  gem 'timecop'
+  #gem 'timecop'
   gem 'webmock', :require => false
 
   gem "sunspot_test"
@@ -229,15 +264,12 @@ end
 
 group :development, :test do
   gem "awesome_print"
-  # RSpec (unit tests, some integration tests)
-  gem "rspec-rails"
-  gem 'thin'
 
   # Generate Fake data
   gem 'ffaker'
 
-# Seed data
-  gem 'seed-fu', github: 'mbleigh/seed-fu'
+  #Seed data
+  #gem 'seed-fu', github: 'mbleigh/seed-fu'
 
   # Cucumber (integration tests)
   gem 'cucumber-rails', :require => false
@@ -253,6 +285,31 @@ group :development, :test do
   gem 'sinon-rails', '1.7.3'
 
   #gem "rails_best_practices"
+
+  gem 'mock_redis'
+  gem 'listen', require: false
+  gem 'certified', require: false
+  gem 'fabrication', github: 'paulelliott/fabrication', require: false
+
+  gem 'qunit-rails'
+  gem 'mocha', require: false
+  gem 'rspec-rails', require: false
+  gem 'shoulda', require: false
+  gem 'simplecov', require: false
+  gem 'timecop'
+  gem 'rspec-given'
+  gem 'pry-rails'
+  gem 'pry-nav'
+  gem 'spork-rails', :github => 'sporkrb/spork-rails'
+
+end
+
+# perftools only works on 1.9 atm
+group :profile do
+  # travis refuses to install this, instead of fuffing, just avoid it for now
+  #
+  # if you need to profile, uncomment out this line
+  # gem 'rack-perftools_profiler', require: 'rack/perftools_profiler', platform: :mri_19
 end
 
 #gem 'active_model_serializers'

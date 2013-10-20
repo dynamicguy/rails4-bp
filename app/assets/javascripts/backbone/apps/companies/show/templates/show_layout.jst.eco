@@ -11,9 +11,9 @@
                         <a href='#companies' class='btn company-edit btn-default btn-xs'>
                             <span class='glyphicon glyphicon-th-list'></span>
                         </a>
-                        <a href='#companies/<%= @id %>/edit' class='btn company-edit btn-default btn-xs'>
+                        <a href='#companies/<%= @comp_id %>/edit' class='btn company-edit btn-default btn-xs'>
                             <span class='glyphicon glyphicon-pencil'></span> </a>
-                        <button data-id='<%= @id %>' class='company-delete btn btn-danger btn-xs'>
+                        <button data-id='<%= @comp_id %>' class='company-delete btn btn-danger btn-xs'>
                             <span class='glyphicon glyphicon-trash'></span>
                         </button>
                     </span>

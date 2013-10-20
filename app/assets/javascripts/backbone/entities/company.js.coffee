@@ -1,5 +1,6 @@
 @Rails4Bp.module "Entities", (Entities, App, Backbone, Marionette, $, _) ->
   class Entities.Company extends Entities.Model
+    idAttribute: 'comp_id'
     initialize: ->
       @url = (if @id then "/companies/" + @id else "/companies")
 
@@ -7,6 +8,7 @@
     model: Entities.Company
     url: ->
       Routes.companies_path()
+
     queryParams:
       sortKey: "order"
       order: "dir"
@@ -27,7 +29,7 @@
 
     getCompany: (id) ->
       company = new Entities.Company
-        id: id
+        comp_id: id
       company.fetch()
       company
 

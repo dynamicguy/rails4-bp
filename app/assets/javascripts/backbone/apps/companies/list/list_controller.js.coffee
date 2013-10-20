@@ -1,5 +1,4 @@
 @Rails4Bp.module "CompaniesApp.List", (List, App, Backbone, Marionette, $, _) ->
-
   class List.Controller extends App.Controllers.Base
 
     initialize: ->
@@ -52,7 +51,8 @@
       )
 
       columns = [
-        name: "name"
+        name: "comp_name"
+        label: "company name"
         cell: "string"
         editable: false
       ,
@@ -64,7 +64,7 @@
         cell: "string"
         editable: false
       ,
-        name: "id"
+        name: "comp_id"
         label: "Actions"
         sortable: false
         editable: false

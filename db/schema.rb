@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131013213707) do
+ActiveRecord::Schema.define(version: 20131020184242) do
 
   create_table "articles", force: true do |t|
     t.string   "name"
@@ -48,21 +48,22 @@ ActiveRecord::Schema.define(version: 20131013213707) do
 
   add_index "cities", ["countrycode"], name: "countrycode", using: :btree
 
-  create_table "companies", force: true do |t|
-    t.string   "name"
-    t.integer  "status",       limit: 1, default: 0
-    t.integer  "hidden",       limit: 1, default: 0
-    t.string   "created_uid"
-    t.string   "modified_uid"
-    t.integer  "global_admin", limit: 1, default: 0
-    t.string   "website"
-    t.string   "phone"
-    t.integer  "ssl",          limit: 1, default: 0
-    t.datetime "created_at"
-    t.datetime "updated_at"
+  create_table "company", primary_key: "comp_id", force: true do |t|
+    t.string  "comp_name"
+    t.integer "status"
+    t.boolean "hidden"
+    t.integer "created_time"
+    t.integer "modified_time"
+    t.string  "created_uid"
+    t.string  "modified_uid"
+    t.integer "global_admin"
+    t.string  "website"
+    t.string  "phone"
+    t.integer "ssl"
   end
 
-  create_table "countries", primary_key: "code", force: true do |t|
+  create_table "countries", id: false, force: true do |t|
+    t.string  "code"
     t.string  "name",                                                     null: false
     t.string  "continent",                               default: "Asia", null: false
     t.string  "region",                                  default: "",     null: false
@@ -78,8 +79,6 @@ ActiveRecord::Schema.define(version: 20131013213707) do
     t.integer "capital",                                 default: 0
     t.string  "code2",                                   default: "",     null: false
   end
-
-  add_index "countries", ["code"], name: "code", unique: true, using: :btree
 
   create_table "countrylanguages", id: false, force: true do |t|
     t.string  "countrycode",                          default: "",  null: false
@@ -99,19 +98,6 @@ ActiveRecord::Schema.define(version: 20131013213707) do
     t.string   "species"
     t.string   "origin"
     t.string   "quote"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "folders", force: true do |t|
-    t.string   "name"
-    t.integer  "parent_id"
-    t.integer  "project_id"
-    t.integer  "import_id"
-    t.boolean  "deleted",    default: false
-    t.boolean  "hidden",     default: false
-    t.boolean  "toc_open",   default: false
-    t.string   "link_url"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -213,6 +199,14 @@ ActiveRecord::Schema.define(version: 20131013213707) do
 
   add_index "roles", ["name", "resource_type", "resource_id"], name: "index_roles_on_name_and_resource_type_and_resource_id", using: :btree
   add_index "roles", ["name"], name: "index_roles_on_name", using: :btree
+
+  create_table "site_settings", force: true do |t|
+    t.string   "name"
+    t.integer  "data_type"
+    t.text     "value"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "taggings", force: true do |t|
     t.integer  "tag_id"

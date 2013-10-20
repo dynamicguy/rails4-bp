@@ -1,10 +1,7 @@
 require File.expand_path('../boot', __FILE__)
-
 require 'rails/all'
+require 'redis-store' # HACK
 
-# If you precompile assets before deploying to production, use this line
-#Bundler.require *Rails.groups(:assets => %w(development test))
-# If you want your assets lazily compiled in production, use this line
 Bundler.require(:default, :assets, Rails.env)
 
 require_relative 'asset_sync'
@@ -48,6 +45,9 @@ module Rails4Bp
     # Enable escaping HTML in JSON.
     config.active_support.escape_html_entities_in_json = true
 
+    # We need to be able to spin threads
+    config.active_record.thread_safe!
+
     # Use SQL instead of Active Record's schema dumper when creating the database.
     # This is necessary if your schema can't be completely dumped by the schema dumper,
     # like if you have constraints or database-specific column types
@@ -64,7 +64,7 @@ module Rails4Bp
     config.assets.enabled = true
 
     # Speed up precompile by not loading the environment
-    config.assets.initialize_on_precompile = false
+    config.assets.initialize_on_precompile = true
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '20'
@@ -78,10 +78,24 @@ module Rails4Bp
       #g.fixture_replacement :factory_girl, dir: 'spec/factories'
       g.view_specs false
       g.helper_specs false
+      g.assets = false
       g.stylesheets = false
       g.javascripts = false
       g.helper = false
       g.orm :active_record
     end
+
+    # rack lock is nothing but trouble, get rid of it
+    # for some reason still seeing it in Rails 4
+    config.middleware.delete Rack::Lock
+
+    require 'rails4bp_redis'
+    # Use redis for our cache
+    config.cache_store = Rails4BpRedis.new_redis_store
+
+    # we configure rack cache on demand in an initializer
+    # our setup does not use rack cache and instead defers to nginx
+    config.action_dispatch.rack_cache = nil
+
   end
 end

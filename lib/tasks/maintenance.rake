@@ -1,7 +1,3 @@
-#   Copyright (c) 2011, Rails4Bp Inc.  This file is
-#   licensed under the Affero General Public License version 3 or later.  See
-#   the COPYRIGHT file.
-
 namespace :maintenance do
   APP_ROOT = File.expand_path( File.join( File.dirname( __FILE__ ), '..', '..') )
   desc "Clear CarrierWave temp uploads"

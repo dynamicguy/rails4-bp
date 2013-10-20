@@ -24,7 +24,6 @@ class PagesController < ApplicationController
     end
   end
 
-
   # GET /pages/1
   # GET /pages/1.json
   def show

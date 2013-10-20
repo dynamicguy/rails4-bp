@@ -1,7 +1,7 @@
 class City < ActiveRecord::Base
   resourcify
   self.per_page = 20
-
+  validates :name, presence: true
   belongs_to :country
 
   searchable :auto_index => true, :auto_remove => false do

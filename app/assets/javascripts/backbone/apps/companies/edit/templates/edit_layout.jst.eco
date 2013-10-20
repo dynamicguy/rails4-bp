@@ -9,9 +9,9 @@
                         <a href='#companies' class='btn company-edit btn-default btn-xs'>
                             <span class='glyphicon glyphicon-th-list'></span>
                         </a>
-                        <a href='#companies/<%= @id %>' class='btn company-edit btn-default btn-xs'>
+                        <a href='#companies/<%= @comp_id %>' class='btn company-edit btn-default btn-xs'>
                             <span class='glyphicon glyphicon-eye-open'></span> </a>
-                        <button data-id='<%= @id %>' class='company-delete btn btn-danger btn-xs'>
+                        <button data-id='<%= @comp_id %>' class='company-delete btn btn-danger btn-xs'>
                             <span class='glyphicon glyphicon-trash'></span>
                         </button>
                     </span>

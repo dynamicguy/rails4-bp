@@ -6,6 +6,10 @@
       "companies": "list"
 
   API =
+    newCompany: (region) ->
+      new CompaniesApp.New.Controller
+        region: region
+
     show: (id, company) ->
       new CompaniesApp.Show.Controller
         id: id
@@ -15,10 +19,6 @@
       new CompaniesApp.Edit.Controller
         id: id
         company: company
-
-    newCompany: (region) ->
-      new CompaniesApp.New.Controller
-        region: region
 
     list: ->
       new CompaniesApp.List.Controller

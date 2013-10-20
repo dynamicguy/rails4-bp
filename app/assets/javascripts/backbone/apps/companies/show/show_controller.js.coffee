@@ -1,7 +1,6 @@
 @Rails4Bp.module "CompaniesApp.Show", (Show, App, Backbone, Marionette, $, _) ->
-  
   class Show.Controller extends App.Controllers.Base
-  
+
     initialize: (options) ->
       { company, id } = options
       company or= App.request "company:entity", id

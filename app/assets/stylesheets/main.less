@@ -1,12 +1,21 @@
+
 html,
 body {
   height: 100%;
   width: 100%;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #232323;
+  -webkit-font-smoothing: antialiased;
 }
+
 body {
   background: #e9e9e9 url(/assets/tiny_grid.png) repeat 0 0;
   padding-bottom: 70px;
+  margin: 0;
+  line-height: 1.8em;
 }
+
 #wrap {
   min-height: 100%;
   height: auto !important;
@@ -22,82 +31,113 @@ body {
   height: 60px;
 }
 
-#header-region{
+#header-region {
   margin-bottom: 0px;
 }
 
-#main-region{
+#main-region {
   height: 90%;
 }
-#crew-region{
+
+#crew-region {
 
 }
-#panel-region{
+
+#panel-region {
   margin-bottom: 15px;
 }
-.rbp-app-container{
+
+.rbp-app-container {
   padding: 0;
 }
-.search-grp .input-group-btn button{border-left: 0px;}
-.list-group-item:first-child,.list-group-item:last-child{
+
+.search-grp .input-group-btn button {
+  border-left: 0px;
+}
+
+.list-group-item:first-child, .list-group-item:last-child {
   border-radius: 0px;
 }
-.list-group-item.media{margin: 0;padding: 10px 0}
-.table{margin-bottom: 0px}
-tr.warning th{
+
+.list-group-item.media {
+  margin: 0;
+  padding: 10px 0
+}
+
+.table {
+  margin-bottom: 0px
+}
+
+tr.warning th {
   text-transform: uppercase;
   text-align: center;
 }
 
-.pager{
+.pager {
   padding: 0 20px;
   margin-top: 0;
 }
-.pager ul{
+
+.pager ul {
   padding-left: 0;
   margin: 20px 0;
   text-align: center;
   list-style: none;
 }
+
 .pager ul li:last-child {
   float: right;
 }
+
 .pager ul li:first-child {
   float: left;
 }
-.pager ul li > a{
+
+.pager ul li > a {
   display: inline-block;
   padding: 5px 14px;
   background-color: #ffffff;
   border: 1px solid #dddddd;
   border-radius: 15px;
 }
-.no-padx{
+
+.no-padx {
   padding-left: 0;
   padding-right: 0;
 }
-#sidebar-region{padding-left: 0;}
-#content-block{padding-right: 0}
+
+#sidebar-region {
+  padding-left: 0;
+}
+
+#content-block {
+  padding-right: 0
+}
 
 .dropdown-menu > li > a:hover,
 .dropdown-menu > li > a:focus {
   color: #463265;
 }
-.dropdown-menu > li > a:hover,.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus{
+
+.dropdown-menu > li > a:hover, .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
   background-color: #463265;
 }
-.page-header{
+
+.page-header {
   margin: 0;
   padding: 0;
   border: none;
 }
-.panel-title > a:hover{
+
+.panel-title > a:hover {
   text-decoration: none;
   color: #463265;
 }
-.modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom{
+
+.modal-open .navbar-fixed-top, .modal-open .navbar-fixed-bottom {
   margin-right: 0px;
 }
-.backgrid-paginator{
+
+.backgrid-paginator {
   text-align: center;
 }
