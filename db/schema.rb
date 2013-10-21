@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131021160637) do
+ActiveRecord::Schema.define(version: 20131021170336) do
 
   create_table "articles", force: true do |t|
     t.string   "name"
@@ -138,42 +138,42 @@ ActiveRecord::Schema.define(version: 20131021160637) do
   add_index "profiles", ["full_name"], name: "index_profiles_on_full_name", using: :btree
   add_index "profiles", ["user_id"], name: "index_profiles_on_user_id", using: :btree
 
-  create_table "projects", force: true do |t|
-    t.string   "name"
-    t.string   "site_address"
-    t.integer  "topic_id"
-    t.string   "created_uid"
-    t.string   "modified_uid"
-    t.boolean  "master",            default: false
-    t.string   "domain"
-    t.boolean  "private",           default: false
-    t.boolean  "keyword_index",     default: false
-    t.string   "theme"
-    t.string   "token"
-    t.string   "default_view",      default: "tab"
-    t.boolean  "user_view",         default: false
-    t.boolean  "show_folder_icon",  default: false
-    t.boolean  "show_page_icon",    default: false
-    t.string   "toc_font_size",     default: "11px"
-    t.string   "toc_line_height",   default: "18px"
-    t.integer  "primary_site"
-    t.string   "lang",              default: "en"
-    t.boolean  "primary_lang",      default: true
-    t.boolean  "link_lang_sites",   default: false
-    t.boolean  "ckfinder_delete",   default: false
-    t.string   "favicon"
-    t.boolean  "toc_visible",       default: true
-    t.boolean  "filter_visible",    default: true
-    t.integer  "toc_width"
-    t.string   "toc_bg_color"
-    t.boolean  "toc_bold_folder",   default: false
-    t.string   "toc_font_family"
-    t.boolean  "enable_mobile",     default: false
-    t.string   "phone_home"
-    t.boolean  "tablet_home",       default: false
-    t.boolean  "enable_mobile_css", default: false
-    t.datetime "created_at"
-    t.datetime "updated_at"
+  create_table "project", primary_key: "prj_id", force: true do |t|
+    t.string  "prj_name"
+    t.string  "site_address"
+    t.integer "start_topic"
+    t.integer "created_time"
+    t.integer "modified_time"
+    t.string  "created_uid"
+    t.string  "modified_uid"
+    t.boolean "master"
+    t.string  "domain"
+    t.boolean "private"
+    t.boolean "keyword_index"
+    t.string  "theme"
+    t.string  "token"
+    t.string  "default_view"
+    t.boolean "user_view"
+    t.boolean "show_folder_icon"
+    t.boolean "show_page_icon"
+    t.string  "toc_font_size"
+    t.string  "toc_line_height"
+    t.integer "primary_site"
+    t.string  "lang"
+    t.boolean "is_primary_lang"
+    t.boolean "link_lang_sites"
+    t.boolean "ckfinder_delete"
+    t.string  "favicon"
+    t.boolean "toc_visible"
+    t.boolean "filter_visible"
+    t.integer "toc_width"
+    t.string  "toc_bg_color"
+    t.boolean "toc_bold_folder"
+    t.string  "toc_font_family"
+    t.boolean "enable_mobile"
+    t.string  "phone_home"
+    t.boolean "tablet_home"
+    t.boolean "enable_mobile_css"
   end
 
   create_table "rails_admin_histories", force: true do |t|

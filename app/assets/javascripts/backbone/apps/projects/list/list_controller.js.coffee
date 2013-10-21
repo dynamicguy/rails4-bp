@@ -52,19 +52,21 @@
       )
 
       columns = [
-        name: "name"
+        name: "prj_name"
+        label: "Name"
         cell: "string"
         editable: false
       ,
         name: "site_address"
         cell: "string"
+        label: "Site Address"
         editable: false
       ,
-        name: "phone_home"
+        name: "theme"
         cell: "string"
         editable: false
       ,
-        name: "id"
+        name: "prj_id"
         label: "Actions"
         sortable: false
         editable: false
@@ -100,7 +102,7 @@
 
         filter = new Filter(
           collection: listView.collection
-          fields: ["title"]
+          fields: ["prj_name", "site_address", "theme"]
         )
         $("#filters").append filter.render().$el
         started_at = Date.now()

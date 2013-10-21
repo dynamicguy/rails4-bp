@@ -11,52 +11,52 @@
 
     <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
         <ul class="nav navbar-nav pull-right" role="menu">
-            <!--<li><a href="#countries"><i class="icon-globe"></i> Countries</a></li>-->
+            <!--<li><a href="#countries"><i class="glyphicon glyphicon-globe"></i> Countries</a></li>-->
             <li>
                 <a href="#companies">
-                    <i class="icon-briefcase icon-light"></i>
+                    <i class="glyphicon glyphicon-briefcase glyphicon glyphicon-light"></i>
                     Companies
                 </a>
             </li>
             <li>
                 <a href="#projects">
-                    <i class="icon-desktop icon-light"></i>
+                    <i class="glyphicon glyphicon-file glyphicon glyphicon-light"></i>
                     Projects
                 </a>
             </li>
             <li>
-                <a href="#folders">
-                    <i class="icon-folder-open icon-light"></i>
-                    Folders
+                <a href="#topics">
+                    <i class="glyphicon glyphicon-tags glyphicon glyphicon-light"></i>
+                    Topics
                 </a>
             </li>
             <!--<li>-->
                 <!--<a href="#pages">-->
-                    <!--<i class="icon-map-marker icon-light"></i>-->
+                    <!--<i class="glyphicon glyphicon-map-marker glyphicon glyphicon-light"></i>-->
                     <!--Pages-->
                 <!--</a>-->
             <!--</li>-->
             <!--<li>-->
                 <!--<a href="#cities">-->
-                    <!--<i class="icon-location-arrow icon-light"></i>-->
+                    <!--<i class="glyphicon glyphicon-location-arrow glyphicon glyphicon-light"></i>-->
                     <!--Cities-->
                 <!--</a>-->
             <!--</li>-->
-            <!--&lt;!&ndash;<li><a href="#categories"><i class="icon-tag"></i> Categories</a></li>&ndash;&gt;-->
-            <!--&lt;!&ndash;<li><a href="#pages"><i class="icon-list"></i> Pages</a></li>&ndash;&gt;-->
+            <!--&lt;!&ndash;<li><a href="#categories"><i class="glyphicon glyphicon-tag"></i> Categories</a></li>&ndash;&gt;-->
+            <!--&lt;!&ndash;<li><a href="#pages"><i class="glyphicon glyphicon-list"></i> Pages</a></li>&ndash;&gt;-->
             <!--<li>-->
                 <!--<a href="#crews">-->
-                    <!--<i class="icon-group icon-light"></i>-->
+                    <!--<i class="glyphicon glyphicon-group glyphicon glyphicon-light"></i>-->
                     <!--Crews-->
                 <!--</a>-->
             <!--</li>-->
-            <!--<li><a href="#users"><i class="icon-user"></i> Users</a></li>-->
+            <!--<li><a href="#users"><i class="glyphicon glyphicon-user"></i> Users</a></li>-->
             <% if gon.user: %>
             <!--<li class="dropdown">-->
             <!--<a href="#" class="dropdown-toggle" data-toggle="dropdown">-->
-            <!--<span class="icon-stack">-->
+            <!--<span class="glyphicon glyphicon-stack">-->
             <!---->
-            <!--<i class="icon-cogs icon-light"></i>-->
+            <!--<i class="glyphicon glyphicon-cogs glyphicon glyphicon-light"></i>-->
             <!--</span>-->
             <!--Settings-->
             <!--<span class="caret"></span>-->
@@ -70,7 +70,7 @@
             <!--</li>-->
             <li class="dropdown">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                    <i class="icon-user icon-light"></i>
+                    <i class="glyphicon glyphicon-user glyphicon glyphicon-light"></i>
                     <%= gon.user.email %>
                     <span class="caret"></span>
                 </a>
@@ -82,7 +82,7 @@
                 </ul>
             </li>
             <% else: %>
-            <li><a href="<%= Routes.new_user_session_path() %>"><i class="icon-user"></i>Login</a></li>
+            <li><a href="<%= Routes.new_user_session_path() %>"><i class="glyphicon glyphicon-user"></i>Login</a></li>
             <% end %>
         </ul>
     </nav>

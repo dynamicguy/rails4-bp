@@ -1,5 +1,6 @@
 @Rails4Bp.module "Entities", (Entities, App, Backbone, Marionette, $, _) ->
   class Entities.Project extends Entities.Model
+    idAttribute: 'prj_id'
     initialize: ->
       @url = (if @id then "/projects/" + @id else "/projects")
 
@@ -27,7 +28,7 @@
 
     getProject: (id) ->
       project = new Entities.Project
-        id: id
+        prj_id: id
       project.fetch()
       project
 
