@@ -20,6 +20,7 @@ class ApplicationController < ActionController::Base
   before_filter :gon_set_current_user
   before_filter :gon_set_global_config
   before_filter :gon_set_preloads
+
   before_filter :authenticate_user!
 
   inflection_method :grammatical_gender => :gender

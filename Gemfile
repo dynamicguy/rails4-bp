@@ -257,7 +257,7 @@ group :test do
   gem 'factory_girl_rails'
   #gem 'timecop'
   gem 'webmock', :require => false
-
+  gem 'email_spec'
   gem "sunspot_test"
 end
 

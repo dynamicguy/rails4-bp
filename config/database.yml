@@ -1,56 +1,40 @@
-mysql: &mysql
-  adapter: mysql2
-  host: "localhost"
-  port: 3306
-  username: "ferdous"
-  password: "f"
-  socket: /tmp/mysql.sock
-  charset: utf8
-  collation: utf8_bin
-
-postgres: &postgres
-  adapter: postgresql
-  host: localhost
-  port: 5432
-  username: ferdous
-  password: f
-  encoding: unicode
-
-# Comment the the mysql line and uncomment the postgres line
-# if you want to use postgres
-common: &common
-  # Choose one of the following
-  <<: *mysql
-  #<<: *postgres
-
-  # Should match environment.sidekiq.concurrency
-  #pool: 25
-  
-##################################################
-#### CONFIGURE ABOVE #############################
-##################################################
-
-# Normally you don't need to touch anything here
-
-postgres_travis: &postgres_travis
-  adapter: postgresql
-  username: postgres
-combined: &combined
-  <<: *common
-development:
-  <<: *combined
-  database: rails4bp_development
+#
+# PRODUCTION
+#
 production:
-  <<: *combined
-  database: rails4bp_production
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: rails4bp_development
+  pool: 5
+  username: ferdous
+  password: "f"
+
+
+#
+# Development specific
+#
+development:
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
+  database: rails4bp_development
+  pool: 5
+  username: ferdous
+  password: "f"
+
+# Warning: The database defined as "test" will be erased and
+# re-generated from your development database when you run "rake".
+# Do not set this db to the same as development or production.
 test: &test
-  <<: *combined
+  adapter: mysql2
+  encoding: utf8
+  reconnect: false
   database: rails4bp_test
-integration1:
-  <<: *combined
-  database: rails4bp_integration1
-integration2:
-  <<: *combined
-  database: rails4bp_integration2
+  pool: 5
+  username: ferdous
+  password: "f"
+
+
 cucumber:
   <<: *test
