@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 #^syntax detection
 
+#site 'https://api.opscode.com/organizations/dynamicguy'
 site 'http://community.opscode.com/api/v1'
 
 cookbook 'openssh'
