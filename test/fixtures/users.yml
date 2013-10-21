@@ -1,0 +1,476 @@
+---
+users_001:
+  id: 1
+  email: admin@local.host
+  encrypted_password: $2a$10$HaR11YlbekRaW7bPmW.II.YNNWa/zJYSqqcSRwe4S41gessB.MBvy
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 2
+  current_sign_in_at: 2013-10-21 16:40:27.000000000 Z
+  last_sign_in_at: 2013-10-20 16:49:19.000000000 Z
+  current_sign_in_ip: 127.0.0.1
+  last_sign_in_ip: 127.0.0.1
+  confirmation_token: 
+  confirmed_at: 2013-10-20 16:48:45.000000000 Z
+  confirmation_sent_at: 
+  unconfirmed_email: 
+  failed_attempts: 0
+  unlock_token: 
+  locked_at: 
+  authentication_token: 
+  created_at: 2013-10-20 16:48:45.000000000 Z
+  updated_at: 2013-10-21 16:40:27.000000000 Z
+  language: en
+  gender: 
+  name: 
+users_002:
+  id: 2
+  email: user@local.host
+  encrypted_password: $2a$10$tIUbNcTKdPys5xuYPdIcWeQLY/vK0cGV00Z6xbGOBtIBJCraiWCG2
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 0
+  current_sign_in_at: 
+  last_sign_in_at: 
+  current_sign_in_ip: 
+  last_sign_in_ip: 
+  confirmation_token: 
+  confirmed_at: 2013-10-20 16:48:45.000000000 Z
+  confirmation_sent_at: 
+  unconfirmed_email: 
+  failed_attempts: 0
+  unlock_token: 
+  locked_at: 
+  authentication_token: 
+  created_at: 2013-10-20 16:48:45.000000000 Z
+  updated_at: 2013-10-20 16:48:45.000000000 Z
+  language: en
+  gender: 
+  name: 
+users_003:
+  id: 3
+  email: manager@local.host
+  encrypted_password: $2a$10$hNe1yjf61O.rzhTF3lIskOFSe2iwU8Y0kLdattG1j4IyJcizf7dGS
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 0
+  current_sign_in_at: 
+  last_sign_in_at: 
+  current_sign_in_ip: 
+  last_sign_in_ip: 
+  confirmation_token: 
+  confirmed_at: 2013-10-20 16:48:45.000000000 Z
+  confirmation_sent_at: 
+  unconfirmed_email: 
+  failed_attempts: 0
+  unlock_token: 
+  locked_at: 
+  authentication_token: 
+  created_at: 2013-10-20 16:48:45.000000000 Z
+  updated_at: 2013-10-20 16:48:45.000000000 Z
+  language: en
+  gender: 
+  name: 
+users_004:
+  id: 4
+  email: agent@local.host
+  encrypted_password: $2a$10$K6qfl2XpAeqBfT8L3MW7cexVdUzVetSCJrWiLJgblZ0z9t21Z7le2
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 0
+  current_sign_in_at: 
+  last_sign_in_at: 
+  current_sign_in_ip: 
+  last_sign_in_ip: 
+  confirmation_token: 
+  confirmed_at: 2013-10-20 16:48:45.000000000 Z
+  confirmation_sent_at: 
+  unconfirmed_email: 
+  failed_attempts: 0
+  unlock_token: 
+  locked_at: 
+  authentication_token: 
+  created_at: 2013-10-20 16:48:45.000000000 Z
+  updated_at: 2013-10-20 16:48:45.000000000 Z
+  language: en
+  gender: 
+  name: 
+users_005:
+  id: 5
+  email: customer@local.host
+  encrypted_password: $2a$10$ZRHn.N9bI.LSL17hrF2IAOg0AMBsGqQgYhiFjKIV5SQHWwqmuitJG
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 0
+  current_sign_in_at: 
+  last_sign_in_at: 
+  current_sign_in_ip: 
+  last_sign_in_ip: 
+  confirmation_token: 
+  confirmed_at: 2013-10-20 16:48:45.000000000 Z
+  confirmation_sent_at: 
+  unconfirmed_email: 
+  failed_attempts: 0
+  unlock_token: 
+  locked_at: 
+  authentication_token: 
+  created_at: 2013-10-20 16:48:45.000000000 Z
+  updated_at: 2013-10-20 16:48:45.000000000 Z
+  language: en
+  gender: 
+  name: 
+users_006:
+  id: 6
+  email: driver@local.host
+  encrypted_password: $2a$10$MOx1KXVn9Y6LWoUHmtSdHOqIWcb/PeDqyFPGro5Hw1eiQNQbxCOIO
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 0
+  current_sign_in_at: 
+  last_sign_in_at: 
+  current_sign_in_ip: 
+  last_sign_in_ip: 
+  confirmation_token: 
+  confirmed_at: 2013-10-20 16:48:45.000000000 Z
+  confirmation_sent_at: 
+  unconfirmed_email: 
+  failed_attempts: 0
+  unlock_token: 
+  locked_at: 
+  authentication_token: 
+  created_at: 2013-10-20 16:48:45.000000000 Z
+  updated_at: 2013-10-20 16:48:45.000000000 Z
+  language: en
+  gender: 
+  name: 
+users_007:
+  id: 7
+  email: sales@local.host
+  encrypted_password: $2a$10$JJt47r.CM2WIgiu.y/cDquuVVp6QU/zHuX8Fzl4w4pKi/jyb5p/xG
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 0
+  current_sign_in_at: 
+  last_sign_in_at: 
+  current_sign_in_ip: 
+  last_sign_in_ip: 
+  confirmation_token: 
+  confirmed_at: 2013-10-20 16:48:45.000000000 Z
+  confirmation_sent_at: 
+  unconfirmed_email: 
+  failed_attempts: 0
+  unlock_token: 
+  locked_at: 
+  authentication_token: 
+  created_at: 2013-10-20 16:48:45.000000000 Z
+  updated_at: 2013-10-20 16:48:45.000000000 Z
+  language: en
+  gender: 
+  name: 
+users_008:
+  id: 8
+  email: arne@bergstrom.biz
+  encrypted_password: $2a$10$l8sExHqPZHwmUK0s4vpjGuEDcKjdCJOCxJF/lz6SmLKXQMv1YKOvu
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 0
+  current_sign_in_at: 
+  last_sign_in_at: 
+  current_sign_in_ip: 
+  last_sign_in_ip: 
+  confirmation_token: 
+  confirmed_at: 2013-10-20 16:48:45.000000000 Z
+  confirmation_sent_at: 
+  unconfirmed_email: 
+  failed_attempts: 0
+  unlock_token: 
+  locked_at: 
+  authentication_token: 
+  created_at: 2013-10-20 16:48:46.000000000 Z
+  updated_at: 2013-10-20 16:48:46.000000000 Z
+  language: en
+  gender: 
+  name: 
+users_009:
+  id: 9
+  email: kaleigh.yundt@thiel.us
+  encrypted_password: $2a$10$HjjyedbPMOfYKCkbyANf6eojJqtPNF7v.VrtK6Zru86WJz0gx8p8O
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 0
+  current_sign_in_at: 
+  last_sign_in_at: 
+  current_sign_in_ip: 
+  last_sign_in_ip: 
+  confirmation_token: 
+  confirmed_at: 2013-10-20 16:48:45.000000000 Z
+  confirmation_sent_at: 
+  unconfirmed_email: 
+  failed_attempts: 0
+  unlock_token: 
+  locked_at: 
+  authentication_token: 
+  created_at: 2013-10-20 16:48:46.000000000 Z
+  updated_at: 2013-10-20 16:48:46.000000000 Z
+  language: en
+  gender: 
+  name: 
+users_010:
+  id: 10
+  email: gordon_muller@kub.info
+  encrypted_password: $2a$10$Or4bOZxOt58WTRw895mUbO29I3oxQqam/oDbd7hV24fGnAjD872K2
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 0
+  current_sign_in_at: 
+  last_sign_in_at: 
+  current_sign_in_ip: 
+  last_sign_in_ip: 
+  confirmation_token: 
+  confirmed_at: 2013-10-20 16:48:45.000000000 Z
+  confirmation_sent_at: 
+  unconfirmed_email: 
+  failed_attempts: 0
+  unlock_token: 
+  locked_at: 
+  authentication_token: 
+  created_at: 2013-10-20 16:48:46.000000000 Z
+  updated_at: 2013-10-20 16:48:46.000000000 Z
+  language: en
+  gender: 
+  name: 
+users_011:
+  id: 11
+  email: joany.barton@bruen.ca
+  encrypted_password: $2a$10$KCvo..p738/N4WQGw5HB5uWEMGwA9b1MfXvbyhbmZF6OhcNUnavmm
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 0
+  current_sign_in_at: 
+  last_sign_in_at: 
+  current_sign_in_ip: 
+  last_sign_in_ip: 
+  confirmation_token: 
+  confirmed_at: 2013-10-20 16:48:45.000000000 Z
+  confirmation_sent_at: 
+  unconfirmed_email: 
+  failed_attempts: 0
+  unlock_token: 
+  locked_at: 
+  authentication_token: 
+  created_at: 2013-10-20 16:48:46.000000000 Z
+  updated_at: 2013-10-20 16:48:46.000000000 Z
+  language: en
+  gender: 
+  name: 
+users_012:
+  id: 12
+  email: damon@murray.ca
+  encrypted_password: $2a$10$Qrw3cPgcRXMJMHhgGFn6uuuNbp93Rn6jU2AosocaZ.Qhyusa8V/UO
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 0
+  current_sign_in_at: 
+  last_sign_in_at: 
+  current_sign_in_ip: 
+  last_sign_in_ip: 
+  confirmation_token: 
+  confirmed_at: 2013-10-20 16:48:45.000000000 Z
+  confirmation_sent_at: 
+  unconfirmed_email: 
+  failed_attempts: 0
+  unlock_token: 
+  locked_at: 
+  authentication_token: 
+  created_at: 2013-10-20 16:48:46.000000000 Z
+  updated_at: 2013-10-20 16:48:46.000000000 Z
+  language: en
+  gender: 
+  name: 
+users_013:
+  id: 13
+  email: brenna@hansen.info
+  encrypted_password: $2a$10$xaz.1RrFwPNVyYpA94LfauS8kqYPVSGetIzSaB4YubIGBQJGCHM5y
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 0
+  current_sign_in_at: 
+  last_sign_in_at: 
+  current_sign_in_ip: 
+  last_sign_in_ip: 
+  confirmation_token: 
+  confirmed_at: 2013-10-20 16:48:45.000000000 Z
+  confirmation_sent_at: 
+  unconfirmed_email: 
+  failed_attempts: 0
+  unlock_token: 
+  locked_at: 
+  authentication_token: 
+  created_at: 2013-10-20 16:48:46.000000000 Z
+  updated_at: 2013-10-20 16:48:46.000000000 Z
+  language: en
+  gender: 
+  name: 
+users_014:
+  id: 14
+  email: kian_rippin@wisoky.info
+  encrypted_password: $2a$10$qbHaz.Qi/qeKuY27w5ejqeVkH.AxQjsoN2qALtlRk5HijmYQNEEti
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 0
+  current_sign_in_at: 
+  last_sign_in_at: 
+  current_sign_in_ip: 
+  last_sign_in_ip: 
+  confirmation_token: 
+  confirmed_at: 2013-10-20 16:48:45.000000000 Z
+  confirmation_sent_at: 
+  unconfirmed_email: 
+  failed_attempts: 0
+  unlock_token: 
+  locked_at: 
+  authentication_token: 
+  created_at: 2013-10-20 16:48:46.000000000 Z
+  updated_at: 2013-10-20 16:48:46.000000000 Z
+  language: en
+  gender: 
+  name: 
+users_015:
+  id: 15
+  email: andres@rosenbaumkozey.name
+  encrypted_password: $2a$10$NWQH0w/HwkIh90jOtHogc.iIhT9SbpomHbp/kwnHrOWRwd8uXcJ5.
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 0
+  current_sign_in_at: 
+  last_sign_in_at: 
+  current_sign_in_ip: 
+  last_sign_in_ip: 
+  confirmation_token: 
+  confirmed_at: 2013-10-20 16:48:45.000000000 Z
+  confirmation_sent_at: 
+  unconfirmed_email: 
+  failed_attempts: 0
+  unlock_token: 
+  locked_at: 
+  authentication_token: 
+  created_at: 2013-10-20 16:48:46.000000000 Z
+  updated_at: 2013-10-20 16:48:46.000000000 Z
+  language: en
+  gender: 
+  name: 
+users_016:
+  id: 16
+  email: grover_rippin@kirlin.com
+  encrypted_password: $2a$10$Ha1HdLTgloOT2txgQVdwJeSKEeSNYZN7qTqOCW6gl/xWARbGeR8Om
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 0
+  current_sign_in_at: 
+  last_sign_in_at: 
+  current_sign_in_ip: 
+  last_sign_in_ip: 
+  confirmation_token: 
+  confirmed_at: 2013-10-20 16:48:45.000000000 Z
+  confirmation_sent_at: 
+  unconfirmed_email: 
+  failed_attempts: 0
+  unlock_token: 
+  locked_at: 
+  authentication_token: 
+  created_at: 2013-10-20 16:48:46.000000000 Z
+  updated_at: 2013-10-20 16:48:46.000000000 Z
+  language: en
+  gender: 
+  name: 
+users_017:
+  id: 17
+  email: octavia@grant.com
+  encrypted_password: $2a$10$dLVF6UGzx8aaQMS86xWdtuBNGh//SbG3BGQhRYNmnsHVE7Ei8kPlK
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 0
+  current_sign_in_at: 
+  last_sign_in_at: 
+  current_sign_in_ip: 
+  last_sign_in_ip: 
+  confirmation_token: 
+  confirmed_at: 2013-10-20 16:48:45.000000000 Z
+  confirmation_sent_at: 
+  unconfirmed_email: 
+  failed_attempts: 0
+  unlock_token: 
+  locked_at: 
+  authentication_token: 
+  created_at: 2013-10-20 16:48:46.000000000 Z
+  updated_at: 2013-10-20 16:48:46.000000000 Z
+  language: en
+  gender: 
+  name: 
+users_018:
+  id: 18
+  email: roxane@fayfisher.us
+  encrypted_password: $2a$10$SyftcQp3zwXTX1LXnxifpOSfdNWzh9dFi692WcxwfoIuPwBJ8Ny1y
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 0
+  current_sign_in_at: 
+  last_sign_in_at: 
+  current_sign_in_ip: 
+  last_sign_in_ip: 
+  confirmation_token: 
+  confirmed_at: 2013-10-20 16:48:45.000000000 Z
+  confirmation_sent_at: 
+  unconfirmed_email: 
+  failed_attempts: 0
+  unlock_token: 
+  locked_at: 
+  authentication_token: 
+  created_at: 2013-10-20 16:48:46.000000000 Z
+  updated_at: 2013-10-20 16:48:46.000000000 Z
+  language: en
+  gender: 
+  name: 
+users_019:
+  id: 19
+  email: rosina@barrows.name
+  encrypted_password: $2a$10$BpfefF2pAuoiURioeOkE3.flmOcDL67zad5/0F1XKeEORc0gzU/Xa
+  reset_password_token: 
+  reset_password_sent_at: 
+  remember_created_at: 
+  sign_in_count: 0
+  current_sign_in_at: 
+  last_sign_in_at: 
+  current_sign_in_ip: 
+  last_sign_in_ip: 
+  confirmation_token: 
+  confirmed_at: 2013-10-20 16:48:45.000000000 Z
+  confirmation_sent_at: 
+  unconfirmed_email: 
+  failed_attempts: 0
+  unlock_token: 
+  locked_at: 
+  authentication_token: 
+  created_at: 2013-10-20 16:48:46.000000000 Z
+  updated_at: 2013-10-20 16:48:46.000000000 Z
+  language: en
+  gender: 
+  name: 

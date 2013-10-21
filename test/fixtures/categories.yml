@@ -1,0 +1,1182 @@
+---
+categories_001:
+  id: 1
+  title: Book 0
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Deserunt omnis necessitatibus
+    modi et debitis cumque sint excepturi rem.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 
+  lft: 1
+  rgt: 42
+  depth: 0
+  created_at: 2013-10-20 16:48:46.000000000 Z
+  updated_at: 2013-10-20 16:48:46.000000000 Z
+categories_002:
+  id: 2
+  title: Chapter 0
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Et in dolore iste eum
+    aut magni.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 1
+  lft: 2
+  rgt: 11
+  depth: 1
+  created_at: 2013-10-20 16:48:46.000000000 Z
+  updated_at: 2013-10-20 16:48:46.000000000 Z
+categories_003:
+  id: 3
+  title: Page 0
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Odit facere minima iste
+    libero in delectus ab tempora consequatur numquam recusandae eum rem occaecati
+    id temporibus impedit inventore quo officia voluptatem doloribus quisquam et voluptatem
+    eos facilis fugiat ut.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 2
+  lft: 3
+  rgt: 4
+  depth: 2
+  created_at: 2013-10-20 16:48:46.000000000 Z
+  updated_at: 2013-10-20 16:48:46.000000000 Z
+categories_004:
+  id: 4
+  title: Page 1
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Rerum et eveniet rerum
+    aut aut voluptatibus sit eum in porro eos dolores et voluptatem consequatur eaque
+    consequuntur totam corporis laboriosam eum dolor quidem alias minus et non est
+    voluptas.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 2
+  lft: 5
+  rgt: 6
+  depth: 2
+  created_at: 2013-10-20 16:48:46.000000000 Z
+  updated_at: 2013-10-20 16:48:46.000000000 Z
+categories_005:
+  id: 5
+  title: Page 2
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Quia voluptas voluptatum
+    sit aliquid hic eum illo facilis ut sint nisi est dolorem qui quis voluptatibus
+    nihil beatae odit non dolor autem omnis vero eum.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 2
+  lft: 7
+  rgt: 8
+  depth: 2
+  created_at: 2013-10-20 16:48:46.000000000 Z
+  updated_at: 2013-10-20 16:48:46.000000000 Z
+categories_006:
+  id: 6
+  title: Page 3
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Odit qui cum enim neque
+    itaque voluptas magnam sit aliquam repellat aspernatur est qui vitae facere tempore
+    nam velit iste animi in quos natus veritatis rem perferendis rerum aut.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 2
+  lft: 9
+  rgt: 10
+  depth: 2
+  created_at: 2013-10-20 16:48:46.000000000 Z
+  updated_at: 2013-10-20 16:48:46.000000000 Z
+categories_007:
+  id: 7
+  title: Chapter 1
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Rerum possimus odio blanditiis
+    aperiam modi similique nihil ut consequatur.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 1
+  lft: 12
+  rgt: 21
+  depth: 1
+  created_at: 2013-10-20 16:48:46.000000000 Z
+  updated_at: 2013-10-20 16:48:46.000000000 Z
+categories_008:
+  id: 8
+  title: Page 0
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Nemo a quisquam officia
+    debitis nam incidunt aut dolores et est ullam quam neque est officiis qui ducimus
+    aut et ab molestiae magnam dolores repudiandae provident consequatur.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 7
+  lft: 13
+  rgt: 14
+  depth: 2
+  created_at: 2013-10-20 16:48:46.000000000 Z
+  updated_at: 2013-10-20 16:48:46.000000000 Z
+categories_009:
+  id: 9
+  title: Page 1
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Rerum ut cupiditate est
+    omnis dolores quisquam alias sapiente aliquam aut perferendis temporibus incidunt
+    sint voluptate voluptatem fugiat aperiam qui ipsa inventore et non enim esse.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 7
+  lft: 15
+  rgt: 16
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_010:
+  id: 10
+  title: Page 2
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Porro corporis voluptates
+    cumque quo omnis quos dolores sint voluptatum ab eos non autem sed quidem praesentium
+    soluta adipisci voluptatem officia et qui qui eius.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 7
+  lft: 17
+  rgt: 18
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_011:
+  id: 11
+  title: Page 3
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Quis sequi illum repudiandae
+    mollitia quas consequuntur ipsam quo similique error architecto quia eum in sed
+    enim odio cum amet ab maiores dolores perspiciatis velit.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 7
+  lft: 19
+  rgt: 20
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_012:
+  id: 12
+  title: Chapter 2
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Velit vero ea voluptates
+    neque.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 1
+  lft: 22
+  rgt: 31
+  depth: 1
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_013:
+  id: 13
+  title: Page 0
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Nostrum excepturi rerum
+    adipisci natus quo magni hic nam assumenda occaecati eveniet amet est qui nemo
+    sapiente eaque veritatis asperiores impedit quibusdam ut placeat aut ullam eum
+    rem animi mollitia.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 12
+  lft: 23
+  rgt: 24
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_014:
+  id: 14
+  title: Page 1
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Dolor reprehenderit exercitationem
+    quia molestias error enim voluptate et beatae dignissimos recusandae corporis
+    possimus debitis doloribus aliquid ipsum quibusdam sequi dolor et et maiores porro
+    repudiandae optio blanditiis ducimus.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 12
+  lft: 25
+  rgt: 26
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_015:
+  id: 15
+  title: Page 2
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Et veniam et inventore
+    voluptate tempore voluptatum porro accusamus velit eaque ipsa atque sequi quibusdam
+    officiis reiciendis ducimus delectus repudiandae unde ab in commodi natus aliquam
+    ratione.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 12
+  lft: 27
+  rgt: 28
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_016:
+  id: 16
+  title: Page 3
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Perferendis eligendi
+    aut quis labore ea ipsa cupiditate sed et at autem hic in qui saepe voluptas quas
+    tenetur explicabo iure accusamus id aut eos ratione ducimus quibusdam corrupti.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 12
+  lft: 29
+  rgt: 30
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_017:
+  id: 17
+  title: Chapter 3
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Maxime voluptatum quas
+    magnam nostrum eum.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 1
+  lft: 32
+  rgt: 41
+  depth: 1
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_018:
+  id: 18
+  title: Page 0
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Quae sit eius laboriosam
+    ab sapiente officiis maiores quas ut dolorem blanditiis explicabo molestias necessitatibus
+    illo aperiam beatae eaque quo iure velit adipisci et mollitia.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 17
+  lft: 33
+  rgt: 34
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_019:
+  id: 19
+  title: Page 1
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Sit provident est eos
+    a voluptates consequatur consequuntur nihil totam optio placeat magnam culpa nostrum
+    porro ratione qui at earum ut alias autem tempore voluptatem assumenda.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 17
+  lft: 35
+  rgt: 36
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_020:
+  id: 20
+  title: Page 2
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Ut omnis odio animi amet
+    necessitatibus aspernatur molestias quia nobis voluptatum eligendi sint sed ut
+    commodi temporibus illum consequatur eos recusandae cum repellendus quod nam.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 17
+  lft: 37
+  rgt: 38
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_021:
+  id: 21
+  title: Page 3
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Aut saepe non dolore
+    non odio modi minus aperiam aspernatur maiores sed reprehenderit nostrum sit ipsam
+    eos qui quam commodi ut vero quia iure omnis qui.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 17
+  lft: 39
+  rgt: 40
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_022:
+  id: 22
+  title: Book 1
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Laudantium voluptatum
+    neque eum adipisci.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 
+  lft: 43
+  rgt: 84
+  depth: 0
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_023:
+  id: 23
+  title: Chapter 0
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Eius accusamus velit
+    quidem dolores.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 22
+  lft: 44
+  rgt: 53
+  depth: 1
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_024:
+  id: 24
+  title: Page 0
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Quod omnis exercitationem
+    voluptatem maiores voluptates et voluptate quia quas autem modi iusto aliquid
+    est debitis minima et est dolorem facere illo non error aut culpa quasi delectus
+    officiis.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 23
+  lft: 45
+  rgt: 46
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_025:
+  id: 25
+  title: Page 1
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Harum quae dolor itaque
+    iure debitis soluta sunt facere occaecati voluptatum excepturi necessitatibus
+    aut maxime hic non provident est nobis ab et voluptatibus assumenda autem quia
+    delectus fugit aut.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 23
+  lft: 47
+  rgt: 48
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_026:
+  id: 26
+  title: Page 2
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Deserunt consequatur
+    voluptatem at assumenda placeat ex in pariatur commodi soluta non quia autem eaque
+    necessitatibus autem ea quia provident ea architecto id molestiae ut inventore.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 23
+  lft: 49
+  rgt: 50
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_027:
+  id: 27
+  title: Page 3
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Amet quo temporibus ab
+    voluptas cumque magni unde sed accusantium vitae non vel eaque nulla animi sint
+    aliquid quia blanditiis delectus nobis libero reiciendis necessitatibus.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 23
+  lft: 51
+  rgt: 52
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_028:
+  id: 28
+  title: Chapter 1
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Animi temporibus et consequatur
+    recusandae.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 22
+  lft: 54
+  rgt: 63
+  depth: 1
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_029:
+  id: 29
+  title: Page 0
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Ut nihil eos dicta et
+    praesentium ut libero fugiat est numquam tempora veritatis provident et accusantium
+    ad neque quos in aut odit id reprehenderit qui placeat eligendi ut.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 28
+  lft: 55
+  rgt: 56
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_030:
+  id: 30
+  title: Page 1
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Maiores quia beatae facere
+    ab reprehenderit dolorem eius aut ad dolor debitis non occaecati enim at sequi
+    eaque aut rerum vel tempora consequuntur et libero sed quam.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 28
+  lft: 57
+  rgt: 58
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_031:
+  id: 31
+  title: Page 2
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Et vel vel perferendis
+    eum autem cupiditate occaecati eveniet delectus optio fugit placeat in nesciunt
+    rerum quibusdam iure dolores quidem enim consequatur id minima similique temporibus
+    expedita quod.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 28
+  lft: 59
+  rgt: 60
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_032:
+  id: 32
+  title: Page 3
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Dolorem rerum nobis accusamus
+    id ipsam iure soluta cupiditate in et quo exercitationem temporibus minima natus
+    magni officiis vero voluptatem aliquid asperiores sit iste incidunt alias dolores
+    sint veniam non.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 28
+  lft: 61
+  rgt: 62
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_033:
+  id: 33
+  title: Chapter 2
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Et sit ut vel qui alias
+    consectetur nihil et vero.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 22
+  lft: 64
+  rgt: 73
+  depth: 1
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_034:
+  id: 34
+  title: Page 0
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Sunt veritatis dolorum
+    quis odit suscipit reprehenderit ut saepe odio laboriosam rem animi id cum nam
+    adipisci consequatur alias voluptas labore enim harum eos voluptates et.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 33
+  lft: 65
+  rgt: 66
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_035:
+  id: 35
+  title: Page 1
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Facilis quas quia est
+    dolor possimus ipsum distinctio suscipit quo eos labore illum est blanditiis modi
+    eos minus quis sint omnis voluptatem laudantium maiores aut vitae natus nobis
+    quia.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 33
+  lft: 67
+  rgt: 68
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_036:
+  id: 36
+  title: Page 2
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Possimus architecto harum
+    assumenda praesentium autem odit aperiam aut et facilis quos eos et quia repellendus
+    cumque itaque deserunt et repellat consectetur sed mollitia perspiciatis vel illo
+    quas ducimus.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 33
+  lft: 69
+  rgt: 70
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_037:
+  id: 37
+  title: Page 3
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Eligendi eius qui inventore
+    unde et nulla minus aut alias aliquid eaque aut similique dolorum reiciendis incidunt
+    voluptatem necessitatibus atque voluptatem laboriosam harum corrupti sed optio
+    numquam ea.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 33
+  lft: 71
+  rgt: 72
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_038:
+  id: 38
+  title: Chapter 3
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Asperiores nisi rerum
+    veritatis doloribus voluptatem fuga.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 22
+  lft: 74
+  rgt: 83
+  depth: 1
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_039:
+  id: 39
+  title: Page 0
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Quia voluptatum sunt
+    ducimus a aliquid dolorem quisquam ex consectetur laboriosam sint reiciendis aliquam
+    repudiandae libero doloribus repellendus doloremque laborum vel veniam commodi
+    eius qui id molestiae quo.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 38
+  lft: 75
+  rgt: 76
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_040:
+  id: 40
+  title: Page 1
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Cupiditate et quasi inventore
+    nemo quam ipsam laboriosam quisquam esse quae exercitationem maiores ratione doloribus
+    earum sapiente aliquid amet quia id qui minima consequuntur aut totam.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 38
+  lft: 77
+  rgt: 78
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_041:
+  id: 41
+  title: Page 2
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Odit quo magnam sunt
+    veritatis et autem aut provident illo vitae et sit quia quisquam rerum voluptatem
+    velit voluptatem id delectus ad consequatur in aliquam possimus et pariatur.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 38
+  lft: 79
+  rgt: 80
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_042:
+  id: 42
+  title: Page 3
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Repudiandae velit ullam
+    ex consequatur rerum sint ratione laudantium sed aliquid ut cupiditate enim dolorem
+    illo quos ea est sed velit cum sequi ducimus at expedita ut.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 38
+  lft: 81
+  rgt: 82
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_043:
+  id: 43
+  title: Book 2
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Qui sint qui quos modi
+    eos praesentium iure dicta.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 
+  lft: 85
+  rgt: 126
+  depth: 0
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_044:
+  id: 44
+  title: Chapter 0
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Rerum officia nihil odio
+    saepe eos repudiandae et.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 43
+  lft: 86
+  rgt: 95
+  depth: 1
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_045:
+  id: 45
+  title: Page 0
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Suscipit hic quod earum
+    aspernatur voluptas accusantium non ab veniam quae quibusdam omnis laudantium
+    sint quis qui voluptatem magnam iusto est sed nobis dolore consequuntur.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 44
+  lft: 87
+  rgt: 88
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_046:
+  id: 46
+  title: Page 1
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Repudiandae culpa sequi
+    iusto in aut dolor et labore ut qui qui nesciunt libero sint iure facilis nostrum
+    exercitationem et tempore ratione neque recusandae voluptate vel vero animi.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 44
+  lft: 89
+  rgt: 90
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_047:
+  id: 47
+  title: Page 2
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Sed animi quisquam iure
+    libero consequuntur labore mollitia eligendi nulla magni vel repellendus doloremque
+    rem quia tempore cupiditate nam et delectus dolor dignissimos inventore architecto
+    laborum dolorem recusandae aut.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 44
+  lft: 91
+  rgt: 92
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_048:
+  id: 48
+  title: Page 3
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Fuga dignissimos nobis
+    qui sit dolorum molestiae quia est magni dolores nihil sapiente ab architecto
+    distinctio incidunt pariatur id vitae consectetur et et et perferendis et corporis
+    voluptatum inventore dolor.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 44
+  lft: 93
+  rgt: 94
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_049:
+  id: 49
+  title: Chapter 1
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Numquam excepturi consequuntur
+    ipsum laboriosam amet est.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 43
+  lft: 96
+  rgt: 105
+  depth: 1
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_050:
+  id: 50
+  title: Page 0
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Voluptate praesentium
+    voluptatibus tempora cupiditate non magnam et fugiat quia exercitationem amet
+    illum perspiciatis adipisci accusamus molestiae quia dicta qui debitis ullam officiis
+    qui autem dolores aspernatur explicabo omnis minima.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 49
+  lft: 97
+  rgt: 98
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_051:
+  id: 51
+  title: Page 1
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Sed atque laboriosam
+    reiciendis sapiente aliquid et rem officia aut voluptas reprehenderit ad sit consequuntur
+    beatae quia repellendus nihil et sint nisi illo quo enim magnam.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 49
+  lft: 99
+  rgt: 100
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_052:
+  id: 52
+  title: Page 2
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Tenetur sapiente iusto
+    sint odit voluptas voluptatum eligendi consequatur consequatur quae vero asperiores
+    vitae magni perferendis non sed non dolores in minus tempore tempora iure laboriosam
+    eius quidem fugiat.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 49
+  lft: 101
+  rgt: 102
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_053:
+  id: 53
+  title: Page 3
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Est quia voluptas delectus
+    perferendis quaerat dolorum debitis sint cum iusto accusantium harum fuga similique
+    nihil omnis eos porro deleniti quam incidunt eligendi sit aliquid quasi est.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 49
+  lft: 103
+  rgt: 104
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_054:
+  id: 54
+  title: Chapter 2
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Voluptas neque aperiam
+    nisi cumque corporis quisquam repudiandae qui qui.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 43
+  lft: 106
+  rgt: 115
+  depth: 1
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_055:
+  id: 55
+  title: Page 0
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Nulla recusandae quo
+    impedit esse repudiandae incidunt et voluptas illo sint consequuntur dolorem quis
+    similique quibusdam eius ut praesentium voluptatem enim optio error ut aliquid.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 54
+  lft: 107
+  rgt: 108
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_056:
+  id: 56
+  title: Page 1
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Itaque quia omnis dolore
+    quis et commodi perferendis doloribus ratione alias ut qui porro quibusdam provident
+    placeat sed enim ut nobis aut ipsam officia ut.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 54
+  lft: 109
+  rgt: 110
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_057:
+  id: 57
+  title: Page 2
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Neque ratione tempore
+    cum expedita eum voluptate soluta a officia illo omnis aut sequi odit error deserunt
+    architecto odio in doloribus modi est fugiat perferendis maiores id dolore eos.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 54
+  lft: 111
+  rgt: 112
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_058:
+  id: 58
+  title: Page 3
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Et quod quisquam et voluptatem
+    assumenda sed excepturi ad aut minus quis quia natus sit rerum illo odit eum omnis
+    perferendis non et deserunt consequatur blanditiis omnis rerum accusantium corporis.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 54
+  lft: 113
+  rgt: 114
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_059:
+  id: 59
+  title: Chapter 3
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Labore quia dolores totam
+    voluptates ex.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 43
+  lft: 116
+  rgt: 125
+  depth: 1
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_060:
+  id: 60
+  title: Page 0
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Omnis et eaque veniam
+    nemo facilis eveniet perspiciatis esse nostrum numquam ut nesciunt est dolores
+    iure modi eum ex sunt sit rerum aliquid labore animi minima quasi voluptate aperiam.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 59
+  lft: 117
+  rgt: 118
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_061:
+  id: 61
+  title: Page 1
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " A aut eaque qui debitis
+    ut eius quod qui quo vitae non nulla qui aspernatur iusto aut quis ipsum qui maiores
+    ut veritatis culpa sunt corporis.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 59
+  lft: 119
+  rgt: 120
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_062:
+  id: 62
+  title: Page 2
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Voluptas dolor repellat
+    ut nesciunt et omnis voluptatem distinctio labore autem corporis praesentium doloribus
+    dolore ullam quam cum deserunt architecto dolorum dolor consequatur provident
+    et.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 59
+  lft: 121
+  rgt: 122
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_063:
+  id: 63
+  title: Page 3
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Ut cumque magni veritatis
+    impedit quis qui ratione ut sit deserunt voluptatem occaecati necessitatibus qui
+    nobis molestias placeat error consequatur corrupti id rerum expedita provident
+    et tempora repellat.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 59
+  lft: 123
+  rgt: 124
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_064:
+  id: 64
+  title: Book 3
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Officiis labore at quia
+    sunt dolores suscipit incidunt.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 
+  lft: 127
+  rgt: 168
+  depth: 0
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_065:
+  id: 65
+  title: Chapter 0
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Sit et beatae molestiae
+    molestiae asperiores nesciunt explicabo enim commodi.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 64
+  lft: 128
+  rgt: 137
+  depth: 1
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_066:
+  id: 66
+  title: Page 0
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Et vel accusamus a eius
+    mollitia ad explicabo harum sed facere ipsam possimus quo error nostrum quia neque
+    ut itaque aliquid sequi quidem commodi aut tempore earum.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 65
+  lft: 129
+  rgt: 130
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_067:
+  id: 67
+  title: Page 1
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Provident consequatur
+    adipisci consequatur ab consequatur culpa consectetur in aspernatur voluptatum
+    quibusdam maxime dicta omnis laudantium aut repellendus sint facere qui et voluptatem
+    cum et veniam a nihil velit.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 65
+  lft: 131
+  rgt: 132
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_068:
+  id: 68
+  title: Page 2
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Ullam aut omnis sunt
+    sequi laboriosam vel est accusamus nulla at inventore aut id vitae et quis rem
+    minima dolorem veniam iusto id ipsam tempora dicta voluptas expedita.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 65
+  lft: 133
+  rgt: 134
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_069:
+  id: 69
+  title: Page 3
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Assumenda cupiditate
+    maiores ex animi quod est quibusdam et commodi non non est et at voluptatem doloremque
+    harum itaque quis quasi necessitatibus ut dolorem illum architecto optio.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 65
+  lft: 135
+  rgt: 136
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_070:
+  id: 70
+  title: Chapter 1
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Laborum omnis optio velit
+    hic dicta.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 64
+  lft: 138
+  rgt: 147
+  depth: 1
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_071:
+  id: 71
+  title: Page 0
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Veritatis voluptas et
+    incidunt maiores officiis tempora occaecati voluptatem corrupti aut eos dolorum
+    quia hic aspernatur deserunt tenetur in quo ut omnis odit quo labore quaerat fuga.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 70
+  lft: 139
+  rgt: 140
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_072:
+  id: 72
+  title: Page 1
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Praesentium sed cum rem
+    sapiente dolorum laudantium debitis architecto est sed qui aliquam perferendis
+    id nesciunt et numquam quo animi facilis consequatur minima omnis et cumque sit
+    nihil est.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 70
+  lft: 141
+  rgt: 142
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_073:
+  id: 73
+  title: Page 2
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Aperiam facilis rerum
+    eum est et quasi blanditiis aut autem ullam impedit veniam ducimus quia animi
+    et laborum ut deserunt quod officiis qui id et nesciunt.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 70
+  lft: 143
+  rgt: 144
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_074:
+  id: 74
+  title: Page 3
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Ex mollitia ducimus atque
+    impedit ea vero in minima soluta iste ratione sed accusamus nemo rerum voluptatem
+    nostrum eum reprehenderit ad velit quidem laborum quibusdam hic rem saepe dolorem.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 70
+  lft: 145
+  rgt: 146
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_075:
+  id: 75
+  title: Chapter 2
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Debitis est aperiam atque
+    dicta.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 64
+  lft: 148
+  rgt: 157
+  depth: 1
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_076:
+  id: 76
+  title: Page 0
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Accusantium distinctio
+    sint sit iste porro quam rerum suscipit enim voluptatem aspernatur necessitatibus
+    a et qui quae ea esse nemo aliquam est et dolorum rem repudiandae id.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 75
+  lft: 149
+  rgt: 150
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_077:
+  id: 77
+  title: Page 1
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Qui modi eveniet voluptates
+    quibusdam incidunt fugit distinctio molestias corrupti consequuntur tenetur eos
+    sint earum aut voluptas corporis possimus et in quis quidem velit consectetur
+    omnis blanditiis impedit eum.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 75
+  lft: 151
+  rgt: 152
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_078:
+  id: 78
+  title: Page 2
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Ut earum excepturi qui
+    voluptatem dolores aut sint et et incidunt natus sequi odio aperiam recusandae
+    sit modi animi iure et distinctio veniam qui laudantium non error molestiae hic
+    sint.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 75
+  lft: 153
+  rgt: 154
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_079:
+  id: 79
+  title: Page 3
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Omnis rem ea enim blanditiis
+    consectetur doloremque iusto modi et dolorem veritatis architecto aliquid adipisci
+    vel et amet delectus vitae dolor ut minima sed sunt commodi velit porro.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 75
+  lft: 155
+  rgt: 156
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_080:
+  id: 80
+  title: Chapter 3
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Ut maiores id non sapiente
+    suscipit voluptatum qui repudiandae dicta.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 64
+  lft: 158
+  rgt: 167
+  depth: 1
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_081:
+  id: 81
+  title: Page 0
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Quidem ipsa consequuntur
+    aut temporibus neque qui voluptatem ab odio a enim ea sit sequi sint fuga quibusdam
+    commodi quisquam debitis qui ratione optio facilis id.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 80
+  lft: 159
+  rgt: 160
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_082:
+  id: 82
+  title: Page 1
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Nobis architecto eum
+    rerum aut aut nihil accusamus necessitatibus aliquam est molestiae saepe hic laudantium
+    atque voluptatum iste consequatur qui voluptatem ducimus similique tempore quos
+    nesciunt veniam consequatur dolores.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 80
+  lft: 161
+  rgt: 162
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_083:
+  id: 83
+  title: Page 2
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Sit maiores voluptatem
+    qui quia soluta officiis consequatur eum voluptates est perferendis voluptatem
+    molestias illum velit ipsum beatae a repellendus voluptatum non natus rerum nam
+    cupiditate eveniet exercitationem.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 80
+  lft: 163
+  rgt: 164
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
+categories_084:
+  id: 84
+  title: Page 3
+  content: Unsafe content <script>alert(1)</script>!!! ' ' " Sint laudantium doloremque
+    nisi id natus sed qui quidem quis dolorum quo nulla sapiente rerum quia porro
+    accusamus commodi atque fuga ducimus ut consectetur quos repudiandae rerum quam.
+  secret_field: <script>alert('!!! Some Secret word !!!')</script> It's should be
+    removed from JSON
+  parent_id: 80
+  lft: 165
+  rgt: 166
+  depth: 2
+  created_at: 2013-10-20 16:48:47.000000000 Z
+  updated_at: 2013-10-20 16:48:47.000000000 Z
