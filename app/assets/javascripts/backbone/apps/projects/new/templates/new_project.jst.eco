@@ -1,9 +1,9 @@
 <div id="new-project" class="">
     <div class="row form-group">
-        <label for="inputTitle" class="col-md-3 control-label">Project Title</label>
+        <label for="inputName" class="col-md-3 control-label">Project Name</label>
 
         <div class="col-md-9">
-            <input type="text" name="title" class="form-control col-md-6" id="inputTitle" placeholder="project title">
+            <input type="text" name="prj_name" class="form-control col-md-6" id="inputName" placeholder="project title">
         </div>
     </div>
 </div>

@@ -2,6 +2,8 @@ require 'sidekiq/web'
 
 Rails4Bp::Application.routes.draw do
 
+  resources :topics
+
   resources :projects
   resources :folders
   resources :companies

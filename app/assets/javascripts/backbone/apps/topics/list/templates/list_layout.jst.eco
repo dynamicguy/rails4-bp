@@ -1,0 +1,18 @@
+<div class="rbp-breadcrumb container-fluid" id="breadcrumb-region"></div>
+
+<div class="container">
+    <div id="sidebar-region" class="col-sm-1 col-md-2"></div>
+
+    <div id="content-block" class="col-sm-11 col-md-10">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">topics <span class="pull-right"><span id="found_count" class="badge">0</span> rows found in <span id="elapsed_time" class="badge">0</span> seconds</span></h3>
+            </div>
+            <div class="panel-body">
+                <div id="panel-region"></div>
+                <div id="new-region"></div>
+                <div id="list-region"></div>
+            </div>
+        </div>
+    </div>
+</div>

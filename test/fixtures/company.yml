@@ -792,3 +792,16 @@ company_061:
   website: http://satterfield.us
   phone: (653)650-1255 x246
   ssl: 
+company_062:
+  comp_id: 869
+  comp_name: ferdous
+  status: 
+  hidden: 
+  created_time: 
+  modified_time: 
+  created_uid: 
+  modified_uid: 
+  global_admin: 
+  website: http://ferdo.us
+  phone: '4324'
+  ssl: 

@@ -25,6 +25,7 @@ class CompaniesController < ApplicationController
 
   def new
     @company = Company.new
+    respond_with(@company)
   end
 
   # GET /companies/1/edit
@@ -36,6 +37,7 @@ class CompaniesController < ApplicationController
   def create
     @company = Company.new(company_params)
     @company.save
+    respond_with(@company)
   end
 
   # PATCH/PUT /companies/1

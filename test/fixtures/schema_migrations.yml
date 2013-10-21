@@ -36,10 +36,12 @@ schema_migrations_017:
 schema_migrations_018:
   version: '20130928161326'
 schema_migrations_019:
-  version: '20131013195906'
-schema_migrations_020:
-  version: '20131013203312'
-schema_migrations_021:
-  version: '20131013213707'
-schema_migrations_022:
   version: '20131020153117'
+schema_migrations_020:
+  version: '20131020184242'
+schema_migrations_021:
+  version: '20131021160637'
+schema_migrations_022:
+  version: '20131021170336'
+schema_migrations_023:
+  version: '20131021180236'

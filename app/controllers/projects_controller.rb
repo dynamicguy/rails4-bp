@@ -16,7 +16,6 @@ class ProjectsController < ApplicationController
       format.json { render json: @projects }
       format.xml { render xml: @projects }
     end
-
   end
 
   # GET /projects/1
@@ -31,7 +30,6 @@ class ProjectsController < ApplicationController
   end
 
   # GET /projects/1/edit
-  # GET /projects/1/edit.json  
   def edit
   end
 

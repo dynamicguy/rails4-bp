@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131021170336) do
+ActiveRecord::Schema.define(version: 20131021180236) do
 
   create_table "articles", force: true do |t|
     t.string   "name"
@@ -223,6 +223,42 @@ ActiveRecord::Schema.define(version: 20131021170336) do
 
   create_table "tags", force: true do |t|
     t.string "name"
+  end
+
+  create_table "topic", primary_key: "topic_id", force: true do |t|
+    t.string  "topic_type"
+    t.string  "topic_title"
+    t.boolean "topic_status"
+    t.boolean "topic_toc"
+    t.string  "toc_name"
+    t.boolean "topic_index"
+    t.string  "index_name"
+    t.string  "topic_permalink"
+    t.text    "topic_content"
+    t.integer "prj_id"
+    t.integer "folder_id"
+    t.string  "deleted"
+    t.integer "created_time"
+    t.string  "created_uid"
+    t.integer "modified_time"
+    t.integer "modified_uid"
+    t.integer "deleted_time"
+    t.integer "deleted_uid"
+    t.integer "undeleted_uid"
+    t.integer "undeleted_time"
+    t.integer "comp_id"
+    t.integer "topic_size"
+    t.boolean "has_feedback"
+    t.integer "good"
+    t.integer "bad"
+    t.boolean "show_in_pdf"
+    t.string  "import_id"
+    t.integer "duplicated_id"
+    t.boolean "toc_hidden"
+    t.string  "keywords"
+    t.boolean "inc_search"
+    t.boolean "working"
+    t.boolean "toc_open"
   end
 
   create_table "users", force: true do |t|
