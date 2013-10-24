@@ -1,40 +1,41 @@
-require File.expand_path('../load_config', __FILE__)
+# config/unicorn.rb
 
-# Enable and set these to run the worker as a different user/group
-#user  = 'rails4bp'
-#group = 'rails4bp'
+rails_env = ENV['RAILS_ENV'] || 'production'
 
-worker_processes AppConfig.server.unicorn_worker.to_i
+worker_processes (rails_env == 'production' ? 6 : 3)
 
-## Load the app before spawning workers
 preload_app true
 
-# How long to wait before killing an unresponsive worker
-timeout AppConfig.server.unicorn_timeout.to_i
+# Restart any workers that haven't responded in 30 seconds
+timeout 30
 
-@sidekiq_pid = nil
+working_directory '/var/www/rails4bp/current'
 
-#pid '/var/run/rails4bp/rails4bp.pid'
-#listen '/var/run/rails4bp/rails4bp.sock', :backlog => 2048
+# Listen on a Unix data socket
+pid '/var/www/rails4bp/shared/pids/unicorn.pid'
+listen "/var/www/rails4bp/tmp/sockets/rails4bp.sock", :backlog => 2048
 
+stderr_path '/var/www/rails4bp/shared/log/unicorn.log'
+stdout_path '/var/www/rails4bp/shared/log/unicorn.log'
 
-stderr_path AppConfig.server.stderr_log.get if AppConfig.server.stderr_log.present?
-stdout_path AppConfig.server.stdout_log.get if AppConfig.server.stdout_log.present?
+before_exec do |server|
+  ENV["BUNDLE_GEMFILE"] = "/var/www/rails4bp/current/Gemfile"
+end
 
 before_fork do |server, worker|
-  # If using preload_app, enable this line
-  ActiveRecord::Base.connection.disconnect!
+  ##
+  # When sent a USR2, Unicorn will suffix its pidfile with .oldbin and
+  # immediately start loading up a new version of itself (loaded with a new
+  # version of our app). When this new Unicorn is completely loaded
+  # it will begin spawning workers. The first worker spawned will check to
+  # see if an .oldbin pidfile exists. If so, this means we've just booted up
+  # a new Unicorn and need to tell the old one that it can now die. To do so
+  # we send it a QUIT.
+  #
+  # Using this method we get 0 downtime deploys.
 
-  # disconnect redis if in use
-  unless AppConfig.single_process_mode?
-    Sidekiq.redis {|redis| redis.client.disconnect }
-  end
-  
-  if AppConfig.server.embed_sidekiq_worker?
-    @sidekiq_pid ||= spawn('bundle exec sidekiq')
-  end
+  old_pid = '/var/www/rails4bp/shared/pids/unicorn.pid.oldbin'
 
-  old_pid = '/var/run/rails4bp/rails4bp.pid.oldbin'
   if File.exists?(old_pid) && server.pid != old_pid
     begin
       Process.kill("QUIT", File.read(old_pid).to_i)
@@ -42,10 +43,4 @@ before_fork do |server, worker|
       # someone else did our job for us
     end
   end
-end
-
-
-after_fork do |server, worker|
-  # If using preload_app, enable this line
-  ActiveRecord::Base.establish_connection
 end

@@ -1,0 +1,44 @@
+# chef/site-cookbooks/main/templates/default/nginx.erb
+
+upstream unicorn {
+  server unix:/var/www/rails4bp/tmp/sockets/rails4bp.sock fail_timeout=0;
+}
+
+server {
+  listen 80;
+  listen 443 default ssl;
+  server_name <%= node[:server_name] %>;
+  root /var/www/rails4bp/current/public;
+  # set far-future expiration headers on static content
+  expires max;
+
+  server_tokens off;
+
+  # ssl                  on;
+  ssl_certificate      <%= "/var/www/rails4bp/certificate/#{node[:environment]}.crt" %>;
+  ssl_certificate_key  <%= "/var/www/rails4bp/certificate/#{node[:environment]}.key" %>;
+
+  ssl_session_timeout  5m;
+
+  ssl_protocols  SSLv2 SSLv3 TLSv1;
+  ssl_ciphers  HIGH:!aNULL:!MD5;
+  ssl_prefer_server_ciphers   on;
+
+  # set up the rails servers as a virtual location for use later
+  location @unicorn {
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP  $remote_addr;
+    proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    proxy_set_header X-Forwarded-Proto $scheme;
+    proxy_intercept_errors on;
+    proxy_redirect off;
+    proxy_pass http://unicorn;
+    expires off;
+  }
+
+  location / {
+    try_files $uri @unicorn;
+  }
+
+  # error_page 500 502 503 504 /500.html;
+}

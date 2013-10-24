@@ -1,0 +1,5 @@
+# chef/site-cookbooks/main/templates/default/sv-runsvdir-deployer-run.erb
+
+#!/bin/sh
+exec 2>&1
+exec chpst -u deployer runsvdir /home/deployer/service

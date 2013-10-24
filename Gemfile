@@ -216,8 +216,8 @@ group :development do
   #gem 'growl', require: darwin_only('growl')
   #gem 'rb-inotify', require: linux_only('rb-inotify')
 
-  gem 'capistrano'
-  gem 'capistrano-ext'
+  gem 'capistrano', '~> 3.0.0'
+  #gem 'capistrano-ext'
   gem 'meta_request'
 
   # Guard
@@ -227,7 +227,14 @@ group :development do
   gem 'guard-livereload', github: "guard/guard-livereload"
   gem 'guard-rails'
 
-  gem 'librarian-chef'
+  gem 'berkshelf', :github => 'RiotGames/berkshelf'
+  gem 'knife-solo',
+      :github => 'matschaffer/knife-solo',
+      :branch => 'master',
+      :submodules => true
+  #gem 'berkshelf'
+
+  #gem 'librarian-chef'
 
   #gem 'twitter-bootstrap-rails', github: 'seyhunak/twitter-bootstrap-rails'
 end

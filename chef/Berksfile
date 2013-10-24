@@ -1,0 +1,20 @@
+source "http://api.berkshelf.com"
+
+cookbook 'apt'
+cookbook 'build-essential'
+cookbook 'users'
+cookbook 'imagemagick'
+cookbook 'vim'
+
+cookbook 'ruby_build'
+cookbook 'rbenv'
+cookbook 'ohai'
+cookbook 'runit'
+
+cookbook 'nodejs'
+cookbook 'nginx'
+
+cookbook 'java'
+
+cookbook 'redis'
+cookbook 'mysql'
