@@ -163,7 +163,7 @@ gem 'mobile-fu'
 
 
 gem "rabl"
-#gem "oj"
+gem "rake", '10.1.0'
 gem 'yajl-ruby', :require => "yajl"
 gem "gon"
 #gem "rabl-rails"

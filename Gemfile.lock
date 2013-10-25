@@ -944,6 +944,7 @@ DEPENDENCIES
   rails_admin!
   rails_admin_tag_list
   rails_autolink (= 1.1.0)
+  rake (= 10.1.0)
   rb-fsevent
   rb-inotify (~> 0.9)
   redcarpet (= 3.0.0)
