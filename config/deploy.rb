@@ -1,42 +1,47 @@
-set :application, 'rails4bp_production'
-set :repo_url, 'git@git.helpdocstest.com:helpiq-search/helpiq-search.git'
+require "bundler/capistrano"
 
+default_run_options[:pty] = true
+ssh_options[:forward_agent] = false
 
-# ask :branch, proc { `git rev-parse --abbrev-ref HEAD`.chomp }
+set :stages, %w(staging production)
+set :default_stage, 'production'
 
-set :deploy_to, '/u/apps/rails4bp_production'
+require 'capistrano/ext/multistage'
+
+set :application, "rails4bp"
+set :repository,  "git@git.helpdocstest.com:helpiq-search/helpiq-search.git"
+
 set :scm, :git
+set :deploy_via, :remote_cache
+# Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
-set :format, :pretty
-set :log_level, :debug
-set :pty, true
+role :web, "162.209.48.170"                          # Your HTTP server, Apache/etc
+role :app, "162.209.48.170"                          # This may be the same as your `Web` server
+role :db,  "162.209.48.170", :primary => true # This is where Rails migrations will run
+# role :db,  "your slave db-server here"
 
-# set :linked_files, %w{config/database.yml}
-# set :linked_dirs, %w{bin log tmp/pids tmp/cache tmp/sockets vendor/bundle public/system}
+set :user, "deploy"
+set :use_sudo, false
 
-# set :default_env, { path: "/opt/ruby/bin:$PATH" }
-set :keep_releases, 5
+set :deploy_to, defer { "/u/apps/#{application}_#{stage}" }
+
+before "deploy:finalize_update" do
+  run "rm -f #{release_path}/config/database.yml; ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
+  run "mkdir -p #{release_path}/tmp"
+  run "ln -nfs #{shared_path}/sockets #{release_path}/tmp/sockets"
+end
 
 namespace :deploy do
-
-  desc 'Restart application'
-  task :restart do
-    on roles(:app), in: :sequence, wait: 5 do
-      # Your restart mechanism here, for example:
-      # execute :touch, release_path.join('tmp/restart.txt')
-      run "sudo bluepill rails4bp_production restart"
-    end
+  task :start do
+    run "sudo bluepill load /etc/bluepill/#{application}_#{stage}.pill"
   end
-
-  after :restart, :clear_cache do
-    on roles(:web), in: :groups, limit: 3, wait: 10 do
-      # Here we can do anything such as:
-      # within release_path do
-      #   execute :rake, 'cache:clear'
-      # end
-    end
+  task :stop do
+    run "sudo bluepill #{application}_#{stage} stop"
   end
-
-  after :finishing, 'deploy:cleanup'
-
+  task :restart, :roles => :app, :except => { :no_release => true } do
+    run "sudo bluepill #{application}_#{stage} restart"
+  end
+  task :status do
+    run "sudo bluepill #{application}_#{stage} status"
+  end
 end

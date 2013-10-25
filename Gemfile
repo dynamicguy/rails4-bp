@@ -28,7 +28,7 @@ gem 'remotipart'
 
 # Localization
 gem 'http_accept_language'
-gem "i18n-inflector-rails", :git => 'git@github.com:dynamicguy/i18n-inflector-rails.git'
+gem "i18n-inflector-rails", :git => 'git://github.com/dynamicguy/i18n-inflector-rails.git'
 gem 'rails-i18n', '~> 4.0.0.pre'
 
 # Mail
@@ -148,8 +148,8 @@ gem 'typhoeus', '0.6.3'
 
 # Views
 gem "country_select"
-gem 'awesome_nested_set', :git => 'git@github.com:collectiveidea/awesome_nested_set.git', :branch => 'master' # or any similar gem (gem 'nested_set')
-gem "the_sortable_tree", :git => "git@github.com:the-teacher/the_sortable_tree.git"
+gem 'awesome_nested_set', :git => 'git://github.com/collectiveidea/awesome_nested_set.git', :branch => 'master' # or any similar gem (gem 'nested_set')
+gem "the_sortable_tree", :git => "git://github.com/the-teacher/the_sortable_tree.git"
 #gem 'bootstrap-wysihtml5-rails', :require => 'bootstrap-wysihtml5-rails', :git => 'git://github.com/Nerian/bootstrap-wysihtml5-rails.git'
 gem 'jquery-datatables-rails', git: 'git://github.com/rweng/jquery-datatables-rails.git'
 gem "simple_form", git: 'git://github.com/plataformatec/simple_form.git'
@@ -171,7 +171,7 @@ gem "js-routes"
 gem 'responders'
 gem 'paginate-responder'
 
-gem 'rails_admin', git: 'git@github.com:sferik/rails_admin.git'
+gem 'rails_admin', git: 'git://github.com/sferik/rails_admin.git'
 gem 'rails_admin_tag_list'
 
 # we don't install these on travis to speed up test runs
@@ -216,8 +216,8 @@ group :development do
   #gem 'growl', require: darwin_only('growl')
   #gem 'rb-inotify', require: linux_only('rb-inotify')
 
-  gem 'capistrano', '~> 3.0.0'
-  #gem 'capistrano-ext'
+  gem 'capistrano', '2.15.5'
+  gem 'capistrano-ext', '1.2.1'
   gem 'meta_request'
 
   # Guard
