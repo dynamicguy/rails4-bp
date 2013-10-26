@@ -22,7 +22,6 @@ Rails4Bp::Application.configure do
   config.assets.css_compressor = :yui
   config.assets.compile = false
   config.assets.digest = true
-  config.assets.precompile += %w( js-routes.js )
 
   # Enable Rack::Cache to put a simple HTTP cache in front of your application
   # Add `rack-cache` to your Gemfile before enabling this.
