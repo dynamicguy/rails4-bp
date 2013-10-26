@@ -1,30 +1,25 @@
-set :stages, %w(staging production)
-set :default_stage, 'production'
-
+require "bundler/capistrano"
 require 'capistrano/ext/multistage'
+require './config/deploy/cap_notify.rb'
+#require 'puma/capistrano'
+
+set :stages, [:staging, :production, :cars, :electronics, :properties]
+set :default_stage, :production
+
+set :app_name, 'rails4bp'
+set :application, 'rails4bp'
 
 default_run_options[:pty] = true
 ssh_options[:forward_agent] = true
 
-set :rails_env, 'production'
-set :deploy_via, :remote_cache
-set :deploy_to, "/u/apps/#{application}_#{stage}"
-
-set :application, "rails4bp"
 set :repository, "git@git.helpdocstest.com:helpiq-search/helpiq-search.git"
-
 set :scm, :git
-# Or: `accurev`, `bzr`, `cvs`, `darcs`, `git`, `mercurial`, `perforce`, `subversion` or `none`
 
-role :web, "162.209.48.170" # Your HTTP server, Apache/etc
-role :app, "162.209.48.170" # This may be the same as your `Web` server
-role :db, "162.209.48.170", :primary => true # This is where Rails migrations will run
-# role :db,  "your slave db-server here"
 
 set :user, "deploy"
-set :group, "deploy"
 set :use_sudo, false
 
+set :deploy_to, defer { "/u/apps/#{app_name}_#{stage}" }
 
 before "deploy:assets:precompile" do
   run "cd #{release_path}"
@@ -39,15 +34,34 @@ end
 
 namespace :deploy do
   task :start do
-    run "sudo bluepill load /etc/bluepill/#{application}_#{stage}.pill"
+    run "sudo bluepill load /etc/bluepill/#{app_name}_#{stage}.pill"
   end
   task :stop do
-    run "sudo bluepill #{application}_#{stage} stop"
+    run "sudo bluepill #{app_name}_#{stage} stop"
   end
   task :restart, :roles => :app, :except => {:no_release => true} do
-    run "sudo bluepill #{application}_#{stage} restart"
+    run "sudo bluepill #{app_name}_#{stage} restart"
   end
   task :status do
-    run "sudo bluepill #{application}_#{stage} status"
+    run "sudo bluepill #{app_name}_#{stage} status"
   end
 end
+
+namespace :rails4bp do
+  desc "update changelog file"
+  task :update_change_log do
+    %x[git log --pretty=format:"%h - %cd - %s, [%cn]" --no-merges > CHANGELOG]
+  end
+
+  desc "Send email notification"
+  task :send_notification do
+    Notifier.deploy_notification(self).deliver
+  end
+end
+
+#after "deploy:finalize_update", "deploy:symlink_db"
+after "deploy", "deploy:cleanup" # keep only the last 5 releases
+
+
+set :notify_emails, ["ops@tasawr.com"]
+#after :deploy, 'rails4bp:send_notification'
