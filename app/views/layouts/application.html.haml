@@ -2,7 +2,7 @@
 %html{:lang => I18n.locale.to_s, :dir => (rtl?) ? 'rtl' : 'ltr'}
   %head
     %title rails4bp
-    = stylesheet_link_tag "application"
+    = stylesheet_link_tag :application
   %body
     %a.sr-only{:href => "#content"} Skip navigation
 

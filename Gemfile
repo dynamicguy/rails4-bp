@@ -44,7 +44,7 @@ gem 'roxml', '3.1.6'
 gem 'ruby-oembed', '0.8.8'
 gem 'opengraph_parser', '0.2.3'
 
-
+gem "yui-compressor", "~> 0.12.0"
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do

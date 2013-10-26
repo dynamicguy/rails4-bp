@@ -2,7 +2,7 @@
 %html{:lang => I18n.locale.to_s, :dir => (rtl?) ? 'rtl' : 'ltr'}
   %head
     %title= raw [content_for?(:title) ? yield(:title) : [params[:controller], params[:action]].join(" » ").titleize + " : Home", AppConfig.settings.app_name].join(" &raquo; ")
-    = stylesheet_link_tag "minimal"
+    = stylesheet_link_tag :minimal
 
   %body
     = flash_messages
