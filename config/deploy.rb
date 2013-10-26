@@ -3,27 +3,30 @@ require 'capistrano/ext/multistage'
 require './config/deploy/cap_notify.rb'
 #require 'puma/capistrano'
 
-set :stages, [:staging, :production, :cars, :electronics, :properties]
-set :default_stage, :production
+set :stages, %w(staging production)
+set :default_stage, 'production'
 
-set :app_name, 'rails4bp'
 set :application, 'rails4bp'
+set :deploy_via, :remote_cache
 
 default_run_options[:pty] = true
-ssh_options[:forward_agent] = true
+ssh_options[:forward_agent] = false
 
 set :repository, "git@git.helpdocstest.com:helpiq-search/helpiq-search.git"
 set :scm, :git
 
+role :app, '162.209.48.170'
+role :web, '162.209.48.170'
+role :db, '162.209.48.170', :primary => true
 
 set :user, "deploy"
 set :use_sudo, false
 
-set :deploy_to, defer { "/u/apps/#{app_name}_#{stage}" }
+set :deploy_to, defer { "/u/apps/#{application}_#{stage}" }
 
 before "deploy:assets:precompile" do
-  run "cd #{release_path}"
-  run "/usr/local/node/bin/bower install"
+  run "cd #{current_path}"
+  #run "/usr/local/node/bin/bower install"
 end
 
 before "deploy:finalize_update" do
@@ -34,16 +37,16 @@ end
 
 namespace :deploy do
   task :start do
-    run "sudo bluepill load /etc/bluepill/#{app_name}_#{stage}.pill"
+    run "sudo bluepill load /etc/bluepill/#{application}_#{stage}.pill"
   end
   task :stop do
-    run "sudo bluepill #{app_name}_#{stage} stop"
+    run "sudo bluepill #{application}_#{stage} stop"
   end
   task :restart, :roles => :app, :except => {:no_release => true} do
-    run "sudo bluepill #{app_name}_#{stage} restart"
+    run "sudo bluepill #{application}_#{stage} restart"
   end
   task :status do
-    run "sudo bluepill #{app_name}_#{stage} status"
+    run "sudo bluepill #{application}_#{stage} status"
   end
 end
 

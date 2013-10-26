@@ -20,7 +20,7 @@ Rails4Bp::Application.configure do
   config.action_dispatch.best_standards_support = :builtin
 
   # Do not compress assets
-  config.assets.prefix = "/dev-assets"
+  config.assets.prefix = "/assets"
   config.assets.compress = false
   config.assets.debug = false
 
