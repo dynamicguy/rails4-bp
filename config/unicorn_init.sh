@@ -15,7 +15,7 @@
 ### END INIT INFO
 
 
-APP_ROOT="/home/dev/public_html/www.rubbama.com/current"
+APP_ROOT="/u/apps/rails4bp_production/current"
 DAEMON_OPTS="-c $APP_ROOT/config/unicorn.conf.rb -E production"
 PID_PATH="$APP_ROOT/tmp/pids"
 UNICORN_PID="$PID_PATH/unicorn.pid"
