@@ -35,7 +35,7 @@ AppConfig ||= Configurate::Settings.create do
 
   extend Configuration::Methods
   
-  if rails_env == "production"  &&
+  if rails_env == "sproduction"  &&
     (environment.certificate_authorities.nil? ||
      environment.certificate_authorities.empty? ||
      !File.file?(environment.certificate_authorities.get))
