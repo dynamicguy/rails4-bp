@@ -1,6 +1,5 @@
 <h1><%= gon.config.app_name %></h1>
-<p>A rails 4 boilerplate built with backbone, marionette, coffee-script, postgresql, solr, less, haml, rspec, cucumber,
-    bootstrap3, lots of love, cigarettes and coffee.</p>
+<p>HelpDocs - help made simple</p>
 <div id="carbonads-container">
     <div class="carbonad">
         <div class="media">

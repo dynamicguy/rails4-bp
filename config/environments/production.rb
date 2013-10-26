@@ -25,7 +25,7 @@ Rails4Bp::Application.configure do
   # config.action_dispatch.x_sendfile_header = "X-Sendfile" # for apache
   config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for nginx
   config.assets.cache_store = :memory_store, {size: 32.megabytes}
-  config.assets.precompile += %w( js-routes.js application.js minimal.css application.css )
+  config.assets.precompile += %w( js-routes.js application.js minimal.css application.css jquery.js jquery_ujs.js )
 
   # Enable Rack::Cache to put a simple HTTP cache in front of your application
   # Add `rack-cache` to your Gemfile before enabling this.
