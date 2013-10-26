@@ -65,7 +65,7 @@ module Rails4Bp
     config.assets.enabled = true
 
     # Speed up precompile by not loading the environment
-    config.assets.initialize_on_precompile = false
+    config.assets.initialize_on_precompile = true
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '21'
