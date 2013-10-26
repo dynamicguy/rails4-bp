@@ -26,7 +26,7 @@ set :use_sudo, false
 set :deploy_to, defer { "/u/apps/#{application}_#{stage}" }
 
 before "deploy:assets:precompile" do
-  run "bower install"
+  run "/usr/local/node/bin/bower install"
 end
 
 before "deploy:finalize_update" do
