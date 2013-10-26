@@ -1,0 +1,48 @@
+app_name = 'rails4bp'
+worker_queues = ['rails4bp'] * 4
+
+rails_env = 'production'
+user = 'deploy'
+group = 'deploy'
+rails_root = "/u/apps/rails4bp_production/current"
+
+Bluepill.application(app_name) do |app|
+
+  app.working_dir = rails_root
+  app.uid = user
+  app.gid = group
+
+  app.process("puma") do |process|
+    process.pid_file = "#{rails_root}/tmp/sockets/puma.sock"
+    process.stdout = process.stderr = "#{rails_root}/log/bluepill.log"
+    process.environment = { 'RAILS_ENV' => rails_env }
+
+    # Unicorn needs to be invoked using a path which includes 'current',
+    # otherwise it tries to restart with the executable installed in an old release dir (which get cleaned)
+    process.start_command = "sudo bluepill load /etc/bluepill/rails4bp_production.pill"
+    process.stop_command = "sudo bluepill rails4bp_production stop"
+    process.restart_command = "sudo bluepill rails4bp_production restart"
+
+    process.start_grace_time = 30.seconds
+    process.stop_grace_time = 5.seconds
+    process.restart_grace_time = 13.seconds
+  end
+
+  if defined?(worker_queues)
+    worker_queues.each_with_index do |queue_list, i|
+      app.process("resque-#{i}") do |process|
+        process.group = "resque"
+
+        process.pid_file = "#{rails_root}/tmp/pids/resque-#{i}.pid"
+        process.stdout = process.stderr = "#{rails_root}/log/resque-#{i}.log"
+        process.environment = {
+          'RAILS_ENV' => rails_env,
+          'QUEUE' => queue_list
+        }
+        process.start_command = "bundle exec rake resque:work"
+        process.stop_command = "kill -QUIT {{PID}}"
+        process.daemonize = true
+      end
+    end
+  end
+end

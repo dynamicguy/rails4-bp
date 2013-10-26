@@ -1,9 +1,9 @@
-@app = "/u/apps/rails4bp_production/current"
+@app = "/home/dev/public_html/www.rubbama.com/current"
 # 4 workers is enough for our app
 worker_processes 4
 
 # Listen on fs socket for better performance
-listen "/tmp/rails4bp.sock", :backlog => 64
+listen "/tmp/rubbama.sock", :backlog => 64
 
 # Nuke workers after 30 seconds instead of 60 seconds (the default)
 timeout 30

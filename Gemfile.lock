@@ -251,6 +251,11 @@ GEM
       erubis (>= 2.6.6)
     binding_of_caller (0.7.2)
       debug_inspector (>= 0.0.1)
+    bluepill (0.0.64)
+      activesupport (>= 3.0.0)
+      daemons (~> 1.1.4)
+      i18n (>= 0.5.0)
+      state_machine (~> 1.1)
     bootstrap-sass (2.3.2.2)
       sass (~> 3.2)
     buff-config (0.4.0)
@@ -340,6 +345,7 @@ GEM
       cucumber (>= 1.2.0)
       nokogiri (>= 1.5.0)
       rails (>= 3.0.0)
+    daemons (1.1.9)
     database_cleaner (1.2.0)
     debug_inspector (0.0.2)
     diff-lcs (1.2.4)
@@ -854,6 +860,7 @@ DEPENDENCIES
   berkshelf!
   better_errors
   binding_of_caller
+  bluepill
   bullet
   cancan
   capistrano (= 2.15.5)

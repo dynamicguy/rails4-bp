@@ -108,8 +108,10 @@ gem 'rack-mini-profiler', git: 'git://github.com/MiniProfiler/rack-mini-profiler
 
 # used for caching, optional
 gem 'rack-cors', require: false
-gem 'unicorn', require: false
-gem 'puma', require: false
+gem 'unicorn'
+gem 'puma'
+gem "rake", '10.1.0'
+gem 'bluepill'
 
 
 # Configurations
@@ -163,7 +165,6 @@ gem 'mobile-fu'
 
 
 gem "rabl"
-gem "rake", '10.1.0'
 gem 'yajl-ruby', :require => "yajl"
 gem "gon"
 #gem "rabl-rails"
