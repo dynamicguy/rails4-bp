@@ -1,4 +1,4 @@
-source 'http://rubygems.org'
+source 'https://rubygems.org'
 
 gem 'rails', :git => 'git://github.com/rails/rails.git', :branch => '4-0-stable'
 gem 'redis-rails', :git => 'git://github.com/SamSaffron/redis-store.git'
@@ -55,12 +55,16 @@ group :assets do
 
   # CSS
   # Use SCSS for stylesheets
-  gem 'less-rails'
+  #gem 'less-rails'
+
+  gem 'sass-rails', '>= 3.2' # sass-rails needs to be higher than 3.2
+  gem 'bootstrap-sass', '~> 3.0.0.0.rc'
+
   gem 'uglifier', '>= 1.3.0'
   gem 'coffee-rails', '~> 4.0.0'
 
   #gem 'bootstrap-sass'
-  gem "compass-rails", "~> 2.0.alpha.0"
+  #gem "compass-rails", "~> 2.0.alpha.0"
 
   # JavaScript
   #gem 'handlebars_assets', '>= 0.12.0'
@@ -70,9 +74,7 @@ group :assets do
   # install Node.js or use 'therubyracer'.
   #
   # See git://github.com/sstephenson/execjs#readme for more supported runtimes
-
   gem 'therubyracer', :platform => :ruby
-
 end
 
 # Build JSON APIs with ease. Read more: git://github.com/rails/jbuilder
@@ -172,9 +174,6 @@ gem "js-routes"
 gem 'responders'
 gem 'paginate-responder'
 
-gem 'rails_admin', git: 'git://github.com/sferik/rails_admin.git'
-gem 'rails_admin_tag_list'
-
 # we don't install these on travis to speed up test runs
 group :production do
   # Administration
@@ -217,7 +216,7 @@ group :development do
   #gem 'growl', require: darwin_only('growl')
   #gem 'rb-inotify', require: linux_only('rb-inotify')
 
-  gem 'capistrano', '2.15.5'
+  gem 'capistrano', '2.15.4'
   gem 'capistrano-ext', '1.2.1'
   gem 'meta_request'
 
@@ -311,6 +310,9 @@ group :development, :test do
   gem 'spork-rails', :github => 'sporkrb/spork-rails'
 
 end
+
+#gem 'rails_admin', git: 'git://github.com/sferik/rails_admin.git', :branch => 'master'
+#gem 'rails_admin_tag_list'
 
 # perftools only works on 1.9 atm
 group :profile do

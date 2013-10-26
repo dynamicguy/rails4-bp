@@ -5,7 +5,7 @@
     <div class="carbonad">
         <div class="media">
             <a class="pull-left" href="#">
-                <img class="media-object img-thumbnail" src="/assets/trending.png" alt="...">
+                <img class="media-object" src="/dev-assets/trending.png" alt="...">
             </a>
             <div class="media-body">
                 <h4 class="media-heading">Now Trending</h4>

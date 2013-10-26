@@ -1,8 +1,10 @@
 @charset "UTF-8";
-@import "bootstrap/less/bootstrap";
+
+@import "bootstrap";
+@import "bootstrap/theme";
 @import "backgrid/lib/backgrid.css";
 @import "pace/themes/pace-theme-flash.css";
-@import "font-awesome.css";
+
 
 @import "theme";
 @import "main";

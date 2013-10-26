@@ -1,0 +1,372 @@
+//my style
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+    background-color: #e8e8e8;
+    background-image: -webkit-gradient(linear, left 0%, left 100%, from(#f5f5f5), to(#e8e8e8));
+    background-image: -webkit-linear-gradient(top, #f5f5f5, 0%, #e8e8e8, 100%);
+    background-image: -moz-linear-gradient(top, #f5f5f5 0%, #e8e8e8 100%);
+    background-image: linear-gradient(to bottom, #f5f5f5 0%, #e8e8e8 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff5f5f5', endColorstr='#ffe8e8e8', GradientType=0);
+}
+
+.pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus, .pagination > .active > span, .pagination > .active > span:hover, .pagination > .active > span:focus, .pagination > .active > a, .pagination > .active > a:hover, .pagination > .active > a:focus, .pagination > .active > span, .pagination > .active > span:hover, .pagination > .active > span:focus {
+    background-color: #271a39;
+    border-color: #271a39;
+    font-weight: bold;
+}
+
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+    background-color: #271a39;
+    background-image: -webkit-gradient(linear, left 0%, left 100%, from(#555), to(#271a39));
+    background-image: -webkit-linear-gradient(top, #555, 0%, #271a39, 100%);
+    background-image: -moz-linear-gradient(top, #555 0%, #271a39 100%);
+    background-image: linear-gradient(to bottom, #555 0%, #271a39 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff555', endColorstr='#ff271a39', GradientType=0);
+}
+
+.btn-primary {
+    background-image: -webkit-gradient(linear, left 0%, left 100%, from(#f0ad4e), to(#eb9316));
+    background-image: -webkit-linear-gradient(top, #f0ad4e, 0%, #eb9316, 100%);
+    background-image: -moz-linear-gradient(top, #f0ad4e 0%, #eb9316 100%);
+    background-image: linear-gradient(to bottom, #f0ad4e 0%, #eb9316 100%);
+    background-repeat: repeat-x;
+    border-color: #e38d13;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fff0ad4e', endColorstr='#ffeb9316', GradientType=0);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #eb9316;
+    background-position: 0 -15px;
+}
+
+.btn-primary:active,
+.btn-primary.active {
+    background-color: #eb9316;
+    border-color: #e38d13;
+}
+
+.nav.navbar-nav > .active > a,
+.nav.navbar-nav > li > a:hover {
+    color: #333;
+    background-color: rgba(51, 51, 51, 0.98);
+    border-color: #5e5b58;
+}
+
+.breadcrumb {
+    margin: 0 auto;
+    padding-left: 0;
+    background-color: transparent;
+}
+
+.rbp-app-nav {
+    margin: 0 auto;
+    padding: 0 50px;
+}
+
+.rbp-app-nav {
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .15);
+    background-color: #555;
+    border-color: #333;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, .1);
+}
+
+.rbp-app-nav .navbar-collapse {
+    border-color: #5F5F5F;
+}
+
+.rbp-app-nav .navbar-brand {
+    color: #fff;
+}
+
+.rbp-app-nav .navbar-nav > li > a {
+    color: #fff;
+}
+
+.rbp-app-nav .navbar-nav > li > a:hover {
+    color: #fff;
+}
+
+.rbp-app-nav .navbar-nav > .active > a,
+.rbp-app-nav .navbar-nav > .active > a:hover {
+    color: #fff;
+    background-color: #5F5F5F;
+}
+
+.rbp-app-nav .navbar-toggle {
+    border-color: #555;
+}
+
+.rbp-app-nav .navbar-toggle:hover {
+    background-color: #5F5F5F;
+    border-color: #5F5F5F;
+}
+
+.rbp-footer {
+    color: #777;
+    background-color: #fafafa;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    height: 60px;
+    line-height: 60px;
+}
+
+@media (min-width: 768px) {
+    .rbp-footer {
+        text-align: left;
+    }
+    .rbp-footer p {
+        margin-bottom: 0;
+    }
+}
+
+.rbp-app-home,
+.rbp-header {
+    color: #f5f5f5;
+    margin-top: 50px;
+    background-color: #555;
+    background-image: url(<%= asset_path 'navy_blue.png' %>);
+}
+
+/* Masthead (headings and download button) */
+.rbp-masthead {
+    position: relative;
+    padding: 30px 15px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .15);
+}
+
+.rbp-masthead h1 {
+    font-size: 50px;
+    line-height: 1;
+    color: #fff;
+}
+
+.rbp-masthead .btn-outline {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 18px 24px;
+    font-size: 21px;
+}
+
+.rbp-masthead-links {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0 15px;
+    list-style: none;
+    text-align: center;
+}
+
+.rbp-masthead-links li {
+    display: inline;
+}
+
+.rbp-masthead-links li + li {
+    margin-left: 20px;
+}
+
+.rbp-masthead-links a {
+    color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+    .rbp-masthead {
+        text-align: left;
+        padding-top: 140px;
+        padding-bottom: 140px;
+    }
+    .rbp-masthead h1 {
+        font-size: 100px;
+    }
+    .rbp-masthead .lead {
+        margin-right: 25%;
+        font-size: 30px;
+    }
+    .rbp-masthead-links {
+        padding: 0;
+        text-align: left;
+    }
+}
+
+#nav-region {
+    padding: 0px 15px;
+}
+
+/* Page headers */
+.rbp-header {
+    padding: 30px 15px 40px;
+    font-size: 16px;
+    text-align: center;
+    text-shadow: 0 1px 0 rgba(0, 0, 0, .15);
+}
+
+.rbp-header h1 {
+    color: #fff;
+}
+
+.rbp-header p {
+    font-weight: 300;
+    line-height: 1.5;
+}
+
+.rbp-header .container {
+    position: relative;
+}
+
+@media screen and (min-width: 768px) {
+    .rbp-header {
+        font-size: 21px;
+        text-align: left;
+    }
+    .rbp-header h1 {
+        font-size: 60px;
+        line-height: 1;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .rbp-header h1,
+    .rbp-header p {
+        margin-right: 380px;
+    }
+}
+
+.carbonad {
+    width: auto !important;
+    margin: 50px 0px -40px !important;
+    padding: 20px !important;
+    overflow: hidden; /* clearfix */
+    height: auto !important;
+    font-size: 13px !important;
+    line-height: 16px !important;
+    text-align: left;
+    background: #fafafa !important;
+    border: 0 !important;
+    color: #333;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, .075);
+}
+
+@media screen and (min-width: 768px) {
+    .carbonad {
+        margin: 0 !important;
+        border-radius: 4px;
+        box-shadow: inset 0 3px 5px rgba(0, 0, 0, .075), 0 1px 0 rgba(255, 255, 255, .1);
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .carbonad {
+        position: absolute;
+        top: 20px;
+        right: 15px;
+        padding: 15px !important;
+        width: 330px !important;
+        min-height: 132px;
+    }
+}
+
+.rbp-breadcrumb {
+    padding: 10px 0;
+    color: #777;
+    background-color: #fafafa;
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #e5e5e5;
+    margin-bottom: 20px;
+}
+
+.rbp-breadcrumb .container {
+    padding: 0;
+}
+
+.rbp-breadcrumb strong {
+    color: #555;
+}
+
+/* By default it's not affixed in mobile views, so undo that */
+.rbp-sidebar.affix {
+    position: static;
+}
+
+/* First level of nav */
+.rbp-sidenav {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-shadow: 0 1px 0 #fff;
+    background-color: #f7f5fa;
+    border-radius: 5px;
+}
+
+/* All levels of nav */
+.rbp-sidebar .nav > li > a {
+    display: block;
+    color: #716b7a;
+    padding: 5px 20px;
+}
+
+.rbp-sidebar .nav > li > a:hover,
+.rbp-sidebar .nav > li > a:focus {
+    text-decoration: none;
+    background-color: #e5e3e9;
+    border-right: 1px solid #dbd8e0;
+}
+
+.rbp-sidebar .nav > .active > a,
+.rbp-sidebar .nav > .active:hover > a,
+.rbp-sidebar .nav > .active:focus > a {
+    font-weight: bold;
+    color: #555;
+    background-color: transparent;
+    border-right: 1px solid #555;
+}
+
+/* Nav: second level (shown on .active) */
+.rbp-sidebar .nav .nav {
+    display: none; /* Hide by default, but at >768px, show it */
+    margin-bottom: 8px;
+}
+
+.rbp-sidebar .nav .nav > li > a {
+    padding-top: 3px;
+    padding-bottom: 3px;
+    padding-left: 30px;
+    font-size: 90%;
+}
+
+/* Show and affix the side nav when space allows it */
+@media screen and (min-width: 992px) {
+    .rbp-sidebar .nav > .active > ul {
+        display: block;
+    }
+    /* Widen the fixed sidebar */
+    .rbp-sidebar.affix,
+    .rbp-sidebar.affix-bottom {
+        width: 213px;
+    }
+    .rbp-sidebar.affix {
+        position: fixed; /* Undo the static from mobile first approach */
+        top: 80px;
+    }
+    .rbp-sidebar.affix-bottom {
+        position: absolute; /* Undo the static from mobile first approach */
+    }
+    .rbp-sidebar.affix-bottom .rbp-sidenav,
+    .rbp-sidebar.affix .rbp-sidenav {
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    /* Widen the fixed sidebar again */
+    .rbp-sidebar.affix-bottom,
+    .rbp-sidebar.affix {
+        width: 263px;
+    }
+}
+

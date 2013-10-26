@@ -16,12 +16,16 @@ Rails4Bp::Application.configure do
 
 
   # Compress JavaScripts and CSS
-  config.assets.initialize_on_precompile = true
+  config.assets.prefix = "/assets"
   config.assets.compress = true
-  config.assets.js_compressor = :uglifier
-  config.assets.css_compressor = :yui
+  #config.assets.js_compressor = :uglifier
+  #config.assets.css_compressor = :yui
   config.assets.compile = false
   config.assets.digest = true
+  # config.action_dispatch.x_sendfile_header = "X-Sendfile" # for apache
+  config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for nginx
+  config.assets.cache_store = :memory_store, {size: 32.megabytes}
+  config.assets.precompile += %w( js-routes.js application.js minimal.css application.css )
 
   # Enable Rack::Cache to put a simple HTTP cache in front of your application
   # Add `rack-cache` to your Gemfile before enabling this.
@@ -83,8 +87,6 @@ Rails4Bp::Application.configure do
 
   # Disable automatic flushing of the log to improve performance.
   # config.autoflush_log = false
-  # For nginx:
-   config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect'
 
   if AppConfig.environment.assets.host.present?
     config.action_controller.asset_host = AppConfig.environment.assets.host.get

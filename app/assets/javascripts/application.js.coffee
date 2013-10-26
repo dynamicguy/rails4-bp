@@ -14,6 +14,7 @@
 #= require jquery
 #= require jquery_ujs
 #= require turbolinks
+#= require bootstrap
 #= require pace/pace
 #= require bootbox/bootbox
 #= require noty/js/noty/jquery.noty
@@ -23,7 +24,6 @@
 #= require underscore-amd/underscore
 #= require backbone-amd/backbone
 #= require backbone.marionette/lib/backbone.marionette
-#= require bootstrap/dist/js/bootstrap
 #= require backbone.syphon/lib/backbone.syphon
 #= require backbone-pageable/lib/backbone-pageable
 #= require backgrid/lib/backgrid

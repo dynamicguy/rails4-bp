@@ -2,7 +2,7 @@ require File.expand_path('../boot', __FILE__)
 require 'rails/all'
 require 'redis-store' # HACK
 
-Bundler.require(:default, :assets, Rails.env)
+Bundler.require *Rails.groups(:assets => %w(development test))
 
 require_relative 'asset_sync'
 
@@ -12,8 +12,7 @@ module Rails4Bp
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
 
-    config.assets.paths << Rails.root.join('vendor', 'assets', 'components')
-    config.assets.precompile += %w( js-routes.js application.js minimal.css application.css )
+    #config.assets.paths << Rails.root.join('vendor', 'assets', 'components')
     # Custom directories with classes and modules you want to be autoloadable.
     #config.autoload_paths      += %W{#{config.root}/app}
     #config.autoload_once_paths += %W{#{config.root}/lib}
@@ -65,24 +64,21 @@ module Rails4Bp
     config.assets.enabled = true
 
     # Speed up precompile by not loading the environment
-    config.assets.initialize_on_precompile = true
+    config.assets.initialize_on_precompile = false
 
     # Version of your assets, change this if you want to expire all your assets
-    config.assets.version = '21'
+    config.assets.version = '22.00'
 
     # Configure generators values. Many other options are available, be sure to check the documentation.
     config.generators do |g|
-      #g.template_engine :haml
+      g.template_engine :haml
       g.test_framework :rspec
       g.test_framework :rspec, fixture: true
-      #g.controller_specs false
+      g.controller_specs false
       #g.fixture_replacement :factory_girl, dir: 'spec/factories'
-      #g.view_specs false
-      #g.helper_specs false
-      #g.assets = false
-      g.stylesheets = false
-      g.javascripts = false
-      #g.helper = false
+      g.view_specs false
+      g.helper_specs false
+      g.assets false
       g.orm :active_record
     end
 
