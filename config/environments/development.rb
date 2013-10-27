@@ -23,6 +23,7 @@ Rails4Bp::Application.configure do
   config.assets.prefix = "/assets"
   config.assets.compress = false
   config.assets.debug = false
+  #config.assets.compile = true
 
   config.watchable_dirs['lib'] = [:rb]
 
@@ -34,9 +35,5 @@ Rails4Bp::Application.configure do
   BetterErrors::Middleware.allow_ip! ENV['TRUSTED_IP'] if ENV['TRUSTED_IP']
 
   config.enable_mini_profiler = true
-
-  require 'middleware/turbo_dev'
-  config.middleware.insert 0, Middleware::TurboDev
-
   config.enable_anon_caching = false
 end

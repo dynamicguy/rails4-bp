@@ -51,7 +51,7 @@ defaults:
     chartbeat_uid:
   settings:
     app_name: 'rails4bp*'
-    app_slogan: 'A rails 4 boilerplate built with backbone, marionette, coffee-script, postgresql, solr, less, haml, rspec, cucumber, bootstrap3, lots of love, cigarettes and coffee'
+    app_slogan: 'HelpDocs - help made simple'
     enable_registrations: true
     autofollow_on_join: true
     autofollow_on_join_user: 'rails4bphq@joinrails4bp.com'

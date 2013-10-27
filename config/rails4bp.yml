@@ -199,7 +199,7 @@ configuration: ## Section
     ## The name of your app displayed in various locations,
     ## including the header.
     app_name: "HelpIQ Search Engine"
-    app_slogan: "A rails 4 boilerplate built with backbone, marionette, coffee-script, postgresql, solr, less, haml, rspec, cucumber, bootstrap3, lots of love, cigarettes and coffee"
+    app_slogan: 'HelpDocs - help made simple'
 
     ## Set this to false to prevent people from signing up for your app
     ## without an invitation. Note that this needs to be true even for

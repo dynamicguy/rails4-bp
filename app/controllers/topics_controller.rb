@@ -6,7 +6,12 @@ class TopicsController < ApplicationController
   # GET /topics.json  
   def index
     @search = Topic.search do
-      fulltext params[:q]
+      with :topic_status, 1
+
+      fulltext params[:q] do
+        fields(:topic_title => 4.0, :toc_name => 3.0, :topic_content => 1.0)
+      end
+
       order_by sort_column, sort_direction
       paginate :page => params[:page], :per_page => params[:per_page]
     end

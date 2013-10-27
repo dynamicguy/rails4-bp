@@ -4,6 +4,7 @@
             <tr><th>name</th><td><%= @toc_name %></td></tr>
             <tr><th>title</th><td><%= @topic_title %></td></tr>
             <tr><th>permalink</th><td><%= @topic_permalink %></td></tr>
+            <tr><th>content</th><td><%= @topic_content %></td></tr>
           </tbody>
     </table>
 </div>
