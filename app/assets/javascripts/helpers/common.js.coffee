@@ -1,6 +1,5 @@
 Rails4Bp.Common =
   loadListBindings: ->
-    console.log 'I am from commonjs'
     #full screen btn
     $(".layout-btns .layout-full").click (e) ->
       if $(this).hasClass("active")
@@ -9,7 +8,6 @@ Rails4Bp.Common =
       else
         $("#sidebar-region").hide "fast"
         $("#content-block").removeClass("col-md-10 col-sm-11").addClass "col-md-12 col-sm-12 full-content"
-
 
     # g-search
     $("#g-search .dropdown-menu a").click ->
