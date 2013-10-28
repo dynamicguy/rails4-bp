@@ -7,8 +7,8 @@ production:
   reconnect: false
   database: rails4bp_production
   pool: 5
-  username: rails4bp
-  password: "rails4bp_s7mnU48B6E4m"
+  username: root
+  password: "s7mnU48B6E4m"
 
 
 #
