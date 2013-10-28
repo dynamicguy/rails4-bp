@@ -1,5 +1,5 @@
 <h1><%= gon.config.app_name %></h1>
-<p>HelpDocs - help made simple</p>
+<p><%= gon.config.app_slogan %></p>
 <div id="carbonads-container">
     <div class="carbonad">
         <div class="media">

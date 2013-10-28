@@ -1,5 +1,5 @@
 $ ->
-	Rails4Bp.start environment: "<%= Rails.env %>"
-	Pace.start
-		document: false
-		restartOnBackboneRoute: true
+  Rails4Bp.start environment: "<%= Rails.env %>"
+  Pace.start
+    document: false
+    restartOnBackboneRoute: true

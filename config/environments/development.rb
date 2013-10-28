@@ -22,7 +22,7 @@ Rails4Bp::Application.configure do
   # Do not compress assets
   config.assets.prefix = "/assets"
   config.assets.compress = false
-  config.assets.debug = false
+  config.assets.debug = true
   #config.assets.compile = true
 
   config.watchable_dirs['lib'] = [:rb]

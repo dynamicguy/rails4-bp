@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131021180236) do
+ActiveRecord::Schema.define(version: 20131021160637) do
 
   create_table "articles", force: true do |t|
     t.string   "name"
@@ -47,20 +47,6 @@ ActiveRecord::Schema.define(version: 20131021180236) do
   end
 
   add_index "cities", ["countrycode"], name: "countrycode", using: :btree
-
-  create_table "company", primary_key: "comp_id", force: true do |t|
-    t.string  "comp_name"
-    t.integer "status"
-    t.boolean "hidden"
-    t.integer "created_time"
-    t.integer "modified_time"
-    t.string  "created_uid"
-    t.string  "modified_uid"
-    t.integer "global_admin"
-    t.string  "website"
-    t.string  "phone"
-    t.integer "ssl"
-  end
 
   create_table "countries", id: false, force: true do |t|
     t.string  "code"
@@ -138,44 +124,6 @@ ActiveRecord::Schema.define(version: 20131021180236) do
   add_index "profiles", ["full_name"], name: "index_profiles_on_full_name", using: :btree
   add_index "profiles", ["user_id"], name: "index_profiles_on_user_id", using: :btree
 
-  create_table "project", primary_key: "prj_id", force: true do |t|
-    t.string  "prj_name"
-    t.string  "site_address"
-    t.integer "start_topic"
-    t.integer "created_time"
-    t.integer "modified_time"
-    t.string  "created_uid"
-    t.string  "modified_uid"
-    t.boolean "master"
-    t.string  "domain"
-    t.boolean "private"
-    t.boolean "keyword_index"
-    t.string  "theme"
-    t.string  "token"
-    t.string  "default_view"
-    t.boolean "user_view"
-    t.boolean "show_folder_icon"
-    t.boolean "show_page_icon"
-    t.string  "toc_font_size"
-    t.string  "toc_line_height"
-    t.integer "primary_site"
-    t.string  "lang"
-    t.boolean "is_primary_lang"
-    t.boolean "link_lang_sites"
-    t.boolean "ckfinder_delete"
-    t.string  "favicon"
-    t.boolean "toc_visible"
-    t.boolean "filter_visible"
-    t.integer "toc_width"
-    t.string  "toc_bg_color"
-    t.boolean "toc_bold_folder"
-    t.string  "toc_font_family"
-    t.boolean "enable_mobile"
-    t.string  "phone_home"
-    t.boolean "tablet_home"
-    t.boolean "enable_mobile_css"
-  end
-
   create_table "rails_admin_histories", force: true do |t|
     t.text     "message"
     t.string   "username"
@@ -223,42 +171,6 @@ ActiveRecord::Schema.define(version: 20131021180236) do
 
   create_table "tags", force: true do |t|
     t.string "name"
-  end
-
-  create_table "topic", primary_key: "topic_id", force: true do |t|
-    t.string  "topic_type"
-    t.string  "topic_title"
-    t.boolean "topic_status"
-    t.boolean "topic_toc"
-    t.string  "toc_name"
-    t.boolean "topic_index"
-    t.string  "index_name"
-    t.string  "topic_permalink"
-    t.text    "topic_content"
-    t.integer "prj_id"
-    t.integer "folder_id"
-    t.string  "deleted"
-    t.integer "created_time"
-    t.string  "created_uid"
-    t.integer "modified_time"
-    t.integer "modified_uid"
-    t.integer "deleted_time"
-    t.integer "deleted_uid"
-    t.integer "undeleted_uid"
-    t.integer "undeleted_time"
-    t.integer "comp_id"
-    t.integer "topic_size"
-    t.boolean "has_feedback"
-    t.integer "good"
-    t.integer "bad"
-    t.boolean "show_in_pdf"
-    t.string  "import_id"
-    t.integer "duplicated_id"
-    t.boolean "toc_hidden"
-    t.string  "keywords"
-    t.boolean "inc_search"
-    t.boolean "working"
-    t.boolean "toc_open"
   end
 
   create_table "users", force: true do |t|
