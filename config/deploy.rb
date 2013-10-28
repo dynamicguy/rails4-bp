@@ -24,11 +24,6 @@ set :use_sudo, false
 
 set :deploy_to, defer { "/u/apps/#{application}_#{stage}" }
 
-#before "deploy:assets:precompile" do
-#  run "cd #{current_path}"
-#  #run "/usr/local/node/bin/bower install"
-#end
-
 before "deploy:finalize_update" do
   run "rm -f #{release_path}/config/database.yml; ln -nfs #{shared_path}/config/database.yml #{release_path}/config/database.yml"
   run "mkdir -p #{release_path}/tmp"
@@ -60,11 +55,25 @@ namespace :rails4bp do
   task :send_notification do
     Notifier.deploy_notification(self).deliver
   end
+
+  desc "finalize and restart"
+  task :finalize_and_restart do
+    run "cd #{current_path} && bower install"
+  end
 end
 
 #after "deploy:finalize_update", "deploy:symlink_db"
 after "deploy", "deploy:cleanup" # keep only the last 5 releases
+#after "deploy:cleanup", "rails4bp:finalize_and_restart"
 
 
 set :notify_emails, ["ops@tasawr.com"]
 #after :deploy, 'rails4bp:send_notification'
+
+
+
+#executing "cd -- /u/apps/rails4bp_production/releases/20131027170610 && RAILS_ENV=production RAILS_GROUPS=assets bundle exec rake assets:precompile"
+#
+#/u/apps/rails4bp_production/shared/bundle/ruby/2.0.0/bin/unicorn",
+#"/u/apps/rails4bp_production/current/config.ru", "-Dc"
+# #"/u/apps/rails4bp_production/shared/config/unicorn.rb", "-E", "production"

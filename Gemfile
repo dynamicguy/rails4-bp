@@ -44,6 +44,9 @@ gem 'roxml', '3.1.6'
 gem 'ruby-oembed', '0.8.8'
 gem 'opengraph_parser', '0.2.3'
 
+gem 'sass-rails', '>= 3.2' # sass-rails needs to be higher than 3.2
+gem 'bootstrap-sass', '~> 3.0.0.0.rc'
+
 gem "yui-compressor", "~> 0.12.0"
 # Gems used only for assets and not required
 # in production environments by default.
@@ -56,9 +59,6 @@ group :assets do
   # CSS
   # Use SCSS for stylesheets
   #gem 'less-rails'
-
-  gem 'sass-rails', '>= 3.2' # sass-rails needs to be higher than 3.2
-  gem 'bootstrap-sass', '~> 3.0.0.0.rc'
 
   gem 'uglifier', '>= 1.3.0'
   gem 'coffee-rails', '~> 4.0.0'
