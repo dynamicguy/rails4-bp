@@ -125,3 +125,17 @@ end
 #/u/apps/rails4bp_production/shared/bundle/ruby/2.0.0/bin/unicorn",
 #"/u/apps/rails4bp_production/current/config.ru", "-Dc"
 # #"/u/apps/rails4bp_production/shared/config/unicorn.rb", "-E", "production"
+
+"""
+bower install
+
+RAILS_ENV=production RAILS_GROUPS=assets bundle exec rake assets:precompile
+
+cp -R /u/apps/rails4bp_production/current/vendor/assets/components/backgrid /u/apps/rails4bp_production/current/public/assets/
+
+cp -R /u/apps/rails4bp_production/current/vendor/assets/components/pace /u/apps/rails4bp_production/current/public/assets/
+
+
+RAILS_ENV=production bundle exec rake sunspot:reindex
+
+"""
