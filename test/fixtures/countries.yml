@@ -5,7 +5,7 @@ countries_001:
   continent: north america
   region: Caribbean
   surfacearea: 193
-  indepyear: 
+  indepyear:
   population: 103000
   lifeexpectancy: 78
   gnp: 828
@@ -25,7 +25,7 @@ countries_002:
   population: 22720000
   lifeexpectancy: 46
   gnp: 5976
-  gnpold: 
+  gnpold:
   localname: Afganistan/Afqanestan
   governmentform: Islamic Emirate
   headofstate: Mohammad Omar
@@ -53,11 +53,11 @@ countries_004:
   continent: north america
   region: Caribbean
   surfacearea: 96
-  indepyear: 
+  indepyear:
   population: 8000
   lifeexpectancy: 76
   gnp: 63
-  gnpold: 
+  gnpold:
   localname: Anguilla
   governmentform: Dependent Territory of the UK
   headofstate: Elisabeth II
@@ -89,7 +89,7 @@ countries_006:
   population: 78000
   lifeexpectancy: 84
   gnp: 1630
-  gnpold: 
+  gnpold:
   localname: Andorra
   governmentform: Parliamentary Coprincipality
   headofstate: ''
@@ -101,11 +101,11 @@ countries_007:
   continent: north america
   region: Caribbean
   surfacearea: 800
-  indepyear: 
+  indepyear:
   population: 217000
   lifeexpectancy: 75
   gnp: 1941
-  gnpold: 
+  gnpold:
   localname: Nederlandse Antillen
   governmentform: Nonmetropolitan Territory of The Netherlands
   headofstate: Beatrix
@@ -165,11 +165,11 @@ countries_011:
   continent: oceania
   region: Polynesia
   surfacearea: 199
-  indepyear: 
+  indepyear:
   population: 68000
   lifeexpectancy: 75
   gnp: 334
-  gnpold: 
+  gnpold:
   localname: Amerika Samoa
   governmentform: US Territory
   headofstate: George W. Bush
@@ -181,15 +181,15 @@ countries_012:
   continent: antarctica
   region: Antarctica
   surfacearea: 13120000
-  indepyear: 
+  indepyear:
   population: 0
-  lifeexpectancy: 
+  lifeexpectancy:
   gnp: 0
-  gnpold: 
+  gnpold:
   localname: ''
   governmentform: Co-administrated
   headofstate: ''
-  capital: 
+  capital:
   code2: AQ
 countries_013:
   code: ATF
@@ -197,15 +197,15 @@ countries_013:
   continent: antarctica
   region: Antarctica
   surfacearea: 7780
-  indepyear: 
+  indepyear:
   population: 0
-  lifeexpectancy: 
+  lifeexpectancy:
   gnp: 0
-  gnpold: 
+  gnpold:
   localname: Terres australes fran
   governmentform: Nonmetropolitan Territory of France
   headofstate: Jacques Chirac
-  capital: 
+  capital:
   code2: TF
 countries_014:
   code: ATG
@@ -409,7 +409,7 @@ countries_026:
   population: 3972000
   lifeexpectancy: 72
   gnp: 2841
-  gnpold: 
+  gnpold:
   localname: Bosna i Hercegovina
   governmentform: Federal Republic
   headofstate: Ante Jelavic
@@ -425,7 +425,7 @@ countries_027:
   population: 10236000
   lifeexpectancy: 68
   gnp: 13714
-  gnpold: 
+  gnpold:
   localname: Belarus
   governmentform: Republic
   headofstate: Aljaksandr Luka
@@ -453,7 +453,7 @@ countries_029:
   continent: north america
   region: North America
   surfacearea: 53
-  indepyear: 
+  indepyear:
   population: 65000
   lifeexpectancy: 77
   gnp: 2328
@@ -549,15 +549,15 @@ countries_035:
   continent: antarctica
   region: Antarctica
   surfacearea: 59
-  indepyear: 
+  indepyear:
   population: 0
-  lifeexpectancy: 
+  lifeexpectancy:
   gnp: 0
-  gnpold: 
+  gnpold:
   localname: Bouvet
   governmentform: Dependent Territory of Norway
   headofstate: Harald V
-  capital: 
+  capital:
   code2: BV
 countries_036:
   code: BWA
@@ -613,11 +613,11 @@ countries_039:
   continent: oceania
   region: Australia and New Zealand
   surfacearea: 14
-  indepyear: 
+  indepyear:
   population: 600
-  lifeexpectancy: 
+  lifeexpectancy:
   gnp: 0
-  gnpold: 
+  gnpold:
   localname: Cocos (Keeling) Islands
   governmentform: Territory of Australia
   headofstate: Elisabeth II
@@ -741,11 +741,11 @@ countries_047:
   continent: oceania
   region: Polynesia
   surfacearea: 236
-  indepyear: 
+  indepyear:
   population: 20000
   lifeexpectancy: 71
   gnp: 100
-  gnpold: 
+  gnpold:
   localname: The Cook Islands
   governmentform: Nonmetropolitan Territory of New Zealand
   headofstate: Elisabeth II
@@ -837,11 +837,11 @@ countries_053:
   continent: oceania
   region: Australia and New Zealand
   surfacearea: 135
-  indepyear: 
+  indepyear:
   population: 2500
-  lifeexpectancy: 
+  lifeexpectancy:
   gnp: 0
-  gnpold: 
+  gnpold:
   localname: Christmas Island
   governmentform: Territory of Australia
   headofstate: Elisabeth II
@@ -853,7 +853,7 @@ countries_054:
   continent: north america
   region: Caribbean
   surfacearea: 264
-  indepyear: 
+  indepyear:
   population: 38000
   lifeexpectancy: 79
   gnp: 1263
@@ -1045,11 +1045,11 @@ countries_066:
   continent: africa
   region: Northern Africa
   surfacearea: 266000
-  indepyear: 
+  indepyear:
   population: 293000
   lifeexpectancy: 50
   gnp: 60
-  gnpold: 
+  gnpold:
   localname: As-Sahrawiya
   governmentform: Occupied by Marocco
   headofstate: Mohammed Abdel Aziz
@@ -1141,11 +1141,11 @@ countries_072:
   continent: south america
   region: South America
   surfacearea: 12173
-  indepyear: 
+  indepyear:
   population: 2000
-  lifeexpectancy: 
+  lifeexpectancy:
   gnp: 0
-  gnpold: 
+  gnpold:
   localname: Falkland Islands
   governmentform: Dependent Territory of the UK
   headofstate: Elisabeth II
@@ -1173,11 +1173,11 @@ countries_074:
   continent: europe
   region: Nordic Countries
   surfacearea: 1399
-  indepyear: 
+  indepyear:
   population: 43000
   lifeexpectancy: 78
   gnp: 0
-  gnpold: 
+  gnpold:
   localname: F
   governmentform: Part of Denmark
   headofstate: Margrethe II
@@ -1193,7 +1193,7 @@ countries_075:
   population: 119000
   lifeexpectancy: 69
   gnp: 212
-  gnpold: 
+  gnpold:
   localname: Micronesia
   governmentform: Federal Republic
   headofstate: Leo A. Falcam
@@ -1269,11 +1269,11 @@ countries_080:
   continent: europe
   region: Southern Europe
   surfacearea: 6
-  indepyear: 
+  indepyear:
   population: 25000
   lifeexpectancy: 79
   gnp: 258
-  gnpold: 
+  gnpold:
   localname: Gibraltar
   governmentform: Dependent Territory of the UK
   headofstate: Elisabeth II
@@ -1301,11 +1301,11 @@ countries_082:
   continent: north america
   region: Caribbean
   surfacearea: 1705
-  indepyear: 
+  indepyear:
   population: 456000
   lifeexpectancy: 77
   gnp: 3501
-  gnpold: 
+  gnpold:
   localname: Guadeloupe
   governmentform: Overseas Department of France
   headofstate: Jacques Chirac
@@ -1385,7 +1385,7 @@ countries_087:
   population: 94000
   lifeexpectancy: 65
   gnp: 318
-  gnpold: 
+  gnpold:
   localname: Grenada
   governmentform: Constitutional Monarchy
   headofstate: Elisabeth II
@@ -1397,11 +1397,11 @@ countries_088:
   continent: north america
   region: North America
   surfacearea: 2166090
-  indepyear: 
+  indepyear:
   population: 56000
   lifeexpectancy: 68
   gnp: 0
-  gnpold: 
+  gnpold:
   localname: Kalaallit Nunaat/Gr
   governmentform: Part of Denmark
   headofstate: Margrethe II
@@ -1429,11 +1429,11 @@ countries_090:
   continent: south america
   region: South America
   surfacearea: 90000
-  indepyear: 
+  indepyear:
   population: 181000
   lifeexpectancy: 76
   gnp: 681
-  gnpold: 
+  gnpold:
   localname: Guyane fran
   governmentform: Overseas Department of France
   headofstate: Jacques Chirac
@@ -1445,7 +1445,7 @@ countries_091:
   continent: oceania
   region: Micronesia
   surfacearea: 549
-  indepyear: 
+  indepyear:
   population: 168000
   lifeexpectancy: 78
   gnp: 1197
@@ -1477,7 +1477,7 @@ countries_093:
   continent: asia
   region: Eastern Asia
   surfacearea: 1075
-  indepyear: 
+  indepyear:
   population: 6782000
   lifeexpectancy: 80
   gnp: 166448
@@ -1493,15 +1493,15 @@ countries_094:
   continent: antarctica
   region: Antarctica
   surfacearea: 359
-  indepyear: 
+  indepyear:
   population: 0
-  lifeexpectancy: 
+  lifeexpectancy:
   gnp: 0
-  gnpold: 
+  gnpold:
   localname: Heard and McDonald Islands
   governmentform: Territory of Australia
   headofstate: Elisabeth II
-  capital: 
+  capital:
   code2: HM
 countries_095:
   code: HND
@@ -1605,15 +1605,15 @@ countries_101:
   continent: africa
   region: Eastern Africa
   surfacearea: 78
-  indepyear: 
+  indepyear:
   population: 0
-  lifeexpectancy: 
+  lifeexpectancy:
   gnp: 0
-  gnpold: 
+  gnpold:
   localname: British Indian Ocean Territory
   governmentform: Dependent Territory of the UK
   headofstate: Elisabeth II
-  capital: 
+  capital:
   code2: IO
 countries_102:
   code: IRL
@@ -1657,7 +1657,7 @@ countries_104:
   population: 23115000
   lifeexpectancy: 67
   gnp: 11500
-  gnpold: 
+  gnpold:
   localname: Al-
   governmentform: Republic
   headofstate: Saddam Hussein al-Takriti
@@ -1833,7 +1833,7 @@ countries_115:
   population: 83000
   lifeexpectancy: 60
   gnp: 41
-  gnpold: 
+  gnpold:
   localname: Kiribati
   governmentform: Republic
   headofstate: Teburoro Tito
@@ -1849,7 +1849,7 @@ countries_116:
   population: 38000
   lifeexpectancy: 71
   gnp: 299
-  gnpold: 
+  gnpold:
   localname: Saint Kitts and Nevis
   governmentform: Constitutional Monarchy
   headofstate: Elisabeth II
@@ -1929,7 +1929,7 @@ countries_121:
   population: 3154000
   lifeexpectancy: 51
   gnp: 2012
-  gnpold: 
+  gnpold:
   localname: Liberia
   governmentform: Republic
   headofstate: Charles Taylor
@@ -1961,7 +1961,7 @@ countries_123:
   population: 154000
   lifeexpectancy: 72
   gnp: 571
-  gnpold: 
+  gnpold:
   localname: Saint Lucia
   governmentform: Constitutional Monarchy
   headofstate: Elisabeth II
@@ -2069,7 +2069,7 @@ countries_130:
   continent: asia
   region: Eastern Asia
   surfacearea: 18
-  indepyear: 
+  indepyear:
   population: 473000
   lifeexpectancy: 82
   gnp: 5749
@@ -2105,7 +2105,7 @@ countries_132:
   population: 34000
   lifeexpectancy: 79
   gnp: 776
-  gnpold: 
+  gnpold:
   localname: Monaco
   governmentform: Constitutional Monarchy
   headofstate: Rainier III
@@ -2153,7 +2153,7 @@ countries_135:
   population: 286000
   lifeexpectancy: 62
   gnp: 199
-  gnpold: 
+  gnpold:
   localname: Dhivehi Raajje/Maldives
   governmentform: Republic
   headofstate: Maumoon Abdul Gayoom
@@ -2185,7 +2185,7 @@ countries_137:
   population: 64000
   lifeexpectancy: 66
   gnp: 97
-  gnpold: 
+  gnpold:
   localname: Marshall Islands/Majol
   governmentform: Republic
   headofstate: Kessai Note
@@ -2277,11 +2277,11 @@ countries_143:
   continent: oceania
   region: Micronesia
   surfacearea: 464
-  indepyear: 
+  indepyear:
   population: 78000
   lifeexpectancy: 76
   gnp: 0
-  gnpold: 
+  gnpold:
   localname: Northern Mariana Islands
   governmentform: Commonwealth of the US
   headofstate: George W. Bush
@@ -2325,11 +2325,11 @@ countries_146:
   continent: north america
   region: Caribbean
   surfacearea: 102
-  indepyear: 
+  indepyear:
   population: 11000
   lifeexpectancy: 78
   gnp: 109
-  gnpold: 
+  gnpold:
   localname: Montserrat
   governmentform: Dependent Territory of the UK
   headofstate: Elisabeth II
@@ -2341,7 +2341,7 @@ countries_147:
   continent: north america
   region: Caribbean
   surfacearea: 1102
-  indepyear: 
+  indepyear:
   population: 395000
   lifeexpectancy: 78
   gnp: 2731
@@ -2405,11 +2405,11 @@ countries_151:
   continent: africa
   region: Eastern Africa
   surfacearea: 373
-  indepyear: 
+  indepyear:
   population: 149000
   lifeexpectancy: 60
   gnp: 0
-  gnpold: 
+  gnpold:
   localname: Mayotte
   governmentform: Territorial Collectivity of France
   headofstate: Jacques Chirac
@@ -2437,11 +2437,11 @@ countries_153:
   continent: oceania
   region: Melanesia
   surfacearea: 18575
-  indepyear: 
+  indepyear:
   population: 214000
   lifeexpectancy: 73
   gnp: 3563
-  gnpold: 
+  gnpold:
   localname: Nouvelle-Cal
   governmentform: Nonmetropolitan Territory of France
   headofstate: Jacques Chirac
@@ -2469,11 +2469,11 @@ countries_155:
   continent: oceania
   region: Australia and New Zealand
   surfacearea: 36
-  indepyear: 
+  indepyear:
   population: 2000
-  lifeexpectancy: 
+  lifeexpectancy:
   gnp: 0
-  gnpold: 
+  gnpold:
   localname: Norfolk Island
   governmentform: Territory of Australia
   headofstate: Elisabeth II
@@ -2517,11 +2517,11 @@ countries_158:
   continent: oceania
   region: Polynesia
   surfacearea: 260
-  indepyear: 
+  indepyear:
   population: 2000
-  lifeexpectancy: 
+  lifeexpectancy:
   gnp: 0
-  gnpold: 
+  gnpold:
   localname: Niue
   governmentform: Nonmetropolitan Territory of New Zealand
   headofstate: Elisabeth II
@@ -2585,7 +2585,7 @@ countries_162:
   population: 12000
   lifeexpectancy: 61
   gnp: 197
-  gnpold: 
+  gnpold:
   localname: Naoero/Nauru
   governmentform: Republic
   headofstate: Bernard Dowiyogo
@@ -2661,11 +2661,11 @@ countries_167:
   continent: oceania
   region: Polynesia
   surfacearea: 49
-  indepyear: 
+  indepyear:
   population: 50
-  lifeexpectancy: 
+  lifeexpectancy:
   gnp: 0
-  gnpold: 
+  gnpold:
   localname: Pitcairn
   governmentform: Dependent Territory of the UK
   headofstate: Elisabeth II
@@ -2713,7 +2713,7 @@ countries_170:
   population: 19000
   lifeexpectancy: 69
   gnp: 105
-  gnpold: 
+  gnpold:
   localname: Belau/Palau
   governmentform: Republic
   headofstate: Kuniwo Nakamura
@@ -2757,7 +2757,7 @@ countries_173:
   continent: north america
   region: Caribbean
   surfacearea: 8875
-  indepyear: 
+  indepyear:
   population: 3869000
   lifeexpectancy: 76
   gnp: 34100
@@ -2777,7 +2777,7 @@ countries_174:
   population: 24039000
   lifeexpectancy: 71
   gnp: 5332
-  gnpold: 
+  gnpold:
   localname: Choson Minjujuui In
   governmentform: Socialistic Republic
   headofstate: Kim Jong-il
@@ -2821,11 +2821,11 @@ countries_177:
   continent: asia
   region: Middle East
   surfacearea: 6257
-  indepyear: 
+  indepyear:
   population: 3101000
   lifeexpectancy: 71
   gnp: 4173
-  gnpold: 
+  gnpold:
   localname: Filastin
   governmentform: Autonomous Area
   headofstate: Yasser (Yasir) Arafat
@@ -2837,7 +2837,7 @@ countries_178:
   continent: oceania
   region: Polynesia
   surfacearea: 4000
-  indepyear: 
+  indepyear:
   population: 235000
   lifeexpectancy: 75
   gnp: 818
@@ -2869,7 +2869,7 @@ countries_180:
   continent: africa
   region: Eastern Africa
   surfacearea: 2510
-  indepyear: 
+  indepyear:
   population: 699000
   lifeexpectancy: 73
   gnp: 8287
@@ -2953,7 +2953,7 @@ countries_185:
   population: 29490000
   lifeexpectancy: 57
   gnp: 10162
-  gnpold: 
+  gnpold:
   localname: As-Sudan
   governmentform: Islamic Republic
   headofstate: Omar Hassan Ahmad al-Bashir
@@ -2997,15 +2997,15 @@ countries_188:
   continent: antarctica
   region: Antarctica
   surfacearea: 3903
-  indepyear: 
+  indepyear:
   population: 0
-  lifeexpectancy: 
+  lifeexpectancy:
   gnp: 0
-  gnpold: 
+  gnpold:
   localname: South Georgia and the South Sandwich Islands
   governmentform: Dependent Territory of the UK
   headofstate: Elisabeth II
-  capital: 
+  capital:
   code2: GS
 countries_189:
   code: SHN
@@ -3013,11 +3013,11 @@ countries_189:
   continent: africa
   region: Western Africa
   surfacearea: 314
-  indepyear: 
+  indepyear:
   population: 6000
   lifeexpectancy: 77
   gnp: 0
-  gnpold: 
+  gnpold:
   localname: Saint Helena
   governmentform: Dependent Territory of the UK
   headofstate: Elisabeth II
@@ -3029,11 +3029,11 @@ countries_190:
   continent: europe
   region: Nordic Countries
   surfacearea: 62422
-  indepyear: 
+  indepyear:
   population: 3200
-  lifeexpectancy: 
+  lifeexpectancy:
   gnp: 0
-  gnpold: 
+  gnpold:
   localname: Svalbard og Jan Mayen
   governmentform: Dependent Territory of Norway
   headofstate: Harald V
@@ -3097,10 +3097,10 @@ countries_194:
   population: 27000
   lifeexpectancy: 81
   gnp: 510
-  gnpold: 
+  gnpold:
   localname: San Marino
   governmentform: Republic
-  headofstate: 
+  headofstate:
   capital: 3171
   code2: SM
 countries_195:
@@ -3113,7 +3113,7 @@ countries_195:
   population: 10097000
   lifeexpectancy: 46
   gnp: 935
-  gnpold: 
+  gnpold:
   localname: Soomaaliya
   governmentform: Republic
   headofstate: Abdiqassim Salad Hassan
@@ -3125,11 +3125,11 @@ countries_196:
   continent: north america
   region: North America
   surfacearea: 242
-  indepyear: 
+  indepyear:
   population: 7000
   lifeexpectancy: 78
   gnp: 0
-  gnpold: 
+  gnpold:
   localname: Saint-Pierre-et-Miquelon
   governmentform: Territorial Collectivity of France
   headofstate: Jacques Chirac
@@ -3145,7 +3145,7 @@ countries_197:
   population: 147000
   lifeexpectancy: 65
   gnp: 6
-  gnpold: 
+  gnpold:
   localname: S
   governmentform: Republic
   headofstate: Miguel Trovoada
@@ -3269,11 +3269,11 @@ countries_205:
   continent: north america
   region: Caribbean
   surfacearea: 430
-  indepyear: 
+  indepyear:
   population: 17000
   lifeexpectancy: 73
   gnp: 96
-  gnpold: 
+  gnpold:
   localname: The Turks and Caicos Islands
   governmentform: Dependent Territory of the UK
   headofstate: Elisabeth II
@@ -3349,11 +3349,11 @@ countries_210:
   continent: oceania
   region: Polynesia
   surfacearea: 12
-  indepyear: 
+  indepyear:
   population: 2000
-  lifeexpectancy: 
+  lifeexpectancy:
   gnp: 0
-  gnpold: 
+  gnpold:
   localname: Tokelau
   governmentform: Nonmetropolitan Territory of New Zealand
   headofstate: Elisabeth II
@@ -3381,11 +3381,11 @@ countries_212:
   continent: asia
   region: Southeast Asia
   surfacearea: 14874
-  indepyear: 
+  indepyear:
   population: 885000
   lifeexpectancy: 46
   gnp: 0
-  gnpold: 
+  gnpold:
   localname: Timor Timur
   governmentform: Administrated by the UN
   headofstate: Jos
@@ -3465,7 +3465,7 @@ countries_217:
   population: 12000
   lifeexpectancy: 66
   gnp: 6
-  gnpold: 
+  gnpold:
   localname: Tuvalu
   governmentform: Constitutional Monarchy
   headofstate: Elisabeth II
@@ -3541,15 +3541,15 @@ countries_222:
   continent: oceania
   region: Micronesia/Caribbean
   surfacearea: 16
-  indepyear: 
+  indepyear:
   population: 0
-  lifeexpectancy: 
+  lifeexpectancy:
   gnp: 0
-  gnpold: 
+  gnpold:
   localname: United States Minor Outlying Islands
   governmentform: Dependent Territory of the US
   headofstate: George W. Bush
-  capital: 
+  capital:
   code2: UM
 countries_223:
   code: URY
@@ -3607,9 +3607,9 @@ countries_226:
   surfacearea: 0
   indepyear: 1929
   population: 1000
-  lifeexpectancy: 
+  lifeexpectancy:
   gnp: 9
-  gnpold: 
+  gnpold:
   localname: Santa Sede/Citt
   governmentform: Independent Church State
   headofstate: Johannes Paavali II
@@ -3625,7 +3625,7 @@ countries_227:
   population: 114000
   lifeexpectancy: 72
   gnp: 285
-  gnpold: 
+  gnpold:
   localname: Saint Vincent and the Grenadines
   governmentform: Constitutional Monarchy
   headofstate: Elisabeth II
@@ -3653,7 +3653,7 @@ countries_229:
   continent: north america
   region: Caribbean
   surfacearea: 151
-  indepyear: 
+  indepyear:
   population: 21000
   lifeexpectancy: 75
   gnp: 612
@@ -3669,11 +3669,11 @@ countries_230:
   continent: north america
   region: Caribbean
   surfacearea: 347
-  indepyear: 
+  indepyear:
   population: 93000
   lifeexpectancy: 78
   gnp: 0
-  gnpold: 
+  gnpold:
   localname: Virgin Islands of the United States
   governmentform: US Territory
   headofstate: George W. Bush
@@ -3717,11 +3717,11 @@ countries_233:
   continent: oceania
   region: Polynesia
   surfacearea: 200
-  indepyear: 
+  indepyear:
   population: 15000
-  lifeexpectancy: 
+  lifeexpectancy:
   gnp: 0
-  gnpold: 
+  gnpold:
   localname: Wallis-et-Futuna
   governmentform: Nonmetropolitan Territory of France
   headofstate: Jacques Chirac
@@ -3769,7 +3769,7 @@ countries_236:
   population: 10640000
   lifeexpectancy: 72
   gnp: 17000
-  gnpold: 
+  gnpold:
   localname: Jugoslavija
   governmentform: Federal Republic
   headofstate: Vojislav Ko

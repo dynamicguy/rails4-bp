@@ -216,13 +216,11 @@ GEM
     acts-as-taggable-on (2.4.1)
       rails (>= 3, < 5)
     addressable (2.3.5)
+    ajax-datatables-rails (0.0.1)
     akami (1.2.0)
       gyoku (>= 0.4.0)
       nokogiri (>= 1.4.0)
     arel (4.0.1)
-    asset_sync (1.0.0)
-      activemodel
-      fog (>= 1.8.0)
     atomic (1.1.14)
     awesome_print (1.2.0)
     bcrypt-ruby (3.1.2)
@@ -483,7 +481,6 @@ GEM
     multi_json (1.8.2)
     multi_test (0.0.2)
     multipart-post (1.2.0)
-    mysql2 (0.3.13)
     net-http-persistent (2.9)
     net-scp (1.1.2)
       net-ssh (>= 2.6.5)
@@ -553,6 +550,7 @@ GEM
       rack-link_headers (>= 2.2)
     paper_trail (3.0.0.beta1)
       activerecord (>= 3.0, < 5.0)
+    pg (0.16.0)
     polyglot (0.3.3)
     pr_geohash (1.0.0)
     pry (0.9.12.2)
@@ -710,6 +708,11 @@ GEM
       redis-namespace (>= 1.3.1)
     sidekiq-failures (0.2.2)
       sidekiq (>= 2.9.0)
+    sidekiq_monitor (0.0.9)
+      ajax-datatables-rails
+      jquery-datatables-rails
+      sidekiq (>= 2.2.1)
+      slim
     simplecov (0.7.1)
       multi_json (~> 1.0)
       simplecov-html (~> 0.7.1)
@@ -810,7 +813,6 @@ DEPENDENCIES
   acts-as-taggable-on (= 2.4.1)
   addressable (= 2.3.5)
   annotate!
-  asset_sync (= 1.0.0)
   awesome_nested_set!
   awesome_print
   berkshelf!
@@ -820,7 +822,7 @@ DEPENDENCIES
   bootstrap-sass (~> 3.0.0.0.rc)
   bullet
   cancan
-  capistrano (= 2.15.4)
+  capistrano (= 2.15.5)
   capistrano-ext (= 1.2.1)
   capybara
   carrierwave
@@ -872,7 +874,6 @@ DEPENDENCIES
   mocha
   mock_redis
   multi_json
-  mysql2 (= 0.3.13)
   nokogiri (= 1.6.0)
   omniauth
   omniauth-browserid!
@@ -888,6 +889,7 @@ DEPENDENCIES
   openid-redis-store
   paginate-responder
   paper_trail (>= 3.0.0.beta1)
+  pg (= 0.16.0)
   pry-nav
   pry-rails
   puma
@@ -923,6 +925,7 @@ DEPENDENCIES
   shoulda
   sidekiq
   sidekiq-failures
+  sidekiq_monitor
   simple_form!
   simplecov
   sinatra

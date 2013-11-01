@@ -16,7 +16,6 @@ Rails4Bp::Application.configure do
 
 
   # Compress JavaScripts and CSS
-  config.assets.prefix = "/assets"
   config.assets.compress = true
   #config.assets.js_compressor = :uglifier
   #config.assets.css_compressor = :yui
@@ -24,8 +23,10 @@ Rails4Bp::Application.configure do
   config.assets.digest = true
   # config.action_dispatch.x_sendfile_header = "X-Sendfile" # for apache
   config.action_dispatch.x_sendfile_header = 'X-Accel-Redirect' # for nginx
-  config.assets.cache_store = :memory_store, {size: 32.megabytes}
-  config.assets.precompile += %w( js-routes.js application.js minimal.css application.css )
+  #config.assets.cache_store = :memory_store, {size: 32.megabytes}
+
+  #config.action_controller.asset_host = "//#{AppConfig.environment.assets.fog_directory}.storage.googleapis.com"
+  #config.assets.prefix = "/production/assets"
 
   # Enable Rack::Cache to put a simple HTTP cache in front of your application
   # Add `rack-cache` to your Gemfile before enabling this.

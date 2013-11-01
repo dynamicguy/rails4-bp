@@ -1,4 +1,5 @@
 class Countrylanguage < ActiveRecord::Base
+  self.primary_key = ['language', 'code']
   resourcify
   self.per_page = 20
 

@@ -2,9 +2,8 @@ require File.expand_path('../boot', __FILE__)
 require 'rails/all'
 require 'redis-store' # HACK
 
-Bundler.require *Rails.groups(:assets => %w(development test))
-
-require_relative 'asset_sync'
+#Bundler.require *Rails.groups(:assets => %w(development test))
+Bundler.require(*Rails.groups(:assets => %w(development test))) if defined?(Bundler)
 
 module Rails4Bp
   class Application < Rails::Application
@@ -14,9 +13,8 @@ module Rails4Bp
 
     #config.assets.paths << Rails.root.join('vendor', 'assets', 'components')
     # Custom directories with classes and modules you want to be autoloadable.
-    #config.autoload_paths      += %W{#{config.root}/app}
-    #config.autoload_once_paths += %W{#{config.root}/lib}
-    config.autoload_paths += %W(#{config.root}/lib)
+    config.autoload_paths += %W{#{config.root}/app}
+    config.autoload_once_paths += %W{#{config.root}/lib}
 
     # Only load the plugins named here, in the order given (default is alphabetical).
     # :all can be used as a placeholder for all plugins not explicitly named.
@@ -67,8 +65,15 @@ module Rails4Bp
     # Speed up precompile by not loading the environment
     config.assets.initialize_on_precompile = false
 
+    config.assets.precompile += %w(
+      js-routes.js
+      application.js
+      application.css
+      minimal.css
+    )
+
     # Version of your assets, change this if you want to expire all your assets
-    config.assets.version = '22.00'
+    config.assets.version = '23.00'
 
     # Configure generators values. Many other options are available, be sure to check the documentation.
     config.generators do |g|

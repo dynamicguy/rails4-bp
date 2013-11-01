@@ -1,8 +1,5 @@
 @import "bootstrap";
 @import "bootstrap/theme";
-@import "backgrid/lib/backgrid.css";
-@import "pace/themes/pace-theme-flash.css";
-
-
-@import "theme";
+@import "backgrid";
+@import "pace-theme-flash";
 @import "main";

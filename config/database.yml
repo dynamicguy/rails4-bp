@@ -2,39 +2,35 @@
 # PRODUCTION
 #
 production:
-  adapter: mysql2
+  adapter: postgresql
   encoding: utf8
   reconnect: false
-  database: rails4bp_production
+  database: rails4bp_development
   pool: 5
-  username: root
-  password: "s7mnU48B6E4m"
+  username: rails4bp
+  password: "please"
 
 
 #
 # Development specific
 #
 development:
-  adapter: mysql2
+  adapter: postgresql
   encoding: utf8
   reconnect: false
   database: rails4bp_development
   pool: 5
-  username: ferdous
-  password: "f"
+  username: rails4bp
+  password: "please"
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
 # Do not set this db to the same as development or production.
 test: &test
-  adapter: mysql2
+  adapter: postgresql
   encoding: utf8
   reconnect: false
   database: rails4bp_test
   pool: 5
-  username: ferdous
-  password: "f"
-
-
-cucumber:
-  <<: *test
+  username: rails4bp
+  password: "please"

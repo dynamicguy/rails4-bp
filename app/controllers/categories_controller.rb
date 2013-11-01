@@ -1,15 +1,15 @@
 class CategoriesController < ApplicationController
   before_filter :authenticate_user!
 
-  include TheSortableTreeController::Rebuild
+  #include TheSortableTreeController::Rebuild
   before_action :set_category, only: [:show, :edit, :update, :destroy, :rebuild]
-  #add_breadcrumb :categories, :categories_path
 
   # GET /categories
   # GET /categories.json
   def index
     authorize! :index, @user, :message => 'Not authorized as an administrator.'
     @categories = Category.nested_set.select(:id, :title, :content, :secret_field, :parent_id, :lft, :rgt, :depth).paginate(:page => params[:page]).order('id DESC')
+
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @categories }
@@ -20,20 +20,17 @@ class CategoriesController < ApplicationController
   # GET /categories/1
   # GET /categories/1.json
   def show
-    add_breadcrumb :details
     @categories = Category.nested_set.select(:id, :title, :content, :secret_field, :parent_id, :lft, :rgt, :depth).paginate(:page => params[:page]).order('id DESC')
   end
 
   # GET /categories/new
   def new
-    add_breadcrumb :new
     @categories = Category.nested_set.select(:id, :title, :content, :secret_field, :parent_id, :lft, :rgt, :depth).paginate(:page => params[:page]).order('id DESC')
     @category = Category.new
   end
 
   # GET /categories/1/edit
   def edit
-    add_breadcrumb :edit
     @categories = Category.nested_set.select(:id, :title, :content, :secret_field, :parent_id, :lft, :rgt, :depth).paginate(:page => params[:page]).order('id DESC')
   end
 
@@ -96,17 +93,6 @@ class CategoriesController < ApplicationController
       format.json { head :no_content }
     end
   end
-
-  protected
-
-  def sortable_model
-    Category
-  end
-
-  def sortable_collection
-    "categories"
-  end
-
 
   private
   # Use callbacks to share common setup or constraints between actions.

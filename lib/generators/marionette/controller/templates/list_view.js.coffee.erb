@@ -25,6 +25,7 @@
         template: "<%= module_name_underscore %>/list/list_<%= singlularized_lower_module_name %>"
         id: "<%= singlularized_lower_module_name %>List"
         onRender: ->
+            Rails4Bp.Common.loadListBindings()
             if @model
                 $('#found_count').text(@model.collection.state.totalRecords)
 

@@ -13,19 +13,8 @@
 
 ActiveRecord::Schema.define(version: 20131021160637) do
 
-  create_table "articles", force: true do |t|
-    t.string   "name"
-    t.string   "content"
-    t.datetime "published_on"
-    t.integer  "author_id",                               null: false
-    t.boolean  "public",                  default: false, null: false
-    t.boolean  "guid",                                    null: false
-    t.boolean  "pending",                 default: false, null: false
-    t.string   "type",         limit: 40,                 null: false
-    t.text     "text"
-    t.integer  "likes_count",             default: 0
-    t.boolean  "favorite",                default: false
-  end
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
 
   create_table "categories", force: true do |t|
     t.string   "title"
@@ -49,44 +38,32 @@ ActiveRecord::Schema.define(version: 20131021160637) do
   add_index "cities", ["countrycode"], name: "countrycode", using: :btree
 
   create_table "countries", id: false, force: true do |t|
-    t.string  "code"
-    t.string  "name",                                                     null: false
-    t.string  "continent",                               default: "Asia", null: false
-    t.string  "region",                                  default: "",     null: false
-    t.decimal "surfacearea",    precision: 10, scale: 0, default: 0,      null: false
-    t.integer "indepyear",                               default: 0
-    t.integer "population",                              default: 0,      null: false
-    t.decimal "lifeexpectancy", precision: 10, scale: 0
-    t.decimal "gnp",            precision: 10, scale: 0
-    t.decimal "gnpold",         precision: 10, scale: 0
-    t.string  "localname",                               default: "",     null: false
-    t.string  "governmentform",                          default: "",     null: false
-    t.string  "headofstate",                             default: ""
-    t.integer "capital",                                 default: 0
-    t.string  "code2",                                   default: "",     null: false
+    t.string  "code",                            null: false
+    t.string  "name",                            null: false
+    t.string  "continent",      default: "Asia", null: false
+    t.string  "region",         default: "",     null: false
+    t.integer "surfacearea",    default: 0,      null: false
+    t.integer "indepyear",      default: 0
+    t.integer "population",     default: 0,      null: false
+    t.integer "lifeexpectancy"
+    t.integer "gnp"
+    t.integer "gnpold"
+    t.string  "localname",      default: "",     null: false
+    t.string  "governmentform", default: "",     null: false
+    t.string  "headofstate",    default: ""
+    t.integer "capital",        default: 0
+    t.string  "code2",          default: "",     null: false
   end
 
   create_table "countrylanguages", id: false, force: true do |t|
-    t.string  "countrycode",                          default: "",  null: false
-    t.string  "language",                             default: "",  null: false
-    t.string  "isofficial",                           default: "0"
-    t.decimal "percentage",  precision: 10, scale: 0, default: 0
+    t.string  "countrycode",               null: false
+    t.string  "language",                  null: false
+    t.string  "isofficial",  default: "f", null: false
+    t.integer "percentage",  default: 0
   end
 
   add_index "countrylanguages", ["countrycode"], name: "index_countrylanguages_on_countrycode", using: :btree
   add_index "countrylanguages", ["language", "countrycode"], name: "index_countrylanguages_on_language_and_countrycode", using: :btree
-
-  create_table "crews", force: true do |t|
-    t.integer  "age"
-    t.string   "name"
-    t.string   "avatar"
-    t.string   "title"
-    t.string   "species"
-    t.string   "origin"
-    t.string   "quote"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
 
   create_table "pages", force: true do |t|
     t.string   "title"
@@ -102,27 +79,6 @@ ActiveRecord::Schema.define(version: 20131021160637) do
     t.integer  "person_id"
     t.string   "state",        default: "draft"
   end
-
-  create_table "profiles", force: true do |t|
-    t.string   "first_name",       limit: 127
-    t.string   "last_name",        limit: 127
-    t.string   "image_url"
-    t.string   "image_url_small"
-    t.string   "image_url_medium"
-    t.date     "birthday"
-    t.string   "gender"
-    t.text     "bio"
-    t.boolean  "searchable",                   default: true,  null: false
-    t.integer  "user_id",                                      null: false
-    t.string   "location"
-    t.string   "full_name",        limit: 70
-    t.boolean  "nsfw",                         default: false
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "profiles", ["full_name"], name: "index_profiles_on_full_name", using: :btree
-  add_index "profiles", ["user_id"], name: "index_profiles_on_user_id", using: :btree
 
   create_table "rails_admin_histories", force: true do |t|
     t.text     "message"

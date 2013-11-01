@@ -1,15 +1,25 @@
 class Country < ActiveRecord::Base
-  extend FriendlyId
+  self.primary_key = 'code'
+  resourcify
+  self.per_page = 20
+  #friendly_id :countrycode, :use => :slugged
+  #friendly_id :code #, :use => :scoped, :scope => :countrylanguage
+
   has_many :cities
   belongs_to :countrylanguage
-  resourcify
-
-  self.per_page = 20
-                              #friendly_id :countrycode, :use => :slugged
-  friendly_id :code #, :use => :scoped, :scope => :countrylanguage
 
   def to_param
     "#{code}".parameterize
+  end
+
+  searchable :auto_index => true, :auto_remove => false do
+    string :code
+    text :name
+    string :code
+    string :continent
+    string :region
+    string :localname
+    integer :population
   end
 
 ##

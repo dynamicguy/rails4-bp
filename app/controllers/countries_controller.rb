@@ -1,13 +1,16 @@
 class CountriesController < ApplicationController
   before_action :set_country, only: [:show, :edit, :update, :destroy]
-  respond_to :html, :json, :xml, :js
-  responders :collection, Responders::PaginateResponder
-
+  respond_to :json, :xml, :js
 
   # GET /countries
   # GET /countries.json
   def index
-    @countries = Country.all.paginate(:page => params[:page]).order("#{params[:order]} #{params[:dir]}")
+    @search = Country.search do
+      fulltext params[:q]
+      order_by sort_column, sort_direction
+      paginate :page => params[:page], :per_page => params[:per_page]
+    end
+    @countries = prepare_api_collection(@search)
 
     respond_to do |format|
       format.json { render json: @countries }
@@ -23,6 +26,7 @@ class CountriesController < ApplicationController
   # GET /countries/new
   def new
     @country = Country.new
+    respond_with(@country)
   end
 
   # GET /countries/1/edit
@@ -32,42 +36,23 @@ class CountriesController < ApplicationController
   # POST /countries
   # POST /countries.json
   def create
-    add_breadcrumb :create
     @country = Country.new(country_params)
-
-    respond_to do |format|
-      if @country.save
-        format.html { redirect_to @country, notice: 'Country was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @country }
-      else
-        format.html { render action: 'new' }
-        format.json { render json: @country.errors, status: :unprocessable_entity }
-      end
-    end
+    @country.save
+    respond_with(@country)
   end
 
   # PATCH/PUT /countries/1
   # PATCH/PUT /countries/1.json
   def update
-    respond_to do |format|
-      if @country.update(country_params)
-        format.html { redirect_to @country, notice: 'Country was successfully updated.' }
-        format.json { head :no_content }
-      else
-        format.html { render action: 'edit' }
-        format.json { render json: @country.errors, status: :unprocessable_entity }
-      end
-    end
+    @country.update(country_params)
+    respond_with(@country)
   end
 
   # DELETE /countries/1
   # DELETE /countries/1.json
   def destroy
     @country.destroy
-    respond_to do |format|
-      format.html { redirect_to countries_url }
-      format.json { head :no_content }
-    end
+    respond_with(@country)
   end
 
   private
@@ -80,4 +65,13 @@ class CountriesController < ApplicationController
   def country_params
     params.require(:country).permit(:code, :name, :continent, :region, :surfacearea, :indepyear, :population, :lifeexpectancy, :gnp, :gnpold, :localname, :governmentform, :headofstate, :capital, :code2)
   end
+
+  def sort_column
+    Country.column_names.include?(params[:order]) ? params[:order] : "code"
+  end
+
+  def sort_direction
+    %w[asc desc].include?(params[:dir]) ? params[:dir] : "desc"
+  end
+
 end

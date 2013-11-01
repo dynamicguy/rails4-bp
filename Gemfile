@@ -13,7 +13,7 @@ gem 'seed-fu', github: 'mbleigh/seed-fu'
 gem 'hiredis'
 gem 'redis', :require => ["redis", "redis/connection/hiredis"]
 
-ENV['DB'] ||= 'mysql'
+ENV['DB'] ||= 'postgres'
 
 gem 'mysql2', '0.3.13' if ENV['DB'] == 'all' || ENV['DB'] == 'mysql'
 gem 'pg', '0.16.0' if ENV['DB'] == 'all' || ENV['DB'] == 'postgres'
@@ -86,6 +86,7 @@ end
 # Background processing
 gem 'sidekiq'
 gem 'sidekiq-failures'
+gem 'sidekiq_monitor'
 gem 'sinatra'
 gem 'slim'
 
@@ -194,7 +195,7 @@ group :production do
   gem 'rack-ssl', '1.3.3', :require => 'rack/ssl'
 
   # Third party asset hosting
-  gem 'asset_sync', '1.0.0', :require => false
+  #gem 'asset_sync', '1.0.0', :require => false
 end
 
 group :development do
@@ -216,7 +217,7 @@ group :development do
   #gem 'growl', require: darwin_only('growl')
   #gem 'rb-inotify', require: linux_only('rb-inotify')
 
-  gem 'capistrano', '2.15.4'
+  gem 'capistrano', '2.15.5'
   gem 'capistrano-ext', '1.2.1'
   gem 'meta_request'
 
