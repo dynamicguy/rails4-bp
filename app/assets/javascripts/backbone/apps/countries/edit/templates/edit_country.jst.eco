@@ -1,0 +1,112 @@
+<div id="edit-country">
+    <fieldset>
+        <legend>Details</legend>
+
+        <div class="row form-group">
+            <label for="inputCode" class="col-md-3 control-label">code</label>
+            <div class="col-md-9">
+                <input type="text" name="code" class="form-control col-md-6" id="inputCode" placeholder="country code" value="<%= @code %>">
+            </div>
+        </div>
+
+        <div class="row form-group">
+            <label for="inputName" class="col-md-3 control-label">name</label>
+            <div class="col-md-9">
+                <input type="text" name="name" class="form-control col-md-6" id="inputName" placeholder="country name" value="<%= @name %>">
+            </div>
+        </div>
+
+        <div class="row form-group">
+            <label for="inputcontinent" class="col-md-3 control-label">continent</label>
+            <div class="col-md-9">
+                <input type="text" name="continent" class="form-control col-md-6" id="inputcontinent" placeholder="continent" value="<%= @continent %>">
+            </div>
+        </div>
+
+        <div class="row form-group">
+            <label for="inputregion" class="col-md-3 control-label">region</label>
+            <div class="col-md-9">
+                <input type="text" name="region" class="form-control col-md-6" id="inputregion" placeholder="region" value="<%= @region %>">
+            </div>
+        </div>
+
+        <div class="row form-group">
+            <label for="inputsurfacearea" class="col-md-3 control-label">surfacearea</label>
+            <div class="col-md-9">
+                <input type="text" name="surfacearea" class="form-control col-md-6" id="inputsurfacearea" placeholder="surfacearea" value="<%= @surfacearea %>">
+            </div>
+        </div>
+
+        <div class="row form-group">
+            <label for="inputindepyear" class="col-md-3 control-label">indepyear</label>
+            <div class="col-md-9">
+                <input type="text" name="indepyear" class="form-control col-md-6" id="inputindepyear" placeholder="indepyear" value="<%= @indepyear %>">
+            </div>
+        </div>
+
+        <div class="row form-group">
+            <label for="inputpopulation" class="col-md-3 control-label">population</label>
+            <div class="col-md-9">
+                <input type="text" name="population" class="form-control col-md-6" id="inputpopulation" placeholder="" value="<%= @population %>">
+            </div>
+        </div>
+
+        <div class="row form-group">
+            <label for="inputlifeexpectancy" class="col-md-3 control-label">life expectancy</label>
+            <div class="col-md-9">
+                <input type="text" name="lifeexpectancy" class="form-control col-md-6" id="inputlifeexpectancy" placeholder="lifeexpectancy" value="<%= @lifeexpectancy %>">
+            </div>
+        </div>
+
+        <div class="row form-group">
+            <label for="inputgnp" class="col-md-3 control-label">gnp</label>
+            <div class="col-md-9">
+                <input type="text" name="gnp" class="form-control col-md-6" id="inputgnp" placeholder="gnp" value="<%= @gnp %>">
+            </div>
+        </div>
+
+        <div class="row form-group">
+            <label for="inputgnpold" class="col-md-3 control-label">gnpold</label>
+            <div class="col-md-9">
+                <input type="text" name="gnpold" class="form-control col-md-6" id="inputgnpold" placeholder="gnpold" value="<%= @gnpold %>">
+            </div>
+        </div>
+
+        <div class="row form-group">
+            <label for="inputlocalname" class="col-md-3 control-label">localname</label>
+            <div class="col-md-9">
+                <input type="text" name="localname" class="form-control col-md-6" id="inputlocalname" placeholder="localname" value="<%= @localname %>">
+            </div>
+        </div>
+
+        <div class="row form-group">
+            <label for="inputgovernmentform" class="col-md-3 control-label">government form</label>
+            <div class="col-md-9">
+                <input type="text" name="governmentform" class="form-control col-md-6" id="inputgovernmentform" placeholder="governmentform" value="<%= @governmentform %>">
+            </div>
+        </div>
+
+        <div class="row form-group">
+            <label for="inputheadofstate" class="col-md-3 control-label">head of state</label>
+            <div class="col-md-9">
+                <input type="text" name="headofstate" class="form-control col-md-6" id="inputheadofstate" placeholder="headofstate" value="<%= @headofstate %>">
+            </div>
+        </div>
+
+        <div class="row form-group">
+            <label for="inputcapital" class="col-md-3 control-label">capital</label>
+            <div class="col-md-9">
+                <input type="text" name="capital" class="form-control col-md-6" id="inputcapital" placeholder="" value="<%= @capital %>">
+            </div>
+        </div>
+
+        <div class="row form-group">
+            <label for="inputcode2" class="col-md-3 control-label">code2</label>
+            <div class="col-md-9">
+                <input type="text" name="code2" class="form-control col-md-6" id="inputcode2" placeholder="code2" value="<%= @code2 %>">
+            </div>
+        </div>
+
+
+    </fieldset>
+</div>

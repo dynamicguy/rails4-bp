@@ -1,0 +1,16 @@
+<div id="new-country" class="">
+    <div class="row form-group">
+        <label for="inputCode" class="col-md-3 control-label">Country code</label>
+        <div class="col-md-9">
+            <input type="text" name="code" class="form-control col-md-6" id="inputCode" placeholder="country code">
+        </div>
+    </div>
+
+    <div class="row form-group">
+        <label for="inputName" class="col-md-3 control-label">Country name</label>
+        <div class="col-md-9">
+            <input type="text" name="name" class="form-control col-md-6" id="inputName" placeholder="country name">
+        </div>
+    </div>
+</div>
+

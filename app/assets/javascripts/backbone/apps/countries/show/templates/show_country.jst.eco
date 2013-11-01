@@ -1,0 +1,21 @@
+<div id="country-details">
+    <table class="table table-bordered table-striped">
+          <tbody>
+            <tr><th>name</th><td><%= @name %></td></tr>
+            <tr><th>local name</th><td><%= @localname %></td></tr>
+            <tr><th>code</th><td><%= @code %></td></tr>
+            <tr><th>code2</th><td><%= @code2 %></td></tr>
+            <tr><th>gnp</th><td><%= @gnp %></td></tr>
+            <tr><th>gnpold</th><td><%= @gnpold %></td></tr>
+            <tr><th>continent</th><td><%= @continent %></td></tr>
+            <tr><th>region</th><td><%= @region %></td></tr>
+            <tr><th>capital</th><td><%= @capital %></td></tr>
+            <tr><th>population</th><td><%= @population %></td></tr>
+            <tr><th>government form</th><td><%= @governmentform %></td></tr>
+            <tr><th>head of state</th><td><%= @headofstate %></td></tr>
+            <tr><th>life expectancy</th><td><%= @lifeexpectancy %></td></tr>
+            <tr><th>independence year</th><td><%= @indepyear %></td></tr>
+            <tr><th>surface area</th><td><%= @surfacearea %></td></tr>
+          </tbody>
+    </table>
+</div>

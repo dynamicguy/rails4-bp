@@ -1,0 +1,47 @@
+<div class="panel-group" id="nav-accordion">
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h6 class="panel-title">
+                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#nav-accordion"
+                   href="#nav-panel-1">
+                    <i class="glyphicon glyphicon-globe"></i> Apps
+                </a>
+                <span class="badge badge-info pull-right">3</span>
+            </h6>
+        </div>
+        <div id="nav-panel-1" class="list-group panel-collapse collapse in">
+            <a href="#countries" class="list-group-item">
+                <i class="glyphicon glyphicon-globe"></i> Cities
+            </a>
+            <a href="#countries" class="list-group-item">
+                <i class="glyphicon glyphicon-flag"></i> Countries
+            </a>
+            <a href="#crews" class="list-group-item">
+                <i class="glyphicon glyphicon-briefcase"></i> Crews
+            </a>
+        </div>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h6 class="panel-title">
+                <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#nav-accordion"
+                   href="#nav-panel-2">
+                    <i class="glyphicon glyphicon-lock"></i> Auth
+                </a>
+                <span class="badge badge-info pull-right">3</span>
+            </h6>
+        </div>
+        <div id="nav-panel-2" class="list-group panel-collapse collapse in">
+            <a href="/auth/group/" class="list-group-item">
+                <i class="glyphicon glyphicon-th"></i> Groups
+            </a>
+            <a href="/auth/permission/" class="list-group-item">
+                <i class="glyphicon glyphicon-lock"></i> Permissions
+            </a>
+            <a href="/auth/user/" class="list-group-item">
+                <i class="glyphicon glyphicon-user"></i> Users
+            </a>
+        </div>
+    </div>
+</div>
