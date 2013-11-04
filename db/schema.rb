@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131021160637) do
+ActiveRecord::Schema.define(version: 20131101165634) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -38,11 +38,11 @@ ActiveRecord::Schema.define(version: 20131021160637) do
   add_index "cities", ["countrycode"], name: "countrycode", using: :btree
 
   create_table "countries", id: false, force: true do |t|
-    t.string  "code",                            null: false
+    t.string  "code"
     t.string  "name",                            null: false
     t.string  "continent",      default: "Asia", null: false
     t.string  "region",         default: "",     null: false
-    t.integer "surfacearea",    default: 0,      null: false
+    t.integer "surfacearea"
     t.integer "indepyear",      default: 0
     t.integer "population",     default: 0,      null: false
     t.integer "lifeexpectancy"
@@ -58,12 +58,14 @@ ActiveRecord::Schema.define(version: 20131021160637) do
   create_table "countrylanguages", id: false, force: true do |t|
     t.string  "countrycode",               null: false
     t.string  "language",                  null: false
-    t.string  "isofficial",  default: "f", null: false
-    t.integer "percentage",  default: 0
+    t.string  "isofficial",  default: "f"
+    t.integer "percentage"
+    t.string  "slug"
   end
 
   add_index "countrylanguages", ["countrycode"], name: "index_countrylanguages_on_countrycode", using: :btree
   add_index "countrylanguages", ["language", "countrycode"], name: "index_countrylanguages_on_language_and_countrycode", using: :btree
+  add_index "countrylanguages", ["slug", "countrycode", "language"], name: "index_countrylanguages_on_slug_and_countrycode_and_language", unique: true, using: :btree
 
   create_table "pages", force: true do |t|
     t.string   "title"

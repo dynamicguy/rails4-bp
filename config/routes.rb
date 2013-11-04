@@ -2,14 +2,11 @@ require 'sidekiq/web'
 
 Rails4Bp::Application.routes.draw do
 
-  resources :crews
   resources :countries
   resources :cities
-  resources :profiles
   resources :pages
   resources :categories
   resources :countrylanguages
-  resources :articles
 
   root :to => 'application#index'
 

@@ -125,17 +125,17 @@ configuration: ## Section
       ## This is highly discouraged for production use,
       ## let your reverse proxy/webserver do it by serving the files
       ## under public/ directly.
-      #serve: true
+      serve: true
 
       ## Upload your assets to S3
       #upload: true
 
       ## Specify an asset host. Ensure it does not have a trailing slash (/).
       #host: http://cdn.example.org/rails4bp
-      fog_directory: "rails4bp-assets"
+      # fog_directory: "rails4bp-assets"
       # You may need to specify what region your storage bucket is in
       # fog_region: "eu-west-1"
-      existing_remote_files: keep
+      # existing_remote_files: keep
       # To delete existing remote files.
       # existing_remote_files: delete
       # Automatically replace files with their equivalent gzip compressed version

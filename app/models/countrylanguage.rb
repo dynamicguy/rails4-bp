@@ -1,18 +1,31 @@
 class Countrylanguage < ActiveRecord::Base
-  self.primary_key = ['language', 'code']
+  self.primary_key = ['language', 'countrycode']
+
   resourcify
   self.per_page = 20
 
-  extend FriendlyId
-
   has_many :countries
+  validates_presence_of :language, :slug
+
+  extend FriendlyId
   friendly_id :slug_candidates, use: :slugged
 
-  # Try building a slug based on the following fields in
-  # increasing order of specificity.
   def slug_candidates
-    [:language, :countrycode]
+    [
+        :language,
+        [:language, :countrycode]
+    ]
   end
+
+  searchable :auto_index => true, :auto_remove => false do
+    text :slug
+    string :language
+    string :language
+    string :countrycode
+    boolean :isofficial
+    integer :percentage
+  end
+
   #
   #def language_and_language
   #  "#{language}-#{countrycode}"

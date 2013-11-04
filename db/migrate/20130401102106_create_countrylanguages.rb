@@ -4,7 +4,7 @@ class CreateCountrylanguages < ActiveRecord::Migration
       t.string "countrycode"
       t.string "language"
       t.string "isofficial", default: false
-      t.decimal "percentage", precision: 10, scale: 0, default: 0
+      t.integer "percentage"
     end
     execute "ALTER TABLE countrylanguages ADD PRIMARY KEY (language, countrycode);"
     add_index :countrylanguages, ["language", "countrycode"]

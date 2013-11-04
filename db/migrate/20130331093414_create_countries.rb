@@ -2,16 +2,16 @@ class CreateCountries < ActiveRecord::Migration
 
   def change
     create_table "countries", id: false, force: true do |t|
-      t.string "code"
+      t.string "code", primary_key: true
       t.string "name", null: false
       t.string "continent", default: "Asia", null: false
       t.string "region", default: "", null: false
-      t.decimal "surfacearea", precision: 10, scale: 0, default: 0, null: false
+      t.integer "surfacearea"
       t.integer "indepyear", default: 0
       t.integer "population", default: 0, null: false
-      t.decimal "lifeexpectancy", precision: 10, scale: 0
-      t.decimal "gnp", precision: 10, scale: 0
-      t.decimal "gnpold", precision: 10, scale: 0
+      t.integer "lifeexpectancy"
+      t.integer "gnp"
+      t.integer "gnpold"
       t.string "localname", default: "", null: false
       t.string "governmentform", default: "", null: false
       t.string "headofstate", default: ""

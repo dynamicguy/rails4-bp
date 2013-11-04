@@ -16,13 +16,13 @@ gem 'redis', :require => ["redis", "redis/connection/hiredis"]
 ENV['DB'] ||= 'postgres'
 
 gem 'mysql2', '0.3.13' if ENV['DB'] == 'all' || ENV['DB'] == 'mysql'
-gem 'pg', '0.16.0' if ENV['DB'] == 'all' || ENV['DB'] == 'postgres'
+gem 'pg' if ENV['DB'] == 'all' || ENV['DB'] == 'postgres'
 
 gem 'state_machine', '~> 1.2.0'
 
 # File uploading
 gem 'carrierwave'
-gem 'fog'
+#gem 'fog'
 gem 'mini_magick'
 gem 'remotipart'
 
@@ -44,8 +44,9 @@ gem 'roxml', '3.1.6'
 gem 'ruby-oembed', '0.8.8'
 gem 'opengraph_parser', '0.2.3'
 
-gem 'sass-rails', '>= 3.2' # sass-rails needs to be higher than 3.2
+gem 'sass-rails', '~> 4.0.0'
 gem 'bootstrap-sass', '~> 3.0.0.0.rc'
+gem 'prettyphoto-rails'
 
 gem "yui-compressor", "~> 0.12.0"
 # Gems used only for assets and not required
