@@ -1,6 +1,6 @@
 source 'https://rubygems.org'
 
-gem 'rails', :git => 'git://github.com/rails/rails.git', :branch => '4-0-stable'
+gem 'rails', :git => 'git://github.com/rails/rails.git'
 gem 'redis-rails', :git => 'git://github.com/SamSaffron/redis-store.git'
 gem 'rails-observers'
 gem 'actionpack-action_caching'
