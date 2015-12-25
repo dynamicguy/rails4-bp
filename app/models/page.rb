@@ -1,3 +1,22 @@
+# == Schema Information
+#
+# Table name: pages
+#
+#  id           :integer          not null, primary key
+#  title        :string
+#  content      :text
+#  secret_field :text
+#  parent_id    :integer
+#  lft          :integer
+#  rgt          :integer
+#  depth        :integer
+#  created_at   :datetime
+#  updated_at   :datetime
+#  user_id      :integer
+#  person_id    :integer
+#  state        :string           default("draft")
+#
+
 class Page < ActiveRecord::Base
   resourcify
   self.per_page = 20

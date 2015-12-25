@@ -1,1 +1,13 @@
+# == Schema Information
+#
+# Table name: site_settings
+#
+#  id         :integer          not null, primary key
+#  name       :string
+#  data_type  :integer
+#  value      :text
+#  created_at :datetime
+#  updated_at :datetime
+#
+
 --- {}

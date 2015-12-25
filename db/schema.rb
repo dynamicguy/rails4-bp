@@ -16,7 +16,7 @@ ActiveRecord::Schema.define(version: 20131101165634) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "categories", force: true do |t|
+  create_table "categories", force: :cascade do |t|
     t.string   "title"
     t.text     "content"
     t.text     "secret_field"
@@ -28,7 +28,7 @@ ActiveRecord::Schema.define(version: 20131101165634) do
     t.datetime "updated_at"
   end
 
-  create_table "cities", force: true do |t|
+  create_table "cities", force: :cascade do |t|
     t.string  "name",        limit: 35, default: "", null: false
     t.string  "countrycode", limit: 3,  default: "", null: false
     t.string  "district",    limit: 20, default: "", null: false
@@ -37,7 +37,7 @@ ActiveRecord::Schema.define(version: 20131101165634) do
 
   add_index "cities", ["countrycode"], name: "countrycode", using: :btree
 
-  create_table "countries", id: false, force: true do |t|
+  create_table "countries", id: false, force: :cascade do |t|
     t.string  "code"
     t.string  "name",                            null: false
     t.string  "continent",      default: "Asia", null: false
@@ -55,7 +55,7 @@ ActiveRecord::Schema.define(version: 20131101165634) do
     t.string  "code2",          default: "",     null: false
   end
 
-  create_table "countrylanguages", id: false, force: true do |t|
+  create_table "countrylanguages", id: false, force: :cascade do |t|
     t.string  "countrycode",               null: false
     t.string  "language",                  null: false
     t.string  "isofficial",  default: "f"
@@ -67,7 +67,7 @@ ActiveRecord::Schema.define(version: 20131101165634) do
   add_index "countrylanguages", ["language", "countrycode"], name: "index_countrylanguages_on_language_and_countrycode", using: :btree
   add_index "countrylanguages", ["slug", "countrycode", "language"], name: "index_countrylanguages_on_slug_and_countrycode_and_language", unique: true, using: :btree
 
-  create_table "pages", force: true do |t|
+  create_table "pages", force: :cascade do |t|
     t.string   "title"
     t.text     "content"
     t.text     "secret_field"
@@ -82,7 +82,7 @@ ActiveRecord::Schema.define(version: 20131101165634) do
     t.string   "state",        default: "draft"
   end
 
-  create_table "rails_admin_histories", force: true do |t|
+  create_table "rails_admin_histories", force: :cascade do |t|
     t.text     "message"
     t.string   "username"
     t.integer  "item"
@@ -95,7 +95,7 @@ ActiveRecord::Schema.define(version: 20131101165634) do
 
   add_index "rails_admin_histories", ["item", "table", "month", "year"], name: "index_rails_admin_histories", using: :btree
 
-  create_table "roles", force: true do |t|
+  create_table "roles", force: :cascade do |t|
     t.string   "name"
     t.integer  "resource_id"
     t.string   "resource_type"
@@ -106,7 +106,7 @@ ActiveRecord::Schema.define(version: 20131101165634) do
   add_index "roles", ["name", "resource_type", "resource_id"], name: "index_roles_on_name_and_resource_type_and_resource_id", using: :btree
   add_index "roles", ["name"], name: "index_roles_on_name", using: :btree
 
-  create_table "site_settings", force: true do |t|
+  create_table "site_settings", force: :cascade do |t|
     t.string   "name"
     t.integer  "data_type"
     t.text     "value"
@@ -114,7 +114,7 @@ ActiveRecord::Schema.define(version: 20131101165634) do
     t.datetime "updated_at"
   end
 
-  create_table "taggings", force: true do |t|
+  create_table "taggings", force: :cascade do |t|
     t.integer  "tag_id"
     t.integer  "taggable_id"
     t.string   "taggable_type"
@@ -127,11 +127,11 @@ ActiveRecord::Schema.define(version: 20131101165634) do
   add_index "taggings", ["tag_id"], name: "index_taggings_on_tag_id", using: :btree
   add_index "taggings", ["taggable_id", "taggable_type", "context"], name: "index_taggings_on_taggable_id_and_taggable_type_and_context", using: :btree
 
-  create_table "tags", force: true do |t|
+  create_table "tags", force: :cascade do |t|
     t.string "name"
   end
 
-  create_table "users", force: true do |t|
+  create_table "users", force: :cascade do |t|
     t.string   "email",                            default: "",   null: false
     t.string   "encrypted_password",               default: "",   null: false
     t.string   "reset_password_token"
@@ -163,14 +163,14 @@ ActiveRecord::Schema.define(version: 20131101165634) do
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   add_index "users", ["unlock_token"], name: "index_users_on_unlock_token", unique: true, using: :btree
 
-  create_table "users_roles", id: false, force: true do |t|
+  create_table "users_roles", id: false, force: :cascade do |t|
     t.integer "user_id"
     t.integer "role_id"
   end
 
   add_index "users_roles", ["user_id", "role_id"], name: "index_users_roles_on_user_id_and_role_id", using: :btree
 
-  create_table "versions", force: true do |t|
+  create_table "versions", force: :cascade do |t|
     t.string   "item_type",  null: false
     t.integer  "item_id",    null: false
     t.string   "event",      null: false

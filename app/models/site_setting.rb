@@ -336,10 +336,9 @@ end
 # Table name: site_settings
 #
 #  id         :integer          not null, primary key
-#  name       :string(255)      not null
-#  data_type  :integer          not null
+#  name       :string
+#  data_type  :integer
 #  value      :text
-#  created_at :datetime         not null
-#  updated_at :datetime         not null
+#  created_at :datetime
+#  updated_at :datetime
 #
-

@@ -1,3 +1,20 @@
+# == Schema Information
+#
+# Table name: countrylanguages
+#
+#  countrycode :string           not null
+#  language    :string           not null
+#  isofficial  :string           default("f")
+#  percentage  :integer
+#  slug        :string
+#
+# Indexes
+#
+#  index_countrylanguages_on_countrycode                        (countrycode)
+#  index_countrylanguages_on_language_and_countrycode           (language,countrycode)
+#  index_countrylanguages_on_slug_and_countrycode_and_language  (slug,countrycode,language) UNIQUE
+#
+
 class Countrylanguage < ActiveRecord::Base
   self.primary_key = ['language', 'countrycode']
 

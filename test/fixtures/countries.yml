@@ -1,3 +1,24 @@
+# == Schema Information
+#
+# Table name: countries
+#
+#  code           :string           primary key
+#  name           :string           not null
+#  continent      :string           default("Asia"), not null
+#  region         :string           default(""), not null
+#  surfacearea    :integer
+#  indepyear      :integer          default(0)
+#  population     :integer          default(0), not null
+#  lifeexpectancy :integer
+#  gnp            :integer
+#  gnpold         :integer
+#  localname      :string           default(""), not null
+#  governmentform :string           default(""), not null
+#  headofstate    :string           default("")
+#  capital        :integer          default(0)
+#  code2          :string           default(""), not null
+#
+
 ---
 countries_001:
   code: ABW

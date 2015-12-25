@@ -5,10 +5,12 @@ production:
   adapter: postgresql
   encoding: utf8
   reconnect: false
-  database: rails4bp_development
+  database: rails4bp_production
   pool: 5
+  host: 127.0.0.1
+  port: 5432
   username: rails4bp
-  password: "please"
+  password: "zaq1234"
 
 
 #
@@ -18,10 +20,12 @@ development:
   adapter: postgresql
   encoding: utf8
   reconnect: false
+  host: 127.0.0.1
+  port: 5432
   database: rails4bp_development
   pool: 5
   username: rails4bp
-  password: "please"
+  password: "zaq1234"
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -32,5 +36,7 @@ test: &test
   reconnect: false
   database: rails4bp_test
   pool: 5
+  host: 127.0.0.1
+  port: 5432
   username: rails4bp
-  password: "please"
+  password: "zaq1234"
