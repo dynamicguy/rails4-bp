@@ -24,3 +24,6 @@ spec/fixtures
 /cookbooks
 /cookbooks/
 /tmp/librarian/
+.tmp
+node_modules
+log
